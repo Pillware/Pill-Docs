@@ -1,0 +1,15 @@
+<!-- This file is generated. Do not edit it directly. -->
+
+<a id="rustdoc-item-2088"></a>
+
+# Constant `pill_development_host::hot_patch::routes::PATCH_ADDRESS_RESOLVER`
+
+```rust
+pub(in hot_patch::routes) const PATCH_ADDRESS_RESOLVER: &[u8] = b"pill_patch_resolve_address";
+```
+
+Visibility: `{'restricted': {'parent': 2087, 'path': '::hot_patch::routes'}}` · Source: `hosting\pill_development_host\src\hot_patch\routes.rs:46`
+
+Export a generated patch uses to report the address and signature of the
+function it replaces. An artifact exports a different name for the same
+question.
