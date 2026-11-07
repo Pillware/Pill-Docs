@@ -4,7 +4,7 @@
 
 `Commands` is a thin handle over the engine's one `CommandQueue`. Each call pushes a `DeferredCommand`, and `execute_queued_commands` drains the queue once per update, after every ECS system and C# script has run, by calling the same `World` functions an eager change uses. A failed command is collected rather than panicking. An ECS system that takes `Commands` conflicts with every other ECS system, so it always runs alone in its batch, which is what makes the single shared queue safe.
 
-This is the implementation counterpart of [guides/commands.md](../../user_guides/concepts/commands.md). Read that first for how to use `Commands`.
+This is the implementation counterpart of [guides/commands.md](../../user_guide/concepts/commands.md). Read that first for how to use `Commands`.
 
 ## At a glance
 

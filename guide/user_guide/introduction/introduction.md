@@ -263,4 +263,4 @@ The cube example keeps things minimal. Real projects soon need a few more pieces
 - The building blocks in depth: [Entities](../concepts/entities.md), [Components](../concepts/components.md), [ECS systems](../concepts/systems.md), [Resources](../concepts/resources.md), [Assets](../concepts/assets.md), [Commands](../concepts/commands.md).
 - Running, building and shipping: [Build configurations](../advanced/build_configurations.md).
 - Seeing your world while it runs: [Editor](../editor/editor.md).
-- How Pill works inside: the engine's [Architecture](../../engine_guides/levels/architecture.md).
+- How Pill works inside: the engine's [Architecture](../../engine_guide/levels/architecture.md).

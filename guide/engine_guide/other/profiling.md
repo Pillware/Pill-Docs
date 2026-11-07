@@ -195,4 +195,4 @@ The `?` in `pill_development_host?/profiling` means the feature applies to the h
 - `modules/engine/pill_engine_core/src/config.rs` - `PROFILING_MEMORY_ALLOCATIONS_SAMPLING_FREQUENCY`.
 - `modules/hosting/pill_player/src/telemetry.rs` - where the player turns on the Tracy lanes and installs the `metrics` recorder.
 - `modules/extensions/pill_master_renderer/pill_master_renderer/src/profiler.rs` - GPU queries, the readback ring and the `GPU` timeline.
-- [Profiling (user guide)](../../user_guides/advanced/profiling.md) - how to profile a project.
+- [Profiling (user guide)](../../user_guide/advanced/profiling.md) - how to profile a project.

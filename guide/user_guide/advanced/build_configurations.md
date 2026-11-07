@@ -203,4 +203,4 @@ Pill refuses combinations that cannot work, and tells you why when it does.
 - `modules/Cargo.toml` - the Rust profiles.
 - `devops/ci_cd/build_shipping.py` - the shipping build.
 - `devops/tools/build_web.py` - the browser build.
-- [Build configurations inside the engine](../../engine_guides/other/build_configurations.md) - how the build configurations work inside the engine.
+- [Build configurations inside the engine](../../engine_guide/other/build_configurations.md) - how the build configurations work inside the engine.

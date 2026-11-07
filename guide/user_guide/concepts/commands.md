@@ -167,4 +167,4 @@ No. The editor has its own "commands": recorded edits such as `delete entity` th
 | Why an ECS system with `Commands` runs alone                   | `pill_engine_core`, `scheduler.rs`             |
 | The `world.` functions that apply at once                      | `pill_engine_core`, `world/`                   |
 | Related guides                                                 | [entities.md](entities.md), [systems.md](systems.md), [components.md](components.md) |
-| How it works inside                                            | [technical/concepts/commands.md](../../engine_guides/concepts/commands.md) |
+| How it works inside                                            | [technical/concepts/commands.md](../../engine_guide/concepts/commands.md) |

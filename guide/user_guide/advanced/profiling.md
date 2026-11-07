@@ -189,7 +189,7 @@ The first build in this profile compiles everything again, so it takes a while.
 - `modules/engine/pill_core/src/profiling.rs` - the `profile_scope!`, `profile_plot!` and other profiling macros.
 - `modules/frontends/pill_standalone/Cargo.toml` - the `profiling`, `profiling-fine` and `metrics` features.
 - `modules/extensions/pill_master_renderer/pill_master_renderer/src/profiler.rs` - GPU measurements and the `GPU` timeline.
-- [Profiling inside the engine](../../engine_guides/other/profiling.md) - how profiling works inside the engine.
+- [Profiling inside the engine](../../engine_guide/other/profiling.md) - how profiling works inside the engine.
 
 ## Which Tracy version do I need?
 

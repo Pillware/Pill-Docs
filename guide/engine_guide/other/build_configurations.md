@@ -158,4 +158,4 @@ The value must be `Release` or `Debug`; `Release` is used when the variable is u
 - `devops/ci_cd/build_shipping.py` - the shipping build.
 - `devops/tools/generate_shipping_bundle.py` - the shipping bundle and the web app crate.
 - `devops/tools/build_web.py` - the browser build.
-- [Build configurations (user guide)](../../user_guides/advanced/build_configurations.md) - how to pick and run a build configuration.
+- [Build configurations (user guide)](../../user_guide/advanced/build_configurations.md) - how to pick and run a build configuration.

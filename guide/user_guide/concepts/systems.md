@@ -82,7 +82,7 @@ Two ECS systems that conflict never run at the same time, and registration order
 
 > **Example:** you declare `A` (writes `Position`, `order = 1`), then `B` (reads `Position`, writes `Velocity`, `order = 2`), then `C` (reads `Velocity`, `order = 3`). `C` conflicts with `B` but not with `A`, so the engine runs `C` together with `A`, **before** `B`. In that update, `C` reads the `Velocity` from before `B` changed it.
 
-When the order of a chain matters, you can force strict registration order with `engine.set_parallel_execution(false)`, at the cost of running every ECS system one after another. [technical/concepts/systems.md](../../engine_guides/concepts/systems.md#does-registration-order-decide-which-of-two-conflicting-ecs-systems-runs-first) explains the rule in detail.
+When the order of a chain matters, you can force strict registration order with `engine.set_parallel_execution(false)`, at the cost of running every ECS system one after another. [technical/concepts/systems.md](../../engine_guide/concepts/systems.md#does-registration-order-decide-which-of-two-conflicting-ecs-systems-runs-first) explains the rule in detail.
 
 Ask only for the access you need: `&T` instead of `&mut T` and `Res` instead of `ResMut` let more ECS systems run in parallel.
 
