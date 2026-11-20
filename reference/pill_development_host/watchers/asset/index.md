@@ -1,12 +1,12 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-4227"></a>
+<a id="rustdoc-item-4486"></a>
 
 # Module `pill_development_host::watchers::asset`
 
-Visibility: `{'restricted': {'parent': 4303, 'path': '::watchers'}}` · Source: `hosting\pill_development_host\src\watchers\asset.rs:1`
+Visibility: `{'restricted': {'parent': 4562, 'path': '::watchers'}}` · Source: `hosting\pill_development_host\src\watchers\asset.rs:1`
 
-The project's asset directory: an edit there becomes an [`AssetChange`](enum.AssetChange.md#rustdoc-item-4235) the
+The project's asset directory: an edit there becomes an [`AssetChange`](enum.AssetChange.md#rustdoc-item-4494) the
 main thread imports again.
 Development asset reload: watch the project's `res` folder and report which
 source assets an edit affects.
@@ -18,7 +18,7 @@ source assets an edit affects.
   Each edited file maps to the source asset it belongs to: an asset file is
   its own source, and a metadata file (`a.png.meta`) belongs to the source
   named before `.meta`.
-- Queue each change as an [`AssetChange`](enum.AssetChange.md#rustdoc-item-4235) for the main thread, which
+- Queue each change as an [`AssetChange`](enum.AssetChange.md#rustdoc-item-4494) for the main thread, which
   imports or reimports it through the world's
   [`ImportRegistry`](pill_engine::ImportRegistry).
 
@@ -43,15 +43,15 @@ counts.
 ## Module contents
 
 ### Structs
-- [`AssetWatcher`](struct.AssetWatcher.md#rustdoc-item-3913) — A running asset watcher. Dropping it makes the worker stop when it next
+- [`AssetWatcher`](struct.AssetWatcher.md#rustdoc-item-4170) — A running asset watcher. Dropping it makes the worker stop when it next
 
 ### Enums
-- [`AssetChange`](enum.AssetChange.md#rustdoc-item-4235) — One source asset's change, worked out from the files on disk.
+- [`AssetChange`](enum.AssetChange.md#rustdoc-item-4494) — One source asset's change, worked out from the files on disk.
 
 ### Functions
-- [`classify_touched_paths`](fn.classify_touched_paths.md#rustdoc-item-4300) — Turns the paths of one batch into one change per source, based on what is
-- [`is_rename`](fn.is_rename.md#rustdoc-item-4298) — Returns whether the event is one side of a rename. Some backends report a
-- [`relative_to`](fn.relative_to.md#rustdoc-item-4301) — Returns `path` relative to `asset_directory`, with `/` separators. Returns
+- [`classify_touched_paths`](fn.classify_touched_paths.md#rustdoc-item-4559) — Turns the paths of one batch into one change per source, based on what is
+- [`is_rename`](fn.is_rename.md#rustdoc-item-4557) — Returns whether the event is one side of a rename. Some backends report a
+- [`relative_to`](fn.relative_to.md#rustdoc-item-4560) — Returns `path` relative to `asset_directory`, with `/` separators. Returns
 
 ### Constants
-- [`METADATA_SUFFIX`](constant.METADATA_SUFFIX.md#rustdoc-item-4226) — The extension of a metadata file, appended to its source's name.
+- [`METADATA_SUFFIX`](constant.METADATA_SUFFIX.md#rustdoc-item-4485) — The extension of a metadata file, appended to its source's name.

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-4194"></a>
+<a id="rustdoc-item-4721"></a>
 
 # Function `pill_editor_core::gizmo::release_edits`
 
@@ -8,7 +8,7 @@
 pub fn release_edits(pressed_values: &[f32], released_values: &[f32]) -> Option<Vec<(usize, f32)>>;
 ```
 
-Source: `editor\pill_editor_core\src\gizmo.rs:1296`
+Source: `editor\pill_editor_core\src\gizmo.rs:1639`
 
 Returns the edits a released drag records, as `(index, value)` pairs in
 array order.

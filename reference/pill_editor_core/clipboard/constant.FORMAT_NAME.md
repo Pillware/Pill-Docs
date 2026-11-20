@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-908"></a>
+<a id="rustdoc-item-952"></a>
 
 # Constant `pill_editor_core::clipboard::FORMAT_NAME`
 

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-437"></a>
+<a id="rustdoc-item-511"></a>
 
 # Struct `pill_engine::declarations::PillResourceDescriptor`
 
@@ -8,13 +8,13 @@
 pub struct PillResourceDescriptor;
 ```
 
-Source: `engine\pill_engine\src\declarations.rs:138`
+Source: `engine\pill_engine\src\declarations.rs:215`
 
 One ECS resource declared with `#[derive(PillResource)]`.
 
 ## Fields
 
-<a id="rustdoc-item-435"></a>
+<a id="rustdoc-item-509"></a>
 
 ### `type_name`
 
@@ -22,10 +22,9 @@ One ECS resource declared with `#[derive(PillResource)]`.
 type_name: &'static str
 ```
 
-Fully-qualified type path: the declaring module's path plus the type's
-name.
+The type's stored name, `<crate>::<Type>`.
 
-<a id="rustdoc-item-436"></a>
+<a id="rustdoc-item-510"></a>
 
 ### `register`
 
@@ -48,13 +47,13 @@ decided where the type is declared.
 - `TryInto<U>`
 - `TryFrom<U>`
 - `Any`
+- `CastableFrom<ST, Uninit, Uninit>`
+- `CastableFrom<ST, Initialized, Initialized>`
+- `Read<Exclusive, BecauseExclusive>`
 - `Instrument`
 - `WithSubscriber`
 - `IntoEither`
 - `Pointable`
 - `OwoColorize`
 - `ErasedDestructor`
-- `CastableFrom<ST, Uninit, Uninit>`
-- `CastableFrom<ST, Initialized, Initialized>`
-- `Read<Exclusive, BecauseExclusive>`
 - `Collect`

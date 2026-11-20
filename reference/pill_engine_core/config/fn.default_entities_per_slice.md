@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-3508"></a>
+<a id="rustdoc-item-2023"></a>
 
 # Function `pill_engine_core::config::default_entities_per_slice`
 

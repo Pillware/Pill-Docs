@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1474"></a>
+<a id="rustdoc-item-1929"></a>
 
 # Type alias `pill_editor::runner::FileStamp`
 
@@ -8,7 +8,7 @@
 pub(in runner) type FileStamp = pill_editor_core::state_watch::FileStamp;
 ```
 
-Visibility: `{'restricted': {'parent': 483, 'path': '::runner'}}` · Source: `editor\pill_editor\src\runner\mod.rs:3910`
+Visibility: `{'restricted': {'parent': 539, 'path': '::runner'}}` · Source: `editor\pill_editor\src\runner\mod.rs:4525`
 
 A state file's metadata: what a frame compares to decide whether the file
 needs reading at all.

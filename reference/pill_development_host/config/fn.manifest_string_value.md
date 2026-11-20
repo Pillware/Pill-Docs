@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1265"></a>
+<a id="rustdoc-item-1285"></a>
 
 # Function `pill_development_host::config::manifest_string_value`
 
@@ -8,7 +8,7 @@
 pub(in config) fn manifest_string_value(manifest: &str, section: &str, key: &str) -> Option<String>;
 ```
 
-Visibility: `{'restricted': {'parent': 821, 'path': '::config'}}` · Source: `hosting\pill_development_host\src\config.rs:1644`
+Visibility: `{'restricted': {'parent': 823, 'path': '::config'}}` · Source: `hosting\pill_development_host\src\config.rs:1851`
 
 Reads a string value out of one section of a TOML manifest.
 

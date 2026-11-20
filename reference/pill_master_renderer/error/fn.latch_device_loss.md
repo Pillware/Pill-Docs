@@ -8,7 +8,7 @@
 pub(crate) fn latch_device_loss(device: &wgpu::Device);
 ```
 
-Visibility: `crate` · Source: `extensions\pill_master_renderer\pill_master_renderer\src\error.rs:103`
+Visibility: `crate` · Source: `extensions\pill_master_renderer\modules\runtime\gpu\src\error.rs:103`
 
 Records a lost device, so the frame path can report it.
 

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-4373"></a>
+<a id="rustdoc-item-4632"></a>
 
 # Function `pill_development_host::watchers::shader::cook_edited_shaders`
 
@@ -8,7 +8,7 @@
 pub(in watchers::shader) fn cook_edited_shaders(shaders_directory: &std::path::Path, edited_paths: &[std::path::PathBuf], known_outputs: &mut std::collections::HashMap<std::path::PathBuf, String>) -> Vec<CookedShader>;
 ```
 
-Visibility: `{'restricted': {'parent': 4305, 'path': '::watchers::shader'}}` · Source: `hosting\pill_development_host\src\watchers\shader.rs:201`
+Visibility: `{'restricted': {'parent': 4564, 'path': '::watchers::shader'}}` · Source: `hosting\pill_development_host\src\watchers\shader.rs:201`
 
 Cooks the tree after the edits in `edited_paths` settled, and returns every
 output whose text differs from `known_outputs`.

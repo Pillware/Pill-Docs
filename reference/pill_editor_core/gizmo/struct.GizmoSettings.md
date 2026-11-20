@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1832"></a>
+<a id="rustdoc-item-1879"></a>
 
 # Struct `pill_editor_core::gizmo::GizmoSettings`
 
@@ -8,7 +8,7 @@
 pub struct GizmoSettings;
 ```
 
-Source: `editor\pill_editor_core\src\gizmo.rs:317`
+Source: `editor\pill_editor_core\src\gizmo.rs:342`
 
 The tool's settings: what it edits, in which space, and how it snaps.
 
@@ -17,7 +17,7 @@ edited by hand and the panel and the file always show the same values.
 
 ## Fields
 
-<a id="rustdoc-item-3916"></a>
+<a id="rustdoc-item-4299"></a>
 
 ### `mode`
 
@@ -27,7 +27,7 @@ mode: GizmoMode
 
 The active mode.
 
-<a id="rustdoc-item-3917"></a>
+<a id="rustdoc-item-4114"></a>
 
 ### `space`
 
@@ -37,7 +37,7 @@ space: GizmoSpace
 
 Whether the handles align with the entity's own orientation.
 
-<a id="rustdoc-item-3918"></a>
+<a id="rustdoc-item-4300"></a>
 
 ### `snap`
 
@@ -47,7 +47,7 @@ snap: bool
 
 Whether dragging snaps.
 
-<a id="rustdoc-item-3919"></a>
+<a id="rustdoc-item-4301"></a>
 
 ### `translate_step`
 
@@ -57,7 +57,7 @@ translate_step: f32
 
 Translate snapping step, in world units.
 
-<a id="rustdoc-item-3920"></a>
+<a id="rustdoc-item-4302"></a>
 
 ### `rotate_step_degrees`
 
@@ -67,7 +67,7 @@ rotate_step_degrees: f32
 
 Rotate snapping step, in degrees.
 
-<a id="rustdoc-item-3921"></a>
+<a id="rustdoc-item-4303"></a>
 
 ### `scale_step`
 
@@ -79,7 +79,7 @@ Scale snapping step, as a factor increment.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-3922"></a>
+<a id="rustdoc-item-4304"></a>
 
 ### `step_for`
 

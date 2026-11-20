@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-3098"></a>
+<a id="rustdoc-item-3353"></a>
 
 # Struct `pill_development_host::native_library::UnresolvedImport`
 
@@ -8,14 +8,14 @@
 pub(in native_library) struct UnresolvedImport;
 ```
 
-Visibility: `{'restricted': {'parent': 3075, 'path': '::native_library'}}` · Source: `hosting\pill_development_host\src\native_library.rs:202`
+Visibility: `{'restricted': {'parent': 3326, 'path': '::native_library'}}` · Source: `hosting\pill_development_host\src\native_library.rs:276`
 
-A named import the module needs that a candidate copy of its DLL does
+A named import the module needs that a candidate copy of its library does
 not export, with the copy the loader would try first.
 
 ## Fields
 
-<a id="rustdoc-item-3095"></a>
+<a id="rustdoc-item-3350"></a>
 
 ### `dll`
 
@@ -23,9 +23,10 @@ not export, with the copy the loader would try first.
 dll: String
 ```
 
-The DLL as the import table names it.
+The library as the image names it: a PE import table's `pill_core.dll`,
+or an ELF `DT_NEEDED`'s `libpill_core.so`.
 
-<a id="rustdoc-item-3096"></a>
+<a id="rustdoc-item-3351"></a>
 
 ### `symbol`
 
@@ -35,7 +36,7 @@ symbol: String
 
 The symbol the module needs from it.
 
-<a id="rustdoc-item-3097"></a>
+<a id="rustdoc-item-3352"></a>
 
 ### `path`
 
@@ -43,7 +44,7 @@ The symbol the module needs from it.
 path: std::path::PathBuf
 ```
 
-The copy the loader would resolve for that DLL, when any exists.
+The copy the loader would resolve for that library, when any exists.
 
 ## Trait implementations
 

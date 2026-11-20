@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-2120"></a>
+<a id="rustdoc-item-2130"></a>
 
 # Macro `pill_core::profile_secondary_frame_mark`
 

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-528"></a>
+<a id="rustdoc-item-682"></a>
 
 # Function `pill_engine::hot_patch::install_plain_function`
 
@@ -14,7 +14,7 @@ Redirects every call to one `#[pill_hot_fn]` this artifact declares.
 
 `address` is the replacement to call, and `signature` is the replacement's
 signature text, which must match the text recorded at build time. A
-replacement is called through the slot until [`reset_plain_function`](fn.reset_plain_function.md#rustdoc-item-524)
+replacement is called through the slot until [`reset_plain_function`](fn.reset_plain_function.md#rustdoc-item-678)
 empties it.
 
 ## Errors

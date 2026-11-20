@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-4309"></a>
+<a id="rustdoc-item-4568"></a>
 
 # Struct `pill_development_host::watchers::shader::CookedShader`
 
@@ -14,7 +14,7 @@ One re-cooked WGSL file, waiting for the main thread.
 
 ## Fields
 
-<a id="rustdoc-item-4306"></a>
+<a id="rustdoc-item-4565"></a>
 
 ### `source_relative_path`
 
@@ -27,7 +27,7 @@ The source relative to the watched tree, using `/` as the separator.
 The shader asset's import reads the file beside this one, so a project
 shader is reimported by this path.
 
-<a id="rustdoc-item-4307"></a>
+<a id="rustdoc-item-4566"></a>
 
 ### `relative_path`
 
@@ -38,7 +38,7 @@ relative_path: String
 The file relative to the watched `shader_sources/` tree, using `/` as
 the separator.
 
-<a id="rustdoc-item-4308"></a>
+<a id="rustdoc-item-4567"></a>
 
 ### `wgsl`
 

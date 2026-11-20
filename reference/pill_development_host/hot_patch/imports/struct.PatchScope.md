@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-2045"></a>
+<a id="rustdoc-item-2119"></a>
 
 # Struct `pill_development_host::hot_patch::imports::PatchScope`
 
@@ -8,13 +8,13 @@
 pub(in hot_patch) struct PatchScope<'a>;
 ```
 
-Visibility: `{'restricted': {'parent': 1968, 'path': '::hot_patch'}}` · Source: `hosting\pill_development_host\src\hot_patch\imports.rs:38`
+Visibility: `{'restricted': {'parent': 2042, 'path': '::hot_patch'}}` · Source: `hosting\pill_development_host\src\hot_patch\imports.rs:38`
 
 The module context one generated patch is rooted in.
 
 ## Fields
 
-<a id="rustdoc-item-2041"></a>
+<a id="rustdoc-item-2115"></a>
 
 ### `package`
 
@@ -24,7 +24,7 @@ package: &'a str
 
 The patched package, which takes the place of `crate`.
 
-<a id="rustdoc-item-2042"></a>
+<a id="rustdoc-item-2116"></a>
 
 ### `source_root`
 
@@ -34,7 +34,7 @@ source_root: &'a std::path::Path
 
 The patched crate's source directory, where its modules' files live.
 
-<a id="rustdoc-item-2043"></a>
+<a id="rustdoc-item-2117"></a>
 
 ### `crate_root`
 
@@ -45,7 +45,7 @@ crate_root: &'a std::path::Path
 The patched crate's root file, whose public names the generated
 `use <package>::*` already reaches.
 
-<a id="rustdoc-item-2044"></a>
+<a id="rustdoc-item-2118"></a>
 
 ### `module_path`
 
@@ -57,7 +57,7 @@ The changed file's module path, the package first.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-2046"></a>
+<a id="rustdoc-item-2120"></a>
 
 ### `imports_for`
 
@@ -71,7 +71,7 @@ public items the body names, then the file's imports the body can name.
 A glob is kept whatever the body says, because the names it brings in
 cannot be listed here.
 
-<a id="rustdoc-item-2047"></a>
+<a id="rustdoc-item-2121"></a>
 
 ### `own_items_used_by`
 
@@ -85,7 +85,7 @@ the crate root does not provide.
 The crate root contributes nothing here: the generated source already
 imports the package, so its own public items are in scope.
 
-<a id="rustdoc-item-2049"></a>
+<a id="rustdoc-item-2123"></a>
 
 ### `rooted`
 
@@ -97,7 +97,7 @@ The statement with its first path segment rewritten so the patch crate
 resolves it, or the statement unchanged when it already names a crate
 the patch links.
 
-<a id="rustdoc-item-2050"></a>
+<a id="rustdoc-item-2124"></a>
 
 ### `declares_module`
 

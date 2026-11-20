@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-2830"></a>
+<a id="rustdoc-item-2964"></a>
 
 # Struct `pill_editor_core::editor_state::RegisteredComponent`
 
@@ -8,13 +8,13 @@
 pub struct RegisteredComponent;
 ```
 
-Source: `editor\pill_editor_core\src\editor_state\mod.rs:157`
+Source: `editor\pill_editor_core\src\editor_state\mod.rs:199`
 
 One entry of the Inspector's "add component" picker.
 
 ## Fields
 
-<a id="rustdoc-item-2828"></a>
+<a id="rustdoc-item-2962"></a>
 
 ### `type_name`
 
@@ -24,7 +24,7 @@ type_name: String
 
 Registered type name (the stable cross-reload key).
 
-<a id="rustdoc-item-2829"></a>
+<a id="rustdoc-item-2963"></a>
 
 ### `addable`
 

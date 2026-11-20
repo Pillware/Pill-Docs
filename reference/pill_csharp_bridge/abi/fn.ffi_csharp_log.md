@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-353"></a>
+<a id="rustdoc-item-356"></a>
 
 # Function `pill_csharp_bridge::abi::ffi_csharp_log`
 

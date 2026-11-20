@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-5115"></a>
+<a id="rustdoc-item-7078"></a>
 
 # Function `pill_editor_core::inspector::parse_settings_key_path`
 
@@ -8,7 +8,7 @@
 pub fn parse_settings_key_path(text: &str) -> Result<Vec<SettingsKey>, String>;
 ```
 
-Source: `editor\pill_editor_core\src\inspector.rs:1606`
+Source: `editor\pill_editor_core\src\inspector.rs:1641`
 
 Parse a settings key path: dotted object keys with `[i]` array indexes,
 like `waves[0].amplitude`.

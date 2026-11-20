@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-205"></a>
+<a id="rustdoc-item-212"></a>
 
 # Enum `pill_core::error::host::ConfigError`
 
@@ -293,6 +293,39 @@ host implements.
 
 <a id="rustdoc-item-201"></a>
 
+### `EditorCrateNameMismatch`
+
+```rust
+EditorCrateNameMismatch
+```
+
+An editor crate's package name does not end in `_editor`, so nothing
+else could tell it apart from a runtime crate.
+
+<a id="rustdoc-item-203"></a>
+
+### `RuntimeCrateNameMismatch`
+
+```rust
+RuntimeCrateNameMismatch
+```
+
+A runtime crate's package name ends in `_editor`, which marks a crate an
+editor host loads and no game build links.
+
+<a id="rustdoc-item-206"></a>
+
+### `ExtensionFolderNameMismatch`
+
+```rust
+ExtensionFolderNameMismatch
+```
+
+An extension crate's package name does not spell the folder that holds
+it, so a path no longer names the crate it holds.
+
+<a id="rustdoc-item-208"></a>
+
 ### `ExtensionDirectoryMissing`
 
 ```rust
@@ -301,7 +334,7 @@ ExtensionDirectoryMissing
 
 No extension folder holds the configured extension crate.
 
-<a id="rustdoc-item-204"></a>
+<a id="rustdoc-item-211"></a>
 
 ### `AssetPackInvalid`
 

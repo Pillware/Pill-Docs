@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-2674"></a>
+<a id="rustdoc-item-2748"></a>
 
 # Struct `pill_development_host::extension::slot::ExtensionSlot`
 
@@ -14,7 +14,7 @@ One loaded extension module, with the state a reload needs.
 
 ## Fields
 
-<a id="rustdoc-item-2657"></a>
+<a id="rustdoc-item-2731"></a>
 
 ### `extension_config`
 
@@ -24,7 +24,7 @@ extension_config: crate::ExtensionConfig
 
 The module's configuration: how it is built, watched and loaded.
 
-<a id="rustdoc-item-2659"></a>
+<a id="rustdoc-item-2733"></a>
 
 ### `system_owner`
 
@@ -34,7 +34,7 @@ system_owner: pill_engine::SystemOwner
 
 The owner tag applied to every system this module registers.
 
-<a id="rustdoc-item-2661"></a>
+<a id="rustdoc-item-2735"></a>
 
 ### `current_library`
 
@@ -44,7 +44,7 @@ current_library: crate::native_library::NativeLibrary
 
 The library of the generation that is loaded now.
 
-<a id="rustdoc-item-2662"></a>
+<a id="rustdoc-item-2736"></a>
 
 ### `retired_libraries`
 
@@ -55,7 +55,7 @@ retired_libraries: Vec<crate::native_library::NativeLibrary>
 The retired libraries, kept mapped because engine-owned pointers and
 vtables may still refer to their code.
 
-<a id="rustdoc-item-2664"></a>
+<a id="rustdoc-item-2738"></a>
 
 ### `source_edit_generation`
 
@@ -64,11 +64,11 @@ source_edit_generation: std::sync::Arc<std::sync::atomic::AtomicU64>
 ```
 
 The watcher adds one when this module's sources change, and
-[`Self::request_reload`](#rustdoc-item-2663) adds one to fake a save. Only the watcher
+[`Self::request_reload`](#rustdoc-item-2737) adds one to fake a save. Only the watcher
 is a real producer, so the counter never mixes a source save with a
 rebuild the reload pipeline queues for another reason.
 
-<a id="rustdoc-item-2665"></a>
+<a id="rustdoc-item-2739"></a>
 
 ### `last_processed_source_edit_generation`
 
@@ -78,7 +78,7 @@ last_processed_source_edit_generation: u64
 
 The last generation the reload pass acted on.
 
-<a id="rustdoc-item-2666"></a>
+<a id="rustdoc-item-2740"></a>
 
 ### `cascade_reload_queued`
 
@@ -91,7 +91,7 @@ editor crate's, after a runtime crate in its folder reloaded. It is
 a flag of its own, not part of the watcher's counter, so a fast-path
 patch of a source edit cannot consume it by accident.
 
-<a id="rustdoc-item-2667"></a>
+<a id="rustdoc-item-2741"></a>
 
 ### `registered_type_names`
 
@@ -102,7 +102,7 @@ registered_type_names: Vec<String>
 The persistable component type names the last `init` registered,
 used to detect types the next generation forgets to re-register.
 
-<a id="rustdoc-item-2668"></a>
+<a id="rustdoc-item-2742"></a>
 
 ### `registered_schema_hashes`
 
@@ -114,7 +114,7 @@ The schema hash of each of those types, as the last `init` declared
 it. Comparing them with the world's current hashes finds the types
 whose layout another module's reload has replaced since.
 
-<a id="rustdoc-item-2669"></a>
+<a id="rustdoc-item-2743"></a>
 
 ### `registered_resource_ids`
 
@@ -126,7 +126,7 @@ The resource ids the last `init` registered. They let the reload
 drop a resource this module stops owning while the image that
 created it is still mapped.
 
-<a id="rustdoc-item-2671"></a>
+<a id="rustdoc-item-2745"></a>
 
 ### `exposed_component_names`
 
@@ -139,7 +139,7 @@ Every component type name, plain or persistable, that the last
 components from this list, and the renderer's capability check uses
 it to name the components the active renderer does not draw.
 
-<a id="rustdoc-item-2672"></a>
+<a id="rustdoc-item-2746"></a>
 
 ### `graveyard_policy`
 
@@ -151,7 +151,7 @@ Whether this module's retired generations may be unmapped.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-2676"></a>
+<a id="rustdoc-item-2750"></a>
 
 ### `start`
 
@@ -172,7 +172,7 @@ loaded, reports a missing or incompatible ABI revision, returns a
 non-zero status from `init`, or registers data that the first-load
 failure policy forbids.
 
-<a id="rustdoc-item-2680"></a>
+<a id="rustdoc-item-2754"></a>
 
 ### `keep_every_generation`
 
@@ -183,9 +183,9 @@ pub(crate) fn keep_every_generation(self: &mut Self);
 Never unmap this module's retired generations.
 
 Use it for a module whose images leave behind state that the reload
-transaction cannot track; see [`crate::reload::GraveyardPolicy::KeepAll`](../../reload/enum.GraveyardPolicy.md#rustdoc-item-2679).
+transaction cannot track; see [`crate::reload::GraveyardPolicy::KeepAll`](../../reload/enum.GraveyardPolicy.md#rustdoc-item-2753).
 
-<a id="rustdoc-item-2681"></a>
+<a id="rustdoc-item-2755"></a>
 
 ### `has_pending_reload`
 
@@ -199,7 +199,7 @@ The caller asks this before it gathers the peer declaration set, so
 the per-frame reload pass allocates nothing for modules that have no
 pending change.
 
-<a id="rustdoc-item-2685"></a>
+<a id="rustdoc-item-2759"></a>
 
 ### `reload_if_changed`
 
@@ -210,16 +210,16 @@ pub(crate) fn reload_if_changed(self: &mut Self, engine: &mut Engine, engine_api
 Reloads this module when a source edit or a queued cascade reload is
 pending.
 
-Returns [`ReloadOutcome::Reloaded`](enum.ReloadOutcome.md#rustdoc-item-2682) when a new generation replaced
-the current one, [`ReloadOutcome::Failed`](enum.ReloadOutcome.md#rustdoc-item-2683) when an attempt was made
+Returns [`ReloadOutcome::Reloaded`](enum.ReloadOutcome.md#rustdoc-item-2756) when a new generation replaced
+the current one, [`ReloadOutcome::Failed`](enum.ReloadOutcome.md#rustdoc-item-2757) when an attempt was made
 and the previous generation was kept, and
-[`ReloadOutcome::Unchanged`](enum.ReloadOutcome.md#rustdoc-item-2684) when nothing was pending. The caller
+[`ReloadOutcome::Unchanged`](enum.ReloadOutcome.md#rustdoc-item-2758) when nothing was pending. The caller
 decides what to do from the outcome: a failed attempt leaves every
 patch, baseline and record of the current generation in place.
 Every module has its own counter, so this never rebuilds another
 module or the project.
 
-<a id="rustdoc-item-2687"></a>
+<a id="rustdoc-item-2761"></a>
 
 ### `reload_if_changed_with`
 
@@ -227,7 +227,7 @@ module or the project.
 pub(crate) fn reload_if_changed_with(self: &mut Self, engine: &mut Engine, engine_api: &EngineApi, workspace_root: &Path, peer_component_names: &[String], on_before_commit: &mut dyn FnMut()) -> ReloadOutcome;
 ```
 
-Same as [`Self::reload_if_changed`](#rustdoc-item-2685), but runs `on_before_commit` once
+Same as [`Self::reload_if_changed`](#rustdoc-item-2759), but runs `on_before_commit` once
 the replacement has built, loaded and passed the ABI check, just
 before it is swapped in. It does not run at all when an earlier step
 refuses the replacement.
@@ -240,7 +240,7 @@ renderer module's GPU backend.
 subjects declare. A type that only they name is not this module's to
 drop when the new generation forgets it.
 
-<a id="rustdoc-item-2688"></a>
+<a id="rustdoc-item-2762"></a>
 
 ### `name`
 
@@ -251,7 +251,7 @@ pub(crate) fn name(self: &Self) -> &str;
 The crate name of this module. It is the field the log lines carry
 and the key callers use to find a module.
 
-<a id="rustdoc-item-2689"></a>
+<a id="rustdoc-item-2763"></a>
 
 ### `folder`
 
@@ -261,7 +261,7 @@ pub(crate) fn folder(self: &Self) -> &str;
 
 The extension folder holding this module's crate.
 
-<a id="rustdoc-item-2690"></a>
+<a id="rustdoc-item-2764"></a>
 
 ### `is_editor_crate`
 
@@ -271,7 +271,7 @@ pub(crate) fn is_editor_crate(self: &Self) -> bool;
 
 Whether this module is its folder's editor crate.
 
-<a id="rustdoc-item-2691"></a>
+<a id="rustdoc-item-2765"></a>
 
 ### `queue_cascade_reload`
 
@@ -283,7 +283,7 @@ Rebuilds and reloads this module on the next reload pass, although
 its own sources did not change. An editor crate links its folder's
 runtime crates, so it is out of date once one of them reloads.
 
-<a id="rustdoc-item-2663"></a>
+<a id="rustdoc-item-2737"></a>
 
 ### `request_reload`
 
@@ -295,7 +295,7 @@ Forces a full rebuild and reload on the next pass, as if a source
 save had arrived. The editor's safe-mode Retry rebuilds a loaded
 shell module this way.
 
-<a id="rustdoc-item-2692"></a>
+<a id="rustdoc-item-2766"></a>
 
 ### `crate_directory`
 
@@ -306,7 +306,7 @@ pub(crate) fn crate_directory(self: &Self) -> &Path;
 The module's crate directory, relative to the workspace root. It is
 the parent of the source directory the watcher watches.
 
-<a id="rustdoc-item-2694"></a>
+<a id="rustdoc-item-2768"></a>
 
 ### `pending_reload_generation`
 
@@ -318,12 +318,12 @@ The generation the watcher has signalled but nothing has handled
 yet, if any.
 
 The per-function fast path uses it to look at a pending change
-before [`Self::reload_if_changed`](#rustdoc-item-2685) turns the change into a full
+before [`Self::reload_if_changed`](#rustdoc-item-2759) turns the change into a full
 rebuild. It returns the generation itself rather than a flag, so the
 caller can pass the exact generation it handled to
-[`Self::consume_pending_reload`](#rustdoc-item-2693).
+[`Self::consume_pending_reload`](#rustdoc-item-2767).
 
-<a id="rustdoc-item-2693"></a>
+<a id="rustdoc-item-2767"></a>
 
 ### `consume_pending_reload`
 
@@ -337,13 +337,13 @@ Call this only when a patch has already delivered that edit; the
 reload it would otherwise cause has nothing left to do.
 
 It takes the generation the caller acted on instead of reading a
-fresh one, for the same reason [`Self::reload_if_changed`](#rustdoc-item-2685) records
+fresh one, for the same reason [`Self::reload_if_changed`](#rustdoc-item-2759) records
 its baseline: a save that arrives while the patch is compiling moves
 the counter past that generation, and nothing has delivered that
 save. Recording it as handled would leave the edit on disk, never
 compiled.
 
-<a id="rustdoc-item-2695"></a>
+<a id="rustdoc-item-2769"></a>
 
 ### `current_library`
 
@@ -355,7 +355,7 @@ The library of the generation that is loaded now. It is a patch
 target, and the renderer module resolves its attach and detach
 exports from it.
 
-<a id="rustdoc-item-2696"></a>
+<a id="rustdoc-item-2770"></a>
 
 ### `export_address`
 
@@ -371,7 +371,7 @@ The address is valid only while this generation stays current, so
 callers look it up again after every reload instead of keeping it
 across one.
 
-<a id="rustdoc-item-2699"></a>
+<a id="rustdoc-item-2773"></a>
 
 ### `stale_components`
 
@@ -381,9 +381,9 @@ pub(crate) fn stale_components(self: &Self, world: &pill_engine::World) -> Vec<S
 
 The persistable components this module registered whose layout
 another module's reload has replaced since. The list is empty while
-this generation is current. See [`crate::reload::stale_components`](../../reload/fn.stale_components.md#rustdoc-item-2698).
+this generation is current. See [`crate::reload::stale_components`](../../reload/fn.stale_components.md#rustdoc-item-2772).
 
-<a id="rustdoc-item-2701"></a>
+<a id="rustdoc-item-2775"></a>
 
 ### `owner`
 
@@ -393,7 +393,7 @@ pub(crate) fn owner(self: &Self) -> SystemOwner;
 
 The owner tag this module's systems are registered under.
 
-<a id="rustdoc-item-2702"></a>
+<a id="rustdoc-item-2776"></a>
 
 ### `exposed_component_names`
 
@@ -404,7 +404,7 @@ pub(crate) fn exposed_component_names(self: &Self) -> &[String];
 Every component type name the current generation registered, for
 the C# mirror codegen and the renderer's capability check.
 
-<a id="rustdoc-item-2703"></a>
+<a id="rustdoc-item-2777"></a>
 
 ### `value_type_descriptors`
 
@@ -422,7 +422,7 @@ can depend on another extension), and those belong to the module that
 owns them. Emitting them here would add a second C# type with the
 same name to the owner's generated file.
 
-<a id="rustdoc-item-2704"></a>
+<a id="rustdoc-item-2778"></a>
 
 ### `mirror_methods`
 
@@ -435,13 +435,13 @@ with the resolved address of its C-ABI trampoline. The C# codegen
 and the managed runtime's method table use them.
 
 Filtered to this module's own declarations for the same reason as
-[`Self::value_type_descriptors`](#rustdoc-item-2703). The managed table is keyed by the
+[`Self::value_type_descriptors`](#rustdoc-item-2777). The managed table is keyed by the
 declaring names, and a linked dependency's copy of the same
 trampoline would hide the owner's address. A patch reaches the
 owner's copy, so a managed call through that address would run stale
 code.
 
-<a id="rustdoc-item-2705"></a>
+<a id="rustdoc-item-2779"></a>
 
 ### `field_accessors`
 
@@ -453,7 +453,7 @@ The heap-field accessors of the current generation, each with the
 resolved addresses of the trampolines for its operations. The C#
 mirror codegen and the managed runtime's method table use them.
 
-<a id="rustdoc-item-2706"></a>
+<a id="rustdoc-item-2780"></a>
 
 ### `reload`
 
@@ -464,9 +464,9 @@ pub(in extension::slot) fn reload(self: &mut Self, engine: &mut Engine, engine_a
 Rebuilds and swaps one generation, and keeps the previous one on any
 failure.
 
-Returns [`ReloadOutcome::Reloaded`](enum.ReloadOutcome.md#rustdoc-item-2682) when the swap happened. Every
+Returns [`ReloadOutcome::Reloaded`](enum.ReloadOutcome.md#rustdoc-item-2756) when the swap happened. Every
 refusal on the way - build, load, ABI check or a rolled-back init -
-returns [`ReloadOutcome::Failed`](enum.ReloadOutcome.md#rustdoc-item-2683) with the generation, so the caller
+returns [`ReloadOutcome::Failed`](enum.ReloadOutcome.md#rustdoc-item-2757) with the generation, so the caller
 can skip the bookkeeping that only a replaced image justifies and
 still log which edit was lost.
 

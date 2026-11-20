@@ -8,13 +8,13 @@
 pub struct ShellBadge;
 ```
 
-Source: `editor\pill_editor_core\src\boundary.rs:110`
+Source: `editor\pill_editor_core\src\boundary.rs:116`
 
 One entity's badge in one scene view.
 
 ## Fields
 
-<a id="rustdoc-item-242"></a>
+<a id="rustdoc-item-246"></a>
 
 ### `view`
 
@@ -24,7 +24,7 @@ view: usize
 
 The scene view the badge belongs to, as a view index.
 
-<a id="rustdoc-item-243"></a>
+<a id="rustdoc-item-247"></a>
 
 ### `x`
 
@@ -35,7 +35,7 @@ x: f32
 Where the entity projects to along x, in the main window's logical
 points.
 
-<a id="rustdoc-item-244"></a>
+<a id="rustdoc-item-248"></a>
 
 ### `y`
 
@@ -46,7 +46,7 @@ y: f32
 Where the entity projects to along y, in the main window's logical
 points.
 
-<a id="rustdoc-item-245"></a>
+<a id="rustdoc-item-249"></a>
 
 ### `entity`
 

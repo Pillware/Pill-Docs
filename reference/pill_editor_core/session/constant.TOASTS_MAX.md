@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-7225"></a>
+<a id="rustdoc-item-9283"></a>
 
 # Constant `pill_editor_core::session::TOASTS_MAX`
 

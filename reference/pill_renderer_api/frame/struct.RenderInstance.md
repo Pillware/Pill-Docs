@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-686"></a>
+<a id="rustdoc-item-755"></a>
 
 # Struct `pill_renderer_api::frame::RenderInstance`
 
@@ -19,7 +19,7 @@ draw.
 
 ## Fields
 
-<a id="rustdoc-item-679"></a>
+<a id="rustdoc-item-748"></a>
 
 ### `entity`
 
@@ -30,7 +30,7 @@ entity: pill_engine::Entity
 The entity this instance belongs to, which is what outlining and picking
 address.
 
-<a id="rustdoc-item-681"></a>
+<a id="rustdoc-item-750"></a>
 
 ### `transform`
 
@@ -40,7 +40,7 @@ transform: pill_engine::common_components::TransformComponent
 
 World transform the instance is drawn at.
 
-<a id="rustdoc-item-683"></a>
+<a id="rustdoc-item-752"></a>
 
 ### `mesh`
 
@@ -50,7 +50,7 @@ mesh: AssetKey
 
 Key of the mesh to draw.
 
-<a id="rustdoc-item-684"></a>
+<a id="rustdoc-item-753"></a>
 
 ### `material`
 
@@ -60,7 +60,7 @@ material: AssetKey
 
 Key of the material to draw it with.
 
-<a id="rustdoc-item-685"></a>
+<a id="rustdoc-item-754"></a>
 
 ### `rendering_order`
 
@@ -83,14 +83,14 @@ each one.
 - `TryFrom<U>`
 - `Any`
 - `ToOwned`
+- `CastableFrom<ST, Uninit, Uninit>`
+- `CastableFrom<ST, Initialized, Initialized>`
+- `Read<Exclusive, BecauseExclusive>`
 - `Instrument`
 - `WithSubscriber`
 - `IntoEither`
 - `Pointable`
 - `OwoColorize`
 - `ErasedDestructor`
-- `CastableFrom<ST, Uninit, Uninit>`
-- `CastableFrom<ST, Initialized, Initialized>`
-- `Read<Exclusive, BecauseExclusive>`
 - `Clone`
 - `Debug`

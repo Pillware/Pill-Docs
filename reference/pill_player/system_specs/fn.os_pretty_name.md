@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-743"></a>
+<a id="rustdoc-item-748"></a>
 
 # Function `pill_player::system_specs::os_pretty_name`
 
@@ -8,7 +8,7 @@
 pub(in system_specs) fn os_pretty_name() -> String;
 ```
 
-Visibility: `{'restricted': {'parent': 737, 'path': '::system_specs'}}` · Source: `hosting\pill_player\src\system_specs.rs:185`
+Visibility: `{'restricted': {'parent': 742, 'path': '::system_specs'}}` · Source: `hosting\pill_player\src\system_specs.rs:185`
 
 Returns the OS name and version with the build architecture.
 

@@ -30,7 +30,7 @@ queue.
 ## Design
 
 The dialogs are egui windows drawn by the shell. File edits are
-[`EditorCommand`](../editor_state/command/enum.EditorCommand.md#rustdoc-item-1112)'s asset commands: this module
+[`EditorCommand`](../editor_state/command/enum.EditorCommand.md#rustdoc-item-1157)'s asset commands: this module
 queues them in [`PendingEditorCommands`], and the frame boundary applies
 them and records them in the undo history. Nothing here changes the world
 directly. A reveal is the only action that is not a command: it asks the

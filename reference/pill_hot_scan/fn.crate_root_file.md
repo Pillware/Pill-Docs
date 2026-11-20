@@ -8,7 +8,7 @@
 pub fn crate_root_file(manifest_directory: &std::path::Path) -> std::path::PathBuf;
 ```
 
-Source: `hosting\pill_hot_scan\src\lib.rs:1083`
+Source: `hosting\pill_hot_scan\src\lib.rs:1110`
 
 Absolute path of the file Cargo compiles as this crate's root.
 

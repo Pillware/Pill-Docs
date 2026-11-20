@@ -1,10 +1,10 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-4109"></a>
+<a id="rustdoc-item-2108"></a>
 
 # Module `pill_engine_core::dynamic_buffer`
 
-Source: `engine\pill_engine_core\src\lib.rs:131`
+Source: `engine\pill_engine_core\src\lib.rs:86`
 
 Engine-owned native dynamic buffer, re-exported from `pill_core`.
 

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-4194"></a>
+<a id="rustdoc-item-4451"></a>
 
 # Function `pill_development_host::runtime::fast_patching_allowed`
 
@@ -8,7 +8,7 @@
 pub(in runtime) fn fast_patching_allowed(host: &mut DevHost) -> bool;
 ```
 
-Visibility: `{'restricted': {'parent': 3859, 'path': '::runtime'}}` · Source: `hosting\pill_development_host\src\runtime.rs:2377`
+Visibility: `{'restricted': {'parent': 4115, 'path': '::runtime'}}` · Source: `hosting\pill_development_host\src\runtime.rs:2476`
 
 Whether the patch fast path may run for this edit.
 

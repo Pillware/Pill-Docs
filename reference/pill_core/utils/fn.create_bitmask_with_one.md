@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-2081"></a>
+<a id="rustdoc-item-2091"></a>
 
 # Function `pill_core::utils::create_bitmask_with_one`
 

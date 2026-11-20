@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1104"></a>
+<a id="rustdoc-item-1126"></a>
 
 # Function `pill_csharp_bridge::context::guard_managed_callback`
 

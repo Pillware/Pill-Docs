@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-161"></a>
+<a id="rustdoc-item-165"></a>
 
 # Module `pill_ui_theme::font`
 
@@ -34,7 +34,7 @@ from, so the asset stays valid after the module that loaded it is unloaded.
 
 ### Structs
 - [`FontAsset`](struct.FontAsset.md#rustdoc-item-5) — A font file a theme layer named, as its bytes.
-- [`FontImportSettings`](struct.FontImportSettings.md#rustdoc-item-108) — The import settings a font's `.meta` file holds.
+- [`FontImportSettings`](struct.FontImportSettings.md#rustdoc-item-111) — The import settings a font's `.meta` file holds.
 
 ### Constants
 - [`FONT_SHARED_NAME`](constant.FONT_SHARED_NAME.md#rustdoc-item-6) — The name [`FontAsset`] is registered under, the same in every binary.

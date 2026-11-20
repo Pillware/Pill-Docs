@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-394"></a>
+<a id="rustdoc-item-551"></a>
 
 # Struct `pill_physics::events::CollisionStopped`
 
@@ -8,13 +8,13 @@
 pub struct CollisionStopped;
 ```
 
-Source: `extensions\pill_physics\pill_physics\src\events.rs:38`
+Source: `extensions\pill_physics\modules\runtime\src\events.rs:38`
 
 Two entities stopped touching.
 
 ## Fields
 
-<a id="rustdoc-item-392"></a>
+<a id="rustdoc-item-549"></a>
 
 ### `entity_a`
 
@@ -24,7 +24,7 @@ entity_a: pill_engine::Entity
 
 The first of the two entities.
 
-<a id="rustdoc-item-393"></a>
+<a id="rustdoc-item-550"></a>
 
 ### `entity_b`
 
@@ -54,6 +54,7 @@ The second of the two entities.
 - `CastableFrom<ST, Uninit, Uninit>`
 - `CastableFrom<ST, Initialized, Initialized>`
 - `Read<Exclusive, BecauseExclusive>`
+- `Equivalent<K>`
 - `MaybeSync`
 - `SupersetOf<SS>`
 - `Scalar`
@@ -61,7 +62,6 @@ The second of the two entities.
 - `Downcast`
 - `DowncastSend`
 - `DowncastSync`
-- `Equivalent<K>`
 - `Debug`
 - `Clone`
 - `Copy`

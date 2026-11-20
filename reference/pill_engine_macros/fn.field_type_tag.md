@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-357"></a>
+<a id="rustdoc-item-381"></a>
 
 # Function `pill_engine_macros::field_type_tag`
 
@@ -8,7 +8,7 @@
 pub(crate) fn field_type_tag(field_type: &syn::Type, containers_allowed: bool) -> syn::Result<FieldTag>;
 ```
 
-Visibility: `crate` · Source: `engine\pill_engine_macros\src\lib.rs:1334`
+Visibility: `crate` · Source: `engine\pill_engine_macros\src\lib.rs:1707`
 
 Maps a Rust field type to the closed C#-mirror type-tag vocabulary.
 

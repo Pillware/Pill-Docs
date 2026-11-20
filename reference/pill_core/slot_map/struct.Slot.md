@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1492"></a>
+<a id="rustdoc-item-1502"></a>
 
 # Struct `pill_core::slot_map::Slot`
 
@@ -8,14 +8,14 @@
 pub(in slot_map) struct Slot<V>;
 ```
 
-Visibility: `{'restricted': {'parent': 1490, 'path': '::slot_map'}}` · Source: `engine\pill_core\src\slot_map.rs:130`
+Visibility: `{'restricted': {'parent': 1500, 'path': '::slot_map'}}` · Source: `engine\pill_core\src\slot_map.rs:130`
 
-One entry of a [`SlotMap`](struct.SlotMap.md#rustdoc-item-1487). It holds the slot's current version and the
+One entry of a [`SlotMap`](struct.SlotMap.md#rustdoc-item-1497). It holds the slot's current version and the
 value in it, if any.
 
 ## Fields
 
-<a id="rustdoc-item-1489"></a>
+<a id="rustdoc-item-1499"></a>
 
 ### `version`
 
@@ -25,7 +25,7 @@ version: std::num::NonZeroU32
 
 _No documentation provided._
 
-<a id="rustdoc-item-1491"></a>
+<a id="rustdoc-item-1501"></a>
 
 ### `value`
 

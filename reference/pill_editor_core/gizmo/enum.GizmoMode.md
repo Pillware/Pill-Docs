@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1738"></a>
+<a id="rustdoc-item-1784"></a>
 
 # Enum `pill_editor_core::gizmo::GizmoMode`
 
@@ -8,13 +8,13 @@
 pub enum GizmoMode { ... }
 ```
 
-Source: `editor\pill_editor_core\src\gizmo.rs:293`
+Source: `editor\pill_editor_core\src\gizmo.rs:306`
 
 Which transform a gizmo edits.
 
 ## Variants
 
-<a id="rustdoc-item-3825"></a>
+<a id="rustdoc-item-4205"></a>
 
 ### `Translate`
 
@@ -24,7 +24,7 @@ Translate
 
 Move the entity along one axis.
 
-<a id="rustdoc-item-3826"></a>
+<a id="rustdoc-item-4206"></a>
 
 ### `Rotate`
 
@@ -34,7 +34,7 @@ Rotate
 
 Turn the entity around one axis.
 
-<a id="rustdoc-item-3827"></a>
+<a id="rustdoc-item-4207"></a>
 
 ### `Scale`
 
@@ -77,3 +77,4 @@ Scale the entity along one axis.
 - `Eq`
 - `Serialize`
 - `Deserialize<'de>`
+- `From<GizmoMode>`

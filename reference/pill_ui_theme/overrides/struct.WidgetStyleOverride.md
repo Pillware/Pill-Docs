@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-575"></a>
+<a id="rustdoc-item-583"></a>
 
 # Struct `pill_ui_theme::overrides::WidgetStyleOverride`
 
@@ -8,13 +8,13 @@
 pub struct WidgetStyleOverride;
 ```
 
-Source: `ui\pill_ui_theme\src\overrides.rs:276`
+Source: `ui\pill_ui_theme\src\overrides.rs:280`
 
 One widget state's overridable fields.
 
 ## Fields
 
-<a id="rustdoc-item-619"></a>
+<a id="rustdoc-item-627"></a>
 
 ### `bg_fill`
 
@@ -24,7 +24,7 @@ bg_fill: Option<String>
 
 The fill for widgets that must have a background.
 
-<a id="rustdoc-item-620"></a>
+<a id="rustdoc-item-628"></a>
 
 ### `weak_bg_fill`
 
@@ -34,7 +34,7 @@ weak_bg_fill: Option<String>
 
 The fill for widgets that may have a background (buttons).
 
-<a id="rustdoc-item-621"></a>
+<a id="rustdoc-item-629"></a>
 
 ### `bg_stroke`
 
@@ -44,7 +44,7 @@ bg_stroke: Option<StrokeOverride>
 
 The outline around the widget.
 
-<a id="rustdoc-item-622"></a>
+<a id="rustdoc-item-630"></a>
 
 ### `fg_stroke`
 
@@ -54,7 +54,7 @@ fg_stroke: Option<StrokeOverride>
 
 The text and glyph colour.
 
-<a id="rustdoc-item-623"></a>
+<a id="rustdoc-item-631"></a>
 
 ### `corner_radius`
 
@@ -64,7 +64,7 @@ corner_radius: Option<u8>
 
 The corner radius in this state.
 
-<a id="rustdoc-item-624"></a>
+<a id="rustdoc-item-632"></a>
 
 ### `expansion`
 

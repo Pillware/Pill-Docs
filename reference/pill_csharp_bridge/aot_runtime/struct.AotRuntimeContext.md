@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-362"></a>
+<a id="rustdoc-item-365"></a>
 
 # Struct `pill_csharp_bridge::aot_runtime::AotRuntimeContext`
 
@@ -17,7 +17,7 @@ type; a development build never calls it.
 
 ## Fields
 
-<a id="rustdoc-item-359"></a>
+<a id="rustdoc-item-362"></a>
 
 ### `_library`
 
@@ -30,7 +30,7 @@ function pointer taken from it stays valid.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-365"></a>
+<a id="rustdoc-item-368"></a>
 
 ### `new`
 
@@ -45,7 +45,7 @@ Loads the AOT native library from disk.
 Returns [`CSharpError::AotLibraryNotFound`] when the file is absent,
 and [`CSharpError::AotLibraryLoadFailed`] when it cannot be mapped.
 
-<a id="rustdoc-item-369"></a>
+<a id="rustdoc-item-372"></a>
 
 ### `resolve_unmanaged_function_pointer`
 

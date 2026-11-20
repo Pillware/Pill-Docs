@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-402"></a>
+<a id="rustdoc-item-405"></a>
 
 # Constant `pill_csharp_bridge::backend::MAX_SYSTEMS_PER_ASSEMBLY`
 

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-848"></a>
+<a id="rustdoc-item-855"></a>
 
 # Function `pill_development_host::config::host_target_directory`
 
@@ -8,7 +8,7 @@
 pub(crate) fn host_target_directory() -> String;
 ```
 
-Visibility: `crate` · Source: `hosting\pill_development_host\src\config.rs:1486`
+Visibility: `crate` · Source: `hosting\pill_development_host\src\config.rs:1693`
 
 Workspace-relative directory cargo wrote this host's profile into.
 

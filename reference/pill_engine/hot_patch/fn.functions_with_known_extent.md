@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-571"></a>
+<a id="rustdoc-item-725"></a>
 
 # Function `pill_engine::hot_patch::functions_with_known_extent`
 

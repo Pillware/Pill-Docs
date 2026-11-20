@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-778"></a>
+<a id="rustdoc-item-787"></a>
 
 # Module `pill_ui_theme::register`
 
@@ -12,12 +12,12 @@ Registration, path scopes and the loaders.
 
 ## Responsibilities
 
-- [`register()`](fn.register.md#rustdoc-item-774): declares the `.theme` standalone asset and the font asset
+- [`register()`](fn.register.md#rustdoc-item-783): declares the `.theme` standalone asset and the font asset
   on a world.
-- [`ThemePathScope`](enum.ThemePathScope.md#rustdoc-item-709): the game/editor path rule. A game never loads editor
+- [`ThemePathScope`](enum.ThemePathScope.md#rustdoc-item-717): the game/editor path rule. A game never loads editor
   content, and an editor layer only loads from `editor/`.
-- [`load_overrides`](fn.load_overrides.md#rustdoc-item-776): imports a `.theme` file and returns its handle.
-- [`load_font`](fn.load_font.md#rustdoc-item-777): imports the font a theme layer named and returns its
+- [`load_overrides`](fn.load_overrides.md#rustdoc-item-785): imports a `.theme` file and returns its handle.
+- [`load_font`](fn.load_font.md#rustdoc-item-786): imports the font a theme layer named and returns its
   handle with the store's content version, which a caller compares to
   notice an edited file.
 
@@ -32,12 +32,12 @@ resolves it.
 ## Module contents
 
 ### Structs
-- [`LoadedFont`](struct.LoadedFont.md#rustdoc-item-750) — A font a theme layer named, loaded.
+- [`LoadedFont`](struct.LoadedFont.md#rustdoc-item-759) — A font a theme layer named, loaded.
 
 ### Enums
-- [`ThemePathScope`](enum.ThemePathScope.md#rustdoc-item-709) — Which part of a project's `res` a theme path may name.
+- [`ThemePathScope`](enum.ThemePathScope.md#rustdoc-item-717) — Which part of a project's `res` a theme path may name.
 
 ### Functions
-- [`load_font`](fn.load_font.md#rustdoc-item-777) — Import the font a theme layer named and return its handle.
-- [`load_overrides`](fn.load_overrides.md#rustdoc-item-776) — Import the `.theme` file at `path` and return its handle.
-- [`register`](fn.register.md#rustdoc-item-774) — Declare the `.theme` standalone asset and the font asset on `world`.
+- [`load_font`](fn.load_font.md#rustdoc-item-786) — Import the font a theme layer named and return its handle.
+- [`load_overrides`](fn.load_overrides.md#rustdoc-item-785) — Import the `.theme` file at `path` and return its handle.
+- [`register`](fn.register.md#rustdoc-item-783) — Declare the `.theme` standalone asset and the font asset on `world`.

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1473"></a>
+<a id="rustdoc-item-1570"></a>
 
 # Function `pill_master_renderer_data::config::pbr_pipeline::neutral_parameters`
 
@@ -8,7 +8,7 @@
 pub fn neutral_parameters() -> std::collections::BTreeMap<String, pill_renderer_api::frame::MaterialParameter>;
 ```
 
-Source: `extensions\pill_master_renderer\pill_master_renderer_data\src\config\pbr_pipeline\mod.rs:115`
+Source: `extensions\pill_master_renderer\modules\runtime\data\src\config\pbr_pipeline\mod.rs:115`
 
 The PBR shader's parameters at their neutral values, by slot name.
 

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1740"></a>
+<a id="rustdoc-item-1764"></a>
 
 # Function `pill_csharp_bridge::mirror_calls::statically_linked_mirror_methods`
 

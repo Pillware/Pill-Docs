@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1882"></a>
+<a id="rustdoc-item-1907"></a>
 
 # Function `pill_csharp_bridge::queries::ffi_entity_count_guarded`
 
@@ -8,7 +8,7 @@
 pub(in queries) fn ffi_entity_count_guarded(count_output: *mut u32) -> u8;
 ```
 
-Visibility: `{'restricted': {'parent': 1872, 'path': '::queries'}}` · Source: `csharp\pill_csharp_bridge\src\queries.rs:480`
+Visibility: `{'restricted': {'parent': 1897, 'path': '::queries'}}` · Source: `csharp\pill_csharp_bridge\src\queries.rs:480`
 
 Write the current entity count while a managed system is active.
 

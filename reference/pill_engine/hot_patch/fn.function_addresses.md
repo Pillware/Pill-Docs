@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-570"></a>
+<a id="rustdoc-item-724"></a>
 
 # Function `pill_engine::hot_patch::function_addresses`
 

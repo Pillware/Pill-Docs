@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-4621"></a>
+<a id="rustdoc-item-6582"></a>
 
 # Constant `pill_editor_core::inspector::VECTOR_AXES`
 

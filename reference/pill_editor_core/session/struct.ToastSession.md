@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-7245"></a>
+<a id="rustdoc-item-9303"></a>
 
 # Struct `pill_editor_core::session::ToastSession`
 
@@ -8,13 +8,13 @@
 pub struct ToastSession;
 ```
 
-Source: `editor\pill_editor_core\src\session.rs:465`
+Source: `editor\pill_editor_core\src\session.rs:472`
 
 The toast stack's session state.
 
 ## Fields
 
-<a id="rustdoc-item-7697"></a>
+<a id="rustdoc-item-9759"></a>
 
 ### `toasts`
 
@@ -24,7 +24,7 @@ toasts: std::collections::VecDeque<Toast>
 
 The live toasts, oldest first.
 
-<a id="rustdoc-item-7698"></a>
+<a id="rustdoc-item-9760"></a>
 
 ### `last_seq`
 
@@ -34,7 +34,7 @@ last_seq: Option<u64>
 
 The newest notice id already queued; `None` until the first event.
 
-<a id="rustdoc-item-7699"></a>
+<a id="rustdoc-item-9761"></a>
 
 ### `logged`
 
@@ -45,7 +45,7 @@ logged: Vec<u64>
 The ids whose log line already went out, so a redrawn toast does not
 flood the log.
 
-<a id="rustdoc-item-7701"></a>
+<a id="rustdoc-item-9763"></a>
 
 ### `local_toast_count`
 
@@ -54,12 +54,12 @@ local_toast_count: u64
 ```
 
 How many toasts the shell queued itself, counted up from
-[`ToastSession::LOCAL_SEQ_BASE`](#rustdoc-item-7700) so a local toast can never collide
+[`ToastSession::LOCAL_SEQ_BASE`](#rustdoc-item-9762) so a local toast can never collide
 with a host notice's id.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-7700"></a>
+<a id="rustdoc-item-9762"></a>
 
 ### `LOCAL_SEQ_BASE`
 
@@ -70,7 +70,7 @@ const LOCAL_SEQ_BASE: u64 = _;
 The first id the shell's own toasts take, far above the host's notice
 ids so the two can never collide.
 
-<a id="rustdoc-item-7702"></a>
+<a id="rustdoc-item-9764"></a>
 
 ### `push_local`
 

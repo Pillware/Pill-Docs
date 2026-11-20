@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-2504"></a>
+<a id="rustdoc-item-2544"></a>
 
 # Struct `pill_master_renderer::resources::renderer_mesh::RendererMesh`
 
@@ -8,7 +8,7 @@
 pub struct RendererMesh;
 ```
 
-Source: `extensions\pill_master_renderer\pill_master_renderer\src\resources\renderer_mesh.rs:70`
+Source: `extensions\pill_master_renderer\modules\runtime\gpu\src\resources\renderer_mesh.rs:70`
 
 One mesh's GPU buffers: the vertex data and the index list that draws it.
 
@@ -19,7 +19,7 @@ so a rebuilt mesh is used without invalidating any pipeline.
 
 ## Fields
 
-<a id="rustdoc-item-2507"></a>
+<a id="rustdoc-item-2547"></a>
 
 ### `name`
 
@@ -29,7 +29,7 @@ name: String
 
 The mesh's name from its asset, used in logs and error messages.
 
-<a id="rustdoc-item-2508"></a>
+<a id="rustdoc-item-2548"></a>
 
 ### `vertex_buffer`
 
@@ -39,7 +39,7 @@ vertex_buffer: wgpu::Buffer
 
 The vertex data, bound at slot 0 by every pipeline that draws this mesh.
 
-<a id="rustdoc-item-2509"></a>
+<a id="rustdoc-item-2549"></a>
 
 ### `index_buffer`
 
@@ -49,7 +49,7 @@ index_buffer: wgpu::Buffer
 
 The indices into the vertex data, stored as `Uint32`.
 
-<a id="rustdoc-item-2510"></a>
+<a id="rustdoc-item-2550"></a>
 
 ### `index_count`
 
@@ -61,7 +61,7 @@ How many indices a draw of this mesh passes, taken from the asset.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-2511"></a>
+<a id="rustdoc-item-2551"></a>
 
 ### `new`
 

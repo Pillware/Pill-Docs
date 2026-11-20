@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1720"></a>
+<a id="rustdoc-item-1730"></a>
 
 # Constant `pill_core::telemetry::DEV_LOG_TARGET`
 

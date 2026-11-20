@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1214"></a>
+<a id="rustdoc-item-1294"></a>
 
 # Constant `pill_renderer_api::picking::PICK_HANDLE_BIT`
 

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1631"></a>
+<a id="rustdoc-item-1726"></a>
 
 # Function `pill_master_renderer_data::config::all_shader_sources`
 
@@ -8,7 +8,7 @@
 pub fn all_shader_sources() -> impl Iterator<Item = _>;
 ```
 
-Source: `extensions\pill_master_renderer\pill_master_renderer_data\src\config\mod.rs:208`
+Source: `extensions\pill_master_renderer\modules\runtime\data\src\config\mod.rs:208`
 
 Every shader asset the renderer's own pipelines install, with its files.
 

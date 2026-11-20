@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-589"></a>
+<a id="rustdoc-item-591"></a>
 
 # Function `pill_development_host::build_runner::collect_member_manifests`
 
@@ -8,7 +8,7 @@
 pub(in build_runner) fn collect_member_manifests(directory: &std::path::Path, depth: usize, manifests: &mut Vec<std::path::PathBuf>);
 ```
 
-Visibility: `{'restricted': {'parent': 545, 'path': '::build_runner'}}` · Source: `hosting\pill_development_host\src\build_runner.rs:653`
+Visibility: `{'restricted': {'parent': 546, 'path': '::build_runner'}}` · Source: `hosting\pill_development_host\src\build_runner.rs:654`
 
 Adds the candidate `Cargo.toml` path of every directory below `directory`,
 down to `depth` levels, in breadth-first order so shallower members come

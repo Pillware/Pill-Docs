@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1721"></a>
+<a id="rustdoc-item-1745"></a>
 
 # Function `pill_csharp_bridge::manifest_apply::execute_manifest`
 
@@ -11,7 +11,7 @@ pub(crate) fn execute_manifest<Declaration, Binding, Undo>(subject: &ManifestSub
 Visibility: `crate` · Source: `csharp\pill_csharp_bridge\src\manifest_apply.rs:299`
 
 The half of the pipeline that changes things: applies what
-[`prepare_manifest`](fn.prepare_manifest.md#rustdoc-item-1696) resolved, unwinds on a refusal, and retires last.
+[`prepare_manifest`](fn.prepare_manifest.md#rustdoc-item-1720) resolved, unwinds on a refusal, and retires last.
 
 ## Errors
 

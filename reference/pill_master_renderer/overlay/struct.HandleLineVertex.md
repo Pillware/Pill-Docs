@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1117"></a>
+<a id="rustdoc-item-1158"></a>
 
 # Struct `pill_master_renderer::overlay::HandleLineVertex`
 
@@ -8,14 +8,14 @@
 pub(in overlay) struct HandleLineVertex;
 ```
 
-Visibility: `{'restricted': {'parent': 858, 'path': '::overlay'}}` · Source: `extensions\pill_master_renderer\pill_master_renderer\src\overlay\mod.rs:132`
+Visibility: `{'restricted': {'parent': 854, 'path': '::overlay'}}` · Source: `extensions\pill_master_renderer\modules\runtime\gpu\src\overlay\mod.rs:148`
 
 A gizmo line vertex in the pick buffer: the corner of the line's quad and
 its handle value.
 
 ## Fields
 
-<a id="rustdoc-item-1115"></a>
+<a id="rustdoc-item-1156"></a>
 
 ### `clip_position`
 
@@ -25,7 +25,7 @@ clip_position: [f32; 4]
 
 _No documentation provided._
 
-<a id="rustdoc-item-1116"></a>
+<a id="rustdoc-item-1157"></a>
 
 ### `handle_value`
 

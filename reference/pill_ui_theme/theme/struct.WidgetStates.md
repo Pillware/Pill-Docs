@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1147"></a>
+<a id="rustdoc-item-1160"></a>
 
 # Struct `pill_ui_theme::theme::WidgetStates`
 
@@ -8,13 +8,13 @@
 pub struct WidgetStates;
 ```
 
-Source: `ui\pill_ui_theme\src\theme.rs:357`
+Source: `ui\pill_ui_theme\src\theme.rs:359`
 
 The five interaction states egui picks from.
 
 ## Fields
 
-<a id="rustdoc-item-1142"></a>
+<a id="rustdoc-item-1155"></a>
 
 ### `noninteractive`
 
@@ -24,7 +24,7 @@ noninteractive: WidgetStyle
 
 Labels, separators and window frames.
 
-<a id="rustdoc-item-1143"></a>
+<a id="rustdoc-item-1156"></a>
 
 ### `inactive`
 
@@ -34,7 +34,7 @@ inactive: WidgetStyle
 
 An interactive widget at rest.
 
-<a id="rustdoc-item-1144"></a>
+<a id="rustdoc-item-1157"></a>
 
 ### `hovered`
 
@@ -44,7 +44,7 @@ hovered: WidgetStyle
 
 The pointer over a widget.
 
-<a id="rustdoc-item-1145"></a>
+<a id="rustdoc-item-1158"></a>
 
 ### `active`
 
@@ -54,7 +54,7 @@ active: WidgetStyle
 
 A pressed, dragged or focused widget.
 
-<a id="rustdoc-item-1146"></a>
+<a id="rustdoc-item-1159"></a>
 
 ### `open`
 
@@ -66,7 +66,7 @@ A widget whose menu is open.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-1148"></a>
+<a id="rustdoc-item-1161"></a>
 
 ### `brutalist`
 

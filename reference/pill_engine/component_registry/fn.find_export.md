@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-233"></a>
+<a id="rustdoc-item-241"></a>
 
 # Function `pill_engine::component_registry::find_export`
 
@@ -8,7 +8,7 @@
 pub fn find_export(export_name: &str) -> Option<ExportAddress>;
 ```
 
-Source: `engine\pill_engine\src\component_registry.rs:280`
+Source: `engine\pill_engine\src\component_registry.rs:287`
 
 The address of the export named `export_name` among those linked into the
 calling artifact, if one was submitted.

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1149"></a>
+<a id="rustdoc-item-1597"></a>
 
 # Struct `pill_editor::runner::WakeTimer`
 
@@ -8,7 +8,7 @@
 pub(in runner) struct WakeTimer;
 ```
 
-Visibility: `{'restricted': {'parent': 483, 'path': '::runner'}}` · Source: `editor\pill_editor\src\runner\mod.rs:601`
+Visibility: `{'restricted': {'parent': 539, 'path': '::runner'}}` · Source: `editor\pill_editor\src\runner\mod.rs:770`
 
 The loop's timed wake: the moment the next frame is owed.
 
@@ -18,7 +18,7 @@ apply here: the deadline is never compared across targets.
 
 ## Fields
 
-<a id="rustdoc-item-1182"></a>
+<a id="rustdoc-item-1630"></a>
 
 ### `deadline`
 
@@ -30,7 +30,7 @@ When the loop must wake, when it is waiting for a deadline.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-1184"></a>
+<a id="rustdoc-item-1632"></a>
 
 ### `new`
 
@@ -40,7 +40,7 @@ pub(in runner) fn new() -> Self;
 
 A timer with nothing scheduled.
 
-<a id="rustdoc-item-1185"></a>
+<a id="rustdoc-item-1633"></a>
 
 ### `schedule`
 
@@ -50,7 +50,7 @@ pub(in runner) fn schedule(self: &mut Self, delay: Duration);
 
 Schedule the next wake `delay` from now.
 
-<a id="rustdoc-item-1186"></a>
+<a id="rustdoc-item-1634"></a>
 
 ### `clear`
 
@@ -60,7 +60,7 @@ pub(in runner) fn clear(self: &mut Self);
 
 Forget any scheduled wake: something asked for a frame now.
 
-<a id="rustdoc-item-1187"></a>
+<a id="rustdoc-item-1635"></a>
 
 ### `take_due`
 
@@ -70,7 +70,7 @@ pub(in runner) fn take_due(self: &mut Self) -> bool;
 
 Whether the deadline has passed, clearing it when it has.
 
-<a id="rustdoc-item-1188"></a>
+<a id="rustdoc-item-1636"></a>
 
 ### `control_flow`
 

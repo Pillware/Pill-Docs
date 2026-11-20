@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1725"></a>
+<a id="rustdoc-item-1749"></a>
 
 # Function `pill_csharp_bridge::manifest_apply::roll_back`
 
@@ -8,7 +8,7 @@
 pub(in manifest_apply) fn roll_back<Declaration, Binding, Undo>(subject: &ManifestSubject<Declaration, Binding, Undo>, engine: &mut pill_engine::Engine, table: &mut std::collections::HashMap<super::components::StableComponentId, Binding>, journal: Vec<JournalEntry<Binding, Undo>>);
 ```
 
-Visibility: `{'restricted': {'parent': 970, 'path': '::manifest_apply'}}` · Source: `csharp\pill_csharp_bridge\src\manifest_apply.rs:569`
+Visibility: `{'restricted': {'parent': 992, 'path': '::manifest_apply'}}` · Source: `csharp\pill_csharp_bridge\src\manifest_apply.rs:569`
 
 Undo every applied entry, newest first.
 

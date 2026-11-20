@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-986"></a>
+<a id="rustdoc-item-1008"></a>
 
 # Function `pill_csharp_bridge::manifest::build_field_plan`
 
@@ -21,5 +21,5 @@ against.
 ## Panics
 
 Panics when a declared default does not parse or does not fit its field.
-[`parse_and_validate_manifest`](fn.parse_and_validate_manifest.md#rustdoc-item-1504) refuses both, so a manifest that came
+[`parse_and_validate_manifest`](fn.parse_and_validate_manifest.md#rustdoc-item-1528) refuses both, so a manifest that came
 through it cannot panic here.

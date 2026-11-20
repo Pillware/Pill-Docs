@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1018"></a>
+<a id="rustdoc-item-1028"></a>
 
 # Struct `pill_core::metrics::NullHandle`
 
@@ -8,7 +8,7 @@
 pub(in metrics) struct NullHandle;
 ```
 
-Visibility: `{'restricted': {'parent': 945, 'path': '::metrics'}}` · Source: `engine\pill_core\src\metrics.rs:173`
+Visibility: `{'restricted': {'parent': 955, 'path': '::metrics'}}` · Source: `engine\pill_core\src\metrics.rs:173`
 
 A handle that drops every update.
 

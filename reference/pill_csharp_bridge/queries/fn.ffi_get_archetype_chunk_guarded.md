@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1878"></a>
+<a id="rustdoc-item-1903"></a>
 
 # Function `pill_csharp_bridge::queries::ffi_get_archetype_chunk_guarded`
 
@@ -8,7 +8,7 @@
 pub(in queries) fn ffi_get_archetype_chunk_guarded(archetype_low: u64, archetype_high: u64, stable_id_low: u64, stable_id_high: u64, request_mode: u8, chunk_output: *mut super::abi::ComponentChunk) -> u8;
 ```
 
-Visibility: `{'restricted': {'parent': 1872, 'path': '::queries'}}` · Source: `csharp\pill_csharp_bridge\src\queries.rs:290`
+Visibility: `{'restricted': {'parent': 1897, 'path': '::queries'}}` · Source: `csharp\pill_csharp_bridge\src\queries.rs:290`
 
 Return one component chunk of an archetype the managed enumerator already
 identified through its driver chunk.

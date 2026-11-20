@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-2215"></a>
+<a id="rustdoc-item-2289"></a>
 
 # Struct `pill_development_host::hot_patch::PatchStages`
 
@@ -14,7 +14,7 @@ Where one patch spent its time, in milliseconds.
 
 ## Fields
 
-<a id="rustdoc-item-2463"></a>
+<a id="rustdoc-item-2537"></a>
 
 ### `classify`
 
@@ -24,7 +24,7 @@ classify: f64
 
 Reading the sources and deciding the edit is body-only.
 
-<a id="rustdoc-item-2464"></a>
+<a id="rustdoc-item-2538"></a>
 
 ### `generate`
 
@@ -34,7 +34,7 @@ generate: f64
 
 Producing the patch source.
 
-<a id="rustdoc-item-2465"></a>
+<a id="rustdoc-item-2539"></a>
 
 ### `flags`
 
@@ -45,7 +45,7 @@ flags: f64
 Asking cargo for the compiler flags. Near zero once this session has
 cached the answer.
 
-<a id="rustdoc-item-2466"></a>
+<a id="rustdoc-item-2540"></a>
 
 ### `compile`
 
@@ -55,7 +55,7 @@ compile: f64
 
 `rustc` compiling and linking the patch library.
 
-<a id="rustdoc-item-2467"></a>
+<a id="rustdoc-item-2541"></a>
 
 ### `load`
 
@@ -65,7 +65,7 @@ load: f64
 
 `LoadLibrary` on the produced artifact.
 
-<a id="rustdoc-item-2468"></a>
+<a id="rustdoc-item-2542"></a>
 
 ### `activate`
 
@@ -77,7 +77,7 @@ Resolving the new address and installing it into every running copy.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-2469"></a>
+<a id="rustdoc-item-2543"></a>
 
 ### `merge`
 

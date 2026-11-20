@@ -8,7 +8,7 @@
 pub fn generate_function_inventory();
 ```
 
-Source: `hosting\pill_hot_scan\src\lib.rs:1149`
+Source: `hosting\pill_hot_scan\src\lib.rs:1176`
 
 Generate this crate's function-address inventory into `OUT_DIR`.
 

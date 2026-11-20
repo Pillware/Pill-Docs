@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-717"></a>
+<a id="rustdoc-item-761"></a>
 
 # Constant `pill_editor_core::camera::ORBIT_RADIANS_PER_PIXEL`
 

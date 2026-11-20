@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-4449"></a>
+<a id="rustdoc-item-4708"></a>
 
 # Function `pill_development_host::watchers::shared::is_relevant_relative_path`
 
@@ -8,7 +8,7 @@
 pub(in watchers::shared) fn is_relevant_relative_path(relative_path: &std::path::Path) -> bool;
 ```
 
-Visibility: `{'restricted': {'parent': 4377, 'path': '::watchers::shared'}}` · Source: `hosting\pill_development_host\src\watchers\shared.rs:234`
+Visibility: `{'restricted': {'parent': 4636, 'path': '::watchers::shared'}}` · Source: `hosting\pill_development_host\src\watchers\shared.rs:234`
 
 Whether a path relative to the watch root should start a rebuild.
 

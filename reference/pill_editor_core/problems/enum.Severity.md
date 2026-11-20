@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-6398"></a>
+<a id="rustdoc-item-8436"></a>
 
 # Enum `pill_editor_core::problems::Severity`
 
@@ -14,7 +14,7 @@ How serious one problem is.
 
 ## Variants
 
-<a id="rustdoc-item-6395"></a>
+<a id="rustdoc-item-8433"></a>
 
 ### `Error`
 
@@ -24,7 +24,7 @@ Error
 
 A compiler error: the build stopped.
 
-<a id="rustdoc-item-6396"></a>
+<a id="rustdoc-item-8434"></a>
 
 ### `Warning`
 
@@ -34,7 +34,7 @@ Warning
 
 A compiler warning: the build finished anyway.
 
-<a id="rustdoc-item-6397"></a>
+<a id="rustdoc-item-8435"></a>
 
 ### `Note`
 
@@ -46,7 +46,7 @@ A note the compiler printed as its own `note:` line.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-6399"></a>
+<a id="rustdoc-item-8437"></a>
 
 ### `name`
 

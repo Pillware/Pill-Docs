@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1991"></a>
+<a id="rustdoc-item-2016"></a>
 
 # Static `pill_csharp_bridge::resources::RESOURCE_BINDINGS`
 
@@ -8,7 +8,7 @@
 pub(in resources) static RESOURCE_BINDINGS: std::sync::OnceLock<std::sync::RwLock<std::collections::HashMap<super::components::StableComponentId, ResourceBinding>>> = _;
 ```
 
-Visibility: `{'restricted': {'parent': 1993, 'path': '::resources'}}` · Source: `csharp\pill_csharp_bridge\src\resources.rs:143`
+Visibility: `{'restricted': {'parent': 2018, 'path': '::resources'}}` · Source: `csharp\pill_csharp_bridge\src\resources.rs:143`
 
 The live table of resource bindings, shared by registration and the
 callback.

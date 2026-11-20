@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1164"></a>
+<a id="rustdoc-item-1209"></a>
 
 # Function `pill_editor_core::clipboard::queue_action`
 
@@ -8,7 +8,7 @@
 pub fn queue_action(clipboard: &mut EditorClipboard, action: ClipboardAction, selection: &crate::editor_state::EditorSelection, snapshot: &crate::editor_state::EditorSnapshot, pending_commands: &mut crate::commands::PendingEditorCommands) -> Option<String>;
 ```
 
-Source: `editor\pill_editor_core\src\clipboard.rs:330`
+Source: `editor\pill_editor_core\src\clipboard.rs:338`
 
 Queues one clipboard command from the shell.
 

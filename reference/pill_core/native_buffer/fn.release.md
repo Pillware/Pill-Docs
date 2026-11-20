@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1116"></a>
+<a id="rustdoc-item-1126"></a>
 
 # Function `pill_core::native_buffer::release`
 
@@ -21,7 +21,7 @@ retained.
 ## Safety
 
 `element_pointer` must point at the element area of a live block allocated
-by [`allocate`](fn.allocate.md#rustdoc-item-1114) with the same `byte_capacity` and `element_align`, and this
-call must balance exactly one earlier [`allocate`](fn.allocate.md#rustdoc-item-1114) or [`retain`](fn.retain.md#rustdoc-item-1117). The
+by [`allocate`](fn.allocate.md#rustdoc-item-1124) with the same `byte_capacity` and `element_align`, and this
+call must balance exactly one earlier [`allocate`](fn.allocate.md#rustdoc-item-1124) or [`retain`](fn.retain.md#rustdoc-item-1127). The
 pointer must not be used after the call unless another reference is still
 held.

@@ -8,7 +8,7 @@
 pub struct MaterialTexture;
 ```
 
-Source: `extensions\pill_master_renderer\pill_master_renderer_data\src\assets\material.rs:49`
+Source: `extensions\pill_master_renderer\modules\runtime\data\src\assets\material.rs:49`
 
 A texture handle bound to one of a material's slots.
 
@@ -39,14 +39,14 @@ The texture asset this binding points at.
 - `TryFrom<U>`
 - `Any`
 - `ToOwned`
+- `CastableFrom<ST, Uninit, Uninit>`
+- `CastableFrom<ST, Initialized, Initialized>`
+- `Read<Exclusive, BecauseExclusive>`
 - `Instrument`
 - `WithSubscriber`
 - `IntoEither`
 - `Pointable`
 - `OwoColorize`
 - `ErasedDestructor`
-- `CastableFrom<ST, Uninit, Uninit>`
-- `CastableFrom<ST, Initialized, Initialized>`
-- `Read<Exclusive, BecauseExclusive>`
 - `Clone`
 - `Debug`

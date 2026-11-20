@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-245"></a>
+<a id="rustdoc-item-252"></a>
 
 # Trait `pill_core::error::render::EngineMessage`
 
@@ -13,12 +13,12 @@ Source: `engine\pill_core\src\error\render.rs:80`
 The rendering interface `#[engine_error]` generates for every error enum.
 
 The generated implementation walks the one message definition the variant
-carries and writes it through [`MessageRenderer`](trait.MessageRenderer.md#rustdoc-item-243), so the plain and the
+carries and writes it through [`MessageRenderer`](trait.MessageRenderer.md#rustdoc-item-250), so the plain and the
 styled output always agree.
 
 ## Required and provided items
 
-<a id="rustdoc-item-667"></a>
+<a id="rustdoc-item-677"></a>
 
 ### `render_message`
 
@@ -32,7 +32,7 @@ Render the variant's single message definition into `renderer`.
 
 Returns an error if `renderer` reports a write failure.
 
-<a id="rustdoc-item-668"></a>
+<a id="rustdoc-item-678"></a>
 
 ### `to_plain_message`
 

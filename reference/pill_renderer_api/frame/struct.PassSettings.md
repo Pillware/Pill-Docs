@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-548"></a>
+<a id="rustdoc-item-614"></a>
 
 # Struct `pill_renderer_api::frame::PassSettings`
 
@@ -15,7 +15,7 @@ set up.
 
 All three places that write a pass down use this one block: the `RenderPass`
 asset a game builds, the document its `.render_pass` file holds, and the
-[`ResolvedPass`](struct.ResolvedPass.md#rustdoc-item-546) the frame carries. A new setting is therefore one field
+[`ResolvedPass`](struct.ResolvedPass.md#rustdoc-item-612) the frame carries. A new setting is therefore one field
 here plus one line in [`Self::default`], instead of a field with its own
 default in each of those types.
 
@@ -25,7 +25,7 @@ and parameter maps.
 
 ## Fields
 
-<a id="rustdoc-item-538"></a>
+<a id="rustdoc-item-604"></a>
 
 ### `kind`
 
@@ -35,7 +35,7 @@ kind: PassKind
 
 What the pass draws.
 
-<a id="rustdoc-item-539"></a>
+<a id="rustdoc-item-605"></a>
 
 ### `target`
 
@@ -45,7 +45,7 @@ target: PassTarget
 
 Where the pass reads and writes.
 
-<a id="rustdoc-item-540"></a>
+<a id="rustdoc-item-606"></a>
 
 ### `extra_targets`
 
@@ -59,7 +59,7 @@ shader's `SV_TARGET1`, `SV_TARGET2` and so on name them.
 This is how a geometry pass leaves a normal buffer behind for a later
 pass to read: one draw writes several pictures.
 
-<a id="rustdoc-item-541"></a>
+<a id="rustdoc-item-607"></a>
 
 ### `target_scale`
 
@@ -80,7 +80,7 @@ one size, and a geometry or skybox pass pairs its colour target with the
 surface's depth buffer, so the renderer refuses a scaled pass of either
 kind rather than draw it at the wrong size.
 
-<a id="rustdoc-item-542"></a>
+<a id="rustdoc-item-608"></a>
 
 ### `blend`
 
@@ -91,7 +91,7 @@ blend: bool
 Whether the pass blends its output over what the target already holds,
 instead of replacing it.
 
-<a id="rustdoc-item-543"></a>
+<a id="rustdoc-item-609"></a>
 
 ### `depth_write`
 
@@ -102,7 +102,7 @@ depth_write: bool
 Whether the pass writes depth. A translucent pass reads depth without
 writing it, so it does not hide what is drawn after it.
 
-<a id="rustdoc-item-544"></a>
+<a id="rustdoc-item-610"></a>
 
 ### `cull`
 
@@ -112,7 +112,7 @@ cull: CullMode
 
 Which faces the pass drops.
 
-<a id="rustdoc-item-545"></a>
+<a id="rustdoc-item-611"></a>
 
 ### `order`
 
@@ -134,6 +134,9 @@ the order the pipeline lists them in.
 - `TryFrom<U>`
 - `Any`
 - `ToOwned`
+- `CastableFrom<ST, Uninit, Uninit>`
+- `CastableFrom<ST, Initialized, Initialized>`
+- `Read<Exclusive, BecauseExclusive>`
 - `DeserializeOwned`
 - `Instrument`
 - `WithSubscriber`
@@ -141,9 +144,7 @@ the order the pipeline lists them in.
 - `Pointable`
 - `OwoColorize`
 - `ErasedDestructor`
-- `CastableFrom<ST, Uninit, Uninit>`
-- `CastableFrom<ST, Initialized, Initialized>`
-- `Read<Exclusive, BecauseExclusive>`
+- `Equivalent<K>`
 - `Clone`
 - `Debug`
 - `StructuralPartialEq`

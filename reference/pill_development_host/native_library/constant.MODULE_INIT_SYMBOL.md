@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-3081"></a>
+<a id="rustdoc-item-3336"></a>
 
 # Constant `pill_development_host::native_library::MODULE_INIT_SYMBOL`
 
@@ -8,7 +8,7 @@
 pub(in native_library) const MODULE_INIT_SYMBOL: &[u8] = b"pill_module_init";
 ```
 
-Visibility: `{'restricted': {'parent': 3075, 'path': '::native_library'}}` · Source: `hosting\pill_development_host\src\native_library.rs:131`
+Visibility: `{'restricted': {'parent': 3326, 'path': '::native_library'}}` · Source: `hosting\pill_development_host\src\native_library.rs:205`
 
 Required registration entry point of a loadable artifact.
 

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-6293"></a>
+<a id="rustdoc-item-8330"></a>
 
 # Constant `pill_editor_core::preferences::GIZMO_ICON_SIZE_DEFAULT`
 
@@ -8,7 +8,7 @@
 pub const GIZMO_ICON_SIZE_DEFAULT: f32 = 20.0;
 ```
 
-Source: `editor\pill_editor_core\src\preferences.rs:78`
+Source: `editor\pill_editor_core\src\preferences.rs:84`
 
 The icon size used when the file says nothing, in points.
 

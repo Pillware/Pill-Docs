@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-8265"></a>
+<a id="rustdoc-item-10327"></a>
 
 # Function `pill_editor_core::style::log_debug`
 
@@ -8,6 +8,6 @@
 pub fn log_debug() -> egui::Color32;
 ```
 
-Source: `editor\pill_editor_core\src\style.rs:322`
+Source: `editor\pill_editor_core\src\style.rs:323`
 
 A log line at `debug`.

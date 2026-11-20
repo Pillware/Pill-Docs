@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-4218"></a>
+<a id="rustdoc-item-4476"></a>
 
 # Function `pill_development_host::runtime::apply_asset_changes`
 
@@ -8,7 +8,7 @@
 pub(in runtime) fn apply_asset_changes(host: &mut DevHost) -> usize;
 ```
 
-Visibility: `{'restricted': {'parent': 3859, 'path': '::runtime'}}` · Source: `hosting\pill_development_host\src\runtime.rs:3520`
+Visibility: `{'restricted': {'parent': 4115, 'path': '::runtime'}}` · Source: `hosting\pill_development_host\src\runtime.rs:3716`
 
 Import or reimport every asset the watcher reported, through the world's
 import registry.

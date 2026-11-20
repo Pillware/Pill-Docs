@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-8266"></a>
+<a id="rustdoc-item-10328"></a>
 
 # Function `pill_editor_core::style::log_warn`
 
@@ -8,6 +8,6 @@
 pub fn log_warn() -> egui::Color32;
 ```
 
-Source: `editor\pill_editor_core\src\style.rs:327`
+Source: `editor\pill_editor_core\src\style.rs:328`
 
 A log line at `warn`.

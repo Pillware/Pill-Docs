@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1034"></a>
+<a id="rustdoc-item-1031"></a>
 
 # Struct `pill_master_renderer::overlay::LineVertex`
 
@@ -8,7 +8,7 @@
 pub(in overlay) struct LineVertex;
 ```
 
-Visibility: `{'restricted': {'parent': 858, 'path': '::overlay'}}` · Source: `extensions\pill_master_renderer\pill_master_renderer\src\overlay\mod.rs:111`
+Visibility: `{'restricted': {'parent': 854, 'path': '::overlay'}}` · Source: `extensions\pill_master_renderer\modules\runtime\gpu\src\overlay\mod.rs:113`
 
 A line vertex after projection: the corner of the line's quad, its colour,
 and how far in pixels it sits from the line's centre (negative on the other
@@ -16,7 +16,7 @@ side). The fragment shader turns that distance into coverage.
 
 ## Fields
 
-<a id="rustdoc-item-1031"></a>
+<a id="rustdoc-item-1028"></a>
 
 ### `clip_position`
 
@@ -26,7 +26,7 @@ clip_position: [f32; 4]
 
 _No documentation provided._
 
-<a id="rustdoc-item-1032"></a>
+<a id="rustdoc-item-1029"></a>
 
 ### `color`
 
@@ -36,7 +36,7 @@ color: [f32; 4]
 
 _No documentation provided._
 
-<a id="rustdoc-item-1033"></a>
+<a id="rustdoc-item-1030"></a>
 
 ### `across_pixels`
 

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-891"></a>
+<a id="rustdoc-item-963"></a>
 
 # Function `pill_renderer_api::grid::editor_view_surfaces`
 

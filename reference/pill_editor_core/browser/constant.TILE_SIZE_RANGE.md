@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-462"></a>
+<a id="rustdoc-item-506"></a>
 
 # Constant `pill_editor_core::browser::TILE_SIZE_RANGE`
 

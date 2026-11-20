@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-6386"></a>
+<a id="rustdoc-item-8424"></a>
 
 # Function `pill_editor_core::previews::render_previews`
 

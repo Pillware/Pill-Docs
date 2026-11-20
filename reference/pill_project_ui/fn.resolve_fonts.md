@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-425"></a>
+<a id="rustdoc-item-427"></a>
 
 # Function `pill_project_ui::resolve_fonts`
 
@@ -8,7 +8,7 @@
 pub(crate) fn resolve_fonts(world: &mut pill_engine_core::World, theme: &Theme) -> ResolvedFonts;
 ```
 
-Visibility: `crate` · Source: `ui\pill_project_ui\src\lib.rs:560`
+Visibility: `crate` · Source: `ui\pill_project_ui\src\lib.rs:566`
 
 Resolve a theme's font paths through the project's asset store.
 

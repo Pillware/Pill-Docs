@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-580"></a>
+<a id="rustdoc-item-577"></a>
 
 # Function `pill_master_renderer::chain::shaderless_target_refusal`
 
@@ -8,7 +8,7 @@
 pub(in chain) fn shaderless_target_refusal(pass: &crate::frame::ResolvedPass) -> Option<String>;
 ```
 
-Visibility: `{'restricted': {'parent': 534, 'path': '::chain'}}` · Source: `extensions\pill_master_renderer\pill_master_renderer\src\chain.rs:637`
+Visibility: `{'restricted': {'parent': 531, 'path': '::chain'}}` · Source: `extensions\pill_master_renderer\modules\runtime\gpu\src\chain.rs:637`
 
 Why a pass with no shader of its own cannot draw into `pass`'s targets, or
 `None` when it can.

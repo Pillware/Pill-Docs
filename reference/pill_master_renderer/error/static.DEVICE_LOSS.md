@@ -8,7 +8,7 @@
 pub(in error) static DEVICE_LOSS: std::sync::Mutex<Option<String>> = _;
 ```
 
-Visibility: `{'restricted': {'parent': 179, 'path': '::error'}}` · Source: `extensions\pill_master_renderer\pill_master_renderer\src\error.rs:46`
+Visibility: `{'restricted': {'parent': 179, 'path': '::error'}}` · Source: `extensions\pill_master_renderer\modules\runtime\gpu\src\error.rs:46`
 
 The report of the device loss this image has seen, if any.
 

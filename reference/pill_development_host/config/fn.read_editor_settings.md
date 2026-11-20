@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1272"></a>
+<a id="rustdoc-item-1292"></a>
 
 # Function `pill_development_host::config::read_editor_settings`
 
@@ -8,7 +8,7 @@
 pub fn read_editor_settings(project_directory: &std::path::Path) -> Result<EditorSettings, String>;
 ```
 
-Source: `hosting\pill_development_host\src\config.rs:1746`
+Source: `hosting\pill_development_host\src\config.rs:1953`
 
 Reads the editor's settings file from the project root.
 

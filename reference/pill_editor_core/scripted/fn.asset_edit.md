@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-7176"></a>
+<a id="rustdoc-item-9234"></a>
 
 # Function `pill_editor_core::scripted::asset_edit`
 
@@ -8,7 +8,7 @@
 pub(in scripted) fn asset_edit(cursor: &mut Cursor<'_>) -> Result<AssetEdit, ParseError>;
 ```
 
-Visibility: `{'restricted': {'parent': 7129, 'path': '::scripted'}}` · Source: `editor\pill_editor_core\src\scripted.rs:1188`
+Visibility: `{'restricted': {'parent': 9187, 'path': '::scripted'}}` · Source: `editor\pill_editor_core\src\scripted.rs:1326`
 
 `edit asset create|delete|move|meta`.
 

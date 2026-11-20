@@ -8,7 +8,7 @@
 pub(in error) fn latched_device_loss() -> std::sync::MutexGuard<'static, Option<String>>;
 ```
 
-Visibility: `{'restricted': {'parent': 179, 'path': '::error'}}` · Source: `extensions\pill_master_renderer\pill_master_renderer\src\error.rs:89`
+Visibility: `{'restricted': {'parent': 179, 'path': '::error'}}` · Source: `extensions\pill_master_renderer\modules\runtime\gpu\src\error.rs:89`
 
 Locks the device loss latch.
 

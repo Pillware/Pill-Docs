@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-915"></a>
+<a id="rustdoc-item-926"></a>
 
 # Enum `pill_ui_theme::theme::FontFamilyName`
 
@@ -14,7 +14,7 @@ The family a text style names.
 
 ## Variants
 
-<a id="rustdoc-item-912"></a>
+<a id="rustdoc-item-923"></a>
 
 ### `Proportional`
 
@@ -24,7 +24,7 @@ Proportional
 
 The body font family.
 
-<a id="rustdoc-item-913"></a>
+<a id="rustdoc-item-924"></a>
 
 ### `Monospace`
 
@@ -34,7 +34,7 @@ Monospace
 
 The code font family.
 
-<a id="rustdoc-item-914"></a>
+<a id="rustdoc-item-925"></a>
 
 ### `Display`
 
@@ -46,7 +46,7 @@ The display font family.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-916"></a>
+<a id="rustdoc-item-927"></a>
 
 ### `parse`
 
@@ -61,7 +61,7 @@ Parse a family name: `proportional` (or `body`), `monospace` (or
 
 A message naming the accepted families.
 
-<a id="rustdoc-item-917"></a>
+<a id="rustdoc-item-928"></a>
 
 ### `as_str`
 
@@ -91,6 +91,7 @@ The name this family is written as in a document.
 - `Pointable`
 - `OwoColorize`
 - `ErasedDestructor`
+- `Equivalent<K>`
 - `Clone`
 - `Copy`
 - `Debug`

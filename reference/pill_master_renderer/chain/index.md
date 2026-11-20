@@ -1,10 +1,10 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-534"></a>
+<a id="rustdoc-item-531"></a>
 
 # Module `pill_master_renderer::chain`
 
-Visibility: `crate` · Source: `extensions\pill_master_renderer\pill_master_renderer\src\chain.rs:1`
+Visibility: `crate` · Source: `extensions\pill_master_renderer\modules\runtime\gpu\src\chain.rs:1`
 
 Holds the frame's chain as GPU objects and the plan each frame is recorded
 from.
@@ -39,24 +39,24 @@ there is none.
 ## Module contents
 
 ### Structs
-- [`ChainContext`](struct.ChainContext.md#rustdoc-item-508) — What the chain needs from the renderer to build its GPU objects.
+- [`ChainContext`](struct.ChainContext.md#rustdoc-item-505) — What the chain needs from the renderer to build its GPU objects.
 - [`DrawRange`](struct.DrawRange.md#rustdoc-item-140) — One run of queue positions a geometry pass records, and which pipeline it
-- [`GpuChain`](struct.GpuChain.md#rustdoc-item-543) — The GPU side of a chain: one pass object per pass, and the plan a frame is
+- [`GpuChain`](struct.GpuChain.md#rustdoc-item-540) — The GPU side of a chain: one pass object per pass, and the plan a frame is
 
 ### Enums
 - [`PassOutput`](enum.PassOutput.md#rustdoc-item-338) — Where a pass writes.
-- [`PassPlan`](enum.PassPlan.md#rustdoc-item-462) — One pass the renderer will record.
+- [`PassPlan`](enum.PassPlan.md#rustdoc-item-459) — One pass the renderer will record.
 - [`PassSlot`](enum.PassSlot.md#rustdoc-item-377) — A pass's GPU object, or the reason there is none.
 
 ### Functions
-- [`build_pass`](fn.build_pass.md#rustdoc-item-581) — One pass's GPU object, or the reason there is none.
-- [`ensure_offscreen_targets`](fn.ensure_offscreen_targets.md#rustdoc-item-587) — Create a target for every offscreen output the chain declares.
-- [`offscreen_layout`](fn.offscreen_layout.md#rustdoc-item-586) — The layout of the offscreen targets a chain needs: one entry per pass and
-- [`scaled_target_refusal`](fn.scaled_target_refusal.md#rustdoc-item-579) — Why a pass cannot write a target scaled down from the surface, or `None`
-- [`shader_ranges`](fn.shader_ranges.md#rustdoc-item-585) — The runs of the queue drawn by `shader`.
-- [`shaderless_target_refusal`](fn.shaderless_target_refusal.md#rustdoc-item-580) — Why a pass with no shader of its own cannot draw into `pass`'s targets, or
-- [`unclaimed_ranges`](fn.unclaimed_ranges.md#rustdoc-item-584) — The runs of the queue whose shader no pass in `claimed_shaders` names.
-- [`whole_queue`](fn.whole_queue.md#rustdoc-item-583) — The whole queue as one range, or none when the queue is empty.
+- [`build_pass`](fn.build_pass.md#rustdoc-item-578) — One pass's GPU object, or the reason there is none.
+- [`ensure_offscreen_targets`](fn.ensure_offscreen_targets.md#rustdoc-item-584) — Create a target for every offscreen output the chain declares.
+- [`offscreen_layout`](fn.offscreen_layout.md#rustdoc-item-583) — The layout of the offscreen targets a chain needs: one entry per pass and
+- [`scaled_target_refusal`](fn.scaled_target_refusal.md#rustdoc-item-576) — Why a pass cannot write a target scaled down from the surface, or `None`
+- [`shader_ranges`](fn.shader_ranges.md#rustdoc-item-582) — The runs of the queue drawn by `shader`.
+- [`shaderless_target_refusal`](fn.shaderless_target_refusal.md#rustdoc-item-577) — Why a pass with no shader of its own cannot draw into `pass`'s targets, or
+- [`unclaimed_ranges`](fn.unclaimed_ranges.md#rustdoc-item-581) — The runs of the queue whose shader no pass in `claimed_shaders` names.
+- [`whole_queue`](fn.whole_queue.md#rustdoc-item-580) — The whole queue as one range, or none when the queue is empty.
 
 ### Type aliases
-- [`OffscreenLayoutKey`](type.OffscreenLayoutKey.md#rustdoc-item-533) — What the offscreen targets were built for: the scale each pass asks for on
+- [`OffscreenLayoutKey`](type.OffscreenLayoutKey.md#rustdoc-item-530) — What the offscreen targets were built for: the scale each pass asks for on

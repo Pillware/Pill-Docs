@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1023"></a>
+<a id="rustdoc-item-1045"></a>
 
 # Module `pill_csharp_bridge::config`
 
@@ -24,4 +24,4 @@ crate never parses project settings.
 ## Module contents
 
 ### Structs
-- [`CSharpModuleConfig`](struct.CSharpModuleConfig.md#rustdoc-item-509) — Output locations and assembly names used by the managed project backend.
+- [`CSharpModuleConfig`](struct.CSharpModuleConfig.md#rustdoc-item-519) — Output locations and assembly names used by the managed project backend.

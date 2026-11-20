@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-2041"></a>
+<a id="rustdoc-item-2066"></a>
 
 # Function `pill_csharp_bridge::resources::fill_resource_view`
 
@@ -8,7 +8,7 @@
 pub(in resources) fn fill_resource_view(world: &mut pill_engine::World, resource_id: pill_engine::ResourceId, declared_size: usize, access_mode: u8, view_output: *mut super::abi::ResourceView) -> u8;
 ```
 
-Visibility: `{'restricted': {'parent': 1993, 'path': '::resources'}}` · Source: `csharp\pill_csharp_bridge\src\resources.rs:857`
+Visibility: `{'restricted': {'parent': 2018, 'path': '::resources'}}` · Source: `csharp\pill_csharp_bridge\src\resources.rs:857`
 
 Writes one resource's live bytes into the caller's view.
 

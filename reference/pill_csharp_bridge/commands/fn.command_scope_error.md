@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-721"></a>
+<a id="rustdoc-item-742"></a>
 
 # Function `pill_csharp_bridge::commands::command_scope_error`
 
@@ -8,7 +8,7 @@
 pub(in commands) fn command_scope_error() -> u8;
 ```
 
-Visibility: `{'restricted': {'parent': 697, 'path': '::commands'}}` · Source: `csharp\pill_csharp_bridge\src\commands.rs:72`
+Visibility: `{'restricted': {'parent': 718, 'path': '::commands'}}` · Source: `csharp\pill_csharp_bridge\src\commands.rs:72`
 
 Return the status code for a callback that could not enter the command
 scope.

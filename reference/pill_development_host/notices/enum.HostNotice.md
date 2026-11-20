@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-3298"></a>
+<a id="rustdoc-item-3553"></a>
 
 # Enum `pill_development_host::notices::HostNotice`
 
@@ -14,7 +14,7 @@ One event the host reports to an attached editor frontend.
 
 ## Variants
 
-<a id="rustdoc-item-3301"></a>
+<a id="rustdoc-item-3556"></a>
 
 ### `ModuleFailed`
 
@@ -25,7 +25,7 @@ ModuleFailed
 A module failed to load or to swap in: its build failed, the new
 library could not load, or the module ABI check refused it.
 
-<a id="rustdoc-item-3304"></a>
+<a id="rustdoc-item-3559"></a>
 
 ### `Reloaded`
 
@@ -35,7 +35,7 @@ Reloaded
 
 A module's new code is live in the running game.
 
-<a id="rustdoc-item-3307"></a>
+<a id="rustdoc-item-3562"></a>
 
 ### `PatchApplied`
 
@@ -45,7 +45,7 @@ PatchApplied
 
 A function's body was replaced in the running game without a reload.
 
-<a id="rustdoc-item-3310"></a>
+<a id="rustdoc-item-3565"></a>
 
 ### `PatchFailed`
 
@@ -56,7 +56,7 @@ PatchFailed
 A function's patch attempt failed; the previous implementation still
 runs.
 
-<a id="rustdoc-item-3314"></a>
+<a id="rustdoc-item-3569"></a>
 
 ### `RolledBack`
 

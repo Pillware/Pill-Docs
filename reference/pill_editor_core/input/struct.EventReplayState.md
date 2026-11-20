@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-4580"></a>
+<a id="rustdoc-item-6541"></a>
 
 # Struct `pill_editor_core::input::EventReplayState`
 
@@ -8,7 +8,7 @@
 pub(in input) struct EventReplayState;
 ```
 
-Visibility: `{'restricted': {'parent': 4577, 'path': '::input'}}` · Source: `editor\pill_editor_core\src\input.rs:44`
+Visibility: `{'restricted': {'parent': 6538, 'path': '::input'}}` · Source: `editor\pill_editor_core\src\input.rs:44`
 
 The state the bridge carries from one event to the next while it replays
 the shell's list.
@@ -20,7 +20,7 @@ keys were held at that point in the list.
 
 ## Fields
 
-<a id="rustdoc-item-4575"></a>
+<a id="rustdoc-item-6536"></a>
 
 ### `modifiers`
 
@@ -30,7 +30,7 @@ modifiers: egui::Modifiers
 
 The modifier state the last `ModifiersChanged` event reported.
 
-<a id="rustdoc-item-4578"></a>
+<a id="rustdoc-item-6539"></a>
 
 ### `pointer_position`
 
@@ -42,7 +42,7 @@ The pointer's last known position, in logical points.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-4581"></a>
+<a id="rustdoc-item-6542"></a>
 
 ### `push_egui_events`
 

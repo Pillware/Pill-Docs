@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-3671"></a>
+<a id="rustdoc-item-3927"></a>
 
 # Constant `pill_development_host::switches::SWITCH_VARIABLES`
 

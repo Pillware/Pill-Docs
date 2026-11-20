@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-2781"></a>
+<a id="rustdoc-item-2855"></a>
 
 # Struct `pill_development_host::layout_record::LayoutRecordTarget`
 
@@ -18,7 +18,7 @@ keyed by the subject, so one module's record never answers for another's.
 
 ## Fields
 
-<a id="rustdoc-item-2778"></a>
+<a id="rustdoc-item-2852"></a>
 
 ### `workspace_root`
 
@@ -28,7 +28,7 @@ workspace_root: &'a std::path::Path
 
 Root of the engine workspace: the lockfile and the record directory.
 
-<a id="rustdoc-item-2779"></a>
+<a id="rustdoc-item-2853"></a>
 
 ### `source_directory`
 
@@ -38,7 +38,7 @@ source_directory: &'a std::path::Path
 
 Crate root of the subject: what a declared source path resolves against.
 
-<a id="rustdoc-item-2780"></a>
+<a id="rustdoc-item-2854"></a>
 
 ### `record_key`
 
@@ -50,7 +50,7 @@ Subject name, which is also the record's file name.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-2782"></a>
+<a id="rustdoc-item-2856"></a>
 
 ### `new`
 
@@ -63,7 +63,7 @@ Builds a target from the values a module configuration carries.
 `watch_directory` is the `src` directory the host watches, relative to
 the workspace root, so its parent is the crate root.
 
-<a id="rustdoc-item-2783"></a>
+<a id="rustdoc-item-2857"></a>
 
 ### `record_path`
 
@@ -73,7 +73,7 @@ pub(crate) fn record_path(self: &Self) -> PathBuf;
 
 Path of this subject's record file.
 
-<a id="rustdoc-item-2784"></a>
+<a id="rustdoc-item-2858"></a>
 
 ### `cargo_lock_path`
 

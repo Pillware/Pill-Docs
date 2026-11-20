@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-4569"></a>
+<a id="rustdoc-item-6530"></a>
 
 # Function `pill_editor_core::icons::with_alpha`
 

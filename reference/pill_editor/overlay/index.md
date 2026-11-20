@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-382"></a>
+<a id="rustdoc-item-433"></a>
 
 # Module `pill_editor::overlay`
 
@@ -41,19 +41,19 @@ otherwise import `dcomp.dll`.
 ## Module contents
 
 ### Modules
-- [`composition`](composition/index.md#rustdoc-item-345) — The DirectComposition half of the overlay, in the Windows API's terms.
+- [`composition`](composition/index.md#rustdoc-item-396) — The DirectComposition half of the overlay, in the Windows API's terms.
 
 ### Structs
-- [`OverlaySurface`](struct.OverlaySurface.md#rustdoc-item-438) — The composition overlay over the editor window.
+- [`OverlaySurface`](struct.OverlaySurface.md#rustdoc-item-494) — The composition overlay over the editor window.
 
 ### Enums
-- [`OverlayMode`](enum.OverlayMode.md#rustdoc-item-388) — Where the UI's pixels go.
+- [`OverlayMode`](enum.OverlayMode.md#rustdoc-item-440) — Where the UI's pixels go.
 
 ### Functions
-- [`hwnd_of`](fn.hwnd_of.md#rustdoc-item-480) — The window's `HWND`, as the composition target needs it. Returns `None`
+- [`hwnd_of`](fn.hwnd_of.md#rustdoc-item-536) — The window's `HWND`, as the composition target needs it. Returns `None`
 
 ### Type aliases
-- [`OverlayError`](type.OverlayError.md#rustdoc-item-385) — Why an overlay could not be created. The executable logs it, falls back to
+- [`OverlayError`](type.OverlayError.md#rustdoc-item-436) — Why an overlay could not be created. The executable logs it, falls back to
 
 ### Constants
-- [`WINDOW_CLEAR`](constant.WINDOW_CLEAR.md#rustdoc-item-383) — The colour the window posture clears to: a dark neutral, so an uncovered
+- [`WINDOW_CLEAR`](constant.WINDOW_CLEAR.md#rustdoc-item-434) — The colour the window posture clears to: a dark neutral, so an uncovered

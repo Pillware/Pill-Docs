@@ -8,6 +8,6 @@
 pub(in frame) const PRODUCER_NONE: u8 = 2;
 ```
 
-Visibility: `{'restricted': {'parent': 238, 'path': '::frame'}}` · Source: `extensions\pill_master_renderer\pill_master_renderer\src\frame.rs:69`
+Visibility: `{'restricted': {'parent': 238, 'path': '::frame'}}` · Source: `extensions\pill_master_renderer\modules\runtime\gpu\src\frame.rs:69`
 
 No producer: the frame carries no UI.

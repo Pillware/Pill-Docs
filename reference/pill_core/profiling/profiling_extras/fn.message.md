@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1365"></a>
+<a id="rustdoc-item-1375"></a>
 
 # Function `pill_core::profiling::profiling_extras::message`
 

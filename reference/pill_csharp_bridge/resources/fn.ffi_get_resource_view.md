@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-2040"></a>
+<a id="rustdoc-item-2065"></a>
 
 # Function `pill_csharp_bridge::resources::ffi_get_resource_view`
 
@@ -10,7 +10,7 @@ pub(crate) extern "C" fn ffi_get_resource_view(stable_id_low: u64, stable_id_hig
 
 Visibility: `crate` · Source: `csharp\pill_csharp_bridge\src\resources.rs:839`
 
-The panic-guarded entry point for [`ffi_get_resource_view_guarded`](fn.ffi_get_resource_view_guarded.md#rustdoc-item-2039).
+The panic-guarded entry point for [`ffi_get_resource_view_guarded`](fn.ffi_get_resource_view_guarded.md#rustdoc-item-2064).
 
 A panic that crosses an `extern "C"` boundary aborts the process. The
 managed side already has a per-system error channel for a misbehaving

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-576"></a>
+<a id="rustdoc-item-730"></a>
 
 # Struct `pill_engine::hot_patch::PillHotFunctionDescriptor`
 
@@ -14,7 +14,7 @@ Describes one function declared with `#[pill_hot]`.
 
 The attribute macro submits one into this artifact's registry. Every field
 can be written in a `const`, so the descriptor can live in a `static`, the
-same way [`PillComponentDescriptor`](../component_registry/struct.PillComponentDescriptor.md#rustdoc-item-6)
+same way [`PillComponentDescriptor`](../component_registry/struct.PillComponentDescriptor.md#rustdoc-item-10)
 can.
 
 The registry is **per linked artifact**: the host executable, each
@@ -25,7 +25,7 @@ and an unloaded DLL takes its descriptors with it.
 
 ## Fields
 
-<a id="rustdoc-item-572"></a>
+<a id="rustdoc-item-726"></a>
 
 ### `qualified_name`
 
@@ -35,7 +35,7 @@ qualified_name: &'static str
 
 Fully-qualified path, as `module_path!() + "::" + fn name`.
 
-<a id="rustdoc-item-575"></a>
+<a id="rustdoc-item-729"></a>
 
 ### `resolve`
 
@@ -52,7 +52,7 @@ generic machinery in [`local_implementation_address`] and
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-577"></a>
+<a id="rustdoc-item-731"></a>
 
 ### `find`
 
@@ -72,13 +72,13 @@ The descriptor of the `#[pill_hot]` system this artifact declares under
 - `TryInto<U>`
 - `TryFrom<U>`
 - `Any`
+- `CastableFrom<ST, Uninit, Uninit>`
+- `CastableFrom<ST, Initialized, Initialized>`
+- `Read<Exclusive, BecauseExclusive>`
 - `Instrument`
 - `WithSubscriber`
 - `IntoEither`
 - `Pointable`
 - `OwoColorize`
 - `ErasedDestructor`
-- `CastableFrom<ST, Uninit, Uninit>`
-- `CastableFrom<ST, Initialized, Initialized>`
-- `Read<Exclusive, BecauseExclusive>`
 - `Collect`

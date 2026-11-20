@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1444"></a>
+<a id="rustdoc-item-1454"></a>
 
 # Function `pill_core::profiling::compute_parallel_utilization`
 

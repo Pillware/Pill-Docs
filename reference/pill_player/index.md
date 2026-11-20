@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-868"></a>
+<a id="rustdoc-item-875"></a>
 
 # pill_player API reference
 
@@ -11,8 +11,8 @@ Runs a game: the engine, its frames, and the statically linked project.
 ## Responsibilities
 
 - Owns the [`pill_engine::Engine`] and runs frames ([`Runtime`](runtime/struct.Runtime.md#rustdoc-item-235)).
-- Defines the static-link contract ([`StaticProject`](static_project/struct.StaticProject.md#rustdoc-item-278), [`StaticModule`](static_project/struct.StaticModule.md#rustdoc-item-556),
-  [`StaticRenderer`](static_project/struct.StaticRenderer.md#rustdoc-item-280), [`StaticProjectBackend`](static_project/enum.StaticProjectBackend.md#rustdoc-item-592), [`ProjectBackend`](static_project/trait.ProjectBackend.md#rustdoc-item-586)) and
+- Defines the static-link contract ([`StaticProject`](static_project/struct.StaticProject.md#rustdoc-item-278), [`StaticModule`](static_project/struct.StaticModule.md#rustdoc-item-559),
+  [`StaticRenderer`](static_project/struct.StaticRenderer.md#rustdoc-item-280), [`StaticProjectBackend`](static_project/enum.StaticProjectBackend.md#rustdoc-item-596), [`ProjectBackend`](static_project/trait.ProjectBackend.md#rustdoc-item-589)) and
   registers a linked project in the same order, and under the same owners,
   as the hot-reloading host.
 - Gives every registering part (a module, the renderer or the project) the
@@ -22,7 +22,7 @@ Runs a game: the engine, its frames, and the statically linked project.
 - With `rendering`: attaches a renderer to a window passed as raw handles
   ([`RendererWindow`](render_window/trait.RendererWindow.md#rustdoc-item-125), [`attach_renderer`](rendering/fn.attach_renderer.md#rustdoc-item-276)) and draws frames
   ([`AttachedRenderer`](rendering/struct.AttachedRenderer.md#rustdoc-item-179), [`RenderingRuntime`](rendering/struct.RenderingRuntime.md#rustdoc-item-237)).
-- Installs the telemetry stack ([`init_telemetry`](telemetry/fn.init_telemetry.md#rustdoc-item-744)) and defines
+- Installs the telemetry stack ([`init_telemetry`](telemetry/fn.init_telemetry.md#rustdoc-item-749)) and defines
   [`FrameDriver`](runtime/trait.FrameDriver.md#rustdoc-item-272), the trait a frontend's loop drives.
 
 ## Design
@@ -31,7 +31,7 @@ Linked into every executable: the development host
 (`pill_development_host`) builds on it, and a shipping build and a web
 build use it without the host. It therefore holds only what a shipped game
 needs: no DLL loading, file watching, build tools, .NET hosting, winit or
-YAML. A C# project reaches it as an external [`ProjectBackend`](static_project/trait.ProjectBackend.md#rustdoc-item-586) that
+YAML. A C# project reaches it as an external [`ProjectBackend`](static_project/trait.ProjectBackend.md#rustdoc-item-589) that
 `pill_csharp_bridge` implements.
 
 ## Module contents
@@ -42,9 +42,9 @@ YAML. A C# project reaches it as an external [`ProjectBackend`](static_project/t
 - [`render_window`](render_window/index.md#rustdoc-item-135) — Attaching a renderer to a frontend's window, through its handles as data.
 - [`rendering`](rendering/index.md#rustdoc-item-137) — A renderer attached to a window, and the runtime that draws a statically
 - [`runtime`](runtime/index.md#rustdoc-item-284) — Engine ownership and the frame every build runs.
-- [`static_project`](static_project/index.md#rustdoc-item-733) — Statically linked project and module registration.
-- [`system_specs`](system_specs/index.md#rustdoc-item-737) — The start-up report of the machine the engine runs on.
-- [`telemetry`](telemetry/index.md#rustdoc-item-748) — Application telemetry bootstrap for every frontend.
+- [`static_project`](static_project/index.md#rustdoc-item-737) — Statically linked project and module registration.
+- [`system_specs`](system_specs/index.md#rustdoc-item-742) — The start-up report of the machine the engine runs on.
+- [`telemetry`](telemetry/index.md#rustdoc-item-753) — Application telemetry bootstrap for every frontend.
 
 ## Re-exports
 
@@ -69,27 +69,28 @@ YAML. A C# project reaches it as an external [`ProjectBackend`](static_project/t
 - `pub use pill_renderer_api::SurfaceCameras;`
 - `pub use pill_renderer_api::SurfaceId;`
 - `pub use pill_renderer_api::SurfaceOptions;`
-- [`pub use runtime::insert_debug_resources;`](runtime/fn.insert_debug_resources.md#rustdoc-item-549)
-- [`pub use runtime::mount_asset_pack;`](runtime/fn.mount_asset_pack.md#rustdoc-item-551)
-- [`pub use runtime::set_surface_camera;`](runtime/fn.set_surface_camera.md#rustdoc-item-547)
+- [`pub use runtime::insert_debug_resources;`](runtime/fn.insert_debug_resources.md#rustdoc-item-552)
+- [`pub use runtime::mount_asset_pack;`](runtime/fn.mount_asset_pack.md#rustdoc-item-554)
+- [`pub use runtime::set_surface_camera;`](runtime/fn.set_surface_camera.md#rustdoc-item-550)
 - [`pub use runtime::setup;`](runtime/fn.setup.md#rustdoc-item-314)
 - [`pub use runtime::setup_with_asset_database;`](runtime/fn.setup_with_asset_database.md#rustdoc-item-315)
 - [`pub use runtime::FrameDriver;`](runtime/trait.FrameDriver.md#rustdoc-item-272)
 - [`pub use runtime::PackSource;`](runtime/enum.PackSource.md#rustdoc-item-498)
 - [`pub use runtime::Runtime;`](runtime/struct.Runtime.md#rustdoc-item-235)
 - [`pub use runtime::WindowedFrameDriver;`](runtime/trait.WindowedFrameDriver.md#rustdoc-item-275)
-- [`pub use static_project::ProjectBackend;`](static_project/trait.ProjectBackend.md#rustdoc-item-586)
-- [`pub use static_project::StaticLogging;`](static_project/struct.StaticLogging.md#rustdoc-item-659)
-- [`pub use static_project::StaticModule;`](static_project/struct.StaticModule.md#rustdoc-item-556)
+- [`pub use static_project::no_project_registration;`](static_project/fn.no_project_registration.md#rustdoc-item-739)
+- [`pub use static_project::ProjectBackend;`](static_project/trait.ProjectBackend.md#rustdoc-item-589)
+- [`pub use static_project::StaticLogging;`](static_project/struct.StaticLogging.md#rustdoc-item-663)
+- [`pub use static_project::StaticModule;`](static_project/struct.StaticModule.md#rustdoc-item-559)
 - [`pub use static_project::StaticProject;`](static_project/struct.StaticProject.md#rustdoc-item-278)
-- [`pub use static_project::StaticProjectBackend;`](static_project/enum.StaticProjectBackend.md#rustdoc-item-592)
+- [`pub use static_project::StaticProjectBackend;`](static_project/enum.StaticProjectBackend.md#rustdoc-item-596)
 - [`pub use static_project::StaticRenderer;`](static_project/struct.StaticRenderer.md#rustdoc-item-280)
-- [`pub use static_project::StaticRendererAttachFn;`](static_project/type.StaticRendererAttachFn.md#rustdoc-item-622)
-- [`pub use telemetry::apply_logging_settings;`](telemetry/fn.apply_logging_settings.md#rustdoc-item-804)
-- [`pub use telemetry::init_telemetry;`](telemetry/fn.init_telemetry.md#rustdoc-item-744)
-- [`pub use telemetry::init_telemetry_with_capture;`](telemetry/fn.init_telemetry_with_capture.md#rustdoc-item-802)
-- [`pub use telemetry::report_failure;`](telemetry/fn.report_failure.md#rustdoc-item-805)
-- [`pub use telemetry::LoggingSettings;`](telemetry/struct.LoggingSettings.md#rustdoc-item-698)
+- [`pub use static_project::StaticRendererAttachFn;`](static_project/type.StaticRendererAttachFn.md#rustdoc-item-626)
+- [`pub use telemetry::apply_logging_settings;`](telemetry/fn.apply_logging_settings.md#rustdoc-item-810)
+- [`pub use telemetry::init_telemetry;`](telemetry/fn.init_telemetry.md#rustdoc-item-749)
+- [`pub use telemetry::init_telemetry_with_capture;`](telemetry/fn.init_telemetry_with_capture.md#rustdoc-item-808)
+- [`pub use telemetry::report_failure;`](telemetry/fn.report_failure.md#rustdoc-item-811)
+- [`pub use telemetry::LoggingSettings;`](telemetry/struct.LoggingSettings.md#rustdoc-item-702)
 - [`pub use error::RenderingError;`](error/enum.RenderingError.md#rustdoc-item-6)
 - [`pub use render_window::RendererWindow;`](render_window/trait.RendererWindow.md#rustdoc-item-125)
 - [`pub use rendering::attach_renderer;`](rendering/fn.attach_renderer.md#rustdoc-item-276)

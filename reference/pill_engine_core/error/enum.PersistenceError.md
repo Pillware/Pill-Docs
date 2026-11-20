@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-4834"></a>
+<a id="rustdoc-item-5467"></a>
 
 # Enum `pill_engine_core::error::PersistenceError`
 
@@ -19,7 +19,7 @@ destination archetype, or bytes that fail to decode into the new layout.
 
 ## Variants
 
-<a id="rustdoc-item-4811"></a>
+<a id="rustdoc-item-5461"></a>
 
 ### `ComponentTypeUnregistered`
 
@@ -29,7 +29,7 @@ ComponentTypeUnregistered
 
 The component type is not registered in the current world.
 
-<a id="rustdoc-item-4814"></a>
+<a id="rustdoc-item-5462"></a>
 
 ### `ComponentTypeAmbiguous`
 
@@ -44,7 +44,7 @@ The persistable-registration path removes superseded same-name entries
 so this cannot happen. Reaching it means two concurrent peers registered
 the name and the collision guard was bypassed.
 
-<a id="rustdoc-item-4816"></a>
+<a id="rustdoc-item-5463"></a>
 
 ### `DeserializerMissing`
 
@@ -54,7 +54,7 @@ DeserializerMissing
 
 No deserializer is registered for the component type.
 
-<a id="rustdoc-item-4818"></a>
+<a id="rustdoc-item-5465"></a>
 
 ### `SerializerMissing`
 
@@ -68,7 +68,7 @@ Migration needs one to carry the entities the incoming generation
 spawned during `init` across a rebuilt column, without reading their
 bytes through the retiring generation's layout.
 
-<a id="rustdoc-item-4820"></a>
+<a id="rustdoc-item-5464"></a>
 
 ### `InserterMissing`
 
@@ -78,7 +78,7 @@ InserterMissing
 
 No inserter is registered for the component type.
 
-<a id="rustdoc-item-4822"></a>
+<a id="rustdoc-item-5469"></a>
 
 ### `DeserializationFailed`
 
@@ -88,7 +88,7 @@ DeserializationFailed
 
 The persisted bytes could not be decoded into the new schema.
 
-<a id="rustdoc-item-4824"></a>
+<a id="rustdoc-item-5468"></a>
 
 ### `SerializationFailed`
 
@@ -98,11 +98,11 @@ SerializationFailed
 
 A value could not be encoded, and the type's own `Serialize` says why.
 
-The inverse of [`Self::DeserializationFailed`](#rustdoc-item-4822), reported the same way:
+The inverse of [`Self::DeserializationFailed`](#rustdoc-item-5469), reported the same way:
 the pass records the type as skipped and leaves the world as it found
 it, instead of aborting a reload halfway through its transaction.
 
-<a id="rustdoc-item-4826"></a>
+<a id="rustdoc-item-5470"></a>
 
 ### `StorageRemovalFailed`
 
@@ -112,7 +112,7 @@ StorageRemovalFailed
 
 The old component column could not be removed from its archetype.
 
-<a id="rustdoc-item-4828"></a>
+<a id="rustdoc-item-5471"></a>
 
 ### `StorageFactoryMissing`
 
@@ -122,7 +122,7 @@ StorageFactoryMissing
 
 No storage factory is registered for the component.
 
-<a id="rustdoc-item-4830"></a>
+<a id="rustdoc-item-5472"></a>
 
 ### `NativeStorageExpected`
 
@@ -132,7 +132,7 @@ NativeStorageExpected
 
 The component has no native Rust storage to migrate.
 
-<a id="rustdoc-item-4832"></a>
+<a id="rustdoc-item-5475"></a>
 
 ### `ColumnMoveFailed`
 
@@ -149,7 +149,7 @@ registry/storage desync a partly applied reload leaves behind. The
 migration reports it instead of leaving the entity split between two
 archetypes.
 
-<a id="rustdoc-item-4833"></a>
+<a id="rustdoc-item-5474"></a>
 
 ### `DestinationArchetypeMissing`
 
@@ -169,15 +169,15 @@ The destination archetype vanished immediately after creation.
 - `TryFrom<U>`
 - `Any`
 - `ToString`
+- `CastableFrom<ST, Uninit, Uninit>`
+- `CastableFrom<ST, Initialized, Initialized>`
+- `Read<Exclusive, BecauseExclusive>`
 - `Instrument`
 - `WithSubscriber`
 - `IntoEither`
 - `Pointable`
 - `OwoColorize`
 - `ErasedDestructor`
-- `CastableFrom<ST, Uninit, Uninit>`
-- `CastableFrom<ST, Initialized, Initialized>`
-- `Read<Exclusive, BecauseExclusive>`
 - `Debug`
 - `Diagnostic`
 - `Error`

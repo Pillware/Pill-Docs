@@ -8,7 +8,7 @@
 pub(crate) struct CapturedErrors;
 ```
 
-Visibility: `crate` · Source: `extensions\pill_master_renderer\pill_master_renderer\src\error.rs:57`
+Visibility: `crate` · Source: `extensions\pill_master_renderer\modules\runtime\gpu\src\error.rs:57`
 
 The errors that one block of GPU work provoked.
 

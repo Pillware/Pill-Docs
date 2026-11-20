@@ -8,7 +8,7 @@
 pub(crate) fn scan_named_functions(source: &str, mask: &[bool], names: &std::collections::HashSet<String>, skip: SkipStrategy) -> Vec<(String, FunctionText)>;
 ```
 
-Visibility: `crate` · Source: `hosting\pill_hot_scan\src\lib.rs:967`
+Visibility: `crate` · Source: `hosting\pill_hot_scan\src\lib.rs:994`
 
 Every declaration of a named function, in source order, in one pass.
 

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-5786"></a>
+<a id="rustdoc-item-7751"></a>
 
 # Struct `pill_editor_core::panels::PanelWindowRequest`
 
@@ -18,7 +18,7 @@ asked draws the content.
 
 ## Fields
 
-<a id="rustdoc-item-5829"></a>
+<a id="rustdoc-item-7794"></a>
 
 ### `id`
 
@@ -28,7 +28,7 @@ id: String
 
 The window's identity within its panel.
 
-<a id="rustdoc-item-5830"></a>
+<a id="rustdoc-item-7795"></a>
 
 ### `title`
 
@@ -38,7 +38,7 @@ title: String
 
 The title the shell draws in the window's bar.
 
-<a id="rustdoc-item-5831"></a>
+<a id="rustdoc-item-7796"></a>
 
 ### `width`
 
@@ -48,7 +48,7 @@ width: f32
 
 The window's first width in logical points.
 
-<a id="rustdoc-item-5832"></a>
+<a id="rustdoc-item-7797"></a>
 
 ### `height`
 
@@ -58,7 +58,7 @@ height: f32
 
 The window's first height in logical points.
 
-<a id="rustdoc-item-5833"></a>
+<a id="rustdoc-item-7798"></a>
 
 ### `modal`
 

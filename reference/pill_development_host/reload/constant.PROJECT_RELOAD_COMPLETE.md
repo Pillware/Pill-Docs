@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-3429"></a>
+<a id="rustdoc-item-3685"></a>
 
 # Constant `pill_development_host::reload::PROJECT_RELOAD_COMPLETE`
 
@@ -8,7 +8,7 @@
 pub(in reload) const PROJECT_RELOAD_COMPLETE: &str = "hot reload complete";
 ```
 
-Visibility: `{'restricted': {'parent': 3428, 'path': '::reload'}}` · Source: `hosting\pill_development_host\src\reload.rs:78`
+Visibility: `{'restricted': {'parent': 3684, 'path': '::reload'}}` · Source: `hosting\pill_development_host\src\reload.rs:78`
 
 Final line of a project reload.
 

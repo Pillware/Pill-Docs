@@ -8,7 +8,7 @@
 pub struct MeshVertex;
 ```
 
-Source: `extensions\pill_master_renderer\pill_master_renderer_data\src\assets\mesh.rs:44`
+Source: `extensions\pill_master_renderer\modules\runtime\data\src\assets\mesh.rs:44`
 
 One vertex of a mesh, in the layout of the vertex buffer.
 
@@ -99,6 +99,9 @@ macro; pass it to `World::register_component_with_layout`.
 - `TryFrom<U>`
 - `Any`
 - `ToOwned`
+- `CastableFrom<ST, Uninit, Uninit>`
+- `CastableFrom<ST, Initialized, Initialized>`
+- `Read<Exclusive, BecauseExclusive>`
 - `AnyBitPattern`
 - `CheckedBitPattern`
 - `NoUninit`
@@ -108,9 +111,6 @@ macro; pass it to `World::register_component_with_layout`.
 - `Pointable`
 - `OwoColorize`
 - `ErasedDestructor`
-- `CastableFrom<ST, Uninit, Uninit>`
-- `CastableFrom<ST, Initialized, Initialized>`
-- `Read<Exclusive, BecauseExclusive>`
 - `Clone`
 - `Copy`
 - `Debug`

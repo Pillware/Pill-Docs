@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1501"></a>
+<a id="rustdoc-item-1525"></a>
 
 # Static `pill_csharp_bridge::manifest::INTERNED_FIELD_STRINGS`
 
@@ -8,7 +8,7 @@
 pub(in manifest) static INTERNED_FIELD_STRINGS: std::sync::Mutex<Option<std::collections::HashSet<&'static str>>> = _;
 ```
 
-Visibility: `{'restricted': {'parent': 1247, 'path': '::manifest'}}` · Source: `csharp\pill_csharp_bridge\src\manifest.rs:741`
+Visibility: `{'restricted': {'parent': 1270, 'path': '::manifest'}}` · Source: `csharp\pill_csharp_bridge\src\manifest.rs:741`
 
 Strings handed to the engine as `&'static str`, stored once per value.
 

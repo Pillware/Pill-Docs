@@ -101,7 +101,8 @@ A component belongs to exactly one entity at a time. Components are the only own
 ```rust
 use pill_engine::*;
 
-#[derive(Default, PillComponent)]
+#[component]
+#[derive(Default)]
 pub struct Health {
     pub current: f32,
 }
@@ -254,7 +255,7 @@ The engine itself is split into three main crates, from the bottom up:
 
 A module never names `pill_engine_core` or `pill_core` directly. It writes `use pill_engine::*`, and that one crate gives it everything it needs: `#[system]`, `Query`, `Commands`, `Res`, the derive macros.
 
-> **Example:** `#[derive(PillComponent)]` on your `Health` struct expands into code that adds `Health` to your module's own list of component types. When the engine loads your module, it reads that list and registers `Health` in the world. You never call a registration function yourself.
+> **Example:** `#[component]` on your `Health` struct expands into code that adds `Health` to your module's own list of component types. When the engine loads your module, it reads that list and registers `Health` in the world. You never call a registration function yourself.
 
 ## Stage 5: How does hot reload fit in?
 

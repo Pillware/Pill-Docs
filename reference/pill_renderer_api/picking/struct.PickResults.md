@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-198"></a>
+<a id="rustdoc-item-201"></a>
 
 # Struct `pill_renderer_api::picking::PickResults`
 
@@ -8,13 +8,13 @@
 pub struct PickResults;
 ```
 
-Source: `rendering\pill_renderer_api\src\picking.rs:150`
+Source: `rendering\pill_renderer_api\src\picking.rs:162`
 
 The answers renderers delivered and nobody took yet.
 
 ## Fields
 
-<a id="rustdoc-item-1403"></a>
+<a id="rustdoc-item-1488"></a>
 
 ### `results`
 
@@ -26,7 +26,7 @@ Answers in the order the renderers delivered them.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-1404"></a>
+<a id="rustdoc-item-1489"></a>
 
 ### `take`
 
@@ -47,15 +47,15 @@ Takes every answer delivered so far.
 - `TryFrom<U>`
 - `Any`
 - `ToOwned`
+- `CastableFrom<ST, Uninit, Uninit>`
+- `CastableFrom<ST, Initialized, Initialized>`
+- `Read<Exclusive, BecauseExclusive>`
 - `Instrument`
 - `WithSubscriber`
 - `IntoEither`
 - `Pointable`
 - `OwoColorize`
 - `ErasedDestructor`
-- `CastableFrom<ST, Uninit, Uninit>`
-- `CastableFrom<ST, Initialized, Initialized>`
-- `Read<Exclusive, BecauseExclusive>`
 - `Debug`
 - `Clone`
 - `Default`

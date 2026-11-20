@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-651"></a>
+<a id="rustdoc-item-647"></a>
 
 # Struct `pill_master_renderer_data::assets::rendering_pipeline::PipelinePassDocument`
 
@@ -8,7 +8,7 @@
 pub struct PipelinePassDocument;
 ```
 
-Source: `extensions\pill_master_renderer\pill_master_renderer_data\src\assets\rendering_pipeline.rs:121`
+Source: `extensions\pill_master_renderer\modules\runtime\data\src\assets\rendering_pipeline.rs:121`
 
 One entry in a `.pipeline` file: the pass it names, and whether this chain
 runs it.
@@ -20,7 +20,7 @@ entry reads `{ "guid": …, "enabled": false }`.
 
 ## Fields
 
-<a id="rustdoc-item-649"></a>
+<a id="rustdoc-item-645"></a>
 
 ### `pass`
 
@@ -30,7 +30,7 @@ pass: pill_engine::AssetReference<crate::RenderPass>
 
 The pass this entry runs, by guid.
 
-<a id="rustdoc-item-650"></a>
+<a id="rustdoc-item-646"></a>
 
 ### `enabled`
 
@@ -53,6 +53,9 @@ did.
 - `TryFrom<U>`
 - `Any`
 - `ToOwned`
+- `CastableFrom<ST, Uninit, Uninit>`
+- `CastableFrom<ST, Initialized, Initialized>`
+- `Read<Exclusive, BecauseExclusive>`
 - `DeserializeOwned`
 - `Instrument`
 - `WithSubscriber`
@@ -60,9 +63,6 @@ did.
 - `Pointable`
 - `OwoColorize`
 - `ErasedDestructor`
-- `CastableFrom<ST, Uninit, Uninit>`
-- `CastableFrom<ST, Initialized, Initialized>`
-- `Read<Exclusive, BecauseExclusive>`
 - `Clone`
 - `Debug`
 - `Serialize`

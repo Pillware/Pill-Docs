@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-8468"></a>
+<a id="rustdoc-item-10531"></a>
 
 # Function `pill_editor_core::systems::pause_toggle_command`
 

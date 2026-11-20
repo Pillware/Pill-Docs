@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-3287"></a>
+<a id="rustdoc-item-3542"></a>
 
 # Function `pill_development_host::native_library::remove_generation_directory`
 
@@ -8,7 +8,7 @@
 pub(in native_library) fn remove_generation_directory(directory: &std::path::Path);
 ```
 
-Visibility: `{'restricted': {'parent': 3075, 'path': '::native_library'}}` · Source: `hosting\pill_development_host\src\native_library.rs:1581`
+Visibility: `{'restricted': {'parent': 3326, 'path': '::native_library'}}` · Source: `hosting\pill_development_host\src\native_library.rs:1868`
 
 Removes one generation's directory and keeps whatever the process still
 maps.

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1715"></a>
+<a id="rustdoc-item-1725"></a>
 
 # Constant `pill_core::telemetry::telemetry_target::PROFILE_FINE`
 

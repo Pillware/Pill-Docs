@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-3590"></a>
+<a id="rustdoc-item-2105"></a>
 
 # Module `pill_engine_core::config`
 
@@ -35,13 +35,13 @@ shared engine dylib.
 ## Module contents
 
 ### Structs
-- [`EntityBuilderConfig`](struct.EntityBuilderConfig.md#rustdoc-item-3535) — Zero-sized struct grouping the entity-builder constants.
-- [`ParallelProcessingConfig`](struct.ParallelProcessingConfig.md#rustdoc-item-3504) — Zero-sized struct grouping the parallel-iterator constants.
-- [`QueryConfig`](struct.QueryConfig.md#rustdoc-item-3561) — Zero-sized struct grouping the query constants.
+- [`EntityBuilderConfig`](struct.EntityBuilderConfig.md#rustdoc-item-2050) — Zero-sized struct grouping the entity-builder constants.
+- [`ParallelProcessingConfig`](struct.ParallelProcessingConfig.md#rustdoc-item-2019) — Zero-sized struct grouping the parallel-iterator constants.
+- [`QueryConfig`](struct.QueryConfig.md#rustdoc-item-2076) — Zero-sized struct grouping the query constants.
 
 ### Functions
-- [`default_entities_per_slice`](fn.default_entities_per_slice.md#rustdoc-item-3508) — Returns the number of entities in one parallel work slice, scaled down for
-- [`print_parallel_config`](fn.print_parallel_config.md#rustdoc-item-3589) — Reports the active parallel-iterator settings through the telemetry stack.
+- [`default_entities_per_slice`](fn.default_entities_per_slice.md#rustdoc-item-2023) — Returns the number of entities in one parallel work slice, scaled down for
+- [`print_parallel_config`](fn.print_parallel_config.md#rustdoc-item-2104) — Reports the active parallel-iterator settings through the telemetry stack.
 
 ### Constants
-- [`PROFILING_MEMORY_ALLOCATIONS_SAMPLING_FREQUENCY`](constant.PROFILING_MEMORY_ALLOCATIONS_SAMPLING_FREQUENCY.md#rustdoc-item-3503) — Callstack depth recorded for each allocation by
+- [`PROFILING_MEMORY_ALLOCATIONS_SAMPLING_FREQUENCY`](constant.PROFILING_MEMORY_ALLOCATIONS_SAMPLING_FREQUENCY.md#rustdoc-item-2018) — Callstack depth recorded for each allocation by

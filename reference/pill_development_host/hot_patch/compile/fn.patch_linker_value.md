@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1916"></a>
+<a id="rustdoc-item-1990"></a>
 
 # Function `pill_development_host::hot_patch::compile::patch_linker_value`
 
@@ -8,7 +8,7 @@
 pub(in hot_patch::compile) fn patch_linker_value(codegen_value: &str) -> String;
 ```
 
-Visibility: `{'restricted': {'parent': 1910, 'path': '::hot_patch::compile'}}` · Source: `hosting\pill_development_host\src\hot_patch\compile.rs:598`
+Visibility: `{'restricted': {'parent': 1984, 'path': '::hot_patch::compile'}}` · Source: `hosting\pill_development_host\src\hot_patch\compile.rs:598`
 
 Returns the linker value the patch is built with, given the one cargo
 recorded.

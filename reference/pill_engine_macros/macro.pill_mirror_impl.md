@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-403"></a>
+<a id="rustdoc-item-427"></a>
 
 # Procedural macro `pill_engine_macros::pill_mirror_impl`
 
@@ -8,7 +8,7 @@
 proc_macro pill_mirror_impl
 ```
 
-Source: `engine\pill_engine_macros\src\lib.rs:1812`
+Source: `engine\pill_engine_macros\src\lib.rs:2205`
 
 Mirrors selected functions of an inherent `impl` block to C#.
 

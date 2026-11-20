@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-774"></a>
+<a id="rustdoc-item-770"></a>
 
 # Struct `pill_master_renderer::preview::BudgetedCache`
 
@@ -8,7 +8,7 @@
 pub(in preview) struct BudgetedCache<V>;
 ```
 
-Visibility: `{'restricted': {'parent': 592, 'path': '::preview'}}` · Source: `extensions\pill_master_renderer\pill_master_renderer\src\preview.rs:826`
+Visibility: `{'restricted': {'parent': 589, 'path': '::preview'}}` · Source: `extensions\pill_master_renderer\modules\runtime\gpu\src\preview.rs:826`
 
 A cache of GPU data by file path, limited by bytes rather than by a count.
 
@@ -21,7 +21,7 @@ previews.
 
 ## Fields
 
-<a id="rustdoc-item-820"></a>
+<a id="rustdoc-item-816"></a>
 
 ### `cached_entries`
 
@@ -32,7 +32,7 @@ cached_entries: std::collections::HashMap<String, (Option<std::time::SystemTime>
 The cached values by path, each with the modified time it was built
 from.
 
-<a id="rustdoc-item-822"></a>
+<a id="rustdoc-item-818"></a>
 
 ### `eviction_order`
 
@@ -43,7 +43,7 @@ eviction_order: std::collections::VecDeque<(String, u64)>
 The paths, oldest first, each with the bytes it holds. This is the
 order entries are dropped in.
 
-<a id="rustdoc-item-824"></a>
+<a id="rustdoc-item-820"></a>
 
 ### `bytes`
 
@@ -53,7 +53,7 @@ bytes: u64
 
 The bytes every entry holds together.
 
-<a id="rustdoc-item-825"></a>
+<a id="rustdoc-item-821"></a>
 
 ### `budget`
 
@@ -65,7 +65,7 @@ How many bytes the cache may hold.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-826"></a>
+<a id="rustdoc-item-822"></a>
 
 ### `new`
 
@@ -75,7 +75,7 @@ pub(in preview) fn new(budget: u64) -> Self;
 
 An empty cache that may hold `budget` bytes.
 
-<a id="rustdoc-item-827"></a>
+<a id="rustdoc-item-823"></a>
 
 ### `fresh_value`
 
@@ -87,7 +87,7 @@ Returns the cached value for `path` if it was built from `modified`.
 
 Using the value makes its entry the newest one.
 
-<a id="rustdoc-item-828"></a>
+<a id="rustdoc-item-824"></a>
 
 ### `insert`
 
@@ -98,7 +98,7 @@ pub(in preview) fn insert(self: &mut Self, path: &str, modified: Option<SystemTi
 Stores `value` as the newest entry, drops entries until the cache fits
 its limit again, and returns the paths it dropped.
 
-<a id="rustdoc-item-829"></a>
+<a id="rustdoc-item-825"></a>
 
 ### `forget`
 

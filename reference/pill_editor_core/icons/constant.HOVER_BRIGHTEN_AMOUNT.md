@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-4426"></a>
+<a id="rustdoc-item-6387"></a>
 
 # Constant `pill_editor_core::icons::HOVER_BRIGHTEN_AMOUNT`
 
@@ -8,6 +8,6 @@
 pub(in icons) const HOVER_BRIGHTEN_AMOUNT: u8 = 14;
 ```
 
-Visibility: `{'restricted': {'parent': 4424, 'path': '::icons'}}` · Source: `editor\pill_editor_core\src\icons.rs:57`
+Visibility: `{'restricted': {'parent': 6385, 'path': '::icons'}}` · Source: `editor\pill_editor_core\src\icons.rs:57`
 
 How much the hovered fill of a row floating over a scene brightens.

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-140"></a>
+<a id="rustdoc-item-144"></a>
 
 # Struct `pill_engine::component_registry::PillFieldAccessorDescriptor`
 
@@ -8,7 +8,7 @@
 pub struct PillFieldAccessorDescriptor;
 ```
 
-Source: `engine\pill_engine\src\component_registry.rs:107`
+Source: `engine\pill_engine\src\component_registry.rs:114`
 
 One heap-owning field accessor declared by `#[derive(PillComponent)]`,
 submitted into the same per-artifact inventory as the other descriptors.
@@ -25,7 +25,7 @@ allocate on the read path.
 
 ## Fields
 
-<a id="rustdoc-item-130"></a>
+<a id="rustdoc-item-134"></a>
 
 ### `type_name`
 
@@ -33,9 +33,9 @@ allocate on the read path.
 type_name: &'static str
 ```
 
-Fully-qualified component type name the field belongs to.
+Stored name of the component the field belongs to, `<crate>::<Type>`.
 
-<a id="rustdoc-item-131"></a>
+<a id="rustdoc-item-135"></a>
 
 ### `field_name`
 
@@ -46,7 +46,7 @@ field_name: &'static str
 Rust field name (snake_case); the C# codegen derives member names from
 it.
 
-<a id="rustdoc-item-132"></a>
+<a id="rustdoc-item-136"></a>
 
 ### `kind`
 
@@ -60,7 +60,7 @@ Container kind: `"vec"`, `"dynbuf"`, `"string"`, or `"vecstring"`.
 allocated strings, so no span exists over them and managed code reaches
 each element through its own accessor instead.
 
-<a id="rustdoc-item-133"></a>
+<a id="rustdoc-item-137"></a>
 
 ### `element_tag`
 
@@ -72,7 +72,7 @@ Element type tag of a `vec` or `dynbuf` field (`f32`,
 `struct:<path>`, ...); `string` for a `vecstring` field; empty for a
 `string` field.
 
-<a id="rustdoc-item-134"></a>
+<a id="rustdoc-item-138"></a>
 
 ### `view_symbol`
 
@@ -85,7 +85,7 @@ Exported symbol of the view trampoline
 reports a null data pointer and the element count, because its elements
 are separate allocations.
 
-<a id="rustdoc-item-135"></a>
+<a id="rustdoc-item-139"></a>
 
 ### `resize_symbol`
 
@@ -96,7 +96,7 @@ resize_symbol: &'static str
 Exported symbol of the resize trampoline for a `vec`, `dynbuf` or
 `vecstring` field; empty for a `string` field.
 
-<a id="rustdoc-item-136"></a>
+<a id="rustdoc-item-140"></a>
 
 ### `set_symbol`
 
@@ -107,7 +107,7 @@ set_symbol: &'static str
 Exported symbol of the mutate-in-place trampoline for a `string` field;
 empty for every other kind.
 
-<a id="rustdoc-item-137"></a>
+<a id="rustdoc-item-141"></a>
 
 ### `item_symbol`
 
@@ -119,7 +119,7 @@ Exported symbol of the per-element view trampoline for a `vecstring`
 field (`pill_accessor_{Type}_{field}_item`); empty for every other
 kind.
 
-<a id="rustdoc-item-138"></a>
+<a id="rustdoc-item-142"></a>
 
 ### `set_item_symbol`
 
@@ -130,7 +130,7 @@ set_item_symbol: &'static str
 Exported symbol of the per-element replace trampoline for a `vecstring`
 field; empty for every other kind.
 
-<a id="rustdoc-item-139"></a>
+<a id="rustdoc-item-143"></a>
 
 ### `push_symbol`
 
@@ -152,15 +152,16 @@ for every other kind.
 - `TryFrom<U>`
 - `Any`
 - `ToOwned`
+- `CastableFrom<ST, Uninit, Uninit>`
+- `CastableFrom<ST, Initialized, Initialized>`
+- `Read<Exclusive, BecauseExclusive>`
 - `Instrument`
 - `WithSubscriber`
 - `IntoEither`
 - `Pointable`
 - `OwoColorize`
 - `ErasedDestructor`
-- `CastableFrom<ST, Uninit, Uninit>`
-- `CastableFrom<ST, Initialized, Initialized>`
-- `Read<Exclusive, BecauseExclusive>`
+- `Equivalent<K>`
 - `Clone`
 - `Copy`
 - `Debug`

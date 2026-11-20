@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-4127"></a>
+<a id="rustdoc-item-4384"></a>
 
 # Function `pill_development_host::runtime::attach_renderer`
 
@@ -8,13 +8,13 @@
 pub fn attach_renderer<W>(host: DevHost, window: W, width: u32, height: u32) -> Result<RenderingHost, pill_player::RenderingError> where W: RendererWindow + 'static;
 ```
 
-Source: `hosting\pill_development_host\src\runtime.rs:2111`
+Source: `hosting\pill_development_host\src\runtime.rs:2210`
 
-Complete rendering setup from an already-built [`DevHost`](struct.DevHost.md#rustdoc-item-3922), attaching the
+Complete rendering setup from an already-built [`DevHost`](struct.DevHost.md#rustdoc-item-4179), attaching the
 engine renderer to a supplied native window.
 
 Frontends that must finish project setup (building and loading the project
-module) before any window exists call this after [`setup`](fn.setup.md#rustdoc-item-4116), so a slow first
+module) before any window exists call this after [`setup`](fn.setup.md#rustdoc-item-4373), so a slow first
 build never shows a blank surface. The standalone runner is one.
 
 ## Errors

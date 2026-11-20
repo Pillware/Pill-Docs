@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-890"></a>
+<a id="rustdoc-item-912"></a>
 
 # Function `pill_csharp_bridge::components::register_component_manifest`
 

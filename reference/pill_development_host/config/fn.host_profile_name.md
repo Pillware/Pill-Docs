@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1248"></a>
+<a id="rustdoc-item-1267"></a>
 
 # Function `pill_development_host::config::host_profile_name`
 
@@ -8,9 +8,9 @@
 pub(crate) fn host_profile_name() -> &'static str;
 ```
 
-Visibility: `crate` · Source: `hosting\pill_development_host\src\config.rs:1322`
+Visibility: `crate` · Source: `hosting\pill_development_host\src\config.rs:1518`
 
-Cargo profile *name* matching [`HOST_PROFILE_DIRECTORY`](constant.HOST_PROFILE_DIRECTORY.md#rustdoc-item-842).
+Cargo profile *name* matching [`HOST_PROFILE_DIRECTORY`](constant.HOST_PROFILE_DIRECTORY.md#rustdoc-item-849).
 
 Cargo names the default profile `dev` but writes it into `target/debug`;
 every other profile's directory is its own name. This is the only place

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-6100"></a>
+<a id="rustdoc-item-8065"></a>
 
 # Struct `pill_editor_core::panels::PanelRegistration`
 
@@ -14,7 +14,7 @@ One registered panel.
 
 ## Fields
 
-<a id="rustdoc-item-6094"></a>
+<a id="rustdoc-item-8059"></a>
 
 ### `id`
 
@@ -25,7 +25,7 @@ id: String
 The panel's identity: stable across reloads, and what the layout
 document stores.
 
-<a id="rustdoc-item-6095"></a>
+<a id="rustdoc-item-8060"></a>
 
 ### `title`
 
@@ -35,7 +35,7 @@ title: String
 
 The tab's title.
 
-<a id="rustdoc-item-6096"></a>
+<a id="rustdoc-item-8061"></a>
 
 ### `source`
 
@@ -46,7 +46,7 @@ source: String
 The crate that registered it: the log names it, and the panel's
 windows are keyed by it.
 
-<a id="rustdoc-item-6097"></a>
+<a id="rustdoc-item-8062"></a>
 
 ### `draw`
 
@@ -56,7 +56,7 @@ draw: PanelDrawFn
 
 The function that draws the panel's body.
 
-<a id="rustdoc-item-6098"></a>
+<a id="rustdoc-item-8063"></a>
 
 ### `liveness`
 
@@ -67,7 +67,7 @@ liveness: std::sync::Weak<ModuleLiveness>
 The marker of the module that registered it: it goes dead when that
 module unloads.
 
-<a id="rustdoc-item-6099"></a>
+<a id="rustdoc-item-8064"></a>
 
 ### `epoch`
 
@@ -80,7 +80,7 @@ one, so a panel that registers again gets a new value.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-6101"></a>
+<a id="rustdoc-item-8066"></a>
 
 ### `alive`
 

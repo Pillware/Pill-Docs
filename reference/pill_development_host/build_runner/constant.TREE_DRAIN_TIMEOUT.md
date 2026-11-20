@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-625"></a>
+<a id="rustdoc-item-627"></a>
 
 # Constant `pill_development_host::build_runner::TREE_DRAIN_TIMEOUT`
 
@@ -8,7 +8,7 @@
 pub(in build_runner) const TREE_DRAIN_TIMEOUT: std::time::Duration = _;
 ```
 
-Visibility: `{'restricted': {'parent': 545, 'path': '::build_runner'}}` · Source: `hosting\pill_development_host\src\build_runner.rs:884`
+Visibility: `{'restricted': {'parent': 546, 'path': '::build_runner'}}` · Source: `hosting\pill_development_host\src\build_runner.rs:885`
 
 How long a stopped build's process tree gets to disappear.
 

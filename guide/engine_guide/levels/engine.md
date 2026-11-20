@@ -12,7 +12,7 @@
 | `pill_engine_core`   | DLL (and `rlib`)      | ~54k lines  | The engine: ECS, scheduler, assets, scenes, persistence, the module contract      |
 | `pill_engine`        | `rlib`, one per module| ~1.5k lines | What projects and extensions use: re-exports the core, holds the module's registries |
 | `pill_core_macros`   | procedural macro      | ~0.8k lines | `#[engine_error]`                                                                 |
-| `pill_engine_macros` | procedural macro      | ~5k lines   | `PillComponent`, `#[pill_module]`, the C# mirror attributes and more              |
+| `pill_engine_macros` | procedural macro      | ~5k lines   | `#[component]`, `#[resource]`, `#[asset]`, `#[pill_module]`, the C# mirror attributes and more              |
 
 ```
           project, extensions, editor shell
@@ -112,7 +112,7 @@ The cost is that every module must be compiled against the same engine source an
 `pill_engine` is the crate every project and extension uses to reach the engine. It does two jobs:
 
 1. **It re-exports `pill_engine_core` under the same paths.** `use pill_engine::*` gives a module the whole engine. The macros can always write `::pill_engine::...` in the code they generate, whichever crate they run in.
-2. **It holds the module's registries.** A registry is a list of what one module declared. `pill_engine` holds them in `component_registry.rs`, `declarations.rs` and `hot_patch.rs`. They are built with the `inventory` crate: `#[derive(PillComponent)]`, `#[system]`, `#[derive(PillResource)]`, `#[derive(PillAsset)]` and `#[pill_hot]` each add an entry at compile time.
+2. **It holds the module's registries.** A registry is a list of what one module declared. `pill_engine` holds them in `component_registry.rs`, `declarations.rs` and `hot_patch.rs`. They are built with the `inventory` crate: `#[component]`, `#[system]`, `#[resource]`, `#[asset]` and `#[pill_hot]` each add an entry at compile time.
 
 ### Why is `pill_engine` compiled into every module?
 

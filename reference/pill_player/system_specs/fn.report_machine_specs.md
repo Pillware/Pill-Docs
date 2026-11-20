@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-738"></a>
+<a id="rustdoc-item-743"></a>
 
 # Function `pill_player::system_specs::report_machine_specs`
 

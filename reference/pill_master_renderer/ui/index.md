@@ -1,10 +1,10 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-3085"></a>
+<a id="rustdoc-item-3122"></a>
 
 # Module `pill_master_renderer::ui`
 
-Visibility: `crate` · Source: `extensions\pill_master_renderer\pill_master_renderer\src\ui\mod.rs:1`
+Visibility: `crate` · Source: `extensions\pill_master_renderer\modules\runtime\gpu\src\ui\mod.rs:1`
 
 The UI painter: draws the frame's `pill_ui_frame` lists over each surface.
 The UI painter: draws [`pill_ui_frame`] draw lists with wgpu.
@@ -26,4 +26,4 @@ renderer's target, so no wgpu object crosses a DLL boundary. It is the
 ## Module contents
 
 ### Modules
-- [`renderer`](renderer/index.md#rustdoc-item-2958) — The draw-list renderer: one pipeline, whole-image texture uploads and scissor clipping.
+- [`renderer`](renderer/index.md#rustdoc-item-2995) — The draw-list renderer: one pipeline, whole-image texture uploads and scissor clipping.

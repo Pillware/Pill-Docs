@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1193"></a>
+<a id="rustdoc-item-1215"></a>
 
 # Function `pill_csharp_bridge::csharp_runtime::parse_hostfxr_version`
 
@@ -8,7 +8,7 @@
 pub(in csharp_runtime) fn parse_hostfxr_version(directory_name: &str) -> (Vec<u32>, bool);
 ```
 
-Visibility: `{'restricted': {'parent': 1118, 'path': '::csharp_runtime'}}` · Source: `csharp\pill_csharp_bridge\src\csharp_runtime.rs:503`
+Visibility: `{'restricted': {'parent': 1140, 'path': '::csharp_runtime'}}` · Source: `csharp\pill_csharp_bridge\src\csharp_runtime.rs:503`
 
 Splits a `hostfxr` directory name into a version key that can be compared.
 

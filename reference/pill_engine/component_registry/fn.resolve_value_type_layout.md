@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-351"></a>
+<a id="rustdoc-item-392"></a>
 
 # Function `pill_engine::component_registry::resolve_value_type_layout`
 
@@ -8,7 +8,7 @@
 pub fn resolve_value_type_layout(path: &str) -> Option<&'static [ComponentFieldDescriptor]>;
 ```
 
-Source: `engine\pill_engine\src\component_registry.rs:595`
+Source: `engine\pill_engine\src\component_registry.rs:662`
 
 The layout of the value type a `struct:<path>` field tag names, among the
 ones this artifact declares with `#[derive(PillMirror)]` or

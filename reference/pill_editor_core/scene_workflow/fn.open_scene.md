@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-6691"></a>
+<a id="rustdoc-item-8730"></a>
 
 # Function `pill_editor_core::scene_workflow::open_scene`
 
@@ -8,7 +8,7 @@
 pub fn open_scene(engine: &mut pill_engine::Engine, path: &str) -> Result<pill_engine::SceneLoad, String>;
 ```
 
-Source: `editor\pill_editor_core\src\scene_workflow.rs:136`
+Source: `editor\pill_editor_core\src\scene_workflow.rs:142`
 
 Open the scene at `path`, replacing the world's entities.
 

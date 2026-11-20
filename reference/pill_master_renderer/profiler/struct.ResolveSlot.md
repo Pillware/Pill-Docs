@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1497"></a>
+<a id="rustdoc-item-1543"></a>
 
 # Struct `pill_master_renderer::profiler::ResolveSlot`
 
@@ -8,7 +8,7 @@
 pub(in profiler) struct ResolveSlot;
 ```
 
-Visibility: `{'restricted': {'parent': 1480, 'path': '::profiler'}}` · Source: `extensions\pill_master_renderer\pill_master_renderer\src\profiler.rs:844`
+Visibility: `{'restricted': {'parent': 1526, 'path': '::profiler'}}` · Source: `extensions\pill_master_renderer\modules\runtime\gpu\src\profiler.rs:844`
 
 One ring slot's buffers. Queries resolve into `resolve`, which is then
 copied into `readback` for the CPU to map. wgpu only allows a mappable
@@ -16,7 +16,7 @@ buffer as a copy destination, so a query cannot resolve into one directly.
 
 ## Fields
 
-<a id="rustdoc-item-1603"></a>
+<a id="rustdoc-item-1649"></a>
 
 ### `resolve`
 
@@ -26,7 +26,7 @@ resolve: wgpu::Buffer
 
 _No documentation provided._
 
-<a id="rustdoc-item-1604"></a>
+<a id="rustdoc-item-1650"></a>
 
 ### `readback`
 

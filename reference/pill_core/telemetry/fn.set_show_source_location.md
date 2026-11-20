@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1814"></a>
+<a id="rustdoc-item-1824"></a>
 
 # Function `pill_core::telemetry::set_show_source_location`
 

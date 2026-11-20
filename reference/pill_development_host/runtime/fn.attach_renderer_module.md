@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-4125"></a>
+<a id="rustdoc-item-4382"></a>
 
 # Function `pill_development_host::runtime::attach_renderer_module`
 
@@ -8,7 +8,7 @@
 pub(in runtime) fn attach_renderer_module<W: RendererWindow>(host: &mut DevHost, window: W, width: u32, height: u32) -> Result<(crate::renderer_module::RendererModule, pill_player::AttachedRenderer), pill_player::RenderingError>;
 ```
 
-Visibility: `{'restricted': {'parent': 3859, 'path': '::runtime'}}` · Source: `hosting\pill_development_host\src\runtime.rs:2035`
+Visibility: `{'restricted': {'parent': 4115, 'path': '::runtime'}}` · Source: `hosting\pill_development_host\src\runtime.rs:2134`
 
 Load the renderer module and attach it to `window`.
 

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-314"></a>
+<a id="rustdoc-item-317"></a>
 
 # Struct `pill_ui_frame::frame::UiDraw`
 
@@ -14,7 +14,7 @@ One surface's UI for a frame.
 
 ## Fields
 
-<a id="rustdoc-item-311"></a>
+<a id="rustdoc-item-314"></a>
 
 ### `surface`
 
@@ -24,7 +24,7 @@ surface: u32
 
 The id of the surface to draw into. The primary surface has id `0`.
 
-<a id="rustdoc-item-312"></a>
+<a id="rustdoc-item-315"></a>
 
 ### `scale_factor`
 
@@ -36,7 +36,7 @@ The scale factor of the monitor this list was built for. The list's
 positions are in logical pixels, and the backend multiplies them by
 this factor when it draws.
 
-<a id="rustdoc-item-313"></a>
+<a id="rustdoc-item-316"></a>
 
 ### `list`
 

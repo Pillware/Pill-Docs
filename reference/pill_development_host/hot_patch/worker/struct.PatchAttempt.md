@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-2217"></a>
+<a id="rustdoc-item-2291"></a>
 
 # Struct `pill_development_host::hot_patch::worker::PatchAttempt`
 
@@ -18,7 +18,7 @@ runs. Nothing in it points into the engine, an artifact or the session.
 
 ## Fields
 
-<a id="rustdoc-item-2209"></a>
+<a id="rustdoc-item-2283"></a>
 
 ### `path`
 
@@ -28,7 +28,7 @@ path: std::path::PathBuf
 
 The changed file, for the snapshot recorded once every body is live.
 
-<a id="rustdoc-item-2210"></a>
+<a id="rustdoc-item-2284"></a>
 
 ### `new_contents`
 
@@ -38,7 +38,7 @@ new_contents: String
 
 The file's contents as read during classification.
 
-<a id="rustdoc-item-2211"></a>
+<a id="rustdoc-item-2285"></a>
 
 ### `modified`
 
@@ -48,7 +48,7 @@ modified: Option<std::time::SystemTime>
 
 The modification time when those contents were read.
 
-<a id="rustdoc-item-2212"></a>
+<a id="rustdoc-item-2286"></a>
 
 ### `bodies`
 
@@ -58,7 +58,7 @@ bodies: Vec<PreparedBody>
 
 One entry per changed body, in the order they were classified.
 
-<a id="rustdoc-item-2214"></a>
+<a id="rustdoc-item-2288"></a>
 
 ### `stages`
 
@@ -68,7 +68,7 @@ stages: super::PatchStages
 
 Timings so far; the worker and the activation add theirs.
 
-<a id="rustdoc-item-2216"></a>
+<a id="rustdoc-item-2290"></a>
 
 ### `started`
 

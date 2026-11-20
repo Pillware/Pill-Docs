@@ -4,7 +4,7 @@
 
 # Module `pill_master_renderer::error`
 
-Source: `extensions\pill_master_renderer\pill_master_renderer\src\error.rs:1`
+Source: `extensions\pill_master_renderer\modules\runtime\gpu\src\error.rs:1`
 
 Renderer failures, re-exported from the contract crate, and the capture
 that turns wgpu's errors into them.

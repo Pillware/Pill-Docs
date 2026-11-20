@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-3033"></a>
+<a id="rustdoc-item-3107"></a>
 
 # Function `pill_development_host::layout_record::fold_layout`
 
@@ -8,7 +8,7 @@
 pub(in layout_record) fn fold_layout(sources: &[SourceDigest], dependencies: &[DependencyVersion]) -> u64;
 ```
 
-Visibility: `{'restricted': {'parent': 2774, 'path': '::layout_record'}}` · Source: `hosting\pill_development_host\src\layout_record.rs:231`
+Visibility: `{'restricted': {'parent': 2848, 'path': '::layout_record'}}` · Source: `hosting\pill_development_host\src\layout_record.rs:231`
 
 One hash over a layout's sources and dependencies.
 

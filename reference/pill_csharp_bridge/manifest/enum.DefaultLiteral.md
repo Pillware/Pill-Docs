@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1256"></a>
+<a id="rustdoc-item-1279"></a>
 
 # Enum `pill_csharp_bridge::manifest::DefaultLiteral`
 
@@ -8,13 +8,13 @@
 pub(in manifest) enum DefaultLiteral { ... }
 ```
 
-Visibility: `{'restricted': {'parent': 1247, 'path': '::manifest'}}` · Source: `csharp\pill_csharp_bridge\src\manifest.rs:84`
+Visibility: `{'restricted': {'parent': 1270, 'path': '::manifest'}}` · Source: `csharp\pill_csharp_bridge\src\manifest.rs:84`
 
 How a leaf type's `default:` literal turns into native bytes.
 
 ## Variants
 
-<a id="rustdoc-item-1281"></a>
+<a id="rustdoc-item-1304"></a>
 
 ### `Boolean`
 
@@ -24,7 +24,7 @@ Boolean
 
 `true` or `false`.
 
-<a id="rustdoc-item-1282"></a>
+<a id="rustdoc-item-1305"></a>
 
 ### `Signed8`
 
@@ -34,7 +34,7 @@ Signed8
 
 An integer or float literal of this exact width.
 
-<a id="rustdoc-item-1283"></a>
+<a id="rustdoc-item-1306"></a>
 
 ### `Signed16`
 
@@ -44,7 +44,7 @@ Signed16
 
 _No documentation provided._
 
-<a id="rustdoc-item-1284"></a>
+<a id="rustdoc-item-1307"></a>
 
 ### `Signed32`
 
@@ -54,7 +54,7 @@ Signed32
 
 _No documentation provided._
 
-<a id="rustdoc-item-1285"></a>
+<a id="rustdoc-item-1308"></a>
 
 ### `Signed64`
 
@@ -64,7 +64,7 @@ Signed64
 
 _No documentation provided._
 
-<a id="rustdoc-item-1286"></a>
+<a id="rustdoc-item-1309"></a>
 
 ### `Unsigned8`
 
@@ -74,7 +74,7 @@ Unsigned8
 
 _No documentation provided._
 
-<a id="rustdoc-item-1287"></a>
+<a id="rustdoc-item-1310"></a>
 
 ### `Unsigned16`
 
@@ -84,7 +84,7 @@ Unsigned16
 
 _No documentation provided._
 
-<a id="rustdoc-item-1288"></a>
+<a id="rustdoc-item-1311"></a>
 
 ### `Unsigned32`
 
@@ -94,7 +94,7 @@ Unsigned32
 
 _No documentation provided._
 
-<a id="rustdoc-item-1289"></a>
+<a id="rustdoc-item-1312"></a>
 
 ### `Unsigned64`
 
@@ -104,7 +104,7 @@ Unsigned64
 
 _No documentation provided._
 
-<a id="rustdoc-item-1290"></a>
+<a id="rustdoc-item-1313"></a>
 
 ### `Float32`
 
@@ -114,7 +114,7 @@ Float32
 
 _No documentation provided._
 
-<a id="rustdoc-item-1291"></a>
+<a id="rustdoc-item-1314"></a>
 
 ### `Float64`
 
@@ -124,7 +124,7 @@ Float64
 
 _No documentation provided._
 
-<a id="rustdoc-item-1292"></a>
+<a id="rustdoc-item-1315"></a>
 
 ### `Unsupported`
 

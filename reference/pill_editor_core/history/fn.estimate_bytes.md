@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-4418"></a>
+<a id="rustdoc-item-4946"></a>
 
 # Function `pill_editor_core::history::estimate_bytes`
 
@@ -8,7 +8,7 @@
 pub fn estimate_bytes(commands: &[crate::editor_state::EditorCommand]) -> usize;
 ```
 
-Source: `editor\pill_editor_core\src\history.rs:463`
+Source: `editor\pill_editor_core\src\history.rs:469`
 
 Estimates how many bytes a batch keeps alive.
 

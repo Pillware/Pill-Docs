@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-893"></a>
+<a id="rustdoc-item-915"></a>
 
 # Struct `pill_csharp_bridge::manifest::ManagedManifestEntry`
 
@@ -14,7 +14,7 @@ One entry deserialized from the manifest a managed assembly submits.
 
 ## Fields
 
-<a id="rustdoc-item-1326"></a>
+<a id="rustdoc-item-1349"></a>
 
 ### `stable_id_low`
 
@@ -24,7 +24,7 @@ stable_id_low: u64
 
 Low 64 bits of the stable component identity.
 
-<a id="rustdoc-item-1327"></a>
+<a id="rustdoc-item-1350"></a>
 
 ### `stable_id_high`
 
@@ -34,7 +34,7 @@ stable_id_high: u64
 
 High 64 bits of the stable component identity.
 
-<a id="rustdoc-item-1328"></a>
+<a id="rustdoc-item-1351"></a>
 
 ### `full_name`
 
@@ -44,7 +44,7 @@ full_name: String
 
 Canonical full name used to recompute and verify the identity.
 
-<a id="rustdoc-item-1329"></a>
+<a id="rustdoc-item-1352"></a>
 
 ### `size`
 
@@ -54,7 +54,7 @@ size: usize
 
 Total byte size of the component layout.
 
-<a id="rustdoc-item-1330"></a>
+<a id="rustdoc-item-1353"></a>
 
 ### `alignment`
 
@@ -64,7 +64,7 @@ alignment: usize
 
 Required byte alignment of the component layout.
 
-<a id="rustdoc-item-1331"></a>
+<a id="rustdoc-item-1354"></a>
 
 ### `schema_hash`
 
@@ -74,7 +74,7 @@ schema_hash: u64
 
 Hash of the managed field schema used to match native mirrors.
 
-<a id="rustdoc-item-1332"></a>
+<a id="rustdoc-item-1355"></a>
 
 ### `shared`
 
@@ -84,7 +84,7 @@ shared: bool
 
 Whether the managed side expects a native engine binding.
 
-<a id="rustdoc-item-1333"></a>
+<a id="rustdoc-item-1356"></a>
 
 ### `kind`
 
@@ -98,7 +98,7 @@ Defaulted so a payload that omits the tag parses as a list of
 components, which keeps the manifest of an older generation readable
 during a reload.
 
-<a id="rustdoc-item-1335"></a>
+<a id="rustdoc-item-1358"></a>
 
 ### `aliases`
 
@@ -113,7 +113,7 @@ registration that answered to each alias and moves its rows onto this
 entry, so a rename keeps its data, where a removal plus an add would
 lose it. Defaulted for the same reason `kind` is.
 
-<a id="rustdoc-item-1336"></a>
+<a id="rustdoc-item-1359"></a>
 
 ### `fields`
 

@@ -1,17 +1,17 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-465"></a>
+<a id="rustdoc-item-595"></a>
 
 # Module `pill_audio::audio_system`
 
-Source: `extensions\pill_audio\pill_audio\src\audio_system.rs:1`
+Source: `extensions\pill_audio\modules\runtime\src\audio_system.rs:1`
 
 The per-frame system that drives playback.
-The per-frame system driving every [`AudioSourceComponent`](../audio_source_component/struct.AudioSourceComponent.md#rustdoc-item-123).
+The per-frame system driving every [`AudioSourceComponent`](../audio_source_component/struct.AudioSourceComponent.md#rustdoc-item-126).
 
 ## Responsibilities
 
-- Turns queued [`AudioLoadQueue`](../audio_load_queue/struct.AudioLoadQueue.md#rustdoc-item-192) bytes into [`Sound`](../sound/struct.Sound.md#rustdoc-item-228) assets.
+- Turns queued [`AudioLoadQueue`](../audio_load_queue/struct.AudioLoadQueue.md#rustdoc-item-255) bytes into [`Sound`](../sound/struct.Sound.md#rustdoc-item-293) assets.
 - Places the active listener's ears.
 - Carries out each source's pending [`AudioCommand`](../audio_command/enum.AudioCommand.md#rustdoc-item-4).
 - Moves each playing spatial source's emitter to its entity, and returns
@@ -27,4 +27,4 @@ resources.
 ## Module contents
 
 ### Functions
-- [`audio_system`](fn.audio_system.md#rustdoc-item-461) — Drives every [`AudioSourceComponent`] once per frame.
+- [`audio_system`](fn.audio_system.md#rustdoc-item-591) — Drives every [`AudioSourceComponent`] once per frame.

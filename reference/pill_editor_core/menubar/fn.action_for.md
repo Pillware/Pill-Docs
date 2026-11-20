@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-5561"></a>
+<a id="rustdoc-item-7525"></a>
 
 # Function `pill_editor_core::menubar::action_for`
 
@@ -8,7 +8,7 @@
 pub fn action_for(command: &crate::commands::CommandView, snapshot: &crate::editor_state::EditorSnapshot, selection: &crate::editor_state::EditorSelection) -> Option<MenuAction>;
 ```
 
-Source: `editor\pill_editor_core\src\menubar.rs:235`
+Source: `editor\pill_editor_core\src\menubar.rs:239`
 
 Returns what running one registered command asks the editor to do.
 

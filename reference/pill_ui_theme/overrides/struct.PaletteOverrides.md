@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-166"></a>
+<a id="rustdoc-item-170"></a>
 
 # Struct `pill_ui_theme::overrides::PaletteOverrides`
 
@@ -15,7 +15,7 @@ The colour roles [`ThemeOverrides`](struct.ThemeOverrides.md#rustdoc-item-0) can
 
 ## Fields
 
-<a id="rustdoc-item-231"></a>
+<a id="rustdoc-item-235"></a>
 
 ### `frame`
 
@@ -23,9 +23,9 @@ The colour roles [`ThemeOverrides`](struct.ThemeOverrides.md#rustdoc-item-0) can
 frame: Option<String>
 ```
 
-See [`Palette::frame`](../theme/struct.Palette.md#rustdoc-item-230).
+See [`Palette::frame`](../theme/struct.Palette.md#rustdoc-item-234).
 
-<a id="rustdoc-item-233"></a>
+<a id="rustdoc-item-237"></a>
 
 ### `panel`
 
@@ -33,9 +33,9 @@ See [`Palette::frame`](../theme/struct.Palette.md#rustdoc-item-230).
 panel: Option<String>
 ```
 
-See [`Palette::panel`](../theme/struct.Palette.md#rustdoc-item-232).
+See [`Palette::panel`](../theme/struct.Palette.md#rustdoc-item-236).
 
-<a id="rustdoc-item-235"></a>
+<a id="rustdoc-item-239"></a>
 
 ### `panel_raised`
 
@@ -43,9 +43,9 @@ See [`Palette::panel`](../theme/struct.Palette.md#rustdoc-item-232).
 panel_raised: Option<String>
 ```
 
-See [`Palette::panel_raised`](../theme/struct.Palette.md#rustdoc-item-234).
+See [`Palette::panel_raised`](../theme/struct.Palette.md#rustdoc-item-238).
 
-<a id="rustdoc-item-237"></a>
+<a id="rustdoc-item-241"></a>
 
 ### `control`
 
@@ -53,9 +53,9 @@ See [`Palette::panel_raised`](../theme/struct.Palette.md#rustdoc-item-234).
 control: Option<String>
 ```
 
-See [`Palette::control`](../theme/struct.Palette.md#rustdoc-item-236).
+See [`Palette::control`](../theme/struct.Palette.md#rustdoc-item-240).
 
-<a id="rustdoc-item-239"></a>
+<a id="rustdoc-item-243"></a>
 
 ### `well`
 
@@ -63,9 +63,9 @@ See [`Palette::control`](../theme/struct.Palette.md#rustdoc-item-236).
 well: Option<String>
 ```
 
-See [`Palette::well`](../theme/struct.Palette.md#rustdoc-item-238).
+See [`Palette::well`](../theme/struct.Palette.md#rustdoc-item-242).
 
-<a id="rustdoc-item-241"></a>
+<a id="rustdoc-item-245"></a>
 
 ### `line`
 
@@ -73,9 +73,9 @@ See [`Palette::well`](../theme/struct.Palette.md#rustdoc-item-238).
 line: Option<String>
 ```
 
-See [`Palette::line`](../theme/struct.Palette.md#rustdoc-item-240).
+See [`Palette::line`](../theme/struct.Palette.md#rustdoc-item-244).
 
-<a id="rustdoc-item-243"></a>
+<a id="rustdoc-item-247"></a>
 
 ### `text`
 
@@ -83,9 +83,9 @@ See [`Palette::line`](../theme/struct.Palette.md#rustdoc-item-240).
 text: Option<String>
 ```
 
-See [`Palette::text`](../theme/struct.Palette.md#rustdoc-item-242).
+See [`Palette::text`](../theme/struct.Palette.md#rustdoc-item-246).
 
-<a id="rustdoc-item-245"></a>
+<a id="rustdoc-item-249"></a>
 
 ### `text_strong`
 
@@ -93,9 +93,9 @@ See [`Palette::text`](../theme/struct.Palette.md#rustdoc-item-242).
 text_strong: Option<String>
 ```
 
-See [`Palette::text_strong`](../theme/struct.Palette.md#rustdoc-item-244).
+See [`Palette::text_strong`](../theme/struct.Palette.md#rustdoc-item-248).
 
-<a id="rustdoc-item-247"></a>
+<a id="rustdoc-item-251"></a>
 
 ### `text_muted`
 
@@ -103,9 +103,9 @@ See [`Palette::text_strong`](../theme/struct.Palette.md#rustdoc-item-244).
 text_muted: Option<String>
 ```
 
-See [`Palette::text_muted`](../theme/struct.Palette.md#rustdoc-item-246).
+See [`Palette::text_muted`](../theme/struct.Palette.md#rustdoc-item-250).
 
-<a id="rustdoc-item-249"></a>
+<a id="rustdoc-item-253"></a>
 
 ### `accent`
 
@@ -113,9 +113,9 @@ See [`Palette::text_muted`](../theme/struct.Palette.md#rustdoc-item-246).
 accent: Option<String>
 ```
 
-See [`Palette::accent`](../theme/struct.Palette.md#rustdoc-item-248).
+See [`Palette::accent`](../theme/struct.Palette.md#rustdoc-item-252).
 
-<a id="rustdoc-item-251"></a>
+<a id="rustdoc-item-255"></a>
 
 ### `accent_hot`
 
@@ -123,9 +123,9 @@ See [`Palette::accent`](../theme/struct.Palette.md#rustdoc-item-248).
 accent_hot: Option<String>
 ```
 
-See [`Palette::accent_hot`](../theme/struct.Palette.md#rustdoc-item-250).
+See [`Palette::accent_hot`](../theme/struct.Palette.md#rustdoc-item-254).
 
-<a id="rustdoc-item-253"></a>
+<a id="rustdoc-item-257"></a>
 
 ### `success`
 
@@ -133,9 +133,9 @@ See [`Palette::accent_hot`](../theme/struct.Palette.md#rustdoc-item-250).
 success: Option<String>
 ```
 
-See [`Palette::success`](../theme/struct.Palette.md#rustdoc-item-252).
+See [`Palette::success`](../theme/struct.Palette.md#rustdoc-item-256).
 
-<a id="rustdoc-item-255"></a>
+<a id="rustdoc-item-259"></a>
 
 ### `warning`
 
@@ -143,9 +143,9 @@ See [`Palette::success`](../theme/struct.Palette.md#rustdoc-item-252).
 warning: Option<String>
 ```
 
-See [`Palette::warning`](../theme/struct.Palette.md#rustdoc-item-254).
+See [`Palette::warning`](../theme/struct.Palette.md#rustdoc-item-258).
 
-<a id="rustdoc-item-257"></a>
+<a id="rustdoc-item-261"></a>
 
 ### `danger`
 
@@ -153,9 +153,9 @@ See [`Palette::warning`](../theme/struct.Palette.md#rustdoc-item-254).
 danger: Option<String>
 ```
 
-See [`Palette::danger`](../theme/struct.Palette.md#rustdoc-item-256).
+See [`Palette::danger`](../theme/struct.Palette.md#rustdoc-item-260).
 
-<a id="rustdoc-item-259"></a>
+<a id="rustdoc-item-263"></a>
 
 ### `selection`
 
@@ -163,9 +163,9 @@ See [`Palette::danger`](../theme/struct.Palette.md#rustdoc-item-256).
 selection: Option<String>
 ```
 
-See [`Palette::selection`](../theme/struct.Palette.md#rustdoc-item-258).
+See [`Palette::selection`](../theme/struct.Palette.md#rustdoc-item-262).
 
-<a id="rustdoc-item-261"></a>
+<a id="rustdoc-item-265"></a>
 
 ### `selection_bar`
 
@@ -173,9 +173,9 @@ See [`Palette::selection`](../theme/struct.Palette.md#rustdoc-item-258).
 selection_bar: Option<String>
 ```
 
-See [`Palette::selection_bar`](../theme/struct.Palette.md#rustdoc-item-260).
+See [`Palette::selection_bar`](../theme/struct.Palette.md#rustdoc-item-264).
 
-<a id="rustdoc-item-263"></a>
+<a id="rustdoc-item-267"></a>
 
 ### `overlay`
 
@@ -183,9 +183,9 @@ See [`Palette::selection_bar`](../theme/struct.Palette.md#rustdoc-item-260).
 overlay: Option<String>
 ```
 
-See [`Palette::overlay`](../theme/struct.Palette.md#rustdoc-item-262).
+See [`Palette::overlay`](../theme/struct.Palette.md#rustdoc-item-266).
 
-<a id="rustdoc-item-265"></a>
+<a id="rustdoc-item-269"></a>
 
 ### `overlay_border`
 
@@ -193,9 +193,9 @@ See [`Palette::overlay`](../theme/struct.Palette.md#rustdoc-item-262).
 overlay_border: Option<String>
 ```
 
-See [`Palette::overlay_border`](../theme/struct.Palette.md#rustdoc-item-264).
+See [`Palette::overlay_border`](../theme/struct.Palette.md#rustdoc-item-268).
 
-<a id="rustdoc-item-267"></a>
+<a id="rustdoc-item-271"></a>
 
 ### `log_info`
 
@@ -203,9 +203,9 @@ See [`Palette::overlay_border`](../theme/struct.Palette.md#rustdoc-item-264).
 log_info: Option<String>
 ```
 
-See [`Palette::log_info`](../theme/struct.Palette.md#rustdoc-item-266).
+See [`Palette::log_info`](../theme/struct.Palette.md#rustdoc-item-270).
 
-<a id="rustdoc-item-269"></a>
+<a id="rustdoc-item-273"></a>
 
 ### `log_debug`
 
@@ -213,9 +213,9 @@ See [`Palette::log_info`](../theme/struct.Palette.md#rustdoc-item-266).
 log_debug: Option<String>
 ```
 
-See [`Palette::log_debug`](../theme/struct.Palette.md#rustdoc-item-268).
+See [`Palette::log_debug`](../theme/struct.Palette.md#rustdoc-item-272).
 
-<a id="rustdoc-item-271"></a>
+<a id="rustdoc-item-275"></a>
 
 ### `log_warn`
 
@@ -223,9 +223,9 @@ See [`Palette::log_debug`](../theme/struct.Palette.md#rustdoc-item-268).
 log_warn: Option<String>
 ```
 
-See [`Palette::log_warn`](../theme/struct.Palette.md#rustdoc-item-270).
+See [`Palette::log_warn`](../theme/struct.Palette.md#rustdoc-item-274).
 
-<a id="rustdoc-item-273"></a>
+<a id="rustdoc-item-277"></a>
 
 ### `log_error`
 
@@ -233,7 +233,27 @@ See [`Palette::log_warn`](../theme/struct.Palette.md#rustdoc-item-270).
 log_error: Option<String>
 ```
 
-See [`Palette::log_error`](../theme/struct.Palette.md#rustdoc-item-272).
+See [`Palette::log_error`](../theme/struct.Palette.md#rustdoc-item-276).
+
+<a id="rustdoc-item-279"></a>
+
+### `play_tint`
+
+```rust
+play_tint: Option<String>
+```
+
+See [`Palette::play_tint`](../theme/struct.Palette.md#rustdoc-item-278).
+
+<a id="rustdoc-item-281"></a>
+
+### `play_tint_paused`
+
+```rust
+play_tint_paused: Option<String>
+```
+
+See [`Palette::play_tint_paused`](../theme/struct.Palette.md#rustdoc-item-280).
 
 ## Trait implementations
 

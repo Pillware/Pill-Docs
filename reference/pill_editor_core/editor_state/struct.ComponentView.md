@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1172"></a>
+<a id="rustdoc-item-1217"></a>
 
 # Struct `pill_editor_core::editor_state::ComponentView`
 
@@ -8,13 +8,13 @@
 pub struct ComponentView;
 ```
 
-Source: `editor\pill_editor_core\src\editor_state\mod.rs:120`
+Source: `editor\pill_editor_core\src\editor_state\mod.rs:162`
 
 One attached component of the selected entity, with its current values.
 
 ## Fields
 
-<a id="rustdoc-item-2747"></a>
+<a id="rustdoc-item-2881"></a>
 
 ### `type_name`
 
@@ -24,7 +24,7 @@ type_name: String
 
 Registered component type name (the stable cross-reload key).
 
-<a id="rustdoc-item-2748"></a>
+<a id="rustdoc-item-2882"></a>
 
 ### `persistable`
 
@@ -34,7 +34,7 @@ persistable: bool
 
 Whether the component is persistable (schema-migrated across reloads).
 
-<a id="rustdoc-item-2749"></a>
+<a id="rustdoc-item-2883"></a>
 
 ### `editable`
 
@@ -44,7 +44,7 @@ editable: bool
 
 Whether the component has a non-empty field layout and is editable.
 
-<a id="rustdoc-item-2750"></a>
+<a id="rustdoc-item-2884"></a>
 
 ### `fields`
 
@@ -55,7 +55,7 @@ fields: Vec<ComponentFieldView>
 The field layout, owned by this view. The image that declared it may
 be unloaded before the next capture.
 
-<a id="rustdoc-item-2751"></a>
+<a id="rustdoc-item-2885"></a>
 
 ### `values`
 
@@ -65,7 +65,7 @@ values: Vec<pill_engine::FieldValue>
 
 One current value per field, parallel to `fields`.
 
-<a id="rustdoc-item-2752"></a>
+<a id="rustdoc-item-2886"></a>
 
 ### `asset_labels`
 
@@ -79,7 +79,7 @@ It holds `None` for a field that is not an asset reference. The labels
 are resolved when the view is captured, because the shell cannot read
 the asset store.
 
-<a id="rustdoc-item-2754"></a>
+<a id="rustdoc-item-2888"></a>
 
 ### `entity_labels`
 

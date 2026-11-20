@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-3589"></a>
+<a id="rustdoc-item-2104"></a>
 
 # Function `pill_engine_core::config::print_parallel_config`
 
@@ -17,4 +17,4 @@ averaging window, the default slice size and the minimum slice size. It
 goes to the `telemetry_target::SYSTEM` target, the same one the runtime's
 hardware report uses.
 
-Called during [`Engine::new`](../engine/struct.Engine.md#rustdoc-item-3588).
+Called during [`Engine::new`](../engine/struct.Engine.md#rustdoc-item-2103).

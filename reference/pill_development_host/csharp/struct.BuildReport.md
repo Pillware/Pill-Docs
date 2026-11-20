@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1681"></a>
+<a id="rustdoc-item-1756"></a>
 
 # Struct `pill_development_host::csharp::BuildReport`
 
@@ -8,7 +8,7 @@
 pub(crate) struct BuildReport;
 ```
 
-Visibility: `crate` · Source: `hosting\pill_development_host\src\csharp\mod.rs:392`
+Visibility: `crate` · Source: `hosting\pill_development_host\src\csharp\mod.rs:378`
 
 A finished assembly build: what it produced, and when it finished, so the
 reload log can cover the build itself instead of the frame that collected
@@ -16,7 +16,7 @@ it.
 
 ## Fields
 
-<a id="rustdoc-item-1856"></a>
+<a id="rustdoc-item-1930"></a>
 
 ### `outcome`
 
@@ -26,7 +26,7 @@ outcome: BuildOutcome
 
 What the build produced.
 
-<a id="rustdoc-item-1857"></a>
+<a id="rustdoc-item-1931"></a>
 
 ### `finished_at`
 

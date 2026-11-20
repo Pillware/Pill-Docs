@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1256"></a>
+<a id="rustdoc-item-1276"></a>
 
 # Function `pill_development_host::config::module_build_artifact_directory`
 
@@ -8,7 +8,7 @@
 pub(crate) fn module_build_artifact_directory() -> String;
 ```
 
-Visibility: `crate` · Source: `hosting\pill_development_host\src\config.rs:1497`
+Visibility: `crate` · Source: `hosting\pill_development_host\src\config.rs:1704`
 
 Profile subdirectory inside [`MODULE_BUILD_TARGET_DIRECTORY`](constant.MODULE_BUILD_TARGET_DIRECTORY.md#rustdoc-item-3) where cargo
 writes a host-spawned build's artifacts (`target/hot/build/debug` for a

@@ -1,10 +1,10 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-2629"></a>
+<a id="rustdoc-item-2669"></a>
 
 # Module `pill_master_renderer::resources::renderer_shader`
 
-Visibility: `{'restricted': {'parent': 2227, 'path': '::resources'}}` · Source: `extensions\pill_master_renderer\pill_master_renderer\src\resources\renderer_shader.rs:1`
+Visibility: `{'restricted': {'parent': 2270, 'path': '::resources'}}` · Source: `extensions\pill_master_renderer\modules\runtime\gpu\src\resources\renderer_shader.rs:1`
 
 What a shader asset becomes on the GPU: its render pipeline and the
 layouts of the groups its draws bind.
@@ -13,7 +13,7 @@ layouts of the groups its draws bind.
 
 - Build the render pipeline and the group layouts from a shader's WGSL,
   and report a shader wgpu refuses against the asset that named it instead
-  of taking the host down ([`RendererShader::new`](struct.RendererShader.md#rustdoc-item-2688)).
+  of taking the host down ([`RendererShader::new`](struct.RendererShader.md#rustdoc-item-2727)).
 - Create the parameters group layout (set 2) and the textures group layout
   (set 3). Each one is absent when the shader declares no slots of that
   kind.
@@ -40,10 +40,10 @@ an edited source again and sends the new text to the shader asset.
 ## Module contents
 
 ### Structs
-- [`RendererShader`](struct.RendererShader.md#rustdoc-item-2548) — One shader's GPU pipeline and the group layouts its draws bind.
+- [`RendererShader`](struct.RendererShader.md#rustdoc-item-2588) — One shader's GPU pipeline and the group layouts its draws bind.
 - [`RendererShaderHandle`](struct.RendererShaderHandle.md#rustdoc-item-2) — A typed handle for the slots of the map it was issued by.
-- [`UniformGroups`](struct.UniformGroups.md#rustdoc-item-2689) — Says which of the renderer's shared uniform groups a shader reads.
+- [`UniformGroups`](struct.UniformGroups.md#rustdoc-item-2728) — Says which of the renderer's shared uniform groups a shader reads.
 
 ### Functions
-- [`check_slot_shape`](fn.check_slot_shape.md#rustdoc-item-2762) — Checks that `texture` fits a slot of `slot_kind`, and names both when it
-- [`slot_view_dimension`](fn.slot_view_dimension.md#rustdoc-item-2760) — Returns the view shape a texture slot of `kind` binds: a cube for a cubemap,
+- [`check_slot_shape`](fn.check_slot_shape.md#rustdoc-item-2800) — Checks that `texture` fits a slot of `slot_kind`, and names both when it
+- [`slot_view_dimension`](fn.slot_view_dimension.md#rustdoc-item-2798) — Returns the view shape a texture slot of `kind` binds: a cube for a cubemap,

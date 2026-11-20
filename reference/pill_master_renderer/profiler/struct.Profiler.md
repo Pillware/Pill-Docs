@@ -8,7 +8,7 @@
 pub struct Profiler;
 ```
 
-Source: `extensions\pill_master_renderer\pill_master_renderer\src\profiler.rs:84`
+Source: `extensions\pill_master_renderer\modules\runtime\gpu\src\profiler.rs:84`
 
 GPU profiling through wgpu query sets.
 
@@ -18,7 +18,7 @@ readback map one slot while a later frame still records into another.
 
 ## Fields
 
-<a id="rustdoc-item-1482"></a>
+<a id="rustdoc-item-1528"></a>
 
 ### `timestamp_query_set`
 
@@ -28,7 +28,7 @@ timestamp_query_set: Option<wgpu::QuerySet>
 
 _No documentation provided._
 
-<a id="rustdoc-item-1484"></a>
+<a id="rustdoc-item-1530"></a>
 
 ### `timestamp_query_names`
 
@@ -38,7 +38,7 @@ timestamp_query_names: Vec<String>
 
 _No documentation provided._
 
-<a id="rustdoc-item-1485"></a>
+<a id="rustdoc-item-1531"></a>
 
 ### `pipeline_statistics_query_set`
 
@@ -48,7 +48,7 @@ pipeline_statistics_query_set: Option<wgpu::QuerySet>
 
 _No documentation provided._
 
-<a id="rustdoc-item-1486"></a>
+<a id="rustdoc-item-1532"></a>
 
 ### `pipeline_statistics_types`
 
@@ -58,7 +58,7 @@ pipeline_statistics_types: wgpu::PipelineStatisticsTypes
 
 _No documentation provided._
 
-<a id="rustdoc-item-1488"></a>
+<a id="rustdoc-item-1534"></a>
 
 ### `occlusion_query_set`
 
@@ -68,7 +68,7 @@ occlusion_query_set: Option<wgpu::QuerySet>
 
 _No documentation provided._
 
-<a id="rustdoc-item-1489"></a>
+<a id="rustdoc-item-1535"></a>
 
 ### `max_timestamp_queries`
 
@@ -78,7 +78,7 @@ max_timestamp_queries: u32
 
 _No documentation provided._
 
-<a id="rustdoc-item-1490"></a>
+<a id="rustdoc-item-1536"></a>
 
 ### `max_pipeline_statistics_queries`
 
@@ -88,7 +88,7 @@ max_pipeline_statistics_queries: u32
 
 _No documentation provided._
 
-<a id="rustdoc-item-1491"></a>
+<a id="rustdoc-item-1537"></a>
 
 ### `max_occlusion_queries`
 
@@ -98,7 +98,7 @@ max_occlusion_queries: u32
 
 _No documentation provided._
 
-<a id="rustdoc-item-1492"></a>
+<a id="rustdoc-item-1538"></a>
 
 ### `current_timestamp_query`
 
@@ -108,7 +108,7 @@ current_timestamp_query: std::cell::Cell<u32>
 
 _No documentation provided._
 
-<a id="rustdoc-item-1494"></a>
+<a id="rustdoc-item-1540"></a>
 
 ### `current_pipeline_statistics_query`
 
@@ -118,7 +118,7 @@ current_pipeline_statistics_query: std::cell::Cell<u32>
 
 _No documentation provided._
 
-<a id="rustdoc-item-1495"></a>
+<a id="rustdoc-item-1541"></a>
 
 ### `current_occlusion_query`
 
@@ -128,7 +128,7 @@ current_occlusion_query: std::cell::Cell<u32>
 
 _No documentation provided._
 
-<a id="rustdoc-item-1496"></a>
+<a id="rustdoc-item-1542"></a>
 
 ### `timestamp_buffers`
 
@@ -138,7 +138,7 @@ timestamp_buffers: Vec<Option<ResolveSlot>>
 
 _No documentation provided._
 
-<a id="rustdoc-item-1498"></a>
+<a id="rustdoc-item-1544"></a>
 
 ### `pipeline_statistics_buffers`
 
@@ -148,7 +148,7 @@ pipeline_statistics_buffers: Vec<Option<ResolveSlot>>
 
 _No documentation provided._
 
-<a id="rustdoc-item-1499"></a>
+<a id="rustdoc-item-1545"></a>
 
 ### `occlusion_buffers`
 
@@ -158,7 +158,7 @@ occlusion_buffers: Vec<Option<ResolveSlot>>
 
 _No documentation provided._
 
-<a id="rustdoc-item-1500"></a>
+<a id="rustdoc-item-1546"></a>
 
 ### `timestamp_query_result_bytes`
 
@@ -168,7 +168,7 @@ timestamp_query_result_bytes: u64
 
 _No documentation provided._
 
-<a id="rustdoc-item-1501"></a>
+<a id="rustdoc-item-1547"></a>
 
 ### `pipeline_statistics_query_result_bytes`
 
@@ -178,7 +178,7 @@ pipeline_statistics_query_result_bytes: u64
 
 _No documentation provided._
 
-<a id="rustdoc-item-1502"></a>
+<a id="rustdoc-item-1548"></a>
 
 ### `frame_index`
 
@@ -188,7 +188,7 @@ frame_index: usize
 
 _No documentation provided._
 
-<a id="rustdoc-item-1503"></a>
+<a id="rustdoc-item-1549"></a>
 
 ### `timestamp_period_nanoseconds`
 
@@ -198,7 +198,7 @@ timestamp_period_nanoseconds: f32
 
 _No documentation provided._
 
-<a id="rustdoc-item-1504"></a>
+<a id="rustdoc-item-1550"></a>
 
 ### `timeline`
 
@@ -208,7 +208,7 @@ timeline: Option<pill_core::profiling::GpuTimeline>
 
 _No documentation provided._
 
-<a id="rustdoc-item-1506"></a>
+<a id="rustdoc-item-1552"></a>
 
 ### `timeline_api`
 
@@ -218,7 +218,7 @@ timeline_api: Option<pill_core::profiling::GpuApi>
 
 _No documentation provided._
 
-<a id="rustdoc-item-1508"></a>
+<a id="rustdoc-item-1554"></a>
 
 ### `timeline_generation`
 
@@ -228,7 +228,7 @@ timeline_generation: u64
 
 _No documentation provided._
 
-<a id="rustdoc-item-1509"></a>
+<a id="rustdoc-item-1555"></a>
 
 ### `frames`
 
@@ -238,7 +238,7 @@ frames: Vec<FrameRecord>
 
 _No documentation provided._
 
-<a id="rustdoc-item-1511"></a>
+<a id="rustdoc-item-1557"></a>
 
 ### `skipping_frame`
 
@@ -248,7 +248,7 @@ skipping_frame: bool
 
 _No documentation provided._
 
-<a id="rustdoc-item-1512"></a>
+<a id="rustdoc-item-1558"></a>
 
 ### `latest_timings`
 
@@ -258,7 +258,7 @@ latest_timings: Vec<(String, f32)>
 
 _No documentation provided._
 
-<a id="rustdoc-item-1513"></a>
+<a id="rustdoc-item-1559"></a>
 
 ### `latest_statistics`
 
@@ -268,7 +268,7 @@ latest_statistics: Vec<pill_core::profiling::GpuStatistics>
 
 _No documentation provided._
 
-<a id="rustdoc-item-1515"></a>
+<a id="rustdoc-item-1561"></a>
 
 ### `latest_occlusion`
 
@@ -280,7 +280,7 @@ _No documentation provided._
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-1516"></a>
+<a id="rustdoc-item-1562"></a>
 
 ### `new`
 
@@ -297,12 +297,12 @@ query of the same kind.
 A query set for a feature-gated category is created only when the
 device was created with that feature. An adapter that offers a feature
 is not enough, because the device has to request it (see
-[`GPU_PROFILE_FEATURES`](constant.GPU_PROFILE_FEATURES.md#rustdoc-item-1477)). On a device without the timestamp or
+[`GPU_PROFILE_FEATURES`](constant.GPU_PROFILE_FEATURES.md#rustdoc-item-1523)). On a device without the timestamp or
 pipeline statistics features, the matching readers always answer
 `None`. Occlusion queries need no feature in wgpu, so only the cap
 decides whether that set exists.
 
-<a id="rustdoc-item-1518"></a>
+<a id="rustdoc-item-1564"></a>
 
 ### `attach_timeline`
 
@@ -315,11 +315,11 @@ Sets the API that Tracy labels the GPU timeline with.
 The timeline is created later, when a profiler connects. Tracy drops
 every event until one connects, so a timeline created earlier would
 never be announced, and Tracy would receive zones for a timeline it
-does not know. [`Self::follow_profiler_connection`](#rustdoc-item-1517) creates it.
+does not know. [`Self::follow_profiler_connection`](#rustdoc-item-1563) creates it.
 
 Does nothing when the device has no timestamp queries.
 
-<a id="rustdoc-item-1517"></a>
+<a id="rustdoc-item-1563"></a>
 
 ### `follow_profiler_connection`
 
@@ -334,7 +334,7 @@ Tracy aligns GPU time with CPU time using one timestamp taken when the
 timeline is created. Creating it therefore records one timestamp,
 submits it and waits for it, which stalls once per connection.
 
-<a id="rustdoc-item-1519"></a>
+<a id="rustdoc-item-1565"></a>
 
 ### `forget_pending_spans`
 
@@ -346,7 +346,7 @@ Releases every zone that is still waiting for its timestamps, without
 telling Tracy. These zones belong to a timeline the profiler no longer
 knows, so sending their end there would point at nothing.
 
-<a id="rustdoc-item-1520"></a>
+<a id="rustdoc-item-1566"></a>
 
 ### `begin_frame`
 
@@ -361,7 +361,7 @@ When this frame's ring slot is still waiting for its readback, the GPU
 is further behind than the ring is deep. The frame then records no
 queries, rather than overwrite results nobody has read yet.
 
-<a id="rustdoc-item-1521"></a>
+<a id="rustdoc-item-1567"></a>
 
 ### `end_frame`
 
@@ -372,11 +372,11 @@ pub fn end_frame(self: &mut Self);
 Ends the frame once it was submitted, and moves the ring on.
 
 When the frame recorded queries, this starts their readbacks without
-waiting for them. A later [`Self::begin_frame`](#rustdoc-item-1520) collects the results
+waiting for them. A later [`Self::begin_frame`](#rustdoc-item-1566) collects the results
 once the GPU is done. The ring then advances, so the next frame
 resolves into another slot.
 
-<a id="rustdoc-item-1523"></a>
+<a id="rustdoc-item-1569"></a>
 
 ### `collect_finished_frames`
 
@@ -386,9 +386,9 @@ pub(in profiler) fn collect_finished_frames(self: &mut Self);
 
 Collects every ring slot whose readbacks are done. It uploads the
 slot's timestamps to their Tracy zones, plots its statistics, and keeps
-the timings, statistics and occlusion counts for [`Self::log_latest`](#rustdoc-item-1522).
+the timings, statistics and occlusion counts for [`Self::log_latest`](#rustdoc-item-1568).
 
-<a id="rustdoc-item-1522"></a>
+<a id="rustdoc-item-1568"></a>
 
 ### `log_latest`
 
@@ -403,7 +403,7 @@ were read back, without waiting for the GPU.
 occlusion block reports its total visible samples as a share of it.
 Pass `0` to report raw counts without a percentage.
 
-<a id="rustdoc-item-1525"></a>
+<a id="rustdoc-item-1571"></a>
 
 ### `get_timestamp_query_set`
 
@@ -415,10 +415,10 @@ Returns the timestamp query set, or `None` when the device was created
 without the timestamp features or the cap was zero.
 
 For a caller that writes timestamps itself. Prefer
-[`Self::write_timestamp`](#rustdoc-item-1524), which also keeps the query indices and names
+[`Self::write_timestamp`](#rustdoc-item-1570), which also keeps the query indices and names
 that the summaries use.
 
-<a id="rustdoc-item-1524"></a>
+<a id="rustdoc-item-1570"></a>
 
 ### `write_timestamp`
 
@@ -433,7 +433,7 @@ Call it twice around the region to time. The pair's ticks are the
 region's GPU time, and the pair is reported under the name given to the
 first call.
 
-<a id="rustdoc-item-1526"></a>
+<a id="rustdoc-item-1572"></a>
 
 ### `resolve_timestamp_queries`
 
@@ -443,7 +443,7 @@ pub fn resolve_timestamp_queries(self: &mut Self, device: &wgpu::Device, encoder
 
 Resolves the timestamps recorded this frame into the current ring slot.
 
-<a id="rustdoc-item-1527"></a>
+<a id="rustdoc-item-1573"></a>
 
 ### `timestamp_ticks_to_ms`
 
@@ -453,7 +453,7 @@ pub fn timestamp_ticks_to_ms(self: &Self, delta_ticks: u64) -> f32;
 
 Converts a delta of timestamp ticks to milliseconds.
 
-<a id="rustdoc-item-1528"></a>
+<a id="rustdoc-item-1574"></a>
 
 ### `pipeline_statistics_query_set`
 
@@ -465,7 +465,7 @@ Returns the pipeline statistics query set together with the statistics
 types it was created for, for a caller that begins and ends the queries
 itself.
 
-<a id="rustdoc-item-1529"></a>
+<a id="rustdoc-item-1575"></a>
 
 ### `begin_pipeline_statistics_query`
 
@@ -476,7 +476,7 @@ pub fn begin_pipeline_statistics_query(self: &Self, render_pass: &mut wgpu::Rend
 Begins a pipeline statistics query in `render_pass` and returns its
 index.
 
-<a id="rustdoc-item-1530"></a>
+<a id="rustdoc-item-1576"></a>
 
 ### `end_pipeline_statistics_query`
 
@@ -487,10 +487,10 @@ pub fn end_pipeline_statistics_query(self: &Self, render_pass: &mut wgpu::Render
 Ends the pipeline statistics query most recently begun in
 `render_pass`.
 
-Pairs with [`Self::begin_pipeline_statistics_query`](#rustdoc-item-1529). The counters can
+Pairs with [`Self::begin_pipeline_statistics_query`](#rustdoc-item-1575). The counters can
 be read once the frame's queries are resolved.
 
-<a id="rustdoc-item-1531"></a>
+<a id="rustdoc-item-1577"></a>
 
 ### `resolve_pipeline_statistics_queries`
 
@@ -505,7 +505,7 @@ Does nothing when the feature is unsupported or no query was begun this
 frame. In that case the slot keeps whatever the previous resolve put
 there.
 
-<a id="rustdoc-item-1533"></a>
+<a id="rustdoc-item-1579"></a>
 
 ### `get_occlusion_query_set`
 
@@ -517,10 +517,10 @@ Exposes the occlusion query set for a geometry pass's
 `RenderPassDescriptor.occlusion_query_set`.
 
 `None` when the cap was zero. A pass begins its queries through
-[`Self::begin_occlusion_query`](#rustdoc-item-1532), which also refuses during a skipped
+[`Self::begin_occlusion_query`](#rustdoc-item-1578), which also refuses during a skipped
 frame.
 
-<a id="rustdoc-item-1532"></a>
+<a id="rustdoc-item-1578"></a>
 
 ### `begin_occlusion_query`
 
@@ -534,7 +534,7 @@ One query per geometry pass counts the samples that passed the depth
 and stencil tests while it was open, so the pass's visible coverage is
 read back as one number.
 
-<a id="rustdoc-item-1534"></a>
+<a id="rustdoc-item-1580"></a>
 
 ### `end_occlusion_query`
 
@@ -544,10 +544,10 @@ pub fn end_occlusion_query(self: &Self, render_pass: &mut wgpu::RenderPass<'_>);
 
 Ends the occlusion query most recently begun in `render_pass`.
 
-Pairs with [`Self::begin_occlusion_query`](#rustdoc-item-1532). The sample counts can be
+Pairs with [`Self::begin_occlusion_query`](#rustdoc-item-1578). The sample counts can be
 read once the frame's queries are resolved.
 
-<a id="rustdoc-item-1535"></a>
+<a id="rustdoc-item-1581"></a>
 
 ### `resolve_occlusion_queries`
 
@@ -558,7 +558,7 @@ pub fn resolve_occlusion_queries(self: &mut Self, device: &Device, encoder: &mut
 Resolves this frame's occlusion queries into the current ring slot.
 
 Does nothing when no query set exists or no query was begun this frame,
-like [`Self::resolve_pipeline_statistics_queries`](#rustdoc-item-1531).
+like [`Self::resolve_pipeline_statistics_queries`](#rustdoc-item-1577).
 
 ## Trait implementations
 

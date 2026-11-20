@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-180"></a>
+<a id="rustdoc-item-184"></a>
 
 # Enum `pill_ui_theme::theme::ThemeError`
 
@@ -8,23 +8,23 @@
 pub enum ThemeError { ... }
 ```
 
-Source: `ui\pill_ui_theme\src\theme.rs:756`
+Source: `ui\pill_ui_theme\src\theme.rs:768`
 
 A refused theme document or item.
 
 ## Variants
 
-<a id="rustdoc-item-178"></a>
+<a id="rustdoc-item-182"></a>
 
-### `Json`
+### `Format`
 
 ```rust
-Json
+Format
 ```
 
-The document did not parse as JSON, or did not fit the override shape.
+The document did not parse as YAML, or did not fit the override shape.
 
-<a id="rustdoc-item-1275"></a>
+<a id="rustdoc-item-1288"></a>
 
 ### `Item`
 
@@ -36,7 +36,7 @@ One item's value was refused.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-1276"></a>
+<a id="rustdoc-item-1289"></a>
 
 ### `item`
 

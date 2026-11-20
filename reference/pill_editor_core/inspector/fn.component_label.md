@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-4625"></a>
+<a id="rustdoc-item-6586"></a>
 
 # Function `pill_editor_core::inspector::component_label`
 

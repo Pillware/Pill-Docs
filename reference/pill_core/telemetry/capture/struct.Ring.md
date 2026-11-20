@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1609"></a>
+<a id="rustdoc-item-1619"></a>
 
 # Struct `pill_core::telemetry::capture::Ring`
 
@@ -8,13 +8,13 @@
 pub(in telemetry::capture) struct Ring;
 ```
 
-Visibility: `{'restricted': {'parent': 1605, 'path': '::telemetry::capture'}}` · Source: `engine\pill_core\src\telemetry\capture.rs:61`
+Visibility: `{'restricted': {'parent': 1615, 'path': '::telemetry::capture'}}` · Source: `engine\pill_core\src\telemetry\capture.rs:61`
 
 The ring's contents, guarded by the mutex inside the shared handle.
 
 ## Fields
 
-<a id="rustdoc-item-1604"></a>
+<a id="rustdoc-item-1614"></a>
 
 ### `capacity`
 
@@ -24,7 +24,7 @@ capacity: usize
 
 _No documentation provided._
 
-<a id="rustdoc-item-1606"></a>
+<a id="rustdoc-item-1616"></a>
 
 ### `next_sequence_number`
 
@@ -34,7 +34,7 @@ next_sequence_number: u64
 
 _No documentation provided._
 
-<a id="rustdoc-item-1607"></a>
+<a id="rustdoc-item-1617"></a>
 
 ### `lines`
 

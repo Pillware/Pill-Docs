@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1741"></a>
+<a id="rustdoc-item-1765"></a>
 
 # Function `pill_csharp_bridge::mirror_calls::is_callable_by_managed_code`
 

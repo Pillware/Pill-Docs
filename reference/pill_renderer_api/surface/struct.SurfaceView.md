@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-801"></a>
+<a id="rustdoc-item-871"></a>
 
 # Struct `pill_renderer_api::surface::SurfaceView`
 
@@ -8,7 +8,7 @@
 pub struct SurfaceView;
 ```
 
-Source: `rendering\pill_renderer_api\src\surface.rs:128`
+Source: `rendering\pill_renderer_api\src\surface.rs:134`
 
 The camera one surface draws through this frame.
 
@@ -17,7 +17,7 @@ surface without one, from the world's cameras.
 
 ## Fields
 
-<a id="rustdoc-item-1179"></a>
+<a id="rustdoc-item-1259"></a>
 
 ### `camera`
 
@@ -27,7 +27,7 @@ camera: crate::CameraComponent
 
 The projection.
 
-<a id="rustdoc-item-1180"></a>
+<a id="rustdoc-item-1260"></a>
 
 ### `transform`
 
@@ -48,15 +48,15 @@ Where the camera is and where it looks.
 - `TryFrom<U>`
 - `Any`
 - `ToOwned`
+- `CastableFrom<ST, Uninit, Uninit>`
+- `CastableFrom<ST, Initialized, Initialized>`
+- `Read<Exclusive, BecauseExclusive>`
 - `Instrument`
 - `WithSubscriber`
 - `IntoEither`
 - `Pointable`
 - `OwoColorize`
 - `ErasedDestructor`
-- `CastableFrom<ST, Uninit, Uninit>`
-- `CastableFrom<ST, Initialized, Initialized>`
-- `Read<Exclusive, BecauseExclusive>`
 - `Debug`
 - `Clone`
 - `Copy`

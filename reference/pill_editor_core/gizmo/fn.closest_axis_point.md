@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-4171"></a>
+<a id="rustdoc-item-4646"></a>
 
 # Function `pill_editor_core::gizmo::closest_axis_point`
 
@@ -8,7 +8,7 @@
 pub fn closest_axis_point(origin: [f32; 3], axis: [f32; 3], ray_origin: [f32; 3], ray_direction: [f32; 3]) -> Option<f32>;
 ```
 
-Source: `editor\pill_editor_core\src\gizmo.rs:862`
+Source: `editor\pill_editor_core\src\gizmo.rs:980`
 
 Returns how far along `axis` the point closest to the cursor ray lies,
 measured from `origin`. `None` when the ray runs parallel to the axis.

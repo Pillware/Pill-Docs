@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-2069"></a>
+<a id="rustdoc-item-2079"></a>
 
 # Function `pill_core::utils::get_type_name`
 

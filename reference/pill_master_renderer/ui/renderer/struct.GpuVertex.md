@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-2962"></a>
+<a id="rustdoc-item-2999"></a>
 
 # Struct `pill_master_renderer::ui::renderer::GpuVertex`
 
@@ -8,7 +8,7 @@
 pub(in ui::renderer) struct GpuVertex;
 ```
 
-Visibility: `{'restricted': {'parent': 2958, 'path': '::ui::renderer'}}` · Source: `extensions\pill_master_renderer\pill_master_renderer\src\ui\renderer.rs:111`
+Visibility: `{'restricted': {'parent': 2995, 'path': '::ui::renderer'}}` · Source: `extensions\pill_master_renderer\modules\runtime\gpu\src\ui\renderer.rs:111`
 
 One vertex as the GPU sees it: a position in physical pixels, a texture
 coordinate and a colour, each `f32` in the fixed layout the pipeline
@@ -16,7 +16,7 @@ declares.
 
 ## Fields
 
-<a id="rustdoc-item-2959"></a>
+<a id="rustdoc-item-2996"></a>
 
 ### `position`
 
@@ -26,7 +26,7 @@ position: [f32; 2]
 
 _No documentation provided._
 
-<a id="rustdoc-item-2960"></a>
+<a id="rustdoc-item-2997"></a>
 
 ### `uv`
 
@@ -36,7 +36,7 @@ uv: [f32; 2]
 
 _No documentation provided._
 
-<a id="rustdoc-item-2961"></a>
+<a id="rustdoc-item-2998"></a>
 
 ### `color`
 
@@ -48,7 +48,7 @@ _No documentation provided._
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-2963"></a>
+<a id="rustdoc-item-3000"></a>
 
 ### `scaled`
 

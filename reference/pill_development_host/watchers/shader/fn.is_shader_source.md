@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-4371"></a>
+<a id="rustdoc-item-4630"></a>
 
 # Function `pill_development_host::watchers::shader::is_shader_source`
 
@@ -8,7 +8,7 @@
 pub(in watchers::shader) fn is_shader_source(path: &std::path::Path) -> bool;
 ```
 
-Visibility: `{'restricted': {'parent': 4305, 'path': '::watchers::shader'}}` · Source: `hosting\pill_development_host\src\watchers\shader.rs:155`
+Visibility: `{'restricted': {'parent': 4564, 'path': '::watchers::shader'}}` · Source: `hosting\pill_development_host\src\watchers\shader.rs:155`
 
 Whether an edited file is one a cook reads.
 

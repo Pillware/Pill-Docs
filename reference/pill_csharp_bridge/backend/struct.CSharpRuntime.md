@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-500"></a>
+<a id="rustdoc-item-510"></a>
 
 # Struct `pill_csharp_bridge::backend::CSharpRuntime`
 
@@ -8,7 +8,7 @@
 pub struct CSharpRuntime;
 ```
 
-Source: `csharp\pill_csharp_bridge\src\backend.rs:235`
+Source: `csharp\pill_csharp_bridge\src\backend.rs:247`
 
 Owns the hosted .NET context, the stable API table and the reload callback.
 
@@ -18,7 +18,7 @@ scheduler closures may run.
 
 ## Fields
 
-<a id="rustdoc-item-482"></a>
+<a id="rustdoc-item-492"></a>
 
 ### `poll_reload`
 
@@ -28,7 +28,7 @@ poll_reload: extern "System" fn () -> u8
 
 Unmanaged export polling the collectible loader for a rebuilt assembly.
 
-<a id="rustdoc-item-483"></a>
+<a id="rustdoc-item-493"></a>
 
 ### `subject`
 
@@ -38,11 +38,11 @@ subject: String
 
 The project assembly this runtime hosts, as configured.
 
-Carried so a refusal on the reload path - "declares no `[EcsSystem]`
+Carried so a refusal on the reload path - "declares no `[System]`
 methods" is the one that needs it - names the artifact that failed
 rather than a fixed project name.
 
-<a id="rustdoc-item-485"></a>
+<a id="rustdoc-item-495"></a>
 
 ### `pending_manifest_length`
 
@@ -52,7 +52,7 @@ pending_manifest_length: extern "System" fn () -> u32
 
 Byte length of the manifest the pending version carries.
 
-<a id="rustdoc-item-486"></a>
+<a id="rustdoc-item-496"></a>
 
 ### `copy_pending_manifest`
 
@@ -62,7 +62,7 @@ copy_pending_manifest: extern "System" fn (_: *mut u8, _: u32) -> u8
 
 Copies the pending version's manifest for validation.
 
-<a id="rustdoc-item-487"></a>
+<a id="rustdoc-item-497"></a>
 
 ### `commit_reload`
 
@@ -72,7 +72,7 @@ commit_reload: extern "System" fn () -> u8
 
 Installs the pending version once its manifest is in force.
 
-<a id="rustdoc-item-488"></a>
+<a id="rustdoc-item-498"></a>
 
 ### `abort_reload`
 
@@ -82,7 +82,7 @@ abort_reload: extern "System" fn () -> u8
 
 Discards the pending version when its manifest cannot be applied.
 
-<a id="rustdoc-item-489"></a>
+<a id="rustdoc-item-499"></a>
 
 ### `exports`
 
@@ -97,7 +97,7 @@ Held so a reload can rebuild the scheduler's managed systems from the
 arriving assembly, and so the comparison and the re-registration read
 the same descriptors.
 
-<a id="rustdoc-item-491"></a>
+<a id="rustdoc-item-501"></a>
 
 ### `last_poll_status`
 
@@ -105,9 +105,16 @@ the same descriptors.
 last_poll_status: u8
 ```
 
-Outcome of the most recent reload poll, for one-shot rejection logging.
+Loader answer of the most recent reload poll, for one-shot rejection
+logging.
 
-<a id="rustdoc-item-492"></a>
+Every path of `poll_reload` records it, so the rejection check never
+compares against a stale answer. The stopped guard records
+`POLL_REJECTED` without polling, and a manifest-pending answer stays
+recorded as the loader's answer even when the host then aborts the
+swap.
+
+<a id="rustdoc-item-502"></a>
 
 ### `manifest_applied_without_assembly`
 
@@ -125,7 +132,7 @@ which was never installed, and every later frame would read migrated
 rows through the old assembly's expectations. The project's systems are
 cleared, and this flag keeps them cleared until the host restarts.
 
-<a id="rustdoc-item-493"></a>
+<a id="rustdoc-item-503"></a>
 
 ### `system_snapshot`
 
@@ -135,7 +142,7 @@ system_snapshot: Vec<ManagedSystemSnapshot>
 
 Metadata snapshot the active assembly is verified against after reload.
 
-<a id="rustdoc-item-494"></a>
+<a id="rustdoc-item-504"></a>
 
 ### `bindings`
 
@@ -149,7 +156,7 @@ It is shared instead of copied per system so a reload can rewrite it in
 place. Each run takes a read lock, so a component whose layout was
 reshaped is seen by the systems already registered to read it.
 
-<a id="rustdoc-item-497"></a>
+<a id="rustdoc-item-507"></a>
 
 ### `notify_assembly_replaced`
 
@@ -165,7 +172,7 @@ shipped build ever calls this. The AOT posture has no export for it at
 all: a shipped project may only export from its root assembly, and it
 would otherwise have to re-export a function it can never call.
 
-<a id="rustdoc-item-498"></a>
+<a id="rustdoc-item-508"></a>
 
 ### `_runtime`
 
@@ -175,7 +182,7 @@ _runtime: ManagedRuntimeContext
 
 Keeps the hosted .NET runtime alive for the host's lifetime.
 
-<a id="rustdoc-item-499"></a>
+<a id="rustdoc-item-509"></a>
 
 ### `_api`
 
@@ -187,7 +194,7 @@ Keeps the native API table alive so registered closures stay valid.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-507"></a>
+<a id="rustdoc-item-517"></a>
 
 ### `start`
 
@@ -214,12 +221,12 @@ be resolved, [`CSharpError::InteropVersionMismatch`] a runtime built for
 another ABI version, and [`CSharpError::RuntimeInitFailed`] a runtime
 that refused host initialization.
 
-It also reports every failure of [`Self::start_with`](#rustdoc-item-506): a component
+It also reports every failure of [`Self::start_with`](#rustdoc-item-516): a component
 manifest that could not be read or registered, a startup method that
 failed, an assembly that declares no systems, and a reflected access
 that names a component or resource nobody registered.
 
-<a id="rustdoc-item-506"></a>
+<a id="rustdoc-item-516"></a>
 
 ### `start_with`
 
@@ -229,7 +236,7 @@ pub(in backend) fn start_with(engine: &mut Engine, runtime: ManagedRuntimeContex
 
 The one startup lifecycle, shared by both postures.
 
-Consumes an already-resolved [`ManagedExports`](struct.ManagedExports.md#rustdoc-item-512) and the runtime it was
+Consumes an already-resolved [`ManagedExports`](struct.ManagedExports.md#rustdoc-item-522) and the runtime it was
 resolved from: registers the component manifest, runs the managed
 startup methods transactionally, reflects each system's accesses and
 registers it with the scheduler. Everything here has one copy, so the
@@ -246,9 +253,9 @@ initialization. The manifest copy reports
 or validation failure of the manifest itself.
 [`CSharpError::StartupFailed`] reports a startup method that failed and
 [`CSharpError::StartupCommandsFailed`] commands that would not apply.
-System registration returns what [`prepare_managed_systems`](fn.prepare_managed_systems.md#rustdoc-item-518) refuses.
+System registration returns what [`prepare_managed_systems`](fn.prepare_managed_systems.md#rustdoc-item-528) refuses.
 
-<a id="rustdoc-item-519"></a>
+<a id="rustdoc-item-529"></a>
 
 ### `notify_assembly_replaced`
 
@@ -264,7 +271,7 @@ in-process compile writes the file itself, through an atomic rename,
 so its caller uses this to let the next poll skip that wait entirely.
 Does nothing in the AOT posture, which never reloads.
 
-<a id="rustdoc-item-520"></a>
+<a id="rustdoc-item-530"></a>
 
 ### `start_aot`
 
@@ -276,10 +283,10 @@ Starts a NativeAOT-published library, resolves the loader exports by
 symbol, discovers the managed systems and registers each one under its
 declared read/write access.
 
-Mirrors [`Self::start`](#rustdoc-item-507): only the export resolution differs - a direct
+Mirrors [`Self::start`](#rustdoc-item-517): only the export resolution differs - a direct
 `libloading` load of the AOT native library (which embeds a trimmed
 runtime, so no .NET install and no JIT are involved) instead of the
-hostfxr bootstrap. Everything after that is [`Self::start_with`](#rustdoc-item-506).
+hostfxr bootstrap. Everything after that is [`Self::start_with`](#rustdoc-item-516).
 
 #### Errors
 
@@ -289,9 +296,9 @@ Returns [`CSharpError::AotLibraryNotFound`] or
 export, and [`CSharpError::InteropVersionMismatch`] for a library built
 against another ABI version.
 
-It also reports every failure of [`Self::start_with`](#rustdoc-item-506).
+It also reports every failure of [`Self::start_with`](#rustdoc-item-516).
 
-<a id="rustdoc-item-522"></a>
+<a id="rustdoc-item-532"></a>
 
 ### `poll_reload`
 
@@ -301,19 +308,24 @@ pub fn poll_reload(self: &mut Self, engine: &mut Engine) -> Result<u8, CSharpErr
 
 Polls the collectible loader and reports the outcome of any swap attempt.
 
-The managed loader checks the rebuilt assembly's component manifest and
-system signatures before it swaps anything. A rejection is logged once
-per attempt, so the poll that runs every frame cannot flood the terminal.
+The loader swaps a behaviour-compatible assembly by itself. A version
+whose component manifest changed is held back
+([`POLL_MANIFEST_PENDING`](constant.POLL_MANIFEST_PENDING.md#rustdoc-item-400)) until the host applies the manifest and
+commits or aborts, and a changed system set is re-registered from the
+arriving assembly rather than refused. Only a changed startup method
+set or an assembly that cannot be loaded is refused. A rejection is
+logged once per attempt, so the poll that runs every frame cannot
+flood the terminal.
 
 #### Errors
 
 Returns [`CSharpError::UnknownPollStatus`] for a code outside
-[`POLL_NO_CHANGE`](constant.POLL_NO_CHANGE.md#rustdoc-item-394), [`POLL_RELOADED`](constant.POLL_RELOADED.md#rustdoc-item-395), [`POLL_REJECTED`](constant.POLL_REJECTED.md#rustdoc-item-396) and
-[`POLL_MANIFEST_PENDING`](constant.POLL_MANIFEST_PENDING.md#rustdoc-item-397): a status the host cannot interpret is a
+[`POLL_NO_CHANGE`](constant.POLL_NO_CHANGE.md#rustdoc-item-397), [`POLL_RELOADED`](constant.POLL_RELOADED.md#rustdoc-item-398), [`POLL_REJECTED`](constant.POLL_REJECTED.md#rustdoc-item-399) and
+[`POLL_MANIFEST_PENDING`](constant.POLL_MANIFEST_PENDING.md#rustdoc-item-400): a status the host cannot interpret is a
 failure to report, not a change that never happened. The currently
 loaded assembly is kept either way.
 
-<a id="rustdoc-item-523"></a>
+<a id="rustdoc-item-533"></a>
 
 ### `decide_pending_manifest`
 
@@ -339,7 +351,7 @@ swap happened, `POLL_REJECTED` when it did not.
 Whatever re-registering the arriving assembly's systems refuses, when
 the committed version changed them.
 
-<a id="rustdoc-item-524"></a>
+<a id="rustdoc-item-534"></a>
 
 ### `read_pending_manifest`
 
@@ -349,7 +361,7 @@ pub(in backend) fn read_pending_manifest(self: &Self) -> Option<Vec<u8>>;
 
 Copies the pending version's manifest, or `None` when it cannot be read.
 
-<a id="rustdoc-item-525"></a>
+<a id="rustdoc-item-535"></a>
 
 ### `abort_pending_version`
 
@@ -359,7 +371,7 @@ pub(in backend) fn abort_pending_version(self: &mut Self, reason: &str);
 
 Tells the managed loader to discard the pending version, and says why.
 
-<a id="rustdoc-item-526"></a>
+<a id="rustdoc-item-536"></a>
 
 ### `reregister_systems`
 
@@ -380,11 +392,11 @@ before anything is cleared.
 
 #### Errors
 
-Whatever [`prepare_managed_systems`](fn.prepare_managed_systems.md#rustdoc-item-518) refuses - most often a system
+Whatever [`prepare_managed_systems`](fn.prepare_managed_systems.md#rustdoc-item-528) refuses - most often a system
 declaring a component or resource the arriving manifest never
 registered.
 
-<a id="rustdoc-item-527"></a>
+<a id="rustdoc-item-537"></a>
 
 ### `verify_systems_unchanged`
 
@@ -398,7 +410,7 @@ metadata still matches the snapshot taken at registration.
 The answer decides how much work the reload has to do. On a match only
 the behaviour changed, so the scheduler graph stays as it is and the
 reload costs one comparison. On a mismatch the reload goes through
-[`CSharpRuntime::reregister_systems`](#rustdoc-item-526) and rebuilds that graph. The
+[`CSharpRuntime::reregister_systems`](#rustdoc-item-536) and rebuilds that graph. The
 comparison is worth its cost because a match is the common case: most
 reloads edit a system body, not its signature.
 

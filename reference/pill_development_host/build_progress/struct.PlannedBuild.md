@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-480"></a>
+<a id="rustdoc-item-481"></a>
 
 # Struct `pill_development_host::build_progress::PlannedBuild`
 
@@ -14,7 +14,7 @@ One module the startup will build, and what kind of module it is.
 
 ## Fields
 
-<a id="rustdoc-item-478"></a>
+<a id="rustdoc-item-479"></a>
 
 ### `module`
 
@@ -24,7 +24,7 @@ module: String
 
 The module's name, as its build reports it.
 
-<a id="rustdoc-item-479"></a>
+<a id="rustdoc-item-480"></a>
 
 ### `kind`
 

@@ -11,7 +11,7 @@ A resource is a single value that the whole project shares, such as the time, th
 | How many values exist?                 | one per entity that has it                 | at most one in the whole world                            |
 | What does it describe?                 | one object: its position, its health       | the project as a whole: time, score, settings             |
 | How does an ECS system reach it?       | `Query<&Health>`, `Query<&mut Health>`     | `Res<Score>`, `ResMut<Score>`                             |
-| How is it declared?                    | `#[derive(PillComponent)]`                 | `#[derive(PillResource)]`                                 |
+| How is it declared?                    | `#[component]`                             | `#[resource]`                                             |
 | Does it survive a hot reload?          | yes                                        | yes, when it has a shared name and your module still declares it |
 
 ## When should I use a resource instead of a component?
@@ -29,30 +29,30 @@ If you find yourself creating a single "manager" entity only to hang one compone
 
 ## How do I declare a resource?
 
-Derive `PillResource`:
+Declare it with `#[resource]`:
 
 ```rust
 use pill_engine::*;
 
-#[derive(Default, PillResource)]
-#[pill(shared = "my_project::Score")]
+#[resource(shared = "my_project::Score")]
+#[derive(Default)]
 pub struct Score {
     pub points: u32,
 }
 ```
 
-The derive does the declaration for you: your module's entry point declares every `PillResource` type before your own registration code runs, on the first load and on every reload. You don't call `register_resource` yourself.
+The attribute does the declaration for you: your module's entry point declares every `#[resource]` type before your own registration code runs, on the first load and on every reload. You don't call `register_resource` yourself.
 
-| Attribute                                   | What it gives you                                                                 |
+| Argument                                    | What it gives you                                                                 |
 | ------------------------------------------- | --------------------------------------------------------------------------------- |
 | none                                        | a resource only this generation of your module sees; it is replaced on every reload |
-| `#[pill(shared)]` / `shared = "crate::Name"` | a stable identity: the value **survives reloads**, and every module reaches the same value |
+| `shared` / `shared = "crate::Name"`          | a stable identity: the value **survives reloads**, and every module reaches the same value |
 | `layout_sources = ["src/score.rs"]`         | the host notices when the struct's layout changes and rebuilds the value instead of keeping stale bytes |
 | `layout_dependencies = ["glam"]`            | the same, for a struct that embeds another crate's types                           |
 
 So in practice: **give every resource you want to keep a shared name.** See [Why does my resource reset on every reload?](#why-does-my-resource-reset-on-every-reload)
 
-You can still write `impl Resource for Score { fn shared_name() ... }` by hand and call `world.register_resource::<Score>()` yourself; hosts and older code do this. The derive is the normal way for a project or an extension.
+You can still write `impl Resource for Score { fn shared_name() ... }` by hand and call `world.register_resource::<Score>()` yourself; hosts and older code do this. The attribute is the normal way for a project or an extension.
 
 ## How do I add a resource to the world?
 
@@ -71,7 +71,7 @@ pub fn init(engine: &mut Engine) -> u32 {
 
 Declaring and inserting are different jobs:
 
-- **Declaring** (the derive) says "this module owns `Score`". It does not create a value.
+- **Declaring** (the attribute on the type) says "this module owns `Score`". It does not create a value.
 - **`insert_resource`** stores a value, and replaces any value already there.
 
 The `has_resource` check matters because a project's `init` runs again on **every hot reload** (unless the project splits it with `#[pill_project(register = ...)]`, in which case only `register` repeats). Inserting unconditionally would reset the resource to its starting value each time you save a file.
@@ -81,7 +81,7 @@ The `has_resource` check matters because a project's `init` runs again on **ever
 > - With the `has_resource` check, `Score` is already there, nothing is inserted, and you still have 1200 points.
 > - Without it, `insert_resource` replaces the value, and the score drops back to 0.
 
-Declaring is not optional, even when the value already exists. A module that stops declaring a resource is telling the engine it no longer owns it, and the engine removes it during the reload. With the derive this happens only when you delete the type or its derive.
+Declaring is not optional, even when the value already exists. A module that stops declaring a resource is telling the engine it no longer owns it, and the engine removes it during the reload. With the attribute this happens only when you delete the type or its declaration.
 
 ## How do I use a resource in an ECS system?
 
@@ -89,8 +89,8 @@ Add `Res<T>` to read it, or `ResMut<T>` to read and change it, as a parameter of
 
 ```rust
 // A resource declared like `Score` above: the total time the player has played.
-#[derive(Default, PillResource)]
-#[pill(shared = "my_project::PlayTime")]
+#[resource(shared = "my_project::PlayTime")]
+#[derive(Default)]
 pub struct PlayTime {
     pub seconds: f32,
 }
@@ -182,8 +182,7 @@ If a field cannot be serialized (a handle to something outside the engine, for e
 When the resource holds state that cannot be serialized (a physics world, a GPU handle, an open audio stream), so it can't be persistable, but you still want it kept across ordinary reloads.
 
 ```rust
-#[derive(PillResource)]
-#[pill(shared, layout_sources = ["Cargo.toml", "src/components.rs", "src/manager.rs"])]
+#[resource(shared, layout_sources = ["Cargo.toml", "src/components.rs", "src/manager.rs"])]
 pub struct PhysicsManager { /* rapier world, body maps, ... */ }
 ```
 
@@ -198,12 +197,11 @@ Almost always: to survive reloads (see above), and when more than one module use
 Every module is a separate DLL with its own compiled copy of the types it uses. A shared name makes the engine identify the resource by the name, so every module, and every generation of each module, reaches the same value.
 
 ```rust
-#[derive(PillResource)]
-#[pill(shared = "my_crate::GameSettings")]
+#[resource(shared = "my_crate::GameSettings")]
 pub struct GameSettings { /* ... */ }
 ```
 
-- `#[pill(shared)]` alone takes the name from the module path. Pin it with `shared = "..."` so moving the type to another file does not change it.
+- `shared` alone names the type `<crate>::<Type>`. Pin it with `shared = "prefix::Name"` only when the type should be published under another prefix; moving the type to another file keeps the derived name.
 - The name must be unique in the whole process. Include your crate's name (`"my_crate::GameSettings"`, not `"GameSettings"`).
 - Never change the name once it is in use, or the engine treats it as a different resource.
 - When several modules declare a shared resource, it is removed only when the **last** of them stops declaring it.
@@ -246,7 +244,7 @@ Extensions add their own, for example `AudioManager` from `pill_audio`, and `Phy
 
 | What                                                   | Where                                                           |
 | ------------------------------------------------------ | --------------------------------------------------------------- |
-| `#[derive(PillResource)]` and its attributes           | `pill_engine_macros`, `lib.rs`                                  |
+| `#[resource]` and its arguments                          | `pill_engine_macros`, `lib.rs`                                  |
 | How declared resources are registered                  | `pill_engine`, `declarations.rs`                                |
 | The `Resource` trait, `shared_name`, `layout_sources`  | `pill_engine_core`, `resource.rs`                               |
 | `insert_resource`, `register_resource`, `get_resource` | `pill_engine_core`, `world/resources.rs`                        |
@@ -255,4 +253,4 @@ Extensions add their own, for example `AudioManager` from `pill_audio`, and `Phy
 | `Res<T>` and `ResMut<T>`                               | `pill_engine_core`, `query/resource.rs`                         |
 | The layout fingerprint on reload                       | `pill_development_host`, `layout_record.rs`                     |
 | A shared, persistable resource in a real project       | `examples/pills/pills_rust/src/game.rs`, `DemoState`            |
-| A resource with `layout_sources`                       | `pill_physics/src/manager.rs`, `PhysicsManager`                 |
+| A resource with `layout_sources`                       | `pill_physics/modules/runtime/src/manager.rs`, `PhysicsManager`                 |

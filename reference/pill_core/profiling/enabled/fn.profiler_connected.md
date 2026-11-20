@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1332"></a>
+<a id="rustdoc-item-1342"></a>
 
 # Function `pill_core::profiling::enabled::profiler_connected`
 

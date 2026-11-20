@@ -48,6 +48,7 @@ The font file's bytes, copied unchanged.
 - `Pointable`
 - `OwoColorize`
 - `ErasedDestructor`
+- `Equivalent<K>`
 - `Clone`
 - `Debug`
 - `StructuralPartialEq`

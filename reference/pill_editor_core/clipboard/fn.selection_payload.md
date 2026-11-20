@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1161"></a>
+<a id="rustdoc-item-1206"></a>
 
 # Function `pill_editor_core::clipboard::selection_payload`
 
@@ -8,7 +8,7 @@
 pub fn selection_payload(selection: &crate::editor_state::EditorSelection, snapshot: &crate::editor_state::EditorSnapshot) -> Option<String>;
 ```
 
-Source: `editor\pill_editor_core\src\clipboard.rs:301`
+Source: `editor\pill_editor_core\src\clipboard.rs:309`
 
 Builds the payload text a copy takes from the current selection.
 

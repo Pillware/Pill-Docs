@@ -8,7 +8,7 @@
 pub struct StaticRenderer;
 ```
 
-Source: `hosting\pill_player\src\static_project.rs:117`
+Source: `hosting\pill_player\src\static_project.rs:125`
 
 The renderer a windowed shipping build links, as the two functions this
 crate needs from it.
@@ -19,7 +19,7 @@ renderer, fills this in.
 
 ## Fields
 
-<a id="rustdoc-item-620"></a>
+<a id="rustdoc-item-624"></a>
 
 ### `init`
 
@@ -30,7 +30,7 @@ init: fn (_: &mut pill_engine::Engine) -> u32
 The renderer's registration (`pill_master_renderer::register`), which
 adds the `rendering` system.
 
-<a id="rustdoc-item-621"></a>
+<a id="rustdoc-item-625"></a>
 
 ### `attach`
 
@@ -58,14 +58,14 @@ field declared before the window it was built on.
 - `TryFrom<U>`
 - `Any`
 - `ToOwned`
+- `CastableFrom<ST, Uninit, Uninit>`
+- `CastableFrom<ST, Initialized, Initialized>`
+- `Read<Exclusive, BecauseExclusive>`
 - `Instrument`
 - `WithSubscriber`
 - `IntoEither`
 - `Pointable`
 - `OwoColorize`
 - `ErasedDestructor`
-- `CastableFrom<ST, Uninit, Uninit>`
-- `CastableFrom<ST, Initialized, Initialized>`
-- `Read<Exclusive, BecauseExclusive>`
 - `Clone`
 - `Copy`

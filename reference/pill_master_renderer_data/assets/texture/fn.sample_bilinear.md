@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1271"></a>
+<a id="rustdoc-item-1260"></a>
 
 # Function `pill_master_renderer_data::assets::texture::sample_bilinear`
 
@@ -8,7 +8,7 @@
 pub(in assets::texture) fn sample_bilinear(panorama: &[f32], width: u32, height: u32, u: f32, v: f32) -> [f32; 4];
 ```
 
-Visibility: `{'restricted': {'parent': 1176, 'path': '::assets::texture'}}` · Source: `extensions\pill_master_renderer\pill_master_renderer_data\src\assets\texture.rs:446`
+Visibility: `{'restricted': {'parent': 1166, 'path': '::assets::texture'}}` · Source: `extensions\pill_master_renderer\modules\runtime\data\src\assets\texture.rs:446`
 
 Reads a panorama at `(u, v)` with bilinear filtering.
 

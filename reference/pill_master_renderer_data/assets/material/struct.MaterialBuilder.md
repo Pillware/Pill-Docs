@@ -8,7 +8,7 @@
 pub struct MaterialBuilder;
 ```
 
-Source: `extensions\pill_master_renderer\pill_master_renderer_data\src\assets\material.rs:111`
+Source: `extensions\pill_master_renderer\modules\runtime\data\src\assets\material.rs:111`
 
 Builds a [`Material`](struct.Material.md#rustdoc-item-100) one field at a time.
 
@@ -115,15 +115,15 @@ Finish building and return the material.
 - `TryInto<U>`
 - `TryFrom<U>`
 - `Any`
+- `CastableFrom<ST, Uninit, Uninit>`
+- `CastableFrom<ST, Initialized, Initialized>`
+- `Read<Exclusive, BecauseExclusive>`
 - `Instrument`
 - `WithSubscriber`
 - `IntoEither`
 - `Pointable`
 - `OwoColorize`
 - `ErasedDestructor`
-- `CastableFrom<ST, Uninit, Uninit>`
-- `CastableFrom<ST, Initialized, Initialized>`
-- `Read<Exclusive, BecauseExclusive>`
 - `MirrorObject`
 - `MirrorValue`
 - `MirrorReturn`

@@ -190,7 +190,7 @@ crate-type = ["cdylib", "rlib"]
 
 [dependencies]
 pill_engine = { path = "../../../modules/engine/pill_engine" }
-pill_master_renderer_data = { path = "../../../modules/extensions/pill_master_renderer/pill_master_renderer_data", default-features = false }
+pill_master_renderer_data = { path = "../../../modules/extensions/pill_master_renderer/modules/runtime/data", default-features = false }
 ```
 
 - **`pill_engine`** is everything your code uses to talk to the engine: `#[system]`, `Query`, `Res`, `Engine`, `World`.
@@ -220,7 +220,7 @@ Pill's own asset files are plain JSON, so you can read and edit them by hand. He
 
 ```json
 {
-  "asset_type": "pill_master_renderer::assets::Material",
+  "asset_type": "pill_master_renderer::Material",
   "guid": "0000000000000000000000000000c002",
   "asset": {
     "parameters": {
@@ -255,7 +255,7 @@ The cube example keeps things minimal. Real projects soon need a few more pieces
 
 - **Commands** create and destroy entities from inside an ECS system, for example to spawn a bullet. See [Commands](../concepts/commands.md).
 - **Extensions** add features such as physics or audio through `modules:` in `project_settings.yaml`.
-- **Your own components and resources**, declared with `#[derive(PillComponent)]` and `#[derive(PillResource)]`.
+- **Your own components and resources**, declared with `#[component]` and `#[resource]`.
 - **C#.** `examples/cube/cube_csharp` draws the same scene from the same files, written in C#.
 
 ## Where do I go next?

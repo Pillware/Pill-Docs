@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-204"></a>
+<a id="rustdoc-item-206"></a>
 
 # Struct `pill_editor_core::boundary::EguiShellInput`
 
@@ -126,6 +126,20 @@ only it can say where an entity appears on screen. The shell owns the
 icon atlas and draws the badge on that point.
 
 <a id="rustdoc-item-203"></a>
+
+### `marquee`
+
+```rust
+marquee: Option<ShellMarquee>
+```
+
+The marquee a drag in a scene view is holding open, when one is.
+
+The executable owns the gesture and the pixels it covers; the shell
+draws the rectangle over the viewport, which is the only surface the
+composition overlay paints above a scene's child window.
+
+<a id="rustdoc-item-205"></a>
 
 ### `scripted`
 

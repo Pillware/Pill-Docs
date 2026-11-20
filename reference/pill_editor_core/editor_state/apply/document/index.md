@@ -1,10 +1,10 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-2394"></a>
+<a id="rustdoc-item-2455"></a>
 
 # Module `pill_editor_core::editor_state::apply::document`
 
-Visibility: `{'restricted': {'parent': 2390, 'path': '::editor_state::apply'}}` · Source: `editor\pill_editor_core\src\editor_state\apply\document.rs:1`
+Visibility: `{'restricted': {'parent': 2451, 'path': '::editor_state::apply'}}` · Source: `editor\pill_editor_core\src\editor_state\apply\document.rs:1`
 
 Applies the document command family: the scene document commands and the
 preferences.
@@ -19,11 +19,11 @@ preferences.
 ## Design
 
 One `match` over the family's own variants, called from
-[`EditorCommand::apply_one`](../../command/enum.EditorCommand.md#rustdoc-item-1112); a command of another
+[`EditorCommand::apply_one`](../../command/enum.EditorCommand.md#rustdoc-item-1157); a command of another
 family hits `unreachable!`. Every successful arm answers
-[`CommandOutcome::plain()`](../../command/struct.CommandOutcome.md#rustdoc-item-2393), because none of these commands can be undone.
+[`CommandOutcome::plain()`](../../command/struct.CommandOutcome.md#rustdoc-item-2454), because none of these commands can be undone.
 
 ## Module contents
 
 ### Functions
-- [`apply`](fn.apply.md#rustdoc-item-2392) — Applies one document command.
+- [`apply`](fn.apply.md#rustdoc-item-2453) — Applies one document command.

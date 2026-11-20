@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-4552"></a>
+<a id="rustdoc-item-4811"></a>
 
 # Function `pill_development_host::asset_browser::move_asset`
 
@@ -8,7 +8,7 @@
 pub fn move_asset(asset_directory: &std::path::Path, from: &str, to: &str) -> Result<(), String>;
 ```
 
-Source: `hosting\pill_development_host\src\asset_browser.rs:396`
+Source: `hosting\pill_development_host\src\asset_browser.rs:395`
 
 Moves the asset at `from` to `to` (both relative to `res`) together with
 its `.meta`, through [`pill_assets::move_asset`]. The asset watcher then

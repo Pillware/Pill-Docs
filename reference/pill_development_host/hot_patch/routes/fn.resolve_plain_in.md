@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-2197"></a>
+<a id="rustdoc-item-2271"></a>
 
 # Function `pill_development_host::hot_patch::routes::resolve_plain_in`
 
@@ -8,7 +8,7 @@
 pub(in hot_patch) fn resolve_plain_in(library: &libloading::Library, lookup_name: &str) -> Result<(usize, String), String>;
 ```
 
-Visibility: `{'restricted': {'parent': 1968, 'path': '::hot_patch'}}` · Source: `hosting\pill_development_host\src\hot_patch\routes.rs:386`
+Visibility: `{'restricted': {'parent': 2042, 'path': '::hot_patch'}}` · Source: `hosting\pill_development_host\src\hot_patch\routes.rs:386`
 
 Asks a loaded patch where its replacement for a plain function lives.
 

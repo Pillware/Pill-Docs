@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-4280"></a>
+<a id="rustdoc-item-4807"></a>
 
 # Enum `pill_editor_core::history::TrimReason`
 
@@ -14,7 +14,7 @@ Why the history dropped its oldest entry.
 
 ## Variants
 
-<a id="rustdoc-item-4278"></a>
+<a id="rustdoc-item-4805"></a>
 
 ### `Steps`
 
@@ -24,7 +24,7 @@ Steps
 
 The step cap was reached.
 
-<a id="rustdoc-item-4279"></a>
+<a id="rustdoc-item-4806"></a>
 
 ### `Memory`
 

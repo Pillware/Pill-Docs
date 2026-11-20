@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-3521"></a>
+<a id="rustdoc-item-3810"></a>
 
 # Struct `pill_editor_core::style::ThemeLayerInfo`
 
@@ -8,14 +8,14 @@
 pub struct ThemeLayerInfo;
 ```
 
-Source: `editor\pill_editor_core\src\style.rs:523`
+Source: `editor\pill_editor_core\src\style.rs:524`
 
 One layer of a resolved theme: where it came from and, for a file, which
 path.
 
 ## Fields
 
-<a id="rustdoc-item-8323"></a>
+<a id="rustdoc-item-10385"></a>
 
 ### `layer`
 
@@ -25,7 +25,7 @@ layer: ThemeLayer
 
 Which layer this is.
 
-<a id="rustdoc-item-8324"></a>
+<a id="rustdoc-item-10386"></a>
 
 ### `path`
 
@@ -37,7 +37,7 @@ The file the layer loaded, when it loaded one.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-8325"></a>
+<a id="rustdoc-item-10387"></a>
 
 ### `code`
 
@@ -47,7 +47,7 @@ pub fn code() -> Self;
 
 The code default, which has no file.
 
-<a id="rustdoc-item-8326"></a>
+<a id="rustdoc-item-10388"></a>
 
 ### `user`
 
@@ -57,7 +57,7 @@ pub fn user<impl Into<String>: Into<String>>(path: impl Into<String>) -> Self;
 
 The user's file at `path`.
 
-<a id="rustdoc-item-8327"></a>
+<a id="rustdoc-item-10389"></a>
 
 ### `project`
 
@@ -67,7 +67,7 @@ pub fn project<impl Into<String>: Into<String>>(path: impl Into<String>) -> Self
 
 The project's file at `path`.
 
-<a id="rustdoc-item-8328"></a>
+<a id="rustdoc-item-10390"></a>
 
 ### `path_text`
 

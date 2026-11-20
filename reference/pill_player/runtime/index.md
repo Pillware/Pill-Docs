@@ -13,7 +13,7 @@ Engine ownership and the frame every build runs.
 
 - Own the [`Engine`] at a stable address, and whatever must outlive it.
 - Start a statically linked project ([`setup`](fn.setup.md#rustdoc-item-314)).
-- Mount a project's asset pack and index it ([`mount_asset_pack`](fn.mount_asset_pack.md#rustdoc-item-551)).
+- Mount a project's asset pack and index it ([`mount_asset_pack`](fn.mount_asset_pack.md#rustdoc-item-554)).
 - Run one frame: systems, deferred commands, failure reporting, frame
   statistics ([`Runtime::run_frame_from`](struct.Runtime.md#rustdoc-item-320)).
 - Define [`FrameDriver`](trait.FrameDriver.md#rustdoc-item-272), the interface a frontend's loop drives.
@@ -43,9 +43,9 @@ runs its systems the same way the game did while it was developed.
 - [`WindowedFrameDriver`](trait.WindowedFrameDriver.md#rustdoc-item-275) — What a frontend needs from a driver that draws through a renderer.
 
 ### Functions
-- [`insert_debug_resources`](fn.insert_debug_resources.md#rustdoc-item-549) — Insert the debug-drawing and picking resources into `world`, each only
-- [`mount_asset_pack`](fn.mount_asset_pack.md#rustdoc-item-551) — Parses an asset pack and indexes every asset in it.
-- [`set_surface_camera`](fn.set_surface_camera.md#rustdoc-item-547) — Writes `binding` for surface `id` into the world's
+- [`insert_debug_resources`](fn.insert_debug_resources.md#rustdoc-item-552) — Insert the debug-drawing and picking resources into `world`, each only
+- [`mount_asset_pack`](fn.mount_asset_pack.md#rustdoc-item-554) — Parses an asset pack and indexes every asset in it.
+- [`set_surface_camera`](fn.set_surface_camera.md#rustdoc-item-550) — Writes `binding` for surface `id` into the world's
 - [`setup`](fn.setup.md#rustdoc-item-314) — Create the engine and initialize a statically linked project, mounting the
 - [`setup_with_asset_database`](fn.setup_with_asset_database.md#rustdoc-item-315) — Create the engine and initialize a statically linked project whose pack has
 

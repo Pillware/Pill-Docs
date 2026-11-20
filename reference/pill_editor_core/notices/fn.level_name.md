@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-5732"></a>
+<a id="rustdoc-item-7700"></a>
 
 # Function `pill_editor_core::notices::level_name`
 
@@ -8,6 +8,6 @@
 pub fn level_name(level: NoticeLevel) -> &'static str;
 ```
 
-Source: `editor\pill_editor_core\src\notices.rs:100`
+Source: `editor\pill_editor_core\src\notices.rs:119`
 
 The wire name of a level: `error`, `warning` or `info`.

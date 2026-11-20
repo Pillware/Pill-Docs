@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-355"></a>
+<a id="rustdoc-item-379"></a>
 
 # Function `pill_engine_macros::flattened_path`
 
@@ -8,7 +8,7 @@
 pub(crate) fn flattened_path(path: &syn::Path, separator: &str) -> String;
 ```
 
-Visibility: `crate` · Source: `engine\pill_engine_macros\src\lib.rs:1312`
+Visibility: `crate` · Source: `engine\pill_engine_macros\src\lib.rs:1685`
 
 Joins a path's segments into one string, with `separator` between them.
 

@@ -8,7 +8,7 @@
 pub(crate) fn mirror_enum(input: &syn::DeriveInput, data: &syn::DataEnum) -> syn::Result<proc_macro2::TokenStream>;
 ```
 
-Visibility: `crate` · Source: `engine\pill_engine_macros\src\mirror.rs:1552`
+Visibility: `crate` · Source: `engine\pill_engine_macros\src\mirror.rs:1576`
 
 Expand `#[derive(PillMirror)]` on a fieldless enum with an integer `repr`.
 

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-4124"></a>
+<a id="rustdoc-item-4381"></a>
 
 # Function `pill_development_host::runtime::start_project_shader_watcher`
 
@@ -8,7 +8,7 @@
 pub(in runtime) fn start_project_shader_watcher(host: &DevHost) -> Option<shader::ShaderWatcher>;
 ```
 
-Visibility: `{'restricted': {'parent': 3859, 'path': '::runtime'}}` · Source: `hosting\pill_development_host\src\runtime.rs:1995`
+Visibility: `{'restricted': {'parent': 4115, 'path': '::runtime'}}` · Source: `hosting\pill_development_host\src\runtime.rs:2094`
 
 Start watching the project's own shader sources.
 

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1669"></a>
+<a id="rustdoc-item-1744"></a>
 
 # Struct `pill_development_host::csharp::CSharpProject`
 
@@ -15,7 +15,7 @@ and the in-process compiler that rebuilds its assembly.
 
 ## Fields
 
-<a id="rustdoc-item-1661"></a>
+<a id="rustdoc-item-1736"></a>
 
 ### `runtime`
 
@@ -25,7 +25,7 @@ runtime: pill_csharp_bridge::CSharpRuntime
 
 The managed runtime running the project's systems.
 
-<a id="rustdoc-item-1663"></a>
+<a id="rustdoc-item-1738"></a>
 
 ### `fast_compiler`
 
@@ -41,7 +41,7 @@ behind an `Arc` because a reload hands a clone to a build thread. Its
 own state is a set of export addresses and paths, so sharing it is
 safe.
 
-<a id="rustdoc-item-1665"></a>
+<a id="rustdoc-item-1740"></a>
 
 ### `assembly_build`
 
@@ -57,7 +57,7 @@ mirror files that a module reload rewrites. The frame itself keeps
 rendering and running systems. Collecting the build hands its outcome
 to the reload path, which tells the loader and polls for the swap.
 
-<a id="rustdoc-item-1667"></a>
+<a id="rustdoc-item-1742"></a>
 
 ### `reload_timing`
 
@@ -74,7 +74,7 @@ alone.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-1671"></a>
+<a id="rustdoc-item-1746"></a>
 
 ### `start`
 
@@ -94,7 +94,7 @@ Returns the same errors as [`CSharpRuntime::start`]. A compiler that
 cannot be built or loaded is not an error: the failure is logged once,
 and reloads run a full `dotnet build`.
 
-<a id="rustdoc-item-1674"></a>
+<a id="rustdoc-item-1749"></a>
 
 ### `poll_reload`
 
@@ -109,7 +109,7 @@ Asks the managed loader whether it can swap in a rebuilt assembly; see
 
 Returns the same errors as [`CSharpRuntime::poll_reload`].
 
-<a id="rustdoc-item-1675"></a>
+<a id="rustdoc-item-1750"></a>
 
 ### `arm_reload_timing`
 
@@ -125,22 +125,21 @@ because a module swap changed the mirror surface. That case times from
 now and reports no detection delay, because there is no file save to
 measure it from.
 
-<a id="rustdoc-item-1677"></a>
+<a id="rustdoc-item-1752"></a>
 
 ### `record_assembly_rebuilt_at`
 
 ```rust
-pub(crate) fn record_assembly_rebuilt_at(self: &mut Self, finished_at: Instant, build_kind: &'static str);
+pub(crate) fn record_assembly_rebuilt_at(self: &mut Self, finished_at: Instant);
 ```
 
-Records that an assembly rebuild finished at `finished_at`, and how it
-was produced.
+Records that an assembly rebuild finished at `finished_at`.
 
 The build worker reports the instant it finished, so a build that ran
-between two frames still adds its own duration to the total instead of
-the wait before the frame collected it.
+between two frames still times the swap from its own end instead of the
+wait before the frame collected it.
 
-<a id="rustdoc-item-1678"></a>
+<a id="rustdoc-item-1753"></a>
 
 ### `compiler_handle`
 
@@ -152,7 +151,7 @@ Returns a handle to the in-process compiler for one build, or `None`
 when no compiler is loaded; that build then runs the full `dotnet build`
 fallback.
 
-<a id="rustdoc-item-1679"></a>
+<a id="rustdoc-item-1754"></a>
 
 ### `track_build`
 
@@ -163,7 +162,7 @@ pub(crate) fn track_build(self: &mut Self, receiver: Receiver<BuildReport>, thre
 Stores a build that a worker thread has just started, so the frame loop
 can collect its report and complete the reload.
 
-<a id="rustdoc-item-1682"></a>
+<a id="rustdoc-item-1757"></a>
 
 ### `build_in_flight`
 
@@ -173,7 +172,7 @@ pub(crate) fn build_in_flight(self: &Self) -> bool;
 
 Tells whether an assembly build is running on its own thread right now.
 
-<a id="rustdoc-item-1684"></a>
+<a id="rustdoc-item-1759"></a>
 
 ### `collect_build`
 
@@ -185,10 +184,10 @@ Tries to collect a finished build report without waiting.
 
 Collecting a report waits for the worker thread to end and clears the
 in-flight state. A worker that stopped without a report is reported as
-[`BuildCollection::Died`](enum.BuildCollection.md#rustdoc-item-1683), so the caller can fall back to building on
+[`BuildCollection::Died`](enum.BuildCollection.md#rustdoc-item-1758), so the caller can fall back to building on
 the frame thread.
 
-<a id="rustdoc-item-1687"></a>
+<a id="rustdoc-item-1762"></a>
 
 ### `notify_assembly_replaced`
 
@@ -201,7 +200,7 @@ written a complete assembly. The loader's next poll can then skip its
 debounce (the wait for the file to stop changing); see
 [`CSharpRuntime::notify_assembly_replaced`].
 
-<a id="rustdoc-item-1688"></a>
+<a id="rustdoc-item-1763"></a>
 
 ### `abandon_reload_timing`
 
@@ -215,7 +214,7 @@ A failed or cancelled build replaces nothing. Keeping the timing would
 count a later swap, whichever build produced it, as caused by this
 signal.
 
-<a id="rustdoc-item-1689"></a>
+<a id="rustdoc-item-1764"></a>
 
 ### `finish_reload_timing`
 

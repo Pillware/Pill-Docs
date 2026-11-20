@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1999"></a>
+<a id="rustdoc-item-2024"></a>
 
 # Function `pill_csharp_bridge::resources::execute_resource_manifest`
 
@@ -10,7 +10,7 @@ pub(crate) fn execute_resource_manifest(engine: &mut pill_engine::Engine, prepar
 
 Visibility: `crate` · Source: `csharp\pill_csharp_bridge\src\resources.rs:306`
 
-Applies what [`prepare_resource_manifest`](fn.prepare_resource_manifest.md#rustdoc-item-1998) resolved, then publishes the
+Applies what [`prepare_resource_manifest`](fn.prepare_resource_manifest.md#rustdoc-item-2023) resolved, then publishes the
 table.
 
 For each resource the pipeline picks one of five outcomes, comparing the

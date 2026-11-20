@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-2194"></a>
+<a id="rustdoc-item-2251"></a>
 
 # Module `pill_editor_core::console`
 
@@ -29,19 +29,19 @@ reload.
 ## Module contents
 
 ### Structs
-- [`ConsoleFilterSettings`](struct.ConsoleFilterSettings.md#rustdoc-item-2064) — The filters the Console tab edits.
-- [`ConsoleLine`](struct.ConsoleLine.md#rustdoc-item-2013) — One console row, with owned strings.
-- [`ConsoleState`](struct.ConsoleState.md#rustdoc-item-2059) — The console's history: the captured lines, the filters that narrow them,
-- [`ConsoleView`](struct.ConsoleView.md#rustdoc-item-1960) — What the Console tab draws: the filters in force and the rows they leave.
+- [`ConsoleFilterSettings`](struct.ConsoleFilterSettings.md#rustdoc-item-2120) — The filters the Console tab edits.
+- [`ConsoleLine`](struct.ConsoleLine.md#rustdoc-item-2069) — One console row, with owned strings.
+- [`ConsoleState`](struct.ConsoleState.md#rustdoc-item-2115) — The console's history: the captured lines, the filters that narrow them,
+- [`ConsoleView`](struct.ConsoleView.md#rustdoc-item-2016) — What the Console tab draws: the filters in force and the rows they leave.
 
 ### Enums
-- [`ConsoleChannel`](enum.ConsoleChannel.md#rustdoc-item-1964) — Which side of the running program a line came from.
+- [`ConsoleChannel`](enum.ConsoleChannel.md#rustdoc-item-2020) — Which side of the running program a line came from.
 
 ### Functions
-- [`level_from_name`](fn.level_from_name.md#rustdoc-item-2193) — The capture level a name stands for, or `None` when the name is not one of
-- [`level_name`](fn.level_name.md#rustdoc-item-2192) — The short name of a capture level: `trace`, `debug`, `info`, `warn` or
+- [`level_from_name`](fn.level_from_name.md#rustdoc-item-2250) — The capture level a name stands for, or `None` when the name is not one of
+- [`level_name`](fn.level_name.md#rustdoc-item-2249) — The short name of a capture level: `trace`, `debug`, `info`, `warn` or
 
 ### Constants
-- [`CONSOLE_LINES_MAX`](constant.CONSOLE_LINES_MAX.md#rustdoc-item-1958) — How many lines the history keeps; older ones drop off.
-- [`CONSOLE_VIEW_ROWS`](constant.CONSOLE_VIEW_ROWS.md#rustdoc-item-1961) — How many rows a [`ConsoleView`] carries: the newest rows the filters leave.
-- [`ENGINE_PREFIXES`](constant.ENGINE_PREFIXES.md#rustdoc-item-1959) — The prefixes the engine's own code logs under.
+- [`CONSOLE_LINES_MAX`](constant.CONSOLE_LINES_MAX.md#rustdoc-item-2014) — How many lines the history keeps; older ones drop off.
+- [`CONSOLE_VIEW_ROWS`](constant.CONSOLE_VIEW_ROWS.md#rustdoc-item-2017) — How many rows a [`ConsoleView`] carries: the newest rows the filters leave.
+- [`ENGINE_PREFIXES`](constant.ENGINE_PREFIXES.md#rustdoc-item-2015) — The prefixes the engine's own code logs under.

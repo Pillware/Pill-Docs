@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1487"></a>
+<a id="rustdoc-item-1497"></a>
 
 # Struct `pill_core::slot_map::SlotMap`
 
@@ -10,7 +10,7 @@ pub struct SlotMap<K, V>;
 
 Source: `engine\pill_core\src\slot_map.rs:144`
 
-A vector of slots that hands out typed [`SlotKey`](trait.SlotKey.md#rustdoc-item-1488) handles.
+A vector of slots that hands out typed [`SlotKey`](trait.SlotKey.md#rustdoc-item-1498) handles.
 
 Removing a value increases its slot's version, so an old handle can never
 read whatever takes its place. Freed slots are reused, with the version the
@@ -18,7 +18,7 @@ removal left on them, before the vector of slots grows.
 
 ## Fields
 
-<a id="rustdoc-item-1513"></a>
+<a id="rustdoc-item-1523"></a>
 
 ### `slots`
 
@@ -28,7 +28,7 @@ slots: Vec<Slot<V>>
 
 _No documentation provided._
 
-<a id="rustdoc-item-1514"></a>
+<a id="rustdoc-item-1524"></a>
 
 ### `free_slot_indices`
 
@@ -38,7 +38,7 @@ free_slot_indices: Vec<u32>
 
 _No documentation provided._
 
-<a id="rustdoc-item-1515"></a>
+<a id="rustdoc-item-1525"></a>
 
 ### `marker`
 
@@ -50,7 +50,7 @@ _No documentation provided._
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-1517"></a>
+<a id="rustdoc-item-1527"></a>
 
 ### `with_capacity_and_key`
 
@@ -65,7 +65,7 @@ The caller names both types, as in
 `SlotMap::<K, V>::with_capacity_and_key(16)`, because the capacity
 argument says nothing about either.
 
-<a id="rustdoc-item-1518"></a>
+<a id="rustdoc-item-1528"></a>
 
 ### `insert`
 
@@ -79,7 +79,7 @@ A freed slot is reused before the slot vector grows. It keeps the
 version its removal gave it, so the new handle never equals the handle
 that freed the slot.
 
-<a id="rustdoc-item-1519"></a>
+<a id="rustdoc-item-1529"></a>
 
 ### `get`
 
@@ -92,7 +92,7 @@ Returns the value a handle names, or `None` if the handle is stale.
 The slot's version must match the handle's, so a handle whose slot has
 been emptied or reused reads as stale.
 
-<a id="rustdoc-item-1520"></a>
+<a id="rustdoc-item-1530"></a>
 
 ### `get_mut`
 
@@ -102,10 +102,10 @@ pub fn get_mut(self: &mut Self, key: K) -> Option<&mut V>;
 
 Returns a mutable reference to the value a handle names.
 
-The check is the same as in [`get`](#rustdoc-item-1519): a stale handle yields
+The check is the same as in [`get`](#rustdoc-item-1529): a stale handle yields
 `None` instead of a reference to whatever value took over its slot.
 
-<a id="rustdoc-item-1521"></a>
+<a id="rustdoc-item-1531"></a>
 
 ### `remove`
 

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1524"></a>
+<a id="rustdoc-item-1569"></a>
 
 # Struct `pill_editor_core::commands::CommandView`
 
@@ -8,7 +8,7 @@
 pub struct CommandView;
 ```
 
-Source: `editor\pill_editor_core\src\commands.rs:639`
+Source: `editor\pill_editor_core\src\commands.rs:640`
 
 One registered command as the UI sees it.
 
@@ -18,7 +18,7 @@ registry that produced it.
 
 ## Fields
 
-<a id="rustdoc-item-1561"></a>
+<a id="rustdoc-item-1607"></a>
 
 ### `id`
 
@@ -28,7 +28,7 @@ id: String
 
 Stable identifier (`editor.pause_toggle`).
 
-<a id="rustdoc-item-1562"></a>
+<a id="rustdoc-item-1608"></a>
 
 ### `title`
 
@@ -38,7 +38,7 @@ title: String
 
 The title a menu row shows.
 
-<a id="rustdoc-item-1563"></a>
+<a id="rustdoc-item-1609"></a>
 
 ### `menu_path`
 
@@ -48,7 +48,7 @@ menu_path: Vec<String>
 
 The menu path; an empty path means no menu row.
 
-<a id="rustdoc-item-1564"></a>
+<a id="rustdoc-item-1610"></a>
 
 ### `separator_before`
 

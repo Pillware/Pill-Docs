@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1655"></a>
+<a id="rustdoc-item-1701"></a>
 
 # Struct `pill_editor_core::commands::EditorPreferences`
 
@@ -8,18 +8,18 @@
 pub struct EditorPreferences;
 ```
 
-Source: `editor\pill_editor_core\src\commands.rs:879`
+Source: `editor\pill_editor_core\src\commands.rs:896`
 
 The typed view of the preferences file. It holds the keys the executable
 reads as values, which are the theme layer, the gizmo entry, the snapping
 steps, the code editor command and the history limits.
 
 The Preferences tab reads and writes the same document key by key through
-[`crate::preferences`](../preferences/index.md#rustdoc-item-1654); the two owners only ever change their own keys.
+[`crate::preferences`](../preferences/index.md#rustdoc-item-1700); the two owners only ever change their own keys.
 
 ## Fields
 
-<a id="rustdoc-item-1645"></a>
+<a id="rustdoc-item-1691"></a>
 
 ### `theme`
 
@@ -30,7 +30,7 @@ theme: Option<String>
 The user theme layer's file, absolute or relative to the state
 directory.
 
-<a id="rustdoc-item-1646"></a>
+<a id="rustdoc-item-1692"></a>
 
 ### `snapping_steps`
 
@@ -40,7 +40,7 @@ snapping_steps: Option<SnappingSteps>
 
 Transform snapping steps, in world units and degrees.
 
-<a id="rustdoc-item-1648"></a>
+<a id="rustdoc-item-1694"></a>
 
 ### `gizmo`
 
@@ -50,7 +50,7 @@ gizmo: Option<GizmoPreferences>
 
 The gizmo tool's persisted state.
 
-<a id="rustdoc-item-1650"></a>
+<a id="rustdoc-item-1696"></a>
 
 ### `code_editor_command`
 
@@ -60,7 +60,7 @@ code_editor_command: Option<String>
 
 The command that opens the user's code editor.
 
-<a id="rustdoc-item-1651"></a>
+<a id="rustdoc-item-1697"></a>
 
 ### `autosave_interval_seconds`
 
@@ -71,7 +71,7 @@ autosave_interval_seconds: Option<f64>
 Autosave interval for the editor state, in seconds, as the file
 stores it.
 
-<a id="rustdoc-item-1652"></a>
+<a id="rustdoc-item-1698"></a>
 
 ### `history_step_cap`
 
@@ -81,7 +81,7 @@ history_step_cap: Option<usize>
 
 Maximum undo steps kept (absent uses the history default, 500).
 
-<a id="rustdoc-item-1653"></a>
+<a id="rustdoc-item-1699"></a>
 
 ### `history_memory_budget_mb`
 

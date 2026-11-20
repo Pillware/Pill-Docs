@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-233"></a>
+<a id="rustdoc-item-236"></a>
 
 # Struct `pill_ui_frame::draw::DrawList`
 
@@ -18,7 +18,7 @@ owns no GPU resources and is plain data any backend can read.
 
 ## Fields
 
-<a id="rustdoc-item-267"></a>
+<a id="rustdoc-item-270"></a>
 
 ### `vertices`
 
@@ -28,7 +28,7 @@ vertices: Vec<UiVertex>
 
 The frame's vertices, referenced by index.
 
-<a id="rustdoc-item-229"></a>
+<a id="rustdoc-item-232"></a>
 
 ### `indices`
 
@@ -38,7 +38,7 @@ indices: Vec<u32>
 
 The frame's indices, in draw order.
 
-<a id="rustdoc-item-269"></a>
+<a id="rustdoc-item-272"></a>
 
 ### `commands`
 
@@ -48,7 +48,7 @@ commands: Vec<DrawCommand>
 
 Clip changes and draws, in submission order.
 
-<a id="rustdoc-item-270"></a>
+<a id="rustdoc-item-273"></a>
 
 ### `clip_depth`
 
@@ -60,7 +60,7 @@ The number of clips that are currently open, which keeps pushes and pops balance
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-272"></a>
+<a id="rustdoc-item-275"></a>
 
 ### `new`
 
@@ -70,7 +70,7 @@ pub fn new() -> DrawList;
 
 An empty list, ready for a frame.
 
-<a id="rustdoc-item-273"></a>
+<a id="rustdoc-item-276"></a>
 
 ### `is_empty`
 
@@ -80,7 +80,7 @@ pub fn is_empty(self: &Self) -> bool;
 
 Returns `true` when nothing would be drawn, which means no vertices and no commands.
 
-<a id="rustdoc-item-274"></a>
+<a id="rustdoc-item-277"></a>
 
 ### `clear`
 
@@ -90,7 +90,7 @@ pub fn clear(self: &mut Self);
 
 Forget the previous frame's work, keeping the allocations.
 
-<a id="rustdoc-item-276"></a>
+<a id="rustdoc-item-279"></a>
 
 ### `push_clip`
 
@@ -99,11 +99,11 @@ pub fn push_clip(self: &mut Self, rect: Rect);
 ```
 
 Clip every following draw to `rect` until the matching
-[`Self::pop_clip`](#rustdoc-item-275).
+[`Self::pop_clip`](#rustdoc-item-278).
 
 The backend intersects this with whatever clip is already active.
 
-<a id="rustdoc-item-275"></a>
+<a id="rustdoc-item-278"></a>
 
 ### `pop_clip`
 
@@ -111,15 +111,15 @@ The backend intersects this with whatever clip is already active.
 pub fn pop_clip(self: &mut Self);
 ```
 
-Closes the most recent [`Self::push_clip`](#rustdoc-item-276).
+Closes the most recent [`Self::push_clip`](#rustdoc-item-279).
 
 #### Panics
 
 Panics in debug builds when no clip is open, which means there is one
 more pop than push. A release build still records the pop as a
-[`DrawCommand::PopClip`](enum.DrawCommand.md#rustdoc-item-227).
+[`DrawCommand::PopClip`](enum.DrawCommand.md#rustdoc-item-230).
 
-<a id="rustdoc-item-277"></a>
+<a id="rustdoc-item-280"></a>
 
 ### `push_quad`
 
@@ -134,7 +134,7 @@ The vertices go in top-left, top-right, bottom-right, bottom-left
 order, so `uv_min` is on the rectangle's top-left corner and `uv_max` on
 its bottom-right one, whatever the texture's orientation.
 
-<a id="rustdoc-item-278"></a>
+<a id="rustdoc-item-281"></a>
 
 ### `append_draw`
 

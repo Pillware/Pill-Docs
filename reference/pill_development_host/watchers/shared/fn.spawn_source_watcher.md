@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-4454"></a>
+<a id="rustdoc-item-4713"></a>
 
 # Function `pill_development_host::watchers::shared::spawn_source_watcher`
 
@@ -16,5 +16,5 @@ thread.
 ## Errors
 
 Returns [`WatcherError::WatchDirectoryMissing`] when the joined watch path
-does not exist, and otherwise the failures [`spawn_settled_watcher`](fn.spawn_settled_watcher.md#rustdoc-item-4452)
+does not exist, and otherwise the failures [`spawn_settled_watcher`](fn.spawn_settled_watcher.md#rustdoc-item-4711)
 reports: creating the watcher or the worker, and registering the watch.

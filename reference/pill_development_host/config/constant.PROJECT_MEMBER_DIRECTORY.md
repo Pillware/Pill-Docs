@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-839"></a>
+<a id="rustdoc-item-846"></a>
 
 # Constant `pill_development_host::config::PROJECT_MEMBER_DIRECTORY`
 
@@ -8,7 +8,7 @@
 pub(in config) const PROJECT_MEMBER_DIRECTORY: &str = "projects_generated";
 ```
 
-Visibility: `{'restricted': {'parent': 821, 'path': '::config'}}` · Source: `hosting\pill_development_host\src\config.rs:142`
+Visibility: `{'restricted': {'parent': 823, 'path': '::config'}}` · Source: `hosting\pill_development_host\src\config.rs:172`
 
 Workspace-relative directory holding the generated project member.
 

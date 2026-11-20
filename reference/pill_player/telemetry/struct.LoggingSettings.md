@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-698"></a>
+<a id="rustdoc-item-702"></a>
 
 # Struct `pill_player::telemetry::LoggingSettings`
 
@@ -11,7 +11,7 @@ pub struct LoggingSettings;
 Source: `hosting\pill_player\src\telemetry.rs:68`
 
 A project's logging settings, read from the `logging:` section of its
-`project_settings.yaml` and checked by [`Self::from_text`](#rustdoc-item-755).
+`project_settings.yaml` and checked by [`Self::from_text`](#rustdoc-item-760).
 
 ```yaml
 logging:
@@ -28,7 +28,7 @@ as they are.
 
 ## Fields
 
-<a id="rustdoc-item-749"></a>
+<a id="rustdoc-item-754"></a>
 
 ### `level`
 
@@ -40,7 +40,7 @@ One level for every target. The engine's per-target defaults are
 replaced, except that the `wgpu` and `naga` dependency filters stay at
 `warn` unless this level is quieter, or a target override names them.
 
-<a id="rustdoc-item-751"></a>
+<a id="rustdoc-item-756"></a>
 
 ### `timestamp`
 
@@ -51,7 +51,7 @@ timestamp: Option<pill_core::telemetry::TimestampFormat>
 How each line writes its local time: `[hh:mm:ss:mmm]` by default, or
 `[dd.mm.yyyy hh:mm:ss:mmm]`.
 
-<a id="rustdoc-item-753"></a>
+<a id="rustdoc-item-758"></a>
 
 ### `source_location`
 
@@ -62,7 +62,7 @@ source_location: Option<bool>
 Whether each line ends with the `file:line` that emitted it, in dark
 gray. Off unless the settings turn it on.
 
-<a id="rustdoc-item-754"></a>
+<a id="rustdoc-item-759"></a>
 
 ### `targets`
 
@@ -70,13 +70,13 @@ gray. Off unless the settings turn it on.
 targets: Vec<(String, tracing::level_filters::LevelFilter)>
 ```
 
-Per-target levels, applied after [`Self::level`](#rustdoc-item-749), in the order given.
+Per-target levels, applied after [`Self::level`](#rustdoc-item-754), in the order given.
 Each target is a `tracing` target or the start of one, so `engine`
 also matches `engine::rendering`.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-756"></a>
+<a id="rustdoc-item-761"></a>
 
 ### `parse_level`
 
@@ -92,9 +92,9 @@ Reads one level by name: `off`, `error`, `warn`, `info`, `debug` or
 Returns a message naming the accepted values for anything else.
 
 Private: both host types build their settings through
-[`Self::from_text`](#rustdoc-item-755), so the checks are written once here.
+[`Self::from_text`](#rustdoc-item-760), so the checks are written once here.
 
-<a id="rustdoc-item-757"></a>
+<a id="rustdoc-item-762"></a>
 
 ### `check_target`
 
@@ -111,9 +111,9 @@ Returns a message naming the target when it holds anything else - a
 `=`, a `,`, a space - which would otherwise change what the filter
 directive means.
 
-Private so the check is written once, like [`Self::parse_level`](#rustdoc-item-756).
+Private so the check is written once, like [`Self::parse_level`](#rustdoc-item-761).
 
-<a id="rustdoc-item-755"></a>
+<a id="rustdoc-item-760"></a>
 
 ### `from_text`
 
@@ -134,7 +134,7 @@ Returns the message of the first level, timestamp format or target that
 cannot be read. A bad level inside a target override is prefixed with
 that target, so the message says which entry to fix.
 
-<a id="rustdoc-item-758"></a>
+<a id="rustdoc-item-763"></a>
 
 ### `terminal_logging_config`
 
@@ -145,7 +145,7 @@ pub fn terminal_logging_config(self: &Self) -> LoggingConfig;
 Returns the terminal filter these settings ask for, over the engine's
 defaults.
 
-<a id="rustdoc-item-760"></a>
+<a id="rustdoc-item-765"></a>
 
 ### `file_logging_config`
 
@@ -156,7 +156,7 @@ pub fn file_logging_config(self: &Self) -> LoggingConfig;
 Returns the file filter these settings ask for, over the file lane's
 defaults.
 
-<a id="rustdoc-item-761"></a>
+<a id="rustdoc-item-766"></a>
 
 ### `apply_to`
 
@@ -177,15 +177,16 @@ Layers these settings over `defaults`.
 - `TryFrom<U>`
 - `Any`
 - `ToOwned`
+- `CastableFrom<ST, Uninit, Uninit>`
+- `CastableFrom<ST, Initialized, Initialized>`
+- `Read<Exclusive, BecauseExclusive>`
 - `Instrument`
 - `WithSubscriber`
 - `IntoEither`
 - `Pointable`
 - `OwoColorize`
 - `ErasedDestructor`
-- `CastableFrom<ST, Uninit, Uninit>`
-- `CastableFrom<ST, Initialized, Initialized>`
-- `Read<Exclusive, BecauseExclusive>`
+- `Equivalent<K>`
 - `Debug`
 - `Clone`
 - `Default`

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-3535"></a>
+<a id="rustdoc-item-2050"></a>
 
 # Struct `pill_engine_core::config::EntityBuilderConfig`
 
@@ -14,7 +14,7 @@ Zero-sized struct grouping the entity-builder constants.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-3536"></a>
+<a id="rustdoc-item-2051"></a>
 
 ### `DEFAULT_COMPONENTS_CAPACITY`
 
@@ -37,12 +37,12 @@ reallocation while components are added one by one with `.with()`.
 - `TryInto<U>`
 - `TryFrom<U>`
 - `Any`
+- `CastableFrom<ST, Uninit, Uninit>`
+- `CastableFrom<ST, Initialized, Initialized>`
+- `Read<Exclusive, BecauseExclusive>`
 - `Instrument`
 - `WithSubscriber`
 - `IntoEither`
 - `Pointable`
 - `OwoColorize`
 - `ErasedDestructor`
-- `CastableFrom<ST, Uninit, Uninit>`
-- `CastableFrom<ST, Initialized, Initialized>`
-- `Read<Exclusive, BecauseExclusive>`

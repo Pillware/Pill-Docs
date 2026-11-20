@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-8466"></a>
+<a id="rustdoc-item-10529"></a>
 
 # Function `pill_editor_core::systems::system_toggle`
 

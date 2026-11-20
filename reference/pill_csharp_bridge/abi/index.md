@@ -43,14 +43,14 @@ column whose validity ends with the managed invocation that received it, and
 - [`ResourceView`](struct.ResourceView.md#rustdoc-item-175) — Borrowed view of one resource's bytes, handed to managed code.
 
 ### Functions
-- [`copy_managed_bytes`](fn.copy_managed_bytes.md#rustdoc-item-351) — Copies `managed_buffer_length` bytes of a managed buffer into an owned
+- [`copy_managed_bytes`](fn.copy_managed_bytes.md#rustdoc-item-354) — Copies `managed_buffer_length` bytes of a managed buffer into an owned
 - [`end_unfinished_zones`](fn.end_unfinished_zones.md#rustdoc-item-0) — Closes every zone this invocation opened and never ended.
-- [`ffi_copy_mirror_methods`](fn.ffi_copy_mirror_methods.md#rustdoc-item-358) — Copies up to `max` mirror-method rows into `out` and returns the number
-- [`ffi_csharp_log`](fn.ffi_csharp_log.md#rustdoc-item-353) — Forwards one managed log line to the engine's tracing subscriber.
-- [`ffi_csharp_zone_begin`](fn.ffi_csharp_zone_begin.md#rustdoc-item-354) — Opens a dynamic managed Tracy zone and returns the token that names it.
-- [`ffi_csharp_zone_end`](fn.ffi_csharp_zone_end.md#rustdoc-item-355) — Ends the dynamic managed Tracy zone that `token` names.
-- [`ffi_mirror_epoch`](fn.ffi_mirror_epoch.md#rustdoc-item-357) — Report the epoch of the mirror-method table.
-- [`ffi_mirror_method_count`](fn.ffi_mirror_method_count.md#rustdoc-item-356) — Report how many mirrored Rust methods are registered.
+- [`ffi_copy_mirror_methods`](fn.ffi_copy_mirror_methods.md#rustdoc-item-361) — Copies up to `max` mirror-method rows into `out` and returns the number
+- [`ffi_csharp_log`](fn.ffi_csharp_log.md#rustdoc-item-356) — Forwards one managed log line to the engine's tracing subscriber.
+- [`ffi_csharp_zone_begin`](fn.ffi_csharp_zone_begin.md#rustdoc-item-357) — Opens a dynamic managed Tracy zone and returns the token that names it.
+- [`ffi_csharp_zone_end`](fn.ffi_csharp_zone_end.md#rustdoc-item-358) — Ends the dynamic managed Tracy zone that `token` names.
+- [`ffi_mirror_epoch`](fn.ffi_mirror_epoch.md#rustdoc-item-360) — Report the epoch of the mirror-method table.
+- [`ffi_mirror_method_count`](fn.ffi_mirror_method_count.md#rustdoc-item-359) — Report how many mirrored Rust methods are registered.
 - [`publish_mirror_methods`](fn.publish_mirror_methods.md#rustdoc-item-9) — Rebuilds the mirror-method table the managed runtime copies at startup.
 
 ### Constants

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-3428"></a>
+<a id="rustdoc-item-3684"></a>
 
 # Module `pill_development_host::reload`
 
@@ -40,28 +40,28 @@ up two reloads later, not at once.
 ## Module contents
 
 ### Structs
-- [`GenerationInit`](struct.GenerationInit.md#rustdoc-item-3576) — What one generation's `init` registered while its image was loaded.
-- [`ReloadCommit`](struct.ReloadCommit.md#rustdoc-item-3522) — What a committed reload registered, for the caller to keep.
-- [`ReloadTransaction`](struct.ReloadTransaction.md#rustdoc-item-3513) — One subject's state, borrowed for one reload.
+- [`GenerationInit`](struct.GenerationInit.md#rustdoc-item-3832) — What one generation's `init` registered while its image was loaded.
+- [`ReloadCommit`](struct.ReloadCommit.md#rustdoc-item-3778) — What a committed reload registered, for the caller to keep.
+- [`ReloadTransaction`](struct.ReloadTransaction.md#rustdoc-item-3769) — One subject's state, borrowed for one reload.
 
 ### Enums
-- [`FirstLoadFailure`](enum.FirstLoadFailure.md#rustdoc-item-2678) — What a failed first load of an artifact costs the world.
-- [`GraveyardPolicy`](enum.GraveyardPolicy.md#rustdoc-item-2673) — Whether a subject's retired images are ever unloaded.
-- [`LoadValidation`](enum.LoadValidation.md#rustdoc-item-3641) — What to check on a freshly loaded replacement before it is committed.
-- [`ReloadSubjectKind`](enum.ReloadSubjectKind.md#rustdoc-item-3435) — Which kind of subject a reload is running for: the project or an extension.
+- [`FirstLoadFailure`](enum.FirstLoadFailure.md#rustdoc-item-2752) — What a failed first load of an artifact costs the world.
+- [`GraveyardPolicy`](enum.GraveyardPolicy.md#rustdoc-item-2747) — Whether a subject's retired images are ever unloaded.
+- [`LoadValidation`](enum.LoadValidation.md#rustdoc-item-3897) — What to check on a freshly loaded replacement before it is committed.
+- [`ReloadSubjectKind`](enum.ReloadSubjectKind.md#rustdoc-item-3691) — Which kind of subject a reload is running for: the project or an extension.
 
 ### Functions
-- [`build_load_and_commit`](fn.build_load_and_commit.md#rustdoc-item-3520) — Builds, loads and commits one native generation, for either subject.
-- [`clear_failed_generation`](fn.clear_failed_generation.md#rustdoc-item-3600) — Releases everything one failed generation owns, while its image is loaded.
-- [`initialize_generation`](fn.initialize_generation.md#rustdoc-item-3665) — Captures, initializes and records one native generation.
-- [`registered_schemas`](fn.registered_schemas.md#rustdoc-item-3666) — Returns the schema hash the world records for each name in `type_names`.
-- [`stale_components`](fn.stale_components.md#rustdoc-item-2698) — Returns the persistable components a subject registered whose layout has
-- [`unclaimed_type_names`](fn.unclaimed_type_names.md#rustdoc-item-3667) — Returns the names in `forgotten_type_names` that nothing declares any more.
+- [`build_load_and_commit`](fn.build_load_and_commit.md#rustdoc-item-3776) — Builds, loads and commits one native generation, for either subject.
+- [`clear_failed_generation`](fn.clear_failed_generation.md#rustdoc-item-3856) — Releases everything one failed generation owns, while its image is loaded.
+- [`initialize_generation`](fn.initialize_generation.md#rustdoc-item-3921) — Captures, initializes and records one native generation.
+- [`registered_schemas`](fn.registered_schemas.md#rustdoc-item-3922) — Returns the schema hash the world records for each name in `type_names`.
+- [`stale_components`](fn.stale_components.md#rustdoc-item-2772) — Returns the persistable components a subject registered whose layout has
+- [`unclaimed_type_names`](fn.unclaimed_type_names.md#rustdoc-item-3923) — Returns the names in `forgotten_type_names` that nothing declares any more.
 
 ### Constants
-- [`MAX_DEFERRED_EVICTIONS`](constant.MAX_DEFERRED_EVICTIONS.md#rustdoc-item-3427) — Number of deferred evictions in a row allowed before the warning becomes an
-- [`MAX_GRAVEYARD_GENERATIONS`](constant.MAX_GRAVEYARD_GENERATIONS.md#rustdoc-item-3426) — Maximum number of retired images kept loaded for one subject.
-- [`MODULE_FORGOTTEN_TYPES`](constant.MODULE_FORGOTTEN_TYPES.md#rustdoc-item-3432) — Forgotten-type warning for an extension reload.
-- [`MODULE_RELOAD_COMPLETE`](constant.MODULE_RELOAD_COMPLETE.md#rustdoc-item-3430) — Final line of an extension reload.
-- [`PROJECT_FORGOTTEN_TYPES`](constant.PROJECT_FORGOTTEN_TYPES.md#rustdoc-item-3431) — Forgotten-type warning for a project reload.
-- [`PROJECT_RELOAD_COMPLETE`](constant.PROJECT_RELOAD_COMPLETE.md#rustdoc-item-3429) — Final line of a project reload.
+- [`MAX_DEFERRED_EVICTIONS`](constant.MAX_DEFERRED_EVICTIONS.md#rustdoc-item-3683) — Number of deferred evictions in a row allowed before the warning becomes an
+- [`MAX_GRAVEYARD_GENERATIONS`](constant.MAX_GRAVEYARD_GENERATIONS.md#rustdoc-item-3682) — Maximum number of retired images kept loaded for one subject.
+- [`MODULE_FORGOTTEN_TYPES`](constant.MODULE_FORGOTTEN_TYPES.md#rustdoc-item-3688) — Forgotten-type warning for an extension reload.
+- [`MODULE_RELOAD_COMPLETE`](constant.MODULE_RELOAD_COMPLETE.md#rustdoc-item-3686) — Final line of an extension reload.
+- [`PROJECT_FORGOTTEN_TYPES`](constant.PROJECT_FORGOTTEN_TYPES.md#rustdoc-item-3687) — Forgotten-type warning for a project reload.
+- [`PROJECT_RELOAD_COMPLETE`](constant.PROJECT_RELOAD_COMPLETE.md#rustdoc-item-3685) — Final line of a project reload.

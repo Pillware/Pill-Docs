@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-2"></a>
+<a id="rustdoc-item-158"></a>
 
 # Function `pill_test::module_test_processor`
 
@@ -8,7 +8,7 @@
 pub(crate) fn module_test_processor(query: Query<'_, &mut ModuleTest>) -> Result<(), SystemError>;
 ```
 
-Visibility: `crate` · Source: `extensions\pill_test\pill_test\src\pill_test.rs:84`
+Visibility: `crate` · Source: `extensions\pill_test\modules\runtime\src\pill_test.rs:90`
 
 Advances every `ModuleTest` component by one frame.
 

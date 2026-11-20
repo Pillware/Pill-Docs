@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-560"></a>
+<a id="rustdoc-item-604"></a>
 
 # Function `pill_editor_core::browser::parent_folder`
 

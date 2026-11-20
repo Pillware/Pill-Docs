@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1220"></a>
+<a id="rustdoc-item-1265"></a>
 
 # Enum `pill_editor_core::commands::KeyName`
 
@@ -8,7 +8,7 @@
 pub enum KeyName { ... }
 ```
 
-Source: `editor\pill_editor_core\src\commands.rs:53`
+Source: `editor\pill_editor_core\src\commands.rs:54`
 
 The key vocabulary command bindings use.
 
@@ -18,7 +18,7 @@ in the impl below, so the two lists cannot fall out of step quietly.
 
 ## Variants
 
-<a id="rustdoc-item-1178"></a>
+<a id="rustdoc-item-1223"></a>
 
 ### `A`
 
@@ -28,7 +28,7 @@ A
 
 _No documentation provided._
 
-<a id="rustdoc-item-1179"></a>
+<a id="rustdoc-item-1224"></a>
 
 ### `B`
 
@@ -38,7 +38,7 @@ B
 
 _No documentation provided._
 
-<a id="rustdoc-item-1180"></a>
+<a id="rustdoc-item-1225"></a>
 
 ### `C`
 
@@ -48,7 +48,7 @@ C
 
 _No documentation provided._
 
-<a id="rustdoc-item-1181"></a>
+<a id="rustdoc-item-1226"></a>
 
 ### `D`
 
@@ -58,7 +58,7 @@ D
 
 _No documentation provided._
 
-<a id="rustdoc-item-1182"></a>
+<a id="rustdoc-item-1227"></a>
 
 ### `E`
 
@@ -68,7 +68,7 @@ E
 
 _No documentation provided._
 
-<a id="rustdoc-item-1183"></a>
+<a id="rustdoc-item-1228"></a>
 
 ### `F`
 
@@ -78,7 +78,7 @@ F
 
 _No documentation provided._
 
-<a id="rustdoc-item-1184"></a>
+<a id="rustdoc-item-1229"></a>
 
 ### `G`
 
@@ -88,7 +88,7 @@ G
 
 _No documentation provided._
 
-<a id="rustdoc-item-1185"></a>
+<a id="rustdoc-item-1230"></a>
 
 ### `H`
 
@@ -98,7 +98,7 @@ H
 
 _No documentation provided._
 
-<a id="rustdoc-item-1186"></a>
+<a id="rustdoc-item-1231"></a>
 
 ### `I`
 
@@ -108,7 +108,7 @@ I
 
 _No documentation provided._
 
-<a id="rustdoc-item-1187"></a>
+<a id="rustdoc-item-1232"></a>
 
 ### `J`
 
@@ -118,7 +118,7 @@ J
 
 _No documentation provided._
 
-<a id="rustdoc-item-1188"></a>
+<a id="rustdoc-item-1233"></a>
 
 ### `K`
 
@@ -128,7 +128,7 @@ K
 
 _No documentation provided._
 
-<a id="rustdoc-item-1189"></a>
+<a id="rustdoc-item-1234"></a>
 
 ### `L`
 
@@ -138,7 +138,7 @@ L
 
 _No documentation provided._
 
-<a id="rustdoc-item-1190"></a>
+<a id="rustdoc-item-1235"></a>
 
 ### `M`
 
@@ -148,7 +148,7 @@ M
 
 _No documentation provided._
 
-<a id="rustdoc-item-1191"></a>
+<a id="rustdoc-item-1236"></a>
 
 ### `N`
 
@@ -158,7 +158,7 @@ N
 
 _No documentation provided._
 
-<a id="rustdoc-item-1192"></a>
+<a id="rustdoc-item-1237"></a>
 
 ### `O`
 
@@ -168,7 +168,7 @@ O
 
 _No documentation provided._
 
-<a id="rustdoc-item-1193"></a>
+<a id="rustdoc-item-1238"></a>
 
 ### `P`
 
@@ -178,7 +178,7 @@ P
 
 _No documentation provided._
 
-<a id="rustdoc-item-1194"></a>
+<a id="rustdoc-item-1239"></a>
 
 ### `Q`
 
@@ -188,7 +188,7 @@ Q
 
 _No documentation provided._
 
-<a id="rustdoc-item-1195"></a>
+<a id="rustdoc-item-1240"></a>
 
 ### `R`
 
@@ -198,7 +198,7 @@ R
 
 _No documentation provided._
 
-<a id="rustdoc-item-1196"></a>
+<a id="rustdoc-item-1241"></a>
 
 ### `S`
 
@@ -208,7 +208,7 @@ S
 
 _No documentation provided._
 
-<a id="rustdoc-item-1197"></a>
+<a id="rustdoc-item-1242"></a>
 
 ### `T`
 
@@ -218,7 +218,7 @@ T
 
 _No documentation provided._
 
-<a id="rustdoc-item-1198"></a>
+<a id="rustdoc-item-1243"></a>
 
 ### `U`
 
@@ -228,7 +228,7 @@ U
 
 _No documentation provided._
 
-<a id="rustdoc-item-1199"></a>
+<a id="rustdoc-item-1244"></a>
 
 ### `V`
 
@@ -238,7 +238,7 @@ V
 
 _No documentation provided._
 
-<a id="rustdoc-item-1200"></a>
+<a id="rustdoc-item-1245"></a>
 
 ### `W`
 
@@ -248,7 +248,7 @@ W
 
 _No documentation provided._
 
-<a id="rustdoc-item-1201"></a>
+<a id="rustdoc-item-1246"></a>
 
 ### `X`
 
@@ -258,7 +258,7 @@ X
 
 _No documentation provided._
 
-<a id="rustdoc-item-1202"></a>
+<a id="rustdoc-item-1247"></a>
 
 ### `Y`
 
@@ -268,7 +268,7 @@ Y
 
 _No documentation provided._
 
-<a id="rustdoc-item-1203"></a>
+<a id="rustdoc-item-1248"></a>
 
 ### `Z`
 
@@ -278,7 +278,7 @@ Z
 
 _No documentation provided._
 
-<a id="rustdoc-item-1204"></a>
+<a id="rustdoc-item-1249"></a>
 
 ### `Space`
 
@@ -288,7 +288,7 @@ Space
 
 _No documentation provided._
 
-<a id="rustdoc-item-1205"></a>
+<a id="rustdoc-item-1250"></a>
 
 ### `Escape`
 
@@ -298,7 +298,7 @@ Escape
 
 _No documentation provided._
 
-<a id="rustdoc-item-1206"></a>
+<a id="rustdoc-item-1251"></a>
 
 ### `Enter`
 
@@ -308,7 +308,7 @@ Enter
 
 _No documentation provided._
 
-<a id="rustdoc-item-1207"></a>
+<a id="rustdoc-item-1252"></a>
 
 ### `Delete`
 
@@ -318,7 +318,7 @@ Delete
 
 _No documentation provided._
 
-<a id="rustdoc-item-1208"></a>
+<a id="rustdoc-item-1253"></a>
 
 ### `Left`
 
@@ -328,7 +328,7 @@ Left
 
 _No documentation provided._
 
-<a id="rustdoc-item-1209"></a>
+<a id="rustdoc-item-1254"></a>
 
 ### `Right`
 
@@ -338,7 +338,7 @@ Right
 
 _No documentation provided._
 
-<a id="rustdoc-item-1210"></a>
+<a id="rustdoc-item-1255"></a>
 
 ### `Up`
 
@@ -348,7 +348,7 @@ Up
 
 _No documentation provided._
 
-<a id="rustdoc-item-1211"></a>
+<a id="rustdoc-item-1256"></a>
 
 ### `Down`
 
@@ -358,7 +358,7 @@ Down
 
 _No documentation provided._
 
-<a id="rustdoc-item-1212"></a>
+<a id="rustdoc-item-1257"></a>
 
 ### `F3`
 
@@ -368,7 +368,7 @@ F3
 
 _No documentation provided._
 
-<a id="rustdoc-item-1213"></a>
+<a id="rustdoc-item-1258"></a>
 
 ### `F5`
 
@@ -378,7 +378,7 @@ F5
 
 _No documentation provided._
 
-<a id="rustdoc-item-1214"></a>
+<a id="rustdoc-item-1259"></a>
 
 ### `F6`
 
@@ -388,7 +388,7 @@ F6
 
 _No documentation provided._
 
-<a id="rustdoc-item-1215"></a>
+<a id="rustdoc-item-1260"></a>
 
 ### `F10`
 
@@ -398,7 +398,7 @@ F10
 
 _No documentation provided._
 
-<a id="rustdoc-item-1216"></a>
+<a id="rustdoc-item-1261"></a>
 
 ### `Numpad1`
 
@@ -408,7 +408,7 @@ Numpad1
 
 _No documentation provided._
 
-<a id="rustdoc-item-1217"></a>
+<a id="rustdoc-item-1262"></a>
 
 ### `Numpad3`
 
@@ -418,7 +418,7 @@ Numpad3
 
 _No documentation provided._
 
-<a id="rustdoc-item-1218"></a>
+<a id="rustdoc-item-1263"></a>
 
 ### `Numpad7`
 
@@ -430,7 +430,7 @@ _No documentation provided._
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-1221"></a>
+<a id="rustdoc-item-1266"></a>
 
 ### `engine_key`
 
@@ -441,7 +441,7 @@ pub fn engine_key(self: Self) -> Option<pill_engine::KeyCode>;
 Returns the engine key this name stands for. Every name has one, so
 the result is always `Some`.
 
-<a id="rustdoc-item-1222"></a>
+<a id="rustdoc-item-1267"></a>
 
 ### `from_engine`
 

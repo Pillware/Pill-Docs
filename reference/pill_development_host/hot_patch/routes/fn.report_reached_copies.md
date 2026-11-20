@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-2198"></a>
+<a id="rustdoc-item-2272"></a>
 
 # Function `pill_development_host::hot_patch::routes::report_reached_copies`
 
@@ -8,7 +8,7 @@
 pub(in hot_patch::routes) fn report_reached_copies<impl FnOnce() -> String: FnOnce() -> String>(reached_labels: &[String], function: &str, nothing_reached: impl FnOnce() -> String, message: &'static str) -> Result<(), String>;
 ```
 
-Visibility: `{'restricted': {'parent': 2087, 'path': '::hot_patch::routes'}}` · Source: `hosting\pill_development_host\src\hot_patch\routes.rs:467`
+Visibility: `{'restricted': {'parent': 2161, 'path': '::hot_patch::routes'}}` · Source: `hosting\pill_development_host\src\hot_patch\routes.rs:467`
 
 Reports which copies took the change, or explains that none was reached.
 

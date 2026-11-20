@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-6029"></a>
+<a id="rustdoc-item-7994"></a>
 
 # Struct `pill_editor_core::panels::PanelAnswer`
 
@@ -14,7 +14,7 @@ The answer a modal window took, as the panel that asked reads it.
 
 ## Fields
 
-<a id="rustdoc-item-6055"></a>
+<a id="rustdoc-item-8020"></a>
 
 ### `window`
 
@@ -24,7 +24,7 @@ window: String
 
 The window that was answered.
 
-<a id="rustdoc-item-6056"></a>
+<a id="rustdoc-item-8021"></a>
 
 ### `accepted`
 

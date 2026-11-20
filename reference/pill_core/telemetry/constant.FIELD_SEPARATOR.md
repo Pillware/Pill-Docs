@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1723"></a>
+<a id="rustdoc-item-1733"></a>
 
 # Constant `pill_core::telemetry::FIELD_SEPARATOR`
 

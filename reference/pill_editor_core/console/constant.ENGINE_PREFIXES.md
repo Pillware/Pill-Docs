@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1959"></a>
+<a id="rustdoc-item-2015"></a>
 
 # Constant `pill_editor_core::console::ENGINE_PREFIXES`
 

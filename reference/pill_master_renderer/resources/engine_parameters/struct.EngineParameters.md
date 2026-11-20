@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-2195"></a>
+<a id="rustdoc-item-2238"></a>
 
 # Struct `pill_master_renderer::resources::engine_parameters::EngineParameters`
 
@@ -8,19 +8,19 @@
 pub struct EngineParameters;
 ```
 
-Source: `extensions\pill_master_renderer\pill_master_renderer\src\resources\engine_parameters.rs:114`
+Source: `extensions\pill_master_renderer\modules\runtime\gpu\src\resources\engine_parameters.rs:114`
 
 The engine parameters as the renderer owns them: the values, the buffer
 they are uploaded to, and the bindings that expose them.
 
 Built once when the renderer starts and refilled every frame through
-[`update`](#rustdoc-item-2194). Every pass that reads engine
+[`update`](#rustdoc-item-2237). Every pass that reads engine
 parameters binds this one group, so all of them see the same fog and frame
 state.
 
 ## Fields
 
-<a id="rustdoc-item-2190"></a>
+<a id="rustdoc-item-2233"></a>
 
 ### `parameters_data`
 
@@ -31,7 +31,7 @@ parameters_data: EngineParametersData
 The values currently held in the buffer, kept CPU-side so `update` can
 rewrite the buffer.
 
-<a id="rustdoc-item-2191"></a>
+<a id="rustdoc-item-2234"></a>
 
 ### `parameters_uniform_buffer`
 
@@ -39,10 +39,10 @@ rewrite the buffer.
 parameters_uniform_buffer: wgpu::Buffer
 ```
 
-Uniform buffer holding one [`EngineParametersData`](struct.EngineParametersData.md#rustdoc-item-2146), bound at binding 0
+Uniform buffer holding one [`EngineParametersData`](struct.EngineParametersData.md#rustdoc-item-2189), bound at binding 0
 of the group below.
 
-<a id="rustdoc-item-2192"></a>
+<a id="rustdoc-item-2235"></a>
 
 ### `bind_group_layout`
 
@@ -53,7 +53,7 @@ bind_group_layout: wgpu::BindGroupLayout
 Layout a pipeline declares for the engine group, so the one bind group
 below works for every pass that reads these values.
 
-<a id="rustdoc-item-2193"></a>
+<a id="rustdoc-item-2236"></a>
 
 ### `bind_group`
 
@@ -65,7 +65,7 @@ The group binding the buffer, built from the layout above.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-2196"></a>
+<a id="rustdoc-item-2239"></a>
 
 ### `new`
 
@@ -77,10 +77,10 @@ Creates the uniform buffer, its layout and its bind group, all holding
 the engine parameters at their zero values.
 
 A pipeline that reads engine parameters must be built against
-[`bind_group_layout`](#rustdoc-item-2192), which is
+[`bind_group_layout`](#rustdoc-item-2235), which is
 what makes this one group bindable by every pass.
 
-<a id="rustdoc-item-2194"></a>
+<a id="rustdoc-item-2237"></a>
 
 ### `update`
 

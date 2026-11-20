@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-776"></a>
+<a id="rustdoc-item-785"></a>
 
 # Function `pill_ui_theme::register::load_overrides`
 

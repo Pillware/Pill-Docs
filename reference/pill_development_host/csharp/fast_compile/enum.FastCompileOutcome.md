@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1358"></a>
+<a id="rustdoc-item-1433"></a>
 
 # Enum `pill_development_host::csharp::fast_compile::FastCompileOutcome`
 
@@ -14,7 +14,7 @@ What one in-process compile attempt produced.
 
 ## Variants
 
-<a id="rustdoc-item-1353"></a>
+<a id="rustdoc-item-1428"></a>
 
 ### `Compiled`
 
@@ -24,7 +24,7 @@ Compiled
 
 The project assembly was recompiled and written.
 
-<a id="rustdoc-item-1355"></a>
+<a id="rustdoc-item-1430"></a>
 
 ### `Failed`
 
@@ -34,7 +34,7 @@ Failed
 
 The project does not compile; the diagnostics say why.
 
-<a id="rustdoc-item-1357"></a>
+<a id="rustdoc-item-1432"></a>
 
 ### `Unavailable`
 

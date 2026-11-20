@@ -328,6 +328,16 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                 ]
               },
               {
+                "text": "Enums",
+                "collapsed": true,
+                "items": [
+                  {
+                    "text": "AudioListenerComponentField",
+                    "link": "/reference/pill_audio/audio_listener_component/enum.AudioListenerComponentField"
+                  }
+                ]
+              },
+              {
                 "text": "Functions",
                 "collapsed": true,
                 "items": [
@@ -415,6 +425,16 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                   {
                     "text": "AudioSourceComponent",
                     "link": "/reference/pill_audio/audio_source_component/struct.AudioSourceComponent"
+                  }
+                ]
+              },
+              {
+                "text": "Enums",
+                "collapsed": true,
+                "items": [
+                  {
+                    "text": "AudioSourceComponentField",
+                    "link": "/reference/pill_audio/audio_source_component/enum.AudioSourceComponentField"
                   }
                 ]
               },
@@ -2115,12 +2135,20 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                     "link": "/reference/pill_csharp_bridge/backend/fn.read_reported_manifest"
                   },
                   {
+                    "text": "record_poll_answer",
+                    "link": "/reference/pill_csharp_bridge/backend/fn.record_poll_answer"
+                  },
+                  {
                     "text": "register_managed_systems",
                     "link": "/reference/pill_csharp_bridge/backend/fn.register_managed_systems"
                   },
                   {
                     "text": "resolved_system_name",
                     "link": "/reference/pill_csharp_bridge/backend/fn.resolved_system_name"
+                  },
+                  {
+                    "text": "run_phase_from_export",
+                    "link": "/reference/pill_csharp_bridge/backend/fn.run_phase_from_export"
                   },
                   {
                     "text": "shipped_or_baked",
@@ -2211,6 +2239,18 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                   {
                     "text": "SystemNameLengthFn",
                     "link": "/reference/pill_csharp_bridge/backend/type.SystemNameLengthFn"
+                  },
+                  {
+                    "text": "SystemOrderFn",
+                    "link": "/reference/pill_csharp_bridge/backend/type.SystemOrderFn"
+                  },
+                  {
+                    "text": "SystemRunInEditModeFn",
+                    "link": "/reference/pill_csharp_bridge/backend/type.SystemRunInEditModeFn"
+                  },
+                  {
+                    "text": "SystemRunPhaseFn",
+                    "link": "/reference/pill_csharp_bridge/backend/type.SystemRunPhaseFn"
                   },
                   {
                     "text": "SystemUsesCommandsFn",
@@ -3662,6 +3702,10 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                     "link": "/reference/pill_development_host/analytics/fn.record_load"
                   },
                   {
+                    "text": "record_managed_reload",
+                    "link": "/reference/pill_development_host/analytics/fn.record_managed_reload"
+                  },
+                  {
                     "text": "record_migrate",
                     "link": "/reference/pill_development_host/analytics/fn.record_migrate"
                   },
@@ -4190,6 +4234,10 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                     "link": "/reference/pill_development_host/config/struct.ExtensionConfig"
                   },
                   {
+                    "text": "ExtensionCrateLocation",
+                    "link": "/reference/pill_development_host/config/struct.ExtensionCrateLocation"
+                  },
+                  {
                     "text": "HostConfig",
                     "link": "/reference/pill_development_host/config/struct.HostConfig"
                   },
@@ -4242,6 +4290,14 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                     "link": "/reference/pill_development_host/config/fn.csharp_build_configuration"
                   },
                   {
+                    "text": "declared_editor_frontend",
+                    "link": "/reference/pill_development_host/config/fn.declared_editor_frontend"
+                  },
+                  {
+                    "text": "declared_package_name",
+                    "link": "/reference/pill_development_host/config/fn.declared_package_name"
+                  },
+                  {
                     "text": "declares_dependency",
                     "link": "/reference/pill_development_host/config/fn.declares_dependency"
                   },
@@ -4262,8 +4318,16 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                     "link": "/reference/pill_development_host/config/fn.extension_crate_directory"
                   },
                   {
+                    "text": "extension_crate_locations",
+                    "link": "/reference/pill_development_host/config/fn.extension_crate_locations"
+                  },
+                  {
                     "text": "find_csproj_manifest",
                     "link": "/reference/pill_development_host/config/fn.find_csproj_manifest"
+                  },
+                  {
+                    "text": "find_extension_crate",
+                    "link": "/reference/pill_development_host/config/fn.find_extension_crate"
                   },
                   {
                     "text": "for_each_dependency_table_mut",
@@ -4298,10 +4362,6 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                     "link": "/reference/pill_development_host/config/fn.linking_dependency_tables"
                   },
                   {
-                    "text": "locate_extension_folder",
-                    "link": "/reference/pill_development_host/config/fn.locate_extension_folder"
-                  },
-                  {
                     "text": "manifest_depends_on_crate",
                     "link": "/reference/pill_development_host/config/fn.manifest_depends_on_crate"
                   },
@@ -4316,6 +4376,10 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                   {
                     "text": "materialize_host_project_member",
                     "link": "/reference/pill_development_host/config/fn.materialize_host_project_member"
+                  },
+                  {
+                    "text": "materialize_project_editor_wrapper",
+                    "link": "/reference/pill_development_host/config/fn.materialize_project_editor_wrapper"
                   },
                   {
                     "text": "module_build_artifact_directory",
@@ -4342,6 +4406,10 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                     "link": "/reference/pill_development_host/config/fn.prune_stale_host_project_members"
                   },
                   {
+                    "text": "prune_stale_project_editor_wrappers",
+                    "link": "/reference/pill_development_host/config/fn.prune_stale_project_editor_wrappers"
+                  },
+                  {
                     "text": "read_editor_settings",
                     "link": "/reference/pill_development_host/config/fn.read_editor_settings"
                   },
@@ -4366,12 +4434,28 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                     "link": "/reference/pill_development_host/config/fn.resolve_editor_theme"
                   },
                   {
+                    "text": "resolve_project_editor_crate",
+                    "link": "/reference/pill_development_host/config/fn.resolve_project_editor_crate"
+                  },
+                  {
+                    "text": "resolved_project_directory",
+                    "link": "/reference/pill_development_host/config/fn.resolved_project_directory"
+                  },
+                  {
                     "text": "running_under_dioxus_cli",
                     "link": "/reference/pill_development_host/config/fn.running_under_dioxus_cli"
                   },
                   {
                     "text": "spawned_build_environment",
                     "link": "/reference/pill_development_host/config/fn.spawned_build_environment"
+                  },
+                  {
+                    "text": "validate_extension_crate_names",
+                    "link": "/reference/pill_development_host/config/fn.validate_extension_crate_names"
+                  },
+                  {
+                    "text": "write_module_member",
+                    "link": "/reference/pill_development_host/config/fn.write_module_member"
                   }
                 ]
               },
@@ -4444,8 +4528,16 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                     "link": "/reference/pill_development_host/config/constant.DX_RUSTC_WRAPPER_ENVIRONMENT"
                   },
                   {
+                    "text": "EDITOR_CRATE_DIRECTORY",
+                    "link": "/reference/pill_development_host/config/constant.EDITOR_CRATE_DIRECTORY"
+                  },
+                  {
                     "text": "EDITOR_CRATE_SUFFIX",
                     "link": "/reference/pill_development_host/config/constant.EDITOR_CRATE_SUFFIX"
+                  },
+                  {
+                    "text": "EDITOR_DIRECTORY",
+                    "link": "/reference/pill_development_host/config/constant.EDITOR_DIRECTORY"
                   },
                   {
                     "text": "EDITOR_SETTINGS_FILE",
@@ -4454,6 +4546,10 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                   {
                     "text": "EXTENSION_DIRECTORY",
                     "link": "/reference/pill_development_host/config/constant.EXTENSION_DIRECTORY"
+                  },
+                  {
+                    "text": "EXTENSION_MODULES_DIRECTORY",
+                    "link": "/reference/pill_development_host/config/constant.EXTENSION_MODULES_DIRECTORY"
                   },
                   {
                     "text": "GENERATED_DIRECTORY",
@@ -4488,6 +4584,10 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                     "link": "/reference/pill_development_host/config/constant.NO_RENDERER"
                   },
                   {
+                    "text": "OLD_RENDERERS_DIRECTORY",
+                    "link": "/reference/pill_development_host/config/constant.OLD_RENDERERS_DIRECTORY"
+                  },
+                  {
                     "text": "PROJECT_ASSET_DIRECTORY",
                     "link": "/reference/pill_development_host/config/constant.PROJECT_ASSET_DIRECTORY"
                   },
@@ -4514,6 +4614,10 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                   {
                     "text": "RETIRED_EDITOR_FRONTEND",
                     "link": "/reference/pill_development_host/config/constant.RETIRED_EDITOR_FRONTEND"
+                  },
+                  {
+                    "text": "RUNTIME_CRATE_DIRECTORY",
+                    "link": "/reference/pill_development_host/config/constant.RUNTIME_CRATE_DIRECTORY"
                   },
                   {
                     "text": "RUSTC_WORKSPACE_WRAPPER_ENVIRONMENT",
@@ -4562,6 +4666,10 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                           {
                             "text": "csharp_parameter_name",
                             "link": "/reference/pill_development_host/csharp/codegen/fn.csharp_parameter_name"
+                          },
+                          {
+                            "text": "declared_value_type",
+                            "link": "/reference/pill_development_host/csharp/codegen/fn.declared_value_type"
                           },
                           {
                             "text": "default_value_namespace",
@@ -5575,6 +5683,163 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
             ]
           },
           {
+            "text": "native_binary",
+            "link": "/reference/pill_development_host/native_binary/",
+            "collapsed": true,
+            "items": [
+              {
+                "text": "Structs",
+                "collapsed": true,
+                "items": [
+                  {
+                    "text": "BinaryInspection",
+                    "link": "/reference/pill_development_host/native_binary/struct.BinaryInspection"
+                  },
+                  {
+                    "text": "ByteReader",
+                    "link": "/reference/pill_development_host/native_binary/struct.ByteReader"
+                  },
+                  {
+                    "text": "ElfImage",
+                    "link": "/reference/pill_development_host/native_binary/struct.ElfImage"
+                  },
+                  {
+                    "text": "LibraryImport",
+                    "link": "/reference/pill_development_host/native_binary/struct.LibraryImport"
+                  },
+                  {
+                    "text": "SectionHeader",
+                    "link": "/reference/pill_development_host/native_binary/struct.SectionHeader"
+                  }
+                ]
+              },
+              {
+                "text": "Functions",
+                "collapsed": true,
+                "items": [
+                  {
+                    "text": "dynamic_entry",
+                    "link": "/reference/pill_development_host/native_binary/fn.dynamic_entry"
+                  },
+                  {
+                    "text": "elf_identity",
+                    "link": "/reference/pill_development_host/native_binary/fn.elf_identity"
+                  },
+                  {
+                    "text": "inspect",
+                    "link": "/reference/pill_development_host/native_binary/fn.inspect"
+                  },
+                  {
+                    "text": "parse_elf",
+                    "link": "/reference/pill_development_host/native_binary/fn.parse_elf"
+                  },
+                  {
+                    "text": "resolved_entry_size",
+                    "link": "/reference/pill_development_host/native_binary/fn.resolved_entry_size"
+                  },
+                  {
+                    "text": "section_header_at",
+                    "link": "/reference/pill_development_host/native_binary/fn.section_header_at"
+                  },
+                  {
+                    "text": "section_table_location",
+                    "link": "/reference/pill_development_host/native_binary/fn.section_table_location"
+                  },
+                  {
+                    "text": "string_at",
+                    "link": "/reference/pill_development_host/native_binary/fn.string_at"
+                  }
+                ]
+              },
+              {
+                "text": "Constants",
+                "collapsed": true,
+                "items": [
+                  {
+                    "text": "DYNAMIC_ENTRY_SIZE_32",
+                    "link": "/reference/pill_development_host/native_binary/constant.DYNAMIC_ENTRY_SIZE_32"
+                  },
+                  {
+                    "text": "DYNAMIC_ENTRY_SIZE_64",
+                    "link": "/reference/pill_development_host/native_binary/constant.DYNAMIC_ENTRY_SIZE_64"
+                  },
+                  {
+                    "text": "DYNAMIC_TAG_NEEDED",
+                    "link": "/reference/pill_development_host/native_binary/constant.DYNAMIC_TAG_NEEDED"
+                  },
+                  {
+                    "text": "DYNAMIC_TAG_NULL",
+                    "link": "/reference/pill_development_host/native_binary/constant.DYNAMIC_TAG_NULL"
+                  },
+                  {
+                    "text": "ELF_CLASS_32",
+                    "link": "/reference/pill_development_host/native_binary/constant.ELF_CLASS_32"
+                  },
+                  {
+                    "text": "ELF_CLASS_64",
+                    "link": "/reference/pill_development_host/native_binary/constant.ELF_CLASS_64"
+                  },
+                  {
+                    "text": "ELF_DATA_BIG_ENDIAN",
+                    "link": "/reference/pill_development_host/native_binary/constant.ELF_DATA_BIG_ENDIAN"
+                  },
+                  {
+                    "text": "ELF_DATA_LITTLE_ENDIAN",
+                    "link": "/reference/pill_development_host/native_binary/constant.ELF_DATA_LITTLE_ENDIAN"
+                  },
+                  {
+                    "text": "ELF_MAGIC",
+                    "link": "/reference/pill_development_host/native_binary/constant.ELF_MAGIC"
+                  },
+                  {
+                    "text": "SECTION_ENTRY_SIZE_32",
+                    "link": "/reference/pill_development_host/native_binary/constant.SECTION_ENTRY_SIZE_32"
+                  },
+                  {
+                    "text": "SECTION_ENTRY_SIZE_64",
+                    "link": "/reference/pill_development_host/native_binary/constant.SECTION_ENTRY_SIZE_64"
+                  },
+                  {
+                    "text": "SECTION_INDEX_UNDEFINED",
+                    "link": "/reference/pill_development_host/native_binary/constant.SECTION_INDEX_UNDEFINED"
+                  },
+                  {
+                    "text": "SECTION_TYPE_DYNAMIC",
+                    "link": "/reference/pill_development_host/native_binary/constant.SECTION_TYPE_DYNAMIC"
+                  },
+                  {
+                    "text": "SECTION_TYPE_DYNAMIC_SYMBOLS",
+                    "link": "/reference/pill_development_host/native_binary/constant.SECTION_TYPE_DYNAMIC_SYMBOLS"
+                  },
+                  {
+                    "text": "SYMBOL_BINDING_GLOBAL",
+                    "link": "/reference/pill_development_host/native_binary/constant.SYMBOL_BINDING_GLOBAL"
+                  },
+                  {
+                    "text": "SYMBOL_BINDING_WEAK",
+                    "link": "/reference/pill_development_host/native_binary/constant.SYMBOL_BINDING_WEAK"
+                  },
+                  {
+                    "text": "SYMBOL_ENTRY_SIZE_32",
+                    "link": "/reference/pill_development_host/native_binary/constant.SYMBOL_ENTRY_SIZE_32"
+                  },
+                  {
+                    "text": "SYMBOL_ENTRY_SIZE_64",
+                    "link": "/reference/pill_development_host/native_binary/constant.SYMBOL_ENTRY_SIZE_64"
+                  },
+                  {
+                    "text": "SYMBOL_VISIBILITY_DEFAULT",
+                    "link": "/reference/pill_development_host/native_binary/constant.SYMBOL_VISIBILITY_DEFAULT"
+                  },
+                  {
+                    "text": "SYMBOL_VISIBILITY_PROTECTED",
+                    "link": "/reference/pill_development_host/native_binary/constant.SYMBOL_VISIBILITY_PROTECTED"
+                  }
+                ]
+              }
+            ]
+          },
+          {
             "text": "native_library",
             "link": "/reference/pill_development_host/native_library/",
             "collapsed": true,
@@ -5624,12 +5889,28 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                     "link": "/reference/pill_development_host/native_library/fn.diagnose_load_failure"
                   },
                   {
+                    "text": "engine_dylib_file_name",
+                    "link": "/reference/pill_development_host/native_library/fn.engine_dylib_file_name"
+                  },
+                  {
                     "text": "engine_dylib_needs_isolation",
                     "link": "/reference/pill_development_host/native_library/fn.engine_dylib_needs_isolation"
                   },
                   {
+                    "text": "engine_dylib_staging_steers_the_loader",
+                    "link": "/reference/pill_development_host/native_library/fn.engine_dylib_staging_steers_the_loader"
+                  },
+                  {
+                    "text": "engine_dylib_stem",
+                    "link": "/reference/pill_development_host/native_library/fn.engine_dylib_stem"
+                  },
+                  {
                     "text": "explanation_error",
                     "link": "/reference/pill_development_host/native_library/fn.explanation_error"
+                  },
+                  {
+                    "text": "exported_symbols",
+                    "link": "/reference/pill_development_host/native_library/fn.exported_symbols"
                   },
                   {
                     "text": "files_equal",
@@ -6298,6 +6579,10 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                     "link": "/reference/pill_development_host/runtime/fn.print_startup_configuration"
                   },
                   {
+                    "text": "print_welcome",
+                    "link": "/reference/pill_development_host/runtime/fn.print_welcome"
+                  },
+                  {
                     "text": "process_patch_faults",
                     "link": "/reference/pill_development_host/runtime/fn.process_patch_faults"
                   },
@@ -6308,6 +6593,10 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                   {
                     "text": "regenerate_module_csharp_mirror",
                     "link": "/reference/pill_development_host/runtime/fn.regenerate_module_csharp_mirror"
+                  },
+                  {
+                    "text": "reload_project_editor_if_changed",
+                    "link": "/reference/pill_development_host/runtime/fn.reload_project_editor_if_changed"
                   },
                   {
                     "text": "report_patch_outcome",
@@ -6689,119 +6978,6 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
     ]
   },
   {
-    "text": "Pill Dummy Color",
-    "link": "/reference/pill_dummy_color/",
-    "collapsed": true,
-    "items": [
-      {
-        "text": "Structs",
-        "collapsed": true,
-        "items": [
-          {
-            "text": "TestStruct",
-            "link": "/reference/pill_dummy_color/struct.TestStruct"
-          },
-          {
-            "text": "Tint",
-            "link": "/reference/pill_dummy_color/struct.Tint"
-          }
-        ]
-      },
-      {
-        "text": "Functions",
-        "collapsed": true,
-        "items": [
-          {
-            "text": "get_color_a",
-            "link": "/reference/pill_dummy_color/fn.get_color_a"
-          },
-          {
-            "text": "grayscale",
-            "link": "/reference/pill_dummy_color/fn.grayscale"
-          },
-          {
-            "text": "init",
-            "link": "/reference/pill_dummy_color/fn.init"
-          },
-          {
-            "text": "register",
-            "link": "/reference/pill_dummy_color/fn.register"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "text": "Pill Dummy Math",
-    "link": "/reference/pill_dummy_math/",
-    "collapsed": true,
-    "items": [
-      {
-        "text": "Structs",
-        "collapsed": true,
-        "items": [
-          {
-            "text": "Adder",
-            "link": "/reference/pill_dummy_math/struct.Adder"
-          }
-        ]
-      },
-      {
-        "text": "Functions",
-        "collapsed": true,
-        "items": [
-          {
-            "text": "double",
-            "link": "/reference/pill_dummy_math/fn.double"
-          },
-          {
-            "text": "init",
-            "link": "/reference/pill_dummy_math/fn.init"
-          },
-          {
-            "text": "register",
-            "link": "/reference/pill_dummy_math/fn.register"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "text": "Pill Dummy Random",
-    "link": "/reference/pill_dummy_random/",
-    "collapsed": true,
-    "items": [
-      {
-        "text": "Structs",
-        "collapsed": true,
-        "items": [
-          {
-            "text": "LcgRandom",
-            "link": "/reference/pill_dummy_random/struct.LcgRandom"
-          }
-        ]
-      },
-      {
-        "text": "Functions",
-        "collapsed": true,
-        "items": [
-          {
-            "text": "init",
-            "link": "/reference/pill_dummy_random/fn.init"
-          },
-          {
-            "text": "register",
-            "link": "/reference/pill_dummy_random/fn.register"
-          },
-          {
-            "text": "seed_from_u32",
-            "link": "/reference/pill_dummy_random/fn.seed_from_u32"
-          }
-        ]
-      }
-    ]
-  },
-  {
     "text": "Pill Editor",
     "link": "/reference/pill_editor/",
     "collapsed": true,
@@ -6895,6 +7071,10 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                   {
                     "text": "DragOutOutcome",
                     "link": "/reference/pill_editor/drag_out/enum.DragOutOutcome"
+                  },
+                  {
+                    "text": "DropEffect",
+                    "link": "/reference/pill_editor/drag_out/enum.DropEffect"
                   }
                 ]
               },
@@ -7046,6 +7226,10 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                             "link": "/reference/pill_editor/runner/editor_window/struct.EditorWindow"
                           },
                           {
+                            "text": "MarqueeDrag",
+                            "link": "/reference/pill_editor/runner/editor_window/struct.MarqueeDrag"
+                          },
+                          {
                             "text": "ScriptedDrag",
                             "link": "/reference/pill_editor/runner/editor_window/struct.ScriptedDrag"
                           },
@@ -7066,6 +7250,57 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                           {
                             "text": "ScriptedDragStage",
                             "link": "/reference/pill_editor/runner/editor_window/enum.ScriptedDragStage"
+                          }
+                        ]
+                      },
+                      {
+                        "text": "Type aliases",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "ElementLogSignature",
+                            "link": "/reference/pill_editor/runner/editor_window/type.ElementLogSignature"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "text": "element_tools",
+                    "link": "/reference/pill_editor/runner/element_tools/",
+                    "collapsed": true,
+                    "items": [
+                      {
+                        "text": "Enums",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "SceneHandle",
+                            "link": "/reference/pill_editor/runner/element_tools/enum.SceneHandle"
+                          }
+                        ]
+                      },
+                      {
+                        "text": "Functions",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "queue_element_selection",
+                            "link": "/reference/pill_editor/runner/element_tools/fn.queue_element_selection"
+                          },
+                          {
+                            "text": "queue_tool_commands",
+                            "link": "/reference/pill_editor/runner/element_tools/fn.queue_tool_commands"
+                          }
+                        ]
+                      },
+                      {
+                        "text": "Constants",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "MARQUEE_DRAG_PIXELS",
+                            "link": "/reference/pill_editor/runner/element_tools/constant.MARQUEE_DRAG_PIXELS"
                           }
                         ]
                       }
@@ -7097,6 +7332,215 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                     ]
                   },
                   {
+                    "text": "tool_fixture",
+                    "link": "/reference/pill_editor/runner/tool_fixture/",
+                    "collapsed": true,
+                    "items": [
+                      {
+                        "text": "Structs",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "FixtureElement",
+                            "link": "/reference/pill_editor/runner/tool_fixture/struct.FixtureElement"
+                          },
+                          {
+                            "text": "FixtureElements",
+                            "link": "/reference/pill_editor/runner/tool_fixture/struct.FixtureElements"
+                          },
+                          {
+                            "text": "FixtureMarksExtension",
+                            "link": "/reference/pill_editor/runner/tool_fixture/struct.FixtureMarksExtension"
+                          },
+                          {
+                            "text": "FixtureNotesExtension",
+                            "link": "/reference/pill_editor/runner/tool_fixture/struct.FixtureNotesExtension"
+                          },
+                          {
+                            "text": "FixtureTool",
+                            "link": "/reference/pill_editor/runner/tool_fixture/struct.FixtureTool"
+                          }
+                        ]
+                      },
+                      {
+                        "text": "Functions",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "extension_key",
+                            "link": "/reference/pill_editor/runner/tool_fixture/fn.extension_key"
+                          },
+                          {
+                            "text": "fixture_element",
+                            "link": "/reference/pill_editor/runner/tool_fixture/fn.fixture_element"
+                          },
+                          {
+                            "text": "fixture_elements",
+                            "link": "/reference/pill_editor/runner/tool_fixture/fn.fixture_elements"
+                          },
+                          {
+                            "text": "fixture_frame_rotation",
+                            "link": "/reference/pill_editor/runner/tool_fixture/fn.fixture_frame_rotation"
+                          },
+                          {
+                            "text": "fixture_frames",
+                            "link": "/reference/pill_editor/runner/tool_fixture/fn.fixture_frames"
+                          },
+                          {
+                            "text": "fixture_insert",
+                            "link": "/reference/pill_editor/runner/tool_fixture/fn.fixture_insert"
+                          },
+                          {
+                            "text": "fixture_key",
+                            "link": "/reference/pill_editor/runner/tool_fixture/fn.fixture_key"
+                          },
+                          {
+                            "text": "fixture_kind_of",
+                            "link": "/reference/pill_editor/runner/tool_fixture/fn.fixture_kind_of"
+                          },
+                          {
+                            "text": "fixture_kinds",
+                            "link": "/reference/pill_editor/runner/tool_fixture/fn.fixture_kinds"
+                          },
+                          {
+                            "text": "fixture_layout",
+                            "link": "/reference/pill_editor/runner/tool_fixture/fn.fixture_layout"
+                          },
+                          {
+                            "text": "fixture_menu",
+                            "link": "/reference/pill_editor/runner/tool_fixture/fn.fixture_menu"
+                          },
+                          {
+                            "text": "fixture_menu_run",
+                            "link": "/reference/pill_editor/runner/tool_fixture/fn.fixture_menu_run"
+                          },
+                          {
+                            "text": "fixture_point_offset",
+                            "link": "/reference/pill_editor/runner/tool_fixture/fn.fixture_point_offset"
+                          },
+                          {
+                            "text": "fixture_press",
+                            "link": "/reference/pill_editor/runner/tool_fixture/fn.fixture_press"
+                          },
+                          {
+                            "text": "fixture_remove",
+                            "link": "/reference/pill_editor/runner/tool_fixture/fn.fixture_remove"
+                          },
+                          {
+                            "text": "fixture_selection_changed",
+                            "link": "/reference/pill_editor/runner/tool_fixture/fn.fixture_selection_changed"
+                          },
+                          {
+                            "text": "fixture_set_transforms",
+                            "link": "/reference/pill_editor/runner/tool_fixture/fn.fixture_set_transforms"
+                          },
+                          {
+                            "text": "fixture_tangent_offset",
+                            "link": "/reference/pill_editor/runner/tool_fixture/fn.fixture_tangent_offset"
+                          },
+                          {
+                            "text": "marks_menu",
+                            "link": "/reference/pill_editor/runner/tool_fixture/fn.marks_menu"
+                          },
+                          {
+                            "text": "marks_menu_run",
+                            "link": "/reference/pill_editor/runner/tool_fixture/fn.marks_menu_run"
+                          },
+                          {
+                            "text": "notes_menu",
+                            "link": "/reference/pill_editor/runner/tool_fixture/fn.notes_menu"
+                          },
+                          {
+                            "text": "notes_menu_run",
+                            "link": "/reference/pill_editor/runner/tool_fixture/fn.notes_menu_run"
+                          },
+                          {
+                            "text": "register",
+                            "link": "/reference/pill_editor/runner/tool_fixture/fn.register"
+                          },
+                          {
+                            "text": "set_extensions",
+                            "link": "/reference/pill_editor/runner/tool_fixture/fn.set_extensions"
+                          }
+                        ]
+                      },
+                      {
+                        "text": "Constants",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "FIXTURE_ELEMENT_SPACING",
+                            "link": "/reference/pill_editor/runner/tool_fixture/constant.FIXTURE_ELEMENT_SPACING"
+                          },
+                          {
+                            "text": "FIXTURE_EXTENSION_CHORD",
+                            "link": "/reference/pill_editor/runner/tool_fixture/constant.FIXTURE_EXTENSION_CHORD"
+                          },
+                          {
+                            "text": "FIXTURE_FRAME_NAME",
+                            "link": "/reference/pill_editor/runner/tool_fixture/constant.FIXTURE_FRAME_NAME"
+                          },
+                          {
+                            "text": "FIXTURE_MARKS_EXTENSION",
+                            "link": "/reference/pill_editor/runner/tool_fixture/constant.FIXTURE_MARKS_EXTENSION"
+                          },
+                          {
+                            "text": "FIXTURE_MENU_INSERT",
+                            "link": "/reference/pill_editor/runner/tool_fixture/constant.FIXTURE_MENU_INSERT"
+                          },
+                          {
+                            "text": "FIXTURE_MENU_MARK",
+                            "link": "/reference/pill_editor/runner/tool_fixture/constant.FIXTURE_MENU_MARK"
+                          },
+                          {
+                            "text": "FIXTURE_MENU_NOTE",
+                            "link": "/reference/pill_editor/runner/tool_fixture/constant.FIXTURE_MENU_NOTE"
+                          },
+                          {
+                            "text": "FIXTURE_MENU_RESET",
+                            "link": "/reference/pill_editor/runner/tool_fixture/constant.FIXTURE_MENU_RESET"
+                          },
+                          {
+                            "text": "FIXTURE_NOTES_COMPONENT",
+                            "link": "/reference/pill_editor/runner/tool_fixture/constant.FIXTURE_NOTES_COMPONENT"
+                          },
+                          {
+                            "text": "FIXTURE_NOTES_EXTENSION",
+                            "link": "/reference/pill_editor/runner/tool_fixture/constant.FIXTURE_NOTES_EXTENSION"
+                          },
+                          {
+                            "text": "FIXTURE_POINT_COUNT",
+                            "link": "/reference/pill_editor/runner/tool_fixture/constant.FIXTURE_POINT_COUNT"
+                          },
+                          {
+                            "text": "FIXTURE_POINT_KIND",
+                            "link": "/reference/pill_editor/runner/tool_fixture/constant.FIXTURE_POINT_KIND"
+                          },
+                          {
+                            "text": "FIXTURE_TANGENT_COUNT",
+                            "link": "/reference/pill_editor/runner/tool_fixture/constant.FIXTURE_TANGENT_COUNT"
+                          },
+                          {
+                            "text": "FIXTURE_TANGENT_ID_BASE",
+                            "link": "/reference/pill_editor/runner/tool_fixture/constant.FIXTURE_TANGENT_ID_BASE"
+                          },
+                          {
+                            "text": "FIXTURE_TANGENT_KIND",
+                            "link": "/reference/pill_editor/runner/tool_fixture/constant.FIXTURE_TANGENT_KIND"
+                          },
+                          {
+                            "text": "FIXTURE_TANGENT_LIFT",
+                            "link": "/reference/pill_editor/runner/tool_fixture/constant.FIXTURE_TANGENT_LIFT"
+                          },
+                          {
+                            "text": "FIXTURE_TOOL_NAME",
+                            "link": "/reference/pill_editor/runner/tool_fixture/constant.FIXTURE_TOOL_NAME"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
                     "text": "transform_gizmo",
                     "link": "/reference/pill_editor/runner/transform_gizmo/",
                     "collapsed": true,
@@ -7108,6 +7552,16 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                           {
                             "text": "ScreenProjection",
                             "link": "/reference/pill_editor/runner/transform_gizmo/struct.ScreenProjection"
+                          }
+                        ]
+                      },
+                      {
+                        "text": "Functions",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "drag_value_components",
+                            "link": "/reference/pill_editor/runner/transform_gizmo/fn.drag_value_components"
                           }
                         ]
                       }
@@ -7166,6 +7620,10 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                     "link": "/reference/pill_editor/runner/enum.CommandAction"
                   },
                   {
+                    "text": "DragSubject",
+                    "link": "/reference/pill_editor/runner/enum.DragSubject"
+                  },
+                  {
                     "text": "EventRoute",
                     "link": "/reference/pill_editor/runner/enum.EventRoute"
                   }
@@ -7176,12 +7634,20 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                 "collapsed": true,
                 "items": [
                   {
+                    "text": "active_tool_frame",
+                    "link": "/reference/pill_editor/runner/fn.active_tool_frame"
+                  },
+                  {
                     "text": "camera_binding",
                     "link": "/reference/pill_editor/runner/fn.camera_binding"
                   },
                   {
                     "text": "camera_navigation_name",
                     "link": "/reference/pill_editor/runner/fn.camera_navigation_name"
+                  },
+                  {
+                    "text": "choose_display_backend",
+                    "link": "/reference/pill_editor/runner/fn.choose_display_backend"
                   },
                   {
                     "text": "command_action",
@@ -7204,6 +7670,14 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                     "link": "/reference/pill_editor/runner/fn.editor_default_keybindings"
                   },
                   {
+                    "text": "element_drag_elements",
+                    "link": "/reference/pill_editor/runner/fn.element_drag_elements"
+                  },
+                  {
+                    "text": "element_pivot",
+                    "link": "/reference/pill_editor/runner/fn.element_pivot"
+                  },
+                  {
                     "text": "engine_asset_rows",
                     "link": "/reference/pill_editor/runner/fn.engine_asset_rows"
                   },
@@ -7218,6 +7692,10 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                   {
                     "text": "gizmo_drag_mode",
                     "link": "/reference/pill_editor/runner/fn.gizmo_drag_mode"
+                  },
+                  {
+                    "text": "gizmo_frame_basis",
+                    "link": "/reference/pill_editor/runner/fn.gizmo_frame_basis"
                   },
                   {
                     "text": "gizmo_mode_name",
@@ -7268,16 +7746,16 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                     "link": "/reference/pill_editor/runner/fn.paste_chord"
                   },
                   {
+                    "text": "point_is_outside_view_body",
+                    "link": "/reference/pill_editor/runner/fn.point_is_outside_view_body"
+                  },
+                  {
                     "text": "problems_from_build_output",
                     "link": "/reference/pill_editor/runner/fn.problems_from_build_output"
                   },
                   {
                     "text": "projection_terms",
                     "link": "/reference/pill_editor/runner/fn.projection_terms"
-                  },
-                  {
-                    "text": "quaternion_product",
-                    "link": "/reference/pill_editor/runner/fn.quaternion_product"
                   },
                   {
                     "text": "read_transform",
@@ -7294,6 +7772,10 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                   {
                     "text": "resolve_display_entity",
                     "link": "/reference/pill_editor/runner/fn.resolve_display_entity"
+                  },
+                  {
+                    "text": "rotate_by_turn",
+                    "link": "/reference/pill_editor/runner/fn.rotate_by_turn"
                   },
                   {
                     "text": "route_event",
@@ -7338,6 +7820,14 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                   {
                     "text": "ASSET_ROWS_MAX",
                     "link": "/reference/pill_editor/runner/constant.ASSET_ROWS_MAX"
+                  },
+                  {
+                    "text": "COMPOSITION_VIEW_OVERSHOOT",
+                    "link": "/reference/pill_editor/runner/constant.COMPOSITION_VIEW_OVERSHOOT"
+                  },
+                  {
+                    "text": "DETACHED_SCENE_ENV",
+                    "link": "/reference/pill_editor/runner/constant.DETACHED_SCENE_ENV"
                   },
                   {
                     "text": "EDITOR_FORMAT",
@@ -7620,6 +8110,10 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                   {
                     "text": "ShellBadge",
                     "link": "/reference/pill_editor_core/boundary/struct.ShellBadge"
+                  },
+                  {
+                    "text": "ShellMarquee",
+                    "link": "/reference/pill_editor_core/boundary/struct.ShellMarquee"
                   },
                   {
                     "text": "ShellRect",
@@ -8172,6 +8666,10 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                     "link": "/reference/pill_editor_core/commands/fn.read_gizmo_settings"
                   },
                   {
+                    "text": "write_gizmo_hidden_types",
+                    "link": "/reference/pill_editor_core/commands/fn.write_gizmo_hidden_types"
+                  },
+                  {
                     "text": "write_gizmo_preferences",
                     "link": "/reference/pill_editor_core/commands/fn.write_gizmo_preferences"
                   }
@@ -8310,6 +8808,10 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                     "link": "/reference/pill_editor_core/drain/fn.command_touches_files"
                   },
                   {
+                    "text": "expand_element_menu",
+                    "link": "/reference/pill_editor_core/drain/fn.expand_element_menu"
+                  },
+                  {
                     "text": "follow_selection",
                     "link": "/reference/pill_editor_core/drain/fn.follow_selection"
                   },
@@ -8328,6 +8830,16 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                   {
                     "text": "step_history",
                     "link": "/reference/pill_editor_core/drain/fn.step_history"
+                  }
+                ]
+              },
+              {
+                "text": "Constants",
+                "collapsed": true,
+                "items": [
+                  {
+                    "text": "HOOK_ROUNDS_MAX",
+                    "link": "/reference/pill_editor_core/drain/constant.HOOK_ROUNDS_MAX"
                   }
                 ]
               }
@@ -8353,8 +8865,12 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                 "collapsed": true,
                 "items": [
                   {
-                    "text": "read_json",
-                    "link": "/reference/pill_editor_core/editor_files/fn.read_json"
+                    "text": "parse_yaml",
+                    "link": "/reference/pill_editor_core/editor_files/fn.parse_yaml"
+                  },
+                  {
+                    "text": "read_yaml",
+                    "link": "/reference/pill_editor_core/editor_files/fn.read_yaml"
                   },
                   {
                     "text": "remove",
@@ -8365,8 +8881,8 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                     "link": "/reference/pill_editor_core/editor_files/fn.write_bytes"
                   },
                   {
-                    "text": "write_json",
-                    "link": "/reference/pill_editor_core/editor_files/fn.write_json"
+                    "text": "write_yaml",
+                    "link": "/reference/pill_editor_core/editor_files/fn.write_yaml"
                   }
                 ]
               },
@@ -8446,6 +8962,14 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                                   {
                                     "text": "apply",
                                     "link": "/reference/pill_editor_core/editor_state/apply/engine/fn.apply"
+                                  },
+                                  {
+                                    "text": "push_play_refusal_notice",
+                                    "link": "/reference/pill_editor_core/editor_state/apply/engine/fn.push_play_refusal_notice"
+                                  },
+                                  {
+                                    "text": "remember_active_space",
+                                    "link": "/reference/pill_editor_core/editor_state/apply/engine/fn.remember_active_space"
                                   }
                                 ]
                               }
@@ -8463,6 +8987,10 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                                   {
                                     "text": "apply",
                                     "link": "/reference/pill_editor_core/editor_state/apply/selection/fn.apply"
+                                  },
+                                  {
+                                    "text": "notify_element_change",
+                                    "link": "/reference/pill_editor_core/editor_state/apply/selection/fn.notify_element_change"
                                   }
                                 ]
                               }
@@ -8480,6 +9008,10 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                                   {
                                     "text": "apply",
                                     "link": "/reference/pill_editor_core/editor_state/apply/world/fn.apply"
+                                  },
+                                  {
+                                    "text": "editor_origin",
+                                    "link": "/reference/pill_editor_core/editor_state/apply/world/fn.editor_origin"
                                   }
                                 ]
                               }
@@ -8555,6 +9087,10 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                     "link": "/reference/pill_editor_core/editor_state/struct.ComponentSeed"
                   },
                   {
+                    "text": "ComponentToolRow",
+                    "link": "/reference/pill_editor_core/editor_state/struct.ComponentToolRow"
+                  },
+                  {
                     "text": "ComponentView",
                     "link": "/reference/pill_editor_core/editor_state/struct.ComponentView"
                   },
@@ -8565,6 +9101,14 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                   {
                     "text": "EditorSnapshot",
                     "link": "/reference/pill_editor_core/editor_state/struct.EditorSnapshot"
+                  },
+                  {
+                    "text": "ElementRef",
+                    "link": "/reference/pill_editor_core/editor_state/struct.ElementRef"
+                  },
+                  {
+                    "text": "ElementSelection",
+                    "link": "/reference/pill_editor_core/editor_state/struct.ElementSelection"
                   },
                   {
                     "text": "EngineAsset",
@@ -8585,6 +9129,14 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                   {
                     "text": "EntityPickTarget",
                     "link": "/reference/pill_editor_core/editor_state/struct.EntityPickTarget"
+                  },
+                  {
+                    "text": "GizmoTypeView",
+                    "link": "/reference/pill_editor_core/editor_state/struct.GizmoTypeView"
+                  },
+                  {
+                    "text": "NoopObserver",
+                    "link": "/reference/pill_editor_core/editor_state/struct.NoopObserver"
                   },
                   {
                     "text": "RegisteredComponent",
@@ -8621,12 +9173,26 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                     "link": "/reference/pill_editor_core/editor_state/enum.AssetReferenceLabel"
                   },
                   {
+                    "text": "ElementClickRefusal",
+                    "link": "/reference/pill_editor_core/editor_state/enum.ElementClickRefusal"
+                  },
+                  {
                     "text": "EntityReferenceLabel",
                     "link": "/reference/pill_editor_core/editor_state/enum.EntityReferenceLabel"
                   },
                   {
                     "text": "SelectionClick",
                     "link": "/reference/pill_editor_core/editor_state/enum.SelectionClick"
+                  }
+                ]
+              },
+              {
+                "text": "Traits",
+                "collapsed": true,
+                "items": [
+                  {
+                    "text": "CommandObserver",
+                    "link": "/reference/pill_editor_core/editor_state/trait.CommandObserver"
                   }
                 ]
               },
@@ -8752,6 +9318,14 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                 "collapsed": true,
                 "items": [
                   {
+                    "text": "ElementHandleMap",
+                    "link": "/reference/pill_editor_core/gizmo/struct.ElementHandleMap"
+                  },
+                  {
+                    "text": "ElementHandleTarget",
+                    "link": "/reference/pill_editor_core/gizmo/struct.ElementHandleTarget"
+                  },
+                  {
                     "text": "GizmoGeometry",
                     "link": "/reference/pill_editor_core/gizmo/struct.GizmoGeometry"
                   },
@@ -8777,6 +9351,10 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                 "text": "Enums",
                 "collapsed": true,
                 "items": [
+                  {
+                    "text": "DragValue",
+                    "link": "/reference/pill_editor_core/gizmo/enum.DragValue"
+                  },
                   {
                     "text": "GizmoMode",
                     "link": "/reference/pill_editor_core/gizmo/enum.GizmoMode"
@@ -8814,6 +9392,10 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                   {
                     "text": "axis_handle",
                     "link": "/reference/pill_editor_core/gizmo/fn.axis_handle"
+                  },
+                  {
+                    "text": "basis_from_rotation",
+                    "link": "/reference/pill_editor_core/gizmo/fn.basis_from_rotation"
                   },
                   {
                     "text": "build_geometry",
@@ -8872,8 +9454,20 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                     "link": "/reference/pill_editor_core/gizmo/fn.dotted_segments"
                   },
                   {
+                    "text": "element_handle",
+                    "link": "/reference/pill_editor_core/gizmo/fn.element_handle"
+                  },
+                  {
+                    "text": "element_handle_slot",
+                    "link": "/reference/pill_editor_core/gizmo/fn.element_handle_slot"
+                  },
+                  {
                     "text": "field_u32",
                     "link": "/reference/pill_editor_core/gizmo/fn.field_u32"
+                  },
+                  {
+                    "text": "follow_tool",
+                    "link": "/reference/pill_editor_core/gizmo/fn.follow_tool"
                   },
                   {
                     "text": "handle_axis",
@@ -8898,6 +9492,14 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                   {
                     "text": "mode_from_discriminant",
                     "link": "/reference/pill_editor_core/gizmo/fn.mode_from_discriminant"
+                  },
+                  {
+                    "text": "moved_elements",
+                    "link": "/reference/pill_editor_core/gizmo/fn.moved_elements"
+                  },
+                  {
+                    "text": "next_space",
+                    "link": "/reference/pill_editor_core/gizmo/fn.next_space"
                   },
                   {
                     "text": "normalize",
@@ -8926,6 +9528,10 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                   {
                     "text": "plane_square",
                     "link": "/reference/pill_editor_core/gizmo/fn.plane_square"
+                  },
+                  {
+                    "text": "quaternion_product",
+                    "link": "/reference/pill_editor_core/gizmo/fn.quaternion_product"
                   },
                   {
                     "text": "ray_plane_point",
@@ -8966,6 +9572,10 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                   {
                     "text": "scale_handle_lengths",
                     "link": "/reference/pill_editor_core/gizmo/fn.scale_handle_lengths"
+                  },
+                  {
+                    "text": "selection_pivot",
+                    "link": "/reference/pill_editor_core/gizmo/fn.selection_pivot"
                   },
                   {
                     "text": "set_resource_field",
@@ -9034,6 +9644,14 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                   {
                     "text": "DOTTED_SEGMENTS_MAX",
                     "link": "/reference/pill_editor_core/gizmo/constant.DOTTED_SEGMENTS_MAX"
+                  },
+                  {
+                    "text": "ELEMENT_HANDLE_BASE",
+                    "link": "/reference/pill_editor_core/gizmo/constant.ELEMENT_HANDLE_BASE"
+                  },
+                  {
+                    "text": "ELEMENT_HANDLE_LIMIT",
+                    "link": "/reference/pill_editor_core/gizmo/constant.ELEMENT_HANDLE_LIMIT"
                   },
                   {
                     "text": "HOVER_BRIGHTEN",
@@ -9123,6 +9741,325 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                   {
                     "text": "field_value_bytes",
                     "link": "/reference/pill_editor_core/history/fn.field_value_bytes"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "text": "hooks",
+            "link": "/reference/pill_editor_core/hooks/",
+            "collapsed": true,
+            "items": [
+              {
+                "text": "Modules",
+                "collapsed": true,
+                "items": [
+                  {
+                    "text": "context",
+                    "link": "/reference/pill_editor_core/hooks/context/",
+                    "collapsed": true,
+                    "items": [
+                      {
+                        "text": "Structs",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "HookContext",
+                            "link": "/reference/pill_editor_core/hooks/context/struct.HookContext"
+                          },
+                          {
+                            "text": "HookNotice",
+                            "link": "/reference/pill_editor_core/hooks/context/struct.HookNotice"
+                          },
+                          {
+                            "text": "HookNotices",
+                            "link": "/reference/pill_editor_core/hooks/context/struct.HookNotices"
+                          },
+                          {
+                            "text": "HookQueue",
+                            "link": "/reference/pill_editor_core/hooks/context/struct.HookQueue"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "text": "dispatch",
+                    "link": "/reference/pill_editor_core/hooks/dispatch/",
+                    "collapsed": true,
+                    "items": [
+                      {
+                        "text": "Structs",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "HookSession",
+                            "link": "/reference/pill_editor_core/hooks/dispatch/struct.HookSession"
+                          }
+                        ]
+                      },
+                      {
+                        "text": "Functions",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "after_view",
+                            "link": "/reference/pill_editor_core/hooks/dispatch/fn.after_view"
+                          },
+                          {
+                            "text": "before_view",
+                            "link": "/reference/pill_editor_core/hooks/dispatch/fn.before_view"
+                          },
+                          {
+                            "text": "field_command_entity",
+                            "link": "/reference/pill_editor_core/hooks/dispatch/fn.field_command_entity"
+                          },
+                          {
+                            "text": "is_primary",
+                            "link": "/reference/pill_editor_core/hooks/dispatch/fn.is_primary"
+                          },
+                          {
+                            "text": "previous_from_inverse",
+                            "link": "/reference/pill_editor_core/hooks/dispatch/fn.previous_from_inverse"
+                          },
+                          {
+                            "text": "selection_copy",
+                            "link": "/reference/pill_editor_core/hooks/dispatch/fn.selection_copy"
+                          },
+                          {
+                            "text": "write_replacement",
+                            "link": "/reference/pill_editor_core/hooks/dispatch/fn.write_replacement"
+                          }
+                        ]
+                      },
+                      {
+                        "text": "Macros",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "call_callbacks",
+                            "link": "/reference/pill_editor_core/hooks/dispatch/macro.call_callbacks"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "text": "events",
+                    "link": "/reference/pill_editor_core/hooks/events/",
+                    "collapsed": true,
+                    "items": [
+                      {
+                        "text": "Structs",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "AssetEdit",
+                            "link": "/reference/pill_editor_core/hooks/events/struct.AssetEdit"
+                          },
+                          {
+                            "text": "ComponentEdit",
+                            "link": "/reference/pill_editor_core/hooks/events/struct.ComponentEdit"
+                          },
+                          {
+                            "text": "ElementSelectionChanged",
+                            "link": "/reference/pill_editor_core/hooks/events/struct.ElementSelectionChanged"
+                          },
+                          {
+                            "text": "EntityEdit",
+                            "link": "/reference/pill_editor_core/hooks/events/struct.EntityEdit"
+                          },
+                          {
+                            "text": "FieldEdit",
+                            "link": "/reference/pill_editor_core/hooks/events/struct.FieldEdit"
+                          },
+                          {
+                            "text": "FieldEditView",
+                            "link": "/reference/pill_editor_core/hooks/events/struct.FieldEditView"
+                          },
+                          {
+                            "text": "HistoryEdit",
+                            "link": "/reference/pill_editor_core/hooks/events/struct.HistoryEdit"
+                          },
+                          {
+                            "text": "PlayEdit",
+                            "link": "/reference/pill_editor_core/hooks/events/struct.PlayEdit"
+                          },
+                          {
+                            "text": "SceneEdit",
+                            "link": "/reference/pill_editor_core/hooks/events/struct.SceneEdit"
+                          },
+                          {
+                            "text": "SelectionChanged",
+                            "link": "/reference/pill_editor_core/hooks/events/struct.SelectionChanged"
+                          },
+                          {
+                            "text": "SelectionSnapshot",
+                            "link": "/reference/pill_editor_core/hooks/events/struct.SelectionSnapshot"
+                          },
+                          {
+                            "text": "ToolActivatedEdit",
+                            "link": "/reference/pill_editor_core/hooks/events/struct.ToolActivatedEdit"
+                          }
+                        ]
+                      },
+                      {
+                        "text": "Enums",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "AssetEditKind",
+                            "link": "/reference/pill_editor_core/hooks/events/enum.AssetEditKind"
+                          },
+                          {
+                            "text": "FieldEditCause",
+                            "link": "/reference/pill_editor_core/hooks/events/enum.FieldEditCause"
+                          },
+                          {
+                            "text": "FieldEditPhase",
+                            "link": "/reference/pill_editor_core/hooks/events/enum.FieldEditPhase"
+                          },
+                          {
+                            "text": "HookVerdict",
+                            "link": "/reference/pill_editor_core/hooks/events/enum.HookVerdict"
+                          }
+                        ]
+                      },
+                      {
+                        "text": "Functions",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "apply_field_edit_after",
+                            "link": "/reference/pill_editor_core/hooks/events/fn.apply_field_edit_after"
+                          },
+                          {
+                            "text": "apply_field_edit_before",
+                            "link": "/reference/pill_editor_core/hooks/events/fn.apply_field_edit_before"
+                          },
+                          {
+                            "text": "component_matches",
+                            "link": "/reference/pill_editor_core/hooks/events/fn.component_matches"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "text": "registry",
+                    "link": "/reference/pill_editor_core/hooks/registry/",
+                    "collapsed": true,
+                    "items": [
+                      {
+                        "text": "Structs",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "EditorHookRegistry",
+                            "link": "/reference/pill_editor_core/hooks/registry/struct.EditorHookRegistry"
+                          },
+                          {
+                            "text": "FieldEditAfterHook",
+                            "link": "/reference/pill_editor_core/hooks/registry/struct.FieldEditAfterHook"
+                          },
+                          {
+                            "text": "FieldEditBeforeHook",
+                            "link": "/reference/pill_editor_core/hooks/registry/struct.FieldEditBeforeHook"
+                          },
+                          {
+                            "text": "HookRegistration",
+                            "link": "/reference/pill_editor_core/hooks/registry/struct.HookRegistration"
+                          },
+                          {
+                            "text": "LiveHook",
+                            "link": "/reference/pill_editor_core/hooks/registry/struct.LiveHook"
+                          }
+                        ]
+                      },
+                      {
+                        "text": "Enums",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "HookCallback",
+                            "link": "/reference/pill_editor_core/hooks/registry/enum.HookCallback"
+                          },
+                          {
+                            "text": "HookEvent",
+                            "link": "/reference/pill_editor_core/hooks/registry/enum.HookEvent"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "text": "requests",
+                    "link": "/reference/pill_editor_core/hooks/requests/",
+                    "collapsed": true,
+                    "items": [
+                      {
+                        "text": "Structs",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "EditorHookRequests",
+                            "link": "/reference/pill_editor_core/hooks/requests/struct.EditorHookRequests"
+                          },
+                          {
+                            "text": "FieldEditHookRequest",
+                            "link": "/reference/pill_editor_core/hooks/requests/struct.FieldEditHookRequest"
+                          },
+                          {
+                            "text": "HookRequest",
+                            "link": "/reference/pill_editor_core/hooks/requests/struct.HookRequest"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "text": "watch",
+                    "link": "/reference/pill_editor_core/hooks/watch/",
+                    "collapsed": true,
+                    "items": [
+                      {
+                        "text": "Structs",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "ElementWatch",
+                            "link": "/reference/pill_editor_core/hooks/watch/struct.ElementWatch"
+                          },
+                          {
+                            "text": "HookWatch",
+                            "link": "/reference/pill_editor_core/hooks/watch/struct.HookWatch"
+                          },
+                          {
+                            "text": "WatchChanges",
+                            "link": "/reference/pill_editor_core/hooks/watch/struct.WatchChanges"
+                          }
+                        ]
+                      },
+                      {
+                        "text": "Functions",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "active_tool",
+                            "link": "/reference/pill_editor_core/hooks/watch/fn.active_tool"
+                          },
+                          {
+                            "text": "element_watch",
+                            "link": "/reference/pill_editor_core/hooks/watch/fn.element_watch"
+                          },
+                          {
+                            "text": "snapshot",
+                            "link": "/reference/pill_editor_core/hooks/watch/fn.snapshot"
+                          }
+                        ]
+                      }
+                    ]
                   }
                 ]
               }
@@ -9857,6 +10794,14 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                     "link": "/reference/pill_editor_core/menubar/fn.menu_row_for_toolbox_item"
                   },
                   {
+                    "text": "play_title",
+                    "link": "/reference/pill_editor_core/menubar/fn.play_title"
+                  },
+                  {
+                    "text": "play_toggle_command",
+                    "link": "/reference/pill_editor_core/menubar/fn.play_toggle_command"
+                  },
+                  {
                     "text": "selected_scene_path",
                     "link": "/reference/pill_editor_core/menubar/fn.selected_scene_path"
                   }
@@ -10021,6 +10966,27 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
             ]
           },
           {
+            "text": "play_session",
+            "link": "/reference/pill_editor_core/play_session/",
+            "collapsed": true,
+            "items": [
+              {
+                "text": "Structs",
+                "collapsed": true,
+                "items": [
+                  {
+                    "text": "EditorPlaySession",
+                    "link": "/reference/pill_editor_core/play_session/struct.EditorPlaySession"
+                  },
+                  {
+                    "text": "HeldEditorState",
+                    "link": "/reference/pill_editor_core/play_session/struct.HeldEditorState"
+                  }
+                ]
+              }
+            ]
+          },
+          {
             "text": "preferences",
             "link": "/reference/pill_editor_core/preferences/",
             "collapsed": true,
@@ -10054,6 +11020,10 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                   {
                     "text": "gizmo_icon_size",
                     "link": "/reference/pill_editor_core/preferences/fn.gizmo_icon_size"
+                  },
+                  {
+                    "text": "hidden_gizmo_types",
+                    "link": "/reference/pill_editor_core/preferences/fn.hidden_gizmo_types"
                   },
                   {
                     "text": "keymap_preset",
@@ -10103,6 +11073,10 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                 "text": "Constants",
                 "collapsed": true,
                 "items": [
+                  {
+                    "text": "GIZMO_HIDDEN_TYPES_KEY",
+                    "link": "/reference/pill_editor_core/preferences/constant.GIZMO_HIDDEN_TYPES_KEY"
+                  },
                   {
                     "text": "GIZMO_HIT_RADIUS_DEFAULT",
                     "link": "/reference/pill_editor_core/preferences/constant.GIZMO_HIT_RADIUS_DEFAULT"
@@ -10821,6 +11795,10 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                     "link": "/reference/pill_editor_core/style/fn.panel_raised"
                   },
                   {
+                    "text": "play_tint",
+                    "link": "/reference/pill_editor_core/style/fn.play_tint"
+                  },
+                  {
                     "text": "read_resolved_theme",
                     "link": "/reference/pill_editor_core/style/fn.read_resolved_theme"
                   },
@@ -11015,6 +11993,10 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                     "link": "/reference/pill_editor_core/toolbox/fn.panel_size"
                   },
                   {
+                    "text": "rows",
+                    "link": "/reference/pill_editor_core/toolbox/fn.rows"
+                  },
+                  {
                     "text": "space_command",
                     "link": "/reference/pill_editor_core/toolbox/fn.space_command"
                   }
@@ -11027,6 +12009,10 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                   {
                     "text": "SPACE_ROWS",
                     "link": "/reference/pill_editor_core/toolbox/constant.SPACE_ROWS"
+                  },
+                  {
+                    "text": "TOGGLE_ROWS",
+                    "link": "/reference/pill_editor_core/toolbox/constant.TOGGLE_ROWS"
                   },
                   {
                     "text": "TOOL_ROWS",
@@ -11063,14 +12049,250 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                 ]
               }
             ]
+          },
+          {
+            "text": "tools",
+            "link": "/reference/pill_editor_core/tools/",
+            "collapsed": true,
+            "items": [
+              {
+                "text": "Structs",
+                "collapsed": true,
+                "items": [
+                  {
+                    "text": "CoordinateFrame",
+                    "link": "/reference/pill_editor_core/tools/struct.CoordinateFrame"
+                  },
+                  {
+                    "text": "ElementHandle",
+                    "link": "/reference/pill_editor_core/tools/struct.ElementHandle"
+                  },
+                  {
+                    "text": "ElementKind",
+                    "link": "/reference/pill_editor_core/tools/struct.ElementKind"
+                  },
+                  {
+                    "text": "ElementMenuEntry",
+                    "link": "/reference/pill_editor_core/tools/struct.ElementMenuEntry"
+                  },
+                  {
+                    "text": "ElementMove",
+                    "link": "/reference/pill_editor_core/tools/struct.ElementMove"
+                  },
+                  {
+                    "text": "ElementTransform",
+                    "link": "/reference/pill_editor_core/tools/struct.ElementTransform"
+                  },
+                  {
+                    "text": "MarqueeRect",
+                    "link": "/reference/pill_editor_core/tools/struct.MarqueeRect"
+                  },
+                  {
+                    "text": "ProjectedElement",
+                    "link": "/reference/pill_editor_core/tools/struct.ProjectedElement"
+                  },
+                  {
+                    "text": "RegisteredExtension",
+                    "link": "/reference/pill_editor_core/tools/struct.RegisteredExtension"
+                  },
+                  {
+                    "text": "RegisteredTool",
+                    "link": "/reference/pill_editor_core/tools/struct.RegisteredTool"
+                  },
+                  {
+                    "text": "SpaceChoice",
+                    "link": "/reference/pill_editor_core/tools/struct.SpaceChoice"
+                  },
+                  {
+                    "text": "ToolElement",
+                    "link": "/reference/pill_editor_core/tools/struct.ToolElement"
+                  },
+                  {
+                    "text": "ToolElementHooks",
+                    "link": "/reference/pill_editor_core/tools/struct.ToolElementHooks"
+                  },
+                  {
+                    "text": "ToolExtensionHooks",
+                    "link": "/reference/pill_editor_core/tools/struct.ToolExtensionHooks"
+                  },
+                  {
+                    "text": "ToolRegistry",
+                    "link": "/reference/pill_editor_core/tools/struct.ToolRegistry"
+                  },
+                  {
+                    "text": "ToolSpaceChoices",
+                    "link": "/reference/pill_editor_core/tools/struct.ToolSpaceChoices"
+                  }
+                ]
+              },
+              {
+                "text": "Enums",
+                "collapsed": true,
+                "items": [
+                  {
+                    "text": "BuiltinTool",
+                    "link": "/reference/pill_editor_core/tools/enum.BuiltinTool"
+                  },
+                  {
+                    "text": "KeyResponse",
+                    "link": "/reference/pill_editor_core/tools/enum.KeyResponse"
+                  },
+                  {
+                    "text": "PressResponse",
+                    "link": "/reference/pill_editor_core/tools/enum.PressResponse"
+                  }
+                ]
+              },
+              {
+                "text": "Traits",
+                "collapsed": true,
+                "items": [
+                  {
+                    "text": "EditorTool",
+                    "link": "/reference/pill_editor_core/tools/trait.EditorTool"
+                  },
+                  {
+                    "text": "ToolExtension",
+                    "link": "/reference/pill_editor_core/tools/trait.ToolExtension"
+                  }
+                ]
+              },
+              {
+                "text": "Functions",
+                "collapsed": true,
+                "items": [
+                  {
+                    "text": "activate_tool",
+                    "link": "/reference/pill_editor_core/tools/fn.activate_tool"
+                  },
+                  {
+                    "text": "active_tool",
+                    "link": "/reference/pill_editor_core/tools/fn.active_tool"
+                  },
+                  {
+                    "text": "element_handles",
+                    "link": "/reference/pill_editor_core/tools/fn.element_handles"
+                  },
+                  {
+                    "text": "element_selection_subject",
+                    "link": "/reference/pill_editor_core/tools/fn.element_selection_subject"
+                  },
+                  {
+                    "text": "has_component_named",
+                    "link": "/reference/pill_editor_core/tools/fn.has_component_named"
+                  },
+                  {
+                    "text": "marquee_selection",
+                    "link": "/reference/pill_editor_core/tools/fn.marquee_selection"
+                  },
+                  {
+                    "text": "selection_frames",
+                    "link": "/reference/pill_editor_core/tools/fn.selection_frames"
+                  },
+                  {
+                    "text": "tool_registry_mut",
+                    "link": "/reference/pill_editor_core/tools/fn.tool_registry_mut"
+                  }
+                ]
+              },
+              {
+                "text": "Type aliases",
+                "collapsed": true,
+                "items": [
+                  {
+                    "text": "ToolElementReportFn",
+                    "link": "/reference/pill_editor_core/tools/type.ToolElementReportFn"
+                  },
+                  {
+                    "text": "ToolFrameReportFn",
+                    "link": "/reference/pill_editor_core/tools/type.ToolFrameReportFn"
+                  },
+                  {
+                    "text": "ToolInsertElementFn",
+                    "link": "/reference/pill_editor_core/tools/type.ToolInsertElementFn"
+                  },
+                  {
+                    "text": "ToolKeyFn",
+                    "link": "/reference/pill_editor_core/tools/type.ToolKeyFn"
+                  },
+                  {
+                    "text": "ToolKindReportFn",
+                    "link": "/reference/pill_editor_core/tools/type.ToolKindReportFn"
+                  },
+                  {
+                    "text": "ToolMenuReportFn",
+                    "link": "/reference/pill_editor_core/tools/type.ToolMenuReportFn"
+                  },
+                  {
+                    "text": "ToolMenuRunFn",
+                    "link": "/reference/pill_editor_core/tools/type.ToolMenuRunFn"
+                  },
+                  {
+                    "text": "ToolPressFn",
+                    "link": "/reference/pill_editor_core/tools/type.ToolPressFn"
+                  },
+                  {
+                    "text": "ToolRemoveElementsFn",
+                    "link": "/reference/pill_editor_core/tools/type.ToolRemoveElementsFn"
+                  },
+                  {
+                    "text": "ToolSelectionChangedFn",
+                    "link": "/reference/pill_editor_core/tools/type.ToolSelectionChangedFn"
+                  },
+                  {
+                    "text": "ToolSetTransformsFn",
+                    "link": "/reference/pill_editor_core/tools/type.ToolSetTransformsFn"
+                  }
+                ]
+              },
+              {
+                "text": "Constants",
+                "collapsed": true,
+                "items": [
+                  {
+                    "text": "ELEMENT_PICK_SLACK_PIXELS",
+                    "link": "/reference/pill_editor_core/tools/constant.ELEMENT_PICK_SLACK_PIXELS"
+                  },
+                  {
+                    "text": "RESOURCE_NAME",
+                    "link": "/reference/pill_editor_core/tools/constant.RESOURCE_NAME"
+                  },
+                  {
+                    "text": "SELECTED_ELEMENT_COLOR",
+                    "link": "/reference/pill_editor_core/tools/constant.SELECTED_ELEMENT_COLOR"
+                  },
+                  {
+                    "text": "SPACE_CHOICES_RESOURCE_NAME",
+                    "link": "/reference/pill_editor_core/tools/constant.SPACE_CHOICES_RESOURCE_NAME"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "text": "viewport",
+            "link": "/reference/pill_editor_core/viewport/",
+            "collapsed": true,
+            "items": [
+              {
+                "text": "Structs",
+                "collapsed": true,
+                "items": [
+                  {
+                    "text": "EditorViewportState",
+                    "link": "/reference/pill_editor_core/viewport/struct.EditorViewportState"
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
     ]
   },
   {
-    "text": "Pill Editor Shell Egui Editor",
-    "link": "/reference/pill_editor_shell_egui_editor/",
+    "text": "Pill Editor Shell",
+    "link": "/reference/pill_editor_shell/",
     "collapsed": true,
     "items": [
       {
@@ -11079,7 +12301,7 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
         "items": [
           {
             "text": "shell",
-            "link": "/reference/pill_editor_shell_egui_editor/shell/",
+            "link": "/reference/pill_editor_shell/shell/",
             "collapsed": true,
             "items": [
               {
@@ -11088,7 +12310,7 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                 "items": [
                   {
                     "text": "assets_tiles",
-                    "link": "/reference/pill_editor_shell_egui_editor/shell/assets_tiles/",
+                    "link": "/reference/pill_editor_shell/shell/assets_tiles/",
                     "collapsed": true,
                     "items": [
                       {
@@ -11097,7 +12319,7 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                         "items": [
                           {
                             "text": "AssetTileWrites",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/assets_tiles/struct.AssetTileWrites"
+                            "link": "/reference/pill_editor_shell/shell/assets_tiles/struct.AssetTileWrites"
                           }
                         ]
                       },
@@ -11107,43 +12329,43 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                         "items": [
                           {
                             "text": "asset_container_menu",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/assets_tiles/fn.asset_container_menu"
+                            "link": "/reference/pill_editor_shell/shell/assets_tiles/fn.asset_container_menu"
                           },
                           {
                             "text": "asset_dialog_window",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/assets_tiles/fn.asset_dialog_window"
+                            "link": "/reference/pill_editor_shell/shell/assets_tiles/fn.asset_dialog_window"
                           },
                           {
                             "text": "asset_icon",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/assets_tiles/fn.asset_icon"
+                            "link": "/reference/pill_editor_shell/shell/assets_tiles/fn.asset_icon"
                           },
                           {
                             "text": "asset_menu_items",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/assets_tiles/fn.asset_menu_items"
+                            "link": "/reference/pill_editor_shell/shell/assets_tiles/fn.asset_menu_items"
                           },
                           {
                             "text": "asset_tile",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/assets_tiles/fn.asset_tile"
+                            "link": "/reference/pill_editor_shell/shell/assets_tiles/fn.asset_tile"
                           },
                           {
                             "text": "asset_type_icon",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/assets_tiles/fn.asset_type_icon"
+                            "link": "/reference/pill_editor_shell/shell/assets_tiles/fn.asset_type_icon"
                           },
                           {
                             "text": "remember_pane_rect",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/assets_tiles/fn.remember_pane_rect"
+                            "link": "/reference/pill_editor_shell/shell/assets_tiles/fn.remember_pane_rect"
                           },
                           {
                             "text": "remember_tile_rect",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/assets_tiles/fn.remember_tile_rect"
+                            "link": "/reference/pill_editor_shell/shell/assets_tiles/fn.remember_tile_rect"
                           },
                           {
                             "text": "remember_tree_row_rect",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/assets_tiles/fn.remember_tree_row_rect"
+                            "link": "/reference/pill_editor_shell/shell/assets_tiles/fn.remember_tree_row_rect"
                           },
                           {
                             "text": "tile_name_job",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/assets_tiles/fn.tile_name_job"
+                            "link": "/reference/pill_editor_shell/shell/assets_tiles/fn.tile_name_job"
                           }
                         ]
                       },
@@ -11153,31 +12375,31 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                         "items": [
                           {
                             "text": "ASSETS_TILE_BADGE_SIZE",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/assets_tiles/constant.ASSETS_TILE_BADGE_SIZE"
+                            "link": "/reference/pill_editor_shell/shell/assets_tiles/constant.ASSETS_TILE_BADGE_SIZE"
                           },
                           {
                             "text": "ASSETS_TILE_CORNER_RADIUS",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/assets_tiles/constant.ASSETS_TILE_CORNER_RADIUS"
+                            "link": "/reference/pill_editor_shell/shell/assets_tiles/constant.ASSETS_TILE_CORNER_RADIUS"
                           },
                           {
                             "text": "ASSETS_TILE_GAP",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/assets_tiles/constant.ASSETS_TILE_GAP"
+                            "link": "/reference/pill_editor_shell/shell/assets_tiles/constant.ASSETS_TILE_GAP"
                           },
                           {
                             "text": "ASSETS_TILE_ICON_INSET",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/assets_tiles/constant.ASSETS_TILE_ICON_INSET"
+                            "link": "/reference/pill_editor_shell/shell/assets_tiles/constant.ASSETS_TILE_ICON_INSET"
                           },
                           {
                             "text": "ASSETS_TILE_LABEL_GAP",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/assets_tiles/constant.ASSETS_TILE_LABEL_GAP"
+                            "link": "/reference/pill_editor_shell/shell/assets_tiles/constant.ASSETS_TILE_LABEL_GAP"
                           },
                           {
                             "text": "ASSETS_TILE_LABEL_HEIGHT",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/assets_tiles/constant.ASSETS_TILE_LABEL_HEIGHT"
+                            "link": "/reference/pill_editor_shell/shell/assets_tiles/constant.ASSETS_TILE_LABEL_HEIGHT"
                           },
                           {
                             "text": "ASSETS_TILE_LABEL_ROWS",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/assets_tiles/constant.ASSETS_TILE_LABEL_ROWS"
+                            "link": "/reference/pill_editor_shell/shell/assets_tiles/constant.ASSETS_TILE_LABEL_ROWS"
                           }
                         ]
                       }
@@ -11185,7 +12407,7 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                   },
                   {
                     "text": "bar",
-                    "link": "/reference/pill_editor_shell_egui_editor/shell/bar/",
+                    "link": "/reference/pill_editor_shell/shell/bar/",
                     "collapsed": true,
                     "items": [
                       {
@@ -11194,19 +12416,31 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                         "items": [
                           {
                             "text": "about_window",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/bar/fn.about_window"
+                            "link": "/reference/pill_editor_shell/shell/bar/fn.about_window"
                           },
                           {
                             "text": "menu_bar",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/bar/fn.menu_bar"
+                            "link": "/reference/pill_editor_shell/shell/bar/fn.menu_bar"
                           },
                           {
                             "text": "menu_body",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/bar/fn.menu_body"
+                            "link": "/reference/pill_editor_shell/shell/bar/fn.menu_body"
+                          },
+                          {
+                            "text": "play_button",
+                            "link": "/reference/pill_editor_shell/shell/bar/fn.play_button"
+                          },
+                          {
+                            "text": "play_toolbar",
+                            "link": "/reference/pill_editor_shell/shell/bar/fn.play_toolbar"
                           },
                           {
                             "text": "run_menu_action",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/bar/fn.run_menu_action"
+                            "link": "/reference/pill_editor_shell/shell/bar/fn.run_menu_action"
+                          },
+                          {
+                            "text": "run_play_control",
+                            "link": "/reference/pill_editor_shell/shell/bar/fn.run_play_control"
                           }
                         ]
                       },
@@ -11216,7 +12450,15 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                         "items": [
                           {
                             "text": "MENU_TITLE_GAP",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/bar/constant.MENU_TITLE_GAP"
+                            "link": "/reference/pill_editor_shell/shell/bar/constant.MENU_TITLE_GAP"
+                          },
+                          {
+                            "text": "PLAY_BUTTON_GAP",
+                            "link": "/reference/pill_editor_shell/shell/bar/constant.PLAY_BUTTON_GAP"
+                          },
+                          {
+                            "text": "PLAY_TOOLBAR_TOP",
+                            "link": "/reference/pill_editor_shell/shell/bar/constant.PLAY_TOOLBAR_TOP"
                           }
                         ]
                       }
@@ -11224,7 +12466,7 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                   },
                   {
                     "text": "chrome",
-                    "link": "/reference/pill_editor_shell_egui_editor/shell/chrome/",
+                    "link": "/reference/pill_editor_shell/shell/chrome/",
                     "collapsed": true,
                     "items": [
                       {
@@ -11233,7 +12475,7 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                         "items": [
                           {
                             "text": "FloatingPopup",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/chrome/struct.FloatingPopup"
+                            "link": "/reference/pill_editor_shell/shell/chrome/struct.FloatingPopup"
                           }
                         ]
                       },
@@ -11243,75 +12485,75 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                         "items": [
                           {
                             "text": "apply_tab_redock",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/chrome/fn.apply_tab_redock"
+                            "link": "/reference/pill_editor_shell/shell/chrome/fn.apply_tab_redock"
                           },
                           {
                             "text": "claim_pointer",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/chrome/fn.claim_pointer"
+                            "link": "/reference/pill_editor_shell/shell/chrome/fn.claim_pointer"
                           },
                           {
                             "text": "click_from_modifiers",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/chrome/fn.click_from_modifiers"
+                            "link": "/reference/pill_editor_shell/shell/chrome/fn.click_from_modifiers"
                           },
                           {
                             "text": "context_menu",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/chrome/fn.context_menu"
+                            "link": "/reference/pill_editor_shell/shell/chrome/fn.context_menu"
                           },
                           {
                             "text": "empty_area",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/chrome/fn.empty_area"
+                            "link": "/reference/pill_editor_shell/shell/chrome/fn.empty_area"
                           },
                           {
                             "text": "engine_badge",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/chrome/fn.engine_badge"
+                            "link": "/reference/pill_editor_shell/shell/chrome/fn.engine_badge"
                           },
                           {
                             "text": "floating_popup",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/chrome/fn.floating_popup"
+                            "link": "/reference/pill_editor_shell/shell/chrome/fn.floating_popup"
                           },
                           {
                             "text": "gizmo_mode_label",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/chrome/fn.gizmo_mode_label"
+                            "link": "/reference/pill_editor_shell/shell/chrome/fn.gizmo_mode_label"
                           },
                           {
                             "text": "gizmo_space_label",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/chrome/fn.gizmo_space_label"
+                            "link": "/reference/pill_editor_shell/shell/chrome/fn.gizmo_space_label"
                           },
                           {
                             "text": "log_context_menu",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/chrome/fn.log_context_menu"
+                            "link": "/reference/pill_editor_shell/shell/chrome/fn.log_context_menu"
                           },
                           {
                             "text": "mark_menu_region",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/chrome/fn.mark_menu_region"
+                            "link": "/reference/pill_editor_shell/shell/chrome/fn.mark_menu_region"
                           },
                           {
                             "text": "paint_active_tab_underline",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/chrome/fn.paint_active_tab_underline"
+                            "link": "/reference/pill_editor_shell/shell/chrome/fn.paint_active_tab_underline"
                           },
                           {
                             "text": "remember_moved_rect",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/chrome/fn.remember_moved_rect"
+                            "link": "/reference/pill_editor_shell/shell/chrome/fn.remember_moved_rect"
                           },
                           {
                             "text": "report_selection_change",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/chrome/fn.report_selection_change"
+                            "link": "/reference/pill_editor_shell/shell/chrome/fn.report_selection_change"
                           },
                           {
                             "text": "select_asset",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/chrome/fn.select_asset"
+                            "link": "/reference/pill_editor_shell/shell/chrome/fn.select_asset"
                           },
                           {
                             "text": "select_entity",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/chrome/fn.select_entity"
+                            "link": "/reference/pill_editor_shell/shell/chrome/fn.select_entity"
                           },
                           {
                             "text": "select_entity_click",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/chrome/fn.select_entity_click"
+                            "link": "/reference/pill_editor_shell/shell/chrome/fn.select_entity_click"
                           },
                           {
                             "text": "tab_icon",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/chrome/fn.tab_icon"
+                            "link": "/reference/pill_editor_shell/shell/chrome/fn.tab_icon"
                           }
                         ]
                       }
@@ -11319,7 +12561,7 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                   },
                   {
                     "text": "claim",
-                    "link": "/reference/pill_editor_shell_egui_editor/shell/claim/",
+                    "link": "/reference/pill_editor_shell/shell/claim/",
                     "collapsed": true,
                     "items": [
                       {
@@ -11328,11 +12570,11 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                         "items": [
                           {
                             "text": "claim_context_once",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/claim/fn.claim_context_once"
+                            "link": "/reference/pill_editor_shell/shell/claim/fn.claim_context_once"
                           },
                           {
                             "text": "claim_shell_context",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/claim/fn.claim_shell_context"
+                            "link": "/reference/pill_editor_shell/shell/claim/fn.claim_shell_context"
                           }
                         ]
                       },
@@ -11342,7 +12584,7 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                         "items": [
                           {
                             "text": "CONTEXT_CLAIMED",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/claim/static.CONTEXT_CLAIMED"
+                            "link": "/reference/pill_editor_shell/shell/claim/static.CONTEXT_CLAIMED"
                           }
                         ]
                       }
@@ -11350,7 +12592,7 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                   },
                   {
                     "text": "inspector_fields",
-                    "link": "/reference/pill_editor_shell_egui_editor/shell/inspector_fields/",
+                    "link": "/reference/pill_editor_shell/shell/inspector_fields/",
                     "collapsed": true,
                     "items": [
                       {
@@ -11359,11 +12601,11 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                         "items": [
                           {
                             "text": "AssetRowInput",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/inspector_fields/struct.AssetRowInput"
+                            "link": "/reference/pill_editor_shell/shell/inspector_fields/struct.AssetRowInput"
                           },
                           {
                             "text": "EntityRowInput",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/inspector_fields/struct.EntityRowInput"
+                            "link": "/reference/pill_editor_shell/shell/inspector_fields/struct.EntityRowInput"
                           }
                         ]
                       },
@@ -11372,72 +12614,104 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                         "collapsed": true,
                         "items": [
                           {
+                            "text": "asset_drop_fits",
+                            "link": "/reference/pill_editor_shell/shell/inspector_fields/fn.asset_drop_fits"
+                          },
+                          {
                             "text": "color_channels",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/inspector_fields/fn.color_channels"
+                            "link": "/reference/pill_editor_shell/shell/inspector_fields/fn.color_channels"
                           },
                           {
                             "text": "field_widget_name",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/inspector_fields/fn.field_widget_name"
+                            "link": "/reference/pill_editor_shell/shell/inspector_fields/fn.field_widget_name"
+                          },
+                          {
+                            "text": "has_field_editor",
+                            "link": "/reference/pill_editor_shell/shell/inspector_fields/fn.has_field_editor"
                           },
                           {
                             "text": "inspector_asset_row",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/inspector_fields/fn.inspector_asset_row"
+                            "link": "/reference/pill_editor_shell/shell/inspector_fields/fn.inspector_asset_row"
                           },
                           {
                             "text": "inspector_entity_row",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/inspector_fields/fn.inspector_entity_row"
+                            "link": "/reference/pill_editor_shell/shell/inspector_fields/fn.inspector_entity_row"
                           },
                           {
                             "text": "inspector_field_row",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/inspector_fields/fn.inspector_field_row"
+                            "link": "/reference/pill_editor_shell/shell/inspector_fields/fn.inspector_field_row"
                           },
                           {
                             "text": "inspector_row",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/inspector_fields/fn.inspector_row"
+                            "link": "/reference/pill_editor_shell/shell/inspector_fields/fn.inspector_row"
                           },
                           {
                             "text": "is_scalar_field",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/inspector_fields/fn.is_scalar_field"
+                            "link": "/reference/pill_editor_shell/shell/inspector_fields/fn.is_scalar_field"
                           },
                           {
                             "text": "leaf_values",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/inspector_fields/fn.leaf_values"
+                            "link": "/reference/pill_editor_shell/shell/inspector_fields/fn.leaf_values"
                           },
                           {
                             "text": "queue_element_edit",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/inspector_fields/fn.queue_element_edit"
+                            "link": "/reference/pill_editor_shell/shell/inspector_fields/fn.queue_element_edit"
                           },
                           {
                             "text": "queue_field_edit",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/inspector_fields/fn.queue_field_edit"
+                            "link": "/reference/pill_editor_shell/shell/inspector_fields/fn.queue_field_edit"
                           },
                           {
                             "text": "record_row_placement",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/inspector_fields/fn.record_row_placement"
+                            "link": "/reference/pill_editor_shell/shell/inspector_fields/fn.record_row_placement"
+                          },
+                          {
+                            "text": "reference_button_width",
+                            "link": "/reference/pill_editor_shell/shell/inspector_fields/fn.reference_button_width"
                           },
                           {
                             "text": "remember_asset_row_rect",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/inspector_fields/fn.remember_asset_row_rect"
+                            "link": "/reference/pill_editor_shell/shell/inspector_fields/fn.remember_asset_row_rect"
                           },
                           {
                             "text": "remember_asset_row_text",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/inspector_fields/fn.remember_asset_row_text"
+                            "link": "/reference/pill_editor_shell/shell/inspector_fields/fn.remember_asset_row_text"
                           },
                           {
                             "text": "remember_entity_row_rect",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/inspector_fields/fn.remember_entity_row_rect"
+                            "link": "/reference/pill_editor_shell/shell/inspector_fields/fn.remember_entity_row_rect"
                           },
                           {
                             "text": "remember_entity_row_text",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/inspector_fields/fn.remember_entity_row_text"
+                            "link": "/reference/pill_editor_shell/shell/inspector_fields/fn.remember_entity_row_text"
                           },
                           {
                             "text": "row_is_mixed",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/inspector_fields/fn.row_is_mixed"
+                            "link": "/reference/pill_editor_shell/shell/inspector_fields/fn.row_is_mixed"
                           },
                           {
                             "text": "row_label",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/inspector_fields/fn.row_label"
+                            "link": "/reference/pill_editor_shell/shell/inspector_fields/fn.row_label"
+                          },
+                          {
+                            "text": "side_button_size",
+                            "link": "/reference/pill_editor_shell/shell/inspector_fields/fn.side_button_size"
+                          },
+                          {
+                            "text": "slot_width_within",
+                            "link": "/reference/pill_editor_shell/shell/inspector_fields/fn.slot_width_within"
+                          },
+                          {
+                            "text": "vector_row",
+                            "link": "/reference/pill_editor_shell/shell/inspector_fields/fn.vector_row"
+                          },
+                          {
+                            "text": "vector_slot_width",
+                            "link": "/reference/pill_editor_shell/shell/inspector_fields/fn.vector_slot_width"
+                          },
+                          {
+                            "text": "vector_slots",
+                            "link": "/reference/pill_editor_shell/shell/inspector_fields/fn.vector_slots"
                           }
                         ]
                       },
@@ -11447,11 +12721,11 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                         "items": [
                           {
                             "text": "ASSET_PICKER_HEIGHT",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/inspector_fields/constant.ASSET_PICKER_HEIGHT"
+                            "link": "/reference/pill_editor_shell/shell/inspector_fields/constant.ASSET_PICKER_HEIGHT"
                           },
                           {
                             "text": "ASSET_ROW_CLEAR_WIDTH",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/inspector_fields/constant.ASSET_ROW_CLEAR_WIDTH"
+                            "link": "/reference/pill_editor_shell/shell/inspector_fields/constant.ASSET_ROW_CLEAR_WIDTH"
                           }
                         ]
                       },
@@ -11461,7 +12735,7 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                         "items": [
                           {
                             "text": "log_row_once",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/inspector_fields/macro.log_row_once"
+                            "link": "/reference/pill_editor_shell/shell/inspector_fields/macro.log_row_once"
                           }
                         ]
                       }
@@ -11469,7 +12743,7 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                   },
                   {
                     "text": "inspector_settings",
-                    "link": "/reference/pill_editor_shell_egui_editor/shell/inspector_settings/",
+                    "link": "/reference/pill_editor_shell/shell/inspector_settings/",
                     "collapsed": true,
                     "items": [
                       {
@@ -11478,11 +12752,11 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                         "items": [
                           {
                             "text": "ListEntryDrag",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/inspector_settings/struct.ListEntryDrag"
+                            "link": "/reference/pill_editor_shell/shell/inspector_settings/struct.ListEntryDrag"
                           },
                           {
                             "text": "SettingsWalk",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/inspector_settings/struct.SettingsWalk"
+                            "link": "/reference/pill_editor_shell/shell/inspector_settings/struct.SettingsWalk"
                           }
                         ]
                       },
@@ -11492,119 +12766,119 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                         "items": [
                           {
                             "text": "asset_settings_row",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/inspector_settings/fn.asset_settings_row"
+                            "link": "/reference/pill_editor_shell/shell/inspector_settings/fn.asset_settings_row"
                           },
                           {
                             "text": "asset_settings_rows",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/inspector_settings/fn.asset_settings_rows"
+                            "link": "/reference/pill_editor_shell/shell/inspector_settings/fn.asset_settings_rows"
                           },
                           {
                             "text": "colour_parameter",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/inspector_settings/fn.colour_parameter"
+                            "link": "/reference/pill_editor_shell/shell/inspector_settings/fn.colour_parameter"
                           },
                           {
                             "text": "colour_parameter_row",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/inspector_settings/fn.colour_parameter_row"
+                            "link": "/reference/pill_editor_shell/shell/inspector_settings/fn.colour_parameter_row"
                           },
                           {
                             "text": "dropped_asset_path",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/inspector_settings/fn.dropped_asset_path"
+                            "link": "/reference/pill_editor_shell/shell/inspector_settings/fn.dropped_asset_path"
                           },
                           {
                             "text": "insertion_index",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/inspector_settings/fn.insertion_index"
+                            "link": "/reference/pill_editor_shell/shell/inspector_settings/fn.insertion_index"
                           },
                           {
                             "text": "list_append_row",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/inspector_settings/fn.list_append_row"
+                            "link": "/reference/pill_editor_shell/shell/inspector_settings/fn.list_append_row"
                           },
                           {
                             "text": "list_drag_update",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/inspector_settings/fn.list_drag_update"
+                            "link": "/reference/pill_editor_shell/shell/inspector_settings/fn.list_drag_update"
                           },
                           {
                             "text": "list_entry_field",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/inspector_settings/fn.list_entry_field"
+                            "link": "/reference/pill_editor_shell/shell/inspector_settings/fn.list_entry_field"
                           },
                           {
                             "text": "list_picker_width",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/inspector_settings/fn.list_picker_width"
+                            "link": "/reference/pill_editor_shell/shell/inspector_settings/fn.list_picker_width"
                           },
                           {
                             "text": "moved_entry",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/inspector_settings/fn.moved_entry"
+                            "link": "/reference/pill_editor_shell/shell/inspector_settings/fn.moved_entry"
                           },
                           {
                             "text": "reference_candidates",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/inspector_settings/fn.reference_candidates"
+                            "link": "/reference/pill_editor_shell/shell/inspector_settings/fn.reference_candidates"
                           },
                           {
                             "text": "reference_entries",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/inspector_settings/fn.reference_entries"
+                            "link": "/reference/pill_editor_shell/shell/inspector_settings/fn.reference_entries"
                           },
                           {
                             "text": "reference_family",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/inspector_settings/fn.reference_family"
+                            "link": "/reference/pill_editor_shell/shell/inspector_settings/fn.reference_family"
                           },
                           {
                             "text": "reference_guid",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/inspector_settings/fn.reference_guid"
+                            "link": "/reference/pill_editor_shell/shell/inspector_settings/fn.reference_guid"
                           },
                           {
                             "text": "reference_list_entry_row",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/inspector_settings/fn.reference_list_entry_row"
+                            "link": "/reference/pill_editor_shell/shell/inspector_settings/fn.reference_list_entry_row"
                           },
                           {
                             "text": "reference_list_rows",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/inspector_settings/fn.reference_list_rows"
+                            "link": "/reference/pill_editor_shell/shell/inspector_settings/fn.reference_list_rows"
                           },
                           {
                             "text": "reference_path",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/inspector_settings/fn.reference_path"
+                            "link": "/reference/pill_editor_shell/shell/inspector_settings/fn.reference_path"
                           },
                           {
                             "text": "reference_picker",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/inspector_settings/fn.reference_picker"
+                            "link": "/reference/pill_editor_shell/shell/inspector_settings/fn.reference_picker"
                           },
                           {
                             "text": "reference_row",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/inspector_settings/fn.reference_row"
+                            "link": "/reference/pill_editor_shell/shell/inspector_settings/fn.reference_row"
                           },
                           {
                             "text": "reference_text",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/inspector_settings/fn.reference_text"
+                            "link": "/reference/pill_editor_shell/shell/inspector_settings/fn.reference_text"
                           },
                           {
                             "text": "remember_list_row_rect",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/inspector_settings/fn.remember_list_row_rect"
+                            "link": "/reference/pill_editor_shell/shell/inspector_settings/fn.remember_list_row_rect"
                           },
                           {
                             "text": "settings_commit",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/inspector_settings/fn.settings_commit"
+                            "link": "/reference/pill_editor_shell/shell/inspector_settings/fn.settings_commit"
                           },
                           {
                             "text": "settings_heading",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/inspector_settings/fn.settings_heading"
+                            "link": "/reference/pill_editor_shell/shell/inspector_settings/fn.settings_heading"
                           },
                           {
                             "text": "settings_level",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/inspector_settings/fn.settings_level"
+                            "link": "/reference/pill_editor_shell/shell/inspector_settings/fn.settings_level"
                           },
                           {
                             "text": "settings_row_label",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/inspector_settings/fn.settings_row_label"
+                            "link": "/reference/pill_editor_shell/shell/inspector_settings/fn.settings_row_label"
                           },
                           {
                             "text": "settings_row_range",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/inspector_settings/fn.settings_row_range"
+                            "link": "/reference/pill_editor_shell/shell/inspector_settings/fn.settings_row_range"
                           },
                           {
                             "text": "settings_row_tooltip",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/inspector_settings/fn.settings_row_tooltip"
+                            "link": "/reference/pill_editor_shell/shell/inspector_settings/fn.settings_row_tooltip"
                           },
                           {
                             "text": "texture_guid_for",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/inspector_settings/fn.texture_guid_for"
+                            "link": "/reference/pill_editor_shell/shell/inspector_settings/fn.texture_guid_for"
                           }
                         ]
                       },
@@ -11614,11 +12888,11 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                         "items": [
                           {
                             "text": "LIST_REMOVE_WIDTH",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/inspector_settings/constant.LIST_REMOVE_WIDTH"
+                            "link": "/reference/pill_editor_shell/shell/inspector_settings/constant.LIST_REMOVE_WIDTH"
                           },
                           {
                             "text": "SETTINGS_ROW_INDENT",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/inspector_settings/constant.SETTINGS_ROW_INDENT"
+                            "link": "/reference/pill_editor_shell/shell/inspector_settings/constant.SETTINGS_ROW_INDENT"
                           }
                         ]
                       }
@@ -11626,7 +12900,7 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                   },
                   {
                     "text": "inspector_widgets",
-                    "link": "/reference/pill_editor_shell_egui_editor/shell/inspector_widgets/",
+                    "link": "/reference/pill_editor_shell/shell/inspector_widgets/",
                     "collapsed": true,
                     "items": [
                       {
@@ -11634,8 +12908,12 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                         "collapsed": true,
                         "items": [
                           {
+                            "text": "FieldEditResponse",
+                            "link": "/reference/pill_editor_shell/shell/inspector_widgets/struct.FieldEditResponse"
+                          },
+                          {
                             "text": "Number",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/inspector_widgets/struct.Number"
+                            "link": "/reference/pill_editor_shell/shell/inspector_widgets/struct.Number"
                           }
                         ]
                       },
@@ -11645,39 +12923,59 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                         "items": [
                           {
                             "text": "ascending",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/inspector_widgets/fn.ascending"
+                            "link": "/reference/pill_editor_shell/shell/inspector_widgets/fn.ascending"
                           },
                           {
                             "text": "axis_slot",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/inspector_widgets/fn.axis_slot"
+                            "link": "/reference/pill_editor_shell/shell/inspector_widgets/fn.axis_slot"
                           },
                           {
                             "text": "component_rows",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/inspector_widgets/fn.component_rows"
+                            "link": "/reference/pill_editor_shell/shell/inspector_widgets/fn.component_rows"
+                          },
+                          {
+                            "text": "continuous_edit",
+                            "link": "/reference/pill_editor_shell/shell/inspector_widgets/fn.continuous_edit"
+                          },
+                          {
+                            "text": "enum_edit",
+                            "link": "/reference/pill_editor_shell/shell/inspector_widgets/fn.enum_edit"
+                          },
+                          {
+                            "text": "fill_slider_width",
+                            "link": "/reference/pill_editor_shell/shell/inspector_widgets/fn.fill_slider_width"
                           },
                           {
                             "text": "fixed_width_field",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/inspector_widgets/fn.fixed_width_field"
+                            "link": "/reference/pill_editor_shell/shell/inspector_widgets/fn.fixed_width_field"
                           },
                           {
                             "text": "format_field_value",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/inspector_widgets/fn.format_field_value"
+                            "link": "/reference/pill_editor_shell/shell/inspector_widgets/fn.format_field_value"
                           },
                           {
                             "text": "integer_edit",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/inspector_widgets/fn.integer_edit"
+                            "link": "/reference/pill_editor_shell/shell/inspector_widgets/fn.integer_edit"
+                          },
+                          {
+                            "text": "one_shot_edit",
+                            "link": "/reference/pill_editor_shell/shell/inspector_widgets/fn.one_shot_edit"
                           },
                           {
                             "text": "read_only_row",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/inspector_widgets/fn.read_only_row"
+                            "link": "/reference/pill_editor_shell/shell/inspector_widgets/fn.read_only_row"
                           },
                           {
                             "text": "scalar_edit",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/inspector_widgets/fn.scalar_edit"
+                            "link": "/reference/pill_editor_shell/shell/inspector_widgets/fn.scalar_edit"
                           },
                           {
                             "text": "scalar_edit_decorated",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/inspector_widgets/fn.scalar_edit_decorated"
+                            "link": "/reference/pill_editor_shell/shell/inspector_widgets/fn.scalar_edit_decorated"
+                          },
+                          {
+                            "text": "stretched_drag_value",
+                            "link": "/reference/pill_editor_shell/shell/inspector_widgets/fn.stretched_drag_value"
                           }
                         ]
                       }
@@ -11685,7 +12983,7 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                   },
                   {
                     "text": "menus",
-                    "link": "/reference/pill_editor_shell_egui_editor/shell/menus/",
+                    "link": "/reference/pill_editor_shell/shell/menus/",
                     "collapsed": true,
                     "items": [
                       {
@@ -11694,11 +12992,11 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                         "items": [
                           {
                             "text": "component_menu_items",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/menus/fn.component_menu_items"
+                            "link": "/reference/pill_editor_shell/shell/menus/fn.component_menu_items"
                           },
                           {
                             "text": "scene_context_menu",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/menus/fn.scene_context_menu"
+                            "link": "/reference/pill_editor_shell/shell/menus/fn.scene_context_menu"
                           }
                         ]
                       }
@@ -11706,7 +13004,7 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                   },
                   {
                     "text": "palette",
-                    "link": "/reference/pill_editor_shell_egui_editor/shell/palette/",
+                    "link": "/reference/pill_editor_shell/shell/palette/",
                     "collapsed": true,
                     "items": [
                       {
@@ -11715,15 +13013,15 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                         "items": [
                           {
                             "text": "matches",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/palette/fn.matches"
+                            "link": "/reference/pill_editor_shell/shell/palette/fn.matches"
                           },
                           {
                             "text": "palette_window",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/palette/fn.palette_window"
+                            "link": "/reference/pill_editor_shell/shell/palette/fn.palette_window"
                           },
                           {
                             "text": "run_selected",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/palette/fn.run_selected"
+                            "link": "/reference/pill_editor_shell/shell/palette/fn.run_selected"
                           }
                         ]
                       },
@@ -11733,15 +13031,15 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                         "items": [
                           {
                             "text": "PALETTE_ROWS",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/palette/constant.PALETTE_ROWS"
+                            "link": "/reference/pill_editor_shell/shell/palette/constant.PALETTE_ROWS"
                           },
                           {
                             "text": "PALETTE_TOP",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/palette/constant.PALETTE_TOP"
+                            "link": "/reference/pill_editor_shell/shell/palette/constant.PALETTE_TOP"
                           },
                           {
                             "text": "PALETTE_WIDTH",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/palette/constant.PALETTE_WIDTH"
+                            "link": "/reference/pill_editor_shell/shell/palette/constant.PALETTE_WIDTH"
                           }
                         ]
                       }
@@ -11749,7 +13047,7 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                   },
                   {
                     "text": "panel_windows",
-                    "link": "/reference/pill_editor_shell_egui_editor/shell/panel_windows/",
+                    "link": "/reference/pill_editor_shell/shell/panel_windows/",
                     "collapsed": true,
                     "items": [
                       {
@@ -11758,7 +13056,7 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                         "items": [
                           {
                             "text": "PanelFeed",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/panel_windows/struct.PanelFeed"
+                            "link": "/reference/pill_editor_shell/shell/panel_windows/struct.PanelFeed"
                           }
                         ]
                       },
@@ -11768,7 +13066,7 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                         "items": [
                           {
                             "text": "panel_windows",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/panel_windows/fn.panel_windows"
+                            "link": "/reference/pill_editor_shell/shell/panel_windows/fn.panel_windows"
                           }
                         ]
                       }
@@ -11776,11 +13074,11 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                   },
                   {
                     "text": "prelude",
-                    "link": "/reference/pill_editor_shell_egui_editor/shell/prelude/"
+                    "link": "/reference/pill_editor_shell/shell/prelude/"
                   },
                   {
                     "text": "resource_section",
-                    "link": "/reference/pill_editor_shell_egui_editor/shell/resource_section/",
+                    "link": "/reference/pill_editor_shell/shell/resource_section/",
                     "collapsed": true,
                     "items": [
                       {
@@ -11789,11 +13087,11 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                         "items": [
                           {
                             "text": "queue_edit",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/resource_section/fn.queue_edit"
+                            "link": "/reference/pill_editor_shell/shell/resource_section/fn.queue_edit"
                           },
                           {
                             "text": "resource_section",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/resource_section/fn.resource_section"
+                            "link": "/reference/pill_editor_shell/shell/resource_section/fn.resource_section"
                           }
                         ]
                       }
@@ -11801,7 +13099,7 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                   },
                   {
                     "text": "rows",
-                    "link": "/reference/pill_editor_shell_egui_editor/shell/rows/",
+                    "link": "/reference/pill_editor_shell/shell/rows/",
                     "collapsed": true,
                     "items": [
                       {
@@ -11809,32 +13107,40 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                         "collapsed": true,
                         "items": [
                           {
+                            "text": "control_column",
+                            "link": "/reference/pill_editor_shell/shell/rows/fn.control_column"
+                          },
+                          {
                             "text": "label_cell",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/rows/fn.label_cell"
+                            "link": "/reference/pill_editor_shell/shell/rows/fn.label_cell"
                           },
                           {
                             "text": "label_cell_in",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/rows/fn.label_cell_in"
+                            "link": "/reference/pill_editor_shell/shell/rows/fn.label_cell_in"
+                          },
+                          {
+                            "text": "label_column_width",
+                            "link": "/reference/pill_editor_shell/shell/rows/fn.label_column_width"
                           },
                           {
                             "text": "label_gap",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/rows/fn.label_gap"
+                            "link": "/reference/pill_editor_shell/shell/rows/fn.label_gap"
                           },
                           {
                             "text": "row",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/rows/fn.row"
+                            "link": "/reference/pill_editor_shell/shell/rows/fn.row"
                           },
                           {
                             "text": "row_in",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/rows/fn.row_in"
+                            "link": "/reference/pill_editor_shell/shell/rows/fn.row_in"
                           },
                           {
                             "text": "value_row",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/rows/fn.value_row"
+                            "link": "/reference/pill_editor_shell/shell/rows/fn.value_row"
                           },
                           {
                             "text": "value_row_in",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/rows/fn.value_row_in"
+                            "link": "/reference/pill_editor_shell/shell/rows/fn.value_row_in"
                           }
                         ]
                       },
@@ -11843,20 +13149,36 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                         "collapsed": true,
                         "items": [
                           {
+                            "text": "CONTROL_MIN_WIDTH",
+                            "link": "/reference/pill_editor_shell/shell/rows/constant.CONTROL_MIN_WIDTH"
+                          },
+                          {
+                            "text": "LABEL_COLUMN_FRACTION",
+                            "link": "/reference/pill_editor_shell/shell/rows/constant.LABEL_COLUMN_FRACTION"
+                          },
+                          {
+                            "text": "LABEL_COLUMN_MAX_WIDTH",
+                            "link": "/reference/pill_editor_shell/shell/rows/constant.LABEL_COLUMN_MAX_WIDTH"
+                          },
+                          {
+                            "text": "LABEL_COLUMN_MIN_WIDTH",
+                            "link": "/reference/pill_editor_shell/shell/rows/constant.LABEL_COLUMN_MIN_WIDTH"
+                          },
+                          {
                             "text": "ROW_HEIGHT",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/rows/constant.ROW_HEIGHT"
+                            "link": "/reference/pill_editor_shell/shell/rows/constant.ROW_HEIGHT"
                           },
                           {
                             "text": "ROW_LABEL_GAP",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/rows/constant.ROW_LABEL_GAP"
+                            "link": "/reference/pill_editor_shell/shell/rows/constant.ROW_LABEL_GAP"
                           },
                           {
                             "text": "ROW_LABEL_WIDTH",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/rows/constant.ROW_LABEL_WIDTH"
+                            "link": "/reference/pill_editor_shell/shell/rows/constant.ROW_LABEL_WIDTH"
                           },
                           {
                             "text": "WIDE_ROW_LABEL_WIDTH",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/rows/constant.WIDE_ROW_LABEL_WIDTH"
+                            "link": "/reference/pill_editor_shell/shell/rows/constant.WIDE_ROW_LABEL_WIDTH"
                           }
                         ]
                       }
@@ -11864,7 +13186,7 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                   },
                   {
                     "text": "settle",
-                    "link": "/reference/pill_editor_shell_egui_editor/shell/settle/",
+                    "link": "/reference/pill_editor_shell/shell/settle/",
                     "collapsed": true,
                     "items": [
                       {
@@ -11873,7 +13195,7 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                         "items": [
                           {
                             "text": "FrameRequests",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/settle/struct.FrameRequests"
+                            "link": "/reference/pill_editor_shell/shell/settle/struct.FrameRequests"
                           }
                         ]
                       },
@@ -11883,7 +13205,7 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                         "items": [
                           {
                             "text": "settle_pass",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/settle/fn.settle_pass"
+                            "link": "/reference/pill_editor_shell/shell/settle/fn.settle_pass"
                           }
                         ]
                       }
@@ -11891,7 +13213,7 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                   },
                   {
                     "text": "spline_tool",
-                    "link": "/reference/pill_editor_shell_egui_editor/shell/spline_tool/",
+                    "link": "/reference/pill_editor_shell/shell/spline_tool/",
                     "collapsed": true,
                     "items": [
                       {
@@ -11900,7 +13222,7 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                         "items": [
                           {
                             "text": "Reseed",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/spline_tool/struct.Reseed"
+                            "link": "/reference/pill_editor_shell/shell/spline_tool/struct.Reseed"
                           }
                         ]
                       },
@@ -11910,35 +13232,35 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                         "items": [
                           {
                             "text": "field_element_index",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/spline_tool/fn.field_element_index"
+                            "link": "/reference/pill_editor_shell/shell/spline_tool/fn.field_element_index"
                           },
                           {
                             "text": "point_leaf",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/spline_tool/fn.point_leaf"
+                            "link": "/reference/pill_editor_shell/shell/spline_tool/fn.point_leaf"
                           },
                           {
                             "text": "point_write",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/spline_tool/fn.point_write"
+                            "link": "/reference/pill_editor_shell/shell/spline_tool/fn.point_write"
                           },
                           {
                             "text": "reseed_body",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/spline_tool/fn.reseed_body"
+                            "link": "/reference/pill_editor_shell/shell/spline_tool/fn.reseed_body"
                           },
                           {
                             "text": "reseed_command",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/spline_tool/fn.reseed_command"
+                            "link": "/reference/pill_editor_shell/shell/spline_tool/fn.reseed_command"
                           },
                           {
                             "text": "reseed_window",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/spline_tool/fn.reseed_window"
+                            "link": "/reference/pill_editor_shell/shell/spline_tool/fn.reseed_window"
                           },
                           {
                             "text": "spline_point_count",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/spline_tool/fn.spline_point_count"
+                            "link": "/reference/pill_editor_shell/shell/spline_tool/fn.spline_point_count"
                           },
                           {
                             "text": "spline_tool_panel",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/spline_tool/fn.spline_tool_panel"
+                            "link": "/reference/pill_editor_shell/shell/spline_tool/fn.spline_tool_panel"
                           }
                         ]
                       },
@@ -11948,27 +13270,27 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                         "items": [
                           {
                             "text": "POINTS_SHOWN",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/spline_tool/constant.POINTS_SHOWN"
+                            "link": "/reference/pill_editor_shell/shell/spline_tool/constant.POINTS_SHOWN"
                           },
                           {
                             "text": "RESEED_POINTS",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/spline_tool/constant.RESEED_POINTS"
+                            "link": "/reference/pill_editor_shell/shell/spline_tool/constant.RESEED_POINTS"
                           },
                           {
                             "text": "RESEED_WINDOW",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/spline_tool/constant.RESEED_WINDOW"
+                            "link": "/reference/pill_editor_shell/shell/spline_tool/constant.RESEED_WINDOW"
                           },
                           {
                             "text": "SPLINE_COMPONENT",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/spline_tool/constant.SPLINE_COMPONENT"
+                            "link": "/reference/pill_editor_shell/shell/spline_tool/constant.SPLINE_COMPONENT"
                           },
                           {
                             "text": "SPLINE_PANEL_ID",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/spline_tool/constant.SPLINE_PANEL_ID"
+                            "link": "/reference/pill_editor_shell/shell/spline_tool/constant.SPLINE_PANEL_ID"
                           },
                           {
                             "text": "SPLINE_POINTS_FIELD",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/spline_tool/constant.SPLINE_POINTS_FIELD"
+                            "link": "/reference/pill_editor_shell/shell/spline_tool/constant.SPLINE_POINTS_FIELD"
                           }
                         ]
                       }
@@ -11976,7 +13298,7 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                   },
                   {
                     "text": "tab_assets",
-                    "link": "/reference/pill_editor_shell_egui_editor/shell/tab_assets/",
+                    "link": "/reference/pill_editor_shell/shell/tab_assets/",
                     "collapsed": true,
                     "items": [
                       {
@@ -11985,27 +13307,27 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                         "items": [
                           {
                             "text": "assets_grid",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/tab_assets/fn.assets_grid"
+                            "link": "/reference/pill_editor_shell/shell/tab_assets/fn.assets_grid"
                           },
                           {
                             "text": "assets_path_bar",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/tab_assets/fn.assets_path_bar"
+                            "link": "/reference/pill_editor_shell/shell/tab_assets/fn.assets_path_bar"
                           },
                           {
                             "text": "assets_tab",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/tab_assets/fn.assets_tab"
+                            "link": "/reference/pill_editor_shell/shell/tab_assets/fn.assets_tab"
                           },
                           {
                             "text": "assets_tree",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/tab_assets/fn.assets_tree"
+                            "link": "/reference/pill_editor_shell/shell/tab_assets/fn.assets_tree"
                           },
                           {
                             "text": "assets_zoom_bar",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/tab_assets/fn.assets_zoom_bar"
+                            "link": "/reference/pill_editor_shell/shell/tab_assets/fn.assets_zoom_bar"
                           },
                           {
                             "text": "folder_tree_rows",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/tab_assets/fn.folder_tree_rows"
+                            "link": "/reference/pill_editor_shell/shell/tab_assets/fn.folder_tree_rows"
                           }
                         ]
                       },
@@ -12015,23 +13337,23 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                         "items": [
                           {
                             "text": "ASSETS_TREE_CARET_SIZE",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/tab_assets/constant.ASSETS_TREE_CARET_SIZE"
+                            "link": "/reference/pill_editor_shell/shell/tab_assets/constant.ASSETS_TREE_CARET_SIZE"
                           },
                           {
                             "text": "ASSETS_TREE_CARET_WIDTH",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/tab_assets/constant.ASSETS_TREE_CARET_WIDTH"
+                            "link": "/reference/pill_editor_shell/shell/tab_assets/constant.ASSETS_TREE_CARET_WIDTH"
                           },
                           {
                             "text": "ASSETS_TREE_INDENT",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/tab_assets/constant.ASSETS_TREE_INDENT"
+                            "link": "/reference/pill_editor_shell/shell/tab_assets/constant.ASSETS_TREE_INDENT"
                           },
                           {
                             "text": "ASSETS_TREE_WIDTH",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/tab_assets/constant.ASSETS_TREE_WIDTH"
+                            "link": "/reference/pill_editor_shell/shell/tab_assets/constant.ASSETS_TREE_WIDTH"
                           },
                           {
                             "text": "ASSETS_TREE_WIDTH_RANGE",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/tab_assets/constant.ASSETS_TREE_WIDTH_RANGE"
+                            "link": "/reference/pill_editor_shell/shell/tab_assets/constant.ASSETS_TREE_WIDTH_RANGE"
                           }
                         ]
                       }
@@ -12039,7 +13361,7 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                   },
                   {
                     "text": "tab_console",
-                    "link": "/reference/pill_editor_shell_egui_editor/shell/tab_console/",
+                    "link": "/reference/pill_editor_shell/shell/tab_console/",
                     "collapsed": true,
                     "items": [
                       {
@@ -12048,11 +13370,11 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                         "items": [
                           {
                             "text": "console_level_colour",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/tab_console/fn.console_level_colour"
+                            "link": "/reference/pill_editor_shell/shell/tab_console/fn.console_level_colour"
                           },
                           {
                             "text": "console_tab",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/tab_console/fn.console_tab"
+                            "link": "/reference/pill_editor_shell/shell/tab_console/fn.console_tab"
                           }
                         ]
                       },
@@ -12062,7 +13384,7 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                         "items": [
                           {
                             "text": "CONSOLE_LEVELS",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/tab_console/constant.CONSOLE_LEVELS"
+                            "link": "/reference/pill_editor_shell/shell/tab_console/constant.CONSOLE_LEVELS"
                           }
                         ]
                       }
@@ -12070,7 +13392,7 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                   },
                   {
                     "text": "tab_demo",
-                    "link": "/reference/pill_editor_shell_egui_editor/shell/tab_demo/",
+                    "link": "/reference/pill_editor_shell/shell/tab_demo/",
                     "collapsed": true,
                     "items": [
                       {
@@ -12079,19 +13401,19 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                         "items": [
                           {
                             "text": "burn_micros",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/tab_demo/fn.burn_micros"
+                            "link": "/reference/pill_editor_shell/shell/tab_demo/fn.burn_micros"
                           },
                           {
                             "text": "demo_confirm_window",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/tab_demo/fn.demo_confirm_window"
+                            "link": "/reference/pill_editor_shell/shell/tab_demo/fn.demo_confirm_window"
                           },
                           {
                             "text": "demo_panel",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/tab_demo/fn.demo_panel"
+                            "link": "/reference/pill_editor_shell/shell/tab_demo/fn.demo_panel"
                           },
                           {
                             "text": "slow_requested",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/tab_demo/fn.slow_requested"
+                            "link": "/reference/pill_editor_shell/shell/tab_demo/fn.slow_requested"
                           }
                         ]
                       },
@@ -12101,15 +13423,15 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                         "items": [
                           {
                             "text": "DEMO_CONFIRM_WINDOW",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/tab_demo/constant.DEMO_CONFIRM_WINDOW"
+                            "link": "/reference/pill_editor_shell/shell/tab_demo/constant.DEMO_CONFIRM_WINDOW"
                           },
                           {
                             "text": "PANEL_SLOW_ENV",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/tab_demo/constant.PANEL_SLOW_ENV"
+                            "link": "/reference/pill_editor_shell/shell/tab_demo/constant.PANEL_SLOW_ENV"
                           },
                           {
                             "text": "SLOW_MULTIPLE",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/tab_demo/constant.SLOW_MULTIPLE"
+                            "link": "/reference/pill_editor_shell/shell/tab_demo/constant.SLOW_MULTIPLE"
                           }
                         ]
                       }
@@ -12117,7 +13439,7 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                   },
                   {
                     "text": "tab_entities",
-                    "link": "/reference/pill_editor_shell_egui_editor/shell/tab_entities/",
+                    "link": "/reference/pill_editor_shell/shell/tab_entities/",
                     "collapsed": true,
                     "items": [
                       {
@@ -12126,7 +13448,7 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                         "items": [
                           {
                             "text": "DraggedEntity",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/tab_entities/struct.DraggedEntity"
+                            "link": "/reference/pill_editor_shell/shell/tab_entities/struct.DraggedEntity"
                           }
                         ]
                       },
@@ -12136,27 +13458,27 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                         "items": [
                           {
                             "text": "entities_tab",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/tab_entities/fn.entities_tab"
+                            "link": "/reference/pill_editor_shell/shell/tab_entities/fn.entities_tab"
                           },
                           {
                             "text": "entity_menu_items",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/tab_entities/fn.entity_menu_items"
+                            "link": "/reference/pill_editor_shell/shell/tab_entities/fn.entity_menu_items"
                           },
                           {
                             "text": "entity_row_height",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/tab_entities/fn.entity_row_height"
+                            "link": "/reference/pill_editor_shell/shell/tab_entities/fn.entity_row_height"
                           },
                           {
                             "text": "entity_row_label",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/tab_entities/fn.entity_row_label"
+                            "link": "/reference/pill_editor_shell/shell/tab_entities/fn.entity_row_label"
                           },
                           {
                             "text": "entity_rows",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/tab_entities/fn.entity_rows"
+                            "link": "/reference/pill_editor_shell/shell/tab_entities/fn.entity_rows"
                           },
                           {
                             "text": "remember_hierarchy_row_rect",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/tab_entities/fn.remember_hierarchy_row_rect"
+                            "link": "/reference/pill_editor_shell/shell/tab_entities/fn.remember_hierarchy_row_rect"
                           }
                         ]
                       }
@@ -12164,7 +13486,7 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                   },
                   {
                     "text": "tab_inspector",
-                    "link": "/reference/pill_editor_shell_egui_editor/shell/tab_inspector/",
+                    "link": "/reference/pill_editor_shell/shell/tab_inspector/",
                     "collapsed": true,
                     "items": [
                       {
@@ -12173,31 +13495,31 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                         "items": [
                           {
                             "text": "addable_components",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/tab_inspector/fn.addable_components"
+                            "link": "/reference/pill_editor_shell/shell/tab_inspector/fn.addable_components"
                           },
                           {
                             "text": "entity_inspector",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/tab_inspector/fn.entity_inspector"
+                            "link": "/reference/pill_editor_shell/shell/tab_inspector/fn.entity_inspector"
                           },
                           {
                             "text": "inspector_add_popup",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/tab_inspector/fn.inspector_add_popup"
+                            "link": "/reference/pill_editor_shell/shell/tab_inspector/fn.inspector_add_popup"
                           },
                           {
                             "text": "inspector_header",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/tab_inspector/fn.inspector_header"
+                            "link": "/reference/pill_editor_shell/shell/tab_inspector/fn.inspector_header"
                           },
                           {
                             "text": "inspector_section_header",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/tab_inspector/fn.inspector_section_header"
+                            "link": "/reference/pill_editor_shell/shell/tab_inspector/fn.inspector_section_header"
                           },
                           {
                             "text": "inspector_tab",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/tab_inspector/fn.inspector_tab"
+                            "link": "/reference/pill_editor_shell/shell/tab_inspector/fn.inspector_tab"
                           },
                           {
                             "text": "inspector_targets",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/tab_inspector/fn.inspector_targets"
+                            "link": "/reference/pill_editor_shell/shell/tab_inspector/fn.inspector_targets"
                           }
                         ]
                       },
@@ -12207,15 +13529,31 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                         "items": [
                           {
                             "text": "INSPECTOR_VECTOR_FIELD_HEIGHT",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/tab_inspector/constant.INSPECTOR_VECTOR_FIELD_HEIGHT"
+                            "link": "/reference/pill_editor_shell/shell/tab_inspector/constant.INSPECTOR_VECTOR_FIELD_HEIGHT"
                           },
                           {
                             "text": "INSPECTOR_VECTOR_FIELD_WIDTH",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/tab_inspector/constant.INSPECTOR_VECTOR_FIELD_WIDTH"
+                            "link": "/reference/pill_editor_shell/shell/tab_inspector/constant.INSPECTOR_VECTOR_FIELD_WIDTH"
                           },
                           {
                             "text": "INSPECTOR_VECTOR_LABEL_WIDTH",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/tab_inspector/constant.INSPECTOR_VECTOR_LABEL_WIDTH"
+                            "link": "/reference/pill_editor_shell/shell/tab_inspector/constant.INSPECTOR_VECTOR_LABEL_WIDTH"
+                          },
+                          {
+                            "text": "SECTION_LINE_GAP",
+                            "link": "/reference/pill_editor_shell/shell/tab_inspector/constant.SECTION_LINE_GAP"
+                          },
+                          {
+                            "text": "VECTOR_OWN_LINE_INDENT",
+                            "link": "/reference/pill_editor_shell/shell/tab_inspector/constant.VECTOR_OWN_LINE_INDENT"
+                          },
+                          {
+                            "text": "VECTOR_SLOT_GAP",
+                            "link": "/reference/pill_editor_shell/shell/tab_inspector/constant.VECTOR_SLOT_GAP"
+                          },
+                          {
+                            "text": "VECTOR_SLOT_MIN_WIDTH",
+                            "link": "/reference/pill_editor_shell/shell/tab_inspector/constant.VECTOR_SLOT_MIN_WIDTH"
                           }
                         ]
                       }
@@ -12223,7 +13561,7 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                   },
                   {
                     "text": "tab_preferences",
-                    "link": "/reference/pill_editor_shell_egui_editor/shell/tab_preferences/",
+                    "link": "/reference/pill_editor_shell/shell/tab_preferences/",
                     "collapsed": true,
                     "items": [
                       {
@@ -12232,7 +13570,7 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                         "items": [
                           {
                             "text": "preferences_tab",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/tab_preferences/fn.preferences_tab"
+                            "link": "/reference/pill_editor_shell/shell/tab_preferences/fn.preferences_tab"
                           }
                         ]
                       }
@@ -12240,7 +13578,7 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                   },
                   {
                     "text": "tab_problems",
-                    "link": "/reference/pill_editor_shell_egui_editor/shell/tab_problems/",
+                    "link": "/reference/pill_editor_shell/shell/tab_problems/",
                     "collapsed": true,
                     "items": [
                       {
@@ -12249,7 +13587,7 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                         "items": [
                           {
                             "text": "problems_tab",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/tab_problems/fn.problems_tab"
+                            "link": "/reference/pill_editor_shell/shell/tab_problems/fn.problems_tab"
                           }
                         ]
                       }
@@ -12257,7 +13595,7 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                   },
                   {
                     "text": "tab_statistics",
-                    "link": "/reference/pill_editor_shell_egui_editor/shell/tab_statistics/",
+                    "link": "/reference/pill_editor_shell/shell/tab_statistics/",
                     "collapsed": true,
                     "items": [
                       {
@@ -12266,7 +13604,7 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                         "items": [
                           {
                             "text": "statistics_tab",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/tab_statistics/fn.statistics_tab"
+                            "link": "/reference/pill_editor_shell/shell/tab_statistics/fn.statistics_tab"
                           }
                         ]
                       }
@@ -12274,7 +13612,7 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                   },
                   {
                     "text": "tab_systems",
-                    "link": "/reference/pill_editor_shell_egui_editor/shell/tab_systems/",
+                    "link": "/reference/pill_editor_shell/shell/tab_systems/",
                     "collapsed": true,
                     "items": [
                       {
@@ -12283,7 +13621,7 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                         "items": [
                           {
                             "text": "systems_tab",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/tab_systems/fn.systems_tab"
+                            "link": "/reference/pill_editor_shell/shell/tab_systems/fn.systems_tab"
                           }
                         ]
                       }
@@ -12291,7 +13629,7 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                   },
                   {
                     "text": "toasts",
-                    "link": "/reference/pill_editor_shell_egui_editor/shell/toasts/",
+                    "link": "/reference/pill_editor_shell/shell/toasts/",
                     "collapsed": true,
                     "items": [
                       {
@@ -12300,15 +13638,15 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                         "items": [
                           {
                             "text": "draw_toasts",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/toasts/fn.draw_toasts"
+                            "link": "/reference/pill_editor_shell/shell/toasts/fn.draw_toasts"
                           },
                           {
                             "text": "level_colour",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/toasts/fn.level_colour"
+                            "link": "/reference/pill_editor_shell/shell/toasts/fn.level_colour"
                           },
                           {
                             "text": "push_notices",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/toasts/fn.push_notices"
+                            "link": "/reference/pill_editor_shell/shell/toasts/fn.push_notices"
                           }
                         ]
                       },
@@ -12318,23 +13656,23 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                         "items": [
                           {
                             "text": "TOAST_GAP",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/toasts/constant.TOAST_GAP"
+                            "link": "/reference/pill_editor_shell/shell/toasts/constant.TOAST_GAP"
                           },
                           {
                             "text": "TOAST_HEIGHT",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/toasts/constant.TOAST_HEIGHT"
+                            "link": "/reference/pill_editor_shell/shell/toasts/constant.TOAST_HEIGHT"
                           },
                           {
                             "text": "TOAST_LEFT",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/toasts/constant.TOAST_LEFT"
+                            "link": "/reference/pill_editor_shell/shell/toasts/constant.TOAST_LEFT"
                           },
                           {
                             "text": "TOAST_TOP",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/toasts/constant.TOAST_TOP"
+                            "link": "/reference/pill_editor_shell/shell/toasts/constant.TOAST_TOP"
                           },
                           {
                             "text": "TOAST_WIDTH",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/toasts/constant.TOAST_WIDTH"
+                            "link": "/reference/pill_editor_shell/shell/toasts/constant.TOAST_WIDTH"
                           }
                         ]
                       }
@@ -12342,7 +13680,7 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                   },
                   {
                     "text": "toolbox_panel",
-                    "link": "/reference/pill_editor_shell_egui_editor/shell/toolbox_panel/",
+                    "link": "/reference/pill_editor_shell/shell/toolbox_panel/",
                     "collapsed": true,
                     "items": [
                       {
@@ -12351,7 +13689,7 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                         "items": [
                           {
                             "text": "toolbox_overlay",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/toolbox_panel/fn.toolbox_overlay"
+                            "link": "/reference/pill_editor_shell/shell/toolbox_panel/fn.toolbox_overlay"
                           }
                         ]
                       }
@@ -12359,7 +13697,7 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                   },
                   {
                     "text": "views",
-                    "link": "/reference/pill_editor_shell_egui_editor/shell/views/",
+                    "link": "/reference/pill_editor_shell/shell/views/",
                     "collapsed": true,
                     "items": [
                       {
@@ -12368,27 +13706,31 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                         "items": [
                           {
                             "text": "badge_shadow_centres",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/views/fn.badge_shadow_centres"
+                            "link": "/reference/pill_editor_shell/shell/views/fn.badge_shadow_centres"
                           },
                           {
                             "text": "frame_counter_rect",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/views/fn.frame_counter_rect"
+                            "link": "/reference/pill_editor_shell/shell/views/fn.frame_counter_rect"
                           },
                           {
                             "text": "scene_badges",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/views/fn.scene_badges"
+                            "link": "/reference/pill_editor_shell/shell/views/fn.scene_badges"
                           },
                           {
                             "text": "scene_body_rect",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/views/fn.scene_body_rect"
+                            "link": "/reference/pill_editor_shell/shell/views/fn.scene_body_rect"
+                          },
+                          {
+                            "text": "scene_marquee",
+                            "link": "/reference/pill_editor_shell/shell/views/fn.scene_marquee"
                           },
                           {
                             "text": "scene_overlay",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/views/fn.scene_overlay"
+                            "link": "/reference/pill_editor_shell/shell/views/fn.scene_overlay"
                           },
                           {
                             "text": "shell_rect",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/views/fn.shell_rect"
+                            "link": "/reference/pill_editor_shell/shell/views/fn.shell_rect"
                           }
                         ]
                       },
@@ -12398,43 +13740,47 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                         "items": [
                           {
                             "text": "SCENE_BADGE_PADDING",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/views/constant.SCENE_BADGE_PADDING"
+                            "link": "/reference/pill_editor_shell/shell/views/constant.SCENE_BADGE_PADDING"
                           },
                           {
                             "text": "SCENE_BADGE_SHADOW_ALPHA",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/views/constant.SCENE_BADGE_SHADOW_ALPHA"
+                            "link": "/reference/pill_editor_shell/shell/views/constant.SCENE_BADGE_SHADOW_ALPHA"
                           },
                           {
                             "text": "SCENE_BADGE_SHADOW_BLUR",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/views/constant.SCENE_BADGE_SHADOW_BLUR"
+                            "link": "/reference/pill_editor_shell/shell/views/constant.SCENE_BADGE_SHADOW_BLUR"
                           },
                           {
                             "text": "SCENE_BADGE_SHADOW_DISTANCE",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/views/constant.SCENE_BADGE_SHADOW_DISTANCE"
+                            "link": "/reference/pill_editor_shell/shell/views/constant.SCENE_BADGE_SHADOW_DISTANCE"
                           },
                           {
                             "text": "SCENE_BADGE_SHADOW_SAMPLES",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/views/constant.SCENE_BADGE_SHADOW_SAMPLES"
+                            "link": "/reference/pill_editor_shell/shell/views/constant.SCENE_BADGE_SHADOW_SAMPLES"
                           },
                           {
                             "text": "SCENE_COUNTER_HEIGHT",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/views/constant.SCENE_COUNTER_HEIGHT"
+                            "link": "/reference/pill_editor_shell/shell/views/constant.SCENE_COUNTER_HEIGHT"
                           },
                           {
                             "text": "SCENE_COUNTER_MARGIN",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/views/constant.SCENE_COUNTER_MARGIN"
+                            "link": "/reference/pill_editor_shell/shell/views/constant.SCENE_COUNTER_MARGIN"
                           },
                           {
                             "text": "SCENE_COUNTER_WIDTH",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/views/constant.SCENE_COUNTER_WIDTH"
+                            "link": "/reference/pill_editor_shell/shell/views/constant.SCENE_COUNTER_WIDTH"
                           },
                           {
-                            "text": "SCENE_RECT_OVERSHOOT",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/views/constant.SCENE_RECT_OVERSHOOT"
+                            "text": "SCENE_MARQUEE_FILL_OPACITY",
+                            "link": "/reference/pill_editor_shell/shell/views/constant.SCENE_MARQUEE_FILL_OPACITY"
+                          },
+                          {
+                            "text": "SCENE_MARQUEE_STROKE_WIDTH",
+                            "link": "/reference/pill_editor_shell/shell/views/constant.SCENE_MARQUEE_STROKE_WIDTH"
                           },
                           {
                             "text": "SLOW_UPDATE_MICROS",
-                            "link": "/reference/pill_editor_shell_egui_editor/shell/views/constant.SLOW_UPDATE_MICROS"
+                            "link": "/reference/pill_editor_shell/shell/views/constant.SLOW_UPDATE_MICROS"
                           }
                         ]
                       }
@@ -12448,7 +13794,7 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                 "items": [
                   {
                     "text": "EditorTabViewer",
-                    "link": "/reference/pill_editor_shell_egui_editor/shell/struct.EditorTabViewer"
+                    "link": "/reference/pill_editor_shell/shell/struct.EditorTabViewer"
                   }
                 ]
               },
@@ -12458,35 +13804,35 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                 "items": [
                   {
                     "text": "draw_module_panel",
-                    "link": "/reference/pill_editor_shell_egui_editor/shell/fn.draw_module_panel"
+                    "link": "/reference/pill_editor_shell/shell/fn.draw_module_panel"
                   },
                   {
                     "text": "panel_feed",
-                    "link": "/reference/pill_editor_shell_egui_editor/shell/fn.panel_feed"
+                    "link": "/reference/pill_editor_shell/shell/fn.panel_feed"
                   },
                   {
                     "text": "run_frame",
-                    "link": "/reference/pill_editor_shell_egui_editor/shell/fn.run_frame"
+                    "link": "/reference/pill_editor_shell/shell/fn.run_frame"
                   },
                   {
                     "text": "run_popout_passes",
-                    "link": "/reference/pill_editor_shell_egui_editor/shell/fn.run_popout_passes"
+                    "link": "/reference/pill_editor_shell/shell/fn.run_popout_passes"
                   },
                   {
                     "text": "tab_body",
-                    "link": "/reference/pill_editor_shell_egui_editor/shell/fn.tab_body"
+                    "link": "/reference/pill_editor_shell/shell/fn.tab_body"
                   },
                   {
                     "text": "tab_button",
-                    "link": "/reference/pill_editor_shell_egui_editor/shell/fn.tab_button"
+                    "link": "/reference/pill_editor_shell/shell/fn.tab_button"
                   },
                   {
                     "text": "tab_context_menu",
-                    "link": "/reference/pill_editor_shell_egui_editor/shell/fn.tab_context_menu"
+                    "link": "/reference/pill_editor_shell/shell/fn.tab_context_menu"
                   },
                   {
                     "text": "tab_title",
-                    "link": "/reference/pill_editor_shell_egui_editor/shell/fn.tab_title"
+                    "link": "/reference/pill_editor_shell/shell/fn.tab_title"
                   }
                 ]
               }
@@ -12499,20 +13845,16 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
         "collapsed": true,
         "items": [
           {
-            "text": "__pill_hot_descriptor_egui_shell_update",
-            "link": "/reference/pill_editor_shell_egui_editor/fn.__pill_hot_descriptor_egui_shell_update"
-          },
-          {
             "text": "egui_shell_update",
-            "link": "/reference/pill_editor_shell_egui_editor/fn.egui_shell_update"
+            "link": "/reference/pill_editor_shell/fn.egui_shell_update"
           },
           {
             "text": "init",
-            "link": "/reference/pill_editor_shell_egui_editor/fn.init"
+            "link": "/reference/pill_editor_shell/fn.init"
           },
           {
             "text": "register",
-            "link": "/reference/pill_editor_shell_egui_editor/fn.register"
+            "link": "/reference/pill_editor_shell/fn.register"
           }
         ]
       }
@@ -12561,6 +13903,10 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                     "link": "/reference/pill_engine/component_registry/struct.PillValueTypeDescriptor"
                   },
                   {
+                    "text": "PreviousLayoutResolvers",
+                    "link": "/reference/pill_engine/component_registry/struct.PreviousLayoutResolvers"
+                  },
+                  {
                     "text": "ValueTypeLayoutScope",
                     "link": "/reference/pill_engine/component_registry/struct.ValueTypeLayoutScope"
                   }
@@ -12573,6 +13919,10 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                   {
                     "text": "copy_descriptors",
                     "link": "/reference/pill_engine/component_registry/fn.copy_descriptors"
+                  },
+                  {
+                    "text": "declared_names_are_unique",
+                    "link": "/reference/pill_engine/component_registry/fn.declared_names_are_unique"
                   },
                   {
                     "text": "field_accessor_descriptors",
@@ -12601,6 +13951,10 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                   {
                     "text": "register_all_components",
                     "link": "/reference/pill_engine/component_registry/fn.register_all_components"
+                  },
+                  {
+                    "text": "resolve_enum_layout",
+                    "link": "/reference/pill_engine/component_registry/fn.resolve_enum_layout"
                   },
                   {
                     "text": "resolve_value_type_layout",
@@ -12678,6 +14032,10 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                     "link": "/reference/pill_engine/declarations/struct.DeclarationBaseline"
                   },
                   {
+                    "text": "DuplicateDeclaredName",
+                    "link": "/reference/pill_engine/declarations/struct.DuplicateDeclaredName"
+                  },
+                  {
                     "text": "PillAssetDescriptor",
                     "link": "/reference/pill_engine/declarations/struct.PillAssetDescriptor"
                   },
@@ -12686,8 +14044,22 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                     "link": "/reference/pill_engine/declarations/struct.PillResourceDescriptor"
                   },
                   {
+                    "text": "PillScriptDescriptor",
+                    "link": "/reference/pill_engine/declarations/struct.PillScriptDescriptor"
+                  },
+                  {
                     "text": "PillSystemDescriptor",
                     "link": "/reference/pill_engine/declarations/struct.PillSystemDescriptor"
+                  }
+                ]
+              },
+              {
+                "text": "Enums",
+                "collapsed": true,
+                "items": [
+                  {
+                    "text": "DeclaredShape",
+                    "link": "/reference/pill_engine/declarations/enum.DeclaredShape"
                   }
                 ]
               },
@@ -12696,8 +14068,20 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                 "collapsed": true,
                 "items": [
                   {
+                    "text": "check_declared_names_unique",
+                    "link": "/reference/pill_engine/declarations/fn.check_declared_names_unique"
+                  },
+                  {
                     "text": "declaration_baseline",
                     "link": "/reference/pill_engine/declarations/fn.declaration_baseline"
+                  },
+                  {
+                    "text": "first_repeated_name",
+                    "link": "/reference/pill_engine/declarations/fn.first_repeated_name"
+                  },
+                  {
+                    "text": "has_declaration_baseline",
+                    "link": "/reference/pill_engine/declarations/fn.has_declaration_baseline"
                   },
                   {
                     "text": "register_all_assets",
@@ -12706,6 +14090,10 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                   {
                     "text": "register_all_resources",
                     "link": "/reference/pill_engine/declarations/fn.register_all_resources"
+                  },
+                  {
+                    "text": "register_all_scripts",
+                    "link": "/reference/pill_engine/declarations/fn.register_all_scripts"
                   },
                   {
                     "text": "register_all_systems",
@@ -12830,1131 +14218,8 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
         "collapsed": true,
         "items": [
           {
-            "text": "api",
-            "link": "/reference/pill_engine_core/api/",
-            "collapsed": true,
-            "items": [
-              {
-                "text": "Structs",
-                "collapsed": true,
-                "items": [
-                  {
-                    "text": "EngineApi",
-                    "link": "/reference/pill_engine_core/api/struct.EngineApi"
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "text": "archetype",
-            "link": "/reference/pill_engine_core/archetype/",
-            "collapsed": true,
-            "items": [
-              {
-                "text": "Structs",
-                "collapsed": true,
-                "items": [
-                  {
-                    "text": "Archetype",
-                    "link": "/reference/pill_engine_core/archetype/struct.Archetype"
-                  },
-                  {
-                    "text": "ArchetypeId",
-                    "link": "/reference/pill_engine_core/archetype/struct.ArchetypeId"
-                  },
-                  {
-                    "text": "Blittability",
-                    "link": "/reference/pill_engine_core/archetype/struct.Blittability"
-                  },
-                  {
-                    "text": "ColumnLayout",
-                    "link": "/reference/pill_engine_core/archetype/struct.ColumnLayout"
-                  },
-                  {
-                    "text": "ColumnOps",
-                    "link": "/reference/pill_engine_core/archetype/struct.ColumnOps"
-                  },
-                  {
-                    "text": "ComponentColumn",
-                    "link": "/reference/pill_engine_core/archetype/struct.ComponentColumn"
-                  },
-                  {
-                    "text": "ComponentColumns",
-                    "link": "/reference/pill_engine_core/archetype/struct.ComponentColumns"
-                  },
-                  {
-                    "text": "FieldPlan",
-                    "link": "/reference/pill_engine_core/archetype/struct.FieldPlan"
-                  },
-                  {
-                    "text": "LayoutField",
-                    "link": "/reference/pill_engine_core/archetype/struct.LayoutField"
-                  },
-                  {
-                    "text": "NativeColumnInfo",
-                    "link": "/reference/pill_engine_core/archetype/struct.NativeColumnInfo"
-                  },
-                  {
-                    "text": "PlannedField",
-                    "link": "/reference/pill_engine_core/archetype/struct.PlannedField"
-                  }
-                ]
-              },
-              {
-                "text": "Enums",
-                "collapsed": true,
-                "items": [
-                  {
-                    "text": "ColumnIdentity",
-                    "link": "/reference/pill_engine_core/archetype/enum.ColumnIdentity"
-                  },
-                  {
-                    "text": "FieldSource",
-                    "link": "/reference/pill_engine_core/archetype/enum.FieldSource"
-                  },
-                  {
-                    "text": "StorageFactory",
-                    "link": "/reference/pill_engine_core/archetype/enum.StorageFactory"
-                  }
-                ]
-              },
-              {
-                "text": "Functions",
-                "collapsed": true,
-                "items": [
-                  {
-                    "text": "drop_range_of",
-                    "link": "/reference/pill_engine_core/archetype/fn.drop_range_of"
-                  },
-                  {
-                    "text": "drop_range_of_nothing",
-                    "link": "/reference/pill_engine_core/archetype/fn.drop_range_of_nothing"
-                  },
-                  {
-                    "text": "missing_column",
-                    "link": "/reference/pill_engine_core/archetype/fn.missing_column"
-                  },
-                  {
-                    "text": "out_of_bounds",
-                    "link": "/reference/pill_engine_core/archetype/fn.out_of_bounds"
-                  },
-                  {
-                    "text": "unallocated_pointer",
-                    "link": "/reference/pill_engine_core/archetype/fn.unallocated_pointer"
-                  },
-                  {
-                    "text": "validate_component_layout",
-                    "link": "/reference/pill_engine_core/archetype/fn.validate_component_layout"
-                  },
-                  {
-                    "text": "validate_native_component_layout",
-                    "link": "/reference/pill_engine_core/archetype/fn.validate_native_component_layout"
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "text": "asset",
-            "link": "/reference/pill_engine_core/asset/",
-            "collapsed": true,
-            "items": [
-              {
-                "text": "Structs",
-                "collapsed": true,
-                "items": [
-                  {
-                    "text": "AssetColumn",
-                    "link": "/reference/pill_engine_core/asset/struct.AssetColumn"
-                  },
-                  {
-                    "text": "AssetGuid",
-                    "link": "/reference/pill_engine_core/asset/struct.AssetGuid"
-                  },
-                  {
-                    "text": "AssetManager",
-                    "link": "/reference/pill_engine_core/asset/struct.AssetManager"
-                  },
-                  {
-                    "text": "Handle",
-                    "link": "/reference/pill_engine_core/asset/struct.Handle"
-                  },
-                  {
-                    "text": "KeyIndex",
-                    "link": "/reference/pill_engine_core/asset/struct.KeyIndex"
-                  }
-                ]
-              },
-              {
-                "text": "Enums",
-                "collapsed": true,
-                "items": [
-                  {
-                    "text": "AssetBindingError",
-                    "link": "/reference/pill_engine_core/asset/enum.AssetBindingError"
-                  },
-                  {
-                    "text": "AssetLoader",
-                    "link": "/reference/pill_engine_core/asset/enum.AssetLoader"
-                  },
-                  {
-                    "text": "AssetLoadError",
-                    "link": "/reference/pill_engine_core/asset/enum.AssetLoadError"
-                  }
-                ]
-              },
-              {
-                "text": "Traits",
-                "collapsed": true,
-                "items": [
-                  {
-                    "text": "Asset",
-                    "link": "/reference/pill_engine_core/asset/trait.Asset"
-                  }
-                ]
-              },
-              {
-                "text": "Functions",
-                "collapsed": true,
-                "items": [
-                  {
-                    "text": "refresh_column_ops",
-                    "link": "/reference/pill_engine_core/asset/fn.refresh_column_ops"
-                  }
-                ]
-              },
-              {
-                "text": "Type aliases",
-                "collapsed": true,
-                "items": [
-                  {
-                    "text": "AssetBindingResult",
-                    "link": "/reference/pill_engine_core/asset/type.AssetBindingResult"
-                  },
-                  {
-                    "text": "AssetLoadResult",
-                    "link": "/reference/pill_engine_core/asset/type.AssetLoadResult"
-                  },
-                  {
-                    "text": "AssetOpsRefresher",
-                    "link": "/reference/pill_engine_core/asset/type.AssetOpsRefresher"
-                  }
-                ]
-              },
-              {
-                "text": "Constants",
-                "collapsed": true,
-                "items": [
-                  {
-                    "text": "ASSET_MANAGER_SHARED_NAME",
-                    "link": "/reference/pill_engine_core/asset/constant.ASSET_MANAGER_SHARED_NAME"
-                  },
-                  {
-                    "text": "INVALID_ASSET_GENERATION",
-                    "link": "/reference/pill_engine_core/asset/constant.INVALID_ASSET_GENERATION"
-                  },
-                  {
-                    "text": "INVALID_ASSET_INDEX",
-                    "link": "/reference/pill_engine_core/asset/constant.INVALID_ASSET_INDEX"
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "text": "asset_database",
-            "link": "/reference/pill_engine_core/asset_database/",
-            "collapsed": true,
-            "items": [
-              {
-                "text": "Structs",
-                "collapsed": true,
-                "items": [
-                  {
-                    "text": "AssetDatabase",
-                    "link": "/reference/pill_engine_core/asset_database/struct.AssetDatabase"
-                  },
-                  {
-                    "text": "AssetRecord",
-                    "link": "/reference/pill_engine_core/asset_database/struct.AssetRecord"
-                  },
-                  {
-                    "text": "GuidConflict",
-                    "link": "/reference/pill_engine_core/asset_database/struct.GuidConflict"
-                  }
-                ]
-              },
-              {
-                "text": "Functions",
-                "collapsed": true,
-                "items": [
-                  {
-                    "text": "files_under",
-                    "link": "/reference/pill_engine_core/asset_database/fn.files_under"
-                  },
-                  {
-                    "text": "is_hidden_path",
-                    "link": "/reference/pill_engine_core/asset_database/fn.is_hidden_path"
-                  },
-                  {
-                    "text": "is_metadata_path",
-                    "link": "/reference/pill_engine_core/asset_database/fn.is_metadata_path"
-                  },
-                  {
-                    "text": "is_standalone",
-                    "link": "/reference/pill_engine_core/asset_database/fn.is_standalone"
-                  },
-                  {
-                    "text": "read_identity",
-                    "link": "/reference/pill_engine_core/asset_database/fn.read_identity"
-                  },
-                  {
-                    "text": "read_record",
-                    "link": "/reference/pill_engine_core/asset_database/fn.read_record"
-                  },
-                  {
-                    "text": "to_slash_path",
-                    "link": "/reference/pill_engine_core/asset_database/fn.to_slash_path"
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "text": "asset_import_registry",
-            "link": "/reference/pill_engine_core/asset_import_registry/",
-            "collapsed": true,
-            "items": [
-              {
-                "text": "Structs",
-                "collapsed": true,
-                "items": [
-                  {
-                    "text": "AssetIdentity",
-                    "link": "/reference/pill_engine_core/asset_import_registry/struct.AssetIdentity"
-                  },
-                  {
-                    "text": "ErasedImportOutcome",
-                    "link": "/reference/pill_engine_core/asset_import_registry/struct.ErasedImportOutcome"
-                  },
-                  {
-                    "text": "ImportedTypeEntry",
-                    "link": "/reference/pill_engine_core/asset_import_registry/struct.ImportedTypeEntry"
-                  },
-                  {
-                    "text": "ImportFunctions",
-                    "link": "/reference/pill_engine_core/asset_import_registry/struct.ImportFunctions"
-                  },
-                  {
-                    "text": "ImportRegistrationMarker",
-                    "link": "/reference/pill_engine_core/asset_import_registry/struct.ImportRegistrationMarker"
-                  },
-                  {
-                    "text": "ImportRegistry",
-                    "link": "/reference/pill_engine_core/asset_import_registry/struct.ImportRegistry"
-                  },
-                  {
-                    "text": "Registration",
-                    "link": "/reference/pill_engine_core/asset_import_registry/struct.Registration"
-                  },
-                  {
-                    "text": "ScanReport",
-                    "link": "/reference/pill_engine_core/asset_import_registry/struct.ScanReport"
-                  }
-                ]
-              },
-              {
-                "text": "Enums",
-                "collapsed": true,
-                "items": [
-                  {
-                    "text": "ErasedImportError",
-                    "link": "/reference/pill_engine_core/asset_import_registry/enum.ErasedImportError"
-                  },
-                  {
-                    "text": "FieldDecorator",
-                    "link": "/reference/pill_engine_core/asset_import_registry/enum.FieldDecorator"
-                  },
-                  {
-                    "text": "ImportChange",
-                    "link": "/reference/pill_engine_core/asset_import_registry/enum.ImportChange"
-                  },
-                  {
-                    "text": "ImportRegistrationError",
-                    "link": "/reference/pill_engine_core/asset_import_registry/enum.ImportRegistrationError"
-                  }
-                ]
-              },
-              {
-                "text": "Functions",
-                "collapsed": true,
-                "items": [
-                  {
-                    "text": "asset_identity_of",
-                    "link": "/reference/pill_engine_core/asset_import_registry/fn.asset_identity_of"
-                  },
-                  {
-                    "text": "guid_by_path",
-                    "link": "/reference/pill_engine_core/asset_import_registry/fn.guid_by_path"
-                  },
-                  {
-                    "text": "guid_clause",
-                    "link": "/reference/pill_engine_core/asset_import_registry/fn.guid_clause"
-                  },
-                  {
-                    "text": "handle_by_name_of",
-                    "link": "/reference/pill_engine_core/asset_import_registry/fn.handle_by_name_of"
-                  },
-                  {
-                    "text": "import_erased",
-                    "link": "/reference/pill_engine_core/asset_import_registry/fn.import_erased"
-                  },
-                  {
-                    "text": "import_standalone_erased",
-                    "link": "/reference/pill_engine_core/asset_import_registry/fn.import_standalone_erased"
-                  },
-                  {
-                    "text": "is_loaded",
-                    "link": "/reference/pill_engine_core/asset_import_registry/fn.is_loaded"
-                  },
-                  {
-                    "text": "loaded_assets_of",
-                    "link": "/reference/pill_engine_core/asset_import_registry/fn.loaded_assets_of"
-                  },
-                  {
-                    "text": "loaded_by_guid_of",
-                    "link": "/reference/pill_engine_core/asset_import_registry/fn.loaded_by_guid_of"
-                  },
-                  {
-                    "text": "reimport_erased",
-                    "link": "/reference/pill_engine_core/asset_import_registry/fn.reimport_erased"
-                  },
-                  {
-                    "text": "reimport_standalone_erased",
-                    "link": "/reference/pill_engine_core/asset_import_registry/fn.reimport_standalone_erased"
-                  },
-                  {
-                    "text": "remove_loaded",
-                    "link": "/reference/pill_engine_core/asset_import_registry/fn.remove_loaded"
-                  },
-                  {
-                    "text": "source_files",
-                    "link": "/reference/pill_engine_core/asset_import_registry/fn.source_files"
-                  }
-                ]
-              },
-              {
-                "text": "Type aliases",
-                "collapsed": true,
-                "items": [
-                  {
-                    "text": "DefaultDocumentFunction",
-                    "link": "/reference/pill_engine_core/asset_import_registry/type.DefaultDocumentFunction"
-                  },
-                  {
-                    "text": "EnsureMetadataFunction",
-                    "link": "/reference/pill_engine_core/asset_import_registry/type.EnsureMetadataFunction"
-                  },
-                  {
-                    "text": "ErasedImportResult",
-                    "link": "/reference/pill_engine_core/asset_import_registry/type.ErasedImportResult"
-                  },
-                  {
-                    "text": "FollowMoveFunction",
-                    "link": "/reference/pill_engine_core/asset_import_registry/type.FollowMoveFunction"
-                  },
-                  {
-                    "text": "GuidByPathFunction",
-                    "link": "/reference/pill_engine_core/asset_import_registry/type.GuidByPathFunction"
-                  },
-                  {
-                    "text": "IdentityFunction",
-                    "link": "/reference/pill_engine_core/asset_import_registry/type.IdentityFunction"
-                  },
-                  {
-                    "text": "ImportFunction",
-                    "link": "/reference/pill_engine_core/asset_import_registry/type.ImportFunction"
-                  },
-                  {
-                    "text": "IsLoadedFunction",
-                    "link": "/reference/pill_engine_core/asset_import_registry/type.IsLoadedFunction"
-                  },
-                  {
-                    "text": "LoadedByGuidFunction",
-                    "link": "/reference/pill_engine_core/asset_import_registry/type.LoadedByGuidFunction"
-                  },
-                  {
-                    "text": "LoadedByNameFunction",
-                    "link": "/reference/pill_engine_core/asset_import_registry/type.LoadedByNameFunction"
-                  },
-                  {
-                    "text": "LoadedFunction",
-                    "link": "/reference/pill_engine_core/asset_import_registry/type.LoadedFunction"
-                  },
-                  {
-                    "text": "NormalizeSettingsFunction",
-                    "link": "/reference/pill_engine_core/asset_import_registry/type.NormalizeSettingsFunction"
-                  },
-                  {
-                    "text": "ReimportFunction",
-                    "link": "/reference/pill_engine_core/asset_import_registry/type.ReimportFunction"
-                  },
-                  {
-                    "text": "RemoveLoadedFunction",
-                    "link": "/reference/pill_engine_core/asset_import_registry/type.RemoveLoadedFunction"
-                  },
-                  {
-                    "text": "SettingsJsonFunction",
-                    "link": "/reference/pill_engine_core/asset_import_registry/type.SettingsJsonFunction"
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "text": "asset_loading",
-            "link": "/reference/pill_engine_core/asset_loading/",
-            "collapsed": true,
-            "items": [
-              {
-                "text": "Functions",
-                "collapsed": true,
-                "items": [
-                  {
-                    "text": "extension_of",
-                    "link": "/reference/pill_engine_core/asset_loading/fn.extension_of"
-                  },
-                  {
-                    "text": "import_scene_document",
-                    "link": "/reference/pill_engine_core/asset_loading/fn.import_scene_document"
-                  },
-                  {
-                    "text": "load_scene_asset",
-                    "link": "/reference/pill_engine_core/asset_loading/fn.load_scene_asset"
-                  },
-                  {
-                    "text": "scene_database",
-                    "link": "/reference/pill_engine_core/asset_loading/fn.scene_database"
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "text": "asset_metadata",
-            "link": "/reference/pill_engine_core/asset_metadata/",
-            "collapsed": true,
-            "items": [
-              {
-                "text": "Structs",
-                "collapsed": true,
-                "items": [
-                  {
-                    "text": "AssetImport",
-                    "link": "/reference/pill_engine_core/asset_metadata/struct.AssetImport"
-                  },
-                  {
-                    "text": "ImportOutcome",
-                    "link": "/reference/pill_engine_core/asset_metadata/struct.ImportOutcome"
-                  },
-                  {
-                    "text": "MetadataDocument",
-                    "link": "/reference/pill_engine_core/asset_metadata/struct.MetadataDocument"
-                  },
-                  {
-                    "text": "RawHeader",
-                    "link": "/reference/pill_engine_core/asset_metadata/struct.RawHeader"
-                  },
-                  {
-                    "text": "ReimportOutcome",
-                    "link": "/reference/pill_engine_core/asset_metadata/struct.ReimportOutcome"
-                  },
-                  {
-                    "text": "StoredMetadata",
-                    "link": "/reference/pill_engine_core/asset_metadata/struct.StoredMetadata"
-                  }
-                ]
-              },
-              {
-                "text": "Enums",
-                "collapsed": true,
-                "items": [
-                  {
-                    "text": "AssetImportError",
-                    "link": "/reference/pill_engine_core/asset_metadata/enum.AssetImportError"
-                  },
-                  {
-                    "text": "MetadataPolicy",
-                    "link": "/reference/pill_engine_core/asset_metadata/enum.MetadataPolicy"
-                  },
-                  {
-                    "text": "MetadataSource",
-                    "link": "/reference/pill_engine_core/asset_metadata/enum.MetadataSource"
-                  }
-                ]
-              },
-              {
-                "text": "Traits",
-                "collapsed": true,
-                "items": [
-                  {
-                    "text": "ImportedAsset",
-                    "link": "/reference/pill_engine_core/asset_metadata/trait.ImportedAsset"
-                  }
-                ]
-              },
-              {
-                "text": "Functions",
-                "collapsed": true,
-                "items": [
-                  {
-                    "text": "checked_relative",
-                    "link": "/reference/pill_engine_core/asset_metadata/fn.checked_relative"
-                  },
-                  {
-                    "text": "display_guid",
-                    "link": "/reference/pill_engine_core/asset_metadata/fn.display_guid"
-                  },
-                  {
-                    "text": "is_metadata_file",
-                    "link": "/reference/pill_engine_core/asset_metadata/fn.is_metadata_file"
-                  },
-                  {
-                    "text": "metadata_path_for",
-                    "link": "/reference/pill_engine_core/asset_metadata/fn.metadata_path_for"
-                  },
-                  {
-                    "text": "normalize_settings_json",
-                    "link": "/reference/pill_engine_core/asset_metadata/fn.normalize_settings_json"
-                  },
-                  {
-                    "text": "parse_header",
-                    "link": "/reference/pill_engine_core/asset_metadata/fn.parse_header"
-                  },
-                  {
-                    "text": "parse_metadata",
-                    "link": "/reference/pill_engine_core/asset_metadata/fn.parse_metadata"
-                  },
-                  {
-                    "text": "read_header",
-                    "link": "/reference/pill_engine_core/asset_metadata/fn.read_header"
-                  },
-                  {
-                    "text": "render_metadata",
-                    "link": "/reference/pill_engine_core/asset_metadata/fn.render_metadata"
-                  },
-                  {
-                    "text": "same_settings",
-                    "link": "/reference/pill_engine_core/asset_metadata/fn.same_settings"
-                  },
-                  {
-                    "text": "settings_json_for",
-                    "link": "/reference/pill_engine_core/asset_metadata/fn.settings_json_for"
-                  },
-                  {
-                    "text": "settings_to_json",
-                    "link": "/reference/pill_engine_core/asset_metadata/fn.settings_to_json"
-                  },
-                  {
-                    "text": "standalone_file_name",
-                    "link": "/reference/pill_engine_core/asset_metadata/fn.standalone_file_name"
-                  }
-                ]
-              },
-              {
-                "text": "Constants",
-                "collapsed": true,
-                "items": [
-                  {
-                    "text": "INVALID_CHARACTERS",
-                    "link": "/reference/pill_engine_core/asset_metadata/constant.INVALID_CHARACTERS"
-                  },
-                  {
-                    "text": "METADATA_EXTENSION",
-                    "link": "/reference/pill_engine_core/asset_metadata/constant.METADATA_EXTENSION"
-                  },
-                  {
-                    "text": "METADATA_FORMAT_VERSION",
-                    "link": "/reference/pill_engine_core/asset_metadata/constant.METADATA_FORMAT_VERSION"
-                  },
-                  {
-                    "text": "RESERVED_NAMES",
-                    "link": "/reference/pill_engine_core/asset_metadata/constant.RESERVED_NAMES"
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "text": "asset_reference",
-            "link": "/reference/pill_engine_core/asset_reference/",
-            "collapsed": true,
-            "items": [
-              {
-                "text": "Structs",
-                "collapsed": true,
-                "items": [
-                  {
-                    "text": "AssetReference",
-                    "link": "/reference/pill_engine_core/asset_reference/struct.AssetReference"
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "text": "asset_standalone",
-            "link": "/reference/pill_engine_core/asset_standalone/",
-            "collapsed": true,
-            "items": [
-              {
-                "text": "Traits",
-                "collapsed": true,
-                "items": [
-                  {
-                    "text": "StandaloneAsset",
-                    "link": "/reference/pill_engine_core/asset_standalone/trait.StandaloneAsset"
-                  }
-                ]
-              },
-              {
-                "text": "Functions",
-                "collapsed": true,
-                "items": [
-                  {
-                    "text": "asset_name_of",
-                    "link": "/reference/pill_engine_core/asset_standalone/fn.asset_name_of"
-                  },
-                  {
-                    "text": "default_standalone_document",
-                    "link": "/reference/pill_engine_core/asset_standalone/fn.default_standalone_document"
-                  },
-                  {
-                    "text": "document_to_json",
-                    "link": "/reference/pill_engine_core/asset_standalone/fn.document_to_json"
-                  },
-                  {
-                    "text": "normalize_standalone_document",
-                    "link": "/reference/pill_engine_core/asset_standalone/fn.normalize_standalone_document"
-                  },
-                  {
-                    "text": "read_standalone",
-                    "link": "/reference/pill_engine_core/asset_standalone/fn.read_standalone"
-                  },
-                  {
-                    "text": "render_standalone",
-                    "link": "/reference/pill_engine_core/asset_standalone/fn.render_standalone"
-                  },
-                  {
-                    "text": "standalone_document_json",
-                    "link": "/reference/pill_engine_core/asset_standalone/fn.standalone_document_json"
-                  }
-                ]
-              },
-              {
-                "text": "Constants",
-                "collapsed": true,
-                "items": [
-                  {
-                    "text": "STANDALONE_BODY_FIELD",
-                    "link": "/reference/pill_engine_core/asset_standalone/constant.STANDALONE_BODY_FIELD"
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "text": "asset_store",
-            "link": "/reference/pill_engine_core/asset_store/",
-            "collapsed": true,
-            "items": [
-              {
-                "text": "Structs",
-                "collapsed": true,
-                "items": [
-                  {
-                    "text": "AssetPack",
-                    "link": "/reference/pill_engine_core/asset_store/struct.AssetPack"
-                  },
-                  {
-                    "text": "ModuleAssetRoot",
-                    "link": "/reference/pill_engine_core/asset_store/struct.ModuleAssetRoot"
-                  },
-                  {
-                    "text": "Mounts",
-                    "link": "/reference/pill_engine_core/asset_store/struct.Mounts"
-                  },
-                  {
-                    "text": "PackReader",
-                    "link": "/reference/pill_engine_core/asset_store/struct.PackReader"
-                  }
-                ]
-              },
-              {
-                "text": "Enums",
-                "collapsed": true,
-                "items": [
-                  {
-                    "text": "AssetPackError",
-                    "link": "/reference/pill_engine_core/asset_store/enum.AssetPackError"
-                  },
-                  {
-                    "text": "Existing",
-                    "link": "/reference/pill_engine_core/asset_store/enum.Existing"
-                  }
-                ]
-              },
-              {
-                "text": "Functions",
-                "collapsed": true,
-                "items": [
-                  {
-                    "text": "assert_module_root_complete",
-                    "link": "/reference/pill_engine_core/asset_store/fn.assert_module_root_complete"
-                  },
-                  {
-                    "text": "assert_roots_do_not_overlap",
-                    "link": "/reference/pill_engine_core/asset_store/fn.assert_roots_do_not_overlap"
-                  },
-                  {
-                    "text": "declare_module_root",
-                    "link": "/reference/pill_engine_core/asset_store/fn.declare_module_root"
-                  },
-                  {
-                    "text": "declare_module_root_hiding",
-                    "link": "/reference/pill_engine_core/asset_store/fn.declare_module_root_hiding"
-                  },
-                  {
-                    "text": "forget_all_module_roots",
-                    "link": "/reference/pill_engine_core/asset_store/fn.forget_all_module_roots"
-                  },
-                  {
-                    "text": "forget_module_root",
-                    "link": "/reference/pill_engine_core/asset_store/fn.forget_module_root"
-                  },
-                  {
-                    "text": "hard_link",
-                    "link": "/reference/pill_engine_core/asset_store/fn.hard_link"
-                  },
-                  {
-                    "text": "is_module_asset",
-                    "link": "/reference/pill_engine_core/asset_store/fn.is_module_asset"
-                  },
-                  {
-                    "text": "locate_file",
-                    "link": "/reference/pill_engine_core/asset_store/fn.locate_file"
-                  },
-                  {
-                    "text": "module_roots",
-                    "link": "/reference/pill_engine_core/asset_store/fn.module_roots"
-                  },
-                  {
-                    "text": "mount_directory",
-                    "link": "/reference/pill_engine_core/asset_store/fn.mount_directory"
-                  },
-                  {
-                    "text": "mount_pack",
-                    "link": "/reference/pill_engine_core/asset_store/fn.mount_pack"
-                  },
-                  {
-                    "text": "mounted_directory",
-                    "link": "/reference/pill_engine_core/asset_store/fn.mounted_directory"
-                  },
-                  {
-                    "text": "mounts",
-                    "link": "/reference/pill_engine_core/asset_store/fn.mounts"
-                  },
-                  {
-                    "text": "pack_key",
-                    "link": "/reference/pill_engine_core/asset_store/fn.pack_key"
-                  },
-                  {
-                    "text": "packs_only",
-                    "link": "/reference/pill_engine_core/asset_store/fn.packs_only"
-                  },
-                  {
-                    "text": "place_file",
-                    "link": "/reference/pill_engine_core/asset_store/fn.place_file"
-                  },
-                  {
-                    "text": "read",
-                    "link": "/reference/pill_engine_core/asset_store/fn.read"
-                  },
-                  {
-                    "text": "relative_files",
-                    "link": "/reference/pill_engine_core/asset_store/fn.relative_files"
-                  },
-                  {
-                    "text": "resolve_file",
-                    "link": "/reference/pill_engine_core/asset_store/fn.resolve_file"
-                  },
-                  {
-                    "text": "restrict_to_packs",
-                    "link": "/reference/pill_engine_core/asset_store/fn.restrict_to_packs"
-                  },
-                  {
-                    "text": "temporary_name",
-                    "link": "/reference/pill_engine_core/asset_store/fn.temporary_name"
-                  },
-                  {
-                    "text": "verify_module_roots",
-                    "link": "/reference/pill_engine_core/asset_store/fn.verify_module_roots"
-                  },
-                  {
-                    "text": "write_beside",
-                    "link": "/reference/pill_engine_core/asset_store/fn.write_beside"
-                  },
-                  {
-                    "text": "write_new",
-                    "link": "/reference/pill_engine_core/asset_store/fn.write_new"
-                  },
-                  {
-                    "text": "write_replacing",
-                    "link": "/reference/pill_engine_core/asset_store/fn.write_replacing"
-                  },
-                  {
-                    "text": "write_then_place",
-                    "link": "/reference/pill_engine_core/asset_store/fn.write_then_place"
-                  }
-                ]
-              },
-              {
-                "text": "Type aliases",
-                "collapsed": true,
-                "items": [
-                  {
-                    "text": "Link",
-                    "link": "/reference/pill_engine_core/asset_store/type.Link"
-                  }
-                ]
-              },
-              {
-                "text": "Constants",
-                "collapsed": true,
-                "items": [
-                  {
-                    "text": "MIN_ENTRY_LEN",
-                    "link": "/reference/pill_engine_core/asset_store/constant.MIN_ENTRY_LEN"
-                  }
-                ]
-              },
-              {
-                "text": "Statics",
-                "collapsed": true,
-                "items": [
-                  {
-                    "text": "PACKS_ONLY",
-                    "link": "/reference/pill_engine_core/asset_store/static.PACKS_ONLY"
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "text": "commands",
-            "link": "/reference/pill_engine_core/commands/",
-            "collapsed": true,
-            "items": [
-              {
-                "text": "Structs",
-                "collapsed": true,
-                "items": [
-                  {
-                    "text": "ByteComponentAdder",
-                    "link": "/reference/pill_engine_core/commands/struct.ByteComponentAdder"
-                  },
-                  {
-                    "text": "CommandQueue",
-                    "link": "/reference/pill_engine_core/commands/struct.CommandQueue"
-                  },
-                  {
-                    "text": "Commands",
-                    "link": "/reference/pill_engine_core/commands/struct.Commands"
-                  },
-                  {
-                    "text": "DeferredEntityBuilder",
-                    "link": "/reference/pill_engine_core/commands/struct.DeferredEntityBuilder"
-                  },
-                  {
-                    "text": "TypedComponentAdder",
-                    "link": "/reference/pill_engine_core/commands/struct.TypedComponentAdder"
-                  }
-                ]
-              },
-              {
-                "text": "Enums",
-                "collapsed": true,
-                "items": [
-                  {
-                    "text": "DeferredCommand",
-                    "link": "/reference/pill_engine_core/commands/enum.DeferredCommand"
-                  }
-                ]
-              },
-              {
-                "text": "Traits",
-                "collapsed": true,
-                "items": [
-                  {
-                    "text": "ComponentAdder",
-                    "link": "/reference/pill_engine_core/commands/trait.ComponentAdder"
-                  }
-                ]
-              },
-              {
-                "text": "Functions",
-                "collapsed": true,
-                "items": [
-                  {
-                    "text": "boxed_component_adder",
-                    "link": "/reference/pill_engine_core/commands/fn.boxed_component_adder"
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "text": "common_components",
-            "link": "/reference/pill_engine_core/common_components/",
-            "collapsed": true,
-            "items": [
-              {
-                "text": "Structs",
-                "collapsed": true,
-                "items": [
-                  {
-                    "text": "TransformComponent",
-                    "link": "/reference/pill_engine_core/common_components/struct.TransformComponent"
-                  }
-                ]
-              },
-              {
-                "text": "Functions",
-                "collapsed": true,
-                "items": [
-                  {
-                    "text": "register_transform_component",
-                    "link": "/reference/pill_engine_core/common_components/fn.register_transform_component"
-                  },
-                  {
-                    "text": "rotation_or_identity",
-                    "link": "/reference/pill_engine_core/common_components/fn.rotation_or_identity"
-                  }
-                ]
-              },
-              {
-                "text": "Constants",
-                "collapsed": true,
-                "items": [
-                  {
-                    "text": "ROTATION_IDENTITY_EPSILON",
-                    "link": "/reference/pill_engine_core/common_components/constant.ROTATION_IDENTITY_EPSILON"
-                  },
-                  {
-                    "text": "TRANSFORM_SHARED_NAME",
-                    "link": "/reference/pill_engine_core/common_components/constant.TRANSFORM_SHARED_NAME"
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "text": "component",
-            "link": "/reference/pill_engine_core/component/",
-            "collapsed": true,
-            "items": [
-              {
-                "text": "Structs",
-                "collapsed": true,
-                "items": [
-                  {
-                    "text": "ComponentMask",
-                    "link": "/reference/pill_engine_core/component/struct.ComponentMask"
-                  },
-                  {
-                    "text": "ComponentRegistration",
-                    "link": "/reference/pill_engine_core/component/struct.ComponentRegistration"
-                  },
-                  {
-                    "text": "ComponentRegistry",
-                    "link": "/reference/pill_engine_core/component/struct.ComponentRegistry"
-                  },
-                  {
-                    "text": "ComponentTicks",
-                    "link": "/reference/pill_engine_core/component/struct.ComponentTicks"
-                  },
-                  {
-                    "text": "Tick",
-                    "link": "/reference/pill_engine_core/component/struct.Tick"
-                  }
-                ]
-              },
-              {
-                "text": "Enums",
-                "collapsed": true,
-                "items": [
-                  {
-                    "text": "ComponentId",
-                    "link": "/reference/pill_engine_core/component/enum.ComponentId"
-                  },
-                  {
-                    "text": "Registration",
-                    "link": "/reference/pill_engine_core/component/enum.Registration"
-                  }
-                ]
-              },
-              {
-                "text": "Traits",
-                "collapsed": true,
-                "items": [
-                  {
-                    "text": "Component",
-                    "link": "/reference/pill_engine_core/component/trait.Component"
-                  }
-                ]
-              },
-              {
-                "text": "Functions",
-                "collapsed": true,
-                "items": [
-                  {
-                    "text": "component_name_hash",
-                    "link": "/reference/pill_engine_core/component/fn.component_name_hash"
-                  },
-                  {
-                    "text": "component_schema_hash",
-                    "link": "/reference/pill_engine_core/component/fn.component_schema_hash"
-                  },
-                  {
-                    "text": "shared_component_identity",
-                    "link": "/reference/pill_engine_core/component/fn.shared_component_identity"
-                  }
-                ]
-              },
-              {
-                "text": "Constants",
-                "collapsed": true,
-                "items": [
-                  {
-                    "text": "DESCRIPTOR_HASH_SALT",
-                    "link": "/reference/pill_engine_core/component/constant.DESCRIPTOR_HASH_SALT"
-                  },
-                  {
-                    "text": "SHARED_HASH_SALT",
-                    "link": "/reference/pill_engine_core/component/constant.SHARED_HASH_SALT"
-                  },
-                  {
-                    "text": "TICK_WRAP_HALF_RANGE",
-                    "link": "/reference/pill_engine_core/component/constant.TICK_WRAP_HALF_RANGE"
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "text": "component_field",
-            "link": "/reference/pill_engine_core/component_field/",
+            "text": "abi",
+            "link": "/reference/pill_engine_core/abi/",
             "collapsed": true,
             "items": [
               {
@@ -13962,132 +14227,8 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                 "collapsed": true,
                 "items": [
                   {
-                    "text": "codec",
-                    "link": "/reference/pill_engine_core/component_field/codec/",
-                    "collapsed": true,
-                    "items": [
-                      {
-                        "text": "Enums",
-                        "collapsed": true,
-                        "items": [
-                          {
-                            "text": "ScalarKind",
-                            "link": "/reference/pill_engine_core/component_field/codec/enum.ScalarKind"
-                          }
-                        ]
-                      },
-                      {
-                        "text": "Functions",
-                        "collapsed": true,
-                        "items": [
-                          {
-                            "text": "array_element_size",
-                            "link": "/reference/pill_engine_core/component_field/codec/fn.array_element_size"
-                          },
-                          {
-                            "text": "container_header",
-                            "link": "/reference/pill_engine_core/component_field/codec/fn.container_header"
-                          },
-                          {
-                            "text": "decode_field",
-                            "link": "/reference/pill_engine_core/component_field/codec/fn.decode_field"
-                          },
-                          {
-                            "text": "decode_scalar",
-                            "link": "/reference/pill_engine_core/component_field/codec/fn.decode_scalar"
-                          },
-                          {
-                            "text": "decode_tagged",
-                            "link": "/reference/pill_engine_core/component_field/codec/fn.decode_tagged"
-                          },
-                          {
-                            "text": "encode_field_write",
-                            "link": "/reference/pill_engine_core/component_field/codec/fn.encode_field_write"
-                          },
-                          {
-                            "text": "encode_scalar",
-                            "link": "/reference/pill_engine_core/component_field/codec/fn.encode_scalar"
-                          },
-                          {
-                            "text": "header_word",
-                            "link": "/reference/pill_engine_core/component_field/codec/fn.header_word"
-                          },
-                          {
-                            "text": "header_words_of",
-                            "link": "/reference/pill_engine_core/component_field/codec/fn.header_words_of"
-                          },
-                          {
-                            "text": "is_scalar_tag",
-                            "link": "/reference/pill_engine_core/component_field/codec/fn.is_scalar_tag"
-                          },
-                          {
-                            "text": "native_buffer_header",
-                            "link": "/reference/pill_engine_core/component_field/codec/fn.native_buffer_header"
-                          },
-                          {
-                            "text": "scalar_size",
-                            "link": "/reference/pill_engine_core/component_field/codec/fn.scalar_size"
-                          },
-                          {
-                            "text": "std_container_offsets",
-                            "link": "/reference/pill_engine_core/component_field/codec/fn.std_container_offsets"
-                          }
-                        ]
-                      },
-                      {
-                        "text": "Constants",
-                        "collapsed": true,
-                        "items": [
-                          {
-                            "text": "ENTITY_REFERENCE_SIZE",
-                            "link": "/reference/pill_engine_core/component_field/codec/constant.ENTITY_REFERENCE_SIZE"
-                          },
-                          {
-                            "text": "HANDLE_SIZE",
-                            "link": "/reference/pill_engine_core/component_field/codec/constant.HANDLE_SIZE"
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "text": "expand",
-                    "link": "/reference/pill_engine_core/component_field/expand/",
-                    "collapsed": true,
-                    "items": [
-                      {
-                        "text": "Functions",
-                        "collapsed": true,
-                        "items": [
-                          {
-                            "text": "grouping_decorators",
-                            "link": "/reference/pill_engine_core/component_field/expand/fn.grouping_decorators"
-                          },
-                          {
-                            "text": "intern_nested_field_name",
-                            "link": "/reference/pill_engine_core/component_field/expand/fn.intern_nested_field_name"
-                          },
-                          {
-                            "text": "leaf_decorators",
-                            "link": "/reference/pill_engine_core/component_field/expand/fn.leaf_decorators"
-                          }
-                        ]
-                      },
-                      {
-                        "text": "Constants",
-                        "collapsed": true,
-                        "items": [
-                          {
-                            "text": "MAX_EXPANDED_ELEMENTS",
-                            "link": "/reference/pill_engine_core/component_field/expand/constant.MAX_EXPANDED_ELEMENTS"
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "text": "row",
-                    "link": "/reference/pill_engine_core/component_field/row/",
+                    "text": "api",
+                    "link": "/reference/pill_engine_core/abi/api/",
                     "collapsed": true,
                     "items": [
                       {
@@ -14095,16 +14236,112 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                         "collapsed": true,
                         "items": [
                           {
-                            "text": "FieldWrite",
-                            "link": "/reference/pill_engine_core/component_field/row/struct.FieldWrite"
+                            "text": "EngineApi",
+                            "link": "/reference/pill_engine_core/abi/api/struct.EngineApi"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "text": "mirror",
+                    "link": "/reference/pill_engine_core/abi/mirror/",
+                    "collapsed": true,
+                    "items": [
+                      {
+                        "text": "Modules",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "assets",
+                            "link": "/reference/pill_engine_core/abi/mirror/assets/",
+                            "collapsed": true,
+                            "items": [
+                              {
+                                "text": "Functions",
+                                "collapsed": true,
+                                "items": [
+                                  {
+                                    "text": "add",
+                                    "link": "/reference/pill_engine_core/abi/mirror/assets/fn.add"
+                                  },
+                                  {
+                                    "text": "add_named",
+                                    "link": "/reference/pill_engine_core/abi/mirror/assets/fn.add_named"
+                                  },
+                                  {
+                                    "text": "add_named_with_guid",
+                                    "link": "/reference/pill_engine_core/abi/mirror/assets/fn.add_named_with_guid"
+                                  },
+                                  {
+                                    "text": "asset_manager_from_slot",
+                                    "link": "/reference/pill_engine_core/abi/mirror/assets/fn.asset_manager_from_slot"
+                                  },
+                                  {
+                                    "text": "contains",
+                                    "link": "/reference/pill_engine_core/abi/mirror/assets/fn.contains"
+                                  },
+                                  {
+                                    "text": "guid_of",
+                                    "link": "/reference/pill_engine_core/abi/mirror/assets/fn.guid_of"
+                                  },
+                                  {
+                                    "text": "guid_text",
+                                    "link": "/reference/pill_engine_core/abi/mirror/assets/fn.guid_text"
+                                  },
+                                  {
+                                    "text": "handle_by_guid",
+                                    "link": "/reference/pill_engine_core/abi/mirror/assets/fn.handle_by_guid"
+                                  },
+                                  {
+                                    "text": "handle_by_name",
+                                    "link": "/reference/pill_engine_core/abi/mirror/assets/fn.handle_by_name"
+                                  },
+                                  {
+                                    "text": "import",
+                                    "link": "/reference/pill_engine_core/abi/mirror/assets/fn.import"
+                                  },
+                                  {
+                                    "text": "import_standalone",
+                                    "link": "/reference/pill_engine_core/abi/mirror/assets/fn.import_standalone"
+                                  },
+                                  {
+                                    "text": "metadata_source_code",
+                                    "link": "/reference/pill_engine_core/abi/mirror/assets/fn.metadata_source_code"
+                                  },
+                                  {
+                                    "text": "parse_guid",
+                                    "link": "/reference/pill_engine_core/abi/mirror/assets/fn.parse_guid"
+                                  },
+                                  {
+                                    "text": "remove",
+                                    "link": "/reference/pill_engine_core/abi/mirror/assets/fn.remove"
+                                  },
+                                  {
+                                    "text": "write_import_outcome",
+                                    "link": "/reference/pill_engine_core/abi/mirror/assets/fn.write_import_outcome"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "text": "Traits",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "MirrorObject",
+                            "link": "/reference/pill_engine_core/abi/mirror/trait.MirrorObject"
                           },
                           {
-                            "text": "ResolvedField",
-                            "link": "/reference/pill_engine_core/component_field/row/struct.ResolvedField"
+                            "text": "MirrorReturn",
+                            "link": "/reference/pill_engine_core/abi/mirror/trait.MirrorReturn"
                           },
                           {
-                            "text": "RowWriteTarget",
-                            "link": "/reference/pill_engine_core/component_field/row/struct.RowWriteTarget"
+                            "text": "MirrorValue",
+                            "link": "/reference/pill_engine_core/abi/mirror/trait.MirrorValue"
                           }
                         ]
                       },
@@ -14113,101 +14350,1009 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                         "collapsed": true,
                         "items": [
                           {
-                            "text": "format_component_debug",
-                            "link": "/reference/pill_engine_core/component_field/row/fn.format_component_debug"
+                            "text": "drop_object",
+                            "link": "/reference/pill_engine_core/abi/mirror/fn.drop_object"
+                          },
+                          {
+                            "text": "error_message",
+                            "link": "/reference/pill_engine_core/abi/mirror/fn.error_message"
+                          },
+                          {
+                            "text": "invoke",
+                            "link": "/reference/pill_engine_core/abi/mirror/fn.invoke"
+                          },
+                          {
+                            "text": "object_from_raw",
+                            "link": "/reference/pill_engine_core/abi/mirror/fn.object_from_raw"
+                          },
+                          {
+                            "text": "object_into_raw",
+                            "link": "/reference/pill_engine_core/abi/mirror/fn.object_into_raw"
+                          },
+                          {
+                            "text": "read",
+                            "link": "/reference/pill_engine_core/abi/mirror/fn.read"
+                          },
+                          {
+                            "text": "read_bool",
+                            "link": "/reference/pill_engine_core/abi/mirror/fn.read_bool"
+                          },
+                          {
+                            "text": "read_mut",
+                            "link": "/reference/pill_engine_core/abi/mirror/fn.read_mut"
+                          },
+                          {
+                            "text": "read_option",
+                            "link": "/reference/pill_engine_core/abi/mirror/fn.read_option"
+                          },
+                          {
+                            "text": "read_plain_vec",
+                            "link": "/reference/pill_engine_core/abi/mirror/fn.read_plain_vec"
+                          },
+                          {
+                            "text": "read_pointer",
+                            "link": "/reference/pill_engine_core/abi/mirror/fn.read_pointer"
+                          },
+                          {
+                            "text": "read_ref",
+                            "link": "/reference/pill_engine_core/abi/mirror/fn.read_ref"
+                          },
+                          {
+                            "text": "read_span",
+                            "link": "/reference/pill_engine_core/abi/mirror/fn.read_span"
+                          },
+                          {
+                            "text": "read_str",
+                            "link": "/reference/pill_engine_core/abi/mirror/fn.read_str"
+                          },
+                          {
+                            "text": "read_string_vec",
+                            "link": "/reference/pill_engine_core/abi/mirror/fn.read_string_vec"
+                          },
+                          {
+                            "text": "read_value_vec",
+                            "link": "/reference/pill_engine_core/abi/mirror/fn.read_value_vec"
+                          },
+                          {
+                            "text": "set_last_error",
+                            "link": "/reference/pill_engine_core/abi/mirror/fn.set_last_error"
+                          },
+                          {
+                            "text": "set_return_string",
+                            "link": "/reference/pill_engine_core/abi/mirror/fn.set_return_string"
+                          },
+                          {
+                            "text": "slot",
+                            "link": "/reference/pill_engine_core/abi/mirror/fn.slot"
+                          },
+                          {
+                            "text": "take_last_error",
+                            "link": "/reference/pill_engine_core/abi/mirror/fn.take_last_error"
+                          },
+                          {
+                            "text": "take_return_string",
+                            "link": "/reference/pill_engine_core/abi/mirror/fn.take_return_string"
+                          },
+                          {
+                            "text": "write",
+                            "link": "/reference/pill_engine_core/abi/mirror/fn.write"
+                          },
+                          {
+                            "text": "write_option",
+                            "link": "/reference/pill_engine_core/abi/mirror/fn.write_option"
+                          }
+                        ]
+                      },
+                      {
+                        "text": "Type aliases",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "MirrorResult",
+                            "link": "/reference/pill_engine_core/abi/mirror/type.MirrorResult"
+                          }
+                        ]
+                      },
+                      {
+                        "text": "Constants",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "IMPORT_ALREADY_LOADED_OFFSET",
+                            "link": "/reference/pill_engine_core/abi/mirror/constant.IMPORT_ALREADY_LOADED_OFFSET"
+                          },
+                          {
+                            "text": "IMPORT_METADATA_SOURCE_OFFSET",
+                            "link": "/reference/pill_engine_core/abi/mirror/constant.IMPORT_METADATA_SOURCE_OFFSET"
+                          },
+                          {
+                            "text": "LAST_ERROR",
+                            "link": "/reference/pill_engine_core/abi/mirror/constant.LAST_ERROR"
+                          },
+                          {
+                            "text": "OPTION_ARGUMENT_FLAG_OFFSET",
+                            "link": "/reference/pill_engine_core/abi/mirror/constant.OPTION_ARGUMENT_FLAG_OFFSET"
+                          },
+                          {
+                            "text": "OPTION_RETURN_VALUE_OFFSET",
+                            "link": "/reference/pill_engine_core/abi/mirror/constant.OPTION_RETURN_VALUE_OFFSET"
+                          },
+                          {
+                            "text": "RETURN_STRING",
+                            "link": "/reference/pill_engine_core/abi/mirror/constant.RETURN_STRING"
+                          },
+                          {
+                            "text": "SLOT_SIZE",
+                            "link": "/reference/pill_engine_core/abi/mirror/constant.SLOT_SIZE"
+                          },
+                          {
+                            "text": "STATUS_ERROR",
+                            "link": "/reference/pill_engine_core/abi/mirror/constant.STATUS_ERROR"
+                          },
+                          {
+                            "text": "STATUS_OK",
+                            "link": "/reference/pill_engine_core/abi/mirror/constant.STATUS_OK"
+                          }
+                        ]
+                      },
+                      {
+                        "text": "Macros",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "plain_mirror_value",
+                            "link": "/reference/pill_engine_core/abi/mirror/macro.plain_mirror_value"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "text": "module_abi",
+                    "link": "/reference/pill_engine_core/abi/module_abi/",
+                    "collapsed": true,
+                    "items": [
+                      {
+                        "text": "Constants",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "MODULE_ABI_VERSION",
+                            "link": "/reference/pill_engine_core/abi/module_abi/constant.MODULE_ABI_VERSION"
                           }
                         ]
                       }
                     ]
                   }
                 ]
-              },
-              {
-                "text": "Enums",
-                "collapsed": true,
-                "items": [
-                  {
-                    "text": "ComponentFieldError",
-                    "link": "/reference/pill_engine_core/component_field/enum.ComponentFieldError"
-                  },
-                  {
-                    "text": "FieldValue",
-                    "link": "/reference/pill_engine_core/component_field/enum.FieldValue"
-                  }
-                ]
-              },
-              {
-                "text": "Functions",
-                "collapsed": true,
-                "items": [
-                  {
-                    "text": "is_container_tag",
-                    "link": "/reference/pill_engine_core/component_field/fn.is_container_tag"
-                  },
-                  {
-                    "text": "is_entity_tag",
-                    "link": "/reference/pill_engine_core/component_field/fn.is_entity_tag"
-                  },
-                  {
-                    "text": "is_handle_tag",
-                    "link": "/reference/pill_engine_core/component_field/fn.is_handle_tag"
-                  }
-                ]
               }
             ]
           },
           {
-            "text": "component_registry",
-            "link": "/reference/pill_engine_core/component_registry/",
+            "text": "assets",
+            "link": "/reference/pill_engine_core/assets/",
             "collapsed": true,
             "items": [
               {
-                "text": "Structs",
+                "text": "Modules",
                 "collapsed": true,
                 "items": [
                   {
-                    "text": "ComponentFieldDescriptor",
-                    "link": "/reference/pill_engine_core/component_registry/struct.ComponentFieldDescriptor"
-                  }
-                ]
-              },
-              {
-                "text": "Enums",
-                "collapsed": true,
-                "items": [
+                    "text": "database",
+                    "link": "/reference/pill_engine_core/assets/database/",
+                    "collapsed": true,
+                    "items": [
+                      {
+                        "text": "Structs",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "AssetDatabase",
+                            "link": "/reference/pill_engine_core/assets/database/struct.AssetDatabase"
+                          },
+                          {
+                            "text": "AssetRecord",
+                            "link": "/reference/pill_engine_core/assets/database/struct.AssetRecord"
+                          },
+                          {
+                            "text": "GuidConflict",
+                            "link": "/reference/pill_engine_core/assets/database/struct.GuidConflict"
+                          }
+                        ]
+                      },
+                      {
+                        "text": "Functions",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "files_under",
+                            "link": "/reference/pill_engine_core/assets/database/fn.files_under"
+                          },
+                          {
+                            "text": "is_hidden_path",
+                            "link": "/reference/pill_engine_core/assets/database/fn.is_hidden_path"
+                          },
+                          {
+                            "text": "is_metadata_path",
+                            "link": "/reference/pill_engine_core/assets/database/fn.is_metadata_path"
+                          },
+                          {
+                            "text": "is_standalone",
+                            "link": "/reference/pill_engine_core/assets/database/fn.is_standalone"
+                          },
+                          {
+                            "text": "read_identity",
+                            "link": "/reference/pill_engine_core/assets/database/fn.read_identity"
+                          },
+                          {
+                            "text": "read_record",
+                            "link": "/reference/pill_engine_core/assets/database/fn.read_record"
+                          },
+                          {
+                            "text": "to_slash_path",
+                            "link": "/reference/pill_engine_core/assets/database/fn.to_slash_path"
+                          }
+                        ]
+                      }
+                    ]
+                  },
                   {
-                    "text": "FieldDecorator",
-                    "link": "/reference/pill_engine_core/component_registry/enum.FieldDecorator"
-                  }
-                ]
-              },
-              {
-                "text": "Traits",
-                "collapsed": true,
-                "items": [
+                    "text": "document",
+                    "link": "/reference/pill_engine_core/assets/document/",
+                    "collapsed": true,
+                    "items": [
+                      {
+                        "text": "Functions",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "parse",
+                            "link": "/reference/pill_engine_core/assets/document/fn.parse"
+                          },
+                          {
+                            "text": "render",
+                            "link": "/reference/pill_engine_core/assets/document/fn.render"
+                          }
+                        ]
+                      }
+                    ]
+                  },
                   {
-                    "text": "ComponentLayout",
-                    "link": "/reference/pill_engine_core/component_registry/trait.ComponentLayout"
-                  }
-                ]
-              },
-              {
-                "text": "Functions",
-                "collapsed": true,
-                "items": [
+                    "text": "import_registry",
+                    "link": "/reference/pill_engine_core/assets/import_registry/",
+                    "collapsed": true,
+                    "items": [
+                      {
+                        "text": "Structs",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "AssetIdentity",
+                            "link": "/reference/pill_engine_core/assets/import_registry/struct.AssetIdentity"
+                          },
+                          {
+                            "text": "ErasedImportOutcome",
+                            "link": "/reference/pill_engine_core/assets/import_registry/struct.ErasedImportOutcome"
+                          },
+                          {
+                            "text": "ImportedTypeEntry",
+                            "link": "/reference/pill_engine_core/assets/import_registry/struct.ImportedTypeEntry"
+                          },
+                          {
+                            "text": "ImportFunctions",
+                            "link": "/reference/pill_engine_core/assets/import_registry/struct.ImportFunctions"
+                          },
+                          {
+                            "text": "ImportRegistrationMarker",
+                            "link": "/reference/pill_engine_core/assets/import_registry/struct.ImportRegistrationMarker"
+                          },
+                          {
+                            "text": "ImportRegistry",
+                            "link": "/reference/pill_engine_core/assets/import_registry/struct.ImportRegistry"
+                          },
+                          {
+                            "text": "Registration",
+                            "link": "/reference/pill_engine_core/assets/import_registry/struct.Registration"
+                          },
+                          {
+                            "text": "ScanReport",
+                            "link": "/reference/pill_engine_core/assets/import_registry/struct.ScanReport"
+                          }
+                        ]
+                      },
+                      {
+                        "text": "Enums",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "ErasedImportError",
+                            "link": "/reference/pill_engine_core/assets/import_registry/enum.ErasedImportError"
+                          },
+                          {
+                            "text": "FieldDecorator",
+                            "link": "/reference/pill_engine_core/assets/import_registry/enum.FieldDecorator"
+                          },
+                          {
+                            "text": "ImportChange",
+                            "link": "/reference/pill_engine_core/assets/import_registry/enum.ImportChange"
+                          },
+                          {
+                            "text": "ImportRegistrationError",
+                            "link": "/reference/pill_engine_core/assets/import_registry/enum.ImportRegistrationError"
+                          }
+                        ]
+                      },
+                      {
+                        "text": "Functions",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "asset_identity_of",
+                            "link": "/reference/pill_engine_core/assets/import_registry/fn.asset_identity_of"
+                          },
+                          {
+                            "text": "guid_by_path",
+                            "link": "/reference/pill_engine_core/assets/import_registry/fn.guid_by_path"
+                          },
+                          {
+                            "text": "guid_clause",
+                            "link": "/reference/pill_engine_core/assets/import_registry/fn.guid_clause"
+                          },
+                          {
+                            "text": "handle_by_name_of",
+                            "link": "/reference/pill_engine_core/assets/import_registry/fn.handle_by_name_of"
+                          },
+                          {
+                            "text": "import_erased",
+                            "link": "/reference/pill_engine_core/assets/import_registry/fn.import_erased"
+                          },
+                          {
+                            "text": "import_standalone_erased",
+                            "link": "/reference/pill_engine_core/assets/import_registry/fn.import_standalone_erased"
+                          },
+                          {
+                            "text": "is_loaded",
+                            "link": "/reference/pill_engine_core/assets/import_registry/fn.is_loaded"
+                          },
+                          {
+                            "text": "loaded_assets_of",
+                            "link": "/reference/pill_engine_core/assets/import_registry/fn.loaded_assets_of"
+                          },
+                          {
+                            "text": "loaded_by_guid_of",
+                            "link": "/reference/pill_engine_core/assets/import_registry/fn.loaded_by_guid_of"
+                          },
+                          {
+                            "text": "reimport_erased",
+                            "link": "/reference/pill_engine_core/assets/import_registry/fn.reimport_erased"
+                          },
+                          {
+                            "text": "reimport_standalone_erased",
+                            "link": "/reference/pill_engine_core/assets/import_registry/fn.reimport_standalone_erased"
+                          },
+                          {
+                            "text": "remove_loaded",
+                            "link": "/reference/pill_engine_core/assets/import_registry/fn.remove_loaded"
+                          },
+                          {
+                            "text": "source_files",
+                            "link": "/reference/pill_engine_core/assets/import_registry/fn.source_files"
+                          }
+                        ]
+                      },
+                      {
+                        "text": "Type aliases",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "DefaultDocumentFunction",
+                            "link": "/reference/pill_engine_core/assets/import_registry/type.DefaultDocumentFunction"
+                          },
+                          {
+                            "text": "EnsureMetadataFunction",
+                            "link": "/reference/pill_engine_core/assets/import_registry/type.EnsureMetadataFunction"
+                          },
+                          {
+                            "text": "ErasedImportResult",
+                            "link": "/reference/pill_engine_core/assets/import_registry/type.ErasedImportResult"
+                          },
+                          {
+                            "text": "FollowMoveFunction",
+                            "link": "/reference/pill_engine_core/assets/import_registry/type.FollowMoveFunction"
+                          },
+                          {
+                            "text": "GuidByPathFunction",
+                            "link": "/reference/pill_engine_core/assets/import_registry/type.GuidByPathFunction"
+                          },
+                          {
+                            "text": "IdentityFunction",
+                            "link": "/reference/pill_engine_core/assets/import_registry/type.IdentityFunction"
+                          },
+                          {
+                            "text": "ImportFunction",
+                            "link": "/reference/pill_engine_core/assets/import_registry/type.ImportFunction"
+                          },
+                          {
+                            "text": "IsLoadedFunction",
+                            "link": "/reference/pill_engine_core/assets/import_registry/type.IsLoadedFunction"
+                          },
+                          {
+                            "text": "LoadedByGuidFunction",
+                            "link": "/reference/pill_engine_core/assets/import_registry/type.LoadedByGuidFunction"
+                          },
+                          {
+                            "text": "LoadedByNameFunction",
+                            "link": "/reference/pill_engine_core/assets/import_registry/type.LoadedByNameFunction"
+                          },
+                          {
+                            "text": "LoadedFunction",
+                            "link": "/reference/pill_engine_core/assets/import_registry/type.LoadedFunction"
+                          },
+                          {
+                            "text": "NormalizeSettingsFunction",
+                            "link": "/reference/pill_engine_core/assets/import_registry/type.NormalizeSettingsFunction"
+                          },
+                          {
+                            "text": "ReimportFunction",
+                            "link": "/reference/pill_engine_core/assets/import_registry/type.ReimportFunction"
+                          },
+                          {
+                            "text": "RemoveLoadedFunction",
+                            "link": "/reference/pill_engine_core/assets/import_registry/type.RemoveLoadedFunction"
+                          },
+                          {
+                            "text": "SettingsJsonFunction",
+                            "link": "/reference/pill_engine_core/assets/import_registry/type.SettingsJsonFunction"
+                          }
+                        ]
+                      }
+                    ]
+                  },
                   {
-                    "text": "resolve_unique_name",
-                    "link": "/reference/pill_engine_core/component_registry/fn.resolve_unique_name"
-                  }
-                ]
-              },
-              {
-                "text": "Type aliases",
-                "collapsed": true,
-                "items": [
+                    "text": "loading",
+                    "link": "/reference/pill_engine_core/assets/loading/",
+                    "collapsed": true,
+                    "items": [
+                      {
+                        "text": "Functions",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "extension_of",
+                            "link": "/reference/pill_engine_core/assets/loading/fn.extension_of"
+                          },
+                          {
+                            "text": "import_scene_document",
+                            "link": "/reference/pill_engine_core/assets/loading/fn.import_scene_document"
+                          },
+                          {
+                            "text": "load_scene_asset",
+                            "link": "/reference/pill_engine_core/assets/loading/fn.load_scene_asset"
+                          },
+                          {
+                            "text": "scene_database",
+                            "link": "/reference/pill_engine_core/assets/loading/fn.scene_database"
+                          }
+                        ]
+                      }
+                    ]
+                  },
                   {
-                    "text": "ValueTypeLayoutResolver",
-                    "link": "/reference/pill_engine_core/component_registry/type.ValueTypeLayoutResolver"
+                    "text": "metadata",
+                    "link": "/reference/pill_engine_core/assets/metadata/",
+                    "collapsed": true,
+                    "items": [
+                      {
+                        "text": "Structs",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "AssetImport",
+                            "link": "/reference/pill_engine_core/assets/metadata/struct.AssetImport"
+                          },
+                          {
+                            "text": "ImportOutcome",
+                            "link": "/reference/pill_engine_core/assets/metadata/struct.ImportOutcome"
+                          },
+                          {
+                            "text": "MetadataDocument",
+                            "link": "/reference/pill_engine_core/assets/metadata/struct.MetadataDocument"
+                          },
+                          {
+                            "text": "RawHeader",
+                            "link": "/reference/pill_engine_core/assets/metadata/struct.RawHeader"
+                          },
+                          {
+                            "text": "ReimportOutcome",
+                            "link": "/reference/pill_engine_core/assets/metadata/struct.ReimportOutcome"
+                          },
+                          {
+                            "text": "StoredMetadata",
+                            "link": "/reference/pill_engine_core/assets/metadata/struct.StoredMetadata"
+                          }
+                        ]
+                      },
+                      {
+                        "text": "Enums",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "AssetImportError",
+                            "link": "/reference/pill_engine_core/assets/metadata/enum.AssetImportError"
+                          },
+                          {
+                            "text": "MetadataPolicy",
+                            "link": "/reference/pill_engine_core/assets/metadata/enum.MetadataPolicy"
+                          },
+                          {
+                            "text": "MetadataSource",
+                            "link": "/reference/pill_engine_core/assets/metadata/enum.MetadataSource"
+                          }
+                        ]
+                      },
+                      {
+                        "text": "Traits",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "ImportedAsset",
+                            "link": "/reference/pill_engine_core/assets/metadata/trait.ImportedAsset"
+                          }
+                        ]
+                      },
+                      {
+                        "text": "Functions",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "checked_relative",
+                            "link": "/reference/pill_engine_core/assets/metadata/fn.checked_relative"
+                          },
+                          {
+                            "text": "display_guid",
+                            "link": "/reference/pill_engine_core/assets/metadata/fn.display_guid"
+                          },
+                          {
+                            "text": "is_metadata_file",
+                            "link": "/reference/pill_engine_core/assets/metadata/fn.is_metadata_file"
+                          },
+                          {
+                            "text": "metadata_path_for",
+                            "link": "/reference/pill_engine_core/assets/metadata/fn.metadata_path_for"
+                          },
+                          {
+                            "text": "normalize_settings_json",
+                            "link": "/reference/pill_engine_core/assets/metadata/fn.normalize_settings_json"
+                          },
+                          {
+                            "text": "parse_header",
+                            "link": "/reference/pill_engine_core/assets/metadata/fn.parse_header"
+                          },
+                          {
+                            "text": "parse_metadata",
+                            "link": "/reference/pill_engine_core/assets/metadata/fn.parse_metadata"
+                          },
+                          {
+                            "text": "read_header",
+                            "link": "/reference/pill_engine_core/assets/metadata/fn.read_header"
+                          },
+                          {
+                            "text": "render_metadata",
+                            "link": "/reference/pill_engine_core/assets/metadata/fn.render_metadata"
+                          },
+                          {
+                            "text": "same_settings",
+                            "link": "/reference/pill_engine_core/assets/metadata/fn.same_settings"
+                          },
+                          {
+                            "text": "settings_json_for",
+                            "link": "/reference/pill_engine_core/assets/metadata/fn.settings_json_for"
+                          },
+                          {
+                            "text": "settings_to_json",
+                            "link": "/reference/pill_engine_core/assets/metadata/fn.settings_to_json"
+                          },
+                          {
+                            "text": "standalone_file_name",
+                            "link": "/reference/pill_engine_core/assets/metadata/fn.standalone_file_name"
+                          }
+                        ]
+                      },
+                      {
+                        "text": "Constants",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "INVALID_CHARACTERS",
+                            "link": "/reference/pill_engine_core/assets/metadata/constant.INVALID_CHARACTERS"
+                          },
+                          {
+                            "text": "METADATA_EXTENSION",
+                            "link": "/reference/pill_engine_core/assets/metadata/constant.METADATA_EXTENSION"
+                          },
+                          {
+                            "text": "METADATA_FORMAT_VERSION",
+                            "link": "/reference/pill_engine_core/assets/metadata/constant.METADATA_FORMAT_VERSION"
+                          },
+                          {
+                            "text": "RESERVED_NAMES",
+                            "link": "/reference/pill_engine_core/assets/metadata/constant.RESERVED_NAMES"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "text": "reference",
+                    "link": "/reference/pill_engine_core/assets/reference/",
+                    "collapsed": true,
+                    "items": [
+                      {
+                        "text": "Structs",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "AssetReference",
+                            "link": "/reference/pill_engine_core/assets/reference/struct.AssetReference"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "text": "standalone",
+                    "link": "/reference/pill_engine_core/assets/standalone/",
+                    "collapsed": true,
+                    "items": [
+                      {
+                        "text": "Traits",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "StandaloneAsset",
+                            "link": "/reference/pill_engine_core/assets/standalone/trait.StandaloneAsset"
+                          }
+                        ]
+                      },
+                      {
+                        "text": "Functions",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "asset_name_of",
+                            "link": "/reference/pill_engine_core/assets/standalone/fn.asset_name_of"
+                          },
+                          {
+                            "text": "default_standalone_document",
+                            "link": "/reference/pill_engine_core/assets/standalone/fn.default_standalone_document"
+                          },
+                          {
+                            "text": "document_to_json",
+                            "link": "/reference/pill_engine_core/assets/standalone/fn.document_to_json"
+                          },
+                          {
+                            "text": "normalize_standalone_document",
+                            "link": "/reference/pill_engine_core/assets/standalone/fn.normalize_standalone_document"
+                          },
+                          {
+                            "text": "read_standalone",
+                            "link": "/reference/pill_engine_core/assets/standalone/fn.read_standalone"
+                          },
+                          {
+                            "text": "render_standalone",
+                            "link": "/reference/pill_engine_core/assets/standalone/fn.render_standalone"
+                          },
+                          {
+                            "text": "standalone_document_json",
+                            "link": "/reference/pill_engine_core/assets/standalone/fn.standalone_document_json"
+                          }
+                        ]
+                      },
+                      {
+                        "text": "Constants",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "STANDALONE_BODY_FIELD",
+                            "link": "/reference/pill_engine_core/assets/standalone/constant.STANDALONE_BODY_FIELD"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "text": "storage",
+                    "link": "/reference/pill_engine_core/assets/storage/",
+                    "collapsed": true,
+                    "items": [
+                      {
+                        "text": "Structs",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "AssetColumn",
+                            "link": "/reference/pill_engine_core/assets/storage/struct.AssetColumn"
+                          },
+                          {
+                            "text": "AssetGuid",
+                            "link": "/reference/pill_engine_core/assets/storage/struct.AssetGuid"
+                          },
+                          {
+                            "text": "AssetManager",
+                            "link": "/reference/pill_engine_core/assets/storage/struct.AssetManager"
+                          },
+                          {
+                            "text": "Handle",
+                            "link": "/reference/pill_engine_core/assets/storage/struct.Handle"
+                          },
+                          {
+                            "text": "KeyIndex",
+                            "link": "/reference/pill_engine_core/assets/storage/struct.KeyIndex"
+                          }
+                        ]
+                      },
+                      {
+                        "text": "Enums",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "AssetBindingError",
+                            "link": "/reference/pill_engine_core/assets/storage/enum.AssetBindingError"
+                          },
+                          {
+                            "text": "AssetLoader",
+                            "link": "/reference/pill_engine_core/assets/storage/enum.AssetLoader"
+                          },
+                          {
+                            "text": "AssetLoadError",
+                            "link": "/reference/pill_engine_core/assets/storage/enum.AssetLoadError"
+                          }
+                        ]
+                      },
+                      {
+                        "text": "Traits",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "Asset",
+                            "link": "/reference/pill_engine_core/assets/storage/trait.Asset"
+                          }
+                        ]
+                      },
+                      {
+                        "text": "Functions",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "refresh_column_ops",
+                            "link": "/reference/pill_engine_core/assets/storage/fn.refresh_column_ops"
+                          }
+                        ]
+                      },
+                      {
+                        "text": "Type aliases",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "AssetBindingResult",
+                            "link": "/reference/pill_engine_core/assets/storage/type.AssetBindingResult"
+                          },
+                          {
+                            "text": "AssetLoadResult",
+                            "link": "/reference/pill_engine_core/assets/storage/type.AssetLoadResult"
+                          },
+                          {
+                            "text": "AssetOpsRefresher",
+                            "link": "/reference/pill_engine_core/assets/storage/type.AssetOpsRefresher"
+                          }
+                        ]
+                      },
+                      {
+                        "text": "Constants",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "ASSET_MANAGER_SHARED_NAME",
+                            "link": "/reference/pill_engine_core/assets/storage/constant.ASSET_MANAGER_SHARED_NAME"
+                          },
+                          {
+                            "text": "INVALID_ASSET_GENERATION",
+                            "link": "/reference/pill_engine_core/assets/storage/constant.INVALID_ASSET_GENERATION"
+                          },
+                          {
+                            "text": "INVALID_ASSET_INDEX",
+                            "link": "/reference/pill_engine_core/assets/storage/constant.INVALID_ASSET_INDEX"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "text": "store",
+                    "link": "/reference/pill_engine_core/assets/store/",
+                    "collapsed": true,
+                    "items": [
+                      {
+                        "text": "Structs",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "AssetPack",
+                            "link": "/reference/pill_engine_core/assets/store/struct.AssetPack"
+                          },
+                          {
+                            "text": "ModuleAssetRoot",
+                            "link": "/reference/pill_engine_core/assets/store/struct.ModuleAssetRoot"
+                          },
+                          {
+                            "text": "Mounts",
+                            "link": "/reference/pill_engine_core/assets/store/struct.Mounts"
+                          },
+                          {
+                            "text": "PackReader",
+                            "link": "/reference/pill_engine_core/assets/store/struct.PackReader"
+                          }
+                        ]
+                      },
+                      {
+                        "text": "Enums",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "AssetPackError",
+                            "link": "/reference/pill_engine_core/assets/store/enum.AssetPackError"
+                          },
+                          {
+                            "text": "Existing",
+                            "link": "/reference/pill_engine_core/assets/store/enum.Existing"
+                          }
+                        ]
+                      },
+                      {
+                        "text": "Functions",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "assert_module_root_complete",
+                            "link": "/reference/pill_engine_core/assets/store/fn.assert_module_root_complete"
+                          },
+                          {
+                            "text": "assert_roots_do_not_overlap",
+                            "link": "/reference/pill_engine_core/assets/store/fn.assert_roots_do_not_overlap"
+                          },
+                          {
+                            "text": "declare_module_root",
+                            "link": "/reference/pill_engine_core/assets/store/fn.declare_module_root"
+                          },
+                          {
+                            "text": "declare_module_root_hiding",
+                            "link": "/reference/pill_engine_core/assets/store/fn.declare_module_root_hiding"
+                          },
+                          {
+                            "text": "forget_all_module_roots",
+                            "link": "/reference/pill_engine_core/assets/store/fn.forget_all_module_roots"
+                          },
+                          {
+                            "text": "forget_module_root",
+                            "link": "/reference/pill_engine_core/assets/store/fn.forget_module_root"
+                          },
+                          {
+                            "text": "hard_link",
+                            "link": "/reference/pill_engine_core/assets/store/fn.hard_link"
+                          },
+                          {
+                            "text": "is_module_asset",
+                            "link": "/reference/pill_engine_core/assets/store/fn.is_module_asset"
+                          },
+                          {
+                            "text": "locate_file",
+                            "link": "/reference/pill_engine_core/assets/store/fn.locate_file"
+                          },
+                          {
+                            "text": "module_roots",
+                            "link": "/reference/pill_engine_core/assets/store/fn.module_roots"
+                          },
+                          {
+                            "text": "mount_directory",
+                            "link": "/reference/pill_engine_core/assets/store/fn.mount_directory"
+                          },
+                          {
+                            "text": "mount_pack",
+                            "link": "/reference/pill_engine_core/assets/store/fn.mount_pack"
+                          },
+                          {
+                            "text": "mounted_directory",
+                            "link": "/reference/pill_engine_core/assets/store/fn.mounted_directory"
+                          },
+                          {
+                            "text": "mounts",
+                            "link": "/reference/pill_engine_core/assets/store/fn.mounts"
+                          },
+                          {
+                            "text": "pack_key",
+                            "link": "/reference/pill_engine_core/assets/store/fn.pack_key"
+                          },
+                          {
+                            "text": "packs_only",
+                            "link": "/reference/pill_engine_core/assets/store/fn.packs_only"
+                          },
+                          {
+                            "text": "place_file",
+                            "link": "/reference/pill_engine_core/assets/store/fn.place_file"
+                          },
+                          {
+                            "text": "read",
+                            "link": "/reference/pill_engine_core/assets/store/fn.read"
+                          },
+                          {
+                            "text": "relative_files",
+                            "link": "/reference/pill_engine_core/assets/store/fn.relative_files"
+                          },
+                          {
+                            "text": "resolve_file",
+                            "link": "/reference/pill_engine_core/assets/store/fn.resolve_file"
+                          },
+                          {
+                            "text": "restrict_to_packs",
+                            "link": "/reference/pill_engine_core/assets/store/fn.restrict_to_packs"
+                          },
+                          {
+                            "text": "temporary_name",
+                            "link": "/reference/pill_engine_core/assets/store/fn.temporary_name"
+                          },
+                          {
+                            "text": "verify_module_roots",
+                            "link": "/reference/pill_engine_core/assets/store/fn.verify_module_roots"
+                          },
+                          {
+                            "text": "write_beside",
+                            "link": "/reference/pill_engine_core/assets/store/fn.write_beside"
+                          },
+                          {
+                            "text": "write_new",
+                            "link": "/reference/pill_engine_core/assets/store/fn.write_new"
+                          },
+                          {
+                            "text": "write_replacing",
+                            "link": "/reference/pill_engine_core/assets/store/fn.write_replacing"
+                          },
+                          {
+                            "text": "write_then_place",
+                            "link": "/reference/pill_engine_core/assets/store/fn.write_then_place"
+                          }
+                        ]
+                      },
+                      {
+                        "text": "Type aliases",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "Link",
+                            "link": "/reference/pill_engine_core/assets/store/type.Link"
+                          }
+                        ]
+                      },
+                      {
+                        "text": "Constants",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "MIN_ENTRY_LEN",
+                            "link": "/reference/pill_engine_core/assets/store/constant.MIN_ENTRY_LEN"
+                          }
+                        ]
+                      },
+                      {
+                        "text": "Statics",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "PACKS_ONLY",
+                            "link": "/reference/pill_engine_core/assets/store/static.PACKS_ONLY"
+                          }
+                        ]
+                      }
+                    ]
                   }
                 ]
               }
@@ -14263,174 +15408,1021 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
             ]
           },
           {
-            "text": "debug_draw",
-            "link": "/reference/pill_engine_core/debug_draw/",
-            "collapsed": true,
-            "items": [
-              {
-                "text": "Structs",
-                "collapsed": true,
-                "items": [
-                  {
-                    "text": "DebugDraw",
-                    "link": "/reference/pill_engine_core/debug_draw/struct.DebugDraw"
-                  },
-                  {
-                    "text": "DebugFrame",
-                    "link": "/reference/pill_engine_core/debug_draw/struct.DebugFrame"
-                  },
-                  {
-                    "text": "DebugLabel",
-                    "link": "/reference/pill_engine_core/debug_draw/struct.DebugLabel"
-                  },
-                  {
-                    "text": "DebugLine",
-                    "link": "/reference/pill_engine_core/debug_draw/struct.DebugLine"
-                  },
-                  {
-                    "text": "DebugStyle",
-                    "link": "/reference/pill_engine_core/debug_draw/struct.DebugStyle"
-                  },
-                  {
-                    "text": "GizmoLine",
-                    "link": "/reference/pill_engine_core/debug_draw/struct.GizmoLine"
-                  },
-                  {
-                    "text": "GizmoTriangle",
-                    "link": "/reference/pill_engine_core/debug_draw/struct.GizmoTriangle"
-                  },
-                  {
-                    "text": "Timed",
-                    "link": "/reference/pill_engine_core/debug_draw/struct.Timed"
-                  }
-                ]
-              },
-              {
-                "text": "Enums",
-                "collapsed": true,
-                "items": [
-                  {
-                    "text": "DebugLifetime",
-                    "link": "/reference/pill_engine_core/debug_draw/enum.DebugLifetime"
-                  },
-                  {
-                    "text": "LabelAnchor",
-                    "link": "/reference/pill_engine_core/debug_draw/enum.LabelAnchor"
-                  }
-                ]
-              },
-              {
-                "text": "Functions",
-                "collapsed": true,
-                "items": [
-                  {
-                    "text": "add_vectors",
-                    "link": "/reference/pill_engine_core/debug_draw/fn.add_vectors"
-                  },
-                  {
-                    "text": "age_timed_items",
-                    "link": "/reference/pill_engine_core/debug_draw/fn.age_timed_items"
-                  },
-                  {
-                    "text": "cross_vectors",
-                    "link": "/reference/pill_engine_core/debug_draw/fn.cross_vectors"
-                  },
-                  {
-                    "text": "normalize_vector",
-                    "link": "/reference/pill_engine_core/debug_draw/fn.normalize_vector"
-                  },
-                  {
-                    "text": "plane_axes",
-                    "link": "/reference/pill_engine_core/debug_draw/fn.plane_axes"
-                  },
-                  {
-                    "text": "scale_vector",
-                    "link": "/reference/pill_engine_core/debug_draw/fn.scale_vector"
-                  },
-                  {
-                    "text": "subtract_vectors",
-                    "link": "/reference/pill_engine_core/debug_draw/fn.subtract_vectors"
-                  },
-                  {
-                    "text": "vector_length",
-                    "link": "/reference/pill_engine_core/debug_draw/fn.vector_length"
-                  }
-                ]
-              },
-              {
-                "text": "Type aliases",
-                "collapsed": true,
-                "items": [
-                  {
-                    "text": "DebugColor",
-                    "link": "/reference/pill_engine_core/debug_draw/type.DebugColor"
-                  }
-                ]
-              },
-              {
-                "text": "Constants",
-                "collapsed": true,
-                "items": [
-                  {
-                    "text": "CIRCLE_SEGMENTS",
-                    "link": "/reference/pill_engine_core/debug_draw/constant.CIRCLE_SEGMENTS"
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "text": "diagnostics",
-            "link": "/reference/pill_engine_core/diagnostics/",
-            "collapsed": true,
-            "items": [
-              {
-                "text": "Structs",
-                "collapsed": true,
-                "items": [
-                  {
-                    "text": "ArchetypeReport",
-                    "link": "/reference/pill_engine_core/diagnostics/struct.ArchetypeReport"
-                  },
-                  {
-                    "text": "ColumnReport",
-                    "link": "/reference/pill_engine_core/diagnostics/struct.ColumnReport"
-                  },
-                  {
-                    "text": "EcsSnapshot",
-                    "link": "/reference/pill_engine_core/diagnostics/struct.EcsSnapshot"
-                  }
-                ]
-              },
-              {
-                "text": "Functions",
-                "collapsed": true,
-                "items": [
-                  {
-                    "text": "format_bytes",
-                    "link": "/reference/pill_engine_core/diagnostics/fn.format_bytes"
-                  }
-                ]
-              },
-              {
-                "text": "Constants",
-                "collapsed": true,
-                "items": [
-                  {
-                    "text": "DEFAULT_REPORT_INTERVAL",
-                    "link": "/reference/pill_engine_core/diagnostics/constant.DEFAULT_REPORT_INTERVAL"
-                  },
-                  {
-                    "text": "SYSTEM_NAME",
-                    "link": "/reference/pill_engine_core/diagnostics/constant.SYSTEM_NAME"
-                  }
-                ]
-              }
-            ]
-          },
-          {
             "text": "dynamic_buffer",
             "link": "/reference/pill_engine_core/dynamic_buffer/"
+          },
+          {
+            "text": "ecs",
+            "link": "/reference/pill_engine_core/ecs/",
+            "collapsed": true,
+            "items": [
+              {
+                "text": "Modules",
+                "collapsed": true,
+                "items": [
+                  {
+                    "text": "archetype",
+                    "link": "/reference/pill_engine_core/ecs/archetype/",
+                    "collapsed": true,
+                    "items": [
+                      {
+                        "text": "Structs",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "Archetype",
+                            "link": "/reference/pill_engine_core/ecs/archetype/struct.Archetype"
+                          },
+                          {
+                            "text": "ArchetypeId",
+                            "link": "/reference/pill_engine_core/ecs/archetype/struct.ArchetypeId"
+                          },
+                          {
+                            "text": "Blittability",
+                            "link": "/reference/pill_engine_core/ecs/archetype/struct.Blittability"
+                          },
+                          {
+                            "text": "ColumnLayout",
+                            "link": "/reference/pill_engine_core/ecs/archetype/struct.ColumnLayout"
+                          },
+                          {
+                            "text": "ColumnOps",
+                            "link": "/reference/pill_engine_core/ecs/archetype/struct.ColumnOps"
+                          },
+                          {
+                            "text": "ComponentColumn",
+                            "link": "/reference/pill_engine_core/ecs/archetype/struct.ComponentColumn"
+                          },
+                          {
+                            "text": "ComponentColumns",
+                            "link": "/reference/pill_engine_core/ecs/archetype/struct.ComponentColumns"
+                          },
+                          {
+                            "text": "FieldPlan",
+                            "link": "/reference/pill_engine_core/ecs/archetype/struct.FieldPlan"
+                          },
+                          {
+                            "text": "LayoutField",
+                            "link": "/reference/pill_engine_core/ecs/archetype/struct.LayoutField"
+                          },
+                          {
+                            "text": "NativeColumnInfo",
+                            "link": "/reference/pill_engine_core/ecs/archetype/struct.NativeColumnInfo"
+                          },
+                          {
+                            "text": "PlannedField",
+                            "link": "/reference/pill_engine_core/ecs/archetype/struct.PlannedField"
+                          }
+                        ]
+                      },
+                      {
+                        "text": "Enums",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "ColumnIdentity",
+                            "link": "/reference/pill_engine_core/ecs/archetype/enum.ColumnIdentity"
+                          },
+                          {
+                            "text": "FieldSource",
+                            "link": "/reference/pill_engine_core/ecs/archetype/enum.FieldSource"
+                          },
+                          {
+                            "text": "StorageFactory",
+                            "link": "/reference/pill_engine_core/ecs/archetype/enum.StorageFactory"
+                          }
+                        ]
+                      },
+                      {
+                        "text": "Functions",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "drop_range_of",
+                            "link": "/reference/pill_engine_core/ecs/archetype/fn.drop_range_of"
+                          },
+                          {
+                            "text": "drop_range_of_nothing",
+                            "link": "/reference/pill_engine_core/ecs/archetype/fn.drop_range_of_nothing"
+                          },
+                          {
+                            "text": "missing_column",
+                            "link": "/reference/pill_engine_core/ecs/archetype/fn.missing_column"
+                          },
+                          {
+                            "text": "out_of_bounds",
+                            "link": "/reference/pill_engine_core/ecs/archetype/fn.out_of_bounds"
+                          },
+                          {
+                            "text": "unallocated_pointer",
+                            "link": "/reference/pill_engine_core/ecs/archetype/fn.unallocated_pointer"
+                          },
+                          {
+                            "text": "validate_component_layout",
+                            "link": "/reference/pill_engine_core/ecs/archetype/fn.validate_component_layout"
+                          },
+                          {
+                            "text": "validate_native_component_layout",
+                            "link": "/reference/pill_engine_core/ecs/archetype/fn.validate_native_component_layout"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "text": "commands",
+                    "link": "/reference/pill_engine_core/ecs/commands/",
+                    "collapsed": true,
+                    "items": [
+                      {
+                        "text": "Structs",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "ByteComponentAdder",
+                            "link": "/reference/pill_engine_core/ecs/commands/struct.ByteComponentAdder"
+                          },
+                          {
+                            "text": "CommandQueue",
+                            "link": "/reference/pill_engine_core/ecs/commands/struct.CommandQueue"
+                          },
+                          {
+                            "text": "Commands",
+                            "link": "/reference/pill_engine_core/ecs/commands/struct.Commands"
+                          },
+                          {
+                            "text": "DeferredEntityBuilder",
+                            "link": "/reference/pill_engine_core/ecs/commands/struct.DeferredEntityBuilder"
+                          },
+                          {
+                            "text": "TypedComponentAdder",
+                            "link": "/reference/pill_engine_core/ecs/commands/struct.TypedComponentAdder"
+                          }
+                        ]
+                      },
+                      {
+                        "text": "Enums",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "DeferredCommand",
+                            "link": "/reference/pill_engine_core/ecs/commands/enum.DeferredCommand"
+                          }
+                        ]
+                      },
+                      {
+                        "text": "Traits",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "ComponentAdder",
+                            "link": "/reference/pill_engine_core/ecs/commands/trait.ComponentAdder"
+                          }
+                        ]
+                      },
+                      {
+                        "text": "Functions",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "boxed_component_adder",
+                            "link": "/reference/pill_engine_core/ecs/commands/fn.boxed_component_adder"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "text": "common_components",
+                    "link": "/reference/pill_engine_core/ecs/common_components/",
+                    "collapsed": true,
+                    "items": [
+                      {
+                        "text": "Structs",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "TransformComponent",
+                            "link": "/reference/pill_engine_core/ecs/common_components/struct.TransformComponent"
+                          }
+                        ]
+                      },
+                      {
+                        "text": "Functions",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "register_transform_component",
+                            "link": "/reference/pill_engine_core/ecs/common_components/fn.register_transform_component"
+                          },
+                          {
+                            "text": "rotation_or_identity",
+                            "link": "/reference/pill_engine_core/ecs/common_components/fn.rotation_or_identity"
+                          }
+                        ]
+                      },
+                      {
+                        "text": "Constants",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "ROTATION_IDENTITY_EPSILON",
+                            "link": "/reference/pill_engine_core/ecs/common_components/constant.ROTATION_IDENTITY_EPSILON"
+                          },
+                          {
+                            "text": "TRANSFORM_SHARED_NAME",
+                            "link": "/reference/pill_engine_core/ecs/common_components/constant.TRANSFORM_SHARED_NAME"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "text": "component",
+                    "link": "/reference/pill_engine_core/ecs/component/",
+                    "collapsed": true,
+                    "items": [
+                      {
+                        "text": "Structs",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "ComponentMask",
+                            "link": "/reference/pill_engine_core/ecs/component/struct.ComponentMask"
+                          },
+                          {
+                            "text": "ComponentRegistration",
+                            "link": "/reference/pill_engine_core/ecs/component/struct.ComponentRegistration"
+                          },
+                          {
+                            "text": "ComponentRegistry",
+                            "link": "/reference/pill_engine_core/ecs/component/struct.ComponentRegistry"
+                          },
+                          {
+                            "text": "ComponentTicks",
+                            "link": "/reference/pill_engine_core/ecs/component/struct.ComponentTicks"
+                          },
+                          {
+                            "text": "Tick",
+                            "link": "/reference/pill_engine_core/ecs/component/struct.Tick"
+                          }
+                        ]
+                      },
+                      {
+                        "text": "Enums",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "ComponentId",
+                            "link": "/reference/pill_engine_core/ecs/component/enum.ComponentId"
+                          },
+                          {
+                            "text": "Registration",
+                            "link": "/reference/pill_engine_core/ecs/component/enum.Registration"
+                          }
+                        ]
+                      },
+                      {
+                        "text": "Traits",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "Component",
+                            "link": "/reference/pill_engine_core/ecs/component/trait.Component"
+                          }
+                        ]
+                      },
+                      {
+                        "text": "Functions",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "component_name_hash",
+                            "link": "/reference/pill_engine_core/ecs/component/fn.component_name_hash"
+                          },
+                          {
+                            "text": "component_schema_hash",
+                            "link": "/reference/pill_engine_core/ecs/component/fn.component_schema_hash"
+                          },
+                          {
+                            "text": "shared_component_identity",
+                            "link": "/reference/pill_engine_core/ecs/component/fn.shared_component_identity"
+                          }
+                        ]
+                      },
+                      {
+                        "text": "Constants",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "DESCRIPTOR_HASH_SALT",
+                            "link": "/reference/pill_engine_core/ecs/component/constant.DESCRIPTOR_HASH_SALT"
+                          },
+                          {
+                            "text": "SHARED_HASH_SALT",
+                            "link": "/reference/pill_engine_core/ecs/component/constant.SHARED_HASH_SALT"
+                          },
+                          {
+                            "text": "TICK_WRAP_HALF_RANGE",
+                            "link": "/reference/pill_engine_core/ecs/component/constant.TICK_WRAP_HALF_RANGE"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "text": "entity",
+                    "link": "/reference/pill_engine_core/ecs/entity/",
+                    "collapsed": true,
+                    "items": [
+                      {
+                        "text": "Structs",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "Entity",
+                            "link": "/reference/pill_engine_core/ecs/entity/struct.Entity"
+                          },
+                          {
+                            "text": "EntityId",
+                            "link": "/reference/pill_engine_core/ecs/entity/struct.EntityId"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "text": "query",
+                    "link": "/reference/pill_engine_core/ecs/query/",
+                    "collapsed": true,
+                    "items": [
+                      {
+                        "text": "Modules",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "change_detection",
+                            "link": "/reference/pill_engine_core/ecs/query/change_detection/",
+                            "collapsed": true,
+                            "items": [
+                              {
+                                "text": "Structs",
+                                "collapsed": true,
+                                "items": [
+                                  {
+                                    "text": "Mut",
+                                    "link": "/reference/pill_engine_core/ecs/query/change_detection/struct.Mut"
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "text": "filter",
+                            "link": "/reference/pill_engine_core/ecs/query/filter/",
+                            "collapsed": true,
+                            "items": [
+                              {
+                                "text": "Structs",
+                                "collapsed": true,
+                                "items": [
+                                  {
+                                    "text": "Added",
+                                    "link": "/reference/pill_engine_core/ecs/query/filter/struct.Added"
+                                  },
+                                  {
+                                    "text": "Changed",
+                                    "link": "/reference/pill_engine_core/ecs/query/filter/struct.Changed"
+                                  },
+                                  {
+                                    "text": "Or",
+                                    "link": "/reference/pill_engine_core/ecs/query/filter/struct.Or"
+                                  },
+                                  {
+                                    "text": "TickFilterState",
+                                    "link": "/reference/pill_engine_core/ecs/query/filter/struct.TickFilterState"
+                                  },
+                                  {
+                                    "text": "With",
+                                    "link": "/reference/pill_engine_core/ecs/query/filter/struct.With"
+                                  },
+                                  {
+                                    "text": "Without",
+                                    "link": "/reference/pill_engine_core/ecs/query/filter/struct.Without"
+                                  }
+                                ]
+                              },
+                              {
+                                "text": "Traits",
+                                "collapsed": true,
+                                "items": [
+                                  {
+                                    "text": "QueryFilter",
+                                    "link": "/reference/pill_engine_core/ecs/query/filter/trait.QueryFilter"
+                                  }
+                                ]
+                              },
+                              {
+                                "text": "Functions",
+                                "collapsed": true,
+                                "items": [
+                                  {
+                                    "text": "and_filter_pairs",
+                                    "link": "/reference/pill_engine_core/ecs/query/filter/fn.and_filter_pairs"
+                                  }
+                                ]
+                              },
+                              {
+                                "text": "Macros",
+                                "collapsed": true,
+                                "items": [
+                                  {
+                                    "text": "impl_query_filter_or",
+                                    "link": "/reference/pill_engine_core/ecs/query/filter/macro.impl_query_filter_or"
+                                  },
+                                  {
+                                    "text": "impl_query_filter_tuple",
+                                    "link": "/reference/pill_engine_core/ecs/query/filter/macro.impl_query_filter_tuple"
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "text": "iter",
+                            "link": "/reference/pill_engine_core/ecs/query/iter/",
+                            "collapsed": true,
+                            "items": [
+                              {
+                                "text": "Structs",
+                                "collapsed": true,
+                                "items": [
+                                  {
+                                    "text": "BatchStats",
+                                    "link": "/reference/pill_engine_core/ecs/query/iter/struct.BatchStats"
+                                  },
+                                  {
+                                    "text": "ParallelPlan",
+                                    "link": "/reference/pill_engine_core/ecs/query/iter/struct.ParallelPlan"
+                                  },
+                                  {
+                                    "text": "ParQueryIter",
+                                    "link": "/reference/pill_engine_core/ecs/query/iter/struct.ParQueryIter"
+                                  },
+                                  {
+                                    "text": "QueryIterMut",
+                                    "link": "/reference/pill_engine_core/ecs/query/iter/struct.QueryIterMut"
+                                  }
+                                ]
+                              },
+                              {
+                                "text": "Enums",
+                                "collapsed": true,
+                                "items": [
+                                  {
+                                    "text": "WorkPlan",
+                                    "link": "/reference/pill_engine_core/ecs/query/iter/enum.WorkPlan"
+                                  }
+                                ]
+                              },
+                              {
+                                "text": "Functions",
+                                "collapsed": true,
+                                "items": [
+                                  {
+                                    "text": "iterator_work_group_count",
+                                    "link": "/reference/pill_engine_core/ecs/query/iter/fn.iterator_work_group_count"
+                                  },
+                                  {
+                                    "text": "run_group",
+                                    "link": "/reference/pill_engine_core/ecs/query/iter/fn.run_group"
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "text": "ptr",
+                            "link": "/reference/pill_engine_core/ecs/query/ptr/",
+                            "collapsed": true,
+                            "items": [
+                              {
+                                "text": "Structs",
+                                "collapsed": true,
+                                "items": [
+                                  {
+                                    "text": "SendPtr",
+                                    "link": "/reference/pill_engine_core/ecs/query/ptr/struct.SendPtr"
+                                  },
+                                  {
+                                    "text": "SendPtrMut",
+                                    "link": "/reference/pill_engine_core/ecs/query/ptr/struct.SendPtrMut"
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "text": "query",
+                            "link": "/reference/pill_engine_core/ecs/query/query/",
+                            "collapsed": true,
+                            "items": [
+                              {
+                                "text": "Structs",
+                                "collapsed": true,
+                                "items": [
+                                  {
+                                    "text": "Query",
+                                    "link": "/reference/pill_engine_core/ecs/query/query/struct.Query"
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "text": "resource",
+                            "link": "/reference/pill_engine_core/ecs/query/resource/",
+                            "collapsed": true,
+                            "items": [
+                              {
+                                "text": "Structs",
+                                "collapsed": true,
+                                "items": [
+                                  {
+                                    "text": "Res",
+                                    "link": "/reference/pill_engine_core/ecs/query/resource/struct.Res"
+                                  },
+                                  {
+                                    "text": "ResMut",
+                                    "link": "/reference/pill_engine_core/ecs/query/resource/struct.ResMut"
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "text": "target",
+                            "link": "/reference/pill_engine_core/ecs/query/target/",
+                            "collapsed": true,
+                            "items": [
+                              {
+                                "text": "Structs",
+                                "collapsed": true,
+                                "items": [
+                                  {
+                                    "text": "MutFetchState",
+                                    "link": "/reference/pill_engine_core/ecs/query/target/struct.MutFetchState"
+                                  }
+                                ]
+                              },
+                              {
+                                "text": "Traits",
+                                "collapsed": true,
+                                "items": [
+                                  {
+                                    "text": "QueryTarget",
+                                    "link": "/reference/pill_engine_core/ecs/query/target/trait.QueryTarget"
+                                  },
+                                  {
+                                    "text": "ReadOnlyQueryTarget",
+                                    "link": "/reference/pill_engine_core/ecs/query/target/trait.ReadOnlyQueryTarget"
+                                  }
+                                ]
+                              },
+                              {
+                                "text": "Functions",
+                                "collapsed": true,
+                                "items": [
+                                  {
+                                    "text": "declared_shared_schema",
+                                    "link": "/reference/pill_engine_core/ecs/query/target/fn.declared_shared_schema"
+                                  },
+                                  {
+                                    "text": "find_aliasing_component",
+                                    "link": "/reference/pill_engine_core/ecs/query/target/fn.find_aliasing_component"
+                                  }
+                                ]
+                              },
+                              {
+                                "text": "Macros",
+                                "collapsed": true,
+                                "items": [
+                                  {
+                                    "text": "impl_query_target_tuple",
+                                    "link": "/reference/pill_engine_core/ecs/query/target/macro.impl_query_target_tuple"
+                                  },
+                                  {
+                                    "text": "impl_read_only_query_target_tuple",
+                                    "link": "/reference/pill_engine_core/ecs/query/target/macro.impl_read_only_query_target_tuple"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "text": "Structs",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "FilteredArchetypeRange",
+                            "link": "/reference/pill_engine_core/ecs/query/struct.FilteredArchetypeRange"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "text": "resource",
+                    "link": "/reference/pill_engine_core/ecs/resource/",
+                    "collapsed": true,
+                    "items": [
+                      {
+                        "text": "Structs",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "CloneResourceProbe",
+                            "link": "/reference/pill_engine_core/ecs/resource/struct.CloneResourceProbe"
+                          },
+                          {
+                            "text": "ErasedResource",
+                            "link": "/reference/pill_engine_core/ecs/resource/struct.ErasedResource"
+                          },
+                          {
+                            "text": "ErasedResourceOps",
+                            "link": "/reference/pill_engine_core/ecs/resource/struct.ErasedResourceOps"
+                          },
+                          {
+                            "text": "KeptLayoutDeclaration",
+                            "link": "/reference/pill_engine_core/ecs/resource/struct.KeptLayoutDeclaration"
+                          },
+                          {
+                            "text": "ResHandle",
+                            "link": "/reference/pill_engine_core/ecs/resource/struct.ResHandle"
+                          },
+                          {
+                            "text": "RestoreEpoch",
+                            "link": "/reference/pill_engine_core/ecs/resource/struct.RestoreEpoch"
+                          }
+                        ]
+                      },
+                      {
+                        "text": "Enums",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "PlayState",
+                            "link": "/reference/pill_engine_core/ecs/resource/enum.PlayState"
+                          },
+                          {
+                            "text": "ResourceId",
+                            "link": "/reference/pill_engine_core/ecs/resource/enum.ResourceId"
+                          }
+                        ]
+                      },
+                      {
+                        "text": "Traits",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "RecordResourceClone",
+                            "link": "/reference/pill_engine_core/ecs/resource/trait.RecordResourceClone"
+                          },
+                          {
+                            "text": "Resource",
+                            "link": "/reference/pill_engine_core/ecs/resource/trait.Resource"
+                          },
+                          {
+                            "text": "SkipResourceClone",
+                            "link": "/reference/pill_engine_core/ecs/resource/trait.SkipResourceClone"
+                          }
+                        ]
+                      },
+                      {
+                        "text": "Functions",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "drop_in_place_of",
+                            "link": "/reference/pill_engine_core/ecs/resource/fn.drop_in_place_of"
+                          },
+                          {
+                            "text": "drop_nothing",
+                            "link": "/reference/pill_engine_core/ecs/resource/fn.drop_nothing"
+                          }
+                        ]
+                      },
+                      {
+                        "text": "Constants",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "SHARED_RESOURCE_HASH_SALT",
+                            "link": "/reference/pill_engine_core/ecs/resource/constant.SHARED_RESOURCE_HASH_SALT"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "text": "world",
+                    "link": "/reference/pill_engine_core/ecs/world/",
+                    "collapsed": true,
+                    "items": [
+                      {
+                        "text": "Modules",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "change_origin",
+                            "link": "/reference/pill_engine_core/ecs/world/change_origin/",
+                            "collapsed": true,
+                            "items": [
+                              {
+                                "text": "Enums",
+                                "collapsed": true,
+                                "items": [
+                                  {
+                                    "text": "ChangeOrigin",
+                                    "link": "/reference/pill_engine_core/ecs/world/change_origin/enum.ChangeOrigin"
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "text": "components",
+                            "link": "/reference/pill_engine_core/ecs/world/components/",
+                            "collapsed": true,
+                            "items": [
+                              {
+                                "text": "Structs",
+                                "collapsed": true,
+                                "items": [
+                                  {
+                                    "text": "ColumnChunk",
+                                    "link": "/reference/pill_engine_core/ecs/world/components/struct.ColumnChunk"
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "text": "lifecycle",
+                            "link": "/reference/pill_engine_core/ecs/world/lifecycle/",
+                            "collapsed": true,
+                            "items": [
+                              {
+                                "text": "Structs",
+                                "collapsed": true,
+                                "items": [
+                                  {
+                                    "text": "PendingScriptEvent",
+                                    "link": "/reference/pill_engine_core/ecs/world/lifecycle/struct.PendingScriptEvent"
+                                  }
+                                ]
+                              },
+                              {
+                                "text": "Functions",
+                                "collapsed": true,
+                                "items": [
+                                  {
+                                    "text": "sort_lifecycle_method_calls",
+                                    "link": "/reference/pill_engine_core/ecs/world/lifecycle/fn.sort_lifecycle_method_calls"
+                                  },
+                                  {
+                                    "text": "sort_pending_events",
+                                    "link": "/reference/pill_engine_core/ecs/world/lifecycle/fn.sort_pending_events"
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "text": "reflection",
+                            "link": "/reference/pill_engine_core/ecs/world/reflection/"
+                          },
+                          {
+                            "text": "resources",
+                            "link": "/reference/pill_engine_core/ecs/world/resources/"
+                          },
+                          {
+                            "text": "scripting",
+                            "link": "/reference/pill_engine_core/ecs/world/scripting/",
+                            "collapsed": true,
+                            "items": [
+                              {
+                                "text": "Structs",
+                                "collapsed": true,
+                                "items": [
+                                  {
+                                    "text": "ScriptRegistration",
+                                    "link": "/reference/pill_engine_core/ecs/world/scripting/struct.ScriptRegistration"
+                                  }
+                                ]
+                              },
+                              {
+                                "text": "Type aliases",
+                                "collapsed": true,
+                                "items": [
+                                  {
+                                    "text": "ScriptCreateAdapter",
+                                    "link": "/reference/pill_engine_core/ecs/world/scripting/type.ScriptCreateAdapter"
+                                  },
+                                  {
+                                    "text": "ScriptDestroyAdapter",
+                                    "link": "/reference/pill_engine_core/ecs/world/scripting/type.ScriptDestroyAdapter"
+                                  },
+                                  {
+                                    "text": "ScriptStartAdapter",
+                                    "link": "/reference/pill_engine_core/ecs/world/scripting/type.ScriptStartAdapter"
+                                  },
+                                  {
+                                    "text": "ScriptStopAdapter",
+                                    "link": "/reference/pill_engine_core/ecs/world/scripting/type.ScriptStopAdapter"
+                                  },
+                                  {
+                                    "text": "ScriptUpdateAdapter",
+                                    "link": "/reference/pill_engine_core/ecs/world/scripting/type.ScriptUpdateAdapter"
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "text": "storage",
+                            "link": "/reference/pill_engine_core/ecs/world/storage/",
+                            "collapsed": true,
+                            "items": [
+                              {
+                                "text": "Structs",
+                                "collapsed": true,
+                                "items": [
+                                  {
+                                    "text": "EntityStorage",
+                                    "link": "/reference/pill_engine_core/ecs/world/storage/struct.EntityStorage"
+                                  },
+                                  {
+                                    "text": "ResourceCopy",
+                                    "link": "/reference/pill_engine_core/ecs/world/storage/struct.ResourceCopy"
+                                  },
+                                  {
+                                    "text": "UncopyableComponents",
+                                    "link": "/reference/pill_engine_core/ecs/world/storage/struct.UncopyableComponents"
+                                  },
+                                  {
+                                    "text": "UncopyableResources",
+                                    "link": "/reference/pill_engine_core/ecs/world/storage/struct.UncopyableResources"
+                                  }
+                                ]
+                              },
+                              {
+                                "text": "Functions",
+                                "collapsed": true,
+                                "items": [
+                                  {
+                                    "text": "clone_column",
+                                    "link": "/reference/pill_engine_core/ecs/world/storage/fn.clone_column"
+                                  },
+                                  {
+                                    "text": "clone_resource",
+                                    "link": "/reference/pill_engine_core/ecs/world/storage/fn.clone_resource"
+                                  },
+                                  {
+                                    "text": "copies_as_bytes",
+                                    "link": "/reference/pill_engine_core/ecs/world/storage/fn.copies_as_bytes"
+                                  },
+                                  {
+                                    "text": "copy_column_bytes",
+                                    "link": "/reference/pill_engine_core/ecs/world/storage/fn.copy_column_bytes"
+                                  },
+                                  {
+                                    "text": "copy_row_ticks",
+                                    "link": "/reference/pill_engine_core/ecs/world/storage/fn.copy_row_ticks"
+                                  },
+                                  {
+                                    "text": "new_column_for",
+                                    "link": "/reference/pill_engine_core/ecs/world/storage/fn.new_column_for"
+                                  },
+                                  {
+                                    "text": "push_type_name",
+                                    "link": "/reference/pill_engine_core/ecs/world/storage/fn.push_type_name"
+                                  }
+                                ]
+                              },
+                              {
+                                "text": "Type aliases",
+                                "collapsed": true,
+                                "items": [
+                                  {
+                                    "text": "CloneColumnFn",
+                                    "link": "/reference/pill_engine_core/ecs/world/storage/type.CloneColumnFn"
+                                  },
+                                  {
+                                    "text": "ResourceCloneFn",
+                                    "link": "/reference/pill_engine_core/ecs/world/storage/type.ResourceCloneFn"
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "text": "ticks",
+                            "link": "/reference/pill_engine_core/ecs/world/ticks/"
+                          }
+                        ]
+                      },
+                      {
+                        "text": "Structs",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "ComponentFieldLayout",
+                            "link": "/reference/pill_engine_core/ecs/world/struct.ComponentFieldLayout"
+                          },
+                          {
+                            "text": "EntityBuilder",
+                            "link": "/reference/pill_engine_core/ecs/world/struct.EntityBuilder"
+                          },
+                          {
+                            "text": "EntityLocation",
+                            "link": "/reference/pill_engine_core/ecs/world/struct.EntityLocation"
+                          },
+                          {
+                            "text": "EntityRow",
+                            "link": "/reference/pill_engine_core/ecs/world/struct.EntityRow"
+                          },
+                          {
+                            "text": "IteratorTimings",
+                            "link": "/reference/pill_engine_core/ecs/world/struct.IteratorTimings"
+                          },
+                          {
+                            "text": "SharedResourceClaim",
+                            "link": "/reference/pill_engine_core/ecs/world/struct.SharedResourceClaim"
+                          },
+                          {
+                            "text": "TypedComponentInserter",
+                            "link": "/reference/pill_engine_core/ecs/world/struct.TypedComponentInserter"
+                          },
+                          {
+                            "text": "World",
+                            "link": "/reference/pill_engine_core/ecs/world/struct.World"
+                          }
+                        ]
+                      },
+                      {
+                        "text": "Traits",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "ComponentInserter",
+                            "link": "/reference/pill_engine_core/ecs/world/trait.ComponentInserter"
+                          }
+                        ]
+                      },
+                      {
+                        "text": "Functions",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "is_valid_foreign_layout",
+                            "link": "/reference/pill_engine_core/ecs/world/fn.is_valid_foreign_layout"
+                          },
+                          {
+                            "text": "per_thread_last_run_tick",
+                            "link": "/reference/pill_engine_core/ecs/world/fn.per_thread_last_run_tick"
+                          },
+                          {
+                            "text": "per_thread_this_run_tick",
+                            "link": "/reference/pill_engine_core/ecs/world/fn.per_thread_this_run_tick"
+                          },
+                          {
+                            "text": "set_per_thread_last_run_tick",
+                            "link": "/reference/pill_engine_core/ecs/world/fn.set_per_thread_last_run_tick"
+                          },
+                          {
+                            "text": "set_per_thread_this_run_tick",
+                            "link": "/reference/pill_engine_core/ecs/world/fn.set_per_thread_this_run_tick"
+                          }
+                        ]
+                      },
+                      {
+                        "text": "Constants",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "REGISTRATION_HEADROOM_WARNING_THRESHOLD",
+                            "link": "/reference/pill_engine_core/ecs/world/constant.REGISTRATION_HEADROOM_WARNING_THRESHOLD"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
           },
           {
             "text": "engine",
@@ -14450,8 +16442,20 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                     "link": "/reference/pill_engine_core/engine/struct.Engine"
                   },
                   {
+                    "text": "PlayRefusal",
+                    "link": "/reference/pill_engine_core/engine/struct.PlayRefusal"
+                  },
+                  {
                     "text": "RegisteredSystem",
                     "link": "/reference/pill_engine_core/engine/struct.RegisteredSystem"
+                  },
+                  {
+                    "text": "SystemCondition",
+                    "link": "/reference/pill_engine_core/engine/struct.SystemCondition"
+                  },
+                  {
+                    "text": "SystemOptions",
+                    "link": "/reference/pill_engine_core/engine/struct.SystemOptions"
                   },
                   {
                     "text": "SystemOwner",
@@ -14464,9 +16468,23 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                 ]
               },
               {
+                "text": "Enums",
+                "collapsed": true,
+                "items": [
+                  {
+                    "text": "RunMode",
+                    "link": "/reference/pill_engine_core/engine/enum.RunMode"
+                  }
+                ]
+              },
+              {
                 "text": "Functions",
                 "collapsed": true,
                 "items": [
+                  {
+                    "text": "conditions_hold",
+                    "link": "/reference/pill_engine_core/engine/fn.conditions_hold"
+                  },
                   {
                     "text": "record_system_run",
                     "link": "/reference/pill_engine_core/engine/fn.record_system_run"
@@ -14480,25 +16498,14 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                     "link": "/reference/pill_engine_core/engine/fn.system_zone_color"
                   }
                 ]
-              }
-            ]
-          },
-          {
-            "text": "entity",
-            "link": "/reference/pill_engine_core/entity/",
-            "collapsed": true,
-            "items": [
+              },
               {
-                "text": "Structs",
+                "text": "Type aliases",
                 "collapsed": true,
                 "items": [
                   {
-                    "text": "Entity",
-                    "link": "/reference/pill_engine_core/entity/struct.Entity"
-                  },
-                  {
-                    "text": "EntityId",
-                    "link": "/reference/pill_engine_core/entity/struct.EntityId"
+                    "text": "BoxedSystemCondition",
+                    "link": "/reference/pill_engine_core/engine/type.BoxedSystemCondition"
                   }
                 ]
               }
@@ -14574,351 +16581,8 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
             ]
           },
           {
-            "text": "hot_patch",
-            "link": "/reference/pill_engine_core/hot_patch/",
-            "collapsed": true,
-            "items": [
-              {
-                "text": "Structs",
-                "collapsed": true,
-                "items": [
-                  {
-                    "text": "FaultReport",
-                    "link": "/reference/pill_engine_core/hot_patch/struct.FaultReport"
-                  },
-                  {
-                    "text": "HotPatchRegistry",
-                    "link": "/reference/pill_engine_core/hot_patch/struct.HotPatchRegistry"
-                  },
-                  {
-                    "text": "HotSlot",
-                    "link": "/reference/pill_engine_core/hot_patch/struct.HotSlot"
-                  },
-                  {
-                    "text": "PlainSlot",
-                    "link": "/reference/pill_engine_core/hot_patch/struct.PlainSlot"
-                  },
-                  {
-                    "text": "RuntimeFunction",
-                    "link": "/reference/pill_engine_core/hot_patch/struct.RuntimeFunction"
-                  }
-                ]
-              },
-              {
-                "text": "Enums",
-                "collapsed": true,
-                "items": [
-                  {
-                    "text": "HotPatchError",
-                    "link": "/reference/pill_engine_core/hot_patch/enum.HotPatchError"
-                  }
-                ]
-              },
-              {
-                "text": "Functions",
-                "collapsed": true,
-                "items": [
-                  {
-                    "text": "check_patching_thread",
-                    "link": "/reference/pill_engine_core/hot_patch/fn.check_patching_thread"
-                  },
-                  {
-                    "text": "current_thread_token",
-                    "link": "/reference/pill_engine_core/hot_patch/fn.current_thread_token"
-                  },
-                  {
-                    "text": "declare_patching_thread",
-                    "link": "/reference/pill_engine_core/hot_patch/fn.declare_patching_thread"
-                  },
-                  {
-                    "text": "FlushInstructionCache",
-                    "link": "/reference/pill_engine_core/hot_patch/fn.FlushInstructionCache"
-                  },
-                  {
-                    "text": "function_extent",
-                    "link": "/reference/pill_engine_core/hot_patch/fn.function_extent"
-                  },
-                  {
-                    "text": "function_path",
-                    "link": "/reference/pill_engine_core/hot_patch/fn.function_path"
-                  },
-                  {
-                    "text": "GetCurrentProcess",
-                    "link": "/reference/pill_engine_core/hot_patch/fn.GetCurrentProcess"
-                  },
-                  {
-                    "text": "local_implementation_address",
-                    "link": "/reference/pill_engine_core/hot_patch/fn.local_implementation_address"
-                  },
-                  {
-                    "text": "panic_into_failure",
-                    "link": "/reference/pill_engine_core/hot_patch/fn.panic_into_failure"
-                  },
-                  {
-                    "text": "patch_prologue",
-                    "link": "/reference/pill_engine_core/hot_patch/fn.patch_prologue"
-                  },
-                  {
-                    "text": "record_panic",
-                    "link": "/reference/pill_engine_core/hot_patch/fn.record_panic"
-                  },
-                  {
-                    "text": "record_success",
-                    "link": "/reference/pill_engine_core/hot_patch/fn.record_success"
-                  },
-                  {
-                    "text": "restore_prologue",
-                    "link": "/reference/pill_engine_core/hot_patch/fn.restore_prologue"
-                  },
-                  {
-                    "text": "RtlLookupFunctionEntry",
-                    "link": "/reference/pill_engine_core/hot_patch/fn.RtlLookupFunctionEntry"
-                  },
-                  {
-                    "text": "signature_hash",
-                    "link": "/reference/pill_engine_core/hot_patch/fn.signature_hash"
-                  },
-                  {
-                    "text": "signature_hash_of",
-                    "link": "/reference/pill_engine_core/hot_patch/fn.signature_hash_of"
-                  },
-                  {
-                    "text": "take_fault_reports",
-                    "link": "/reference/pill_engine_core/hot_patch/fn.take_fault_reports"
-                  },
-                  {
-                    "text": "verify_abi",
-                    "link": "/reference/pill_engine_core/hot_patch/fn.verify_abi"
-                  },
-                  {
-                    "text": "VirtualProtect",
-                    "link": "/reference/pill_engine_core/hot_patch/fn.VirtualProtect"
-                  }
-                ]
-              },
-              {
-                "text": "Constants",
-                "collapsed": true,
-                "items": [
-                  {
-                    "text": "ABSOLUTE_JUMP_LENGTH",
-                    "link": "/reference/pill_engine_core/hot_patch/constant.ABSOLUTE_JUMP_LENGTH"
-                  },
-                  {
-                    "text": "PAGE_EXECUTE_READWRITE",
-                    "link": "/reference/pill_engine_core/hot_patch/constant.PAGE_EXECUTE_READWRITE"
-                  },
-                  {
-                    "text": "PANIC_ROLLBACK_FRAMES",
-                    "link": "/reference/pill_engine_core/hot_patch/constant.PANIC_ROLLBACK_FRAMES"
-                  }
-                ]
-              },
-              {
-                "text": "Statics",
-                "collapsed": true,
-                "items": [
-                  {
-                    "text": "FAULT_REPORTS",
-                    "link": "/reference/pill_engine_core/hot_patch/static.FAULT_REPORTS"
-                  },
-                  {
-                    "text": "FLAKY_FUNCTION_COUNT",
-                    "link": "/reference/pill_engine_core/hot_patch/static.FLAKY_FUNCTION_COUNT"
-                  },
-                  {
-                    "text": "PANIC_STREAKS",
-                    "link": "/reference/pill_engine_core/hot_patch/static.PANIC_STREAKS"
-                  },
-                  {
-                    "text": "PATCHING_THREAD_TOKEN",
-                    "link": "/reference/pill_engine_core/hot_patch/static.PATCHING_THREAD_TOKEN"
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "text": "input",
-            "link": "/reference/pill_engine_core/input/",
-            "collapsed": true,
-            "items": [
-              {
-                "text": "Structs",
-                "collapsed": true,
-                "items": [
-                  {
-                    "text": "GamepadState",
-                    "link": "/reference/pill_engine_core/input/struct.GamepadState"
-                  },
-                  {
-                    "text": "Input",
-                    "link": "/reference/pill_engine_core/input/struct.Input"
-                  },
-                  {
-                    "text": "KeySet",
-                    "link": "/reference/pill_engine_core/input/struct.KeySet"
-                  },
-                  {
-                    "text": "Modifiers",
-                    "link": "/reference/pill_engine_core/input/struct.Modifiers"
-                  },
-                  {
-                    "text": "RumbleRequest",
-                    "link": "/reference/pill_engine_core/input/struct.RumbleRequest"
-                  }
-                ]
-              },
-              {
-                "text": "Enums",
-                "collapsed": true,
-                "items": [
-                  {
-                    "text": "ButtonState",
-                    "link": "/reference/pill_engine_core/input/enum.ButtonState"
-                  },
-                  {
-                    "text": "GamepadAxis",
-                    "link": "/reference/pill_engine_core/input/enum.GamepadAxis"
-                  },
-                  {
-                    "text": "GamepadButton",
-                    "link": "/reference/pill_engine_core/input/enum.GamepadButton"
-                  },
-                  {
-                    "text": "InputEvent",
-                    "link": "/reference/pill_engine_core/input/enum.InputEvent"
-                  },
-                  {
-                    "text": "KeyCode",
-                    "link": "/reference/pill_engine_core/input/enum.KeyCode"
-                  },
-                  {
-                    "text": "MouseButton",
-                    "link": "/reference/pill_engine_core/input/enum.MouseButton"
-                  },
-                  {
-                    "text": "PlayerId",
-                    "link": "/reference/pill_engine_core/input/enum.PlayerId"
-                  },
-                  {
-                    "text": "ScrollDelta",
-                    "link": "/reference/pill_engine_core/input/enum.ScrollDelta"
-                  }
-                ]
-              },
-              {
-                "text": "Traits",
-                "collapsed": true,
-                "items": [
-                  {
-                    "text": "EdgeBits",
-                    "link": "/reference/pill_engine_core/input/trait.EdgeBits"
-                  }
-                ]
-              },
-              {
-                "text": "Functions",
-                "collapsed": true,
-                "items": [
-                  {
-                    "text": "apply_edge",
-                    "link": "/reference/pill_engine_core/input/fn.apply_edge"
-                  },
-                  {
-                    "text": "release_edges",
-                    "link": "/reference/pill_engine_core/input/fn.release_edges"
-                  }
-                ]
-              },
-              {
-                "text": "Constants",
-                "collapsed": true,
-                "items": [
-                  {
-                    "text": "GAMEPAD_AXIS_DEADZONE",
-                    "link": "/reference/pill_engine_core/input/constant.GAMEPAD_AXIS_DEADZONE"
-                  },
-                  {
-                    "text": "GAMEPAD_SLOT_COUNT",
-                    "link": "/reference/pill_engine_core/input/constant.GAMEPAD_SLOT_COUNT"
-                  },
-                  {
-                    "text": "KEY_SET_WORD_COUNT",
-                    "link": "/reference/pill_engine_core/input/constant.KEY_SET_WORD_COUNT"
-                  }
-                ]
-              },
-              {
-                "text": "Macros",
-                "collapsed": true,
-                "items": [
-                  {
-                    "text": "key_codes",
-                    "link": "/reference/pill_engine_core/input/macro.key_codes"
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "text": "manager_settings",
-            "link": "/reference/pill_engine_core/manager_settings/",
-            "collapsed": true,
-            "items": [
-              {
-                "text": "Structs",
-                "collapsed": true,
-                "items": [
-                  {
-                    "text": "ManagerSettingsApplied",
-                    "link": "/reference/pill_engine_core/manager_settings/struct.ManagerSettingsApplied"
-                  },
-                  {
-                    "text": "ManagerSettingsBinding",
-                    "link": "/reference/pill_engine_core/manager_settings/struct.ManagerSettingsBinding"
-                  },
-                  {
-                    "text": "ManagerSettingsBindings",
-                    "link": "/reference/pill_engine_core/manager_settings/struct.ManagerSettingsBindings"
-                  },
-                  {
-                    "text": "ManagerSettingsFailure",
-                    "link": "/reference/pill_engine_core/manager_settings/struct.ManagerSettingsFailure"
-                  },
-                  {
-                    "text": "ManagerSettingsReport",
-                    "link": "/reference/pill_engine_core/manager_settings/struct.ManagerSettingsReport"
-                  },
-                  {
-                    "text": "ManagerSettingsSurface",
-                    "link": "/reference/pill_engine_core/manager_settings/struct.ManagerSettingsSurface"
-                  },
-                  {
-                    "text": "MissingManagerSettings",
-                    "link": "/reference/pill_engine_core/manager_settings/struct.MissingManagerSettings"
-                  }
-                ]
-              },
-              {
-                "text": "Functions",
-                "collapsed": true,
-                "items": [
-                  {
-                    "text": "conventional_path",
-                    "link": "/reference/pill_engine_core/manager_settings/fn.conventional_path"
-                  },
-                  {
-                    "text": "fingerprint_of",
-                    "link": "/reference/pill_engine_core/manager_settings/fn.fingerprint_of"
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "text": "mirror",
-            "link": "/reference/pill_engine_core/mirror/",
+            "text": "hot_reload",
+            "link": "/reference/pill_engine_core/hot_reload/",
             "collapsed": true,
             "items": [
               {
@@ -14926,289 +16590,8 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                 "collapsed": true,
                 "items": [
                   {
-                    "text": "assets",
-                    "link": "/reference/pill_engine_core/mirror/assets/",
-                    "collapsed": true,
-                    "items": [
-                      {
-                        "text": "Functions",
-                        "collapsed": true,
-                        "items": [
-                          {
-                            "text": "add",
-                            "link": "/reference/pill_engine_core/mirror/assets/fn.add"
-                          },
-                          {
-                            "text": "add_named",
-                            "link": "/reference/pill_engine_core/mirror/assets/fn.add_named"
-                          },
-                          {
-                            "text": "add_named_with_guid",
-                            "link": "/reference/pill_engine_core/mirror/assets/fn.add_named_with_guid"
-                          },
-                          {
-                            "text": "asset_manager_from_slot",
-                            "link": "/reference/pill_engine_core/mirror/assets/fn.asset_manager_from_slot"
-                          },
-                          {
-                            "text": "contains",
-                            "link": "/reference/pill_engine_core/mirror/assets/fn.contains"
-                          },
-                          {
-                            "text": "guid_of",
-                            "link": "/reference/pill_engine_core/mirror/assets/fn.guid_of"
-                          },
-                          {
-                            "text": "guid_text",
-                            "link": "/reference/pill_engine_core/mirror/assets/fn.guid_text"
-                          },
-                          {
-                            "text": "handle_by_guid",
-                            "link": "/reference/pill_engine_core/mirror/assets/fn.handle_by_guid"
-                          },
-                          {
-                            "text": "handle_by_name",
-                            "link": "/reference/pill_engine_core/mirror/assets/fn.handle_by_name"
-                          },
-                          {
-                            "text": "import",
-                            "link": "/reference/pill_engine_core/mirror/assets/fn.import"
-                          },
-                          {
-                            "text": "import_standalone",
-                            "link": "/reference/pill_engine_core/mirror/assets/fn.import_standalone"
-                          },
-                          {
-                            "text": "metadata_source_code",
-                            "link": "/reference/pill_engine_core/mirror/assets/fn.metadata_source_code"
-                          },
-                          {
-                            "text": "parse_guid",
-                            "link": "/reference/pill_engine_core/mirror/assets/fn.parse_guid"
-                          },
-                          {
-                            "text": "remove",
-                            "link": "/reference/pill_engine_core/mirror/assets/fn.remove"
-                          },
-                          {
-                            "text": "write_import_outcome",
-                            "link": "/reference/pill_engine_core/mirror/assets/fn.write_import_outcome"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "text": "Traits",
-                "collapsed": true,
-                "items": [
-                  {
-                    "text": "MirrorObject",
-                    "link": "/reference/pill_engine_core/mirror/trait.MirrorObject"
-                  },
-                  {
-                    "text": "MirrorReturn",
-                    "link": "/reference/pill_engine_core/mirror/trait.MirrorReturn"
-                  },
-                  {
-                    "text": "MirrorValue",
-                    "link": "/reference/pill_engine_core/mirror/trait.MirrorValue"
-                  }
-                ]
-              },
-              {
-                "text": "Functions",
-                "collapsed": true,
-                "items": [
-                  {
-                    "text": "drop_object",
-                    "link": "/reference/pill_engine_core/mirror/fn.drop_object"
-                  },
-                  {
-                    "text": "error_message",
-                    "link": "/reference/pill_engine_core/mirror/fn.error_message"
-                  },
-                  {
-                    "text": "invoke",
-                    "link": "/reference/pill_engine_core/mirror/fn.invoke"
-                  },
-                  {
-                    "text": "object_from_raw",
-                    "link": "/reference/pill_engine_core/mirror/fn.object_from_raw"
-                  },
-                  {
-                    "text": "object_into_raw",
-                    "link": "/reference/pill_engine_core/mirror/fn.object_into_raw"
-                  },
-                  {
-                    "text": "read",
-                    "link": "/reference/pill_engine_core/mirror/fn.read"
-                  },
-                  {
-                    "text": "read_bool",
-                    "link": "/reference/pill_engine_core/mirror/fn.read_bool"
-                  },
-                  {
-                    "text": "read_mut",
-                    "link": "/reference/pill_engine_core/mirror/fn.read_mut"
-                  },
-                  {
-                    "text": "read_option",
-                    "link": "/reference/pill_engine_core/mirror/fn.read_option"
-                  },
-                  {
-                    "text": "read_plain_vec",
-                    "link": "/reference/pill_engine_core/mirror/fn.read_plain_vec"
-                  },
-                  {
-                    "text": "read_pointer",
-                    "link": "/reference/pill_engine_core/mirror/fn.read_pointer"
-                  },
-                  {
-                    "text": "read_ref",
-                    "link": "/reference/pill_engine_core/mirror/fn.read_ref"
-                  },
-                  {
-                    "text": "read_span",
-                    "link": "/reference/pill_engine_core/mirror/fn.read_span"
-                  },
-                  {
-                    "text": "read_str",
-                    "link": "/reference/pill_engine_core/mirror/fn.read_str"
-                  },
-                  {
-                    "text": "read_string_vec",
-                    "link": "/reference/pill_engine_core/mirror/fn.read_string_vec"
-                  },
-                  {
-                    "text": "read_value_vec",
-                    "link": "/reference/pill_engine_core/mirror/fn.read_value_vec"
-                  },
-                  {
-                    "text": "set_last_error",
-                    "link": "/reference/pill_engine_core/mirror/fn.set_last_error"
-                  },
-                  {
-                    "text": "set_return_string",
-                    "link": "/reference/pill_engine_core/mirror/fn.set_return_string"
-                  },
-                  {
-                    "text": "slot",
-                    "link": "/reference/pill_engine_core/mirror/fn.slot"
-                  },
-                  {
-                    "text": "take_last_error",
-                    "link": "/reference/pill_engine_core/mirror/fn.take_last_error"
-                  },
-                  {
-                    "text": "take_return_string",
-                    "link": "/reference/pill_engine_core/mirror/fn.take_return_string"
-                  },
-                  {
-                    "text": "write",
-                    "link": "/reference/pill_engine_core/mirror/fn.write"
-                  },
-                  {
-                    "text": "write_option",
-                    "link": "/reference/pill_engine_core/mirror/fn.write_option"
-                  }
-                ]
-              },
-              {
-                "text": "Type aliases",
-                "collapsed": true,
-                "items": [
-                  {
-                    "text": "MirrorResult",
-                    "link": "/reference/pill_engine_core/mirror/type.MirrorResult"
-                  }
-                ]
-              },
-              {
-                "text": "Constants",
-                "collapsed": true,
-                "items": [
-                  {
-                    "text": "IMPORT_ALREADY_LOADED_OFFSET",
-                    "link": "/reference/pill_engine_core/mirror/constant.IMPORT_ALREADY_LOADED_OFFSET"
-                  },
-                  {
-                    "text": "IMPORT_METADATA_SOURCE_OFFSET",
-                    "link": "/reference/pill_engine_core/mirror/constant.IMPORT_METADATA_SOURCE_OFFSET"
-                  },
-                  {
-                    "text": "LAST_ERROR",
-                    "link": "/reference/pill_engine_core/mirror/constant.LAST_ERROR"
-                  },
-                  {
-                    "text": "OPTION_ARGUMENT_FLAG_OFFSET",
-                    "link": "/reference/pill_engine_core/mirror/constant.OPTION_ARGUMENT_FLAG_OFFSET"
-                  },
-                  {
-                    "text": "OPTION_RETURN_VALUE_OFFSET",
-                    "link": "/reference/pill_engine_core/mirror/constant.OPTION_RETURN_VALUE_OFFSET"
-                  },
-                  {
-                    "text": "RETURN_STRING",
-                    "link": "/reference/pill_engine_core/mirror/constant.RETURN_STRING"
-                  },
-                  {
-                    "text": "SLOT_SIZE",
-                    "link": "/reference/pill_engine_core/mirror/constant.SLOT_SIZE"
-                  },
-                  {
-                    "text": "STATUS_ERROR",
-                    "link": "/reference/pill_engine_core/mirror/constant.STATUS_ERROR"
-                  },
-                  {
-                    "text": "STATUS_OK",
-                    "link": "/reference/pill_engine_core/mirror/constant.STATUS_OK"
-                  }
-                ]
-              },
-              {
-                "text": "Macros",
-                "collapsed": true,
-                "items": [
-                  {
-                    "text": "plain_mirror_value",
-                    "link": "/reference/pill_engine_core/mirror/macro.plain_mirror_value"
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "text": "module_abi",
-            "link": "/reference/pill_engine_core/module_abi/",
-            "collapsed": true,
-            "items": [
-              {
-                "text": "Constants",
-                "collapsed": true,
-                "items": [
-                  {
-                    "text": "MODULE_ABI_VERSION",
-                    "link": "/reference/pill_engine_core/module_abi/constant.MODULE_ABI_VERSION"
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "text": "persistence",
-            "link": "/reference/pill_engine_core/persistence/",
-            "collapsed": true,
-            "items": [
-              {
-                "text": "Modules",
-                "collapsed": true,
-                "items": [
-                  {
-                    "text": "components",
-                    "link": "/reference/pill_engine_core/persistence/components/",
+                    "text": "hot_patch",
+                    "link": "/reference/pill_engine_core/hot_reload/hot_patch/",
                     "collapsed": true,
                     "items": [
                       {
@@ -15216,274 +16599,24 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                         "collapsed": true,
                         "items": [
                           {
-                            "text": "PersistTypeManifestEntry",
-                            "link": "/reference/pill_engine_core/persistence/components/struct.PersistTypeManifestEntry"
+                            "text": "FaultReport",
+                            "link": "/reference/pill_engine_core/hot_reload/hot_patch/struct.FaultReport"
                           },
                           {
-                            "text": "PersistTypeMetadata",
-                            "link": "/reference/pill_engine_core/persistence/components/struct.PersistTypeMetadata"
+                            "text": "HotPatchRegistry",
+                            "link": "/reference/pill_engine_core/hot_reload/hot_patch/struct.HotPatchRegistry"
                           },
                           {
-                            "text": "SelectiveMigrationReport",
-                            "link": "/reference/pill_engine_core/persistence/components/struct.SelectiveMigrationReport"
+                            "text": "HotSlot",
+                            "link": "/reference/pill_engine_core/hot_reload/hot_patch/struct.HotSlot"
                           },
                           {
-                            "text": "SkippedType",
-                            "link": "/reference/pill_engine_core/persistence/components/struct.SkippedType"
-                          }
-                        ]
-                      },
-                      {
-                        "text": "Functions",
-                        "collapsed": true,
-                        "items": [
-                          {
-                            "text": "deserialize_component",
-                            "link": "/reference/pill_engine_core/persistence/components/fn.deserialize_component"
+                            "text": "PlainSlot",
+                            "link": "/reference/pill_engine_core/hot_reload/hot_patch/struct.PlainSlot"
                           },
                           {
-                            "text": "insert_boxed_component",
-                            "link": "/reference/pill_engine_core/persistence/components/fn.insert_boxed_component"
-                          },
-                          {
-                            "text": "serialize_component",
-                            "link": "/reference/pill_engine_core/persistence/components/fn.serialize_component"
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "text": "migration",
-                    "link": "/reference/pill_engine_core/persistence/migration/"
-                  },
-                  {
-                    "text": "registry",
-                    "link": "/reference/pill_engine_core/persistence/registry/",
-                    "collapsed": true,
-                    "items": [
-                      {
-                        "text": "Functions",
-                        "collapsed": true,
-                        "items": [
-                          {
-                            "text": "calculate_schema_hash",
-                            "link": "/reference/pill_engine_core/persistence/registry/fn.calculate_schema_hash"
-                          },
-                          {
-                            "text": "merge_json",
-                            "link": "/reference/pill_engine_core/persistence/registry/fn.merge_json"
-                          },
-                          {
-                            "text": "normalize_schema_shape",
-                            "link": "/reference/pill_engine_core/persistence/registry/fn.normalize_schema_shape"
-                          }
-                        ]
-                      },
-                      {
-                        "text": "Type aliases",
-                        "collapsed": true,
-                        "items": [
-                          {
-                            "text": "DeserializeComponentFn",
-                            "link": "/reference/pill_engine_core/persistence/registry/type.DeserializeComponentFn"
-                          },
-                          {
-                            "text": "InsertComponentFn",
-                            "link": "/reference/pill_engine_core/persistence/registry/type.InsertComponentFn"
-                          },
-                          {
-                            "text": "RestoreResourceFn",
-                            "link": "/reference/pill_engine_core/persistence/registry/type.RestoreResourceFn"
-                          },
-                          {
-                            "text": "SerializeComponentFn",
-                            "link": "/reference/pill_engine_core/persistence/registry/type.SerializeComponentFn"
-                          },
-                          {
-                            "text": "SerializeResourceFn",
-                            "link": "/reference/pill_engine_core/persistence/registry/type.SerializeResourceFn"
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "text": "resources",
-                    "link": "/reference/pill_engine_core/persistence/resources/",
-                    "collapsed": true,
-                    "items": [
-                      {
-                        "text": "Structs",
-                        "collapsed": true,
-                        "items": [
-                          {
-                            "text": "PersistResourceManifestEntry",
-                            "link": "/reference/pill_engine_core/persistence/resources/struct.PersistResourceManifestEntry"
-                          },
-                          {
-                            "text": "ResourceSnapshot",
-                            "link": "/reference/pill_engine_core/persistence/resources/struct.ResourceSnapshot"
-                          }
-                        ]
-                      },
-                      {
-                        "text": "Functions",
-                        "collapsed": true,
-                        "items": [
-                          {
-                            "text": "calculate_resource_schema_hash",
-                            "link": "/reference/pill_engine_core/persistence/resources/fn.calculate_resource_schema_hash"
-                          },
-                          {
-                            "text": "decode_foreign_resource_payload",
-                            "link": "/reference/pill_engine_core/persistence/resources/fn.decode_foreign_resource_payload"
-                          },
-                          {
-                            "text": "restore_resource",
-                            "link": "/reference/pill_engine_core/persistence/resources/fn.restore_resource"
-                          },
-                          {
-                            "text": "serialize_foreign_resource",
-                            "link": "/reference/pill_engine_core/persistence/resources/fn.serialize_foreign_resource"
-                          },
-                          {
-                            "text": "serialize_resource",
-                            "link": "/reference/pill_engine_core/persistence/resources/fn.serialize_resource"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "text": "profiling",
-            "link": "/reference/pill_engine_core/profiling/"
-          },
-          {
-            "text": "query",
-            "link": "/reference/pill_engine_core/query/",
-            "collapsed": true,
-            "items": [
-              {
-                "text": "Modules",
-                "collapsed": true,
-                "items": [
-                  {
-                    "text": "change_detection",
-                    "link": "/reference/pill_engine_core/query/change_detection/",
-                    "collapsed": true,
-                    "items": [
-                      {
-                        "text": "Structs",
-                        "collapsed": true,
-                        "items": [
-                          {
-                            "text": "Mut",
-                            "link": "/reference/pill_engine_core/query/change_detection/struct.Mut"
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "text": "filter",
-                    "link": "/reference/pill_engine_core/query/filter/",
-                    "collapsed": true,
-                    "items": [
-                      {
-                        "text": "Structs",
-                        "collapsed": true,
-                        "items": [
-                          {
-                            "text": "Added",
-                            "link": "/reference/pill_engine_core/query/filter/struct.Added"
-                          },
-                          {
-                            "text": "Changed",
-                            "link": "/reference/pill_engine_core/query/filter/struct.Changed"
-                          },
-                          {
-                            "text": "Or",
-                            "link": "/reference/pill_engine_core/query/filter/struct.Or"
-                          },
-                          {
-                            "text": "TickFilterState",
-                            "link": "/reference/pill_engine_core/query/filter/struct.TickFilterState"
-                          },
-                          {
-                            "text": "With",
-                            "link": "/reference/pill_engine_core/query/filter/struct.With"
-                          },
-                          {
-                            "text": "Without",
-                            "link": "/reference/pill_engine_core/query/filter/struct.Without"
-                          }
-                        ]
-                      },
-                      {
-                        "text": "Traits",
-                        "collapsed": true,
-                        "items": [
-                          {
-                            "text": "QueryFilter",
-                            "link": "/reference/pill_engine_core/query/filter/trait.QueryFilter"
-                          }
-                        ]
-                      },
-                      {
-                        "text": "Functions",
-                        "collapsed": true,
-                        "items": [
-                          {
-                            "text": "and_filter_pairs",
-                            "link": "/reference/pill_engine_core/query/filter/fn.and_filter_pairs"
-                          }
-                        ]
-                      },
-                      {
-                        "text": "Macros",
-                        "collapsed": true,
-                        "items": [
-                          {
-                            "text": "impl_query_filter_or",
-                            "link": "/reference/pill_engine_core/query/filter/macro.impl_query_filter_or"
-                          },
-                          {
-                            "text": "impl_query_filter_tuple",
-                            "link": "/reference/pill_engine_core/query/filter/macro.impl_query_filter_tuple"
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "text": "iter",
-                    "link": "/reference/pill_engine_core/query/iter/",
-                    "collapsed": true,
-                    "items": [
-                      {
-                        "text": "Structs",
-                        "collapsed": true,
-                        "items": [
-                          {
-                            "text": "BatchStats",
-                            "link": "/reference/pill_engine_core/query/iter/struct.BatchStats"
-                          },
-                          {
-                            "text": "ParallelPlan",
-                            "link": "/reference/pill_engine_core/query/iter/struct.ParallelPlan"
-                          },
-                          {
-                            "text": "ParQueryIter",
-                            "link": "/reference/pill_engine_core/query/iter/struct.ParQueryIter"
-                          },
-                          {
-                            "text": "QueryIterMut",
-                            "link": "/reference/pill_engine_core/query/iter/struct.QueryIterMut"
+                            "text": "RuntimeFunction",
+                            "link": "/reference/pill_engine_core/hot_reload/hot_patch/struct.RuntimeFunction"
                           }
                         ]
                       },
@@ -15492,8 +16625,8 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                         "collapsed": true,
                         "items": [
                           {
-                            "text": "WorkPlan",
-                            "link": "/reference/pill_engine_core/query/iter/enum.WorkPlan"
+                            "text": "HotPatchError",
+                            "link": "/reference/pill_engine_core/hot_reload/hot_patch/enum.HotPatchError"
                           }
                         ]
                       },
@@ -15502,79 +16635,558 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                         "collapsed": true,
                         "items": [
                           {
-                            "text": "iterator_work_group_count",
-                            "link": "/reference/pill_engine_core/query/iter/fn.iterator_work_group_count"
+                            "text": "check_patching_thread",
+                            "link": "/reference/pill_engine_core/hot_reload/hot_patch/fn.check_patching_thread"
                           },
                           {
-                            "text": "run_group",
-                            "link": "/reference/pill_engine_core/query/iter/fn.run_group"
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "text": "ptr",
-                    "link": "/reference/pill_engine_core/query/ptr/",
-                    "collapsed": true,
-                    "items": [
-                      {
-                        "text": "Structs",
-                        "collapsed": true,
-                        "items": [
-                          {
-                            "text": "SendPtr",
-                            "link": "/reference/pill_engine_core/query/ptr/struct.SendPtr"
+                            "text": "current_thread_token",
+                            "link": "/reference/pill_engine_core/hot_reload/hot_patch/fn.current_thread_token"
                           },
                           {
-                            "text": "SendPtrMut",
-                            "link": "/reference/pill_engine_core/query/ptr/struct.SendPtrMut"
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "text": "query",
-                    "link": "/reference/pill_engine_core/query/query/",
-                    "collapsed": true,
-                    "items": [
-                      {
-                        "text": "Structs",
-                        "collapsed": true,
-                        "items": [
-                          {
-                            "text": "Query",
-                            "link": "/reference/pill_engine_core/query/query/struct.Query"
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "text": "resource",
-                    "link": "/reference/pill_engine_core/query/resource/",
-                    "collapsed": true,
-                    "items": [
-                      {
-                        "text": "Structs",
-                        "collapsed": true,
-                        "items": [
-                          {
-                            "text": "Res",
-                            "link": "/reference/pill_engine_core/query/resource/struct.Res"
+                            "text": "declare_patching_thread",
+                            "link": "/reference/pill_engine_core/hot_reload/hot_patch/fn.declare_patching_thread"
                           },
                           {
-                            "text": "ResMut",
-                            "link": "/reference/pill_engine_core/query/resource/struct.ResMut"
+                            "text": "FlushInstructionCache",
+                            "link": "/reference/pill_engine_core/hot_reload/hot_patch/fn.FlushInstructionCache"
+                          },
+                          {
+                            "text": "function_extent",
+                            "link": "/reference/pill_engine_core/hot_reload/hot_patch/fn.function_extent"
+                          },
+                          {
+                            "text": "function_path",
+                            "link": "/reference/pill_engine_core/hot_reload/hot_patch/fn.function_path"
+                          },
+                          {
+                            "text": "GetCurrentProcess",
+                            "link": "/reference/pill_engine_core/hot_reload/hot_patch/fn.GetCurrentProcess"
+                          },
+                          {
+                            "text": "local_implementation_address",
+                            "link": "/reference/pill_engine_core/hot_reload/hot_patch/fn.local_implementation_address"
+                          },
+                          {
+                            "text": "panic_into_failure",
+                            "link": "/reference/pill_engine_core/hot_reload/hot_patch/fn.panic_into_failure"
+                          },
+                          {
+                            "text": "patch_prologue",
+                            "link": "/reference/pill_engine_core/hot_reload/hot_patch/fn.patch_prologue"
+                          },
+                          {
+                            "text": "record_panic",
+                            "link": "/reference/pill_engine_core/hot_reload/hot_patch/fn.record_panic"
+                          },
+                          {
+                            "text": "record_success",
+                            "link": "/reference/pill_engine_core/hot_reload/hot_patch/fn.record_success"
+                          },
+                          {
+                            "text": "restore_prologue",
+                            "link": "/reference/pill_engine_core/hot_reload/hot_patch/fn.restore_prologue"
+                          },
+                          {
+                            "text": "RtlLookupFunctionEntry",
+                            "link": "/reference/pill_engine_core/hot_reload/hot_patch/fn.RtlLookupFunctionEntry"
+                          },
+                          {
+                            "text": "signature_hash",
+                            "link": "/reference/pill_engine_core/hot_reload/hot_patch/fn.signature_hash"
+                          },
+                          {
+                            "text": "signature_hash_of",
+                            "link": "/reference/pill_engine_core/hot_reload/hot_patch/fn.signature_hash_of"
+                          },
+                          {
+                            "text": "take_fault_reports",
+                            "link": "/reference/pill_engine_core/hot_reload/hot_patch/fn.take_fault_reports"
+                          },
+                          {
+                            "text": "verify_abi",
+                            "link": "/reference/pill_engine_core/hot_reload/hot_patch/fn.verify_abi"
+                          },
+                          {
+                            "text": "VirtualProtect",
+                            "link": "/reference/pill_engine_core/hot_reload/hot_patch/fn.VirtualProtect"
+                          }
+                        ]
+                      },
+                      {
+                        "text": "Constants",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "ABSOLUTE_JUMP_LENGTH",
+                            "link": "/reference/pill_engine_core/hot_reload/hot_patch/constant.ABSOLUTE_JUMP_LENGTH"
+                          },
+                          {
+                            "text": "PAGE_EXECUTE_READWRITE",
+                            "link": "/reference/pill_engine_core/hot_reload/hot_patch/constant.PAGE_EXECUTE_READWRITE"
+                          },
+                          {
+                            "text": "PANIC_ROLLBACK_FRAMES",
+                            "link": "/reference/pill_engine_core/hot_reload/hot_patch/constant.PANIC_ROLLBACK_FRAMES"
+                          }
+                        ]
+                      },
+                      {
+                        "text": "Statics",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "FAULT_REPORTS",
+                            "link": "/reference/pill_engine_core/hot_reload/hot_patch/static.FAULT_REPORTS"
+                          },
+                          {
+                            "text": "FLAKY_FUNCTION_COUNT",
+                            "link": "/reference/pill_engine_core/hot_reload/hot_patch/static.FLAKY_FUNCTION_COUNT"
+                          },
+                          {
+                            "text": "PANIC_STREAKS",
+                            "link": "/reference/pill_engine_core/hot_reload/hot_patch/static.PANIC_STREAKS"
+                          },
+                          {
+                            "text": "PATCHING_THREAD_TOKEN",
+                            "link": "/reference/pill_engine_core/hot_reload/hot_patch/static.PATCHING_THREAD_TOKEN"
                           }
                         ]
                       }
                     ]
                   },
                   {
-                    "text": "target",
-                    "link": "/reference/pill_engine_core/query/target/",
+                    "text": "persistence",
+                    "link": "/reference/pill_engine_core/hot_reload/persistence/",
+                    "collapsed": true,
+                    "items": [
+                      {
+                        "text": "Modules",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "components",
+                            "link": "/reference/pill_engine_core/hot_reload/persistence/components/",
+                            "collapsed": true,
+                            "items": [
+                              {
+                                "text": "Structs",
+                                "collapsed": true,
+                                "items": [
+                                  {
+                                    "text": "PersistTypeManifestEntry",
+                                    "link": "/reference/pill_engine_core/hot_reload/persistence/components/struct.PersistTypeManifestEntry"
+                                  },
+                                  {
+                                    "text": "PersistTypeMetadata",
+                                    "link": "/reference/pill_engine_core/hot_reload/persistence/components/struct.PersistTypeMetadata"
+                                  },
+                                  {
+                                    "text": "SelectiveMigrationReport",
+                                    "link": "/reference/pill_engine_core/hot_reload/persistence/components/struct.SelectiveMigrationReport"
+                                  },
+                                  {
+                                    "text": "SkippedType",
+                                    "link": "/reference/pill_engine_core/hot_reload/persistence/components/struct.SkippedType"
+                                  }
+                                ]
+                              },
+                              {
+                                "text": "Functions",
+                                "collapsed": true,
+                                "items": [
+                                  {
+                                    "text": "deserialize_component",
+                                    "link": "/reference/pill_engine_core/hot_reload/persistence/components/fn.deserialize_component"
+                                  },
+                                  {
+                                    "text": "insert_boxed_component",
+                                    "link": "/reference/pill_engine_core/hot_reload/persistence/components/fn.insert_boxed_component"
+                                  },
+                                  {
+                                    "text": "serialize_component",
+                                    "link": "/reference/pill_engine_core/hot_reload/persistence/components/fn.serialize_component"
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "text": "migration",
+                            "link": "/reference/pill_engine_core/hot_reload/persistence/migration/"
+                          },
+                          {
+                            "text": "registry",
+                            "link": "/reference/pill_engine_core/hot_reload/persistence/registry/",
+                            "collapsed": true,
+                            "items": [
+                              {
+                                "text": "Functions",
+                                "collapsed": true,
+                                "items": [
+                                  {
+                                    "text": "calculate_schema_hash",
+                                    "link": "/reference/pill_engine_core/hot_reload/persistence/registry/fn.calculate_schema_hash"
+                                  },
+                                  {
+                                    "text": "merge_json",
+                                    "link": "/reference/pill_engine_core/hot_reload/persistence/registry/fn.merge_json"
+                                  },
+                                  {
+                                    "text": "normalize_schema_shape",
+                                    "link": "/reference/pill_engine_core/hot_reload/persistence/registry/fn.normalize_schema_shape"
+                                  }
+                                ]
+                              },
+                              {
+                                "text": "Type aliases",
+                                "collapsed": true,
+                                "items": [
+                                  {
+                                    "text": "DeserializeComponentFn",
+                                    "link": "/reference/pill_engine_core/hot_reload/persistence/registry/type.DeserializeComponentFn"
+                                  },
+                                  {
+                                    "text": "InsertComponentFn",
+                                    "link": "/reference/pill_engine_core/hot_reload/persistence/registry/type.InsertComponentFn"
+                                  },
+                                  {
+                                    "text": "RestoreResourceFn",
+                                    "link": "/reference/pill_engine_core/hot_reload/persistence/registry/type.RestoreResourceFn"
+                                  },
+                                  {
+                                    "text": "SerializeComponentFn",
+                                    "link": "/reference/pill_engine_core/hot_reload/persistence/registry/type.SerializeComponentFn"
+                                  },
+                                  {
+                                    "text": "SerializeResourceFn",
+                                    "link": "/reference/pill_engine_core/hot_reload/persistence/registry/type.SerializeResourceFn"
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "text": "resources",
+                            "link": "/reference/pill_engine_core/hot_reload/persistence/resources/",
+                            "collapsed": true,
+                            "items": [
+                              {
+                                "text": "Structs",
+                                "collapsed": true,
+                                "items": [
+                                  {
+                                    "text": "PersistResourceManifestEntry",
+                                    "link": "/reference/pill_engine_core/hot_reload/persistence/resources/struct.PersistResourceManifestEntry"
+                                  },
+                                  {
+                                    "text": "ResourceSnapshot",
+                                    "link": "/reference/pill_engine_core/hot_reload/persistence/resources/struct.ResourceSnapshot"
+                                  }
+                                ]
+                              },
+                              {
+                                "text": "Functions",
+                                "collapsed": true,
+                                "items": [
+                                  {
+                                    "text": "calculate_resource_schema_hash",
+                                    "link": "/reference/pill_engine_core/hot_reload/persistence/resources/fn.calculate_resource_schema_hash"
+                                  },
+                                  {
+                                    "text": "decode_foreign_resource_payload",
+                                    "link": "/reference/pill_engine_core/hot_reload/persistence/resources/fn.decode_foreign_resource_payload"
+                                  },
+                                  {
+                                    "text": "restore_resource",
+                                    "link": "/reference/pill_engine_core/hot_reload/persistence/resources/fn.restore_resource"
+                                  },
+                                  {
+                                    "text": "serialize_foreign_resource",
+                                    "link": "/reference/pill_engine_core/hot_reload/persistence/resources/fn.serialize_foreign_resource"
+                                  },
+                                  {
+                                    "text": "serialize_resource",
+                                    "link": "/reference/pill_engine_core/hot_reload/persistence/resources/fn.serialize_resource"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "text": "reflection",
+            "link": "/reference/pill_engine_core/reflection/",
+            "collapsed": true,
+            "items": [
+              {
+                "text": "Modules",
+                "collapsed": true,
+                "items": [
+                  {
+                    "text": "component_field",
+                    "link": "/reference/pill_engine_core/reflection/component_field/",
+                    "collapsed": true,
+                    "items": [
+                      {
+                        "text": "Modules",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "codec",
+                            "link": "/reference/pill_engine_core/reflection/component_field/codec/",
+                            "collapsed": true,
+                            "items": [
+                              {
+                                "text": "Enums",
+                                "collapsed": true,
+                                "items": [
+                                  {
+                                    "text": "ScalarKind",
+                                    "link": "/reference/pill_engine_core/reflection/component_field/codec/enum.ScalarKind"
+                                  }
+                                ]
+                              },
+                              {
+                                "text": "Functions",
+                                "collapsed": true,
+                                "items": [
+                                  {
+                                    "text": "array_element_size",
+                                    "link": "/reference/pill_engine_core/reflection/component_field/codec/fn.array_element_size"
+                                  },
+                                  {
+                                    "text": "container_header",
+                                    "link": "/reference/pill_engine_core/reflection/component_field/codec/fn.container_header"
+                                  },
+                                  {
+                                    "text": "decode_field",
+                                    "link": "/reference/pill_engine_core/reflection/component_field/codec/fn.decode_field"
+                                  },
+                                  {
+                                    "text": "decode_scalar",
+                                    "link": "/reference/pill_engine_core/reflection/component_field/codec/fn.decode_scalar"
+                                  },
+                                  {
+                                    "text": "decode_tagged",
+                                    "link": "/reference/pill_engine_core/reflection/component_field/codec/fn.decode_tagged"
+                                  },
+                                  {
+                                    "text": "discriminant_of_scalar",
+                                    "link": "/reference/pill_engine_core/reflection/component_field/codec/fn.discriminant_of_scalar"
+                                  },
+                                  {
+                                    "text": "encode_field_write",
+                                    "link": "/reference/pill_engine_core/reflection/component_field/codec/fn.encode_field_write"
+                                  },
+                                  {
+                                    "text": "encode_scalar",
+                                    "link": "/reference/pill_engine_core/reflection/component_field/codec/fn.encode_scalar"
+                                  },
+                                  {
+                                    "text": "enum_discriminant_value",
+                                    "link": "/reference/pill_engine_core/reflection/component_field/codec/fn.enum_discriminant_value"
+                                  },
+                                  {
+                                    "text": "header_word",
+                                    "link": "/reference/pill_engine_core/reflection/component_field/codec/fn.header_word"
+                                  },
+                                  {
+                                    "text": "header_words_of",
+                                    "link": "/reference/pill_engine_core/reflection/component_field/codec/fn.header_words_of"
+                                  },
+                                  {
+                                    "text": "is_scalar_tag",
+                                    "link": "/reference/pill_engine_core/reflection/component_field/codec/fn.is_scalar_tag"
+                                  },
+                                  {
+                                    "text": "native_buffer_header",
+                                    "link": "/reference/pill_engine_core/reflection/component_field/codec/fn.native_buffer_header"
+                                  },
+                                  {
+                                    "text": "scalar_size",
+                                    "link": "/reference/pill_engine_core/reflection/component_field/codec/fn.scalar_size"
+                                  },
+                                  {
+                                    "text": "std_container_offsets",
+                                    "link": "/reference/pill_engine_core/reflection/component_field/codec/fn.std_container_offsets"
+                                  }
+                                ]
+                              },
+                              {
+                                "text": "Constants",
+                                "collapsed": true,
+                                "items": [
+                                  {
+                                    "text": "ENTITY_REFERENCE_SIZE",
+                                    "link": "/reference/pill_engine_core/reflection/component_field/codec/constant.ENTITY_REFERENCE_SIZE"
+                                  },
+                                  {
+                                    "text": "HANDLE_SIZE",
+                                    "link": "/reference/pill_engine_core/reflection/component_field/codec/constant.HANDLE_SIZE"
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "text": "expand",
+                            "link": "/reference/pill_engine_core/reflection/component_field/expand/",
+                            "collapsed": true,
+                            "items": [
+                              {
+                                "text": "Functions",
+                                "collapsed": true,
+                                "items": [
+                                  {
+                                    "text": "grouping_decorators",
+                                    "link": "/reference/pill_engine_core/reflection/component_field/expand/fn.grouping_decorators"
+                                  },
+                                  {
+                                    "text": "intern_nested_field_name",
+                                    "link": "/reference/pill_engine_core/reflection/component_field/expand/fn.intern_nested_field_name"
+                                  },
+                                  {
+                                    "text": "leaf_decorators",
+                                    "link": "/reference/pill_engine_core/reflection/component_field/expand/fn.leaf_decorators"
+                                  }
+                                ]
+                              },
+                              {
+                                "text": "Constants",
+                                "collapsed": true,
+                                "items": [
+                                  {
+                                    "text": "MAX_EXPANDED_ELEMENTS",
+                                    "link": "/reference/pill_engine_core/reflection/component_field/expand/constant.MAX_EXPANDED_ELEMENTS"
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "text": "row",
+                            "link": "/reference/pill_engine_core/reflection/component_field/row/",
+                            "collapsed": true,
+                            "items": [
+                              {
+                                "text": "Structs",
+                                "collapsed": true,
+                                "items": [
+                                  {
+                                    "text": "FieldWrite",
+                                    "link": "/reference/pill_engine_core/reflection/component_field/row/struct.FieldWrite"
+                                  },
+                                  {
+                                    "text": "ResolvedField",
+                                    "link": "/reference/pill_engine_core/reflection/component_field/row/struct.ResolvedField"
+                                  },
+                                  {
+                                    "text": "RowWriteTarget",
+                                    "link": "/reference/pill_engine_core/reflection/component_field/row/struct.RowWriteTarget"
+                                  }
+                                ]
+                              },
+                              {
+                                "text": "Functions",
+                                "collapsed": true,
+                                "items": [
+                                  {
+                                    "text": "format_component_debug",
+                                    "link": "/reference/pill_engine_core/reflection/component_field/row/fn.format_component_debug"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "text": "Structs",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "EnumFieldTag",
+                            "link": "/reference/pill_engine_core/reflection/component_field/struct.EnumFieldTag"
+                          }
+                        ]
+                      },
+                      {
+                        "text": "Enums",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "ComponentFieldError",
+                            "link": "/reference/pill_engine_core/reflection/component_field/enum.ComponentFieldError"
+                          },
+                          {
+                            "text": "FieldValue",
+                            "link": "/reference/pill_engine_core/reflection/component_field/enum.FieldValue"
+                          }
+                        ]
+                      },
+                      {
+                        "text": "Functions",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "format_enum_tag",
+                            "link": "/reference/pill_engine_core/reflection/component_field/fn.format_enum_tag"
+                          },
+                          {
+                            "text": "is_container_tag",
+                            "link": "/reference/pill_engine_core/reflection/component_field/fn.is_container_tag"
+                          },
+                          {
+                            "text": "is_entity_tag",
+                            "link": "/reference/pill_engine_core/reflection/component_field/fn.is_entity_tag"
+                          },
+                          {
+                            "text": "is_enum_tag",
+                            "link": "/reference/pill_engine_core/reflection/component_field/fn.is_enum_tag"
+                          },
+                          {
+                            "text": "is_handle_tag",
+                            "link": "/reference/pill_engine_core/reflection/component_field/fn.is_handle_tag"
+                          },
+                          {
+                            "text": "parse_enum_tag",
+                            "link": "/reference/pill_engine_core/reflection/component_field/fn.parse_enum_tag"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "text": "component_fields",
+                    "link": "/reference/pill_engine_core/reflection/component_fields/",
+                    "collapsed": true,
+                    "items": [
+                      {
+                        "text": "Traits",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "ComponentFieldId",
+                            "link": "/reference/pill_engine_core/reflection/component_fields/trait.ComponentFieldId"
+                          },
+                          {
+                            "text": "ComponentFields",
+                            "link": "/reference/pill_engine_core/reflection/component_fields/trait.ComponentFields"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "text": "component_registry",
+                    "link": "/reference/pill_engine_core/reflection/component_registry/",
                     "collapsed": true,
                     "items": [
                       {
@@ -15582,8 +17194,30 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                         "collapsed": true,
                         "items": [
                           {
-                            "text": "MutFetchState",
-                            "link": "/reference/pill_engine_core/query/target/struct.MutFetchState"
+                            "text": "CloneValueProbe",
+                            "link": "/reference/pill_engine_core/reflection/component_registry/struct.CloneValueProbe"
+                          },
+                          {
+                            "text": "ComponentFieldDescriptor",
+                            "link": "/reference/pill_engine_core/reflection/component_registry/struct.ComponentFieldDescriptor"
+                          },
+                          {
+                            "text": "DefaultValueProbe",
+                            "link": "/reference/pill_engine_core/reflection/component_registry/struct.DefaultValueProbe"
+                          },
+                          {
+                            "text": "EnumLayout",
+                            "link": "/reference/pill_engine_core/reflection/component_registry/struct.EnumLayout"
+                          }
+                        ]
+                      },
+                      {
+                        "text": "Enums",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "FieldDecorator",
+                            "link": "/reference/pill_engine_core/reflection/component_registry/enum.FieldDecorator"
                           }
                         ]
                       },
@@ -15592,8 +17226,24 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                         "collapsed": true,
                         "items": [
                           {
-                            "text": "QueryTarget",
-                            "link": "/reference/pill_engine_core/query/target/trait.QueryTarget"
+                            "text": "ComponentLayout",
+                            "link": "/reference/pill_engine_core/reflection/component_registry/trait.ComponentLayout"
+                          },
+                          {
+                            "text": "RecordCloneValue",
+                            "link": "/reference/pill_engine_core/reflection/component_registry/trait.RecordCloneValue"
+                          },
+                          {
+                            "text": "RecordDefaultValue",
+                            "link": "/reference/pill_engine_core/reflection/component_registry/trait.RecordDefaultValue"
+                          },
+                          {
+                            "text": "SkipCloneValue",
+                            "link": "/reference/pill_engine_core/reflection/component_registry/trait.SkipCloneValue"
+                          },
+                          {
+                            "text": "SkipDefaultValue",
+                            "link": "/reference/pill_engine_core/reflection/component_registry/trait.SkipDefaultValue"
                           }
                         ]
                       },
@@ -15602,170 +17252,73 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                         "collapsed": true,
                         "items": [
                           {
-                            "text": "declared_shared_schema",
-                            "link": "/reference/pill_engine_core/query/target/fn.declared_shared_schema"
-                          },
-                          {
-                            "text": "find_aliasing_component",
-                            "link": "/reference/pill_engine_core/query/target/fn.find_aliasing_component"
+                            "text": "resolve_unique_name",
+                            "link": "/reference/pill_engine_core/reflection/component_registry/fn.resolve_unique_name"
                           }
                         ]
                       },
                       {
-                        "text": "Macros",
+                        "text": "Type aliases",
                         "collapsed": true,
                         "items": [
                           {
-                            "text": "impl_query_target_tuple",
-                            "link": "/reference/pill_engine_core/query/target/macro.impl_query_target_tuple"
+                            "text": "EnumLayoutResolver",
+                            "link": "/reference/pill_engine_core/reflection/component_registry/type.EnumLayoutResolver"
+                          },
+                          {
+                            "text": "ValueTypeLayoutResolver",
+                            "link": "/reference/pill_engine_core/reflection/component_registry/type.ValueTypeLayoutResolver"
                           }
                         ]
                       }
                     ]
-                  }
-                ]
-              },
-              {
-                "text": "Structs",
-                "collapsed": true,
-                "items": [
-                  {
-                    "text": "FilteredArchetypeRange",
-                    "link": "/reference/pill_engine_core/query/struct.FilteredArchetypeRange"
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "text": "resource",
-            "link": "/reference/pill_engine_core/resource/",
-            "collapsed": true,
-            "items": [
-              {
-                "text": "Structs",
-                "collapsed": true,
-                "items": [
-                  {
-                    "text": "ErasedResource",
-                    "link": "/reference/pill_engine_core/resource/struct.ErasedResource"
                   },
                   {
-                    "text": "ErasedResourceOps",
-                    "link": "/reference/pill_engine_core/resource/struct.ErasedResourceOps"
-                  },
-                  {
-                    "text": "KeptLayoutDeclaration",
-                    "link": "/reference/pill_engine_core/resource/struct.KeptLayoutDeclaration"
-                  },
-                  {
-                    "text": "ResHandle",
-                    "link": "/reference/pill_engine_core/resource/struct.ResHandle"
-                  }
-                ]
-              },
-              {
-                "text": "Enums",
-                "collapsed": true,
-                "items": [
-                  {
-                    "text": "ResourceId",
-                    "link": "/reference/pill_engine_core/resource/enum.ResourceId"
-                  }
-                ]
-              },
-              {
-                "text": "Traits",
-                "collapsed": true,
-                "items": [
-                  {
-                    "text": "Resource",
-                    "link": "/reference/pill_engine_core/resource/trait.Resource"
-                  }
-                ]
-              },
-              {
-                "text": "Functions",
-                "collapsed": true,
-                "items": [
-                  {
-                    "text": "drop_in_place_of",
-                    "link": "/reference/pill_engine_core/resource/fn.drop_in_place_of"
-                  },
-                  {
-                    "text": "drop_nothing",
-                    "link": "/reference/pill_engine_core/resource/fn.drop_nothing"
-                  }
-                ]
-              },
-              {
-                "text": "Constants",
-                "collapsed": true,
-                "items": [
-                  {
-                    "text": "SHARED_RESOURCE_HASH_SALT",
-                    "link": "/reference/pill_engine_core/resource/constant.SHARED_RESOURCE_HASH_SALT"
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "text": "saved_references",
-            "link": "/reference/pill_engine_core/saved_references/",
-            "collapsed": true,
-            "items": [
-              {
-                "text": "Structs",
-                "collapsed": true,
-                "items": [
-                  {
-                    "text": "SavedAssetReference",
-                    "link": "/reference/pill_engine_core/saved_references/struct.SavedAssetReference"
-                  },
-                  {
-                    "text": "SavedAssetReferenceFields",
-                    "link": "/reference/pill_engine_core/saved_references/struct.SavedAssetReferenceFields"
-                  },
-                  {
-                    "text": "SavedEntityLink",
-                    "link": "/reference/pill_engine_core/saved_references/struct.SavedEntityLink"
-                  },
-                  {
-                    "text": "SavedEntityLinks",
-                    "link": "/reference/pill_engine_core/saved_references/struct.SavedEntityLinks"
-                  }
-                ]
-              },
-              {
-                "text": "Enums",
-                "collapsed": true,
-                "items": [
-                  {
-                    "text": "SavedReference",
-                    "link": "/reference/pill_engine_core/saved_references/enum.SavedReference"
-                  }
-                ]
-              },
-              {
-                "text": "Functions",
-                "collapsed": true,
-                "items": [
-                  {
-                    "text": "asset_field_value_from_outcome",
-                    "link": "/reference/pill_engine_core/saved_references/fn.asset_field_value_from_outcome"
-                  },
-                  {
-                    "text": "first_report_of",
-                    "link": "/reference/pill_engine_core/saved_references/fn.first_report_of"
-                  },
-                  {
-                    "text": "restore_asset_reference",
-                    "link": "/reference/pill_engine_core/saved_references/fn.restore_asset_reference"
-                  },
-                  {
-                    "text": "saved_reference",
-                    "link": "/reference/pill_engine_core/saved_references/fn.saved_reference"
+                    "text": "type_names",
+                    "link": "/reference/pill_engine_core/reflection/type_names/",
+                    "collapsed": true,
+                    "items": [
+                      {
+                        "text": "Functions",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "crate_qualified_name",
+                            "link": "/reference/pill_engine_core/reflection/type_names/fn.crate_qualified_name"
+                          },
+                          {
+                            "text": "interned_short_name",
+                            "link": "/reference/pill_engine_core/reflection/type_names/fn.interned_short_name"
+                          },
+                          {
+                            "text": "names_same_type",
+                            "link": "/reference/pill_engine_core/reflection/type_names/fn.names_same_type"
+                          },
+                          {
+                            "text": "push_short_path",
+                            "link": "/reference/pill_engine_core/reflection/type_names/fn.push_short_path"
+                          },
+                          {
+                            "text": "stable_type_name",
+                            "link": "/reference/pill_engine_core/reflection/type_names/fn.stable_type_name"
+                          }
+                        ]
+                      },
+                      {
+                        "text": "Constants",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "CORE_CRATE_NAME",
+                            "link": "/reference/pill_engine_core/reflection/type_names/constant.CORE_CRATE_NAME"
+                          },
+                          {
+                            "text": "PUBLIC_CRATE_NAME",
+                            "link": "/reference/pill_engine_core/reflection/type_names/constant.PUBLIC_CRATE_NAME"
+                          }
+                        ]
+                      }
+                    ]
                   }
                 ]
               }
@@ -15777,166 +17330,719 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
             "collapsed": true,
             "items": [
               {
-                "text": "Structs",
+                "text": "Modules",
                 "collapsed": true,
                 "items": [
                   {
-                    "text": "Scene",
-                    "link": "/reference/pill_engine_core/scene/struct.Scene"
+                    "text": "saved_references",
+                    "link": "/reference/pill_engine_core/scene/saved_references/",
+                    "collapsed": true,
+                    "items": [
+                      {
+                        "text": "Structs",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "SavedAssetReference",
+                            "link": "/reference/pill_engine_core/scene/saved_references/struct.SavedAssetReference"
+                          },
+                          {
+                            "text": "SavedAssetReferenceFields",
+                            "link": "/reference/pill_engine_core/scene/saved_references/struct.SavedAssetReferenceFields"
+                          },
+                          {
+                            "text": "SavedEntityLink",
+                            "link": "/reference/pill_engine_core/scene/saved_references/struct.SavedEntityLink"
+                          },
+                          {
+                            "text": "SavedEntityLinks",
+                            "link": "/reference/pill_engine_core/scene/saved_references/struct.SavedEntityLinks"
+                          }
+                        ]
+                      },
+                      {
+                        "text": "Enums",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "SavedReference",
+                            "link": "/reference/pill_engine_core/scene/saved_references/enum.SavedReference"
+                          }
+                        ]
+                      },
+                      {
+                        "text": "Functions",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "asset_field_value_from_outcome",
+                            "link": "/reference/pill_engine_core/scene/saved_references/fn.asset_field_value_from_outcome"
+                          },
+                          {
+                            "text": "first_report_of",
+                            "link": "/reference/pill_engine_core/scene/saved_references/fn.first_report_of"
+                          },
+                          {
+                            "text": "restore_asset_reference",
+                            "link": "/reference/pill_engine_core/scene/saved_references/fn.restore_asset_reference"
+                          },
+                          {
+                            "text": "saved_reference",
+                            "link": "/reference/pill_engine_core/scene/saved_references/fn.saved_reference"
+                          }
+                        ]
+                      }
+                    ]
                   },
                   {
-                    "text": "SceneDocument",
-                    "link": "/reference/pill_engine_core/scene/struct.SceneDocument"
+                    "text": "scene",
+                    "link": "/reference/pill_engine_core/scene/scene/",
+                    "collapsed": true,
+                    "items": [
+                      {
+                        "text": "Structs",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "Scene",
+                            "link": "/reference/pill_engine_core/scene/scene/struct.Scene"
+                          },
+                          {
+                            "text": "SceneDocument",
+                            "link": "/reference/pill_engine_core/scene/scene/struct.SceneDocument"
+                          },
+                          {
+                            "text": "SceneEntity",
+                            "link": "/reference/pill_engine_core/scene/scene/struct.SceneEntity"
+                          },
+                          {
+                            "text": "SceneLoad",
+                            "link": "/reference/pill_engine_core/scene/scene/struct.SceneLoad"
+                          },
+                          {
+                            "text": "SceneSave",
+                            "link": "/reference/pill_engine_core/scene/scene/struct.SceneSave"
+                          }
+                        ]
+                      },
+                      {
+                        "text": "Enums",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "AttachError",
+                            "link": "/reference/pill_engine_core/scene/scene/enum.AttachError"
+                          },
+                          {
+                            "text": "DecodedField",
+                            "link": "/reference/pill_engine_core/scene/scene/enum.DecodedField"
+                          }
+                        ]
+                      },
+                      {
+                        "text": "Functions",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "attach_component",
+                            "link": "/reference/pill_engine_core/scene/scene/fn.attach_component"
+                          },
+                          {
+                            "text": "bytes_of",
+                            "link": "/reference/pill_engine_core/scene/scene/fn.bytes_of"
+                          },
+                          {
+                            "text": "cleared_reference_value",
+                            "link": "/reference/pill_engine_core/scene/scene/fn.cleared_reference_value"
+                          },
+                          {
+                            "text": "decode_opaque_field",
+                            "link": "/reference/pill_engine_core/scene/scene/fn.decode_opaque_field"
+                          },
+                          {
+                            "text": "decoded_enum_field",
+                            "link": "/reference/pill_engine_core/scene/scene/fn.decoded_enum_field"
+                          },
+                          {
+                            "text": "decoded_field",
+                            "link": "/reference/pill_engine_core/scene/scene/fn.decoded_field"
+                          },
+                          {
+                            "text": "deserialize_component_map",
+                            "link": "/reference/pill_engine_core/scene/scene/fn.deserialize_component_map"
+                          },
+                          {
+                            "text": "encode_field_value",
+                            "link": "/reference/pill_engine_core/scene/scene/fn.encode_field_value"
+                          },
+                          {
+                            "text": "hex_of",
+                            "link": "/reference/pill_engine_core/scene/scene/fn.hex_of"
+                          },
+                          {
+                            "text": "is_set_reference",
+                            "link": "/reference/pill_engine_core/scene/scene/fn.is_set_reference"
+                          },
+                          {
+                            "text": "join_command_errors",
+                            "link": "/reference/pill_engine_core/scene/scene/fn.join_command_errors"
+                          },
+                          {
+                            "text": "legacy_opaque_discriminant",
+                            "link": "/reference/pill_engine_core/scene/scene/fn.legacy_opaque_discriminant"
+                          },
+                          {
+                            "text": "load_scene",
+                            "link": "/reference/pill_engine_core/scene/scene/fn.load_scene"
+                          },
+                          {
+                            "text": "load_scene_in_current_origin",
+                            "link": "/reference/pill_engine_core/scene/scene/fn.load_scene_in_current_origin"
+                          },
+                          {
+                            "text": "narrow_to_f32",
+                            "link": "/reference/pill_engine_core/scene/scene/fn.narrow_to_f32"
+                          },
+                          {
+                            "text": "narrow_to_signed",
+                            "link": "/reference/pill_engine_core/scene/scene/fn.narrow_to_signed"
+                          },
+                          {
+                            "text": "narrow_to_unsigned",
+                            "link": "/reference/pill_engine_core/scene/scene/fn.narrow_to_unsigned"
+                          },
+                          {
+                            "text": "save_scene",
+                            "link": "/reference/pill_engine_core/scene/scene/fn.save_scene"
+                          }
+                        ]
+                      },
+                      {
+                        "text": "Type aliases",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "ComponentMap",
+                            "link": "/reference/pill_engine_core/scene/scene/type.ComponentMap"
+                          }
+                        ]
+                      },
+                      {
+                        "text": "Constants",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "SCENE_SHARED_NAME",
+                            "link": "/reference/pill_engine_core/scene/scene/constant.SCENE_SHARED_NAME"
+                          }
+                        ]
+                      }
+                    ]
                   },
                   {
-                    "text": "SceneEntity",
-                    "link": "/reference/pill_engine_core/scene/struct.SceneEntity"
-                  },
-                  {
-                    "text": "SceneLoad",
-                    "link": "/reference/pill_engine_core/scene/struct.SceneLoad"
-                  },
-                  {
-                    "text": "SceneSave",
-                    "link": "/reference/pill_engine_core/scene/struct.SceneSave"
-                  }
-                ]
-              },
-              {
-                "text": "Enums",
-                "collapsed": true,
-                "items": [
-                  {
-                    "text": "AttachError",
-                    "link": "/reference/pill_engine_core/scene/enum.AttachError"
-                  },
-                  {
-                    "text": "DecodedField",
-                    "link": "/reference/pill_engine_core/scene/enum.DecodedField"
-                  }
-                ]
-              },
-              {
-                "text": "Functions",
-                "collapsed": true,
-                "items": [
-                  {
-                    "text": "attach_component",
-                    "link": "/reference/pill_engine_core/scene/fn.attach_component"
-                  },
-                  {
-                    "text": "bytes_of",
-                    "link": "/reference/pill_engine_core/scene/fn.bytes_of"
-                  },
-                  {
-                    "text": "cleared_reference_value",
-                    "link": "/reference/pill_engine_core/scene/fn.cleared_reference_value"
-                  },
-                  {
-                    "text": "decode_opaque_field",
-                    "link": "/reference/pill_engine_core/scene/fn.decode_opaque_field"
-                  },
-                  {
-                    "text": "decoded_field",
-                    "link": "/reference/pill_engine_core/scene/fn.decoded_field"
-                  },
-                  {
-                    "text": "encode_field_value",
-                    "link": "/reference/pill_engine_core/scene/fn.encode_field_value"
-                  },
-                  {
-                    "text": "hex_of",
-                    "link": "/reference/pill_engine_core/scene/fn.hex_of"
-                  },
-                  {
-                    "text": "is_set_reference",
-                    "link": "/reference/pill_engine_core/scene/fn.is_set_reference"
-                  },
-                  {
-                    "text": "join_command_errors",
-                    "link": "/reference/pill_engine_core/scene/fn.join_command_errors"
-                  },
-                  {
-                    "text": "load_scene",
-                    "link": "/reference/pill_engine_core/scene/fn.load_scene"
-                  },
-                  {
-                    "text": "narrow_to_f32",
-                    "link": "/reference/pill_engine_core/scene/fn.narrow_to_f32"
-                  },
-                  {
-                    "text": "narrow_to_signed",
-                    "link": "/reference/pill_engine_core/scene/fn.narrow_to_signed"
-                  },
-                  {
-                    "text": "narrow_to_unsigned",
-                    "link": "/reference/pill_engine_core/scene/fn.narrow_to_unsigned"
-                  },
-                  {
-                    "text": "save_scene",
-                    "link": "/reference/pill_engine_core/scene/fn.save_scene"
-                  }
-                ]
-              },
-              {
-                "text": "Constants",
-                "collapsed": true,
-                "items": [
-                  {
-                    "text": "SCENE_SHARED_NAME",
-                    "link": "/reference/pill_engine_core/scene/constant.SCENE_SHARED_NAME"
+                    "text": "startup_scene",
+                    "link": "/reference/pill_engine_core/scene/startup_scene/",
+                    "collapsed": true,
+                    "items": [
+                      {
+                        "text": "Structs",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "StartupScene",
+                            "link": "/reference/pill_engine_core/scene/startup_scene/struct.StartupScene"
+                          }
+                        ]
+                      },
+                      {
+                        "text": "Functions",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "apply_startup_scene",
+                            "link": "/reference/pill_engine_core/scene/startup_scene/fn.apply_startup_scene"
+                          },
+                          {
+                            "text": "load_startup_scene",
+                            "link": "/reference/pill_engine_core/scene/startup_scene/fn.load_startup_scene"
+                          },
+                          {
+                            "text": "queue_startup_scene",
+                            "link": "/reference/pill_engine_core/scene/startup_scene/fn.queue_startup_scene"
+                          }
+                        ]
+                      }
+                    ]
                   }
                 ]
               }
             ]
           },
           {
-            "text": "scheduler",
-            "link": "/reference/pill_engine_core/scheduler/",
+            "text": "services",
+            "link": "/reference/pill_engine_core/services/",
             "collapsed": true,
             "items": [
               {
-                "text": "Structs",
+                "text": "Modules",
                 "collapsed": true,
                 "items": [
                   {
-                    "text": "SystemAccess",
-                    "link": "/reference/pill_engine_core/scheduler/struct.SystemAccess"
+                    "text": "debug_draw",
+                    "link": "/reference/pill_engine_core/services/debug_draw/",
+                    "collapsed": true,
+                    "items": [
+                      {
+                        "text": "Structs",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "DebugDraw",
+                            "link": "/reference/pill_engine_core/services/debug_draw/struct.DebugDraw"
+                          },
+                          {
+                            "text": "DebugFrame",
+                            "link": "/reference/pill_engine_core/services/debug_draw/struct.DebugFrame"
+                          },
+                          {
+                            "text": "DebugLabel",
+                            "link": "/reference/pill_engine_core/services/debug_draw/struct.DebugLabel"
+                          },
+                          {
+                            "text": "DebugLine",
+                            "link": "/reference/pill_engine_core/services/debug_draw/struct.DebugLine"
+                          },
+                          {
+                            "text": "DebugStyle",
+                            "link": "/reference/pill_engine_core/services/debug_draw/struct.DebugStyle"
+                          },
+                          {
+                            "text": "GizmoLine",
+                            "link": "/reference/pill_engine_core/services/debug_draw/struct.GizmoLine"
+                          },
+                          {
+                            "text": "GizmoPoint",
+                            "link": "/reference/pill_engine_core/services/debug_draw/struct.GizmoPoint"
+                          },
+                          {
+                            "text": "GizmoTriangle",
+                            "link": "/reference/pill_engine_core/services/debug_draw/struct.GizmoTriangle"
+                          },
+                          {
+                            "text": "Timed",
+                            "link": "/reference/pill_engine_core/services/debug_draw/struct.Timed"
+                          }
+                        ]
+                      },
+                      {
+                        "text": "Enums",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "DebugLifetime",
+                            "link": "/reference/pill_engine_core/services/debug_draw/enum.DebugLifetime"
+                          },
+                          {
+                            "text": "GizmoPointShape",
+                            "link": "/reference/pill_engine_core/services/debug_draw/enum.GizmoPointShape"
+                          },
+                          {
+                            "text": "LabelAnchor",
+                            "link": "/reference/pill_engine_core/services/debug_draw/enum.LabelAnchor"
+                          }
+                        ]
+                      },
+                      {
+                        "text": "Functions",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "add_vectors",
+                            "link": "/reference/pill_engine_core/services/debug_draw/fn.add_vectors"
+                          },
+                          {
+                            "text": "age_timed_items",
+                            "link": "/reference/pill_engine_core/services/debug_draw/fn.age_timed_items"
+                          },
+                          {
+                            "text": "cross_vectors",
+                            "link": "/reference/pill_engine_core/services/debug_draw/fn.cross_vectors"
+                          },
+                          {
+                            "text": "normalize_vector",
+                            "link": "/reference/pill_engine_core/services/debug_draw/fn.normalize_vector"
+                          },
+                          {
+                            "text": "plane_axes",
+                            "link": "/reference/pill_engine_core/services/debug_draw/fn.plane_axes"
+                          },
+                          {
+                            "text": "scale_vector",
+                            "link": "/reference/pill_engine_core/services/debug_draw/fn.scale_vector"
+                          },
+                          {
+                            "text": "subtract_vectors",
+                            "link": "/reference/pill_engine_core/services/debug_draw/fn.subtract_vectors"
+                          },
+                          {
+                            "text": "vector_length",
+                            "link": "/reference/pill_engine_core/services/debug_draw/fn.vector_length"
+                          }
+                        ]
+                      },
+                      {
+                        "text": "Type aliases",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "DebugColor",
+                            "link": "/reference/pill_engine_core/services/debug_draw/type.DebugColor"
+                          }
+                        ]
+                      },
+                      {
+                        "text": "Constants",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "CIRCLE_SEGMENTS",
+                            "link": "/reference/pill_engine_core/services/debug_draw/constant.CIRCLE_SEGMENTS"
+                          }
+                        ]
+                      }
+                    ]
                   },
                   {
-                    "text": "SystemScheduler",
-                    "link": "/reference/pill_engine_core/scheduler/struct.SystemScheduler"
+                    "text": "diagnostics",
+                    "link": "/reference/pill_engine_core/services/diagnostics/",
+                    "collapsed": true,
+                    "items": [
+                      {
+                        "text": "Structs",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "ArchetypeReport",
+                            "link": "/reference/pill_engine_core/services/diagnostics/struct.ArchetypeReport"
+                          },
+                          {
+                            "text": "ColumnReport",
+                            "link": "/reference/pill_engine_core/services/diagnostics/struct.ColumnReport"
+                          },
+                          {
+                            "text": "EcsSnapshot",
+                            "link": "/reference/pill_engine_core/services/diagnostics/struct.EcsSnapshot"
+                          }
+                        ]
+                      },
+                      {
+                        "text": "Functions",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "format_bytes",
+                            "link": "/reference/pill_engine_core/services/diagnostics/fn.format_bytes"
+                          }
+                        ]
+                      },
+                      {
+                        "text": "Constants",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "DEFAULT_REPORT_INTERVAL",
+                            "link": "/reference/pill_engine_core/services/diagnostics/constant.DEFAULT_REPORT_INTERVAL"
+                          },
+                          {
+                            "text": "SYSTEM_NAME",
+                            "link": "/reference/pill_engine_core/services/diagnostics/constant.SYSTEM_NAME"
+                          }
+                        ]
+                      }
+                    ]
                   },
                   {
-                    "text": "TypeKey",
-                    "link": "/reference/pill_engine_core/scheduler/struct.TypeKey"
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "text": "scripting",
-            "link": "/reference/pill_engine_core/scripting/",
-            "collapsed": true,
-            "items": [
-              {
-                "text": "Structs",
-                "collapsed": true,
-                "items": [
+                    "text": "gizmos",
+                    "link": "/reference/pill_engine_core/services/gizmos/",
+                    "collapsed": true,
+                    "items": [
+                      {
+                        "text": "Structs",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "GizmoContext",
+                            "link": "/reference/pill_engine_core/services/gizmos/struct.GizmoContext"
+                          },
+                          {
+                            "text": "GizmoDeclaration",
+                            "link": "/reference/pill_engine_core/services/gizmos/struct.GizmoDeclaration"
+                          },
+                          {
+                            "text": "GizmoDraw",
+                            "link": "/reference/pill_engine_core/services/gizmos/struct.GizmoDraw"
+                          },
+                          {
+                            "text": "GizmoEntry",
+                            "link": "/reference/pill_engine_core/services/gizmos/struct.GizmoEntry"
+                          },
+                          {
+                            "text": "GizmoFrame",
+                            "link": "/reference/pill_engine_core/services/gizmos/struct.GizmoFrame"
+                          },
+                          {
+                            "text": "GizmoRegistry",
+                            "link": "/reference/pill_engine_core/services/gizmos/struct.GizmoRegistry"
+                          },
+                          {
+                            "text": "GizmoSelection",
+                            "link": "/reference/pill_engine_core/services/gizmos/struct.GizmoSelection"
+                          }
+                        ]
+                      },
+                      {
+                        "text": "Enums",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "GizmoChrome",
+                            "link": "/reference/pill_engine_core/services/gizmos/enum.GizmoChrome"
+                          },
+                          {
+                            "text": "GizmoWhen",
+                            "link": "/reference/pill_engine_core/services/gizmos/enum.GizmoWhen"
+                          }
+                        ]
+                      },
+                      {
+                        "text": "Functions",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "cross_product",
+                            "link": "/reference/pill_engine_core/services/gizmos/fn.cross_product"
+                          },
+                          {
+                            "text": "install",
+                            "link": "/reference/pill_engine_core/services/gizmos/fn.install"
+                          },
+                          {
+                            "text": "plane_axes",
+                            "link": "/reference/pill_engine_core/services/gizmos/fn.plane_axes"
+                          },
+                          {
+                            "text": "rotate_vector",
+                            "link": "/reference/pill_engine_core/services/gizmos/fn.rotate_vector"
+                          },
+                          {
+                            "text": "rotation_matrix",
+                            "link": "/reference/pill_engine_core/services/gizmos/fn.rotation_matrix"
+                          },
+                          {
+                            "text": "run_pass",
+                            "link": "/reference/pill_engine_core/services/gizmos/fn.run_pass"
+                          },
+                          {
+                            "text": "scale_vector",
+                            "link": "/reference/pill_engine_core/services/gizmos/fn.scale_vector"
+                          },
+                          {
+                            "text": "transform_point",
+                            "link": "/reference/pill_engine_core/services/gizmos/fn.transform_point"
+                          },
+                          {
+                            "text": "vector_length",
+                            "link": "/reference/pill_engine_core/services/gizmos/fn.vector_length"
+                          }
+                        ]
+                      },
+                      {
+                        "text": "Type aliases",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "GizmoDrawEntry",
+                            "link": "/reference/pill_engine_core/services/gizmos/type.GizmoDrawEntry"
+                          }
+                        ]
+                      },
+                      {
+                        "text": "Constants",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "BOX_EDGES",
+                            "link": "/reference/pill_engine_core/services/gizmos/constant.BOX_EDGES"
+                          },
+                          {
+                            "text": "CIRCLE_SEGMENTS",
+                            "link": "/reference/pill_engine_core/services/gizmos/constant.CIRCLE_SEGMENTS"
+                          },
+                          {
+                            "text": "PASS_ORDER",
+                            "link": "/reference/pill_engine_core/services/gizmos/constant.PASS_ORDER"
+                          },
+                          {
+                            "text": "SYSTEM_NAME",
+                            "link": "/reference/pill_engine_core/services/gizmos/constant.SYSTEM_NAME"
+                          }
+                        ]
+                      }
+                    ]
+                  },
                   {
-                    "text": "ScriptContext",
-                    "link": "/reference/pill_engine_core/scripting/struct.ScriptContext"
-                  }
-                ]
-              },
-              {
-                "text": "Traits",
-                "collapsed": true,
-                "items": [
+                    "text": "input",
+                    "link": "/reference/pill_engine_core/services/input/",
+                    "collapsed": true,
+                    "items": [
+                      {
+                        "text": "Structs",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "GamepadState",
+                            "link": "/reference/pill_engine_core/services/input/struct.GamepadState"
+                          },
+                          {
+                            "text": "Input",
+                            "link": "/reference/pill_engine_core/services/input/struct.Input"
+                          },
+                          {
+                            "text": "KeySet",
+                            "link": "/reference/pill_engine_core/services/input/struct.KeySet"
+                          },
+                          {
+                            "text": "Modifiers",
+                            "link": "/reference/pill_engine_core/services/input/struct.Modifiers"
+                          },
+                          {
+                            "text": "RumbleRequest",
+                            "link": "/reference/pill_engine_core/services/input/struct.RumbleRequest"
+                          }
+                        ]
+                      },
+                      {
+                        "text": "Enums",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "ButtonState",
+                            "link": "/reference/pill_engine_core/services/input/enum.ButtonState"
+                          },
+                          {
+                            "text": "GamepadAxis",
+                            "link": "/reference/pill_engine_core/services/input/enum.GamepadAxis"
+                          },
+                          {
+                            "text": "GamepadButton",
+                            "link": "/reference/pill_engine_core/services/input/enum.GamepadButton"
+                          },
+                          {
+                            "text": "InputEvent",
+                            "link": "/reference/pill_engine_core/services/input/enum.InputEvent"
+                          },
+                          {
+                            "text": "KeyCode",
+                            "link": "/reference/pill_engine_core/services/input/enum.KeyCode"
+                          },
+                          {
+                            "text": "MouseButton",
+                            "link": "/reference/pill_engine_core/services/input/enum.MouseButton"
+                          },
+                          {
+                            "text": "PlayerId",
+                            "link": "/reference/pill_engine_core/services/input/enum.PlayerId"
+                          },
+                          {
+                            "text": "ScrollDelta",
+                            "link": "/reference/pill_engine_core/services/input/enum.ScrollDelta"
+                          }
+                        ]
+                      },
+                      {
+                        "text": "Traits",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "EdgeBits",
+                            "link": "/reference/pill_engine_core/services/input/trait.EdgeBits"
+                          }
+                        ]
+                      },
+                      {
+                        "text": "Functions",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "apply_edge",
+                            "link": "/reference/pill_engine_core/services/input/fn.apply_edge"
+                          },
+                          {
+                            "text": "release_edges",
+                            "link": "/reference/pill_engine_core/services/input/fn.release_edges"
+                          }
+                        ]
+                      },
+                      {
+                        "text": "Constants",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "GAMEPAD_AXIS_DEADZONE",
+                            "link": "/reference/pill_engine_core/services/input/constant.GAMEPAD_AXIS_DEADZONE"
+                          },
+                          {
+                            "text": "GAMEPAD_SLOT_COUNT",
+                            "link": "/reference/pill_engine_core/services/input/constant.GAMEPAD_SLOT_COUNT"
+                          },
+                          {
+                            "text": "KEY_SET_WORD_COUNT",
+                            "link": "/reference/pill_engine_core/services/input/constant.KEY_SET_WORD_COUNT"
+                          }
+                        ]
+                      },
+                      {
+                        "text": "Macros",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "key_codes",
+                            "link": "/reference/pill_engine_core/services/input/macro.key_codes"
+                          }
+                        ]
+                      }
+                    ]
+                  },
                   {
-                    "text": "ScriptComponent",
-                    "link": "/reference/pill_engine_core/scripting/trait.ScriptComponent"
+                    "text": "profiling",
+                    "link": "/reference/pill_engine_core/services/profiling/"
+                  },
+                  {
+                    "text": "time",
+                    "link": "/reference/pill_engine_core/services/time/",
+                    "collapsed": true,
+                    "items": [
+                      {
+                        "text": "Structs",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "Time",
+                            "link": "/reference/pill_engine_core/services/time/struct.Time"
+                          }
+                        ]
+                      },
+                      {
+                        "text": "Constants",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "MAXIMUM_DELTA_SECONDS",
+                            "link": "/reference/pill_engine_core/services/time/constant.MAXIMUM_DELTA_SECONDS"
+                          }
+                        ]
+                      }
+                    ]
                   }
                 ]
               }
@@ -15948,207 +18054,12 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
             "collapsed": true,
             "items": [
               {
-                "text": "Structs",
-                "collapsed": true,
-                "items": [
-                  {
-                    "text": "SettingsAssetOps",
-                    "link": "/reference/pill_engine_core/settings/struct.SettingsAssetOps"
-                  }
-                ]
-              },
-              {
-                "text": "Enums",
-                "collapsed": true,
-                "items": [
-                  {
-                    "text": "SettingsOutcome",
-                    "link": "/reference/pill_engine_core/settings/enum.SettingsOutcome"
-                  }
-                ]
-              },
-              {
-                "text": "Traits",
-                "collapsed": true,
-                "items": [
-                  {
-                    "text": "SettingsAssetManager",
-                    "link": "/reference/pill_engine_core/settings/trait.SettingsAssetManager"
-                  }
-                ]
-              },
-              {
-                "text": "Functions",
-                "collapsed": true,
-                "items": [
-                  {
-                    "text": "apply_settings_bytes_of",
-                    "link": "/reference/pill_engine_core/settings/fn.apply_settings_bytes_of"
-                  },
-                  {
-                    "text": "render_settings_default_of",
-                    "link": "/reference/pill_engine_core/settings/fn.render_settings_default_of"
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "text": "startup_scene",
-            "link": "/reference/pill_engine_core/startup_scene/",
-            "collapsed": true,
-            "items": [
-              {
-                "text": "Structs",
-                "collapsed": true,
-                "items": [
-                  {
-                    "text": "StartupScene",
-                    "link": "/reference/pill_engine_core/startup_scene/struct.StartupScene"
-                  }
-                ]
-              },
-              {
-                "text": "Functions",
-                "collapsed": true,
-                "items": [
-                  {
-                    "text": "apply_startup_scene",
-                    "link": "/reference/pill_engine_core/startup_scene/fn.apply_startup_scene"
-                  },
-                  {
-                    "text": "load_startup_scene",
-                    "link": "/reference/pill_engine_core/startup_scene/fn.load_startup_scene"
-                  },
-                  {
-                    "text": "queue_startup_scene",
-                    "link": "/reference/pill_engine_core/startup_scene/fn.queue_startup_scene"
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "text": "system",
-            "link": "/reference/pill_engine_core/system/",
-            "collapsed": true,
-            "items": [
-              {
-                "text": "Traits",
-                "collapsed": true,
-                "items": [
-                  {
-                    "text": "IntoSystem",
-                    "link": "/reference/pill_engine_core/system/trait.IntoSystem"
-                  },
-                  {
-                    "text": "System",
-                    "link": "/reference/pill_engine_core/system/trait.System"
-                  },
-                  {
-                    "text": "SystemOutput",
-                    "link": "/reference/pill_engine_core/system/trait.SystemOutput"
-                  },
-                  {
-                    "text": "SystemParam",
-                    "link": "/reference/pill_engine_core/system/trait.SystemParam"
-                  },
-                  {
-                    "text": "SystemParamFunction",
-                    "link": "/reference/pill_engine_core/system/trait.SystemParamFunction"
-                  }
-                ]
-              },
-              {
-                "text": "Macros",
-                "collapsed": true,
-                "items": [
-                  {
-                    "text": "impl_system_param_function",
-                    "link": "/reference/pill_engine_core/system/macro.impl_system_param_function"
-                  },
-                  {
-                    "text": "impl_system_param_tuple",
-                    "link": "/reference/pill_engine_core/system/macro.impl_system_param_tuple"
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "text": "time",
-            "link": "/reference/pill_engine_core/time/",
-            "collapsed": true,
-            "items": [
-              {
-                "text": "Structs",
-                "collapsed": true,
-                "items": [
-                  {
-                    "text": "Time",
-                    "link": "/reference/pill_engine_core/time/struct.Time"
-                  }
-                ]
-              },
-              {
-                "text": "Constants",
-                "collapsed": true,
-                "items": [
-                  {
-                    "text": "MAXIMUM_DELTA_SECONDS",
-                    "link": "/reference/pill_engine_core/time/constant.MAXIMUM_DELTA_SECONDS"
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "text": "type_names",
-            "link": "/reference/pill_engine_core/type_names/",
-            "collapsed": true,
-            "items": [
-              {
-                "text": "Functions",
-                "collapsed": true,
-                "items": [
-                  {
-                    "text": "rewritten_type_name",
-                    "link": "/reference/pill_engine_core/type_names/fn.rewritten_type_name"
-                  },
-                  {
-                    "text": "stable_type_name",
-                    "link": "/reference/pill_engine_core/type_names/fn.stable_type_name"
-                  }
-                ]
-              },
-              {
-                "text": "Constants",
-                "collapsed": true,
-                "items": [
-                  {
-                    "text": "CORE_CRATE_PREFIX",
-                    "link": "/reference/pill_engine_core/type_names/constant.CORE_CRATE_PREFIX"
-                  },
-                  {
-                    "text": "PUBLIC_CRATE_PREFIX",
-                    "link": "/reference/pill_engine_core/type_names/constant.PUBLIC_CRATE_PREFIX"
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "text": "world",
-            "link": "/reference/pill_engine_core/world/",
-            "collapsed": true,
-            "items": [
-              {
                 "text": "Modules",
                 "collapsed": true,
                 "items": [
                   {
-                    "text": "components",
-                    "link": "/reference/pill_engine_core/world/components/",
+                    "text": "manager_settings",
+                    "link": "/reference/pill_engine_core/settings/manager_settings/",
                     "collapsed": true,
                     "items": [
                       {
@@ -16156,125 +18067,273 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                         "collapsed": true,
                         "items": [
                           {
-                            "text": "ColumnChunk",
-                            "link": "/reference/pill_engine_core/world/components/struct.ColumnChunk"
+                            "text": "ManagerSettingsApplied",
+                            "link": "/reference/pill_engine_core/settings/manager_settings/struct.ManagerSettingsApplied"
+                          },
+                          {
+                            "text": "ManagerSettingsBinding",
+                            "link": "/reference/pill_engine_core/settings/manager_settings/struct.ManagerSettingsBinding"
+                          },
+                          {
+                            "text": "ManagerSettingsBindings",
+                            "link": "/reference/pill_engine_core/settings/manager_settings/struct.ManagerSettingsBindings"
+                          },
+                          {
+                            "text": "ManagerSettingsFailure",
+                            "link": "/reference/pill_engine_core/settings/manager_settings/struct.ManagerSettingsFailure"
+                          },
+                          {
+                            "text": "ManagerSettingsReport",
+                            "link": "/reference/pill_engine_core/settings/manager_settings/struct.ManagerSettingsReport"
+                          },
+                          {
+                            "text": "ManagerSettingsSurface",
+                            "link": "/reference/pill_engine_core/settings/manager_settings/struct.ManagerSettingsSurface"
+                          },
+                          {
+                            "text": "MissingManagerSettings",
+                            "link": "/reference/pill_engine_core/settings/manager_settings/struct.MissingManagerSettings"
                           }
                         ]
-                      }
-                    ]
-                  },
-                  {
-                    "text": "reflection",
-                    "link": "/reference/pill_engine_core/world/reflection/"
-                  },
-                  {
-                    "text": "resources",
-                    "link": "/reference/pill_engine_core/world/resources/"
-                  },
-                  {
-                    "text": "scripting",
-                    "link": "/reference/pill_engine_core/world/scripting/",
-                    "collapsed": true,
-                    "items": [
+                      },
                       {
-                        "text": "Type aliases",
+                        "text": "Functions",
                         "collapsed": true,
                         "items": [
                           {
-                            "text": "ScriptUpdater",
-                            "link": "/reference/pill_engine_core/world/scripting/type.ScriptUpdater"
+                            "text": "conventional_path",
+                            "link": "/reference/pill_engine_core/settings/manager_settings/fn.conventional_path"
+                          },
+                          {
+                            "text": "fingerprint_of",
+                            "link": "/reference/pill_engine_core/settings/manager_settings/fn.fingerprint_of"
                           }
                         ]
                       }
                     ]
                   },
                   {
-                    "text": "ticks",
-                    "link": "/reference/pill_engine_core/world/ticks/"
+                    "text": "settings",
+                    "link": "/reference/pill_engine_core/settings/settings/",
+                    "collapsed": true,
+                    "items": [
+                      {
+                        "text": "Structs",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "SettingsAssetOps",
+                            "link": "/reference/pill_engine_core/settings/settings/struct.SettingsAssetOps"
+                          }
+                        ]
+                      },
+                      {
+                        "text": "Enums",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "SettingsOutcome",
+                            "link": "/reference/pill_engine_core/settings/settings/enum.SettingsOutcome"
+                          }
+                        ]
+                      },
+                      {
+                        "text": "Traits",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "SettingsAssetManager",
+                            "link": "/reference/pill_engine_core/settings/settings/trait.SettingsAssetManager"
+                          }
+                        ]
+                      },
+                      {
+                        "text": "Functions",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "apply_settings_bytes_of",
+                            "link": "/reference/pill_engine_core/settings/settings/fn.apply_settings_bytes_of"
+                          },
+                          {
+                            "text": "render_settings_default_of",
+                            "link": "/reference/pill_engine_core/settings/settings/fn.render_settings_default_of"
+                          }
+                        ]
+                      }
+                    ]
                   }
                 ]
-              },
+              }
+            ]
+          },
+          {
+            "text": "systems",
+            "link": "/reference/pill_engine_core/systems/",
+            "collapsed": true,
+            "items": [
               {
-                "text": "Structs",
+                "text": "Modules",
                 "collapsed": true,
                 "items": [
                   {
-                    "text": "ComponentFieldLayout",
-                    "link": "/reference/pill_engine_core/world/struct.ComponentFieldLayout"
+                    "text": "scheduler",
+                    "link": "/reference/pill_engine_core/systems/scheduler/",
+                    "collapsed": true,
+                    "items": [
+                      {
+                        "text": "Structs",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "PhaseGraph",
+                            "link": "/reference/pill_engine_core/systems/scheduler/struct.PhaseGraph"
+                          },
+                          {
+                            "text": "SystemAccess",
+                            "link": "/reference/pill_engine_core/systems/scheduler/struct.SystemAccess"
+                          },
+                          {
+                            "text": "SystemScheduler",
+                            "link": "/reference/pill_engine_core/systems/scheduler/struct.SystemScheduler"
+                          },
+                          {
+                            "text": "TypeKey",
+                            "link": "/reference/pill_engine_core/systems/scheduler/struct.TypeKey"
+                          }
+                        ]
+                      },
+                      {
+                        "text": "Enums",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "RunPhase",
+                            "link": "/reference/pill_engine_core/systems/scheduler/enum.RunPhase"
+                          }
+                        ]
+                      }
+                    ]
                   },
                   {
-                    "text": "EntityBuilder",
-                    "link": "/reference/pill_engine_core/world/struct.EntityBuilder"
+                    "text": "scripting",
+                    "link": "/reference/pill_engine_core/systems/scripting/",
+                    "collapsed": true,
+                    "items": [
+                      {
+                        "text": "Structs",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "CreateInfo",
+                            "link": "/reference/pill_engine_core/systems/scripting/struct.CreateInfo"
+                          },
+                          {
+                            "text": "DestroyInfo",
+                            "link": "/reference/pill_engine_core/systems/scripting/struct.DestroyInfo"
+                          },
+                          {
+                            "text": "ScriptContext",
+                            "link": "/reference/pill_engine_core/systems/scripting/struct.ScriptContext"
+                          },
+                          {
+                            "text": "StartInfo",
+                            "link": "/reference/pill_engine_core/systems/scripting/struct.StartInfo"
+                          },
+                          {
+                            "text": "StopInfo",
+                            "link": "/reference/pill_engine_core/systems/scripting/struct.StopInfo"
+                          }
+                        ]
+                      },
+                      {
+                        "text": "Enums",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "CreateCause",
+                            "link": "/reference/pill_engine_core/systems/scripting/enum.CreateCause"
+                          },
+                          {
+                            "text": "DestroyCause",
+                            "link": "/reference/pill_engine_core/systems/scripting/enum.DestroyCause"
+                          },
+                          {
+                            "text": "StartCause",
+                            "link": "/reference/pill_engine_core/systems/scripting/enum.StartCause"
+                          },
+                          {
+                            "text": "StopCause",
+                            "link": "/reference/pill_engine_core/systems/scripting/enum.StopCause"
+                          }
+                        ]
+                      },
+                      {
+                        "text": "Traits",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "ScriptComponent",
+                            "link": "/reference/pill_engine_core/systems/scripting/trait.ScriptComponent"
+                          }
+                        ]
+                      }
+                    ]
                   },
                   {
-                    "text": "EntityLocation",
-                    "link": "/reference/pill_engine_core/world/struct.EntityLocation"
-                  },
-                  {
-                    "text": "EntityRow",
-                    "link": "/reference/pill_engine_core/world/struct.EntityRow"
-                  },
-                  {
-                    "text": "IteratorTimings",
-                    "link": "/reference/pill_engine_core/world/struct.IteratorTimings"
-                  },
-                  {
-                    "text": "SharedResourceClaim",
-                    "link": "/reference/pill_engine_core/world/struct.SharedResourceClaim"
-                  },
-                  {
-                    "text": "TypedComponentInserter",
-                    "link": "/reference/pill_engine_core/world/struct.TypedComponentInserter"
-                  },
-                  {
-                    "text": "World",
-                    "link": "/reference/pill_engine_core/world/struct.World"
-                  }
-                ]
-              },
-              {
-                "text": "Traits",
-                "collapsed": true,
-                "items": [
-                  {
-                    "text": "ComponentInserter",
-                    "link": "/reference/pill_engine_core/world/trait.ComponentInserter"
-                  }
-                ]
-              },
-              {
-                "text": "Functions",
-                "collapsed": true,
-                "items": [
-                  {
-                    "text": "is_valid_foreign_layout",
-                    "link": "/reference/pill_engine_core/world/fn.is_valid_foreign_layout"
-                  },
-                  {
-                    "text": "per_thread_last_run_tick",
-                    "link": "/reference/pill_engine_core/world/fn.per_thread_last_run_tick"
-                  },
-                  {
-                    "text": "per_thread_this_run_tick",
-                    "link": "/reference/pill_engine_core/world/fn.per_thread_this_run_tick"
-                  },
-                  {
-                    "text": "set_per_thread_last_run_tick",
-                    "link": "/reference/pill_engine_core/world/fn.set_per_thread_last_run_tick"
-                  },
-                  {
-                    "text": "set_per_thread_this_run_tick",
-                    "link": "/reference/pill_engine_core/world/fn.set_per_thread_this_run_tick"
-                  }
-                ]
-              },
-              {
-                "text": "Constants",
-                "collapsed": true,
-                "items": [
-                  {
-                    "text": "REGISTRATION_HEADROOM_WARNING_THRESHOLD",
-                    "link": "/reference/pill_engine_core/world/constant.REGISTRATION_HEADROOM_WARNING_THRESHOLD"
+                    "text": "system",
+                    "link": "/reference/pill_engine_core/systems/system/",
+                    "collapsed": true,
+                    "items": [
+                      {
+                        "text": "Traits",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "IntoSystem",
+                            "link": "/reference/pill_engine_core/systems/system/trait.IntoSystem"
+                          },
+                          {
+                            "text": "ReadOnlySystemParam",
+                            "link": "/reference/pill_engine_core/systems/system/trait.ReadOnlySystemParam"
+                          },
+                          {
+                            "text": "System",
+                            "link": "/reference/pill_engine_core/systems/system/trait.System"
+                          },
+                          {
+                            "text": "SystemOutput",
+                            "link": "/reference/pill_engine_core/systems/system/trait.SystemOutput"
+                          },
+                          {
+                            "text": "SystemParam",
+                            "link": "/reference/pill_engine_core/systems/system/trait.SystemParam"
+                          },
+                          {
+                            "text": "SystemParamFunction",
+                            "link": "/reference/pill_engine_core/systems/system/trait.SystemParamFunction"
+                          }
+                        ]
+                      },
+                      {
+                        "text": "Macros",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "impl_read_only_system_param_tuple",
+                            "link": "/reference/pill_engine_core/systems/system/macro.impl_read_only_system_param_tuple"
+                          },
+                          {
+                            "text": "impl_system_param_function",
+                            "link": "/reference/pill_engine_core/systems/system/macro.impl_system_param_function"
+                          },
+                          {
+                            "text": "impl_system_param_tuple",
+                            "link": "/reference/pill_engine_core/systems/system/macro.impl_system_param_tuple"
+                          }
+                        ]
+                      }
+                    ]
                   }
                 ]
               }
@@ -16489,8 +18548,20 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
             "link": "/reference/pill_engine_macros/struct.AccessorEmission"
           },
           {
+            "text": "DeclarationAttribute",
+            "link": "/reference/pill_engine_macros/struct.DeclarationAttribute"
+          },
+          {
+            "text": "FieldEnumVariant",
+            "link": "/reference/pill_engine_macros/struct.FieldEnumVariant"
+          },
+          {
             "text": "FieldTag",
             "link": "/reference/pill_engine_macros/struct.FieldTag"
+          },
+          {
+            "text": "LifecycleMethodOrders",
+            "link": "/reference/pill_engine_macros/struct.LifecycleMethodOrders"
           },
           {
             "text": "PatchArguments",
@@ -16510,6 +18581,10 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
         "text": "Enums",
         "collapsed": true,
         "items": [
+          {
+            "text": "DeclarationExtras",
+            "link": "/reference/pill_engine_macros/enum.DeclarationExtras"
+          },
           {
             "text": "HeapFieldKind",
             "link": "/reference/pill_engine_macros/enum.HeapFieldKind"
@@ -16533,16 +18608,32 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
             "link": "/reference/pill_engine_macros/fn.arguments_of_two"
           },
           {
+            "text": "asset_impl",
+            "link": "/reference/pill_engine_macros/fn.asset_impl"
+          },
+          {
             "text": "component_field_descriptors",
             "link": "/reference/pill_engine_macros/fn.component_field_descriptors"
+          },
+          {
+            "text": "component_impl",
+            "link": "/reference/pill_engine_macros/fn.component_impl"
           },
           {
             "text": "container_element_type",
             "link": "/reference/pill_engine_macros/fn.container_element_type"
           },
           {
+            "text": "crate_qualified_type_name",
+            "link": "/reference/pill_engine_macros/fn.crate_qualified_type_name"
+          },
+          {
             "text": "decorator_arguments",
             "link": "/reference/pill_engine_macros/fn.decorator_arguments"
+          },
+          {
+            "text": "derive_type_names",
+            "link": "/reference/pill_engine_macros/fn.derive_type_names"
           },
           {
             "text": "emit_heap_field_accessor",
@@ -16561,8 +18652,16 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
             "link": "/reference/pill_engine_macros/fn.field_decorator_list"
           },
           {
+            "text": "field_enum_emission",
+            "link": "/reference/pill_engine_macros/fn.field_enum_emission"
+          },
+          {
             "text": "field_type_tag",
             "link": "/reference/pill_engine_macros/fn.field_type_tag"
+          },
+          {
+            "text": "field_variant_ident",
+            "link": "/reference/pill_engine_macros/fn.field_variant_ident"
           },
           {
             "text": "flattened_path",
@@ -16629,8 +18728,24 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
             "link": "/reference/pill_engine_macros/fn.parse_string_list"
           },
           {
+            "text": "resource_impl",
+            "link": "/reference/pill_engine_macros/fn.resource_impl"
+          },
+          {
+            "text": "self_type_ident",
+            "link": "/reference/pill_engine_macros/fn.self_type_ident"
+          },
+          {
+            "text": "serde_derive_attributes",
+            "link": "/reference/pill_engine_macros/fn.serde_derive_attributes"
+          },
+          {
             "text": "single_argument",
             "link": "/reference/pill_engine_macros/fn.single_argument"
+          },
+          {
+            "text": "validated_shared_name",
+            "link": "/reference/pill_engine_macros/fn.validated_shared_name"
           }
         ]
       },
@@ -16649,8 +18764,20 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
         "collapsed": true,
         "items": [
           {
+            "text": "ASSET_DECLARATION",
+            "link": "/reference/pill_engine_macros/constant.ASSET_DECLARATION"
+          },
+          {
+            "text": "COMPONENT_DECLARATION",
+            "link": "/reference/pill_engine_macros/constant.COMPONENT_DECLARATION"
+          },
+          {
             "text": "FIELD_DECORATOR_USAGE",
             "link": "/reference/pill_engine_macros/constant.FIELD_DECORATOR_USAGE"
+          },
+          {
+            "text": "RESOURCE_DECLARATION",
+            "link": "/reference/pill_engine_macros/constant.RESOURCE_DECLARATION"
           }
         ]
       },
@@ -16658,6 +18785,14 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
         "text": "Procedural macros",
         "collapsed": true,
         "items": [
+          {
+            "text": "asset",
+            "link": "/reference/pill_engine_macros/macro.asset"
+          },
+          {
+            "text": "component",
+            "link": "/reference/pill_engine_macros/macro.component"
+          },
           {
             "text": "pill_hot",
             "link": "/reference/pill_engine_macros/macro.pill_hot"
@@ -16721,6 +18856,14 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
           {
             "text": "PillResource",
             "link": "/reference/pill_engine_macros/macro.PillResource"
+          },
+          {
+            "text": "resource",
+            "link": "/reference/pill_engine_macros/macro.resource"
+          },
+          {
+            "text": "script",
+            "link": "/reference/pill_engine_macros/macro.script"
           },
           {
             "text": "system",
@@ -17548,6 +19691,10 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                     "link": "/reference/pill_master_renderer/overlay/struct.PipelineDescription"
                   },
                   {
+                    "text": "PointVertex",
+                    "link": "/reference/pill_master_renderer/overlay/struct.PointVertex"
+                  },
+                  {
                     "text": "TriangleVertex",
                     "link": "/reference/pill_master_renderer/overlay/struct.TriangleVertex"
                   }
@@ -17626,6 +19773,14 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                     "link": "/reference/pill_master_renderer/overlay/fn.outlined_queue_positions"
                   },
                   {
+                    "text": "point_quad",
+                    "link": "/reference/pill_master_renderer/overlay/fn.point_quad"
+                  },
+                  {
+                    "text": "point_vertices",
+                    "link": "/reference/pill_master_renderer/overlay/fn.point_vertices"
+                  },
+                  {
                     "text": "set_viewport",
                     "link": "/reference/pill_master_renderer/overlay/fn.set_viewport"
                   },
@@ -17700,6 +19855,10 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                   {
                     "text": "PICK_LINE_HALF_WIDTH",
                     "link": "/reference/pill_master_renderer/overlay/constant.PICK_LINE_HALF_WIDTH"
+                  },
+                  {
+                    "text": "PICK_POINT_SLACK",
+                    "link": "/reference/pill_master_renderer/overlay/constant.PICK_POINT_SLACK"
                   },
                   {
                     "text": "TRIANGLE_FEATHER",
@@ -18915,6 +21074,16 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                         ]
                       },
                       {
+                        "text": "Enums",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "DirectionalLightComponentField",
+                            "link": "/reference/pill_master_renderer_data/components/directional_light/enum.DirectionalLightComponentField"
+                          }
+                        ]
+                      },
+                      {
                         "text": "Functions",
                         "collapsed": true,
                         "items": [
@@ -18946,6 +21115,16 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                           {
                             "text": "MeshRendererComponentBuilder",
                             "link": "/reference/pill_master_renderer_data/components/mesh_renderer/struct.MeshRendererComponentBuilder"
+                          }
+                        ]
+                      },
+                      {
+                        "text": "Enums",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "MeshRendererComponentField",
+                            "link": "/reference/pill_master_renderer_data/components/mesh_renderer/enum.MeshRendererComponentField"
                           }
                         ]
                       },
@@ -19565,8 +21744,16 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                     "link": "/reference/pill_physics/components/enum.BodyKind"
                   },
                   {
+                    "text": "ColliderComponentField",
+                    "link": "/reference/pill_physics/components/enum.ColliderComponentField"
+                  },
+                  {
                     "text": "ColliderShape",
                     "link": "/reference/pill_physics/components/enum.ColliderShape"
+                  },
+                  {
+                    "text": "RigidBodyComponentField",
+                    "link": "/reference/pill_physics/components/enum.RigidBodyComponentField"
                   }
                 ]
               },
@@ -19574,6 +21761,10 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                 "text": "Functions",
                 "collapsed": true,
                 "items": [
+                  {
+                    "text": "__pill_gizmo_ColliderComponent",
+                    "link": "/reference/pill_physics/components/fn.__pill_gizmo_ColliderComponent"
+                  },
                   {
                     "text": "__pill_register_ColliderComponent",
                     "link": "/reference/pill_physics/components/fn.__pill_register_ColliderComponent"
@@ -19604,8 +21795,12 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                     "link": "/reference/pill_physics/debug_draw/fn.draw_box"
                   },
                   {
-                    "text": "physics_debug_draw",
-                    "link": "/reference/pill_physics/debug_draw/fn.physics_debug_draw"
+                    "text": "draw_collider_outline",
+                    "link": "/reference/pill_physics/debug_draw/fn.draw_collider_outline"
+                  },
+                  {
+                    "text": "draw_upright_shape",
+                    "link": "/reference/pill_physics/debug_draw/fn.draw_upright_shape"
                   },
                   {
                     "text": "rotation_of",
@@ -19617,6 +21812,10 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                 "text": "Constants",
                 "collapsed": true,
                 "items": [
+                  {
+                    "text": "CAP_ARC_SEGMENTS",
+                    "link": "/reference/pill_physics/debug_draw/constant.CAP_ARC_SEGMENTS"
+                  },
                   {
                     "text": "OUTLINE_COLOR",
                     "link": "/reference/pill_physics/debug_draw/constant.OUTLINE_COLOR"
@@ -19670,6 +21869,10 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                   {
                     "text": "PhysicsStatistics",
                     "link": "/reference/pill_physics/manager/struct.PhysicsStatistics"
+                  },
+                  {
+                    "text": "StaticColliderState",
+                    "link": "/reference/pill_physics/manager/struct.StaticColliderState"
                   }
                 ]
               },
@@ -19677,6 +21880,10 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                 "text": "Functions",
                 "collapsed": true,
                 "items": [
+                  {
+                    "text": "apply_collider_edits",
+                    "link": "/reference/pill_physics/manager/fn.apply_collider_edits"
+                  },
                   {
                     "text": "array_from_quaternion",
                     "link": "/reference/pill_physics/manager/fn.array_from_quaternion"
@@ -19694,8 +21901,32 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                     "link": "/reference/pill_physics/manager/fn.build_rigid_body"
                   },
                   {
+                    "text": "collider_center",
+                    "link": "/reference/pill_physics/manager/fn.collider_center"
+                  },
+                  {
+                    "text": "collision_groups_of",
+                    "link": "/reference/pill_physics/manager/fn.collision_groups_of"
+                  },
+                  {
+                    "text": "current_image_marker",
+                    "link": "/reference/pill_physics/manager/fn.current_image_marker"
+                  },
+                  {
+                    "text": "rigid_body_type_of",
+                    "link": "/reference/pill_physics/manager/fn.rigid_body_type_of"
+                  },
+                  {
                     "text": "rotation_from_array",
                     "link": "/reference/pill_physics/manager/fn.rotation_from_array"
+                  },
+                  {
+                    "text": "shape_of",
+                    "link": "/reference/pill_physics/manager/fn.shape_of"
+                  },
+                  {
+                    "text": "static_collider_pose",
+                    "link": "/reference/pill_physics/manager/fn.static_collider_pose"
                   },
                   {
                     "text": "vector_from_array",
@@ -19739,6 +21970,23 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                   {
                     "text": "RayHit",
                     "link": "/reference/pill_physics/queries/struct.RayHit"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "text": "restore",
+            "link": "/reference/pill_physics/restore/",
+            "collapsed": true,
+            "items": [
+              {
+                "text": "Functions",
+                "collapsed": true,
+                "items": [
+                  {
+                    "text": "physics_restore",
+                    "link": "/reference/pill_physics/restore/fn.physics_restore"
                   }
                 ]
               }
@@ -19795,6 +22043,131 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
           {
             "text": "register",
             "link": "/reference/pill_physics/fn.register"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Pill Physics Editor",
+    "link": "/reference/pill_physics_editor/",
+    "collapsed": true,
+    "items": [
+      {
+        "text": "Structs",
+        "collapsed": true,
+        "items": [
+          {
+            "text": "ColliderTool",
+            "link": "/reference/pill_physics_editor/struct.ColliderTool"
+          }
+        ]
+      },
+      {
+        "text": "Functions",
+        "collapsed": true,
+        "items": [
+          {
+            "text": "collider_elements",
+            "link": "/reference/pill_physics_editor/fn.collider_elements"
+          },
+          {
+            "text": "collider_kinds",
+            "link": "/reference/pill_physics_editor/fn.collider_kinds"
+          },
+          {
+            "text": "collider_press",
+            "link": "/reference/pill_physics_editor/fn.collider_press"
+          },
+          {
+            "text": "collider_set_transforms",
+            "link": "/reference/pill_physics_editor/fn.collider_set_transforms"
+          },
+          {
+            "text": "init",
+            "link": "/reference/pill_physics_editor/fn.init"
+          },
+          {
+            "text": "place",
+            "link": "/reference/pill_physics_editor/fn.place"
+          },
+          {
+            "text": "radius_handle",
+            "link": "/reference/pill_physics_editor/fn.radius_handle"
+          },
+          {
+            "text": "register",
+            "link": "/reference/pill_physics_editor/fn.register"
+          },
+          {
+            "text": "register_into",
+            "link": "/reference/pill_physics_editor/fn.register_into"
+          },
+          {
+            "text": "rotate",
+            "link": "/reference/pill_physics_editor/fn.rotate"
+          }
+        ]
+      },
+      {
+        "text": "Constants",
+        "collapsed": true,
+        "items": [
+          {
+            "text": "AXES",
+            "link": "/reference/pill_physics_editor/constant.AXES"
+          },
+          {
+            "text": "DIMENSION_COLOR",
+            "link": "/reference/pill_physics_editor/constant.DIMENSION_COLOR"
+          },
+          {
+            "text": "DIMENSION_SIZE_PIXELS",
+            "link": "/reference/pill_physics_editor/constant.DIMENSION_SIZE_PIXELS"
+          },
+          {
+            "text": "FACE_COLOR",
+            "link": "/reference/pill_physics_editor/constant.FACE_COLOR"
+          },
+          {
+            "text": "FACE_ID_BASE",
+            "link": "/reference/pill_physics_editor/constant.FACE_ID_BASE"
+          },
+          {
+            "text": "FACE_KIND",
+            "link": "/reference/pill_physics_editor/constant.FACE_KIND"
+          },
+          {
+            "text": "FACE_SIZE_PIXELS",
+            "link": "/reference/pill_physics_editor/constant.FACE_SIZE_PIXELS"
+          },
+          {
+            "text": "HEIGHT_ID",
+            "link": "/reference/pill_physics_editor/constant.HEIGHT_ID"
+          },
+          {
+            "text": "HEIGHT_KIND",
+            "link": "/reference/pill_physics_editor/constant.HEIGHT_KIND"
+          },
+          {
+            "text": "MINIMUM_EXTENT",
+            "link": "/reference/pill_physics_editor/constant.MINIMUM_EXTENT"
+          },
+          {
+            "text": "RADIUS_ID",
+            "link": "/reference/pill_physics_editor/constant.RADIUS_ID"
+          },
+          {
+            "text": "RADIUS_KIND",
+            "link": "/reference/pill_physics_editor/constant.RADIUS_KIND"
+          },
+          {
+            "text": "TOOL_LABEL",
+            "link": "/reference/pill_physics_editor/constant.TOOL_LABEL"
+          },
+          {
+            "text": "TOOL_NAME",
+            "link": "/reference/pill_physics_editor/constant.TOOL_NAME"
           }
         ]
       }
@@ -20114,6 +22487,10 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                   {
                     "text": "apply_project_startup_scene",
                     "link": "/reference/pill_player/static_project/fn.apply_project_startup_scene"
+                  },
+                  {
+                    "text": "no_project_registration",
+                    "link": "/reference/pill_player/static_project/fn.no_project_registration"
                   },
                   {
                     "text": "run_linked_entry_point",
@@ -20518,6 +22895,16 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
                         ]
                       },
                       {
+                        "text": "Enums",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "CameraComponentField",
+                            "link": "/reference/pill_renderer_api/components/camera/enum.CameraComponentField"
+                          }
+                        ]
+                      },
+                      {
                         "text": "Functions",
                         "collapsed": true,
                         "items": [
@@ -20917,20 +23304,178 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
     "collapsed": true,
     "items": [
       {
-        "text": "Structs",
+        "text": "Modules",
         "collapsed": true,
         "items": [
           {
-            "text": "OmoMO",
-            "link": "/reference/pill_spline/struct.OmoMO"
+            "text": "component",
+            "link": "/reference/pill_spline/component/",
+            "collapsed": true,
+            "items": [
+              {
+                "text": "Structs",
+                "collapsed": true,
+                "items": [
+                  {
+                    "text": "OmoMO",
+                    "link": "/reference/pill_spline/component/struct.OmoMO"
+                  },
+                  {
+                    "text": "Spline",
+                    "link": "/reference/pill_spline/component/struct.Spline"
+                  },
+                  {
+                    "text": "TooManyControlPoints",
+                    "link": "/reference/pill_spline/component/struct.TooManyControlPoints"
+                  }
+                ]
+              },
+              {
+                "text": "Enums",
+                "collapsed": true,
+                "items": [
+                  {
+                    "text": "SplineField",
+                    "link": "/reference/pill_spline/component/enum.SplineField"
+                  },
+                  {
+                    "text": "TangentMode",
+                    "link": "/reference/pill_spline/component/enum.TangentMode"
+                  }
+                ]
+              },
+              {
+                "text": "Functions",
+                "collapsed": true,
+                "items": [
+                  {
+                    "text": "__pill_gizmo_Spline",
+                    "link": "/reference/pill_spline/component/fn.__pill_gizmo_Spline"
+                  },
+                  {
+                    "text": "__pill_register_Spline",
+                    "link": "/reference/pill_spline/component/fn.__pill_register_Spline"
+                  },
+                  {
+                    "text": "register_component",
+                    "link": "/reference/pill_spline/component/fn.register_component"
+                  },
+                  {
+                    "text": "sample_vertical_offset",
+                    "link": "/reference/pill_spline/component/fn.sample_vertical_offset"
+                  }
+                ]
+              },
+              {
+                "text": "Constants",
+                "collapsed": true,
+                "items": [
+                  {
+                    "text": "GET_LOCATION_AT_PATCH_NAME",
+                    "link": "/reference/pill_spline/component/constant.GET_LOCATION_AT_PATCH_NAME"
+                  },
+                  {
+                    "text": "MAX_CONTROL_POINTS",
+                    "link": "/reference/pill_spline/component/constant.MAX_CONTROL_POINTS"
+                  },
+                  {
+                    "text": "SAMPLE_VERTICAL_OFFSET",
+                    "link": "/reference/pill_spline/component/constant.SAMPLE_VERTICAL_OFFSET"
+                  }
+                ]
+              }
+            ]
           },
           {
-            "text": "Spline",
-            "link": "/reference/pill_spline/struct.Spline"
+            "text": "demo",
+            "link": "/reference/pill_spline/demo/",
+            "collapsed": true,
+            "items": [
+              {
+                "text": "Functions",
+                "collapsed": true,
+                "items": [
+                  {
+                    "text": "demo_spline",
+                    "link": "/reference/pill_spline/demo/fn.demo_spline"
+                  }
+                ]
+              },
+              {
+                "text": "Constants",
+                "collapsed": true,
+                "items": [
+                  {
+                    "text": "DEMO_SPLINE_COUNT",
+                    "link": "/reference/pill_spline/demo/constant.DEMO_SPLINE_COUNT"
+                  }
+                ]
+              }
+            ]
           },
           {
-            "text": "TooManyControlPoints",
-            "link": "/reference/pill_spline/struct.TooManyControlPoints"
+            "text": "gizmo",
+            "link": "/reference/pill_spline/gizmo/",
+            "collapsed": true,
+            "items": [
+              {
+                "text": "Functions",
+                "collapsed": true,
+                "items": [
+                  {
+                    "text": "draw_spline_gizmo",
+                    "link": "/reference/pill_spline/gizmo/fn.draw_spline_gizmo"
+                  }
+                ]
+              },
+              {
+                "text": "Constants",
+                "collapsed": true,
+                "items": [
+                  {
+                    "text": "CURVE_COLOR",
+                    "link": "/reference/pill_spline/gizmo/constant.CURVE_COLOR"
+                  },
+                  {
+                    "text": "POINT_COLOR",
+                    "link": "/reference/pill_spline/gizmo/constant.POINT_COLOR"
+                  },
+                  {
+                    "text": "POINT_SIZE_PIXELS",
+                    "link": "/reference/pill_spline/gizmo/constant.POINT_SIZE_PIXELS"
+                  },
+                  {
+                    "text": "SEGMENTS_PER_CURVE_SEGMENT",
+                    "link": "/reference/pill_spline/gizmo/constant.SEGMENTS_PER_CURVE_SEGMENT"
+                  },
+                  {
+                    "text": "TANGENT_COLOR",
+                    "link": "/reference/pill_spline/gizmo/constant.TANGENT_COLOR"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "text": "math",
+            "link": "/reference/pill_spline/math/",
+            "collapsed": true,
+            "items": [
+              {
+                "text": "Functions",
+                "collapsed": true,
+                "items": [
+                  {
+                    "text": "catmull_rom",
+                    "link": "/reference/pill_spline/math/fn.catmull_rom"
+                  },
+                  {
+                    "text": "hermite",
+                    "link": "/reference/pill_spline/math/fn.hermite"
+                  }
+                ]
+              }
+            ]
           }
         ]
       },
@@ -20938,18 +23483,6 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
         "text": "Functions",
         "collapsed": true,
         "items": [
-          {
-            "text": "__pill_register_Spline",
-            "link": "/reference/pill_spline/fn.__pill_register_Spline"
-          },
-          {
-            "text": "catmull_rom",
-            "link": "/reference/pill_spline/fn.catmull_rom"
-          },
-          {
-            "text": "demo_spline",
-            "link": "/reference/pill_spline/fn.demo_spline"
-          },
           {
             "text": "init",
             "link": "/reference/pill_spline/fn.init"
@@ -20959,22 +23492,165 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
             "link": "/reference/pill_spline/fn.register"
           }
         ]
+      }
+    ]
+  },
+  {
+    "text": "Pill Spline Editor",
+    "link": "/reference/pill_spline_editor/",
+    "collapsed": true,
+    "items": [
+      {
+        "text": "Structs",
+        "collapsed": true,
+        "items": [
+          {
+            "text": "Placement",
+            "link": "/reference/pill_spline_editor/struct.Placement"
+          },
+          {
+            "text": "SplineTool",
+            "link": "/reference/pill_spline_editor/struct.SplineTool"
+          }
+        ]
+      },
+      {
+        "text": "Functions",
+        "collapsed": true,
+        "items": [
+          {
+            "text": "init",
+            "link": "/reference/pill_spline_editor/fn.init"
+          },
+          {
+            "text": "insert_point_command",
+            "link": "/reference/pill_spline_editor/fn.insert_point_command"
+          },
+          {
+            "text": "inverse_rotation",
+            "link": "/reference/pill_spline_editor/fn.inverse_rotation"
+          },
+          {
+            "text": "point_index_of",
+            "link": "/reference/pill_spline_editor/fn.point_index_of"
+          },
+          {
+            "text": "register",
+            "link": "/reference/pill_spline_editor/fn.register"
+          },
+          {
+            "text": "register_into",
+            "link": "/reference/pill_spline_editor/fn.register_into"
+          },
+          {
+            "text": "rotate",
+            "link": "/reference/pill_spline_editor/fn.rotate"
+          },
+          {
+            "text": "rotation_following",
+            "link": "/reference/pill_spline_editor/fn.rotation_following"
+          },
+          {
+            "text": "spline_elements",
+            "link": "/reference/pill_spline_editor/fn.spline_elements"
+          },
+          {
+            "text": "spline_frames",
+            "link": "/reference/pill_spline_editor/fn.spline_frames"
+          },
+          {
+            "text": "spline_insert",
+            "link": "/reference/pill_spline_editor/fn.spline_insert"
+          },
+          {
+            "text": "spline_key",
+            "link": "/reference/pill_spline_editor/fn.spline_key"
+          },
+          {
+            "text": "spline_kinds",
+            "link": "/reference/pill_spline_editor/fn.spline_kinds"
+          },
+          {
+            "text": "spline_menu",
+            "link": "/reference/pill_spline_editor/fn.spline_menu"
+          },
+          {
+            "text": "spline_menu_run",
+            "link": "/reference/pill_spline_editor/fn.spline_menu_run"
+          },
+          {
+            "text": "spline_press",
+            "link": "/reference/pill_spline_editor/fn.spline_press"
+          },
+          {
+            "text": "spline_remove",
+            "link": "/reference/pill_spline_editor/fn.spline_remove"
+          },
+          {
+            "text": "spline_set_transforms",
+            "link": "/reference/pill_spline_editor/fn.spline_set_transforms"
+          }
+        ]
       },
       {
         "text": "Constants",
         "collapsed": true,
         "items": [
           {
-            "text": "DEMO_SPLINE_COUNT",
-            "link": "/reference/pill_spline/constant.DEMO_SPLINE_COUNT"
+            "text": "FRAME_NAME",
+            "link": "/reference/pill_spline_editor/constant.FRAME_NAME"
           },
           {
-            "text": "MAX_CONTROL_POINTS",
-            "link": "/reference/pill_spline/constant.MAX_CONTROL_POINTS"
+            "text": "INSERT_DISTANCE",
+            "link": "/reference/pill_spline_editor/constant.INSERT_DISTANCE"
           },
           {
-            "text": "SAMPLE_VERTICAL_OFFSET",
-            "link": "/reference/pill_spline/constant.SAMPLE_VERTICAL_OFFSET"
+            "text": "KEY_INSERT",
+            "link": "/reference/pill_spline_editor/constant.KEY_INSERT"
+          },
+          {
+            "text": "MENU_DELETE",
+            "link": "/reference/pill_spline_editor/constant.MENU_DELETE"
+          },
+          {
+            "text": "MENU_INSERT",
+            "link": "/reference/pill_spline_editor/constant.MENU_INSERT"
+          },
+          {
+            "text": "POINT_COLOR",
+            "link": "/reference/pill_spline_editor/constant.POINT_COLOR"
+          },
+          {
+            "text": "POINT_KIND",
+            "link": "/reference/pill_spline_editor/constant.POINT_KIND"
+          },
+          {
+            "text": "POINT_SIZE_PIXELS",
+            "link": "/reference/pill_spline_editor/constant.POINT_SIZE_PIXELS"
+          },
+          {
+            "text": "TANGENT_COLOR",
+            "link": "/reference/pill_spline_editor/constant.TANGENT_COLOR"
+          },
+          {
+            "text": "TANGENT_ID_BASE",
+            "link": "/reference/pill_spline_editor/constant.TANGENT_ID_BASE"
+          },
+          {
+            "text": "TANGENT_KIND",
+            "link": "/reference/pill_spline_editor/constant.TANGENT_KIND"
+          },
+          {
+            "text": "TANGENT_SIZE_PIXELS",
+            "link": "/reference/pill_spline_editor/constant.TANGENT_SIZE_PIXELS"
+          },
+          {
+            "text": "TOOL_LABEL",
+            "link": "/reference/pill_spline_editor/constant.TOOL_LABEL"
+          },
+          {
+            "text": "TOOL_NAME",
+            "link": "/reference/pill_spline_editor/constant.TOOL_NAME"
           }
         ]
       }
@@ -21155,12 +23831,59 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
     "collapsed": true,
     "items": [
       {
+        "text": "Modules",
+        "collapsed": true,
+        "items": [
+          {
+            "text": "mirror",
+            "link": "/reference/pill_test/mirror/",
+            "collapsed": true,
+            "items": [
+              {
+                "text": "Structs",
+                "collapsed": true,
+                "items": [
+                  {
+                    "text": "Counter",
+                    "link": "/reference/pill_test/mirror/struct.Counter"
+                  },
+                  {
+                    "text": "Tint",
+                    "link": "/reference/pill_test/mirror/struct.Tint"
+                  }
+                ]
+              },
+              {
+                "text": "Functions",
+                "collapsed": true,
+                "items": [
+                  {
+                    "text": "tint_alpha",
+                    "link": "/reference/pill_test/mirror/fn.tint_alpha"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
         "text": "Structs",
         "collapsed": true,
         "items": [
           {
             "text": "ModuleTest",
             "link": "/reference/pill_test/struct.ModuleTest"
+          }
+        ]
+      },
+      {
+        "text": "Enums",
+        "collapsed": true,
+        "items": [
+          {
+            "text": "ModuleTestField",
+            "link": "/reference/pill_test/enum.ModuleTestField"
           }
         ]
       },
@@ -21201,6 +23924,105 @@ export const codeReferenceSidebarItems: DefaultTheme.SidebarItem[] = [
           {
             "text": "REPORT_INTERVAL_FRAMES",
             "link": "/reference/pill_test/constant.REPORT_INTERVAL_FRAMES"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Pill Test Editor",
+    "link": "/reference/pill_test_editor/",
+    "collapsed": true,
+    "items": [
+      {
+        "text": "Functions",
+        "collapsed": true,
+        "items": [
+          {
+            "text": "after_every_field_edit",
+            "link": "/reference/pill_test_editor/fn.after_every_field_edit"
+          },
+          {
+            "text": "before_every_field_edit",
+            "link": "/reference/pill_test_editor/fn.before_every_field_edit"
+          },
+          {
+            "text": "init",
+            "link": "/reference/pill_test_editor/fn.init"
+          },
+          {
+            "text": "on_asset_edit",
+            "link": "/reference/pill_test_editor/fn.on_asset_edit"
+          },
+          {
+            "text": "on_component_edit",
+            "link": "/reference/pill_test_editor/fn.on_component_edit"
+          },
+          {
+            "text": "on_element_selection",
+            "link": "/reference/pill_test_editor/fn.on_element_selection"
+          },
+          {
+            "text": "on_entity_edit",
+            "link": "/reference/pill_test_editor/fn.on_entity_edit"
+          },
+          {
+            "text": "on_history_edit",
+            "link": "/reference/pill_test_editor/fn.on_history_edit"
+          },
+          {
+            "text": "on_play_edit",
+            "link": "/reference/pill_test_editor/fn.on_play_edit"
+          },
+          {
+            "text": "on_scene_edit",
+            "link": "/reference/pill_test_editor/fn.on_scene_edit"
+          },
+          {
+            "text": "on_selection_changed",
+            "link": "/reference/pill_test_editor/fn.on_selection_changed"
+          },
+          {
+            "text": "on_tool_activated",
+            "link": "/reference/pill_test_editor/fn.on_tool_activated"
+          },
+          {
+            "text": "probe_component_name",
+            "link": "/reference/pill_test_editor/fn.probe_component_name"
+          },
+          {
+            "text": "register",
+            "link": "/reference/pill_test_editor/fn.register"
+          }
+        ]
+      },
+      {
+        "text": "Constants",
+        "collapsed": true,
+        "items": [
+          {
+            "text": "FOLLOW_UP_COUNT",
+            "link": "/reference/pill_test_editor/constant.FOLLOW_UP_COUNT"
+          },
+          {
+            "text": "MAGIC_CLAMP",
+            "link": "/reference/pill_test_editor/constant.MAGIC_CLAMP"
+          },
+          {
+            "text": "MAGIC_CLAMPED",
+            "link": "/reference/pill_test_editor/constant.MAGIC_CLAMPED"
+          },
+          {
+            "text": "MAGIC_FOLLOW_UP",
+            "link": "/reference/pill_test_editor/constant.MAGIC_FOLLOW_UP"
+          },
+          {
+            "text": "MAGIC_REFUSE",
+            "link": "/reference/pill_test_editor/constant.MAGIC_REFUSE"
+          },
+          {
+            "text": "SOURCE",
+            "link": "/reference/pill_test_editor/constant.SOURCE"
           }
         ]
       }

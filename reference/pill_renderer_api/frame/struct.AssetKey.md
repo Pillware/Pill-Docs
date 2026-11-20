@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-633"></a>
+<a id="rustdoc-item-700"></a>
 
 # Struct `pill_renderer_api::frame::AssetKey`
 
@@ -24,7 +24,7 @@ store.
 
 ## Fields
 
-<a id="rustdoc-item-632"></a>
+<a id="rustdoc-item-699"></a>
 
 ### `0`
 
@@ -45,15 +45,17 @@ _No documentation provided._
 - `TryFrom<U>`
 - `Any`
 - `ToOwned`
+- `CastableFrom<ST, Uninit, Uninit>`
+- `CastableFrom<ST, Initialized, Initialized>`
+- `Read<Exclusive, BecauseExclusive>`
 - `Instrument`
 - `WithSubscriber`
 - `IntoEither`
 - `Pointable`
 - `OwoColorize`
 - `ErasedDestructor`
-- `CastableFrom<ST, Uninit, Uninit>`
-- `CastableFrom<ST, Initialized, Initialized>`
-- `Read<Exclusive, BecauseExclusive>`
+- `Equivalent<K>`
+- `Comparable<K>`
 - `Clone`
 - `Copy`
 - `Debug`

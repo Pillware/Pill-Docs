@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-2017"></a>
+<a id="rustdoc-item-2027"></a>
 
 # Function `pill_core::telemetry::log_block`
 

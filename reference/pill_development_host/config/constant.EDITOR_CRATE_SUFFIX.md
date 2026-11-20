@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-835"></a>
+<a id="rustdoc-item-842"></a>
 
 # Constant `pill_development_host::config::EDITOR_CRATE_SUFFIX`
 
@@ -8,8 +8,10 @@
 pub(crate) const EDITOR_CRATE_SUFFIX: &str = "_editor";
 ```
 
-Visibility: `crate` · Source: `hosting\pill_development_host\src\config.rs:123`
+Visibility: `crate` · Source: `hosting\pill_development_host\src\config.rs:153`
 
-Suffix of an extension folder's editor crate. Folder `<extension>` holds
-its editor part in `<extension>/<extension>_editor/`; only an editor host
-loads it, after the folder's runtime crates, and no other build sees it.
+Suffix every editor crate's package name carries. The host pairs an
+extension's editor part by location (`modules/editor`) and refuses a crate
+there whose name lacks the suffix, so the two markers cannot disagree. The
+suffix also keeps `modules:` and a shipping bundle from linking an editor
+crate by accident.

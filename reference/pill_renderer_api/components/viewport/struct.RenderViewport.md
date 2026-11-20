@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-187"></a>
+<a id="rustdoc-item-190"></a>
 
 # Struct `pill_renderer_api::components::viewport::RenderViewport`
 
@@ -18,7 +18,7 @@ draws the whole target instead.
 
 ## Fields
 
-<a id="rustdoc-item-301"></a>
+<a id="rustdoc-item-363"></a>
 
 ### `x`
 
@@ -28,7 +28,7 @@ x: u32
 
 Left edge of the rectangle within the target, in pixels.
 
-<a id="rustdoc-item-302"></a>
+<a id="rustdoc-item-364"></a>
 
 ### `y`
 
@@ -38,7 +38,7 @@ y: u32
 
 Top edge of the rectangle within the target, in pixels.
 
-<a id="rustdoc-item-303"></a>
+<a id="rustdoc-item-365"></a>
 
 ### `width`
 
@@ -48,7 +48,7 @@ width: u32
 
 Width of the rectangle, in pixels.
 
-<a id="rustdoc-item-304"></a>
+<a id="rustdoc-item-366"></a>
 
 ### `height`
 
@@ -60,7 +60,7 @@ Height of the rectangle, in pixels.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-306"></a>
+<a id="rustdoc-item-368"></a>
 
 ### `new`
 
@@ -72,9 +72,9 @@ Creates a viewport from explicit pixel bounds.
 
 Nothing is checked here: the values are stored unchanged. To fit the
 rectangle to a target that may be smaller, use
-[`RenderViewport::clamped_to`](#rustdoc-item-305).
+[`RenderViewport::clamped_to`](#rustdoc-item-367).
 
-<a id="rustdoc-item-307"></a>
+<a id="rustdoc-item-369"></a>
 
 ### `full`
 
@@ -88,7 +88,7 @@ It starts at the origin and measures `target_width` by
 `target_height`. The renderer substitutes it when no viewport is set,
 or when an explicit one would draw nothing.
 
-<a id="rustdoc-item-305"></a>
+<a id="rustdoc-item-367"></a>
 
 ### `clamped_to`
 
@@ -113,15 +113,16 @@ height is zero. The renderer treats `None` as "draw the full target".
 - `TryFrom<U>`
 - `Any`
 - `ToOwned`
+- `CastableFrom<ST, Uninit, Uninit>`
+- `CastableFrom<ST, Initialized, Initialized>`
+- `Read<Exclusive, BecauseExclusive>`
 - `Instrument`
 - `WithSubscriber`
 - `IntoEither`
 - `Pointable`
 - `OwoColorize`
 - `ErasedDestructor`
-- `CastableFrom<ST, Uninit, Uninit>`
-- `CastableFrom<ST, Initialized, Initialized>`
-- `Read<Exclusive, BecauseExclusive>`
+- `Equivalent<K>`
 - `Debug`
 - `Default`
 - `Clone`

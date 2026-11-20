@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-4981"></a>
+<a id="rustdoc-item-6944"></a>
 
 # Function `pill_editor_core::inspector::is_cleared_reference`
 
@@ -8,7 +8,7 @@
 pub fn is_cleared_reference(text: &str) -> bool;
 ```
 
-Source: `editor\pill_editor_core\src\inspector.rs:1097`
+Source: `editor\pill_editor_core\src\inspector.rs:1104`
 
 Whether a scripted or typed value names "no reference": the word that
 clears an asset or entity reference field.

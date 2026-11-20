@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-780"></a>
+<a id="rustdoc-item-775"></a>
 
 # Struct `pill_master_renderer_data::assets::shader::ShaderParameterSlot`
 
@@ -8,7 +8,7 @@
 pub struct ShaderParameterSlot;
 ```
 
-Source: `extensions\pill_master_renderer\pill_master_renderer_data\src\assets\shader.rs:74`
+Source: `extensions\pill_master_renderer\modules\runtime\data\src\assets\shader.rs:74`
 
 One uniform a shader declares, under the name its source gives it.
 
@@ -21,7 +21,7 @@ means one serialized shape, so a new slot attribute is added only here.
 
 ## Fields
 
-<a id="rustdoc-item-778"></a>
+<a id="rustdoc-item-773"></a>
 
 ### `name`
 
@@ -31,7 +31,7 @@ name: String
 
 The name the source binds the uniform under.
 
-<a id="rustdoc-item-779"></a>
+<a id="rustdoc-item-774"></a>
 
 ### `parameter_type`
 
@@ -43,7 +43,7 @@ The kind of value the uniform carries, which decides how it packs.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-781"></a>
+<a id="rustdoc-item-776"></a>
 
 ### `new`
 
@@ -64,6 +64,9 @@ A slot for `name`, carrying `parameter_type`.
 - `TryFrom<U>`
 - `Any`
 - `ToOwned`
+- `CastableFrom<ST, Uninit, Uninit>`
+- `CastableFrom<ST, Initialized, Initialized>`
+- `Read<Exclusive, BecauseExclusive>`
 - `DeserializeOwned`
 - `Instrument`
 - `WithSubscriber`
@@ -71,9 +74,6 @@ A slot for `name`, carrying `parameter_type`.
 - `Pointable`
 - `OwoColorize`
 - `ErasedDestructor`
-- `CastableFrom<ST, Uninit, Uninit>`
-- `CastableFrom<ST, Initialized, Initialized>`
-- `Read<Exclusive, BecauseExclusive>`
 - `Equivalent<K>`
 - `MirrorObject`
 - `MirrorValue`

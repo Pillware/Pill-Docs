@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-894"></a>
+<a id="rustdoc-item-966"></a>
 
 # Enum `pill_renderer_api::surface::CameraBinding`
 
@@ -14,7 +14,7 @@ Which camera draws into a surface.
 
 ## Variants
 
-<a id="rustdoc-item-1109"></a>
+<a id="rustdoc-item-1187"></a>
 
 ### `Entity`
 
@@ -25,7 +25,7 @@ Entity
 A camera entity in the world. The surface shows nothing while that
 entity has no enabled camera.
 
-<a id="rustdoc-item-895"></a>
+<a id="rustdoc-item-967"></a>
 
 ### `View`
 
@@ -47,15 +47,15 @@ camera is one of these.
 - `TryFrom<U>`
 - `Any`
 - `ToOwned`
+- `CastableFrom<ST, Uninit, Uninit>`
+- `CastableFrom<ST, Initialized, Initialized>`
+- `Read<Exclusive, BecauseExclusive>`
 - `Instrument`
 - `WithSubscriber`
 - `IntoEither`
 - `Pointable`
 - `OwoColorize`
 - `ErasedDestructor`
-- `CastableFrom<ST, Uninit, Uninit>`
-- `CastableFrom<ST, Initialized, Initialized>`
-- `Read<Exclusive, BecauseExclusive>`
 - `Debug`
 - `Clone`
 - `Copy`

@@ -1,14 +1,14 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-814"></a>
+<a id="rustdoc-item-816"></a>
 
 # Function `pill_development_host::build_runner::build_extension_batch`
 
 ```rust
-pub(crate) fn build_extension_batch(workspace_root: &std::path::Path, configs: &[crate::ExtensionConfig], project: Option<&crate::ProjectModuleConfig>, renderer_name: Option<&str>) -> bool;
+pub(crate) fn build_extension_batch(workspace_root: &std::path::Path, configs: &[crate::ExtensionConfig], project: Option<&crate::ProjectModuleConfig>, renderer_name: Option<&str>, project_editor: Option<&crate::ExtensionConfig>) -> bool;
 ```
 
-Visibility: `crate` · Source: `hosting\pill_development_host\src\build_runner.rs:2005`
+Visibility: `crate` · Source: `hosting\pill_development_host\src\build_runner.rs:2006`
 
 Builds every module of the startup plan in one cargo invocation.
 
@@ -18,7 +18,7 @@ project's member and the renderer's wrapper (windowed postures only) differ
 only in `--package`, so one invocation selects them all with flags that match
 a single module's build. That keeps every unit's fingerprint identical to a
 per-module build's. The modules it validated skip their own build when they
-load (see [`take_batch_validation`](fn.take_batch_validation.md#rustdoc-item-813)), and an edit later still rebuilds a
+load (see [`take_batch_validation`](fn.take_batch_validation.md#rustdoc-item-815)), and an edit later still rebuilds a
 module on its own.
 
 A managed (C#) project is never selected, because its `dotnet` build shares

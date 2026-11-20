@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-4177"></a>
+<a id="rustdoc-item-4652"></a>
 
 # Function `pill_editor_core::gizmo::rotate_vector`
 
@@ -8,6 +8,6 @@
 pub fn rotate_vector(quaternion: [f32; 4], vector: [f32; 3]) -> [f32; 3];
 ```
 
-Source: `editor\pill_editor_core\src\gizmo.rs:959`
+Source: `editor\pill_editor_core\src\gizmo.rs:1077`
 
 Rotate `vector` by the `[x, y, z, w]` quaternion.

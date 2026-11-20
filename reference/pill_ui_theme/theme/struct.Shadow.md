@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-875"></a>
+<a id="rustdoc-item-885"></a>
 
 # Struct `pill_ui_theme::theme::Shadow`
 
@@ -14,7 +14,7 @@ A window or popup shadow, in egui 0.36's integer fields.
 
 ## Fields
 
-<a id="rustdoc-item-871"></a>
+<a id="rustdoc-item-881"></a>
 
 ### `offset`
 
@@ -24,7 +24,7 @@ offset: [i8; 2]
 
 The offset in points.
 
-<a id="rustdoc-item-872"></a>
+<a id="rustdoc-item-882"></a>
 
 ### `blur`
 
@@ -34,7 +34,7 @@ blur: u8
 
 The blur radius in points.
 
-<a id="rustdoc-item-873"></a>
+<a id="rustdoc-item-883"></a>
 
 ### `spread`
 
@@ -44,7 +44,7 @@ spread: u8
 
 The spread in points.
 
-<a id="rustdoc-item-874"></a>
+<a id="rustdoc-item-884"></a>
 
 ### `color`
 
@@ -56,7 +56,7 @@ The shadow's colour.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-876"></a>
+<a id="rustdoc-item-886"></a>
 
 ### `new`
 
@@ -86,6 +86,7 @@ A shadow with the given fields.
 - `Pointable`
 - `OwoColorize`
 - `ErasedDestructor`
+- `Equivalent<K>`
 - `Clone`
 - `Copy`
 - `Debug`

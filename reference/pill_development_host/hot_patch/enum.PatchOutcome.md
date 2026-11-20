@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-2403"></a>
+<a id="rustdoc-item-2477"></a>
 
 # Enum `pill_development_host::hot_patch::PatchOutcome`
 
@@ -14,7 +14,7 @@ What one attempt at a fast patch did.
 
 ## Variants
 
-<a id="rustdoc-item-2395"></a>
+<a id="rustdoc-item-2469"></a>
 
 ### `Patched`
 
@@ -24,7 +24,7 @@ Patched
 
 A function's implementation was replaced; no reload is needed.
 
-<a id="rustdoc-item-2396"></a>
+<a id="rustdoc-item-2470"></a>
 
 ### `Unchanged`
 
@@ -34,7 +34,7 @@ Unchanged
 
 Nothing relevant changed.
 
-<a id="rustdoc-item-2398"></a>
+<a id="rustdoc-item-2472"></a>
 
 ### `NotPatchable`
 
@@ -44,7 +44,7 @@ NotPatchable
 
 The change is real but out of scope; the caller should reload normally.
 
-<a id="rustdoc-item-2402"></a>
+<a id="rustdoc-item-2476"></a>
 
 ### `Failed`
 

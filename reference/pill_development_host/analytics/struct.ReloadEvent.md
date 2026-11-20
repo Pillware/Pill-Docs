@@ -129,7 +129,7 @@ cargo_crates: Vec<(String, u64)>
 Crates that actually compiled or linked in this reload's cargo
 invocations, with their wall times, sorted by time descending. This is
 how a dependent crate that was relinked shows up: editing
-`pill_dummy_color`, for example, also relinks `pill_spline`.
+`pill_spline`, for example, also relinks a project that depends on it.
 
 ## Trait implementations
 

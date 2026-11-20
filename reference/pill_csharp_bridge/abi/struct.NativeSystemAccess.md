@@ -90,6 +90,7 @@ straight to `ResourceId::Shared` of its name.
 - `CastableFrom<ST, Uninit, Uninit>`
 - `CastableFrom<ST, Initialized, Initialized>`
 - `Read<Exclusive, BecauseExclusive>`
+- `Equivalent<K>`
 - `Clone`
 - `Copy`
 - `StructuralPartialEq`

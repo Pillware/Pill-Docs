@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-6575"></a>
+<a id="rustdoc-item-8613"></a>
 
 # Module `pill_editor_core::requests`
 
@@ -22,7 +22,7 @@ The shell module and the executable are separate DLLs, so the requests
 cross as plain data: a row index, a [`HistoryRequest`] and a tab, all
 defined here in the shared `dylib`. The pass writes them while it draws.
 `settle_pass` then moves the whole value onto
-[`crate::boundary::EguiShellFrame`](../boundary/struct.EguiShellFrame.md#rustdoc-item-389), and the executable takes it from
+[`crate::boundary::EguiShellFrame`](../boundary/struct.EguiShellFrame.md#rustdoc-item-432), and the executable takes it from
 there. The frame already carries the shell's quit request and a
 dragged-out asset, so these requests travel the same way.
 
@@ -39,7 +39,7 @@ dock is borrowed goes into the shell module's `FrameRequests`, which
 ## Module contents
 
 ### Structs
-- [`ShellRequests`](struct.ShellRequests.md#rustdoc-item-383) — The one-shot requests one shell pass raises for the editor executable.
+- [`ShellRequests`](struct.ShellRequests.md#rustdoc-item-426) — The one-shot requests one shell pass raises for the editor executable.
 
 ### Enums
-- [`HistoryRequest`](enum.HistoryRequest.md#rustdoc-item-6491) — One undo or redo the menu bar asked for, applied by the executable.
+- [`HistoryRequest`](enum.HistoryRequest.md#rustdoc-item-8529) — One undo or redo the menu bar asked for, applied by the executable.

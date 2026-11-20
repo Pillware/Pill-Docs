@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1633"></a>
+<a id="rustdoc-item-1728"></a>
 
 # Struct `pill_master_renderer_data::rendering_manager::RenderingManager`
 
@@ -8,13 +8,13 @@
 pub struct RenderingManager;
 ```
 
-Source: `extensions\pill_master_renderer\pill_master_renderer_data\src\rendering_manager.rs:35`
+Source: `extensions\pill_master_renderer\modules\runtime\data\src\rendering_manager.rs:35`
 
 The renderer's pipeline selection, carried as one optional handle.
 
 ## Fields
 
-<a id="rustdoc-item-1634"></a>
+<a id="rustdoc-item-1729"></a>
 
 ### `pipeline`
 
@@ -26,7 +26,7 @@ _No documentation provided._
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-1636"></a>
+<a id="rustdoc-item-1731"></a>
 
 ### `new`
 
@@ -37,7 +37,7 @@ pub fn new() -> Self;
 Creates a manager with no pipeline, which leaves the renderer on its
 built-in chain.
 
-<a id="rustdoc-item-1637"></a>
+<a id="rustdoc-item-1732"></a>
 
 ### `set_pipeline`
 
@@ -53,7 +53,7 @@ target a pass reads was declared by an earlier pass, and creates the GPU
 pipelines it does not have yet. Until then it keeps drawing the chain it
 already has.
 
-<a id="rustdoc-item-1638"></a>
+<a id="rustdoc-item-1733"></a>
 
 ### `pipeline`
 
@@ -63,7 +63,7 @@ pub fn pipeline(self: &Self) -> Option<Handle<RenderingPipeline>>;
 
 Returns the pipeline the renderer should run, or `None` when none is set.
 
-<a id="rustdoc-item-1639"></a>
+<a id="rustdoc-item-1734"></a>
 
 ### `clear`
 
@@ -84,15 +84,15 @@ Drops the pipeline, which puts the renderer back on its built-in chain.
 - `TryFrom<U>`
 - `Any`
 - `ToOwned`
+- `CastableFrom<ST, Uninit, Uninit>`
+- `CastableFrom<ST, Initialized, Initialized>`
+- `Read<Exclusive, BecauseExclusive>`
 - `Instrument`
 - `WithSubscriber`
 - `IntoEither`
 - `Pointable`
 - `OwoColorize`
 - `ErasedDestructor`
-- `CastableFrom<ST, Uninit, Uninit>`
-- `CastableFrom<ST, Initialized, Initialized>`
-- `Read<Exclusive, BecauseExclusive>`
 - `Resource`
 - `Clone`
 - `Debug`

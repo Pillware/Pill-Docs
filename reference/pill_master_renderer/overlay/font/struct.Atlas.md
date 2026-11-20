@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-871"></a>
+<a id="rustdoc-item-867"></a>
 
 # Struct `pill_master_renderer::overlay::font::Atlas`
 
@@ -8,13 +8,13 @@
 pub(in overlay) struct Atlas;
 ```
 
-Visibility: `{'restricted': {'parent': 858, 'path': '::overlay'}}` · Source: `extensions\pill_master_renderer\pill_master_renderer\src\overlay\font.rs:125`
+Visibility: `{'restricted': {'parent': 854, 'path': '::overlay'}}` · Source: `extensions\pill_master_renderer\modules\runtime\gpu\src\overlay\font.rs:125`
 
 The atlas: its size and one coverage byte per texel, row by row.
 
 ## Fields
 
-<a id="rustdoc-item-868"></a>
+<a id="rustdoc-item-864"></a>
 
 ### `width`
 
@@ -24,7 +24,7 @@ width: u32
 
 Width in texels.
 
-<a id="rustdoc-item-869"></a>
+<a id="rustdoc-item-865"></a>
 
 ### `height`
 
@@ -34,7 +34,7 @@ height: u32
 
 Height in texels.
 
-<a id="rustdoc-item-870"></a>
+<a id="rustdoc-item-866"></a>
 
 ### `texels`
 

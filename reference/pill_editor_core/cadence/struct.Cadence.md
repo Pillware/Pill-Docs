@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-670"></a>
+<a id="rustdoc-item-714"></a>
 
 # Struct `pill_editor_core::cadence::Cadence`
 
@@ -14,7 +14,7 @@ The editor's redraw counters, and the mode that sets when it draws next.
 
 ## Fields
 
-<a id="rustdoc-item-665"></a>
+<a id="rustdoc-item-709"></a>
 
 ### `continuous`
 
@@ -24,7 +24,7 @@ continuous: bool
 
 _No documentation provided._
 
-<a id="rustdoc-item-667"></a>
+<a id="rustdoc-item-711"></a>
 
 ### `frames`
 
@@ -34,7 +34,7 @@ frames: u64
 
 Frames drawn since startup.
 
-<a id="rustdoc-item-668"></a>
+<a id="rustdoc-item-712"></a>
 
 ### `demanded`
 
@@ -45,7 +45,7 @@ demanded: u64
 Frames drawn because something asked for one; the continuous mode
 counts every frame.
 
-<a id="rustdoc-item-669"></a>
+<a id="rustdoc-item-713"></a>
 
 ### `waits`
 
@@ -57,7 +57,7 @@ Times the loop went to sleep instead of drawing.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-671"></a>
+<a id="rustdoc-item-715"></a>
 
 ### `new`
 
@@ -68,7 +68,7 @@ pub fn new(continuous: bool) -> Self;
 A cadence with an explicit mode: `continuous` draws every frame,
 whatever the demand is.
 
-<a id="rustdoc-item-672"></a>
+<a id="rustdoc-item-716"></a>
 
 ### `from_environment`
 
@@ -77,10 +77,10 @@ pub fn from_environment() -> Self;
 ```
 
 A cadence chosen from the environment: continuous when
-[`CONTINUOUS_REDRAW_ENV`](constant.CONTINUOUS_REDRAW_ENV.md#rustdoc-item-570) is set to anything except an empty string or
+[`CONTINUOUS_REDRAW_ENV`](constant.CONTINUOUS_REDRAW_ENV.md#rustdoc-item-614) is set to anything except an empty string or
 `0`.
 
-<a id="rustdoc-item-673"></a>
+<a id="rustdoc-item-717"></a>
 
 ### `continuous`
 
@@ -90,7 +90,7 @@ pub fn continuous(self: &Self) -> bool;
 
 Whether every frame is drawn regardless of demand.
 
-<a id="rustdoc-item-674"></a>
+<a id="rustdoc-item-718"></a>
 
 ### `frames`
 
@@ -100,7 +100,7 @@ pub fn frames(self: &Self) -> u64;
 
 Frames drawn since startup.
 
-<a id="rustdoc-item-675"></a>
+<a id="rustdoc-item-719"></a>
 
 ### `demanded`
 
@@ -111,7 +111,7 @@ pub fn demanded(self: &Self) -> u64;
 Frames drawn because something asked for one; the continuous mode
 counts every frame.
 
-<a id="rustdoc-item-676"></a>
+<a id="rustdoc-item-720"></a>
 
 ### `waits`
 
@@ -121,7 +121,7 @@ pub fn waits(self: &Self) -> u64;
 
 How many times the loop slept between frames.
 
-<a id="rustdoc-item-677"></a>
+<a id="rustdoc-item-721"></a>
 
 ### `record_frame`
 
@@ -131,7 +131,7 @@ pub fn record_frame(self: &mut Self, demand: FrameDemand);
 
 Count the frame the loop just drew.
 
-<a id="rustdoc-item-678"></a>
+<a id="rustdoc-item-722"></a>
 
 ### `record_wait`
 
@@ -141,7 +141,7 @@ pub fn record_wait(self: &mut Self);
 
 Count a sleep the loop took.
 
-<a id="rustdoc-item-580"></a>
+<a id="rustdoc-item-624"></a>
 
 ### `decide`
 
@@ -152,8 +152,8 @@ pub fn decide(self: &Self, demand: FrameDemand) -> FrameWake;
 Decide when to draw next.
 
 The loop draws at once when the cadence is continuous, when
-[`FrameDemand::urgent`](struct.FrameDemand.md#rustdoc-item-581) is set, while something is moving, or when egui
-asked for a repaint. Otherwise the frame sleeps for [`IDLE_POLL`](constant.IDLE_POLL.md#rustdoc-item-571).
+[`FrameDemand::urgent`](struct.FrameDemand.md#rustdoc-item-625) is set, while something is moving, or when egui
+asked for a repaint. Otherwise the frame sleeps for [`IDLE_POLL`](constant.IDLE_POLL.md#rustdoc-item-615).
 
 ## Trait implementations
 

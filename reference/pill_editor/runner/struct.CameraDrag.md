@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-504"></a>
+<a id="rustdoc-item-563"></a>
 
 # Struct `pill_editor::runner::CameraDrag`
 
@@ -8,13 +8,13 @@
 pub(in runner) struct CameraDrag;
 ```
 
-Visibility: `{'restricted': {'parent': 483, 'path': '::runner'}}` · Source: `editor\pill_editor\src\runner\mod.rs:3687`
+Visibility: `{'restricted': {'parent': 539, 'path': '::runner'}}` · Source: `editor\pill_editor\src\runner\mod.rs:4206`
 
 A camera navigation drag in flight.
 
 ## Fields
 
-<a id="rustdoc-item-1381"></a>
+<a id="rustdoc-item-1831"></a>
 
 ### `view`
 
@@ -24,7 +24,7 @@ view: usize
 
 The view whose camera the drag moves.
 
-<a id="rustdoc-item-1382"></a>
+<a id="rustdoc-item-1832"></a>
 
 ### `navigation`
 
@@ -34,7 +34,7 @@ navigation: pill_editor_core::camera::CameraNavigation
 
 The gesture the press matched.
 
-<a id="rustdoc-item-1383"></a>
+<a id="rustdoc-item-1833"></a>
 
 ### `last_point`
 

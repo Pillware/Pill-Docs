@@ -19,7 +19,7 @@ This is the implementation counterpart of [concepts/components.md](../concepts/c
 | `ComponentColumn`         | raw aligned buffer + `ColumnLayout` + `ColumnOps` + per-row `ComponentTicks` | `archetype.rs`             |
 | `ColumnOps`               | `drop_range` function pointer + `trivial_drop` flag                        | `archetype.rs`               |
 | `StorageFactory`          | per-type recipe for building a column: layout + `ColumnOps`, no closure    | `archetype.rs`               |
-| `PillComponentDescriptor` | what `#[derive(PillComponent)]` submits to the module's `inventory`        | `pill_engine/src/component_registry.rs` |
+| `PillComponentDescriptor` | what `#[component]` submits to the module's `inventory`        | `pill_engine/src/component_registry.rs` |
 
 ```
  World
@@ -68,6 +68,14 @@ The shared hash is two FNV-1a passes over the name, concatenated into 128 bits (
 
 For why a `TypeId` can differ between DLLs, see [linking_technical.md](../levels/other/linking_technical.md).
 
+### What is a component's stored name?
+
+`<crate>::<Type>`: the crate the type is compiled in, then the type's own name, with no module path between them. `pill_spline::Spline` stays `pill_spline::Spline` when the type moves to another file, and a shared component registers under that name unless it pins one with `shared = "<prefix>::<Type>"`. A type name must be unique within its crate, and the artifact entry point refuses an artifact that declares one name twice.
+
+The same shape names resources, asset types (`asset_type` in a `.meta` or a standalone document) and the types a module mirrors to C#. The renderer family is the one exception: its components and assets pin the public prefix `pill_master_renderer` even though they are declared across `pill_master_renderer_data` and `pill_renderer_api`, so `pill_master_renderer::Mesh` reads as one product.
+
+Names used to keep the module path (`pill_physics::components::RigidBodyComponent`). A file written then still loads: a stored name with more than two segments is read as its first and last segment (`type_names::names_same_type`).
+
 ## Why only 128 component types?
 
 The mask is one `u128`. That keeps it on the stack, `Copy`, and lets an archetype match a query with one bitwise AND: `(archetype_mask & query_mask) == query_mask`.
@@ -76,7 +84,7 @@ The limit is shared by the project and every extension. Registration warns when 
 
 ## How does registration work?
 
-`#[derive(PillComponent)]` generates the registration; the module's entry point runs it.
+`#[component]` generates the registration; the module's entry point runs it.
 
 1. **At compile time**, the derive emits:
    - `impl Component` with `shared_name`/`shared_identity` when the type is shared, and `declared_schema_hash` from the field layout;
@@ -148,7 +156,7 @@ The deferred versions (`Commands::add_component_to_entity` and friends) run the 
 | `persistable` | Also registers a JSON serializer (by `ComponentId`), a deserializer and an inserter (by persistence name), and a **schema hash** of the type. A reload compares old and new hashes per name and migrates changed columns through JSON. |
 | `shared`      | The id is `Shared(hash of the name)`, so every DLL reaches one bit and one column. The column checks size and alignment instead of `TypeId`, and the registry compares field layouts (schema hashes) so a different layout is refused unless the registering module replaces the old one. |
 
-The **persistence name** is the shared name when there is one, and otherwise `std::any::type_name::<T>()`. The schema hash covers that name, the size, the JSON of `T::default()` and the field layout, so a changed field type changes the hash even when the default JSON looks the same.
+The **persistence name** is the shared name when there is one, and otherwise the type's stored name `<crate>::<Type>` (`type_names::stable_type_name`). The schema hash covers that name, the size, the JSON of `T::default()` and the field layout, so a changed field type changes the hash even when the default JSON looks the same.
 
 The deserializer merges the saved JSON over `T::default()`'s JSON before decoding. That is why a new field starts at its default and a removed field is ignored. A field whose type changed in a way JSON cannot convert fails to decode, and that value cannot be migrated.
 

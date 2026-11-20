@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1646"></a>
+<a id="rustdoc-item-1692"></a>
 
 # Enum `pill_master_renderer::readback::Readback`
 
@@ -8,13 +8,13 @@
 pub(crate) enum Readback<T> { ... }
 ```
 
-Visibility: `crate` · Source: `extensions\pill_master_renderer\pill_master_renderer\src\readback.rs:51`
+Visibility: `crate` · Source: `extensions\pill_master_renderer\modules\runtime\gpu\src\readback.rs:51`
 
-What one [`MapState::poll`](struct.MapState.md#rustdoc-item-1645) found.
+What one [`MapState::poll`](struct.MapState.md#rustdoc-item-1691) found.
 
 ## Variants
 
-<a id="rustdoc-item-1641"></a>
+<a id="rustdoc-item-1687"></a>
 
 ### `Pending`
 
@@ -24,7 +24,7 @@ Pending
 
 The map has not finished yet. Poll again later.
 
-<a id="rustdoc-item-1643"></a>
+<a id="rustdoc-item-1689"></a>
 
 ### `Done`
 
@@ -34,7 +34,7 @@ Done
 
 The map succeeded and the bytes were decoded.
 
-<a id="rustdoc-item-1644"></a>
+<a id="rustdoc-item-1690"></a>
 
 ### `Failed`
 

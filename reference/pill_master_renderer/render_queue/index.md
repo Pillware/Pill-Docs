@@ -1,10 +1,10 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1844"></a>
+<a id="rustdoc-item-1887"></a>
 
 # Module `pill_master_renderer::render_queue`
 
-Source: `extensions\pill_master_renderer\pill_master_renderer\src\render_queue.rs:1`
+Source: `extensions\pill_master_renderer\modules\runtime\gpu\src\render_queue.rs:1`
 
 One queued draw per frame instance, and the sort key that puts draws
 sharing a shader, material and mesh next to each other.
@@ -37,4 +37,4 @@ with its own objects.
 - [`RenderQueueItem`](struct.RenderQueueItem.md#rustdoc-item-139) — One draw waiting in the queue, with the handles it binds, the instance it
 
 ### Functions
-- [`compose_render_queue_key`](fn.compose_render_queue_key.md#rustdoc-item-1790) — Packs the rendering order of a draw and the resources it binds into one
+- [`compose_render_queue_key`](fn.compose_render_queue_key.md#rustdoc-item-1834) — Packs the rendering order of a draw and the resources it binds into one

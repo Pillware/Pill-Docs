@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-342"></a>
+<a id="rustdoc-item-393"></a>
 
 # Module `pill_editor::frontend`
 
@@ -11,7 +11,7 @@ The native editor's errors.
 
 ## Responsibilities
 
-- Declares [`EditorError`](enum.EditorError.md#rustdoc-item-272), what an editor run can end with: event-loop,
+- Declares [`EditorError`](enum.EditorError.md#rustdoc-item-323), what an editor run can end with: event-loop,
   window and GPU device creation, host setup, or a frame through the
   project's renderer.
 
@@ -24,4 +24,4 @@ so the report printed when the run ends shows the driver's own message.
 ## Module contents
 
 ### Enums
-- [`EditorError`](enum.EditorError.md#rustdoc-item-272) — Anything that can end an editor run.
+- [`EditorError`](enum.EditorError.md#rustdoc-item-323) — Anything that can end an editor run.

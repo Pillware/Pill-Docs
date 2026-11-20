@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-3600"></a>
+<a id="rustdoc-item-3856"></a>
 
 # Function `pill_development_host::reload::clear_failed_generation`
 
@@ -8,7 +8,7 @@
 pub(in reload) fn clear_failed_generation(engine: &mut pill_engine::Engine, subject: &str, system_owner: pill_engine::SystemOwner);
 ```
 
-Visibility: `{'restricted': {'parent': 3428, 'path': '::reload'}}` · Source: `hosting\pill_development_host\src\reload.rs:1188`
+Visibility: `{'restricted': {'parent': 3684, 'path': '::reload'}}` · Source: `hosting\pill_development_host\src\reload.rs:1188`
 
 Releases everything one failed generation owns, while its image is loaded.
 

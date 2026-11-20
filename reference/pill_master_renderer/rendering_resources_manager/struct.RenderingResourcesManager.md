@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1855"></a>
+<a id="rustdoc-item-1898"></a>
 
 # Struct `pill_master_renderer::rendering_resources_manager::RenderingResourcesManager`
 
@@ -8,7 +8,7 @@
 pub(crate) struct RenderingResourcesManager;
 ```
 
-Visibility: `crate` · Source: `extensions\pill_master_renderer\pill_master_renderer\src\rendering_resources_manager.rs:133`
+Visibility: `crate` · Source: `extensions\pill_master_renderer\modules\runtime\gpu\src\rendering_resources_manager.rs:133`
 
 The GPU objects behind the asset store, and what they were built from.
 
@@ -18,7 +18,7 @@ is rebuilt; a key whose version matches keeps its object.
 
 ## Fields
 
-<a id="rustdoc-item-2092"></a>
+<a id="rustdoc-item-2135"></a>
 
 ### `synced_revision`
 
@@ -30,7 +30,7 @@ The store revision these caches are up to date with, or `None` after an
 explicit invalidation. The sync runs when it does not match the store's
 revision.
 
-<a id="rustdoc-item-2093"></a>
+<a id="rustdoc-item-2136"></a>
 
 ### `shaders`
 
@@ -40,7 +40,7 @@ shaders: GpuColumn<renderer_shader::RendererShaderHandle>
 
 Shader objects by asset key.
 
-<a id="rustdoc-item-2094"></a>
+<a id="rustdoc-item-2137"></a>
 
 ### `materials`
 
@@ -50,7 +50,7 @@ materials: GpuColumn<renderer_material::RendererMaterialHandle>
 
 Material objects by asset key.
 
-<a id="rustdoc-item-2095"></a>
+<a id="rustdoc-item-2138"></a>
 
 ### `textures`
 
@@ -60,7 +60,7 @@ textures: GpuColumn<renderer_texture::RendererTextureHandle>
 
 Texture objects by asset key.
 
-<a id="rustdoc-item-2096"></a>
+<a id="rustdoc-item-2139"></a>
 
 ### `meshes`
 
@@ -70,7 +70,7 @@ meshes: GpuColumn<renderer_mesh::RendererMeshHandle>
 
 Mesh objects by asset key.
 
-<a id="rustdoc-item-2097"></a>
+<a id="rustdoc-item-2140"></a>
 
 ### `default_shader`
 
@@ -81,7 +81,7 @@ default_shader: renderer_shader::RendererShaderHandle
 The shader an instance draws with when its material names none, names
 one that is not loaded, or is not in the resource storage.
 
-<a id="rustdoc-item-2098"></a>
+<a id="rustdoc-item-2141"></a>
 
 ### `default_material`
 
@@ -91,7 +91,7 @@ default_material: renderer_material::RendererMaterialHandle
 
 The material an instance draws with when its material never built.
 
-<a id="rustdoc-item-2099"></a>
+<a id="rustdoc-item-2142"></a>
 
 ### `resource_epoch`
 
@@ -104,7 +104,7 @@ in each sync that created, recreated or dropped one. Pass bind groups
 reference those objects by handle, so such a change is what puts them
 out of date.
 
-<a id="rustdoc-item-2100"></a>
+<a id="rustdoc-item-2143"></a>
 
 ### `live_asset_keys`
 
@@ -117,7 +117,7 @@ Scratch: the keys the store still holds for the column being walked.
 One set serves all four columns, because the walks run one after
 another and each clears it first.
 
-<a id="rustdoc-item-2101"></a>
+<a id="rustdoc-item-2144"></a>
 
 ### `changed_asset_keys`
 
@@ -131,7 +131,7 @@ that filled it.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-2102"></a>
+<a id="rustdoc-item-2145"></a>
 
 ### `new`
 
@@ -149,7 +149,7 @@ shader or the material built from it will not build. Both defaults are
 built here and every later fallback depends on them, so this is the one
 creation failure that stops the renderer from starting.
 
-<a id="rustdoc-item-2103"></a>
+<a id="rustdoc-item-2146"></a>
 
 ### `sync`
 
@@ -171,7 +171,7 @@ The scratch sets are fields rather than locals, because this runs on
 every frame in which the store moved and a game that edits assets moves
 it often.
 
-<a id="rustdoc-item-2104"></a>
+<a id="rustdoc-item-2147"></a>
 
 ### `invalidate`
 
@@ -187,7 +187,7 @@ the sync removes a key's old object when it creates the new one, so
 clearing the records is enough to get the whole store onto the GPU
 again.
 
-<a id="rustdoc-item-2105"></a>
+<a id="rustdoc-item-2148"></a>
 
 ### `build_queue`
 
@@ -204,7 +204,7 @@ resource storage does not hold draws with the default shader. A partly
 broken revision therefore still draws something, which is what the two
 defaults are for.
 
-<a id="rustdoc-item-2106"></a>
+<a id="rustdoc-item-2149"></a>
 
 ### `resolve_draw_handles`
 
@@ -218,7 +218,7 @@ or `None` when its mesh never uploaded.
 A material that never built falls back to the default material, and a
 material the resource storage does not hold to the default shader.
 
-<a id="rustdoc-item-2107"></a>
+<a id="rustdoc-item-2150"></a>
 
 ### `shader_handles`
 
@@ -229,7 +229,7 @@ pub(crate) fn shader_handles(self: &Self) -> &GpuColumn<RendererShaderHandle>;
 Returns the shader column, which the chain reads to find the pipeline
 behind a pass's shader.
 
-<a id="rustdoc-item-2108"></a>
+<a id="rustdoc-item-2151"></a>
 
 ### `chain_context`
 
@@ -248,7 +248,7 @@ its depth buffer and its offscreen targets - rather than as the whole
 target, so the chain those pieces belong to can be rebuilt at the same
 time.
 
-<a id="rustdoc-item-2109"></a>
+<a id="rustdoc-item-2152"></a>
 
 ### `invalidate_dependent_materials`
 
@@ -266,7 +266,7 @@ content version does not change. Forgetting the version makes
 `sync_materials` rebuild the material in the same pass, against the new
 object.
 
-<a id="rustdoc-item-2110"></a>
+<a id="rustdoc-item-2153"></a>
 
 ### `sync_textures`
 
@@ -280,7 +280,7 @@ Returns whether any texture object was created, recreated or dropped.
 Keys whose object moved are added to `changed_asset_keys`, so the
 materials built against them can be rebuilt too.
 
-<a id="rustdoc-item-2111"></a>
+<a id="rustdoc-item-2154"></a>
 
 ### `sync_shaders`
 
@@ -294,7 +294,7 @@ Returns whether any shader object was created, recreated or dropped.
 Keys whose object moved are added to `changed_asset_keys`, so the
 materials built against them can be rebuilt too.
 
-<a id="rustdoc-item-2112"></a>
+<a id="rustdoc-item-2155"></a>
 
 ### `sync_meshes`
 
@@ -308,7 +308,7 @@ Meshes need no epoch increase. The draw path resolves a mesh handle per
 frame, so a rebuilt mesh is picked up without any pipeline going out of
 date.
 
-<a id="rustdoc-item-2113"></a>
+<a id="rustdoc-item-2156"></a>
 
 ### `sync_materials`
 

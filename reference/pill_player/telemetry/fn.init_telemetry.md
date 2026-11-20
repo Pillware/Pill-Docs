@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-744"></a>
+<a id="rustdoc-item-749"></a>
 
 # Function `pill_player::telemetry::init_telemetry`
 

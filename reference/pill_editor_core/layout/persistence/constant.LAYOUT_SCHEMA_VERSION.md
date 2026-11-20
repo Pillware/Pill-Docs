@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-5267"></a>
+<a id="rustdoc-item-7230"></a>
 
 # Constant `pill_editor_core::layout::persistence::LAYOUT_SCHEMA_VERSION`
 

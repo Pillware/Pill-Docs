@@ -8,7 +8,7 @@
 pub(in clipboard) const CF_UNICODETEXT: u32 = 13;
 ```
 
-Visibility: `{'restricted': {'parent': 1, 'path': '::clipboard'}}` · Source: `editor\pill_editor\src\clipboard.rs:52`
+Visibility: `{'restricted': {'parent': 1, 'path': '::clipboard'}}` · Source: `editor\pill_editor\src\clipboard.rs:69`
 
 `CF_UNICODETEXT`: the plain-text clipboard format that any application can
 read.

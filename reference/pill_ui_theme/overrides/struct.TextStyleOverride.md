@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-169"></a>
+<a id="rustdoc-item-173"></a>
 
 # Struct `pill_ui_theme::overrides::TextStyleOverride`
 
@@ -8,13 +8,13 @@
 pub struct TextStyleOverride;
 ```
 
-Source: `ui\pill_ui_theme\src\overrides.rs:145`
+Source: `ui\pill_ui_theme\src\overrides.rs:149`
 
 One named text style's overridable fields.
 
 ## Fields
 
-<a id="rustdoc-item-313"></a>
+<a id="rustdoc-item-321"></a>
 
 ### `size`
 
@@ -24,7 +24,7 @@ size: Option<f32>
 
 The size in points. It must be a positive, finite number.
 
-<a id="rustdoc-item-314"></a>
+<a id="rustdoc-item-322"></a>
 
 ### `family`
 

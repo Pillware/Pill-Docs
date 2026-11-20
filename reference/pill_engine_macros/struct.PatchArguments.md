@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-417"></a>
+<a id="rustdoc-item-523"></a>
 
 # Struct `pill_engine_macros::PatchArguments`
 
@@ -8,7 +8,7 @@
 pub(crate) struct PatchArguments;
 ```
 
-Visibility: `crate` · Source: `engine\pill_engine_macros\src\lib.rs:2485`
+Visibility: `crate` · Source: `engine\pill_engine_macros\src\lib.rs:3596`
 
 Arguments `#[pill_hot_fn]` accepts when it generates a patch body.
 
@@ -22,7 +22,7 @@ The host supplies both values. A developer never writes them.
 
 ## Fields
 
-<a id="rustdoc-item-415"></a>
+<a id="rustdoc-item-521"></a>
 
 ### `registry_name`
 
@@ -32,7 +32,7 @@ registry_name: Option<String>
 
 Registry name the generated descriptor is filed under.
 
-<a id="rustdoc-item-416"></a>
+<a id="rustdoc-item-522"></a>
 
 ### `self_type`
 

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1684"></a>
+<a id="rustdoc-item-1729"></a>
 
 # Enum `pill_master_renderer::readback::MapOutcome`
 
@@ -8,13 +8,13 @@
 pub(crate) enum MapOutcome { ... }
 ```
 
-Visibility: `crate` · Source: `extensions\pill_master_renderer\pill_master_renderer\src\readback.rs:66`
+Visibility: `crate` · Source: `extensions\pill_master_renderer\modules\runtime\gpu\src\readback.rs:66`
 
 What the device's map callback reported.
 
 ## Variants
 
-<a id="rustdoc-item-1681"></a>
+<a id="rustdoc-item-1726"></a>
 
 ### `Pending`
 
@@ -24,7 +24,7 @@ Pending
 
 The map is still under way.
 
-<a id="rustdoc-item-1682"></a>
+<a id="rustdoc-item-1727"></a>
 
 ### `Mapped`
 
@@ -34,7 +34,7 @@ Mapped
 
 The buffer is mapped and readable.
 
-<a id="rustdoc-item-1683"></a>
+<a id="rustdoc-item-1728"></a>
 
 ### `Failed`
 

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-4966"></a>
+<a id="rustdoc-item-6929"></a>
 
 # Struct `pill_editor_core::session::InspectorSession`
 
@@ -8,7 +8,7 @@
 pub struct InspectorSession;
 ```
 
-Source: `editor\pill_editor_core\src\session.rs:770`
+Source: `editor\pill_editor_core\src\session.rs:777`
 
 The Inspector's session state: which component sections are collapsed, and
 the geometry its log already reported.
@@ -20,7 +20,7 @@ left it (Unity's behaviour).
 
 ## Fields
 
-<a id="rustdoc-item-7909"></a>
+<a id="rustdoc-item-9971"></a>
 
 ### `collapsed`
 
@@ -30,7 +30,7 @@ collapsed: std::collections::BTreeSet<String>
 
 The component type names whose sections are collapsed.
 
-<a id="rustdoc-item-7910"></a>
+<a id="rustdoc-item-9972"></a>
 
 ### `section_rects`
 
@@ -40,7 +40,7 @@ section_rects: LoggedRects<String>
 
 Each section header's last logged rectangle, keyed by type name.
 
-<a id="rustdoc-item-7911"></a>
+<a id="rustdoc-item-9973"></a>
 
 ### `add_rect`
 
@@ -50,7 +50,7 @@ add_rect: Option<egui::Rect>
 
 The Add Component button's last logged rectangle.
 
-<a id="rustdoc-item-7912"></a>
+<a id="rustdoc-item-9974"></a>
 
 ### `add_open`
 
@@ -60,7 +60,7 @@ add_open: bool
 
 Whether the Add Component popup is open.
 
-<a id="rustdoc-item-7913"></a>
+<a id="rustdoc-item-9975"></a>
 
 ### `add_entries`
 
@@ -70,7 +70,7 @@ add_entries: LoggedRects<String>
 
 The addable entries' last logged rectangles, keyed by type name.
 
-<a id="rustdoc-item-7914"></a>
+<a id="rustdoc-item-9976"></a>
 
 ### `row_models`
 
@@ -82,7 +82,7 @@ The row model each drawn component's section shows, keyed by its
 registered type name: the rows, their once-per-subject log memory and
 the selection's write targets.
 
-<a id="rustdoc-item-7915"></a>
+<a id="rustdoc-item-9977"></a>
 
 ### `notices_logged`
 
@@ -93,7 +93,7 @@ notices_logged: std::collections::BTreeSet<String>
 The one-shot notices the Inspector already logged, keyed by what they
 describe (the selected asset's key): the tab redraws every frame.
 
-<a id="rustdoc-item-7916"></a>
+<a id="rustdoc-item-9978"></a>
 
 ### `subject`
 
@@ -104,7 +104,7 @@ subject: Option<pill_engine::Entity>
 The entity whose rows were last reported. A different subject clears
 the row memories below, because the rows on screen are that entity's.
 
-<a id="rustdoc-item-7917"></a>
+<a id="rustdoc-item-9979"></a>
 
 ### `asset_row_rects`
 
@@ -117,7 +117,7 @@ Each asset reference row's last logged rectangle, keyed by
 Only a row on screen keeps an entry; see the shell's
 `remember_asset_row_rect`.
 
-<a id="rustdoc-item-7918"></a>
+<a id="rustdoc-item-9980"></a>
 
 ### `log_rects`
 
@@ -128,11 +128,11 @@ log_rects: bool
 Whether the row and section rectangles reach the log.
 
 The shell sets it from the frame's `scripted` flag
-([`crate::boundary::EguiShellInput`](../boundary/struct.EguiShellInput.md#rustdoc-item-204)): a scripted run reads these
+([`crate::boundary::EguiShellInput`](../boundary/struct.EguiShellInput.md#rustdoc-item-206)): a scripted run reads these
 rectangles to aim a click or a drop, and a person's editor does not
 need a line per placement.
 
-<a id="rustdoc-item-7919"></a>
+<a id="rustdoc-item-9981"></a>
 
 ### `asset_row_texts`
 
@@ -143,7 +143,7 @@ asset_row_texts: LoggedTexts<String>
 Each asset reference row's last logged text, keyed the same way: the
 row logs again whenever it draws a different asset.
 
-<a id="rustdoc-item-7920"></a>
+<a id="rustdoc-item-9982"></a>
 
 ### `asset_picker`
 
@@ -153,7 +153,7 @@ asset_picker: Option<String>
 
 The `component.field` whose asset picker is open, if one is.
 
-<a id="rustdoc-item-7921"></a>
+<a id="rustdoc-item-9983"></a>
 
 ### `asset_search`
 
@@ -163,7 +163,7 @@ asset_search: String
 
 The open asset picker's search text.
 
-<a id="rustdoc-item-7922"></a>
+<a id="rustdoc-item-9984"></a>
 
 ### `entity_row_rects`
 
@@ -175,7 +175,7 @@ Each entity reference row's last logged rectangle, keyed by
 `entity.component.field`: what a suite drags an
 entity onto.
 
-<a id="rustdoc-item-7923"></a>
+<a id="rustdoc-item-9985"></a>
 
 ### `entity_row_texts`
 
@@ -186,7 +186,7 @@ entity_row_texts: LoggedTexts<String>
 Each entity reference row's last logged text, keyed the same way: the
 row logs again whenever it draws a different entity.
 
-<a id="rustdoc-item-7924"></a>
+<a id="rustdoc-item-9986"></a>
 
 ### `entity_picker`
 
@@ -196,7 +196,7 @@ entity_picker: Option<String>
 
 The `component.field` whose entity picker is open, if one is.
 
-<a id="rustdoc-item-7925"></a>
+<a id="rustdoc-item-9987"></a>
 
 ### `entity_search`
 
@@ -206,7 +206,7 @@ entity_search: String
 
 The open entity picker's search text.
 
-<a id="rustdoc-item-7926"></a>
+<a id="rustdoc-item-9988"></a>
 
 ### `settings_picker`
 
@@ -217,7 +217,7 @@ settings_picker: Option<String>
 The settings-document key (`textures.albedo`) whose picker is open, if
 one is.
 
-<a id="rustdoc-item-7927"></a>
+<a id="rustdoc-item-9989"></a>
 
 ### `settings_search`
 
@@ -227,7 +227,7 @@ settings_search: String
 
 The open settings picker's search text.
 
-<a id="rustdoc-item-7928"></a>
+<a id="rustdoc-item-9990"></a>
 
 ### `settings_row_rects`
 
@@ -238,7 +238,7 @@ settings_row_rects: LoggedRects<String>
 Each reference-list row's last logged rectangle, keyed by
 `asset:family[index]`: what a suite drags to reorder a list.
 
-<a id="rustdoc-item-7929"></a>
+<a id="rustdoc-item-9991"></a>
 
 ### `hierarchy_row_rects`
 
@@ -251,7 +251,7 @@ display: what a suite drags onto an entity reference
 row. The Entities tab shares this session, since the cache is the same
 "geometry the log already reported" concern.
 
-<a id="rustdoc-item-7930"></a>
+<a id="rustdoc-item-9992"></a>
 
 ### `badge_rects`
 
@@ -262,7 +262,7 @@ badge_rects: LoggedRects<String>
 Each scene badge's last logged rectangle, keyed by `view:entity`:
 what a suite clicks to select through a badge.
 
-<a id="rustdoc-item-7932"></a>
+<a id="rustdoc-item-9994"></a>
 
 ### `hierarchy_seen`
 
@@ -270,11 +270,11 @@ what a suite clicks to select through a badge.
 hierarchy_seen: std::collections::BTreeSet<String>
 ```
 
-The Hierarchy rows this pass drew, so [`Self::begin_geometry_pass`](#rustdoc-item-7931) can
+The Hierarchy rows this pass drew, so [`Self::begin_geometry_pass`](#rustdoc-item-9993) can
 drop the ones that left: the tab redraws what it shows, and the
 Entities list can be tens of thousands of rows long.
 
-<a id="rustdoc-item-7933"></a>
+<a id="rustdoc-item-9995"></a>
 
 ### `badge_seen`
 
@@ -282,11 +282,11 @@ Entities list can be tens of thousands of rows long.
 badge_seen: std::collections::BTreeSet<String>
 ```
 
-The scene badges this pass drew, keyed like [`Self::badge_rects`](#rustdoc-item-7930).
+The scene badges this pass drew, keyed like [`Self::badge_rects`](#rustdoc-item-9992).
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-7934"></a>
+<a id="rustdoc-item-9996"></a>
 
 ### `clear_geometry`
 
@@ -299,7 +299,7 @@ Forget every rectangle and text the log already reported.
 Called when the subject changes: the rows on screen are another
 entity's, so their geometry has to be reported again for the new one.
 
-<a id="rustdoc-item-7931"></a>
+<a id="rustdoc-item-9993"></a>
 
 ### `begin_geometry_pass`
 

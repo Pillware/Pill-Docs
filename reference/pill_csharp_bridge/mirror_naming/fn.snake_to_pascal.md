@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1746"></a>
+<a id="rustdoc-item-1770"></a>
 
 # Function `pill_csharp_bridge::mirror_naming::snake_to_pascal`
 

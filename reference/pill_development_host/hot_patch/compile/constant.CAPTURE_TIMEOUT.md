@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1911"></a>
+<a id="rustdoc-item-1985"></a>
 
 # Constant `pill_development_host::hot_patch::compile::CAPTURE_TIMEOUT`
 
@@ -8,7 +8,7 @@
 pub(in hot_patch::compile) const CAPTURE_TIMEOUT: std::time::Duration = _;
 ```
 
-Visibility: `{'restricted': {'parent': 1910, 'path': '::hot_patch::compile'}}` · Source: `hosting\pill_development_host\src\hot_patch\compile.rs:50`
+Visibility: `{'restricted': {'parent': 1984, 'path': '::hot_patch::compile'}}` · Source: `hosting\pill_development_host\src\hot_patch\compile.rs:50`
 
 The longest time one flag capture may take before it gives up.
 

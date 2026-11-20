@@ -8,7 +8,7 @@
 pub(crate) fn consumed_component_names() -> Vec<String>;
 ```
 
-Visibility: `crate` · Source: `extensions\pill_master_renderer\pill_master_renderer\src\frame.rs:267`
+Visibility: `crate` · Source: `extensions\pill_master_renderer\modules\runtime\gpu\src\frame.rs:267`
 
 Returns the shared names of the components [`rendering_system`](fn.rendering_system.md#rustdoc-item-244) reads.
 

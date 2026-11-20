@@ -1,22 +1,22 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-300"></a>
+<a id="rustdoc-item-362"></a>
 
 # Module `pill_renderer_api::components`
 
 Source: `rendering\pill_renderer_api\src\components\mod.rs:1`
 
 The contract's camera component and viewport rectangle, and
-[`register_contract_components`](fn.register_contract_components.md#rustdoc-item-298).
+[`register_contract_components`](fn.register_contract_components.md#rustdoc-item-360).
 The scene types that are part of the renderer contract.
 
 ## Responsibilities
 
-- Declare [`CameraComponent`](camera/struct.CameraComponent.md#rustdoc-item-241), the camera [`crate::frame::RenderFrame`](../frame/struct.RenderFrame.md#rustdoc-item-188)
-  carries for each surface, and [`RenderViewport`](viewport/struct.RenderViewport.md#rustdoc-item-187), the rectangle a frontend
+- Declare [`CameraComponent`](camera/struct.CameraComponent.md#rustdoc-item-244), the camera [`crate::frame::RenderFrame`](../frame/struct.RenderFrame.md#rustdoc-item-191)
+  carries for each surface, and [`RenderViewport`](viewport/struct.RenderViewport.md#rustdoc-item-190), the rectangle a frontend
   points a renderer at.
 - Register the contract's components through
-  [`register_contract_components`](fn.register_contract_components.md#rustdoc-item-298), field layout included.
+  [`register_contract_components`](fn.register_contract_components.md#rustdoc-item-360), field layout included.
 
 ## Design
 
@@ -33,13 +33,13 @@ columns it already holds for this one.
 ## Module contents
 
 ### Modules
-- [`camera`](camera/index.md#rustdoc-item-297) — The camera a frame renders through.
-- [`viewport`](viewport/index.md#rustdoc-item-345) — The rectangle of the target a frame draws into.
+- [`camera`](camera/index.md#rustdoc-item-359) — The camera a frame renders through.
+- [`viewport`](viewport/index.md#rustdoc-item-408) — The rectangle of the target a frame draws into.
 
 ### Functions
-- [`register_contract_components`](fn.register_contract_components.md#rustdoc-item-298) — Registers the contract's components - the engine's transform and the
+- [`register_contract_components`](fn.register_contract_components.md#rustdoc-item-360) — Registers the contract's components - the engine's transform and the
 
 ## Re-exports
 
-- [`pub use camera::CameraComponent;`](camera/struct.CameraComponent.md#rustdoc-item-241)
-- [`pub use viewport::RenderViewport;`](viewport/struct.RenderViewport.md#rustdoc-item-187)
+- [`pub use camera::CameraComponent;`](camera/struct.CameraComponent.md#rustdoc-item-244)
+- [`pub use viewport::RenderViewport;`](viewport/struct.RenderViewport.md#rustdoc-item-190)

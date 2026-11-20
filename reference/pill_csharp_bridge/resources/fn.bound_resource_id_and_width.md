@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1997"></a>
+<a id="rustdoc-item-2022"></a>
 
 # Function `pill_csharp_bridge::resources::bound_resource_id_and_width`
 

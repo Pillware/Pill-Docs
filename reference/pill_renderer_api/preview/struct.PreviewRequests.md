@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1521"></a>
+<a id="rustdoc-item-1609"></a>
 
 # Struct `pill_renderer_api::preview::PreviewRequests`
 
@@ -14,7 +14,7 @@ The previews waiting for the renderer.
 
 ## Fields
 
-<a id="rustdoc-item-1517"></a>
+<a id="rustdoc-item-1605"></a>
 
 ### `pending`
 
@@ -24,7 +24,7 @@ pending: Vec<PreviewRequest>
 
 Every request asked for since the last frame.
 
-<a id="rustdoc-item-1519"></a>
+<a id="rustdoc-item-1607"></a>
 
 ### `next_request_id`
 
@@ -32,11 +32,11 @@ Every request asked for since the last frame.
 next_request_id: u64
 ```
 
-The next id [`Self::request`](#rustdoc-item-1518) hands out.
+The next id [`Self::request`](#rustdoc-item-1606) hands out.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-1518"></a>
+<a id="rustdoc-item-1606"></a>
 
 ### `request`
 
@@ -55,14 +55,14 @@ Queues one preview of `asset` and returns the id its answer carries.
 - `TryInto<U>`
 - `TryFrom<U>`
 - `Any`
+- `CastableFrom<ST, Uninit, Uninit>`
+- `CastableFrom<ST, Initialized, Initialized>`
+- `Read<Exclusive, BecauseExclusive>`
 - `Instrument`
 - `WithSubscriber`
 - `IntoEither`
 - `Pointable`
 - `OwoColorize`
 - `ErasedDestructor`
-- `CastableFrom<ST, Uninit, Uninit>`
-- `CastableFrom<ST, Initialized, Initialized>`
-- `Read<Exclusive, BecauseExclusive>`
 - `Default`
 - `Resource`

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-2848"></a>
+<a id="rustdoc-item-2885"></a>
 
 # Function `pill_master_renderer::resources::shader_bindings::shader_bind_groups`
 
@@ -8,7 +8,7 @@
 pub(crate) fn shader_bind_groups<'views, impl Fn(&str, &ShaderTextureSlot) -> Result<Option<(&'views wgpu::TextureView, &'views wgpu::Sampler)>>: Fn(&str, &crate::assets::ShaderTextureSlot) -> crate::error::Result<Option<(&'views wgpu::TextureView, &'views wgpu::Sampler)>>>(device: &wgpu::Device, queue: &wgpu::Queue, rendering_resource_storage: &crate::resources::RendererResourceStorage, owner_label: &str, shader: &crate::resources::RendererShader, parameters: &std::collections::BTreeMap<String, pill_renderer_api::frame::MaterialParameter>, textures: &[(String, renderer_texture::RendererTextureHandle)], resolve_extra_texture: impl Fn(&str, &crate::assets::ShaderTextureSlot) -> crate::error::Result<Option<(&'views wgpu::TextureView, &'views wgpu::Sampler)>>) -> crate::error::Result<(Option<wgpu::BindGroup>, Option<wgpu::BindGroup>)>;
 ```
 
-Visibility: `crate` · Source: `extensions\pill_master_renderer\pill_master_renderer\src\resources\shader_bindings.rs:139`
+Visibility: `crate` · Source: `extensions\pill_master_renderer\modules\runtime\gpu\src\resources\shader_bindings.rs:139`
 
 Builds the parameters and textures bind groups a shader reads, for one
 material or pass.

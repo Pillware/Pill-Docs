@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1551"></a>
+<a id="rustdoc-item-2055"></a>
 
 # Function `pill_editor::runner::draw_gizmo_guides`
 
@@ -8,7 +8,7 @@
 pub(in runner) fn draw_gizmo_guides(debug: &mut pill_engine_core::debug_draw::DebugDraw, kind: pill_editor_core::gizmo::HandleKind, basis: [[f32; 3]; 3], start_pivot: [f32; 3], current_pivot: [f32; 3], reference: f32);
 ```
 
-Visibility: `{'restricted': {'parent': 483, 'path': '::runner'}}` · Source: `editor\pill_editor\src\runner\mod.rs:4002`
+Visibility: `{'restricted': {'parent': 539, 'path': '::runner'}}` · Source: `editor\pill_editor\src\runner\mod.rs:4643`
 
 Draw the drag guides: the axis constraint line through a single-axis
 handle's axis and, for a translation drag, the dotted line from the press's

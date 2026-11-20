@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-5205"></a>
+<a id="rustdoc-item-7168"></a>
 
 # Struct `pill_editor_core::layout::dock::EditorDock`
 
@@ -8,7 +8,7 @@
 pub struct EditorDock;
 ```
 
-Source: `editor\pill_editor_core\src\layout\dock.rs:252`
+Source: `editor\pill_editor_core\src\layout\dock.rs:254`
 
 The editor's dock: an `egui_dock` state with the editor's default
 layout.
@@ -19,7 +19,7 @@ carries it across restarts.
 
 ## Fields
 
-<a id="rustdoc-item-5199"></a>
+<a id="rustdoc-item-7162"></a>
 
 ### `schema_version`
 
@@ -29,7 +29,7 @@ schema_version: u32
 
 The schema this document was written with.
 
-<a id="rustdoc-item-5201"></a>
+<a id="rustdoc-item-7164"></a>
 
 ### `panel_ids`
 
@@ -41,7 +41,7 @@ The panel id that each module tab's slot meant when the document was
 written. A slot number means nothing to the next run, but the id does,
 so a panel that registers again finds its tab.
 
-<a id="rustdoc-item-5202"></a>
+<a id="rustdoc-item-7165"></a>
 
 ### `popouts`
 
@@ -52,7 +52,7 @@ popouts: Vec<EditorTab>
 The tabs popped out into their own OS windows. A popped-out tab is
 *not* in the dock tree; redocking puts it back in the focused leaf.
 
-<a id="rustdoc-item-5203"></a>
+<a id="rustdoc-item-7166"></a>
 
 ### `state`
 
@@ -64,7 +64,7 @@ The dock's tabs and splits.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-5206"></a>
+<a id="rustdoc-item-7169"></a>
 
 ### `new`
 
@@ -77,7 +77,7 @@ together in the center, the entity list as the left column, the
 inspector above the system list on the right, and the assets, console,
 problems and statistics tabs as a bottom row across the window.
 
-<a id="rustdoc-item-5208"></a>
+<a id="rustdoc-item-7171"></a>
 
 ### `state`
 
@@ -86,10 +86,10 @@ pub fn state(self: &Self) -> &DockState<EditorTab>;
 ```
 
 The dock state, for reading. `egui_dock` edits the tree while it
-draws, so the shell goes through [`EditorDock::state_mut`](#rustdoc-item-5207) instead and
+draws, so the shell goes through [`EditorDock::state_mut`](#rustdoc-item-7170) instead and
 this handle is for queries.
 
-<a id="rustdoc-item-5207"></a>
+<a id="rustdoc-item-7170"></a>
 
 ### `state_mut`
 
@@ -100,7 +100,7 @@ pub fn state_mut(self: &mut Self) -> &mut DockState<EditorTab>;
 The dock state, mutably: the shell runs the tabs through this, and
 `egui_dock` applies drags and closes to it directly.
 
-<a id="rustdoc-item-5209"></a>
+<a id="rustdoc-item-7172"></a>
 
 ### `schema_version`
 
@@ -110,7 +110,7 @@ pub fn schema_version(self: &Self) -> u32;
 
 The schema version the document carries.
 
-<a id="rustdoc-item-5210"></a>
+<a id="rustdoc-item-7173"></a>
 
 ### `set_schema_version`
 
@@ -121,7 +121,7 @@ pub fn set_schema_version(self: &mut Self, version: u32);
 Stamp the document with `version`: what a migration does before it is
 written back.
 
-<a id="rustdoc-item-5211"></a>
+<a id="rustdoc-item-7174"></a>
 
 ### `contains`
 
@@ -131,7 +131,7 @@ pub fn contains(self: &Self, tab: EditorTab) -> bool;
 
 Whether `tab` is docked somewhere: the main surface or a window.
 
-<a id="rustdoc-item-5212"></a>
+<a id="rustdoc-item-7175"></a>
 
 ### `next_scene_view`
 
@@ -148,7 +148,7 @@ frontend keeps one window, surface and camera per view index for the
 whole session, so a new tab on a reused index would take over the
 closed view's window and camera.
 
-<a id="rustdoc-item-5213"></a>
+<a id="rustdoc-item-7176"></a>
 
 ### `scene_view_count`
 
@@ -165,7 +165,7 @@ A popped-out view counts too: it is still a view, with its child
 window replaced by a window of its own, and it reports its rectangle
 through that slot.
 
-<a id="rustdoc-item-5214"></a>
+<a id="rustdoc-item-7177"></a>
 
 ### `can_open_scene_view`
 
@@ -176,7 +176,7 @@ pub fn can_open_scene_view(self: &Self) -> bool;
 Whether one more scene view fits. Each view is a child window and a
 renderer surface, so the frontend's limit is the dock's too.
 
-<a id="rustdoc-item-5215"></a>
+<a id="rustdoc-item-7178"></a>
 
 ### `is_current`
 
@@ -186,7 +186,7 @@ pub(crate) fn is_current(self: &Self) -> bool;
 
 Whether the document was written by this build's schema.
 
-<a id="rustdoc-item-5216"></a>
+<a id="rustdoc-item-7179"></a>
 
 ### `set_panel_ids`
 
@@ -197,7 +197,7 @@ pub fn set_panel_ids(self: &mut Self, panel_ids: Vec<String>);
 Record the registry's panel ids, so the module tabs a save writes can be
 found again by id on the next run.
 
-<a id="rustdoc-item-5217"></a>
+<a id="rustdoc-item-7180"></a>
 
 ### `panel_ids`
 
@@ -207,7 +207,7 @@ pub fn panel_ids(self: &Self) -> &[String];
 
 The panel ids the document carried.
 
-<a id="rustdoc-item-5218"></a>
+<a id="rustdoc-item-7181"></a>
 
 ### `popouts`
 
@@ -217,7 +217,7 @@ pub fn popouts(self: &Self) -> &[EditorTab];
 
 The tabs popped out into their own OS windows.
 
-<a id="rustdoc-item-5219"></a>
+<a id="rustdoc-item-7182"></a>
 
 ### `is_popped_out`
 
@@ -227,7 +227,7 @@ pub fn is_popped_out(self: &Self, tab: EditorTab) -> bool;
 
 Whether `tab` is currently popped out.
 
-<a id="rustdoc-item-5220"></a>
+<a id="rustdoc-item-7183"></a>
 
 ### `pop_out`
 
@@ -239,7 +239,7 @@ Pops `tab` out into its own window: it leaves the dock tree, so the
 dock stops drawing it, and joins `popouts` so the next save remembers
 it. Reports whether the tab was docked and moved.
 
-<a id="rustdoc-item-5221"></a>
+<a id="rustdoc-item-7184"></a>
 
 ### `redock`
 
@@ -250,7 +250,7 @@ pub fn redock(self: &mut Self, tab: EditorTab) -> bool;
 Puts a popped-out `tab` back into the focused leaf and reports whether
 it was popped out.
 
-<a id="rustdoc-item-5222"></a>
+<a id="rustdoc-item-7185"></a>
 
 ### `remap_panel_slots`
 
@@ -265,7 +265,7 @@ A tab whose panel is not registered today points past the registry
 (`u16::MAX`): the tab is the user's and stays, and the shell titles it
 `Module panel` and draws its body as not loaded.
 
-<a id="rustdoc-item-5223"></a>
+<a id="rustdoc-item-7186"></a>
 
 ### `settled`
 
@@ -276,9 +276,9 @@ pub(crate) fn settled(self: &Self) -> Self;
 Returns a copy with placeholder geometry replaced by finite values.
 
 A fresh dock's nodes start with `Rect::NOTHING` (`±INF`) until the
-first `DockArea::show` lays them out; serde_json writes non-finite
-floats as `null`, which cannot be read back. The values are
-recomputed on the next show, so a zero placeholder is safe.
+first `DockArea::show` lays them out, and a non-finite coordinate is
+not a value a saved document reads back. The values are recomputed on
+the next show, so a zero placeholder is safe.
 
 ## Trait implementations
 

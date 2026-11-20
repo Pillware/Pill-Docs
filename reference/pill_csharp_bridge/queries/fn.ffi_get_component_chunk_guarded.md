@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1876"></a>
+<a id="rustdoc-item-1901"></a>
 
 # Function `pill_csharp_bridge::queries::ffi_get_component_chunk_guarded`
 
@@ -8,7 +8,7 @@
 pub(in queries) fn ffi_get_component_chunk_guarded(stable_id_low: u64, stable_id_high: u64, request_mode: u8, chunk_index: u32, chunk_output: *mut super::abi::ComponentChunk) -> u8;
 ```
 
-Visibility: `{'restricted': {'parent': 1872, 'path': '::queries'}}` · Source: `csharp\pill_csharp_bridge\src\queries.rs:164`
+Visibility: `{'restricted': {'parent': 1897, 'path': '::queries'}}` · Source: `csharp\pill_csharp_bridge\src\queries.rs:164`
 
 Return a component chunk to managed code after checking the system's
 declared access.

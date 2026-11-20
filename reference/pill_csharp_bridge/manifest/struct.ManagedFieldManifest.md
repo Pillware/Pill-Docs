@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1337"></a>
+<a id="rustdoc-item-1360"></a>
 
 # Struct `pill_csharp_bridge::manifest::ManagedFieldManifest`
 
@@ -14,7 +14,7 @@ Deserialized field entry within a managed component manifest.
 
 ## Fields
 
-<a id="rustdoc-item-1408"></a>
+<a id="rustdoc-item-1432"></a>
 
 ### `name`
 
@@ -24,7 +24,7 @@ name: String
 
 Field name as it appears in the managed schema.
 
-<a id="rustdoc-item-1409"></a>
+<a id="rustdoc-item-1433"></a>
 
 ### `offset`
 
@@ -34,7 +34,7 @@ offset: usize
 
 Byte offset of the field within its containing struct.
 
-<a id="rustdoc-item-1410"></a>
+<a id="rustdoc-item-1434"></a>
 
 ### `size`
 
@@ -44,7 +44,7 @@ size: usize
 
 Byte size of the field.
 
-<a id="rustdoc-item-1411"></a>
+<a id="rustdoc-item-1435"></a>
 
 ### `primitive_type`
 
@@ -56,7 +56,7 @@ Managed type name of the field: a leaf type name as the manifest writes
 it, `struct` for a nested value type, or `handle:` plus the asset
 type's Rust path.
 
-<a id="rustdoc-item-1412"></a>
+<a id="rustdoc-item-1436"></a>
 
 ### `default`
 
@@ -66,7 +66,7 @@ default: Option<String>
 
 Literal a newly added or reset field starts from, instead of zero.
 
-<a id="rustdoc-item-1413"></a>
+<a id="rustdoc-item-1437"></a>
 
 ### `decorations`
 
@@ -78,7 +78,7 @@ Presentation decorators the field declares, in declaration order.
 
 Defaulted so a payload that omits them parses as an undecorated field.
 
-<a id="rustdoc-item-1415"></a>
+<a id="rustdoc-item-1439"></a>
 
 ### `fields`
 

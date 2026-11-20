@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1364"></a>
+<a id="rustdoc-item-1409"></a>
 
 # Function `pill_master_renderer_data::components::register_components`
 
@@ -8,7 +8,7 @@
 pub fn register_components(world: &mut pill_engine::World);
 ```
 
-Source: `extensions\pill_master_renderer\pill_master_renderer_data\src\components\mod.rs:54`
+Source: `extensions\pill_master_renderer\modules\runtime\data\src\components\mod.rs:54`
 
 Registers the renderer's scene components with the world, field layouts
 included.

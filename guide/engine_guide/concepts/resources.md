@@ -2,7 +2,7 @@
 
 ## Summary
 
-The world keeps resources in one map from `ResourceId` to an `ErasedResource`: a heap allocation plus a small table of function pointers (drop, size, alignment) instead of a trait object. A module declares the resources it owns with `#[derive(PillResource)]`, and its entry point turns each declaration into a `register_resource` call on every load and reload. The host uses those registrations to re-point each value's drop function at loaded code and to remove resources a module stopped owning.
+The world keeps resources in one map from `ResourceId` to an `ErasedResource`: a heap allocation plus a small table of function pointers (drop, size, alignment) instead of a trait object. A module declares the resources it owns with `#[resource]`, and its entry point turns each declaration into a `register_resource` call on every load and reload. The host uses those registrations to re-point each value's drop function at loaded code and to remove resources a module stopped owning.
 
 This is the implementation counterpart of [concepts/resources.md](../concepts/resources.md). Read that first for how to declare and use resources.
 
@@ -14,7 +14,7 @@ This is the implementation counterpart of [concepts/resources.md](../concepts/re
 | `ResourceId`                         | `Native(TypeId)` or `Shared(hash of the name)`                                                                                                                                     | `resource.rs`                     |
 | `ErasedResource`                     | the value's allocation, its `TypeId`, size, alignment and an `ErasedResourceOps`                                                                                                   | `resource.rs`                     |
 | `ErasedResourceOps`                  | `drop_in_place` function pointer, size, alignment, `foreign` flag, C# `schema_hash`, the declared `layout_sources`/`layout_dependencies`, and a manager's `settings_asset` surface | `resource.rs`                     |
-| `#[derive(PillResource)]`            | declares a resource where it is defined; the entry point registers it                                                                                                              | `pill_engine/src/declarations.rs` |
+| `#[resource]`            | declares a resource where it is defined; the entry point registers it                                                                                                              | `pill_engine/src/declarations.rs` |
 | `World.resources`                    | `HashMap<ResourceId, ErasedResource>`: the values                                                                                                                                  | `world/mod.rs`                    |
 | `World.resource_ticks`               | `added`/`changed` ticks per resource                                                                                                                                               | `world/mod.rs`                    |
 | `World.resource_factories`           | newest `ErasedResourceOps` per id, for re-homing                                                                                                                                   | `world/mod.rs`                    |
@@ -68,15 +68,14 @@ Reading checks the box before casting. `ErasedResource::holds::<T>()` compares t
 
 The reload needs the registration even when the value already exists. A module that keeps its value across a reload never calls `insert_resource` again, so without `register_resource` the new generation would contribute no ops table pointing at its own code, and the host would conclude it no longer owns the resource.
 
-A module does not write that call itself. It derives `PillResource` on the type:
+A module does not write that call itself. It declares the resource with `#[resource]` on the type:
 
 ```rust
-#[derive(PillResource)]
-#[pill(shared, layout_sources = ["src/score.rs"])]
+#[resource(shared, layout_sources = ["src/score.rs"])]
 pub struct Score { points: u32 }
 ```
 
-The derive submits a descriptor, and the module's entry point (`register_all_resources`) calls `register_resource` for every descriptor its own image declared, sorted by type name, before the module's `register` function runs. So a first load, every reload and a statically linked build all register the same types, and `insert_resource` in `register` finds the declaration already in place. On a reload, the entry point skips the descriptors that a retired generation, still loaded in the graveyard, declared: it keeps only the ones added after the host's declaration baseline (see [hot_reloading.md](../levels/hosting/hot_reloading.md)).
+The attribute expands to the derive, which submits a descriptor, and the module's entry point (`register_all_resources`) calls `register_resource` for every descriptor its own image declared, sorted by type name, before the module's `register` function runs. So a first load, every reload and a statically linked build all register the same types, and `insert_resource` in `register` finds the declaration already in place. On a reload, the entry point skips the descriptors that a retired generation, still loaded in the graveyard, declared: it keeps only the ones added after the host's declaration baseline (see [hot_reloading.md](../levels/hosting/hot_reloading.md)).
 
 `register_resource` and `insert_resource` remain public for code that owns its types directly: the host, the editor, the player and shared dylibs.
 
@@ -92,7 +91,7 @@ Values stay where they are; only the bookkeeping around them changes. A reload d
 
 The full ordering is in [hot_reloading.md](../levels/hosting/hot_reloading.md#in-what-order-does-the-host-move-the-engine-state-over).
 
-> **Example:** the project declares `Score` and `ComboTimer` with `#[derive(PillResource)]`. You delete `ComboTimer` from the code and save. The struct and its derive are gone, so the new generation's registration declares only `Score`. The host sees that `ComboTimer`'s id was registered by the old generation and not the new one, and drops the timer through the old DLL's `drop_in_place::<ComboTimer>`, while that DLL is still loaded. `Score` keeps its value, and its ops table now points into the new DLL.
+> **Example:** the project declares `Score` and `ComboTimer` with `#[resource]`. You delete `ComboTimer` from the code and save. The struct and its declaration are gone, so the new generation's registration declares only `Score`. The host sees that `ComboTimer`'s id was registered by the old generation and not the new one, and drops the timer through the old DLL's `drop_in_place::<ComboTimer>`, while that DLL is still loaded. `Score` keeps its value, and its ops table now points into the new DLL.
 
 ## How do several modules share one resource?
 
@@ -129,7 +128,7 @@ For scheduling, `Res<T>` reports a resource **read** and `ResMut<T>` a resource 
 
 ## How does a persistable resource survive a struct change?
 
-`register_persistable_resource::<T>()` registers the resource normally, then records three things under its **persistence name** (the shared name, or `std::any::type_name::<T>()` without one):
+`register_persistable_resource::<T>()` registers the resource normally, then records three things under its **persistence name** (the shared name, or the stored name `<crate>::<Type>` without one):
 
 - a serializer, keyed by `ResourceId`, which reads the live value as JSON;
 - a restorer, keyed by name, which merges JSON over `T::default()` and inserts the result;
@@ -198,7 +197,7 @@ All paths are in `modules/engine/pill_engine_core/src/`.
 | `Res<T>`, `ResMut<T>`                                                                | `query/resource.rs`                                                       |
 | `SystemParam` implementations and access reporting                                   | `system.rs`                                                               |
 | Persistable resources, snapshots, migration                                          | `persistence/resources.rs`                                                |
-| `#[derive(PillResource)]` declarations and `register_all_resources`                  | `modules/engine/pill_engine/src/declarations.rs`                          |
+| `#[resource]` declarations and `register_all_resources`                  | `modules/engine/pill_engine/src/declarations.rs`                          |
 | `SettingsAssetManager`, `SettingsAssetOps`                                           | `settings.rs`                                                             |
 | Settings bindings, missing files, change detection                                   | `manager_settings.rs`                                                     |
 | Layout fingerprints and the layout-change drop                                       | `modules/hosting/pill_development_host/src/layout_record.rs`, `reload.rs` |

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-959"></a>
+<a id="rustdoc-item-951"></a>
 
 # Struct `pill_master_renderer_data::assets::shader::ShaderBuilder`
 
@@ -8,16 +8,16 @@
 pub struct ShaderBuilder;
 ```
 
-Source: `extensions\pill_master_renderer\pill_master_renderer_data\src\assets\shader.rs:276`
+Source: `extensions\pill_master_renderer\modules\runtime\data\src\assets\shader.rs:276`
 
-A [`Shader`](struct.Shader.md#rustdoc-item-92) under construction, started by [`Shader::new`](struct.Shader.md#rustdoc-item-958).
+A [`Shader`](struct.Shader.md#rustdoc-item-92) under construction, started by [`Shader::new`](struct.Shader.md#rustdoc-item-950).
 
-The parts arrive in any order and [`Self::build`](#rustdoc-item-957) reads the two sources, so
+The parts arrive in any order and [`Self::build`](#rustdoc-item-949) reads the two sources, so
 a half-built shader is never alive.
 
 ## Fields
 
-<a id="rustdoc-item-1007"></a>
+<a id="rustdoc-item-999"></a>
 
 ### `name`
 
@@ -27,7 +27,7 @@ name: String
 
 The name the finished shader will carry.
 
-<a id="rustdoc-item-1009"></a>
+<a id="rustdoc-item-1001"></a>
 
 ### `vertex_source`
 
@@ -37,7 +37,7 @@ vertex_source: Option<pill_engine::AssetLoader>
 
 The vertex stage's source, read when the shader is built.
 
-<a id="rustdoc-item-1011"></a>
+<a id="rustdoc-item-1003"></a>
 
 ### `fragment_source`
 
@@ -47,7 +47,7 @@ fragment_source: Option<pill_engine::AssetLoader>
 
 The fragment stage's source, read when the shader is built.
 
-<a id="rustdoc-item-1012"></a>
+<a id="rustdoc-item-1004"></a>
 
 ### `parameter_slots`
 
@@ -57,7 +57,7 @@ parameter_slots: Vec<ShaderParameterSlot>
 
 The uniform slots collected so far, in the order they were declared.
 
-<a id="rustdoc-item-1013"></a>
+<a id="rustdoc-item-1005"></a>
 
 ### `texture_slots`
 
@@ -67,7 +67,7 @@ texture_slots: Vec<ShaderTextureSlot>
 
 The texture slots collected so far, in the order they were declared.
 
-<a id="rustdoc-item-1014"></a>
+<a id="rustdoc-item-1006"></a>
 
 ### `pass_engine_parameters`
 
@@ -77,7 +77,7 @@ pass_engine_parameters: bool
 
 Whether the finished shader will read the engine's parameters.
 
-<a id="rustdoc-item-1015"></a>
+<a id="rustdoc-item-1007"></a>
 
 ### `pass_camera_parameters`
 
@@ -89,7 +89,7 @@ Whether the finished shader will read the camera's parameters.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-1016"></a>
+<a id="rustdoc-item-1008"></a>
 
 ### `with_vertex_source`
 
@@ -99,7 +99,7 @@ pub fn with_vertex_source(self: Self, source: AssetLoader) -> Self;
 
 The WGSL vertex stage, read from this source when the shader is built.
 
-<a id="rustdoc-item-1017"></a>
+<a id="rustdoc-item-1009"></a>
 
 ### `with_fragment_source`
 
@@ -109,7 +109,7 @@ pub fn with_fragment_source(self: Self, source: AssetLoader) -> Self;
 
 The WGSL fragment stage, read from this source when the shader is built.
 
-<a id="rustdoc-item-1018"></a>
+<a id="rustdoc-item-1010"></a>
 
 ### `with_wgsl`
 
@@ -121,11 +121,11 @@ Sets both WGSL stages from text already in hand.
 
 For stages that are not files: `include_str!` gives a `&'static str`,
 and a C# project can pass the text it holds, because the builder is
-mirrored to C#. Nothing is resolved or read, so [`Self::build`](#rustdoc-item-957) already
-has both stages, where [`Self::with_vertex_source`](#rustdoc-item-1016) holds a path that
+mirrored to C#. Nothing is resolved or read, so [`Self::build`](#rustdoc-item-949) already
+has both stages, where [`Self::with_vertex_source`](#rustdoc-item-1008) holds a path that
 may turn out not to exist.
 
-<a id="rustdoc-item-1019"></a>
+<a id="rustdoc-item-1011"></a>
 
 ### `with_parameter_slots`
 
@@ -136,7 +136,7 @@ pub fn with_parameter_slots<impl IntoIterator<Item = ShaderParameterSlot>: IntoI
 The uniform slots the fragment stage declares, each carrying the name it
 binds under. Declaration order is the order their values pack in.
 
-<a id="rustdoc-item-1021"></a>
+<a id="rustdoc-item-1013"></a>
 
 ### `with_texture_slots`
 
@@ -147,7 +147,7 @@ pub fn with_texture_slots<impl IntoIterator<Item = ShaderTextureSlot>: IntoItera
 The texture slots the fragment stage declares, each carrying the name it
 binds under and the bindings the shader declares it at.
 
-<a id="rustdoc-item-1022"></a>
+<a id="rustdoc-item-1014"></a>
 
 ### `with_engine_parameters`
 
@@ -157,7 +157,7 @@ pub fn with_engine_parameters(self: Self, pass_engine_parameters: bool) -> Self;
 
 Whether the shader reads the engine's parameters, at set 0.
 
-<a id="rustdoc-item-1023"></a>
+<a id="rustdoc-item-1015"></a>
 
 ### `with_camera_parameters`
 
@@ -167,7 +167,7 @@ pub fn with_camera_parameters(self: Self, pass_camera_parameters: bool) -> Self;
 
 Whether the shader reads the camera's parameters, at set 1.
 
-<a id="rustdoc-item-957"></a>
+<a id="rustdoc-item-949"></a>
 
 ### `build`
 
@@ -194,15 +194,15 @@ read fails, or the bytes are not UTF-8 text.
 - `TryFrom<U>`
 - `Any`
 - `ToOwned`
+- `CastableFrom<ST, Uninit, Uninit>`
+- `CastableFrom<ST, Initialized, Initialized>`
+- `Read<Exclusive, BecauseExclusive>`
 - `Instrument`
 - `WithSubscriber`
 - `IntoEither`
 - `Pointable`
 - `OwoColorize`
 - `ErasedDestructor`
-- `CastableFrom<ST, Uninit, Uninit>`
-- `CastableFrom<ST, Initialized, Initialized>`
-- `Read<Exclusive, BecauseExclusive>`
 - `MirrorObject`
 - `MirrorValue`
 - `MirrorReturn`

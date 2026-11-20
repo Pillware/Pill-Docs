@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-3291"></a>
+<a id="rustdoc-item-3546"></a>
 
 # Function `pill_development_host::native_library::staging_last_write`
 
@@ -8,7 +8,7 @@
 pub(in native_library) fn staging_last_write(path: &std::path::Path) -> std::time::SystemTime;
 ```
 
-Visibility: `{'restricted': {'parent': 3075, 'path': '::native_library'}}` · Source: `hosting\pill_development_host\src\native_library.rs:1747`
+Visibility: `{'restricted': {'parent': 3326, 'path': '::native_library'}}` · Source: `hosting\pill_development_host\src\native_library.rs:2034`
 
 Returns when a staging directory was last written to.
 

@@ -8,7 +8,7 @@
 pub(crate) struct MeshDrawer;
 ```
 
-Visibility: `crate` · Source: `extensions\pill_master_renderer\pill_master_renderer\src\drawers\mesh_drawer.rs:262`
+Visibility: `crate` · Source: `extensions\pill_master_renderer\modules\runtime\gpu\src\drawers\mesh_drawer.rs:262`
 
 Owns the instance buffer and records a frame's mesh draws through it.
 

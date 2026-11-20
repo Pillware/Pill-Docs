@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1995"></a>
+<a id="rustdoc-item-2020"></a>
 
 # Function `pill_csharp_bridge::resources::publish_bindings`
 
@@ -8,7 +8,7 @@
 pub(in resources) fn publish_bindings(bindings: std::collections::HashMap<super::components::StableComponentId, ResourceBinding>);
 ```
 
-Visibility: `{'restricted': {'parent': 1993, 'path': '::resources'}}` · Source: `csharp\pill_csharp_bridge\src\resources.rs:179`
+Visibility: `{'restricted': {'parent': 2018, 'path': '::resources'}}` · Source: `csharp\pill_csharp_bridge\src\resources.rs:179`
 
 Replaces the live table with one generation's bindings.
 

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-6174"></a>
+<a id="rustdoc-item-8139"></a>
 
 # Struct `pill_editor_core::panels::PanelRegistrations`
 
@@ -17,7 +17,7 @@ that has since unloaded cannot reach a live entry.
 
 ## Fields
 
-<a id="rustdoc-item-6173"></a>
+<a id="rustdoc-item-8138"></a>
 
 ### `pending`
 
@@ -29,7 +29,7 @@ The requests, oldest first.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-6175"></a>
+<a id="rustdoc-item-8140"></a>
 
 ### `push`
 
@@ -39,7 +39,7 @@ pub fn push(self: &mut Self, request: PanelRequest);
 
 Queues one request.
 
-<a id="rustdoc-item-6176"></a>
+<a id="rustdoc-item-8141"></a>
 
 ### `drain`
 

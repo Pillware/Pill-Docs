@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-2034"></a>
+<a id="rustdoc-item-2059"></a>
 
 # Function `pill_csharp_bridge::resources::relayout_declared_resource`
 
@@ -8,7 +8,7 @@
 pub(in resources) fn relayout_declared_resource(engine: &mut pill_engine::Engine, existing: &ResourceBinding, arriving: &ManagedResourceDeclaration) -> Result<(), pill_core::error::CSharpError>;
 ```
 
-Visibility: `{'restricted': {'parent': 1993, 'path': '::resources'}}` · Source: `csharp\pill_csharp_bridge\src\resources.rs:668`
+Visibility: `{'restricted': {'parent': 2018, 'path': '::resources'}}` · Source: `csharp\pill_csharp_bridge\src\resources.rs:668`
 
 ## Errors
 

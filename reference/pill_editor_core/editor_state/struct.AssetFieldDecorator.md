@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-3293"></a>
+<a id="rustdoc-item-3428"></a>
 
 # Struct `pill_editor_core::editor_state::AssetFieldDecorator`
 
@@ -8,13 +8,13 @@
 pub struct AssetFieldDecorator;
 ```
 
-Source: `editor\pill_editor_core\src\editor_state\mod.rs:476`
+Source: `editor\pill_editor_core\src\editor_state\mod.rs:524`
 
 One field decorator an asset type declares, as the Inspector reads it.
 
 ## Fields
 
-<a id="rustdoc-item-3332"></a>
+<a id="rustdoc-item-3467"></a>
 
 ### `key`
 
@@ -24,7 +24,7 @@ key: String
 
 The document key the decorator applies to.
 
-<a id="rustdoc-item-3333"></a>
+<a id="rustdoc-item-3468"></a>
 
 ### `decorator`
 
@@ -36,7 +36,7 @@ How the row draws.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-3335"></a>
+<a id="rustdoc-item-3470"></a>
 
 ### `find`
 

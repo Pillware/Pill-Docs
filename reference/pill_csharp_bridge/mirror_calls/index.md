@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1727"></a>
+<a id="rustdoc-item-1751"></a>
 
 # Module `pill_csharp_bridge::mirror_calls`
 
@@ -37,20 +37,20 @@ does anything else.
 ## Module contents
 
 ### Functions
-- [`ffi_asset_loader_read`](fn.ffi_asset_loader_read.md#rustdoc-item-1739) — Reads the file at `path` for `AssetLoader.Load()`.
-- [`ffi_get_native_resource`](fn.ffi_get_native_resource.md#rustdoc-item-1738) — Writes the address of the Rust-owned resource registered under the shared
-- [`ffi_take_mirror_text`](fn.ffi_take_mirror_text.md#rustdoc-item-1737) — Takes the last error or the returned string of the mirrored call that just
-- [`is_callable_by_managed_code`](fn.is_callable_by_managed_code.md#rustdoc-item-1741) — Reports whether managed code can call a resolved row.
-- [`statically_linked_mirror_methods`](fn.statically_linked_mirror_methods.md#rustdoc-item-1740) — Builds the mirror-method table of this binary from its own inventory.
+- [`ffi_asset_loader_read`](fn.ffi_asset_loader_read.md#rustdoc-item-1763) — Reads the file at `path` for `AssetLoader.Load()`.
+- [`ffi_get_native_resource`](fn.ffi_get_native_resource.md#rustdoc-item-1762) — Writes the address of the Rust-owned resource registered under the shared
+- [`ffi_take_mirror_text`](fn.ffi_take_mirror_text.md#rustdoc-item-1761) — Takes the last error or the returned string of the mirrored call that just
+- [`is_callable_by_managed_code`](fn.is_callable_by_managed_code.md#rustdoc-item-1765) — Reports whether managed code can call a resolved row.
+- [`statically_linked_mirror_methods`](fn.statically_linked_mirror_methods.md#rustdoc-item-1764) — Builds the mirror-method table of this binary from its own inventory.
 
 ### Constants
-- [`HELD_ASSET_BYTES`](constant.HELD_ASSET_BYTES.md#rustdoc-item-1736) — The bytes the last `ffi_asset_loader_read` on this thread handed out.
-- [`HELD_MIRROR_TEXT`](constant.HELD_MIRROR_TEXT.md#rustdoc-item-1735) — The text the last `ffi_take_mirror_text` on this thread handed out.
-- [`STATUS_ACCESS_NOT_DECLARED`](constant.STATUS_ACCESS_NOT_DECLARED.md#rustdoc-item-1729) — The running system did not declare this access.
-- [`STATUS_MISSING`](constant.STATUS_MISSING.md#rustdoc-item-1728) — The call asked for something that does not exist: no text in the channel,
-- [`STATUS_NO_ACTIVE_SCOPE`](constant.STATUS_NO_ACTIVE_SCOPE.md#rustdoc-item-1730) — No managed invocation is running on this thread.
-- [`STATUS_NULL_OUTPUT`](constant.STATUS_NULL_OUTPUT.md#rustdoc-item-1732) — One of the output locations the call writes was null.
-- [`STATUS_OK`](constant.STATUS_OK.md#rustdoc-item-1726) — The call succeeded.
-- [`STATUS_PANICKED`](constant.STATUS_PANICKED.md#rustdoc-item-1731) — A panic was caught inside the call.
-- [`TEXT_LAST_ERROR`](constant.TEXT_LAST_ERROR.md#rustdoc-item-1733) — `ffi_take_mirror_text` kind for the last error.
-- [`TEXT_RETURN_STRING`](constant.TEXT_RETURN_STRING.md#rustdoc-item-1734) — `ffi_take_mirror_text` kind for the returned string.
+- [`HELD_ASSET_BYTES`](constant.HELD_ASSET_BYTES.md#rustdoc-item-1760) — The bytes the last `ffi_asset_loader_read` on this thread handed out.
+- [`HELD_MIRROR_TEXT`](constant.HELD_MIRROR_TEXT.md#rustdoc-item-1759) — The text the last `ffi_take_mirror_text` on this thread handed out.
+- [`STATUS_ACCESS_NOT_DECLARED`](constant.STATUS_ACCESS_NOT_DECLARED.md#rustdoc-item-1753) — The running system did not declare this access.
+- [`STATUS_MISSING`](constant.STATUS_MISSING.md#rustdoc-item-1752) — The call asked for something that does not exist: no text in the channel,
+- [`STATUS_NO_ACTIVE_SCOPE`](constant.STATUS_NO_ACTIVE_SCOPE.md#rustdoc-item-1754) — No managed invocation is running on this thread.
+- [`STATUS_NULL_OUTPUT`](constant.STATUS_NULL_OUTPUT.md#rustdoc-item-1756) — One of the output locations the call writes was null.
+- [`STATUS_OK`](constant.STATUS_OK.md#rustdoc-item-1750) — The call succeeded.
+- [`STATUS_PANICKED`](constant.STATUS_PANICKED.md#rustdoc-item-1755) — A panic was caught inside the call.
+- [`TEXT_LAST_ERROR`](constant.TEXT_LAST_ERROR.md#rustdoc-item-1757) — `ffi_take_mirror_text` kind for the last error.
+- [`TEXT_RETURN_STRING`](constant.TEXT_RETURN_STRING.md#rustdoc-item-1758) — `ffi_take_mirror_text` kind for the returned string.

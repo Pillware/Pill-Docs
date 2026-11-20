@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1066"></a>
+<a id="rustdoc-item-1079"></a>
 
 # Struct `pill_ui_theme::theme::Shape`
 
@@ -8,14 +8,14 @@
 pub struct Shape;
 ```
 
-Source: `ui\pill_ui_theme\src\theme.rs:296`
+Source: `ui\pill_ui_theme\src\theme.rs:298`
 
 The corner radii, strokes, shadows and two accent widths a UI reads from
 the theme.
 
 ## Fields
 
-<a id="rustdoc-item-431"></a>
+<a id="rustdoc-item-439"></a>
 
 ### `corner_radius`
 
@@ -25,7 +25,7 @@ corner_radius: u8
 
 The default corner radius.
 
-<a id="rustdoc-item-433"></a>
+<a id="rustdoc-item-441"></a>
 
 ### `window_corner_radius`
 
@@ -35,7 +35,7 @@ window_corner_radius: u8
 
 A window's corner radius.
 
-<a id="rustdoc-item-435"></a>
+<a id="rustdoc-item-443"></a>
 
 ### `menu_corner_radius`
 
@@ -45,7 +45,7 @@ menu_corner_radius: u8
 
 A menu's or popup's corner radius.
 
-<a id="rustdoc-item-437"></a>
+<a id="rustdoc-item-445"></a>
 
 ### `window_stroke`
 
@@ -55,7 +55,7 @@ window_stroke: Stroke
 
 The stroke around a window.
 
-<a id="rustdoc-item-440"></a>
+<a id="rustdoc-item-448"></a>
 
 ### `window_shadow`
 
@@ -65,7 +65,7 @@ window_shadow: Shadow
 
 The window shadow.
 
-<a id="rustdoc-item-443"></a>
+<a id="rustdoc-item-451"></a>
 
 ### `popup_shadow`
 
@@ -75,7 +75,7 @@ popup_shadow: Shadow
 
 The popup shadow.
 
-<a id="rustdoc-item-445"></a>
+<a id="rustdoc-item-453"></a>
 
 ### `selection_stroke`
 
@@ -85,7 +85,7 @@ selection_stroke: Stroke
 
 The stroke around selected text.
 
-<a id="rustdoc-item-447"></a>
+<a id="rustdoc-item-455"></a>
 
 ### `tab_underline_width`
 
@@ -95,7 +95,7 @@ tab_underline_width: f32
 
 The active tab's underline width.
 
-<a id="rustdoc-item-449"></a>
+<a id="rustdoc-item-457"></a>
 
 ### `selected_row_bar_width`
 

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-579"></a>
+<a id="rustdoc-item-576"></a>
 
 # Function `pill_master_renderer::chain::scaled_target_refusal`
 
@@ -8,7 +8,7 @@
 pub(in chain) fn scaled_target_refusal(pass: &crate::frame::ResolvedPass) -> Option<String>;
 ```
 
-Visibility: `{'restricted': {'parent': 534, 'path': '::chain'}}` · Source: `extensions\pill_master_renderer\pill_master_renderer\src\chain.rs:615`
+Visibility: `{'restricted': {'parent': 531, 'path': '::chain'}}` · Source: `extensions\pill_master_renderer\modules\runtime\gpu\src\chain.rs:615`
 
 Why a pass cannot write a target scaled down from the surface, or `None`
 when it can.

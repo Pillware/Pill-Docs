@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-2243"></a>
+<a id="rustdoc-item-2303"></a>
 
 # Function `pill_editor_core::drain::command_touches_files`
 
@@ -8,6 +8,6 @@
 pub(in drain) fn command_touches_files(command: &crate::editor_state::EditorCommand) -> bool;
 ```
 
-Visibility: `{'restricted': {'parent': 2242, 'path': '::drain'}}` · Source: `editor\pill_editor_core\src\drain.rs:236`
+Visibility: `{'restricted': {'parent': 2297, 'path': '::drain'}}` · Source: `editor\pill_editor_core\src\drain.rs:371`
 
 Whether one command changes files on disk.

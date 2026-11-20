@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-6792"></a>
+<a id="rustdoc-item-8843"></a>
 
 # Enum `pill_editor_core::scripted::AssetEdit`
 
@@ -8,13 +8,13 @@
 pub enum AssetEdit { ... }
 ```
 
-Source: `editor\pill_editor_core\src\scripted.rs:429`
+Source: `editor\pill_editor_core\src\scripted.rs:484`
 
 One recorded asset-file edit an `edit asset` line queues.
 
 ## Variants
 
-<a id="rustdoc-item-7038"></a>
+<a id="rustdoc-item-9096"></a>
 
 ### `Create`
 
@@ -24,7 +24,7 @@ Create
 
 `edit asset create <type> <folder|-> <name>` - create a standalone asset.
 
-<a id="rustdoc-item-7040"></a>
+<a id="rustdoc-item-9098"></a>
 
 ### `Delete`
 
@@ -34,7 +34,7 @@ Delete
 
 `edit asset delete <path>` - delete one file.
 
-<a id="rustdoc-item-7043"></a>
+<a id="rustdoc-item-9101"></a>
 
 ### `Move`
 
@@ -44,7 +44,7 @@ Move
 
 `edit asset move <from> <to>` - move one file.
 
-<a id="rustdoc-item-7045"></a>
+<a id="rustdoc-item-9103"></a>
 
 ### `Meta`
 

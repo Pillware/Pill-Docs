@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-2006"></a>
+<a id="rustdoc-item-2049"></a>
 
 # Struct `pill_master_renderer::ui::renderer::UiRenderer`
 
@@ -8,17 +8,17 @@
 pub struct UiRenderer;
 ```
 
-Source: `extensions\pill_master_renderer\pill_master_renderer\src\ui\renderer.rs:154`
+Source: `extensions\pill_master_renderer\modules\runtime\gpu\src\ui\renderer.rs:154`
 
 The GPU resources that draw `pill_ui_frame` draw lists.
 
 One instance belongs to one device and one target format. The caller uploads
-texture changes once per frame ([`Self::apply_texture_set`](#rustdoc-item-3019)) and then calls
-[`Self::render`](#rustdoc-item-3020) once per surface.
+texture changes once per frame ([`Self::apply_texture_set`](#rustdoc-item-3056)) and then calls
+[`Self::render`](#rustdoc-item-3057) once per surface.
 
 ## Fields
 
-<a id="rustdoc-item-3005"></a>
+<a id="rustdoc-item-3042"></a>
 
 ### `pipeline`
 
@@ -28,7 +28,7 @@ pipeline: wgpu::RenderPipeline
 
 _No documentation provided._
 
-<a id="rustdoc-item-3006"></a>
+<a id="rustdoc-item-3043"></a>
 
 ### `globals_buffer`
 
@@ -38,7 +38,7 @@ globals_buffer: wgpu::Buffer
 
 _No documentation provided._
 
-<a id="rustdoc-item-3007"></a>
+<a id="rustdoc-item-3044"></a>
 
 ### `globals_bind_group`
 
@@ -48,7 +48,7 @@ globals_bind_group: wgpu::BindGroup
 
 _No documentation provided._
 
-<a id="rustdoc-item-3008"></a>
+<a id="rustdoc-item-3045"></a>
 
 ### `texture_layout`
 
@@ -58,7 +58,7 @@ texture_layout: wgpu::BindGroupLayout
 
 _No documentation provided._
 
-<a id="rustdoc-item-3010"></a>
+<a id="rustdoc-item-3047"></a>
 
 ### `sampler`
 
@@ -68,7 +68,7 @@ sampler: wgpu::Sampler
 
 The sampler used for textures that ask for [`UiTextureFilter::Linear`].
 
-<a id="rustdoc-item-3012"></a>
+<a id="rustdoc-item-3049"></a>
 
 ### `nearest_sampler`
 
@@ -78,7 +78,7 @@ nearest_sampler: wgpu::Sampler
 
 The sampler used for textures that ask for [`UiTextureFilter::Nearest`].
 
-<a id="rustdoc-item-3013"></a>
+<a id="rustdoc-item-3050"></a>
 
 ### `textures`
 
@@ -90,7 +90,7 @@ Every texture the received sets carried and this renderer has not freed,
 with the revision it was uploaded at. A new instance starts empty, so
 its first set uploads everything.
 
-<a id="rustdoc-item-3015"></a>
+<a id="rustdoc-item-3052"></a>
 
 ### `vertices`
 
@@ -101,7 +101,7 @@ vertices: crate::stream_buffer::StreamBuffer
 The vertices of every list on the surface being drawn, one list after
 the next.
 
-<a id="rustdoc-item-3016"></a>
+<a id="rustdoc-item-3053"></a>
 
 ### `indices`
 
@@ -112,7 +112,7 @@ indices: crate::stream_buffer::StreamBuffer
 The indices of every list on the surface being drawn, in the same
 order.
 
-<a id="rustdoc-item-3017"></a>
+<a id="rustdoc-item-3054"></a>
 
 ### `scratch_vertices`
 
@@ -123,7 +123,7 @@ scratch_vertices: Vec<GpuVertex>
 Vertices converted for the surface being drawn. The next surface clears
 and refills them, so their allocation is reused.
 
-<a id="rustdoc-item-3018"></a>
+<a id="rustdoc-item-3055"></a>
 
 ### `scratch_indices`
 
@@ -135,7 +135,7 @@ Indices of the surface being drawn, reused in the same way.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-3021"></a>
+<a id="rustdoc-item-3058"></a>
 
 ### `new`
 
@@ -150,7 +150,7 @@ Creates the pipeline and the resources it draws with for
 surface format's sRGB variant. The shader writes linear light and relies
 on the target to encode it.
 
-<a id="rustdoc-item-3019"></a>
+<a id="rustdoc-item-3056"></a>
 
 ### `apply_texture_set`
 
@@ -166,7 +166,7 @@ uploads all of them from this one call and can draw with them straight
 away. A running instance uploads only the textures whose revision
 changed.
 
-<a id="rustdoc-item-3022"></a>
+<a id="rustdoc-item-3059"></a>
 
 ### `apply_texture`
 
@@ -177,7 +177,7 @@ pub(in ui::renderer) fn apply_texture(self: &mut Self, device: &wgpu::Device, qu
 Uploads one texture's whole image at the revision it carries. A GPU
 texture of the same size is reused instead of creating a new one.
 
-<a id="rustdoc-item-3020"></a>
+<a id="rustdoc-item-3057"></a>
 
 ### `render`
 

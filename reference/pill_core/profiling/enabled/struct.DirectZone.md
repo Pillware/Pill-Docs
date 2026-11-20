@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1219"></a>
+<a id="rustdoc-item-1229"></a>
 
 # Struct `pill_core::profiling::enabled::DirectZone`
 
@@ -8,7 +8,7 @@
 pub(in profiling::enabled) struct DirectZone;
 ```
 
-Visibility: `{'restricted': {'parent': 1217, 'path': '::profiling::enabled'}}` · Source: `engine\pill_core\src\profiling.rs:147`
+Visibility: `{'restricted': {'parent': 1227, 'path': '::profiling::enabled'}}` · Source: `engine\pill_core\src\profiling.rs:147`
 
 A Tracy zone opened through the client itself.
 
@@ -23,7 +23,7 @@ zone ends.
 
 ## Fields
 
-<a id="rustdoc-item-1214"></a>
+<a id="rustdoc-item-1224"></a>
 
 ### `span`
 
@@ -35,7 +35,7 @@ _No documentation provided._
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-1220"></a>
+<a id="rustdoc-item-1230"></a>
 
 ### `open`
 
@@ -46,7 +46,7 @@ pub(in profiling::enabled) fn open(name: &str, color: u32, function: &str, file:
 Opens a zone called `name` drawn in `color` (`0xRRGGBB`, or `0` for
 the viewer's own choice), or `None` when Tracy is not running.
 
-<a id="rustdoc-item-1221"></a>
+<a id="rustdoc-item-1231"></a>
 
 ### `text`
 

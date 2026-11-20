@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-552"></a>
+<a id="rustdoc-item-553"></a>
 
 # Static `pill_development_host::build_runner::BUILD_OUTPUT`
 
@@ -8,7 +8,7 @@
 pub(in build_runner) static BUILD_OUTPUT: std::sync::Mutex<std::collections::VecDeque<String>> = _;
 ```
 
-Visibility: `{'restricted': {'parent': 545, 'path': '::build_runner'}}` · Source: `hosting\pill_development_host\src\build_runner.rs:55`
+Visibility: `{'restricted': {'parent': 546, 'path': '::build_runner'}}` · Source: `hosting\pill_development_host\src\build_runner.rs:55`
 
 The last lines the most recent build wrote to stderr, for the editor's
 Problems panel.

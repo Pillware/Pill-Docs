@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-4196"></a>
+<a id="rustdoc-item-4453"></a>
 
 # Function `pill_development_host::runtime::try_project_fast_path`
 
@@ -8,7 +8,7 @@
 pub(in runtime) fn try_project_fast_path(host: &mut DevHost, may_start: bool);
 ```
 
-Visibility: `{'restricted': {'parent': 3859, 'path': '::runtime'}}` · Source: `hosting\pill_development_host\src\runtime.rs:2469`
+Visibility: `{'restricted': {'parent': 4115, 'path': '::runtime'}}` · Source: `hosting\pill_development_host\src\runtime.rs:2568`
 
 Try to deliver a pending project edit by patching, not rebuilding.
 

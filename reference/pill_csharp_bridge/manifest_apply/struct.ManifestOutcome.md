@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1605"></a>
+<a id="rustdoc-item-1629"></a>
 
 # Struct `pill_csharp_bridge::manifest_apply::ManifestOutcome`
 
@@ -17,7 +17,7 @@ folds it into whatever report its own callers read.
 
 ## Fields
 
-<a id="rustdoc-item-1601"></a>
+<a id="rustdoc-item-1625"></a>
 
 ### `added`
 
@@ -27,7 +27,7 @@ added: Vec<String>
 
 Entries the arriving manifest declares for the first time.
 
-<a id="rustdoc-item-1602"></a>
+<a id="rustdoc-item-1626"></a>
 
 ### `migrated`
 
@@ -37,7 +37,7 @@ migrated: Vec<String>
 
 Entries whose layout changed and whose stored data was migrated.
 
-<a id="rustdoc-item-1603"></a>
+<a id="rustdoc-item-1627"></a>
 
 ### `renamed`
 
@@ -48,7 +48,7 @@ renamed: Vec<String>
 Entries the manifest renamed through an alias, shown as
 `old name -> new name`.
 
-<a id="rustdoc-item-1604"></a>
+<a id="rustdoc-item-1628"></a>
 
 ### `retired`
 

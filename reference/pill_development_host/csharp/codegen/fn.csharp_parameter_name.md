@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1330"></a>
+<a id="rustdoc-item-1404"></a>
 
 # Function `pill_development_host::csharp::codegen::csharp_parameter_name`
 
@@ -8,7 +8,7 @@
 pub(in csharp) fn csharp_parameter_name(argument_index: usize, rust_name: &str) -> String;
 ```
 
-Visibility: `{'restricted': {'parent': 1331, 'path': '::csharp'}}` · Source: `hosting\pill_development_host\src\csharp\codegen.rs:867`
+Visibility: `{'restricted': {'parent': 1405, 'path': '::csharp'}}` · Source: `hosting\pill_development_host\src\csharp\codegen.rs:864`
 
 Returns the parameter name the generated C# uses for one mirrored-method
 argument.

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-4128"></a>
+<a id="rustdoc-item-4385"></a>
 
 # Function `pill_development_host::runtime::forget_prologue_records`
 
@@ -8,7 +8,7 @@
 pub(in runtime) fn forget_prologue_records(host: &mut DevHost);
 ```
 
-Visibility: `{'restricted': {'parent': 3859, 'path': '::runtime'}}` · Source: `hosting\pill_development_host\src\runtime.rs:2159`
+Visibility: `{'restricted': {'parent': 4115, 'path': '::runtime'}}` · Source: `hosting\pill_development_host\src\runtime.rs:2258`
 
 Forget the patch records a replaced image invalidated: the saved prologue
 bytes and every active generation.

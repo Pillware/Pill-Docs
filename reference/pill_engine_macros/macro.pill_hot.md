@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-409"></a>
+<a id="rustdoc-item-433"></a>
 
 # Procedural macro `pill_engine_macros::pill_hot`
 
@@ -8,7 +8,7 @@
 proc_macro pill_hot
 ```
 
-Source: `engine\pill_engine_macros\src\lib.rs:1947`
+Source: `engine\pill_engine_macros\src\lib.rs:2344`
 
 Marks a system function as hot-patchable, so the host can replace its
 implementation without registering it again.

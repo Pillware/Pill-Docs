@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-2045"></a>
+<a id="rustdoc-item-2088"></a>
 
 # Function `pill_master_renderer::renderer::draw_preview`
 
@@ -8,7 +8,7 @@
 pub(in renderer) fn draw_preview(renderer: &mut Renderer, request: &pill_renderer_api::PreviewRequest, assets_manager: &pill_engine::AssetManager) -> std::result::Result<(), &'static str>;
 ```
 
-Visibility: `{'restricted': {'parent': 1847, 'path': '::renderer'}}` · Source: `extensions\pill_master_renderer\pill_master_renderer\src\renderer.rs:1419`
+Visibility: `{'restricted': {'parent': 1890, 'path': '::renderer'}}` · Source: `extensions\pill_master_renderer\modules\runtime\gpu\src\renderer.rs:1419`
 
 Draw one preview, naming what stopped it when it cannot be drawn.
 

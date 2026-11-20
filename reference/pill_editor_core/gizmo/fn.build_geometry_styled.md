@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-4165"></a>
+<a id="rustdoc-item-4640"></a>
 
 # Function `pill_editor_core::gizmo::build_geometry_styled`
 
@@ -8,7 +8,7 @@
 pub fn build_geometry_styled(mode: GizmoMode, origin: [f32; 3], basis: [[f32; 3]; 3], lengths: [f32; 3], states: HandleStates) -> GizmoGeometry;
 ```
 
-Source: `editor\pill_editor_core\src\gizmo.rs:634`
+Source: `editor\pill_editor_core\src\gizmo.rs:752`
 
 Builds the handles of `mode` around `origin`, one per basis vector, each as
 long as `lengths` gives for its axis.

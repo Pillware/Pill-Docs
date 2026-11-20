@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1520"></a>
+<a id="rustdoc-item-1565"></a>
 
 # Struct `pill_editor_core::commands::KeybindingsFile`
 
@@ -8,7 +8,7 @@
 pub struct KeybindingsFile;
 ```
 
-Source: `editor\pill_editor_core\src\commands.rs:863`
+Source: `editor\pill_editor_core\src\commands.rs:880`
 
 The keybindings file: the active preset and the per-command chord
 overrides.
@@ -19,7 +19,7 @@ listed with an empty array is unbound.
 
 ## Fields
 
-<a id="rustdoc-item-1604"></a>
+<a id="rustdoc-item-1650"></a>
 
 ### `preset`
 
@@ -29,7 +29,7 @@ preset: Option<KeymapPreset>
 
 The preset to activate; absent keeps the current one.
 
-<a id="rustdoc-item-1605"></a>
+<a id="rustdoc-item-1651"></a>
 
 ### `overrides`
 

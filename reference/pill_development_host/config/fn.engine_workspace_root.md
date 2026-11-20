@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1262"></a>
+<a id="rustdoc-item-1282"></a>
 
 # Function `pill_development_host::config::engine_workspace_root`
 
@@ -8,7 +8,7 @@
 pub(crate) fn engine_workspace_root() -> Result<std::path::PathBuf, pill_core::error::ConfigError>;
 ```
 
-Visibility: `crate` · Source: `hosting\pill_development_host\src\config.rs:1599`
+Visibility: `crate` · Source: `hosting\pill_development_host\src\config.rs:1806`
 
 Directory holding the engine workspace: the base every stored relative path
 is resolved against.

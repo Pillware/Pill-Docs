@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-4364"></a>
+<a id="rustdoc-item-6080"></a>
 
 # Function `pill_engine_core::engine::run_registered_system`
 
@@ -8,7 +8,7 @@
 pub(in engine) fn run_registered_system(world: &mut crate::world::World, command_queue: &mut crate::commands::CommandQueue, failures: &mut Vec<crate::error::SystemFailure>, registered_system: &mut RegisteredSystem);
 ```
 
-Visibility: `{'restricted': {'parent': 4158, 'path': '::engine'}}` · Source: `engine\pill_engine_core\src\engine.rs:1736`
+Visibility: `{'restricted': {'parent': 5715, 'path': '::engine'}}` · Source: `engine\pill_engine_core\src\engine.rs:2376`
 
 Runs one registered system on the calling thread.
 

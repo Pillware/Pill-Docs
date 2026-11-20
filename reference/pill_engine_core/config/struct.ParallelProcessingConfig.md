@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-3504"></a>
+<a id="rustdoc-item-2019"></a>
 
 # Struct `pill_engine_core::config::ParallelProcessingConfig`
 
@@ -16,7 +16,7 @@ Read a constant as `crate::config::ParallelProcessingConfig::<CONSTANT>`.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-3505"></a>
+<a id="rustdoc-item-2020"></a>
 
 ### `SPLITTING_HINT_WINDOW`
 
@@ -29,7 +29,7 @@ iterator loop takes. Each new sample moves the average by `1/32 ≈ 0.031`
 of the difference, so the value follows roughly the last 32 samples
 instead of copying one slow run.
 
-<a id="rustdoc-item-3506"></a>
+<a id="rustdoc-item-2021"></a>
 
 ### `TARGET_ITERATOR_WORK_GROUP_DURATION`
 
@@ -46,7 +46,7 @@ the work is split less finely. 50 µs works well because a sleeping
 thread needs about 10 µs to wake, so the wake-up cost stays small
 beside the work.
 
-<a id="rustdoc-item-3507"></a>
+<a id="rustdoc-item-2022"></a>
 
 ### `WORK_GROUPS_PER_THREAD`
 
@@ -61,7 +61,7 @@ threads do not run equally fast (efficiency cores on a hybrid CPU, or
 two hyperthreads sharing one core): the faster threads take the groups
 the slower ones have not reached yet.
 
-<a id="rustdoc-item-3509"></a>
+<a id="rustdoc-item-2024"></a>
 
 ### `DEFAULT_ITERATOR_SLICE_SIZE`
 
@@ -73,10 +73,10 @@ Default number of entities in one parallel work slice.
 
 A starting value chosen for sequential (streaming) access, not tuned
 by measurement: the access pattern and the CPU's prefetching make the
-exact number matter little. [`default_entities_per_slice`](fn.default_entities_per_slice.md#rustdoc-item-3508) scales it
+exact number matter little. [`default_entities_per_slice`](fn.default_entities_per_slice.md#rustdoc-item-2023) scales it
 down for a query whose components have unusually large rows.
 
-<a id="rustdoc-item-3510"></a>
+<a id="rustdoc-item-2025"></a>
 
 ### `MINIMUM_SLICE_SIZE`
 
@@ -99,12 +99,12 @@ Rayon tasks would cost more than the work itself.
 - `TryInto<U>`
 - `TryFrom<U>`
 - `Any`
+- `CastableFrom<ST, Uninit, Uninit>`
+- `CastableFrom<ST, Initialized, Initialized>`
+- `Read<Exclusive, BecauseExclusive>`
 - `Instrument`
 - `WithSubscriber`
 - `IntoEither`
 - `Pointable`
 - `OwoColorize`
 - `ErasedDestructor`
-- `CastableFrom<ST, Uninit, Uninit>`
-- `CastableFrom<ST, Initialized, Initialized>`
-- `Read<Exclusive, BecauseExclusive>`

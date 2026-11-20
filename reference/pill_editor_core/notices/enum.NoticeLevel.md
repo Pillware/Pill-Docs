@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-2068"></a>
+<a id="rustdoc-item-2124"></a>
 
 # Enum `pill_editor_core::notices::NoticeLevel`
 
@@ -14,7 +14,7 @@ How serious one toast is.
 
 ## Variants
 
-<a id="rustdoc-item-5568"></a>
+<a id="rustdoc-item-7534"></a>
 
 ### `Error`
 
@@ -24,7 +24,7 @@ Error
 
 A build or a patch failed; the previous generation keeps running.
 
-<a id="rustdoc-item-5569"></a>
+<a id="rustdoc-item-7535"></a>
 
 ### `Warning`
 
@@ -34,7 +34,7 @@ Warning
 
 Something worth a second look: a rollback, a refused drop.
 
-<a id="rustdoc-item-5570"></a>
+<a id="rustdoc-item-7536"></a>
 
 ### `Note`
 
@@ -46,7 +46,7 @@ A plain notice: a reload finished, a patch went live.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-5571"></a>
+<a id="rustdoc-item-7537"></a>
 
 ### `name`
 

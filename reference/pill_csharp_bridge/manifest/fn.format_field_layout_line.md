@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1503"></a>
+<a id="rustdoc-item-1527"></a>
 
 # Function `pill_csharp_bridge::manifest::format_field_layout_line`
 

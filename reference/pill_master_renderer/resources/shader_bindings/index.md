@@ -1,10 +1,10 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-2852"></a>
+<a id="rustdoc-item-2889"></a>
 
 # Module `pill_master_renderer::resources::shader_bindings`
 
-Visibility: `{'restricted': {'parent': 2227, 'path': '::resources'}}` · Source: `extensions\pill_master_renderer\pill_master_renderer\src\resources\shader_bindings.rs:1`
+Visibility: `{'restricted': {'parent': 2270, 'path': '::resources'}}` · Source: `extensions\pill_master_renderer\modules\runtime\gpu\src\resources\shader_bindings.rs:1`
 
 The bind groups a shader's declared slots resolve to, built once for each
 material or pass that has any.
@@ -12,9 +12,9 @@ material or pass that has any.
 ## Responsibilities
 
 - Pack the parameter values of a material or a pass into the uniform buffer
-  its shader reads ([`write_parameters`](fn.write_parameters.md#rustdoc-item-2850), sized by [`uniform_size`](fn.uniform_size.md#rustdoc-item-2849)).
+  its shader reads ([`write_parameters`](fn.write_parameters.md#rustdoc-item-2887), sized by [`uniform_size`](fn.uniform_size.md#rustdoc-item-2886)).
 - Resolve every texture slot the shader declares into one textures bind
-  group ([`shader_bind_groups`](fn.shader_bind_groups.md#rustdoc-item-2848)): a texture the material or pass names, a
+  group ([`shader_bind_groups`](fn.shader_bind_groups.md#rustdoc-item-2885)): a texture the material or pass names, a
   source the caller resolves, or the renderer's stand-in.
 
 ## Design
@@ -36,6 +36,6 @@ means.
 ## Module contents
 
 ### Functions
-- [`shader_bind_groups`](fn.shader_bind_groups.md#rustdoc-item-2848) — Builds the parameters and textures bind groups a shader reads, for one
-- [`uniform_size`](fn.uniform_size.md#rustdoc-item-2849) — The byte size of the uniform buffer a shader's parameter slots need.
-- [`write_parameters`](fn.write_parameters.md#rustdoc-item-2850) — Packs the parameter values of a material or a pass into the uniform buffer
+- [`shader_bind_groups`](fn.shader_bind_groups.md#rustdoc-item-2885) — Builds the parameters and textures bind groups a shader reads, for one
+- [`uniform_size`](fn.uniform_size.md#rustdoc-item-2886) — The byte size of the uniform buffer a shader's parameter slots need.
+- [`write_parameters`](fn.write_parameters.md#rustdoc-item-2887) — Packs the parameter values of a material or a pass into the uniform buffer

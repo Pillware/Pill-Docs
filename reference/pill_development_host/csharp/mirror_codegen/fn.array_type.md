@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1652"></a>
+<a id="rustdoc-item-1727"></a>
 
 # Function `pill_development_host::csharp::mirror_codegen::array_type`
 
@@ -8,7 +8,7 @@
 pub(in csharp::mirror_codegen) fn array_type(tag: &str) -> Result<String, String>;
 ```
 
-Visibility: `{'restricted': {'parent': 1426, 'path': '::csharp::mirror_codegen'}}` · Source: `hosting\pill_development_host\src\csharp\mirror_codegen.rs:341`
+Visibility: `{'restricted': {'parent': 1501, 'path': '::csharp::mirror_codegen'}}` · Source: `hosting\pill_development_host\src\csharp\mirror_codegen.rs:341`
 
 The C# type for an `array:<element>:<length>` tag.
 

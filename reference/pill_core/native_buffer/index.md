@@ -43,14 +43,14 @@ reloaded generation reaches the same instance the allocation did.
 ## Module contents
 
 ### Functions
-- [`allocate`](fn.allocate.md#rustdoc-item-1114) — Allocates one block of `byte_capacity` element bytes with the given element
-- [`header_size`](fn.header_size.md#rustdoc-item-1115) — Returns the distance in bytes between a block's elements and its
-- [`live_blocks`](fn.live_blocks.md#rustdoc-item-1113) — Returns the number of live blocks in the process.
-- [`live_bytes`](fn.live_bytes.md#rustdoc-item-1112) — Returns the total number of element bytes held by live blocks.
-- [`reference_count`](fn.reference_count.md#rustdoc-item-1118) — Returns how many references the block behind `element_pointer` holds.
-- [`release`](fn.release.md#rustdoc-item-1116) — Drops one reference to a block's elements, and frees the block when the
-- [`retain`](fn.retain.md#rustdoc-item-1117) — Takes one more reference to a block's elements.
+- [`allocate`](fn.allocate.md#rustdoc-item-1124) — Allocates one block of `byte_capacity` element bytes with the given element
+- [`header_size`](fn.header_size.md#rustdoc-item-1125) — Returns the distance in bytes between a block's elements and its
+- [`live_blocks`](fn.live_blocks.md#rustdoc-item-1123) — Returns the number of live blocks in the process.
+- [`live_bytes`](fn.live_bytes.md#rustdoc-item-1122) — Returns the total number of element bytes held by live blocks.
+- [`reference_count`](fn.reference_count.md#rustdoc-item-1128) — Returns how many references the block behind `element_pointer` holds.
+- [`release`](fn.release.md#rustdoc-item-1126) — Drops one reference to a block's elements, and frees the block when the
+- [`retain`](fn.retain.md#rustdoc-item-1127) — Takes one more reference to a block's elements.
 
 ### Statics
-- [`LIVE_BLOCKS`](static.LIVE_BLOCKS.md#rustdoc-item-1111) — Number of live blocks, counted across the whole process.
-- [`LIVE_BYTES`](static.LIVE_BYTES.md#rustdoc-item-1109) — Element bytes held by the live blocks, counted across the whole process.
+- [`LIVE_BLOCKS`](static.LIVE_BLOCKS.md#rustdoc-item-1121) — Number of live blocks, counted across the whole process.
+- [`LIVE_BYTES`](static.LIVE_BYTES.md#rustdoc-item-1119) — Element bytes held by the live blocks, counted across the whole process.

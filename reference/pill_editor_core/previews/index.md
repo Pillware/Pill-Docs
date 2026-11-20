@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-6390"></a>
+<a id="rustdoc-item-8428"></a>
 
 # Module `pill_editor_core::previews`
 
@@ -29,10 +29,10 @@ decides *what* to ask for.
 ## Module contents
 
 ### Functions
-- [`preview_asset`](fn.preview_asset.md#rustdoc-item-6387) — The preview a listing row asks for, when its type is a texture, a material
-- [`preview_asset_for`](fn.preview_asset_for.md#rustdoc-item-6391) — The preview of the listing row that `listing_key` names.
-- [`preview_file_path`](fn.preview_file_path.md#rustdoc-item-6389) — The file a listing row's preview uses: its path below the project's asset
-- [`render_previews`](fn.render_previews.md#rustdoc-item-6386) — Whether the preferences document asks for rendered asset previews.
+- [`preview_asset`](fn.preview_asset.md#rustdoc-item-8425) — The preview a listing row asks for, when its type is a texture, a material
+- [`preview_asset_for`](fn.preview_asset_for.md#rustdoc-item-8429) — The preview of the listing row that `listing_key` names.
+- [`preview_file_path`](fn.preview_file_path.md#rustdoc-item-8427) — The file a listing row's preview uses: its path below the project's asset
+- [`render_previews`](fn.render_previews.md#rustdoc-item-8424) — Whether the preferences document asks for rendered asset previews.
 
 ### Constants
-- [`RENDER_PREVIEWS_KEY`](constant.RENDER_PREVIEWS_KEY.md#rustdoc-item-6385) — The preferences key that holds whether rendered asset previews are on.
+- [`RENDER_PREVIEWS_KEY`](constant.RENDER_PREVIEWS_KEY.md#rustdoc-item-8423) — The preferences key that holds whether rendered asset previews are on.

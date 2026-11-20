@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-2276"></a>
+<a id="rustdoc-item-2350"></a>
 
 # Struct `pill_development_host::hot_patch::worker::BuiltBody`
 
@@ -14,7 +14,7 @@ A compiled and loaded patch image.
 
 ## Fields
 
-<a id="rustdoc-item-2305"></a>
+<a id="rustdoc-item-2379"></a>
 
 ### `library`
 
@@ -25,7 +25,7 @@ library: libloading::Library
 The loaded library. It is never unloaded, because a dispatch slot will
 point inside it for the rest of the process.
 
-<a id="rustdoc-item-2306"></a>
+<a id="rustdoc-item-2380"></a>
 
 ### `artifact_bytes`
 
@@ -35,7 +35,7 @@ artifact_bytes: u64
 
 Size on disk, for the analytics line.
 
-<a id="rustdoc-item-2307"></a>
+<a id="rustdoc-item-2381"></a>
 
 ### `compile_ms`
 
@@ -45,7 +45,7 @@ compile_ms: f64
 
 Milliseconds spent in `rustc`.
 
-<a id="rustdoc-item-2308"></a>
+<a id="rustdoc-item-2382"></a>
 
 ### `load_ms`
 

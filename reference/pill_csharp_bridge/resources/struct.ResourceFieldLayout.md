@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1925"></a>
+<a id="rustdoc-item-1950"></a>
 
 # Struct `pill_csharp_bridge::resources::ResourceFieldLayout`
 
@@ -18,7 +18,7 @@ its binding, so there is no longer-lived value to intern a name against.
 
 ## Fields
 
-<a id="rustdoc-item-1919"></a>
+<a id="rustdoc-item-1944"></a>
 
 ### `name`
 
@@ -28,7 +28,7 @@ name: String
 
 Field name. A reload matches the two layouts on it.
 
-<a id="rustdoc-item-1920"></a>
+<a id="rustdoc-item-1945"></a>
 
 ### `type_tag`
 
@@ -38,7 +38,7 @@ type_tag: String
 
 Engine type tag, already reduced to the form a migration plan compares.
 
-<a id="rustdoc-item-1921"></a>
+<a id="rustdoc-item-1946"></a>
 
 ### `offset`
 
@@ -48,7 +48,7 @@ offset: usize
 
 Byte offset of the field within the resource.
 
-<a id="rustdoc-item-1922"></a>
+<a id="rustdoc-item-1947"></a>
 
 ### `size`
 
@@ -58,7 +58,7 @@ size: usize
 
 Byte width of the field.
 
-<a id="rustdoc-item-1923"></a>
+<a id="rustdoc-item-1948"></a>
 
 ### `default`
 
@@ -70,7 +70,7 @@ Bytes of the declared default for this field, already parsed from the
 field's declared type. A reload writes them when it adds the field or
 resets it.
 
-<a id="rustdoc-item-1924"></a>
+<a id="rustdoc-item-1949"></a>
 
 ### `decorations`
 

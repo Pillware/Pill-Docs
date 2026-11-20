@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-865"></a>
+<a id="rustdoc-item-909"></a>
 
 # Enum `pill_editor_core::camera::CameraNavigation`
 
@@ -14,7 +14,7 @@ One camera navigation gesture.
 
 ## Variants
 
-<a id="rustdoc-item-862"></a>
+<a id="rustdoc-item-906"></a>
 
 ### `Orbit`
 
@@ -24,7 +24,7 @@ Orbit
 
 Turn around the pivot.
 
-<a id="rustdoc-item-863"></a>
+<a id="rustdoc-item-907"></a>
 
 ### `Pan`
 
@@ -34,7 +34,7 @@ Pan
 
 Slide the pivot in the view's plane.
 
-<a id="rustdoc-item-864"></a>
+<a id="rustdoc-item-908"></a>
 
 ### `Dolly`
 

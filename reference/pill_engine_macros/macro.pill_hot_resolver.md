@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-436"></a>
+<a id="rustdoc-item-542"></a>
 
 # Procedural macro `pill_engine_macros::pill_hot_resolver`
 
@@ -8,7 +8,7 @@
 proc_macro pill_hot_resolver
 ```
 
-Source: `engine\pill_engine_macros\src\lib.rs:2854`
+Source: `engine\pill_engine_macros\src\lib.rs:3965`
 
 Emits the hot-patch resolver export on its own.
 

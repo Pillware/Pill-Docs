@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-436"></a>
+<a id="rustdoc-item-437"></a>
 
 # Function `pill_development_host::analytics::render_startup_report`
 
@@ -8,7 +8,7 @@
 pub(in analytics) fn render_startup_report(collector: &Analytics) -> String;
 ```
 
-Visibility: `{'restricted': {'parent': 1, 'path': '::analytics'}}` · Source: `hosting\pill_development_host\src\analytics.rs:1295`
+Visibility: `{'restricted': {'parent': 1, 'path': '::analytics'}}` · Source: `hosting\pill_development_host\src\analytics.rs:1332`
 
 Render the startup report as one multi-line log message ([`log_block_colored`]):
 the title, the totals, one table row per module with a total row, then each

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1108"></a>
+<a id="rustdoc-item-1121"></a>
 
 # Struct `pill_ui_theme::theme::WidgetStyle`
 
@@ -8,13 +8,13 @@
 pub struct WidgetStyle;
 ```
 
-Source: `ui\pill_ui_theme\src\theme.rs:339`
+Source: `ui\pill_ui_theme\src\theme.rs:341`
 
 One widget's look in one interaction state.
 
 ## Fields
 
-<a id="rustdoc-item-1102"></a>
+<a id="rustdoc-item-1115"></a>
 
 ### `bg_fill`
 
@@ -25,7 +25,7 @@ bg_fill: Rgba
 The fill for widgets that must have a background, such as a check box
 or a text edit.
 
-<a id="rustdoc-item-1103"></a>
+<a id="rustdoc-item-1116"></a>
 
 ### `weak_bg_fill`
 
@@ -35,7 +35,7 @@ weak_bg_fill: Rgba
 
 The fill for widgets whose background is optional, such as buttons.
 
-<a id="rustdoc-item-1104"></a>
+<a id="rustdoc-item-1117"></a>
 
 ### `bg_stroke`
 
@@ -45,7 +45,7 @@ bg_stroke: Stroke
 
 The outline drawn around a widget that has one.
 
-<a id="rustdoc-item-1105"></a>
+<a id="rustdoc-item-1118"></a>
 
 ### `fg_stroke`
 
@@ -55,7 +55,7 @@ fg_stroke: Stroke
 
 The text and glyph colour.
 
-<a id="rustdoc-item-1106"></a>
+<a id="rustdoc-item-1119"></a>
 
 ### `corner_radius`
 
@@ -65,7 +65,7 @@ corner_radius: u8
 
 The corner radius in this state.
 
-<a id="rustdoc-item-1107"></a>
+<a id="rustdoc-item-1120"></a>
 
 ### `expansion`
 

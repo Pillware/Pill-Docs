@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-753"></a>
+<a id="rustdoc-item-867"></a>
 
 # Struct `pill_editor::runner::transform_gizmo::ScreenProjection`
 
@@ -8,18 +8,18 @@
 pub(in runner) struct ScreenProjection;
 ```
 
-Visibility: `{'restricted': {'parent': 483, 'path': '::runner'}}` · Source: `editor\pill_editor\src\runner\transform_gizmo.rs:943`
+Visibility: `{'restricted': {'parent': 539, 'path': '::runner'}}` · Source: `editor\pill_editor\src\runner\transform_gizmo.rs:1200`
 
 One scene view's camera basis and projection terms, in the surface's
 physical pixels.
 
-Built by [`EditorWindow::screen_projection`](../editor_window/struct.EditorWindow.md#rustdoc-item-752). Every point a frame projects
+Built by [`EditorWindow::screen_projection`](../editor_window/struct.EditorWindow.md#rustdoc-item-866). Every point a frame projects
 into the same view shares these terms, so they are captured once rather
 than recomputed for each point.
 
 ## Fields
 
-<a id="rustdoc-item-1071"></a>
+<a id="rustdoc-item-1519"></a>
 
 ### `eye`
 
@@ -29,7 +29,7 @@ eye: [f32; 3]
 
 _No documentation provided._
 
-<a id="rustdoc-item-1073"></a>
+<a id="rustdoc-item-1520"></a>
 
 ### `forward`
 
@@ -39,7 +39,7 @@ forward: [f32; 3]
 
 _No documentation provided._
 
-<a id="rustdoc-item-1074"></a>
+<a id="rustdoc-item-1521"></a>
 
 ### `right`
 
@@ -49,7 +49,7 @@ right: [f32; 3]
 
 _No documentation provided._
 
-<a id="rustdoc-item-1075"></a>
+<a id="rustdoc-item-1522"></a>
 
 ### `up`
 
@@ -59,7 +59,7 @@ up: [f32; 3]
 
 _No documentation provided._
 
-<a id="rustdoc-item-1076"></a>
+<a id="rustdoc-item-1523"></a>
 
 ### `tangent`
 
@@ -69,7 +69,7 @@ tangent: f32
 
 _No documentation provided._
 
-<a id="rustdoc-item-1077"></a>
+<a id="rustdoc-item-1524"></a>
 
 ### `aspect`
 
@@ -79,7 +79,7 @@ aspect: f32
 
 _No documentation provided._
 
-<a id="rustdoc-item-1078"></a>
+<a id="rustdoc-item-1525"></a>
 
 ### `width`
 
@@ -89,7 +89,7 @@ width: f32
 
 _No documentation provided._
 
-<a id="rustdoc-item-1079"></a>
+<a id="rustdoc-item-1526"></a>
 
 ### `height`
 
@@ -101,7 +101,7 @@ _No documentation provided._
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-1080"></a>
+<a id="rustdoc-item-1527"></a>
 
 ### `project`
 
@@ -112,7 +112,7 @@ pub(in runner) fn project(self: &Self, point: [f32; 3]) -> Option<(f32, f32)>;
 Where `point` appears on the view's surface, in physical pixels, or
 `None` when it is at or behind the camera.
 
-<a id="rustdoc-item-1081"></a>
+<a id="rustdoc-item-1528"></a>
 
 ### `size`
 

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-7220"></a>
+<a id="rustdoc-item-9278"></a>
 
 # Function `pill_editor_core::scripted::number`
 
@@ -8,7 +8,7 @@
 pub(in scripted) fn number<T: std::str::FromStr>(cursor: &mut Cursor<'_>, reason: &str) -> Result<T, ParseError>;
 ```
 
-Visibility: `{'restricted': {'parent': 7129, 'path': '::scripted'}}` · Source: `editor\pill_editor_core\src\scripted.rs:1676`
+Visibility: `{'restricted': {'parent': 9187, 'path': '::scripted'}}` · Source: `editor\pill_editor_core\src\scripted.rs:1820`
 
 The next word as a number.
 

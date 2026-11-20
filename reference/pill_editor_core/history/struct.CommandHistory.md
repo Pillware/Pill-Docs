@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-4366"></a>
+<a id="rustdoc-item-4893"></a>
 
 # Struct `pill_editor_core::history::CommandHistory`
 
@@ -14,7 +14,7 @@ The editor's undo stack.
 
 ## Fields
 
-<a id="rustdoc-item-4359"></a>
+<a id="rustdoc-item-4886"></a>
 
 ### `entries`
 
@@ -24,7 +24,7 @@ entries: Vec<HistoryEntry>
 
 Oldest first; `entries[cursor]` is the next redo.
 
-<a id="rustdoc-item-4361"></a>
+<a id="rustdoc-item-4888"></a>
 
 ### `cursor`
 
@@ -34,7 +34,7 @@ cursor: usize
 
 Number of entries currently applied.
 
-<a id="rustdoc-item-4362"></a>
+<a id="rustdoc-item-4889"></a>
 
 ### `step_cap`
 
@@ -44,7 +44,7 @@ step_cap: usize
 
 Maximum number of entries.
 
-<a id="rustdoc-item-4363"></a>
+<a id="rustdoc-item-4890"></a>
 
 ### `memory_budget_bytes`
 
@@ -54,7 +54,7 @@ memory_budget_bytes: usize
 
 Maximum retained bytes.
 
-<a id="rustdoc-item-4364"></a>
+<a id="rustdoc-item-4891"></a>
 
 ### `memory_used_bytes`
 
@@ -64,7 +64,7 @@ memory_used_bytes: usize
 
 Sum of the entries' `memory_bytes`.
 
-<a id="rustdoc-item-4365"></a>
+<a id="rustdoc-item-4892"></a>
 
 ### `registry_stamp`
 
@@ -78,7 +78,7 @@ prune that gets a real stamp does the walk.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-4367"></a>
+<a id="rustdoc-item-4894"></a>
 
 ### `DEFAULT_STEP_CAP`
 
@@ -88,7 +88,7 @@ const DEFAULT_STEP_CAP: usize = 500;
 
 Steps kept when the preferences do not say otherwise.
 
-<a id="rustdoc-item-4368"></a>
+<a id="rustdoc-item-4895"></a>
 
 ### `DEFAULT_MEMORY_BUDGET_BYTES`
 
@@ -98,7 +98,7 @@ const DEFAULT_MEMORY_BUDGET_BYTES: usize = _;
 
 Bytes kept when the preferences do not say otherwise.
 
-<a id="rustdoc-item-4369"></a>
+<a id="rustdoc-item-4896"></a>
 
 ### `DEFAULT_COALESCE_WINDOW`
 
@@ -108,7 +108,7 @@ const DEFAULT_COALESCE_WINDOW: Duration = _;
 
 Continuous edits within this window merge into one step.
 
-<a id="rustdoc-item-4370"></a>
+<a id="rustdoc-item-4897"></a>
 
 ### `new`
 
@@ -119,7 +119,7 @@ pub fn new(step_cap: usize, memory_budget_bytes: usize) -> Self;
 Creates a history that enforces `step_cap` entries and
 `memory_budget_bytes` bytes.
 
-<a id="rustdoc-item-4371"></a>
+<a id="rustdoc-item-4898"></a>
 
 ### `ensure`
 
@@ -130,7 +130,7 @@ pub fn ensure(world: &mut pill_engine::World);
 Registers the history resource, inserting a default only when the world
 has none, so a reload keeps the live history.
 
-<a id="rustdoc-item-4372"></a>
+<a id="rustdoc-item-4899"></a>
 
 ### `clear`
 
@@ -144,7 +144,7 @@ Starting a new scene or opening a file clears the history this way. The
 entries name entities the previous document owned, and undoing one
 would edit a world those entities never belonged to.
 
-<a id="rustdoc-item-4373"></a>
+<a id="rustdoc-item-4900"></a>
 
 ### `set_limits`
 
@@ -158,7 +158,7 @@ over either of them.
 The returned outcome says how many entries that dropped and which limit
 caused it, so the caller can log it.
 
-<a id="rustdoc-item-4374"></a>
+<a id="rustdoc-item-4901"></a>
 
 ### `push`
 
@@ -173,7 +173,7 @@ coalesce.
 close two coalescing edits must be to merge. A push after an undo drops
 the redo tail, because the user has started a new branch.
 
-<a id="rustdoc-item-4375"></a>
+<a id="rustdoc-item-4902"></a>
 
 ### `trim`
 
@@ -183,7 +183,7 @@ pub(in history) fn trim(self: &mut Self) -> (usize, Option<TrimReason>);
 
 Drops the oldest entries until both limits hold.
 
-<a id="rustdoc-item-4376"></a>
+<a id="rustdoc-item-4903"></a>
 
 ### `pop_undo`
 
@@ -193,7 +193,7 @@ pub fn pop_undo(self: &mut Self) -> Option<HistoryEntry>;
 
 Pops the newest applied step for undoing.
 
-<a id="rustdoc-item-4377"></a>
+<a id="rustdoc-item-4904"></a>
 
 ### `pop_redo`
 
@@ -203,7 +203,7 @@ pub fn pop_redo(self: &mut Self) -> Option<HistoryEntry>;
 
 Pops the next unapplied step for redoing.
 
-<a id="rustdoc-item-4378"></a>
+<a id="rustdoc-item-4905"></a>
 
 ### `undo_rollback`
 
@@ -217,7 +217,7 @@ The step is popped before its commands run. When one of them fails, the
 world still shows the edit, so the step must be undoable again rather
 than offered as redoable.
 
-<a id="rustdoc-item-4379"></a>
+<a id="rustdoc-item-4906"></a>
 
 ### `redo_rollback`
 
@@ -227,7 +227,7 @@ pub fn redo_rollback(self: &mut Self);
 
 Puts the cursor back after a redo whose commands failed.
 
-<a id="rustdoc-item-4380"></a>
+<a id="rustdoc-item-4907"></a>
 
 ### `steps`
 
@@ -237,7 +237,7 @@ pub fn steps(self: &Self) -> usize;
 
 Entries currently held (applied plus redoable).
 
-<a id="rustdoc-item-4381"></a>
+<a id="rustdoc-item-4908"></a>
 
 ### `undo_depth`
 
@@ -247,7 +247,7 @@ pub fn undo_depth(self: &Self) -> usize;
 
 Steps available to undo.
 
-<a id="rustdoc-item-4382"></a>
+<a id="rustdoc-item-4909"></a>
 
 ### `redo_depth`
 
@@ -257,7 +257,7 @@ pub fn redo_depth(self: &Self) -> usize;
 
 Steps available to redo.
 
-<a id="rustdoc-item-4383"></a>
+<a id="rustdoc-item-4910"></a>
 
 ### `memory_bytes`
 
@@ -267,7 +267,7 @@ pub fn memory_bytes(self: &Self) -> usize;
 
 Retained size in bytes.
 
-<a id="rustdoc-item-4384"></a>
+<a id="rustdoc-item-4911"></a>
 
 ### `remap_entity`
 
@@ -277,7 +277,7 @@ pub fn remap_entity(self: &mut Self, previous: Entity, assigned: Entity);
 
 Follows an entity to the fresh handle a restore assigned it.
 
-<a id="rustdoc-item-4385"></a>
+<a id="rustdoc-item-4912"></a>
 
 ### `drop_stale`
 

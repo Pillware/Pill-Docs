@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-844"></a>
+<a id="rustdoc-item-851"></a>
 
 # Function `pill_development_host::config::dioxus_executable_path`
 
@@ -8,7 +8,7 @@
 pub(in config) fn dioxus_executable_path() -> Option<&'static std::path::Path>;
 ```
 
-Visibility: `{'restricted': {'parent': 821, 'path': '::config'}}` · Source: `hosting\pill_development_host\src\config.rs:1408`
+Visibility: `{'restricted': {'parent': 823, 'path': '::config'}}` · Source: `hosting\pill_development_host\src\config.rs:1615`
 
 Canonical path of the `dx` executable that launched this host, if any.
 

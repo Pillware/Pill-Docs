@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1217"></a>
+<a id="rustdoc-item-1236"></a>
 
 # Struct `pill_development_host::config::ProjectSettingsFile`
 
@@ -8,7 +8,7 @@
 pub(in config) struct ProjectSettingsFile;
 ```
 
-Visibility: `{'restricted': {'parent': 821, 'path': '::config'}}` · Source: `hosting\pill_development_host\src\config.rs:1274`
+Visibility: `{'restricted': {'parent': 823, 'path': '::config'}}` · Source: `hosting\pill_development_host\src\config.rs:1470`
 
 Values declared by the project's own `project_settings.yaml`.
 
@@ -21,7 +21,7 @@ Unknown keys are refused rather than dropped, so `module:` instead of
 
 ## Fields
 
-<a id="rustdoc-item-1206"></a>
+<a id="rustdoc-item-1225"></a>
 
 ### `name`
 
@@ -31,7 +31,7 @@ name: Option<String>
 
 Project display name; required, used as the window title.
 
-<a id="rustdoc-item-1207"></a>
+<a id="rustdoc-item-1226"></a>
 
 ### `build_binary_name`
 
@@ -41,7 +41,7 @@ build_binary_name: Option<String>
 
 Artifact file base; required, letters/digits/underscores only.
 
-<a id="rustdoc-item-1208"></a>
+<a id="rustdoc-item-1227"></a>
 
 ### `version`
 
@@ -51,7 +51,7 @@ version: Option<String>
 
 Optional package version.
 
-<a id="rustdoc-item-1209"></a>
+<a id="rustdoc-item-1228"></a>
 
 ### `author`
 
@@ -61,7 +61,7 @@ author: Option<String>
 
 Optional package author.
 
-<a id="rustdoc-item-1210"></a>
+<a id="rustdoc-item-1229"></a>
 
 ### `description`
 
@@ -71,7 +71,7 @@ description: Option<String>
 
 Optional one-line package description.
 
-<a id="rustdoc-item-1211"></a>
+<a id="rustdoc-item-1230"></a>
 
 ### `modules`
 
@@ -84,7 +84,7 @@ the list: there is no environment-variable override, so the file is
 always the complete answer to "which modules load". The one exception
 is the selected renderer's data crate, which loads first by convention.
 
-<a id="rustdoc-item-1212"></a>
+<a id="rustdoc-item-1231"></a>
 
 ### `renderer`
 
@@ -96,7 +96,7 @@ The renderer the project draws with: the name of its GPU module under
 `extensions/` (`pill_master_renderer` when absent), or `none`. Its data
 crate, `<renderer>_data`, loads in every build.
 
-<a id="rustdoc-item-1213"></a>
+<a id="rustdoc-item-1232"></a>
 
 ### `assets`
 
@@ -106,7 +106,7 @@ assets: ProjectAssetSettings
 
 What the development host does with the project's source assets.
 
-<a id="rustdoc-item-1214"></a>
+<a id="rustdoc-item-1233"></a>
 
 ### `logging`
 
@@ -116,7 +116,7 @@ logging: ProjectLoggingSettings
 
 Log levels over the engine's defaults.
 
-<a id="rustdoc-item-1215"></a>
+<a id="rustdoc-item-1234"></a>
 
 ### `debug_draw`
 
@@ -127,7 +127,7 @@ debug_draw: Option<bool>
 Whether a shipping or web build starts with debug drawing on; the
 development host always draws.
 
-<a id="rustdoc-item-1216"></a>
+<a id="rustdoc-item-1235"></a>
 
 ### `startup_scene`
 

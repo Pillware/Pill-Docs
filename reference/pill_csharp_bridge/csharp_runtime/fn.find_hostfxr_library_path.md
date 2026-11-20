@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1190"></a>
+<a id="rustdoc-item-1212"></a>
 
 # Function `pill_csharp_bridge::csharp_runtime::find_hostfxr_library_path`
 
@@ -8,7 +8,7 @@
 pub(in csharp_runtime) fn find_hostfxr_library_path() -> Result<std::path::PathBuf, pill_core::error::CSharpError>;
 ```
 
-Visibility: `{'restricted': {'parent': 1118, 'path': '::csharp_runtime'}}` · Source: `csharp\pill_csharp_bridge\src\csharp_runtime.rs:395`
+Visibility: `{'restricted': {'parent': 1140, 'path': '::csharp_runtime'}}` · Source: `csharp\pill_csharp_bridge\src\csharp_runtime.rs:395`
 
 Finds the newest installed `hostfxr` library.
 

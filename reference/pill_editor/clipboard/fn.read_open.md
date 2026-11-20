@@ -8,7 +8,7 @@
 pub(in clipboard) fn read_open() -> Result<Option<String>, String>;
 ```
 
-Visibility: `{'restricted': {'parent': 1, 'path': '::clipboard'}}` · Source: `editor\pill_editor\src\clipboard.rs:226`
+Visibility: `{'restricted': {'parent': 1, 'path': '::clipboard'}}` · Source: `editor\pill_editor\src\clipboard.rs:251`
 
 The read path with the clipboard already open.
 

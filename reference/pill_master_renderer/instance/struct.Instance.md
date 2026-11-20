@@ -8,7 +8,7 @@
 pub struct Instance;
 ```
 
-Source: `extensions\pill_master_renderer\pill_master_renderer\src\instance.rs:59`
+Source: `extensions\pill_master_renderer\modules\runtime\gpu\src\instance.rs:59`
 
 One instance's model matrix, packed the way the vertex shader reads it.
 

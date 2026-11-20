@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-804"></a>
+<a id="rustdoc-item-810"></a>
 
 # Function `pill_player::telemetry::apply_logging_settings`
 
@@ -12,7 +12,7 @@ Source: `hosting\pill_player\src\telemetry.rs:306`
 
 Applies a project's logging settings to the installed stack, both lanes.
 
-Called once the project is known, after [`init_telemetry`](fn.init_telemetry.md#rustdoc-item-744). Settings that
+Called once the project is known, after [`init_telemetry`](fn.init_telemetry.md#rustdoc-item-749). Settings that
 name no level and no target leave the filters as they are. Without an
 installed stack there is nothing to reload, which is not an error.
 

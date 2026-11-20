@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-245"></a>
+<a id="rustdoc-item-246"></a>
 
 # Function `pill_engine_macros::layout_emission`
 
@@ -8,7 +8,7 @@
 pub(crate) fn layout_emission(type_ident: &syn::Ident, layout_reference: &proc_macro2::TokenStream) -> proc_macro2::TokenStream;
 ```
 
-Visibility: `crate` · Source: `engine\pill_engine_macros\src\lib.rs:360`
+Visibility: `crate` · Source: `engine\pill_engine_macros\src\lib.rs:485`
 
 The inherent `FIELD_LAYOUT` const and `ComponentLayout` impl every
 layout-carrying derive emits, both naming the same descriptor slice.

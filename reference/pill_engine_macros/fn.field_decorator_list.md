@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-285"></a>
+<a id="rustdoc-item-307"></a>
 
 # Function `pill_engine_macros::field_decorator_list`
 
@@ -8,6 +8,6 @@
 pub(crate) fn field_decorator_list() -> String;
 ```
 
-Visibility: `crate` · Source: `engine\pill_engine_macros\src\lib.rs:567`
+Visibility: `crate` · Source: `engine\pill_engine_macros\src\lib.rs:880`
 
 The decorator vocabulary as one sentence list, for a refusal message.

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-407"></a>
+<a id="rustdoc-item-431"></a>
 
 # Procedural macro `pill_engine_macros::pill_mirror_object`
 
@@ -8,7 +8,7 @@
 proc_macro pill_mirror_object
 ```
 
-Source: `engine\pill_engine_macros\src\lib.rs:1888`
+Source: `engine\pill_engine_macros\src\lib.rs:2281`
 
 Mirrors a Rust type that C# holds by reference: a class wrapping a box the
 managed side owns.

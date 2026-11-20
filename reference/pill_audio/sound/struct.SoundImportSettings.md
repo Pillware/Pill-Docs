@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-534"></a>
+<a id="rustdoc-item-664"></a>
 
 # Struct `pill_audio::sound::SoundImportSettings`
 
@@ -8,7 +8,7 @@
 pub struct SoundImportSettings;
 ```
 
-Source: `extensions\pill_audio\pill_audio\src\sound.rs:214`
+Source: `extensions\pill_audio\modules\runtime\src\sound.rs:209`
 
 How a sound file is read, as stored in its `.meta` file.
 
@@ -38,6 +38,7 @@ default, so files written before it existed still read.
 - `CastableFrom<ST, Uninit, Uninit>`
 - `CastableFrom<ST, Initialized, Initialized>`
 - `Read<Exclusive, BecauseExclusive>`
+- `Equivalent<K>`
 - `FromSample<S>`
 - `ToSample<U>`
 - `Duplex<S>`

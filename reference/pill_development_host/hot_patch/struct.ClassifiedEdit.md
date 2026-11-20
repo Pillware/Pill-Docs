@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-2570"></a>
+<a id="rustdoc-item-2644"></a>
 
 # Struct `pill_development_host::hot_patch::ClassifiedEdit`
 
@@ -8,11 +8,11 @@
 pub(in hot_patch) struct ClassifiedEdit;
 ```
 
-Visibility: `{'restricted': {'parent': 1968, 'path': '::hot_patch'}}` · Source: `hosting\pill_development_host\src\hot_patch\mod.rs:392`
+Visibility: `{'restricted': {'parent': 2042, 'path': '::hot_patch'}}` · Source: `hosting\pill_development_host\src\hot_patch\mod.rs:392`
 
 One file's in-scope edit, with every field the later steps need.
 
-The four fields belong together for the same reason [`Snapshot`](struct.Snapshot.md#rustdoc-item-2539) is one
+The four fields belong together for the same reason [`Snapshot`](struct.Snapshot.md#rustdoc-item-2613) is one
 value: the modification time says when these contents were read. If a later
 step looked the file's time up again, it would pair these bytes with a newer
 timestamp, and a save made during the patch would be recorded as already
@@ -20,7 +20,7 @@ delivered.
 
 ## Fields
 
-<a id="rustdoc-item-2566"></a>
+<a id="rustdoc-item-2640"></a>
 
 ### `path`
 
@@ -30,7 +30,7 @@ path: std::path::PathBuf
 
 The changed file.
 
-<a id="rustdoc-item-2567"></a>
+<a id="rustdoc-item-2641"></a>
 
 ### `declarations`
 
@@ -40,7 +40,7 @@ declarations: Vec<source::HotFunction>
 
 Its changed bodies, sorted by name.
 
-<a id="rustdoc-item-2568"></a>
+<a id="rustdoc-item-2642"></a>
 
 ### `new_contents`
 
@@ -50,7 +50,7 @@ new_contents: String
 
 The file's contents as read during classification.
 
-<a id="rustdoc-item-2569"></a>
+<a id="rustdoc-item-2643"></a>
 
 ### `modified`
 

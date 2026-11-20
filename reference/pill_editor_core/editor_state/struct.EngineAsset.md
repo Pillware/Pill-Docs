@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-3212"></a>
+<a id="rustdoc-item-3347"></a>
 
 # Struct `pill_editor_core::editor_state::EngineAsset`
 
@@ -8,7 +8,7 @@
 pub struct EngineAsset;
 ```
 
-Source: `editor\pill_editor_core\src\editor_state\mod.rs:430`
+Source: `editor\pill_editor_core\src\editor_state\mod.rs:478`
 
 An asset the store holds that has no file of the project's behind it.
 Examples are a chain's built-in passes, the renderer's default material, and
@@ -20,7 +20,7 @@ one names its guid.
 
 ## Fields
 
-<a id="rustdoc-item-3209"></a>
+<a id="rustdoc-item-3344"></a>
 
 ### `kind`
 
@@ -29,9 +29,9 @@ kind: String
 ```
 
 The registered type name a picker matches on, as a listing row's
-[`AssetListing::kind`](struct.AssetListing.md#rustdoc-item-3168).
+[`AssetListing::kind`](struct.AssetListing.md#rustdoc-item-3303).
 
-<a id="rustdoc-item-3210"></a>
+<a id="rustdoc-item-3345"></a>
 
 ### `name`
 
@@ -41,7 +41,7 @@ name: String
 
 The name the store holds it under (`pill.pbr.opaque`).
 
-<a id="rustdoc-item-3211"></a>
+<a id="rustdoc-item-3346"></a>
 
 ### `guid`
 

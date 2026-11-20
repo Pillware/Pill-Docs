@@ -8,7 +8,7 @@
 pub(in frame) static UI_PRODUCER: std::sync::atomic::AtomicU8 = _;
 ```
 
-Visibility: `{'restricted': {'parent': 238, 'path': '::frame'}}` · Source: `extensions\pill_master_renderer\pill_master_renderer\src\frame.rs:54`
+Visibility: `{'restricted': {'parent': 238, 'path': '::frame'}}` · Source: `extensions\pill_master_renderer\modules\runtime\gpu\src\frame.rs:54`
 
 Which producer filled `RenderFrame.ui` on the last frame, so the log states
 a change once instead of on every frame.

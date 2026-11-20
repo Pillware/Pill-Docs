@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-2337"></a>
+<a id="rustdoc-item-2411"></a>
 
 # Constant `pill_development_host::hot_patch::refusal_code::OUTSIDE_HOT_BODY`
 

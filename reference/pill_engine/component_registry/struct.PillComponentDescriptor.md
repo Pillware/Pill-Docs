@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-6"></a>
+<a id="rustdoc-item-10"></a>
 
 # Struct `pill_engine::component_registry::PillComponentDescriptor`
 
@@ -8,7 +8,7 @@
 pub struct PillComponentDescriptor;
 ```
 
-Source: `engine\pill_engine\src\component_registry.rs:50`
+Source: `engine\pill_engine\src\component_registry.rs:51`
 
 One component type declared with `#[derive(PillComponent)]`.
 
@@ -25,8 +25,8 @@ be written in a `const`, so the descriptor can live in a `static`.
 type_name: &'static str
 ```
 
-Fully-qualified type path: the declaring module's path plus the type's
-name.
+The type's stored name, `<crate>::<Type>`: the crate the type is
+compiled in and the type's own name, with no module path between them.
 
 <a id="rustdoc-item-1"></a>
 
@@ -59,6 +59,20 @@ register: fn (_: &mut crate::World)
 
 Registers the component into a world.
 
+<a id="rustdoc-item-7"></a>
+
+### `gizmo`
+
+```rust
+gizmo: Option<pill_engine_core::gizmos::GizmoDeclaration>
+```
+
+The gizmo the type declared with `#[pill(gizmo = ...)]`, if any.
+
+Registration publishes every declaration into the world's
+[`GizmoRegistry`], so the engine's gizmo pass never reads an artifact's
+inventory itself.
+
 ## Trait implementations
 
 - `Borrow<T>`
@@ -68,13 +82,13 @@ Registers the component into a world.
 - `TryInto<U>`
 - `TryFrom<U>`
 - `Any`
+- `CastableFrom<ST, Uninit, Uninit>`
+- `CastableFrom<ST, Initialized, Initialized>`
+- `Read<Exclusive, BecauseExclusive>`
 - `Instrument`
 - `WithSubscriber`
 - `IntoEither`
 - `Pointable`
 - `OwoColorize`
 - `ErasedDestructor`
-- `CastableFrom<ST, Uninit, Uninit>`
-- `CastableFrom<ST, Initialized, Initialized>`
-- `Read<Exclusive, BecauseExclusive>`
 - `Collect`

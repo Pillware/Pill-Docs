@@ -1,10 +1,10 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1638"></a>
+<a id="rustdoc-item-1684"></a>
 
 # Module `pill_master_renderer::readback`
 
-Visibility: `crate` · Source: `extensions\pill_master_renderer\pill_master_renderer\src\readback.rs:1`
+Visibility: `crate` · Source: `extensions\pill_master_renderer\modules\runtime\gpu\src\readback.rs:1`
 
 Mapping a GPU buffer back to the CPU without stalling a frame.
 Mapping a GPU buffer back to the CPU without stalling a frame.
@@ -36,17 +36,17 @@ device's own thread while the frame path polls it.
 ## Module contents
 
 ### Structs
-- [`MappedReadback`](struct.MappedReadback.md#rustdoc-item-768) — A readback buffer that remembers its own mapping.
-- [`MapState`](struct.MapState.md#rustdoc-item-1569) — One buffer's mapping, shared with the callback that reports it.
+- [`MappedReadback`](struct.MappedReadback.md#rustdoc-item-764) — A readback buffer that remembers its own mapping.
+- [`MapState`](struct.MapState.md#rustdoc-item-1615) — One buffer's mapping, shared with the callback that reports it.
 
 ### Enums
-- [`MapOutcome`](enum.MapOutcome.md#rustdoc-item-1684) — What the device's map callback reported.
-- [`Readback`](enum.Readback.md#rustdoc-item-1646) — What one [`MapState::poll`] found.
+- [`MapOutcome`](enum.MapOutcome.md#rustdoc-item-1729) — What the device's map callback reported.
+- [`Readback`](enum.Readback.md#rustdoc-item-1692) — What one [`MapState::poll`] found.
 
 ### Functions
-- [`read_mapped`](fn.read_mapped.md#rustdoc-item-1789) — Reads a mapped buffer through `read`, unmapping it either way.
+- [`read_mapped`](fn.read_mapped.md#rustdoc-item-1833) — Reads a mapped buffer through `read`, unmapping it either way.
 
 ### Constants
-- [`MAPPING_DONE`](constant.MAPPING_DONE.md#rustdoc-item-1639) — The callback reported that the buffer is mapped and readable.
-- [`MAPPING_FAILED`](constant.MAPPING_FAILED.md#rustdoc-item-1640) — The callback reported that the device refused to map the buffer.
-- [`MAPPING_PENDING`](constant.MAPPING_PENDING.md#rustdoc-item-1637) — The map callback has not reported yet.
+- [`MAPPING_DONE`](constant.MAPPING_DONE.md#rustdoc-item-1685) — The callback reported that the buffer is mapped and readable.
+- [`MAPPING_FAILED`](constant.MAPPING_FAILED.md#rustdoc-item-1686) — The callback reported that the device refused to map the buffer.
+- [`MAPPING_PENDING`](constant.MAPPING_PENDING.md#rustdoc-item-1683) — The map callback has not reported yet.

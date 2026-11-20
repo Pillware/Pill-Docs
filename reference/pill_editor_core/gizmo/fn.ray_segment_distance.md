@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-4184"></a>
+<a id="rustdoc-item-4711"></a>
 
 # Function `pill_editor_core::gizmo::ray_segment_distance`
 
@@ -8,7 +8,7 @@
 pub(in gizmo) fn ray_segment_distance(ray_origin: [f32; 3], ray_direction: [f32; 3], start: [f32; 3], end: [f32; 3]) -> Option<(f32, f32)>;
 ```
 
-Visibility: `{'restricted': {'parent': 2489, 'path': '::gizmo'}}` · Source: `editor\pill_editor_core\src\gizmo.rs:1140`
+Visibility: `{'restricted': {'parent': 2580, 'path': '::gizmo'}}` · Source: `editor\pill_editor_core\src\gizmo.rs:1483`
 
 Returns how far along the ray, and how far away from it, the ray comes
 closest to the segment `start..end`.

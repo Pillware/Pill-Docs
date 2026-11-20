@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-2291"></a>
+<a id="rustdoc-item-2351"></a>
 
 # Enum `pill_editor_core::drain::HistoryOutcome`
 
@@ -8,13 +8,13 @@
 pub enum HistoryOutcome { ... }
 ```
 
-Source: `editor\pill_editor_core\src\drain.rs:274`
+Source: `editor\pill_editor_core\src\drain.rs:409`
 
 What one history walk did.
 
 ## Variants
 
-<a id="rustdoc-item-2288"></a>
+<a id="rustdoc-item-2348"></a>
 
 ### `Queued`
 
@@ -24,7 +24,7 @@ Queued
 
 The step's batch is queued for the next drain.
 
-<a id="rustdoc-item-2289"></a>
+<a id="rustdoc-item-2349"></a>
 
 ### `Empty`
 
@@ -34,7 +34,7 @@ Empty
 
 Nothing was left in that direction.
 
-<a id="rustdoc-item-2290"></a>
+<a id="rustdoc-item-2350"></a>
 
 ### `NoQueue`
 

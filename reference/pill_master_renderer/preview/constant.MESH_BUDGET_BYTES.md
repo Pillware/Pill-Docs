@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-594"></a>
+<a id="rustdoc-item-591"></a>
 
 # Constant `pill_master_renderer::preview::MESH_BUDGET_BYTES`
 
@@ -8,7 +8,7 @@
 pub(in preview) const MESH_BUDGET_BYTES: u64 = _;
 ```
 
-Visibility: `{'restricted': {'parent': 592, 'path': '::preview'}}` · Source: `extensions\pill_master_renderer\pill_master_renderer\src\preview.rs:63`
+Visibility: `{'restricted': {'parent': 589, 'path': '::preview'}}` · Source: `extensions\pill_master_renderer\modules\runtime\gpu\src\preview.rs:63`
 
 How many GPU bytes the decoded mesh files may hold.
 

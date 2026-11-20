@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-856"></a>
+<a id="rustdoc-item-863"></a>
 
 # Constant `pill_development_host::config::RENDERER_SHADER_SOURCES_DIRECTORY`
 
@@ -8,7 +8,7 @@
 pub(crate) const RENDERER_SHADER_SOURCES_DIRECTORY: &str = "shader_sources";
 ```
 
-Visibility: `crate` · Source: `hosting\pill_development_host\src\config.rs:249`
+Visibility: `crate` · Source: `hosting\pill_development_host\src\config.rs:279`
 
 Directory at a renderer data crate's root holding the shader sources it
 cooks, relative to the crate.

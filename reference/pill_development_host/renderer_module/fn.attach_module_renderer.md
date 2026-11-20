@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-3857"></a>
+<a id="rustdoc-item-4113"></a>
 
 # Function `pill_development_host::renderer_module::attach_module_renderer`
 

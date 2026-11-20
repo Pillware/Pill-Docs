@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-442"></a>
+<a id="rustdoc-item-450"></a>
 
 # Struct `pill_ui_theme::overrides::ShadowOverride`
 
@@ -8,7 +8,7 @@
 pub struct ShadowOverride;
 ```
 
-Source: `ui\pill_ui_theme\src\overrides.rs:242`
+Source: `ui\pill_ui_theme\src\overrides.rs:246`
 
 One shadow's overridable fields.
 
@@ -18,7 +18,7 @@ reject it without that path.
 
 ## Fields
 
-<a id="rustdoc-item-531"></a>
+<a id="rustdoc-item-539"></a>
 
 ### `offset`
 
@@ -28,7 +28,7 @@ offset: Option<[i32; 2]>
 
 The offset in points. It must fit egui 0.36's `[i8; 2]`.
 
-<a id="rustdoc-item-532"></a>
+<a id="rustdoc-item-540"></a>
 
 ### `blur`
 
@@ -38,7 +38,7 @@ blur: Option<i32>
 
 The blur radius in points. It must fit egui 0.36's `u8`.
 
-<a id="rustdoc-item-533"></a>
+<a id="rustdoc-item-541"></a>
 
 ### `spread`
 
@@ -48,7 +48,7 @@ spread: Option<i32>
 
 The spread in points. It must fit egui 0.36's `u8`.
 
-<a id="rustdoc-item-534"></a>
+<a id="rustdoc-item-542"></a>
 
 ### `color`
 

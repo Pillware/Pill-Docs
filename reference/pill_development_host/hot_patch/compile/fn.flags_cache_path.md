@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1962"></a>
+<a id="rustdoc-item-2036"></a>
 
 # Function `pill_development_host::hot_patch::compile::flags_cache_path`
 
@@ -20,5 +20,5 @@ another checkout's dependency graph. That is exactly the metadata and
 root makes a foreign cache unreachable instead of merely detectable.
 
 Two writers share this path: the fast-patch pipeline, which captures flags
-when it needs them, and [`crate::build_runner::run_build_command`](../../build_runner/fn.run_build_command.md#rustdoc-item-761), which
+when it needs them, and [`crate::build_runner::run_build_command`](../../build_runner/fn.run_build_command.md#rustdoc-item-763), which
 takes the same line out of a build it runs anyway.

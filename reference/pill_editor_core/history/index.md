@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-4360"></a>
+<a id="rustdoc-item-4887"></a>
 
 # Module `pill_editor_core::history`
 
@@ -34,14 +34,14 @@ runs, the remaining entries are moved to that handle with
 ## Module contents
 
 ### Structs
-- [`CommandHistory`](struct.CommandHistory.md#rustdoc-item-4366) — The editor's undo stack.
-- [`HistoryEntry`](struct.HistoryEntry.md#rustdoc-item-4202) — One undoable step.
-- [`PushOutcome`](struct.PushOutcome.md#rustdoc-item-4323) — What a push or a limit change did to the history.
+- [`CommandHistory`](struct.CommandHistory.md#rustdoc-item-4893) — The editor's undo stack.
+- [`HistoryEntry`](struct.HistoryEntry.md#rustdoc-item-4729) — One undoable step.
+- [`PushOutcome`](struct.PushOutcome.md#rustdoc-item-4850) — What a push or a limit change did to the history.
 
 ### Enums
-- [`HistoryEntryKind`](enum.HistoryEntryKind.md#rustdoc-item-4197) — The two kinds of undoable step.
-- [`TrimReason`](enum.TrimReason.md#rustdoc-item-4280) — Why the history dropped its oldest entry.
+- [`HistoryEntryKind`](enum.HistoryEntryKind.md#rustdoc-item-4724) — The two kinds of undoable step.
+- [`TrimReason`](enum.TrimReason.md#rustdoc-item-4807) — Why the history dropped its oldest entry.
 
 ### Functions
-- [`estimate_bytes`](fn.estimate_bytes.md#rustdoc-item-4418) — Estimates how many bytes a batch keeps alive.
-- [`field_value_bytes`](fn.field_value_bytes.md#rustdoc-item-4419) — Returns the bytes one field value holds: a string's length, an array's
+- [`estimate_bytes`](fn.estimate_bytes.md#rustdoc-item-4946) — Estimates how many bytes a batch keeps alive.
+- [`field_value_bytes`](fn.field_value_bytes.md#rustdoc-item-4947) — Returns the bytes one field value holds: a string's length, an array's

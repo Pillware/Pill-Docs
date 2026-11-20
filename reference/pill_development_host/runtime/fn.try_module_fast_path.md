@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-4195"></a>
+<a id="rustdoc-item-4452"></a>
 
 # Function `pill_development_host::runtime::try_module_fast_path`
 
@@ -8,7 +8,7 @@
 pub(in runtime) fn try_module_fast_path(host: &mut DevHost, may_start: bool);
 ```
 
-Visibility: `{'restricted': {'parent': 3859, 'path': '::runtime'}}` · Source: `hosting\pill_development_host\src\runtime.rs:2404`
+Visibility: `{'restricted': {'parent': 4115, 'path': '::runtime'}}` · Source: `hosting\pill_development_host\src\runtime.rs:2503`
 
 Try to deliver every pending extension edit by patching, not rebuilding.
 

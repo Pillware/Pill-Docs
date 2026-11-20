@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-4627"></a>
+<a id="rustdoc-item-6588"></a>
 
 # Function `pill_editor_core::inspector::badge_icon`
 

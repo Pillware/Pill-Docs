@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1258"></a>
+<a id="rustdoc-item-1707"></a>
 
 # Function `pill_editor::runner::paste_chord`
 
@@ -8,7 +8,7 @@
 pub(in runner) fn paste_chord(events: &[pill_engine_core::InputEvent]) -> bool;
 ```
 
-Visibility: `{'restricted': {'parent': 483, 'path': '::runner'}}` · Source: `editor\pill_editor\src\runner\mod.rs:3296`
+Visibility: `{'restricted': {'parent': 539, 'path': '::runner'}}` · Source: `editor\pill_editor\src\runner\mod.rs:3800`
 
 Whether one frame's shell events carry a paste chord.
 

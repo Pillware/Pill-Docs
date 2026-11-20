@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-512"></a>
+<a id="rustdoc-item-522"></a>
 
 # Struct `pill_csharp_bridge::backend::ManagedExports`
 
@@ -8,7 +8,7 @@
 pub(in backend) struct ManagedExports;
 ```
 
-Visibility: `{'restricted': {'parent': 400, 'path': '::backend'}}` · Source: `csharp\pill_csharp_bridge\src\backend.rs:568`
+Visibility: `{'restricted': {'parent': 403, 'path': '::backend'}}` · Source: `csharp\pill_csharp_bridge\src\backend.rs:627`
 
 Every managed export the host calls, resolved once per posture.
 
@@ -21,7 +21,7 @@ one copy.
 
 ## Fields
 
-<a id="rustdoc-item-631"></a>
+<a id="rustdoc-item-647"></a>
 
 ### `init`
 
@@ -31,7 +31,7 @@ init: extern "System" fn (_: *const super::abi::CsEngineApi) -> u8
 
 The managed runtime entry point that receives the API table.
 
-<a id="rustdoc-item-632"></a>
+<a id="rustdoc-item-648"></a>
 
 ### `system_count`
 
@@ -41,7 +41,7 @@ system_count: extern "System" fn () -> u32
 
 Number of registered scheduler systems.
 
-<a id="rustdoc-item-633"></a>
+<a id="rustdoc-item-649"></a>
 
 ### `startup_count`
 
@@ -51,7 +51,7 @@ startup_count: extern "System" fn () -> u32
 
 Number of managed startup methods.
 
-<a id="rustdoc-item-634"></a>
+<a id="rustdoc-item-650"></a>
 
 ### `system_uses_commands`
 
@@ -61,7 +61,37 @@ system_uses_commands: extern "System" fn (_: u32) -> u8
 
 Whether one system declares a Commands parameter.
 
-<a id="rustdoc-item-635"></a>
+<a id="rustdoc-item-651"></a>
+
+### `system_order`
+
+```rust
+system_order: extern "System" fn (_: u32) -> i32
+```
+
+Declared order of one system within its phase.
+
+<a id="rustdoc-item-652"></a>
+
+### `system_run_phase`
+
+```rust
+system_run_phase: extern "System" fn (_: u32) -> u8
+```
+
+Declared frame phase of one system (0, 1 or 2).
+
+<a id="rustdoc-item-653"></a>
+
+### `system_run_in_edit_mode`
+
+```rust
+system_run_in_edit_mode: extern "System" fn (_: u32) -> u8
+```
+
+Whether one system also runs in edit mode.
+
+<a id="rustdoc-item-654"></a>
 
 ### `run_startup`
 
@@ -71,7 +101,7 @@ run_startup: extern "System" fn (_: u32) -> u8
 
 Executes one managed startup method by index.
 
-<a id="rustdoc-item-636"></a>
+<a id="rustdoc-item-655"></a>
 
 ### `manifest_length`
 
@@ -81,7 +111,7 @@ manifest_length: extern "System" fn () -> u32
 
 Byte length of the serialized component manifest.
 
-<a id="rustdoc-item-637"></a>
+<a id="rustdoc-item-656"></a>
 
 ### `copy_manifest`
 
@@ -91,7 +121,7 @@ copy_manifest: extern "System" fn (_: *mut u8, _: u32) -> u8
 
 Copies the serialized component manifest into a caller buffer.
 
-<a id="rustdoc-item-638"></a>
+<a id="rustdoc-item-657"></a>
 
 ### `system_name_length`
 
@@ -101,7 +131,7 @@ system_name_length: extern "System" fn (_: u32) -> u32
 
 Byte length of one system's reflected name.
 
-<a id="rustdoc-item-639"></a>
+<a id="rustdoc-item-658"></a>
 
 ### `copy_system_name`
 
@@ -111,7 +141,7 @@ copy_system_name: extern "System" fn (_: u32, _: *mut u8, _: u32) -> u8
 
 Copies one system's reflected name into a caller buffer.
 
-<a id="rustdoc-item-640"></a>
+<a id="rustdoc-item-659"></a>
 
 ### `access_count`
 
@@ -121,7 +151,7 @@ access_count: extern "System" fn (_: u32) -> u32
 
 Number of accesses one system declared.
 
-<a id="rustdoc-item-641"></a>
+<a id="rustdoc-item-660"></a>
 
 ### `get_access`
 
@@ -131,7 +161,7 @@ get_access: extern "System" fn (_: u32, _: u32, _: *mut super::abi::NativeSystem
 
 Copies one system's reflected accesses into a caller buffer.
 
-<a id="rustdoc-item-642"></a>
+<a id="rustdoc-item-661"></a>
 
 ### `run_system`
 
@@ -141,7 +171,7 @@ run_system: extern "System" fn (_: u32) -> u8
 
 Runs one scheduler system by index.
 
-<a id="rustdoc-item-643"></a>
+<a id="rustdoc-item-662"></a>
 
 ### `system_error_length`
 
@@ -151,7 +181,7 @@ system_error_length: extern "System" fn (_: u32) -> u32
 
 Byte length of one system's last error message.
 
-<a id="rustdoc-item-644"></a>
+<a id="rustdoc-item-663"></a>
 
 ### `copy_system_error`
 
@@ -161,7 +191,7 @@ copy_system_error: extern "System" fn (_: u32, _: *mut u8, _: u32) -> u8
 
 Copies one system's last error message into a caller buffer.
 
-<a id="rustdoc-item-645"></a>
+<a id="rustdoc-item-664"></a>
 
 ### `poll_reload`
 
@@ -171,7 +201,7 @@ poll_reload: extern "System" fn () -> u8
 
 Polls the collectible loader for a rebuilt assembly.
 
-<a id="rustdoc-item-646"></a>
+<a id="rustdoc-item-665"></a>
 
 ### `pending_manifest_length`
 
@@ -181,7 +211,7 @@ pending_manifest_length: extern "System" fn () -> u32
 
 Byte length of the manifest the pending version carries.
 
-<a id="rustdoc-item-647"></a>
+<a id="rustdoc-item-666"></a>
 
 ### `copy_pending_manifest`
 
@@ -191,7 +221,7 @@ copy_pending_manifest: extern "System" fn (_: *mut u8, _: u32) -> u8
 
 Copies the pending version's manifest for validation.
 
-<a id="rustdoc-item-648"></a>
+<a id="rustdoc-item-667"></a>
 
 ### `commit_reload`
 
@@ -201,7 +231,7 @@ commit_reload: extern "System" fn () -> u8
 
 Installs the pending version once its manifest is in force.
 
-<a id="rustdoc-item-649"></a>
+<a id="rustdoc-item-668"></a>
 
 ### `abort_reload`
 
@@ -211,7 +241,7 @@ abort_reload: extern "System" fn () -> u8
 
 Discards the pending version when its manifest cannot be applied.
 
-<a id="rustdoc-item-650"></a>
+<a id="rustdoc-item-669"></a>
 
 ### `notify_assembly_replaced`
 
@@ -223,7 +253,7 @@ Clears the loader's poll interval after an in-process compile.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-651"></a>
+<a id="rustdoc-item-670"></a>
 
 ### `from_dotnet`
 
@@ -237,7 +267,7 @@ The ABI contract is validated before any export is resolved: a runtime
 built against different signatures must be rebuilt before a single one
 of its pointers can be trusted.
 
-<a id="rustdoc-item-652"></a>
+<a id="rustdoc-item-671"></a>
 
 ### `from_aot`
 
@@ -247,7 +277,7 @@ pub(in backend) fn from_aot(runtime: &AotRuntimeContext) -> Result<Self, CSharpE
 
 Resolves every export by its `pill_*` symbol in the AOT library.
 
-Same contract gate as [`Self::from_dotnet`](#rustdoc-item-651), applied before any symbol
+Same contract gate as [`Self::from_dotnet`](#rustdoc-item-670), applied before any symbol
 is read.
 
 ## Trait implementations

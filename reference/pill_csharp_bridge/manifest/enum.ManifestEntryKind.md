@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1334"></a>
+<a id="rustdoc-item-1357"></a>
 
 # Enum `pill_csharp_bridge::manifest::ManifestEntryKind`
 
@@ -18,7 +18,7 @@ manifest that fails validation registers nothing.
 
 ## Variants
 
-<a id="rustdoc-item-1367"></a>
+<a id="rustdoc-item-1390"></a>
 
 ### `Component`
 
@@ -28,7 +28,7 @@ Component
 
 Per-entity storage, registered as a column.
 
-<a id="rustdoc-item-1368"></a>
+<a id="rustdoc-item-1391"></a>
 
 ### `Resource`
 
@@ -59,6 +59,7 @@ One value for the whole world, registered as a foreign resource.
 - `CastableFrom<ST, Uninit, Uninit>`
 - `CastableFrom<ST, Initialized, Initialized>`
 - `Read<Exclusive, BecauseExclusive>`
+- `Equivalent<K>`
 - `Debug`
 - `Clone`
 - `Copy`

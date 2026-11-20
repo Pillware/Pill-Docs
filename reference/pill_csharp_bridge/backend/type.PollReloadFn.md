@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-419"></a>
+<a id="rustdoc-item-425"></a>
 
 # Type alias `pill_csharp_bridge::backend::PollReloadFn`
 
@@ -8,7 +8,7 @@
 pub(in backend) type PollReloadFn = extern "System" fn () -> u8;
 ```
 
-Visibility: `{'restricted': {'parent': 400, 'path': '::backend'}}` · Source: `csharp\pill_csharp_bridge\src\backend.rs:167`
+Visibility: `{'restricted': {'parent': 403, 'path': '::backend'}}` · Source: `csharp\pill_csharp_bridge\src\backend.rs:173`
 
 Signature polling the collectible loader for a new project assembly. The
 return value is one of the `POLL_*` codes above.

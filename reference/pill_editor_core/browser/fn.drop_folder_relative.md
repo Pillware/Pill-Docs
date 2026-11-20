@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-567"></a>
+<a id="rustdoc-item-611"></a>
 
 # Function `pill_editor_core::browser::drop_folder_relative`
 

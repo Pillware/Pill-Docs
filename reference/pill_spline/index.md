@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-242"></a>
+<a id="rustdoc-item-391"></a>
 
 # pill_spline API reference
 
@@ -10,43 +10,47 @@ Extension providing spline paths.
 
 ## Responsibilities
 
-- Defines the [`Spline`](struct.Spline.md#rustdoc-item-6) component: an ordered set of control points.
-- Samples a position anywhere along that path with [`Spline::get_location_at`](struct.Spline.md#rustdoc-item-123).
-- Registers the component through the extension ABI when loaded.
+- Declare the crate's modules and re-export the types a project, the editor
+  tool and the managed mirror name.
+- Register the [`Spline`](component/struct.Spline.md#rustdoc-item-8) component through the extension ABI and fill the
+  world up to the demo path count ([`register`](fn.register.md#rustdoc-item-364)).
+- Provide the artifact's one-time entry point ([`init`](fn.init.md#rustdoc-item-389)).
 
 ## Design
 
-The curve is a uniform Catmull-Rom spline. It passes exactly through every
-control point, which is what makes a hand-placed path behave the way it
-looks in an editor. The first and last control points also serve as the
-outer neighbours of the end segments, so the curve starts and ends exactly
-on them instead of overshooting past them.
+This file holds the artifact surface and nothing else: the component and its
+sampling modes live in [`component`], the curve maths in [`math`](math/index.md#rustdoc-item-378), the
+drawing in [`gizmo`](gizmo/index.md#rustdoc-item-369), and the seeded path in [`demo`](demo/index.md#rustdoc-item-367). Keeping the
+component out of this file is what lets a suite edit one concern without
+rewriting the entry points.
 
-Control points live in a fixed-size array rather than a `Vec`. That keeps
-the component plain data across the module boundary: one library never
-allocates memory another has to free, and `#[repr(C)]` gives every copy of
-the type the same field layout. A project that depends on the crate and the
-module DLL the host loads hold separate copies of the type;
-`#[pill(shared)]` on [`Spline`](struct.Spline.md#rustdoc-item-6) is what makes them one component.
-
-Registration lives in [`register`](fn.register.md#rustdoc-item-1), a plain Rust function, so the crate can
-also be linked statically.
+[`register`](fn.register.md#rustdoc-item-364) is the half a reload repeats, so it is idempotent: it fills up
+to [`DEMO_SPLINE_COUNT`](demo/constant.DEMO_SPLINE_COUNT.md#rustdoc-item-365) rather than spawning a fresh path on every
+generation, and a failed generation rolls back by calling it again on the
+older image. [`init`](fn.init.md#rustdoc-item-389) exists because a statically linked build loads the
+artifact once and calls that entry point alone, so it defers to `register`.
 
 ## Module contents
 
-### Structs
-- [`OmoMO`](struct.OmoMO.md#rustdoc-item-184) — Two coordinates and a handful of mirrored methods: the value type the C#
-- [`Spline`](struct.Spline.md#rustdoc-item-6) — A path through an ordered set of control points.
-- [`TooManyControlPoints`](struct.TooManyControlPoints.md#rustdoc-item-8) — More control points than a [`Spline`] can hold.
+### Modules
+- [`component`](component/index.md#rustdoc-item-4) — The component, its sampling modes and the mirrored entry points.
+- [`demo`](demo/index.md#rustdoc-item-367) — The seeded demonstration path and its entity count.
+- [`gizmo`](gizmo/index.md#rustdoc-item-369) — The curve, its control points and its tangents, drawn as editor chrome.
+- [`math`](math/index.md#rustdoc-item-378) — The two curve segments a spline samples from.
 
 ### Functions
-- [`__pill_register_Spline`](fn.__pill_register_Spline.md#rustdoc-item-180) — Registers this component into the world; used by the artifact-wide
-- [`catmull_rom`](fn.catmull_rom.md#rustdoc-item-238) — Evaluate one Catmull-Rom segment between `start` and `end`.
-- [`demo_spline`](fn.demo_spline.md#rustdoc-item-239) — A demonstration path used to populate the world on first load.
-- [`init`](fn.init.md#rustdoc-item-240) — The artifact's one-time entry point.
-- [`register`](fn.register.md#rustdoc-item-1) — Registers the module's components against the host engine and fills the
+- [`init`](fn.init.md#rustdoc-item-389) — The artifact's one-time entry point.
+- [`register`](fn.register.md#rustdoc-item-364) — Registers the module's components against the host engine and fills the
 
-### Constants
-- [`DEMO_SPLINE_COUNT`](constant.DEMO_SPLINE_COUNT.md#rustdoc-item-2) — Number of demo splines [`register`] keeps in the world.
-- [`MAX_CONTROL_POINTS`](constant.MAX_CONTROL_POINTS.md#rustdoc-item-0) — Maximum number of control points one spline can hold.
-- [`SAMPLE_VERTICAL_OFFSET`](constant.SAMPLE_VERTICAL_OFFSET.md#rustdoc-item-3) — Extra vertical offset added to every position sampled from a curve segment.
+## Re-exports
+
+- [`pub use component::register_component;`](component/fn.register_component.md#rustdoc-item-307)
+- [`pub use component::Spline;`](component/struct.Spline.md#rustdoc-item-8)
+- [`pub use component::TangentMode;`](component/enum.TangentMode.md#rustdoc-item-119)
+- [`pub use component::TooManyControlPoints;`](component/struct.TooManyControlPoints.md#rustdoc-item-10)
+- [`pub use component::MAX_CONTROL_POINTS;`](component/constant.MAX_CONTROL_POINTS.md#rustdoc-item-2)
+- [`pub use demo::demo_spline;`](demo/fn.demo_spline.md#rustdoc-item-366)
+- [`pub use demo::DEMO_SPLINE_COUNT;`](demo/constant.DEMO_SPLINE_COUNT.md#rustdoc-item-365)
+- [`pub use gizmo::draw_spline_gizmo;`](gizmo/fn.draw_spline_gizmo.md#rustdoc-item-374)
+- [`pub use math::catmull_rom;`](math/fn.catmull_rom.md#rustdoc-item-376)
+- [`pub use math::hermite;`](math/fn.hermite.md#rustdoc-item-377)

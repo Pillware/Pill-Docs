@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-811"></a>
+<a id="rustdoc-item-881"></a>
 
 # Struct `pill_renderer_api::preview::PreviewRequest`
 
@@ -14,7 +14,7 @@ One preview asked for.
 
 ## Fields
 
-<a id="rustdoc-item-1482"></a>
+<a id="rustdoc-item-1569"></a>
 
 ### `id`
 
@@ -24,7 +24,7 @@ id: u64
 
 The id that ties the answer to this request.
 
-<a id="rustdoc-item-1483"></a>
+<a id="rustdoc-item-1570"></a>
 
 ### `asset`
 
@@ -45,15 +45,16 @@ The asset to draw.
 - `TryFrom<U>`
 - `Any`
 - `ToOwned`
+- `CastableFrom<ST, Uninit, Uninit>`
+- `CastableFrom<ST, Initialized, Initialized>`
+- `Read<Exclusive, BecauseExclusive>`
 - `Instrument`
 - `WithSubscriber`
 - `IntoEither`
 - `Pointable`
 - `OwoColorize`
 - `ErasedDestructor`
-- `CastableFrom<ST, Uninit, Uninit>`
-- `CastableFrom<ST, Initialized, Initialized>`
-- `Read<Exclusive, BecauseExclusive>`
+- `Equivalent<K>`
 - `Clone`
 - `Debug`
 - `StructuralPartialEq`

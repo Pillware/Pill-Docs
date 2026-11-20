@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-349"></a>
+<a id="rustdoc-item-390"></a>
 
 # Function `pill_engine::component_registry::no_registration`
 
@@ -8,7 +8,7 @@
 pub fn no_registration(_engine: &mut crate::Engine) -> u32;
 ```
 
-Source: `engine\pill_engine\src\component_registry.rs:556`
+Source: `engine\pill_engine\src\component_registry.rs:623`
 
 The registration function of an artifact that declares none.
 

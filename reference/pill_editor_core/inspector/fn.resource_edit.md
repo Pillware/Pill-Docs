@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-4990"></a>
+<a id="rustdoc-item-6953"></a>
 
 # Function `pill_editor_core::inspector::resource_edit`
 
@@ -8,7 +8,7 @@
 pub fn resource_edit(resource: &str, field: &str, value: pill_engine::FieldValue) -> (crate::editor_state::EditorCommand, String);
 ```
 
-Source: `editor\pill_editor_core\src\inspector.rs:1252`
+Source: `editor\pill_editor_core\src\inspector.rs:1259`
 
 One recorded field write on an editor-editable resource.
 

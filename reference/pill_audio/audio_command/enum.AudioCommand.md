@@ -8,7 +8,7 @@
 pub enum AudioCommand { ... }
 ```
 
-Source: `extensions\pill_audio\pill_audio\src\audio_command.rs:34`
+Source: `extensions\pill_audio\modules\runtime\src\audio_command.rs:34`
 
 An action an [`AudioSourceComponent`] has been asked to perform, carried
 out on the next frame.
@@ -83,6 +83,7 @@ can use it.
 - `CastableFrom<ST, Uninit, Uninit>`
 - `CastableFrom<ST, Initialized, Initialized>`
 - `Read<Exclusive, BecauseExclusive>`
+- `Equivalent<K>`
 - `FromSample<S>`
 - `ToSample<U>`
 - `Duplex<S>`

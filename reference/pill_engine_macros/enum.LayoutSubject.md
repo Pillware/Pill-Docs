@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-251"></a>
+<a id="rustdoc-item-252"></a>
 
 # Enum `pill_engine_macros::LayoutSubject`
 
@@ -8,7 +8,7 @@
 pub(crate) enum LayoutSubject { ... }
 ```
 
-Visibility: `crate` · Source: `engine\pill_engine_macros\src\lib.rs:391`
+Visibility: `crate` · Source: `engine\pill_engine_macros\src\lib.rs:516`
 
 Which derive is asking for field descriptors, and so what the emission may
 contain.
@@ -19,7 +19,7 @@ accessor stream.
 
 ## Variants
 
-<a id="rustdoc-item-247"></a>
+<a id="rustdoc-item-248"></a>
 
 ### `Component`
 
@@ -30,7 +30,7 @@ Component
 `#[derive(PillComponent)]`: container fields allowed, heap-field
 accessors emitted, layout consts emitted.
 
-<a id="rustdoc-item-248"></a>
+<a id="rustdoc-item-249"></a>
 
 ### `LayoutOnly`
 
@@ -42,7 +42,7 @@ LayoutOnly
 layout-only type has no registration that could carry trampolines - and
 layout consts emitted.
 
-<a id="rustdoc-item-249"></a>
+<a id="rustdoc-item-250"></a>
 
 ### `MirroredValue`
 
@@ -53,7 +53,7 @@ MirroredValue
 A `#[derive(PillMirror)]` value type: no container fields (it crosses
 the boundary as plain data), no accessors, layout consts emitted.
 
-<a id="rustdoc-item-250"></a>
+<a id="rustdoc-item-251"></a>
 
 ### `ForeignValue`
 
@@ -67,7 +67,7 @@ rule).
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-252"></a>
+<a id="rustdoc-item-253"></a>
 
 ### `allows_containers`
 
@@ -77,7 +77,7 @@ pub(crate) fn allows_containers(self: Self) -> bool;
 
 Whether a `Vec`/`String`-shaped field may appear at all.
 
-<a id="rustdoc-item-253"></a>
+<a id="rustdoc-item-254"></a>
 
 ### `emits_accessors`
 
@@ -87,7 +87,17 @@ pub(crate) fn emits_accessors(self: Self) -> bool;
 
 Whether the heap-field accessor trampolines are emitted.
 
-<a id="rustdoc-item-254"></a>
+<a id="rustdoc-item-255"></a>
+
+### `emits_field_enum`
+
+```rust
+pub(crate) fn emits_field_enum(self: Self) -> bool;
+```
+
+Whether the inherently named field enum is emitted.
+
+<a id="rustdoc-item-256"></a>
 
 ### `emits_layout_consts`
 

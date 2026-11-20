@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-718"></a>
+<a id="rustdoc-item-762"></a>
 
 # Constant `pill_editor_core::camera::DOLLY_EXPONENT_PER_PIXEL`
 

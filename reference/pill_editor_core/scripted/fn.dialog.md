@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-7173"></a>
+<a id="rustdoc-item-9231"></a>
 
 # Function `pill_editor_core::scripted::dialog`
 
@@ -8,7 +8,7 @@
 pub(in scripted) fn dialog(cursor: &mut Cursor<'_>) -> Result<ScriptedCommand, ParseError>;
 ```
 
-Visibility: `{'restricted': {'parent': 7129, 'path': '::scripted'}}` · Source: `editor\pill_editor_core\src\scripted.rs:1007`
+Visibility: `{'restricted': {'parent': 9187, 'path': '::scripted'}}` · Source: `editor\pill_editor_core\src\scripted.rs:1145`
 
 `dialog set name <text>` and `dialog submit`.
 

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-2141"></a>
+<a id="rustdoc-item-2184"></a>
 
 # Function `pill_master_renderer::rendering_resources_manager::install_default_material`
 
@@ -8,7 +8,7 @@
 pub(in rendering_resources_manager) fn install_default_material(state: &mut crate::renderer::State) -> crate::error::Result<(renderer_shader::RendererShaderHandle, renderer_material::RendererMaterialHandle)>;
 ```
 
-Visibility: `{'restricted': {'parent': 2056, 'path': '::rendering_resources_manager'}}` · Source: `extensions\pill_master_renderer\pill_master_renderer\src\rendering_resources_manager.rs:697`
+Visibility: `{'restricted': {'parent': 2099, 'path': '::rendering_resources_manager'}}` · Source: `extensions\pill_master_renderer\modules\runtime\gpu\src\rendering_resources_manager.rs:697`
 
 Builds the built-in lit shader and a material from it, and returns both.
 

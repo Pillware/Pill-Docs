@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-716"></a>
+<a id="rustdoc-item-760"></a>
 
 # Constant `pill_editor_core::camera::MAX_PITCH`
 

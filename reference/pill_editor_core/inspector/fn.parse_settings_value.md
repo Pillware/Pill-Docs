@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-5120"></a>
+<a id="rustdoc-item-7083"></a>
 
 # Function `pill_editor_core::inspector::parse_settings_value`
 
@@ -8,7 +8,7 @@
 pub fn parse_settings_value(text: &str, current: &serde_json::Value) -> Result<serde_json::Value, String>;
 ```
 
-Source: `editor\pill_editor_core\src\inspector.rs:1824`
+Source: `editor\pill_editor_core\src\inspector.rs:1859`
 
 Parse an edited text back into the JSON kind `current` already holds.
 

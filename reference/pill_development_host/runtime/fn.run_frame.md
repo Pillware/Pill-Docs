@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-3921"></a>
+<a id="rustdoc-item-4178"></a>
 
 # Function `pill_development_host::runtime::run_frame`
 
@@ -8,10 +8,10 @@
 pub fn run_frame(host: &mut DevHost);
 ```
 
-Source: `hosting\pill_development_host\src\runtime.rs:3240`
+Source: `hosting\pill_development_host\src\runtime.rs:3436`
 
 Process hot reloads, execute one scheduler frame, and log the frame
 statistics when the reporting window elapses.
 
 The two phases run back to back. A windowed host runs them itself, with its
-renderer step between them (see [`RenderingHost::run_frame`](struct.RenderingHost.md#rustdoc-item-4074)).
+renderer step between them (see [`RenderingHost::run_frame`](struct.RenderingHost.md#rustdoc-item-4331)).

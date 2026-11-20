@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-3641"></a>
+<a id="rustdoc-item-3897"></a>
 
 # Enum `pill_development_host::reload::LoadValidation`
 
@@ -14,7 +14,7 @@ What to check on a freshly loaded replacement before it is committed.
 
 ## Variants
 
-<a id="rustdoc-item-3639"></a>
+<a id="rustdoc-item-3895"></a>
 
 ### `None`
 
@@ -25,7 +25,7 @@ None
 Nothing. This host builds the subject from its own workspace, so the
 contract always holds.
 
-<a id="rustdoc-item-3640"></a>
+<a id="rustdoc-item-3896"></a>
 
 ### `ModuleAbi`
 

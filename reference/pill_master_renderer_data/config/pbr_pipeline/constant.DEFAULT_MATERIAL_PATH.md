@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1465"></a>
+<a id="rustdoc-item-1562"></a>
 
 # Constant `pill_master_renderer_data::config::pbr_pipeline::DEFAULT_MATERIAL_PATH`
 
@@ -8,7 +8,7 @@
 pub const DEFAULT_MATERIAL_PATH: &str = "defaults/pill.pbr.material";
 ```
 
-Source: `extensions\pill_master_renderer\pill_master_renderer_data\src\config\pbr_pipeline\mod.rs:83`
+Source: `extensions\pill_master_renderer\modules\runtime\data\src\config\pbr_pipeline\mod.rs:83`
 
 The material file the chain's default material is imported from, relative
 to this module's `res`.

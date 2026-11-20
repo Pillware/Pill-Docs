@@ -8,7 +8,7 @@
 pub(crate) enum PassSlot { ... }
 ```
 
-Visibility: `crate` · Source: `extensions\pill_master_renderer\pill_master_renderer\src\chain.rs:68`
+Visibility: `crate` · Source: `extensions\pill_master_renderer\modules\runtime\gpu\src\chain.rs:68`
 
 A pass's GPU object, or the reason there is none.
 

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-694"></a>
+<a id="rustdoc-item-704"></a>
 
 # Trait `pill_core::style::PillStyle`
 
@@ -31,7 +31,7 @@ assert!(!styled.is_empty());
 
 ## Required and provided items
 
-<a id="rustdoc-item-1544"></a>
+<a id="rustdoc-item-1554"></a>
 
 ### `module_object_style`
 
@@ -43,7 +43,7 @@ Style a large module object (Engine, Renderer, Window, and so on).
 
 Changes the color and adds bold weight.
 
-<a id="rustdoc-item-1545"></a>
+<a id="rustdoc-item-1555"></a>
 
 ### `general_object_style`
 
@@ -55,7 +55,7 @@ Style a general object (Scene, Component, System, Resource, and so on).
 
 Changes the color.
 
-<a id="rustdoc-item-1546"></a>
+<a id="rustdoc-item-1556"></a>
 
 ### `specific_object_style`
 
@@ -67,7 +67,7 @@ Style a specific object (CameraComponent, Texture, Mesh, and so on).
 
 Changes the color.
 
-<a id="rustdoc-item-1547"></a>
+<a id="rustdoc-item-1557"></a>
 
 ### `name_style`
 
@@ -77,7 +77,7 @@ fn name_style(self: Self) -> String;
 
 Style a name, changing the color and adding quotation marks.
 
-<a id="rustdoc-item-1548"></a>
+<a id="rustdoc-item-1558"></a>
 
 ### `error_style`
 
@@ -87,7 +87,7 @@ fn error_style(self: Self) -> String;
 
 Style an error message, changing the color and adding bold weight.
 
-<a id="rustdoc-item-1549"></a>
+<a id="rustdoc-item-1559"></a>
 
 ### `warn_style`
 
@@ -97,7 +97,7 @@ fn warn_style(self: Self) -> String;
 
 Style a warning message, changing the color and adding bold weight.
 
-<a id="rustdoc-item-1550"></a>
+<a id="rustdoc-item-1560"></a>
 
 ### `debug_style`
 

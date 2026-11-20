@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-5477"></a>
+<a id="rustdoc-item-7440"></a>
 
 # Enum `pill_editor_core::menubar::MenuAction`
 
@@ -8,7 +8,7 @@
 pub enum MenuAction { ... }
 ```
 
-Source: `editor\pill_editor_core\src\menubar.rs:153`
+Source: `editor\pill_editor_core\src\menubar.rs:154`
 
 What a menu item asks the editor to do, as plain data.
 
@@ -17,7 +17,7 @@ the scripted channel make. Nothing here touches the world.
 
 ## Variants
 
-<a id="rustdoc-item-5507"></a>
+<a id="rustdoc-item-7470"></a>
 
 ### `Inert`
 
@@ -27,7 +27,7 @@ Inert
 
 Nothing. The row is disabled, so its action does not apply.
 
-<a id="rustdoc-item-5510"></a>
+<a id="rustdoc-item-7473"></a>
 
 ### `Queue`
 
@@ -38,7 +38,7 @@ Queue
 Queue a recorded step: the label it records under and the commands it
 carries.
 
-<a id="rustdoc-item-5511"></a>
+<a id="rustdoc-item-7474"></a>
 
 ### `CreateAsset`
 
@@ -48,7 +48,7 @@ CreateAsset
 
 Open the create-asset dialog.
 
-<a id="rustdoc-item-5512"></a>
+<a id="rustdoc-item-7475"></a>
 
 ### `CreateScene`
 
@@ -58,7 +58,7 @@ CreateScene
 
 Open the same dialog to create a scene, with the scene type chosen.
 
-<a id="rustdoc-item-5513"></a>
+<a id="rustdoc-item-7476"></a>
 
 ### `SaveSceneAs`
 
@@ -68,7 +68,7 @@ SaveSceneAs
 
 Open the same dialog to write the current world as a scene.
 
-<a id="rustdoc-item-5514"></a>
+<a id="rustdoc-item-7477"></a>
 
 ### `WriteAssetMeta`
 
@@ -78,7 +78,7 @@ WriteAssetMeta
 
 Write the selected asset's missing `.meta` sidecar.
 
-<a id="rustdoc-item-5515"></a>
+<a id="rustdoc-item-7478"></a>
 
 ### `Undo`
 
@@ -88,7 +88,7 @@ Undo
 
 Undo the newest recorded step.
 
-<a id="rustdoc-item-5516"></a>
+<a id="rustdoc-item-7479"></a>
 
 ### `Redo`
 
@@ -98,7 +98,7 @@ Redo
 
 Redo the newest undone step.
 
-<a id="rustdoc-item-5518"></a>
+<a id="rustdoc-item-7481"></a>
 
 ### `ActivateTab`
 
@@ -108,7 +108,7 @@ ActivateTab
 
 Bring a dock tab to the front.
 
-<a id="rustdoc-item-5519"></a>
+<a id="rustdoc-item-7482"></a>
 
 ### `NewSceneView`
 
@@ -118,7 +118,18 @@ NewSceneView
 
 Dock one more scene view, with its own camera and toolbox.
 
-<a id="rustdoc-item-5520"></a>
+<a id="rustdoc-item-7483"></a>
+
+### `TogglePlay`
+
+```rust
+TogglePlay
+```
+
+Start a play session, or stop the one that is running. The toolbar's
+first button and the View menu's Play row both carry it.
+
+<a id="rustdoc-item-7484"></a>
 
 ### `About`
 
@@ -128,7 +139,7 @@ About
 
 Open the About window.
 
-<a id="rustdoc-item-5521"></a>
+<a id="rustdoc-item-7485"></a>
 
 ### `Quit`
 
@@ -138,7 +149,7 @@ Quit
 
 Quit the editor.
 
-<a id="rustdoc-item-5523"></a>
+<a id="rustdoc-item-7487"></a>
 
 ### `Clipboard`
 

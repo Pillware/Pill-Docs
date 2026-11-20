@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1574"></a>
+<a id="rustdoc-item-1584"></a>
 
 # Struct `pill_core::telemetry::capture::LogLine`
 
@@ -14,7 +14,7 @@ One captured log line, with its own copy of every string.
 
 ## Fields
 
-<a id="rustdoc-item-1570"></a>
+<a id="rustdoc-item-1580"></a>
 
 ### `seq`
 
@@ -25,7 +25,7 @@ seq: u64
 Sequence number that only goes up: it starts at 1 and no two lines
 share one.
 
-<a id="rustdoc-item-1571"></a>
+<a id="rustdoc-item-1581"></a>
 
 ### `level`
 
@@ -36,7 +36,7 @@ level: u8
 How serious the line is, low to high: 1 trace, 2 debug, 3 info,
 4 warn, 5 error.
 
-<a id="rustdoc-item-1572"></a>
+<a id="rustdoc-item-1582"></a>
 
 ### `target`
 
@@ -46,7 +46,7 @@ target: String
 
 The tracing target the line came from (the crate or module path).
 
-<a id="rustdoc-item-1573"></a>
+<a id="rustdoc-item-1583"></a>
 
 ### `message`
 

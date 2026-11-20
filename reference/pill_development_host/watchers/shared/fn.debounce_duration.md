@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-4445"></a>
+<a id="rustdoc-item-4704"></a>
 
 # Function `pill_development_host::watchers::shared::debounce_duration`
 

@@ -8,7 +8,7 @@
 pub(crate) async fn captured<T, impl FnOnce() -> T: FnOnce() -> T>(device: &wgpu::Device, make: impl FnOnce() -> T) -> (T, CapturedErrors);
 ```
 
-Visibility: `crate` · Source: `extensions\pill_master_renderer\pill_master_renderer\src\error.rs:134`
+Visibility: `crate` · Source: `extensions\pill_master_renderer\modules\runtime\gpu\src\error.rs:134`
 
 Runs `make` with wgpu's errors captured, and waits for wgpu's answers.
 

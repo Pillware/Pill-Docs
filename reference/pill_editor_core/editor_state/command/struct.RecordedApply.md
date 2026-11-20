@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-2509"></a>
+<a id="rustdoc-item-2605"></a>
 
 # Struct `pill_editor_core::editor_state::command::RecordedApply`
 
@@ -8,13 +8,13 @@
 pub struct RecordedApply;
 ```
 
-Source: `editor\pill_editor_core\src\editor_state\command.rs:609`
+Source: `editor\pill_editor_core\src\editor_state\command.rs:778`
 
-The result of [`EditorCommand::apply_recorded`](enum.EditorCommand.md#rustdoc-item-2402).
+The result of [`EditorCommand::apply_recorded`](enum.EditorCommand.md#rustdoc-item-2469).
 
 ## Fields
 
-<a id="rustdoc-item-2582"></a>
+<a id="rustdoc-item-2681"></a>
 
 ### `failures`
 
@@ -25,7 +25,7 @@ failures: Vec<(usize, String)>
 One `(index, message)` per failed command, where `index` is the
 command's position in the batch.
 
-<a id="rustdoc-item-2583"></a>
+<a id="rustdoc-item-2682"></a>
 
 ### `inverses`
 
@@ -36,7 +36,7 @@ inverses: Vec<EditorCommand>
 The inverse of every successful edit, in the order undo applies them
 (the reverse of the order they ran in).
 
-<a id="rustdoc-item-2508"></a>
+<a id="rustdoc-item-2604"></a>
 
 ### `fully_invertible`
 
@@ -47,7 +47,7 @@ fully_invertible: bool
 True when every command is a recorded edit that succeeded and produced
 an inverse. Only then may the batch become one undo step.
 
-<a id="rustdoc-item-2584"></a>
+<a id="rustdoc-item-2683"></a>
 
 ### `remaps`
 

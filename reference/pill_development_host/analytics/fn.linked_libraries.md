@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-470"></a>
+<a id="rustdoc-item-471"></a>
 
 # Function `pill_development_host::analytics::linked_libraries`
 
@@ -8,7 +8,7 @@
 pub(in analytics) fn linked_libraries(import_dlls: &[String]) -> (Vec<String>, usize);
 ```
 
-Visibility: `{'restricted': {'parent': 1, 'path': '::analytics'}}` · Source: `hosting\pill_development_host\src\analytics.rs:1550`
+Visibility: `{'restricted': {'parent': 1, 'path': '::analytics'}}` · Source: `hosting\pill_development_host\src\analytics.rs:1587`
 
 Split a module's imports into the names worth showing and a count of the
 rest.

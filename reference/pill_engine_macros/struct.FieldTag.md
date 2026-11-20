@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-318"></a>
+<a id="rustdoc-item-340"></a>
 
 # Struct `pill_engine_macros::FieldTag`
 
@@ -8,7 +8,7 @@
 pub(crate) struct FieldTag;
 ```
 
-Visibility: `crate` · Source: `engine\pill_engine_macros\src\lib.rs:853`
+Visibility: `crate` · Source: `engine\pill_engine_macros\src\lib.rs:1166`
 
 A field's wire tag, together with the accessor set the tag implies.
 
@@ -19,7 +19,7 @@ there would emit a `vec:f32` row with no accessor trampolines.
 
 ## Fields
 
-<a id="rustdoc-item-316"></a>
+<a id="rustdoc-item-338"></a>
 
 ### `tag_text`
 
@@ -29,7 +29,7 @@ tag_text: String
 
 The tag the descriptor carries (`f32`, `vec:f32`, `struct:<path>`, ...).
 
-<a id="rustdoc-item-317"></a>
+<a id="rustdoc-item-339"></a>
 
 ### `heap_field_kind`
 
@@ -41,7 +41,7 @@ The accessor set the tag implies, when the field owns heap memory.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-319"></a>
+<a id="rustdoc-item-341"></a>
 
 ### `plain`
 

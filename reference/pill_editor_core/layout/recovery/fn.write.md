@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-5365"></a>
+<a id="rustdoc-item-7328"></a>
 
 # Function `pill_editor_core::layout::recovery::write`
 
@@ -8,7 +8,7 @@
 pub fn write(document: &RecoveryDocument) -> bool;
 ```
 
-Source: `editor\pill_editor_core\src\layout\recovery.rs:94`
+Source: `editor\pill_editor_core\src\layout\recovery.rs:95`
 
 Writes the document, replacing the previous one.
 

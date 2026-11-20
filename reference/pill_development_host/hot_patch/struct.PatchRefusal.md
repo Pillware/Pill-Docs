@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-2279"></a>
+<a id="rustdoc-item-2353"></a>
 
 # Struct `pill_development_host::hot_patch::PatchRefusal`
 
@@ -19,7 +19,7 @@ per-reason cases in `devops/tests/` meaningful rather than brittle.
 
 ## Fields
 
-<a id="rustdoc-item-2355"></a>
+<a id="rustdoc-item-2429"></a>
 
 ### `code`
 
@@ -29,7 +29,7 @@ code: &'static str
 
 Stable tag, logged as the `code` field beside the reason.
 
-<a id="rustdoc-item-2356"></a>
+<a id="rustdoc-item-2430"></a>
 
 ### `detail`
 
@@ -41,7 +41,7 @@ Human explanation, logged as the `detail` field.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-2357"></a>
+<a id="rustdoc-item-2431"></a>
 
 ### `new`
 

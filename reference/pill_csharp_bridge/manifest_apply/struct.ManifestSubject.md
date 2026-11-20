@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-971"></a>
+<a id="rustdoc-item-993"></a>
 
 # Struct `pill_csharp_bridge::manifest_apply::ManifestSubject`
 
@@ -20,7 +20,7 @@ resolved, so none of them has to work it out again.
 
 ## Fields
 
-<a id="rustdoc-item-1564"></a>
+<a id="rustdoc-item-1588"></a>
 
 ### `kind`
 
@@ -30,7 +30,7 @@ kind: &'static str
 
 What this kind is called in log lines - "component", "resource".
 
-<a id="rustdoc-item-1565"></a>
+<a id="rustdoc-item-1589"></a>
 
 ### `identity`
 
@@ -40,7 +40,7 @@ identity: fn (_: &Declaration) -> super::components::StableComponentId
 
 The stable identity an arriving declaration claims.
 
-<a id="rustdoc-item-1566"></a>
+<a id="rustdoc-item-1590"></a>
 
 ### `name`
 
@@ -50,7 +50,7 @@ name: fn (_: &Declaration) -> &str
 
 The declared name, for reports and refusals.
 
-<a id="rustdoc-item-1567"></a>
+<a id="rustdoc-item-1591"></a>
 
 ### `aliases`
 
@@ -61,7 +61,7 @@ aliases: fn (_: &Declaration) -> &[String]
 The previous names this declaration may have been registered under. A
 live entry under one of them becomes its predecessor.
 
-<a id="rustdoc-item-1568"></a>
+<a id="rustdoc-item-1592"></a>
 
 ### `binding_name`
 
@@ -71,7 +71,7 @@ binding_name: fn (_: &pill_engine::Engine, _: &Binding) -> String
 
 The name a live binding was registered under, for the retirement report.
 
-<a id="rustdoc-item-1569"></a>
+<a id="rustdoc-item-1593"></a>
 
 ### `is_governed`
 
@@ -86,7 +86,7 @@ table also holds module-native bindings - components an extension
 registered in Rust - and those are never retired just because the
 manifest stopped naming them.
 
-<a id="rustdoc-item-1570"></a>
+<a id="rustdoc-item-1594"></a>
 
 ### `resolve_alias`
 
@@ -96,7 +96,7 @@ resolve_alias: fn (_: &pill_engine::Engine, _: &std::collections::HashMap<super:
 
 Resolve one alias to the live table entry it names, if any.
 
-<a id="rustdoc-item-1571"></a>
+<a id="rustdoc-item-1595"></a>
 
 ### `check_addable`
 
@@ -107,7 +107,7 @@ check_addable: fn (_: &Declaration) -> Result<(), pill_core::error::CSharpError>
 Refuse a declaration that cannot be registered as it stands. Called only
 for a declaration the table has no entry for.
 
-<a id="rustdoc-item-1572"></a>
+<a id="rustdoc-item-1596"></a>
 
 ### `settle`
 
@@ -117,7 +117,7 @@ settle: fn (_: &pill_engine::Engine, _: &Binding, _: &Declaration) -> Result<Set
 
 Decide what an arriving declaration means for a live binding.
 
-<a id="rustdoc-item-1573"></a>
+<a id="rustdoc-item-1597"></a>
 
 ### `register`
 
@@ -127,7 +127,7 @@ register: fn (_: &mut pill_engine::Engine, _: super::components::StableComponent
 
 Register a declaration the table has no entry for.
 
-<a id="rustdoc-item-1574"></a>
+<a id="rustdoc-item-1598"></a>
 
 ### `reshape`
 
@@ -137,7 +137,7 @@ reshape: fn (_: &mut pill_engine::Engine, _: super::components::StableComponentI
 
 Migrate a live entry's stored bytes into the arriving shape.
 
-<a id="rustdoc-item-1575"></a>
+<a id="rustdoc-item-1599"></a>
 
 ### `rename`
 
@@ -147,7 +147,7 @@ rename: fn (_: &mut pill_engine::Engine, _: super::components::StableComponentId
 
 Register the successor and move the predecessor's data onto it.
 
-<a id="rustdoc-item-1576"></a>
+<a id="rustdoc-item-1600"></a>
 
 ### `retire`
 
@@ -162,7 +162,7 @@ no step that can fail may run after it. It reports how many entries it
 retired and cannot report an error, because nothing would be left to
 react to one.
 
-<a id="rustdoc-item-1577"></a>
+<a id="rustdoc-item-1601"></a>
 
 ### `undo`
 

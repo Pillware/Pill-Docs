@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-3905"></a>
+<a id="rustdoc-item-4162"></a>
 
 # Struct `pill_development_host::watchers::shared::TriggerLog`
 
@@ -20,7 +20,7 @@ reload from their signals.
 
 ## Fields
 
-<a id="rustdoc-item-4417"></a>
+<a id="rustdoc-item-4676"></a>
 
 ### `entries`
 
@@ -33,7 +33,7 @@ thread reads.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-4418"></a>
+<a id="rustdoc-item-4677"></a>
 
 ### `new`
 
@@ -43,7 +43,7 @@ pub(crate) fn new() -> Self;
 
 An empty log.
 
-<a id="rustdoc-item-4419"></a>
+<a id="rustdoc-item-4678"></a>
 
 ### `record`
 
@@ -53,7 +53,7 @@ pub(in watchers::shared) fn record(self: &Self, trigger: SourceTrigger);
 
 Record one fired trigger, evicting the oldest past the bound.
 
-<a id="rustdoc-item-4420"></a>
+<a id="rustdoc-item-4679"></a>
 
 ### `take`
 

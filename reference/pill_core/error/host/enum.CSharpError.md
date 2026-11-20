@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-518"></a>
+<a id="rustdoc-item-528"></a>
 
 # Enum `pill_core::error::host::CSharpError`
 
@@ -8,7 +8,7 @@
 pub enum CSharpError { ... }
 ```
 
-Source: `engine\pill_core\src\error\host.rs:580`
+Source: `engine\pill_core\src\error\host.rs:614`
 
 Managed (C#) backend startup and registration failures.
 
@@ -23,7 +23,7 @@ chain.
 
 ## Variants
 
-<a id="rustdoc-item-455"></a>
+<a id="rustdoc-item-462"></a>
 
 ### `HostfxrNotFound`
 
@@ -33,7 +33,7 @@ HostfxrNotFound
 
 No hostfxr installation was found in any configured dotnet root.
 
-<a id="rustdoc-item-457"></a>
+<a id="rustdoc-item-464"></a>
 
 ### `HostfxrOverrideNotAFile`
 
@@ -43,7 +43,7 @@ HostfxrOverrideNotAFile
 
 The `ECS_DOTNET_HOSTFXR` override does not point at a file.
 
-<a id="rustdoc-item-460"></a>
+<a id="rustdoc-item-467"></a>
 
 ### `HostfxrLoadFailed`
 
@@ -53,7 +53,7 @@ HostfxrLoadFailed
 
 The selected hostfxr library could not be loaded.
 
-<a id="rustdoc-item-462"></a>
+<a id="rustdoc-item-469"></a>
 
 ### `AotLibraryNotFound`
 
@@ -63,7 +63,7 @@ AotLibraryNotFound
 
 The NativeAOT library could not be found on disk.
 
-<a id="rustdoc-item-465"></a>
+<a id="rustdoc-item-472"></a>
 
 ### `AotLibraryLoadFailed`
 
@@ -73,7 +73,7 @@ AotLibraryLoadFailed
 
 The NativeAOT library could not be loaded.
 
-<a id="rustdoc-item-468"></a>
+<a id="rustdoc-item-475"></a>
 
 ### `AotExportMissing`
 
@@ -83,7 +83,7 @@ AotExportMissing
 
 A required export is missing from the NativeAOT library.
 
-<a id="rustdoc-item-471"></a>
+<a id="rustdoc-item-478"></a>
 
 ### `HostfxrExportMissing`
 
@@ -93,7 +93,7 @@ HostfxrExportMissing
 
 A required hostfxr export is missing.
 
-<a id="rustdoc-item-473"></a>
+<a id="rustdoc-item-480"></a>
 
 ### `RuntimeInitializationFailed`
 
@@ -103,7 +103,7 @@ RuntimeInitializationFailed
 
 Runtime initialization failed with a negative hostfxr status.
 
-<a id="rustdoc-item-475"></a>
+<a id="rustdoc-item-482"></a>
 
 ### `RuntimeDelegateFailed`
 
@@ -113,7 +113,7 @@ RuntimeDelegateFailed
 
 The runtime delegate request failed with a negative hostfxr status.
 
-<a id="rustdoc-item-476"></a>
+<a id="rustdoc-item-483"></a>
 
 ### `ManagedExportNotPointerSized`
 
@@ -123,7 +123,7 @@ ManagedExportNotPointerSized
 
 The managed export type is not a pointer-sized function pointer.
 
-<a id="rustdoc-item-479"></a>
+<a id="rustdoc-item-486"></a>
 
 ### `ManagedEntryPointFailed`
 
@@ -133,7 +133,7 @@ ManagedEntryPointFailed
 
 A managed entry point could not be resolved or returned no pointer.
 
-<a id="rustdoc-item-480"></a>
+<a id="rustdoc-item-487"></a>
 
 ### `RuntimeInitFailed`
 
@@ -143,7 +143,7 @@ RuntimeInitFailed
 
 The managed loader rejected host initialization.
 
-<a id="rustdoc-item-482"></a>
+<a id="rustdoc-item-489"></a>
 
 ### `CodegenFailed`
 
@@ -153,7 +153,7 @@ CodegenFailed
 
 The host-side C# mirror codegen step failed.
 
-<a id="rustdoc-item-485"></a>
+<a id="rustdoc-item-492"></a>
 
 ### `InteropVersionMismatch`
 
@@ -163,7 +163,7 @@ InteropVersionMismatch
 
 The managed runtime was built for a different ABI contract version.
 
-<a id="rustdoc-item-488"></a>
+<a id="rustdoc-item-495"></a>
 
 ### `ManifestLengthOutOfRange`
 
@@ -173,7 +173,7 @@ ManifestLengthOutOfRange
 
 The managed-reported manifest length lies outside the supported range.
 
-<a id="rustdoc-item-491"></a>
+<a id="rustdoc-item-498"></a>
 
 ### `SystemCountOutOfRange`
 
@@ -189,7 +189,7 @@ item, so it is checked against a fixed limit first. Without that check a
 buggy assembly could ask for an allocation that aborts the process
 instead of failing startup.
 
-<a id="rustdoc-item-492"></a>
+<a id="rustdoc-item-499"></a>
 
 ### `SystemSnapshotAllocationFailed`
 
@@ -199,7 +199,7 @@ SystemSnapshotAllocationFailed
 
 The reflected system snapshot could not be allocated.
 
-<a id="rustdoc-item-494"></a>
+<a id="rustdoc-item-501"></a>
 
 ### `UnknownPollStatus`
 
@@ -215,7 +215,22 @@ Anything else means the ABI drifted or the loader failed. Treating it
 as "nothing happened" would keep the previous assembly running without
 saying so anywhere.
 
-<a id="rustdoc-item-495"></a>
+<a id="rustdoc-item-504"></a>
+
+### `UnknownRunPhase`
+
+```rust
+UnknownRunPhase
+```
+
+A managed system's exported frame phase is not one the host knows.
+
+The export names the phase by number (`0` pre-project, `1` project,
+`2` post-project), so an unknown value means the ABI drifted or the
+managed side has a bug. Guessing `project` would run the system in a
+phase its declaration never named.
+
+<a id="rustdoc-item-505"></a>
 
 ### `ManifestAllocationFailed`
 
@@ -225,7 +240,7 @@ ManifestAllocationFailed
 
 The manifest buffer could not be allocated.
 
-<a id="rustdoc-item-496"></a>
+<a id="rustdoc-item-506"></a>
 
 ### `ManifestCopyFailed`
 
@@ -235,7 +250,7 @@ ManifestCopyFailed
 
 The manifest copy from the managed runtime failed.
 
-<a id="rustdoc-item-499"></a>
+<a id="rustdoc-item-509"></a>
 
 ### `ManifestParseFailed`
 
@@ -245,7 +260,7 @@ ManifestParseFailed
 
 The managed component manifest failed host-side JSON parsing.
 
-<a id="rustdoc-item-501"></a>
+<a id="rustdoc-item-511"></a>
 
 ### `ManifestInvalid`
 
@@ -255,7 +270,7 @@ ManifestInvalid
 
 The managed component manifest failed host-side validation.
 
-<a id="rustdoc-item-503"></a>
+<a id="rustdoc-item-513"></a>
 
 ### `StartupFailed`
 
@@ -265,7 +280,7 @@ StartupFailed
 
 A reflected managed startup method failed.
 
-<a id="rustdoc-item-505"></a>
+<a id="rustdoc-item-515"></a>
 
 ### `StartupCommandsFailed`
 
@@ -275,7 +290,7 @@ StartupCommandsFailed
 
 Queued startup commands failed to apply.
 
-<a id="rustdoc-item-507"></a>
+<a id="rustdoc-item-517"></a>
 
 ### `NoSystems`
 
@@ -285,7 +300,7 @@ NoSystems
 
 The managed assembly contains no schedulable systems.
 
-<a id="rustdoc-item-510"></a>
+<a id="rustdoc-item-520"></a>
 
 ### `SystemAccessFailed`
 
@@ -295,7 +310,7 @@ SystemAccessFailed
 
 The managed runtime refused to copy one system access declaration.
 
-<a id="rustdoc-item-512"></a>
+<a id="rustdoc-item-522"></a>
 
 ### `UnknownAccessMode`
 
@@ -305,7 +320,7 @@ UnknownAccessMode
 
 A reflected access mode is neither read nor write.
 
-<a id="rustdoc-item-514"></a>
+<a id="rustdoc-item-524"></a>
 
 ### `UnregisteredComponent`
 
@@ -315,7 +330,7 @@ UnregisteredComponent
 
 A reflected access references a component the host never registered.
 
-<a id="rustdoc-item-516"></a>
+<a id="rustdoc-item-526"></a>
 
 ### `UnregisteredResource`
 
@@ -329,7 +344,7 @@ In almost every case the resource struct is missing `[EcsResource]`, so
 the manifest never told the host about it, even though a system asks
 for it through `Res<T>` or `ResMut<T>`.
 
-<a id="rustdoc-item-517"></a>
+<a id="rustdoc-item-527"></a>
 
 ### `InteriorNul`
 

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1960"></a>
+<a id="rustdoc-item-2016"></a>
 
 # Struct `pill_editor_core::console::ConsoleView`
 
@@ -8,7 +8,7 @@
 pub struct ConsoleView;
 ```
 
-Source: `editor\pill_editor_core\src\console.rs:227`
+Source: `editor\pill_editor_core\src\console.rs:233`
 
 What the Console tab draws: the filters in force and the rows they leave.
 
@@ -17,7 +17,7 @@ The shell's tab reads the snapshot and never the world.
 
 ## Fields
 
-<a id="rustdoc-item-2105"></a>
+<a id="rustdoc-item-2162"></a>
 
 ### `minimum_level`
 
@@ -27,7 +27,7 @@ minimum_level: u8
 
 The lowest level shown.
 
-<a id="rustdoc-item-2106"></a>
+<a id="rustdoc-item-2163"></a>
 
 ### `search`
 
@@ -37,7 +37,7 @@ search: String
 
 The search text in force.
 
-<a id="rustdoc-item-2107"></a>
+<a id="rustdoc-item-2164"></a>
 
 ### `channel`
 
@@ -47,7 +47,7 @@ channel: Option<ConsoleChannel>
 
 The channel in force; `None` shows both.
 
-<a id="rustdoc-item-2108"></a>
+<a id="rustdoc-item-2165"></a>
 
 ### `total`
 
@@ -57,7 +57,7 @@ total: usize
 
 How many lines the history holds.
 
-<a id="rustdoc-item-2109"></a>
+<a id="rustdoc-item-2166"></a>
 
 ### `visible`
 
@@ -67,7 +67,7 @@ visible: usize
 
 How many lines the filters leave.
 
-<a id="rustdoc-item-2110"></a>
+<a id="rustdoc-item-2167"></a>
 
 ### `lines`
 

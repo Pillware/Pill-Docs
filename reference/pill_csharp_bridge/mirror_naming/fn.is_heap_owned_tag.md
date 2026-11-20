@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1743"></a>
+<a id="rustdoc-item-1767"></a>
 
 # Function `pill_csharp_bridge::mirror_naming::is_heap_owned_tag`
 
@@ -16,6 +16,6 @@ or an engine-owned `dynbuf:` native buffer.
 
 This repeats the engine's own container rule (`is_container_tag` in
 `pill_engine_core::component_field`), which is private to that crate. The
-two copies must agree. [`generated_field_signature`](fn.generated_field_signature.md#rustdoc-item-891) uses this rule to
+two copies must agree. [`generated_field_signature`](fn.generated_field_signature.md#rustdoc-item-913) uses this rule to
 answer `None` for a component whose public fields cannot be listed at all,
 and the generator uses it to pick the fields that get accessor members.

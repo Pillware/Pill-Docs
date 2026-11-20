@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1717"></a>
+<a id="rustdoc-item-1727"></a>
 
 # Function `pill_core::telemetry::log_block_colored`
 
@@ -13,9 +13,9 @@ Source: `engine\pill_core\src\telemetry.rs:1014`
 Join a heading and its lines into one multi-line log message, where any
 part may carry color.
 
-This works like [`log_block`](fn.log_block.md#rustdoc-item-2017) for parts that style themselves: plain
+This works like [`log_block`](fn.log_block.md#rustdoc-item-2027) for parts that style themselves: plain
 strings, or text styled with [`Colorize`] (re-exported here) or
-[`PillStyle`](../style/trait.PillStyle.md#rustdoc-item-694). The formatter strips the colors from the
+[`PillStyle`](../style/trait.PillStyle.md#rustdoc-item-704). The formatter strips the colors from the
 file log and from piped output.
 
 ## Examples

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-530"></a>
+<a id="rustdoc-item-684"></a>
 
 # Function `pill_engine::hot_patch::hot_function_names`
 
@@ -15,4 +15,4 @@ diagnostics.
 
 These come from the `PillHotFunctionDescriptor` registry. The
 `#[pill_hot_fn]` slots sit in a different registry and are listed by
-[`plain_function_names`](fn.plain_function_names.md#rustdoc-item-531).
+[`plain_function_names`](fn.plain_function_names.md#rustdoc-item-685).

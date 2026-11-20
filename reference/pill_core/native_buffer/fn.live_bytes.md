@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1112"></a>
+<a id="rustdoc-item-1122"></a>
 
 # Function `pill_core::native_buffer::live_bytes`
 

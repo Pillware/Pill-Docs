@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-6382"></a>
+<a id="rustdoc-item-8420"></a>
 
 # Function `pill_editor_core::preferences::write_document`
 
@@ -8,7 +8,7 @@
 pub fn write_document(directory: &std::path::Path, document: &serde_json::Map<String, serde_json::Value>) -> Result<(), String>;
 ```
 
-Source: `editor\pill_editor_core\src\preferences.rs:421`
+Source: `editor\pill_editor_core\src\preferences.rs:444`
 
 Writes the document the way the editor writes its state files. The text
 goes into a temporary file beside the target, and a rename replaces the

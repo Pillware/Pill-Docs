@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-886"></a>
+<a id="rustdoc-item-908"></a>
 
 # Function `pill_csharp_bridge::components::exposed_components_from_names`
 

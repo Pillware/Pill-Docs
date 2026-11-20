@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-3186"></a>
+<a id="rustdoc-item-3441"></a>
 
 # Type alias `pill_development_host::native_library::MirrorMethodCountFn`
 
@@ -8,7 +8,7 @@
 pub(in native_library) type MirrorMethodCountFn = unsafe extern "C" fn () -> u32;
 ```
 
-Visibility: `{'restricted': {'parent': 3075, 'path': '::native_library'}}` · Source: `hosting\pill_development_host\src\native_library.rs:589`
+Visibility: `{'restricted': {'parent': 3326, 'path': '::native_library'}}` · Source: `hosting\pill_development_host\src\native_library.rs:858`
 
 Signature of the optional mirrored-method manifest exports.
 

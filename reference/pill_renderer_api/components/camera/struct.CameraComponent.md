@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-241"></a>
+<a id="rustdoc-item-244"></a>
 
 # Struct `pill_renderer_api::components::camera::CameraComponent`
 
@@ -8,7 +8,7 @@
 pub struct CameraComponent;
 ```
 
-Source: `rendering\pill_renderer_api\src\components\camera.rs:48`
+Source: `rendering\pill_renderer_api\src\components\camera.rs:41`
 
 A perspective camera: the renderer builds its projection matrix from it and
 its view matrix from the transform stored beside it.
@@ -24,7 +24,7 @@ pair from producing NaN values in the matrix.
 
 ## Fields
 
-<a id="rustdoc-item-236"></a>
+<a id="rustdoc-item-239"></a>
 
 ### `enabled`
 
@@ -35,7 +35,7 @@ enabled: bool
 Whether the renderer may pick this camera. A disabled camera stays in
 the world but is never picked for a surface.
 
-<a id="rustdoc-item-237"></a>
+<a id="rustdoc-item-240"></a>
 
 ### `priority`
 
@@ -46,7 +46,7 @@ priority: i32
 Which camera the frame prefers when the world holds several: the highest
 value wins.
 
-<a id="rustdoc-item-238"></a>
+<a id="rustdoc-item-241"></a>
 
 ### `vertical_fov`
 
@@ -57,7 +57,7 @@ vertical_fov: f32
 Vertical field of view, in degrees. The renderer replaces a value outside
 `(0, 180)` with the default.
 
-<a id="rustdoc-item-239"></a>
+<a id="rustdoc-item-242"></a>
 
 ### `near`
 
@@ -68,7 +68,7 @@ near: f32
 Distance to the near clip plane, in world units. A value that is not a
 finite positive number is replaced with the default.
 
-<a id="rustdoc-item-240"></a>
+<a id="rustdoc-item-243"></a>
 
 ### `far`
 
@@ -81,7 +81,7 @@ finite or not beyond the near plane is replaced with a distance that is.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-242"></a>
+<a id="rustdoc-item-245"></a>
 
 ### `FIELD_LAYOUT`
 
@@ -103,6 +103,9 @@ macro; pass it to `World::register_component_with_layout`.
 - `TryFrom<U>`
 - `Any`
 - `ToOwned`
+- `CastableFrom<ST, Uninit, Uninit>`
+- `CastableFrom<ST, Initialized, Initialized>`
+- `Read<Exclusive, BecauseExclusive>`
 - `DeserializeOwned`
 - `Instrument`
 - `WithSubscriber`
@@ -110,9 +113,6 @@ macro; pass it to `World::register_component_with_layout`.
 - `Pointable`
 - `OwoColorize`
 - `ErasedDestructor`
-- `CastableFrom<ST, Uninit, Uninit>`
-- `CastableFrom<ST, Initialized, Initialized>`
-- `Read<Exclusive, BecauseExclusive>`
 - `Debug`
 - `Clone`
 - `Copy`
@@ -120,4 +120,5 @@ macro; pass it to `World::register_component_with_layout`.
 - `Deserialize<'de>`
 - `Component`
 - `ComponentLayout`
+- `ComponentFields`
 - `Default`

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-3503"></a>
+<a id="rustdoc-item-2018"></a>
 
 # Constant `pill_engine_core::config::PROFILING_MEMORY_ALLOCATIONS_SAMPLING_FREQUENCY`
 

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1497"></a>
+<a id="rustdoc-item-1521"></a>
 
 # Function `pill_csharp_bridge::manifest::managed_field_layout`
 

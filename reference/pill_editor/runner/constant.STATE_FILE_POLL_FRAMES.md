@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-846"></a>
+<a id="rustdoc-item-973"></a>
 
 # Constant `pill_editor::runner::STATE_FILE_POLL_FRAMES`
 
@@ -8,7 +8,7 @@
 pub(in runner) const STATE_FILE_POLL_FRAMES: u64 = pill_editor_core::state_watch::STATE_FILE_POLL_FRAMES;
 ```
 
-Visibility: `{'restricted': {'parent': 483, 'path': '::runner'}}` · Source: `editor\pill_editor\src\runner\mod.rs:205`
+Visibility: `{'restricted': {'parent': 539, 'path': '::runner'}}` · Source: `editor\pill_editor\src\runner\mod.rs:244`
 
 Frames between unconditional re-reads of the editor's state files - the
 theme's layers poll on it, and the watchers in

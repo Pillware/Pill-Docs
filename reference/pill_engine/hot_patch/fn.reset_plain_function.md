@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-524"></a>
+<a id="rustdoc-item-678"></a>
 
 # Function `pill_engine::hot_patch::reset_plain_function`
 

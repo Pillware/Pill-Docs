@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1145"></a>
+<a id="rustdoc-item-1593"></a>
 
 # Function `pill_editor::runner::run`
 
@@ -8,7 +8,7 @@
 pub fn run(log_buffer: pill_core::telemetry::capture::LogBuffer) -> Result<(), crate::frontend::EditorError>;
 ```
 
-Source: `editor\pill_editor\src\runner\mod.rs:304`
+Source: `editor\pill_editor\src\runner\mod.rs:464`
 
 Run the editor until the last window closes.
 
@@ -17,5 +17,5 @@ the lines it has not seen into the Console tab's history.
 
 ## Errors
 
-Returns [`EditorError::EventLoopCreation`](../frontend/enum.EditorError.md#rustdoc-item-254) when the platform refuses the
-event loop, and [`EditorError::EventLoopRun`](../frontend/enum.EditorError.md#rustdoc-item-256) when running it fails.
+Returns [`EditorError::EventLoopCreation`](../frontend/enum.EditorError.md#rustdoc-item-305) when the platform refuses the
+event loop, and [`EditorError::EventLoopRun`](../frontend/enum.EditorError.md#rustdoc-item-307) when running it fails.

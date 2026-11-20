@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-2667"></a>
+<a id="rustdoc-item-2801"></a>
 
 # Struct `pill_editor_core::editor_state::EntityListEntry`
 
@@ -8,14 +8,14 @@
 pub struct EntityListEntry;
 ```
 
-Source: `editor\pill_editor_core\src\editor_state\mod.rs:68`
+Source: `editor\pill_editor_core\src\editor_state\mod.rs:110`
 
 One line of the Hierarchy list. It is cheap to build and is rebuilt on
 every refresh.
 
 ## Fields
 
-<a id="rustdoc-item-2663"></a>
+<a id="rustdoc-item-2797"></a>
 
 ### `entity`
 
@@ -26,7 +26,7 @@ entity: pill_engine::Entity
 The generation-tagged handle, which is also how the selection names an
 entity.
 
-<a id="rustdoc-item-2664"></a>
+<a id="rustdoc-item-2798"></a>
 
 ### `display`
 
@@ -36,7 +36,7 @@ display: String
 
 `"{id}v{generation}"` display label.
 
-<a id="rustdoc-item-2665"></a>
+<a id="rustdoc-item-2799"></a>
 
 ### `component_count`
 
@@ -46,7 +46,7 @@ component_count: usize
 
 Number of components attached.
 
-<a id="rustdoc-item-2666"></a>
+<a id="rustdoc-item-2800"></a>
 
 ### `archetype_label`
 
@@ -58,7 +58,7 @@ Joined component type names, for the list subtitle.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-2668"></a>
+<a id="rustdoc-item-2802"></a>
 
 ### `display_of`
 

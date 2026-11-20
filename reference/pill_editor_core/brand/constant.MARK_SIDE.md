@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-453"></a>
+<a id="rustdoc-item-497"></a>
 
 # Constant `pill_editor_core::brand::MARK_SIDE`
 

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1875"></a>
+<a id="rustdoc-item-1900"></a>
 
 # Function `pill_csharp_bridge::queries::module_binding_matches_live_column`
 
@@ -8,7 +8,7 @@
 pub(in queries) fn module_binding_matches_live_column(component_id: pill_engine::ComponentId, binding_element_size: usize, column_element_size: usize) -> bool;
 ```
 
-Visibility: `{'restricted': {'parent': 1872, 'path': '::queries'}}` · Source: `csharp\pill_csharp_bridge\src\queries.rs:133`
+Visibility: `{'restricted': {'parent': 1897, 'path': '::queries'}}` · Source: `csharp\pill_csharp_bridge\src\queries.rs:133`
 
 Whether a module's native binding still matches the live column's layout.
 

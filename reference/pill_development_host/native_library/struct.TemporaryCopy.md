@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-3256"></a>
+<a id="rustdoc-item-3511"></a>
 
 # Struct `pill_development_host::native_library::TemporaryCopy`
 
@@ -8,7 +8,7 @@
 pub(in native_library) struct TemporaryCopy;
 ```
 
-Visibility: `{'restricted': {'parent': 3075, 'path': '::native_library'}}` · Source: `hosting\pill_development_host\src\native_library.rs:651`
+Visibility: `{'restricted': {'parent': 3326, 'path': '::native_library'}}` · Source: `hosting\pill_development_host\src\native_library.rs:920`
 
 A copied artifact path that deletes itself if the load never takes it over.
 
@@ -20,7 +20,7 @@ and is disarmed only once the library owns the file.
 
 ## Fields
 
-<a id="rustdoc-item-3255"></a>
+<a id="rustdoc-item-3510"></a>
 
 ### `path`
 
@@ -32,7 +32,7 @@ The copied file, or `None` once the library has taken it over.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-3257"></a>
+<a id="rustdoc-item-3512"></a>
 
 ### `new`
 
@@ -42,7 +42,7 @@ pub(in native_library) fn new(path: PathBuf) -> Self;
 
 _No documentation provided._
 
-<a id="rustdoc-item-3258"></a>
+<a id="rustdoc-item-3513"></a>
 
 ### `path`
 
@@ -56,7 +56,7 @@ The copied file, which the guard still owns.
 
 Panics once the guard has handed the file to the library.
 
-<a id="rustdoc-item-3259"></a>
+<a id="rustdoc-item-3514"></a>
 
 ### `disarm`
 

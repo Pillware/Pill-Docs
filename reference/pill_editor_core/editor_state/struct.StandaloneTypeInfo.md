@@ -8,7 +8,7 @@
 pub struct StandaloneTypeInfo;
 ```
 
-Source: `editor\pill_editor_core\src\editor_state\mod.rs:444`
+Source: `editor\pill_editor_core\src\editor_state\mod.rs:492`
 
 One standalone asset type that a new file can be created for. It is a row
 of the create dialog, built straight from the loaded modules'
@@ -16,7 +16,7 @@ registrations.
 
 ## Fields
 
-<a id="rustdoc-item-3250"></a>
+<a id="rustdoc-item-3385"></a>
 
 ### `type_name`
 
@@ -26,7 +26,7 @@ type_name: String
 
 The registered type name, written to the file's `asset_type`.
 
-<a id="rustdoc-item-3251"></a>
+<a id="rustdoc-item-3386"></a>
 
 ### `display_name`
 
@@ -36,7 +36,7 @@ display_name: String
 
 The last `::` segment of the type name, for the dialog row.
 
-<a id="rustdoc-item-3252"></a>
+<a id="rustdoc-item-3387"></a>
 
 ### `extension`
 

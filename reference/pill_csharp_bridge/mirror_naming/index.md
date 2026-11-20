@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1747"></a>
+<a id="rustdoc-item-1771"></a>
 
 # Module `pill_csharp_bridge::mirror_naming`
 
@@ -30,9 +30,9 @@ naming rules cannot live in the generator alone.
 ## Module contents
 
 ### Functions
-- [`field_signature_text`](fn.field_signature_text.md#rustdoc-item-1742) — Turns `(offset, name, size)` triples into the signature text
-- [`generated_field_signature`](fn.generated_field_signature.md#rustdoc-item-891) — Describes the public fields a generated mirror declares for `fields` as the
-- [`is_heap_owned_tag`](fn.is_heap_owned_tag.md#rustdoc-item-1743) — Tells whether a type tag names a field whose bytes are a header for a
-- [`is_opaque_container_tag`](fn.is_opaque_container_tag.md#rustdoc-item-1744) — Tells whether a type tag names a Rust-owned container field. Such a field
-- [`snake_to_pascal`](fn.snake_to_pascal.md#rustdoc-item-1746) — Converts a snake_case Rust identifier to the PascalCase name a C# mirror
-- [`split_array_tag`](fn.split_array_tag.md#rustdoc-item-1745) — Splits an `array:<inner>` type tag into its base tag and whether the field
+- [`field_signature_text`](fn.field_signature_text.md#rustdoc-item-1766) — Turns `(offset, name, size)` triples into the signature text
+- [`generated_field_signature`](fn.generated_field_signature.md#rustdoc-item-913) — Describes the public fields a generated mirror declares for `fields` as the
+- [`is_heap_owned_tag`](fn.is_heap_owned_tag.md#rustdoc-item-1767) — Tells whether a type tag names a field whose bytes are a header for a
+- [`is_opaque_container_tag`](fn.is_opaque_container_tag.md#rustdoc-item-1768) — Tells whether a type tag names a Rust-owned container field. Such a field
+- [`snake_to_pascal`](fn.snake_to_pascal.md#rustdoc-item-1770) — Converts a snake_case Rust identifier to the PascalCase name a C# mirror
+- [`split_array_tag`](fn.split_array_tag.md#rustdoc-item-1769) — Splits an `array:<inner>` type tag into its base tag and whether the field

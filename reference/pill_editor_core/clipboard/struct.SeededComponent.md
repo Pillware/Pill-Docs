@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-911"></a>
+<a id="rustdoc-item-955"></a>
 
 # Struct `pill_editor_core::clipboard::SeededComponent`
 
@@ -14,7 +14,7 @@ One component in a payload: its type name and the fields it carried.
 
 ## Fields
 
-<a id="rustdoc-item-960"></a>
+<a id="rustdoc-item-1004"></a>
 
 ### `type_name`
 
@@ -25,7 +25,7 @@ type_name: String
 Registered component type name. This name, not a registry id, is the
 key that survives a reload.
 
-<a id="rustdoc-item-961"></a>
+<a id="rustdoc-item-1005"></a>
 
 ### `fields`
 

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1257"></a>
+<a id="rustdoc-item-1280"></a>
 
 # Struct `pill_csharp_bridge::manifest::BlittableLeaf`
 
@@ -8,7 +8,7 @@
 pub(in manifest) struct BlittableLeaf;
 ```
 
-Visibility: `{'restricted': {'parent': 1247, 'path': '::manifest'}}` · Source: `csharp\pill_csharp_bridge\src\manifest.rs:69`
+Visibility: `{'restricted': {'parent': 1270, 'path': '::manifest'}}` · Source: `csharp\pill_csharp_bridge\src\manifest.rs:69`
 
 What one accepted leaf type means to the host.
 
@@ -18,7 +18,7 @@ a row here, so the checks cannot disagree about what a type means.
 
 ## Fields
 
-<a id="rustdoc-item-1252"></a>
+<a id="rustdoc-item-1275"></a>
 
 ### `type_name`
 
@@ -28,7 +28,7 @@ type_name: &'static str
 
 Canonical managed type name as the manifest writes it.
 
-<a id="rustdoc-item-1253"></a>
+<a id="rustdoc-item-1276"></a>
 
 ### `alignment`
 
@@ -38,7 +38,7 @@ alignment: usize
 
 Alignment the managed side gives the field in its own layout.
 
-<a id="rustdoc-item-1254"></a>
+<a id="rustdoc-item-1277"></a>
 
 ### `type_tag`
 
@@ -50,7 +50,7 @@ Engine type tag, or `None` for a type the engine cannot decode. Such a
 field keeps its bytes in storage but is left out of the registered
 editor layout.
 
-<a id="rustdoc-item-1255"></a>
+<a id="rustdoc-item-1278"></a>
 
 ### `default_literal`
 

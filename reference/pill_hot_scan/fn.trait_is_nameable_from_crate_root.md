@@ -8,7 +8,7 @@
 pub(crate) fn trait_is_nameable_from_crate_root(trait_name: &str, module_segments: &[String], source: &str) -> bool;
 ```
 
-Visibility: `crate` · Source: `hosting\pill_hot_scan\src\lib.rs:1362`
+Visibility: `crate` · Source: `hosting\pill_hot_scan\src\lib.rs:1389`
 
 Whether a trait method's `impl` can be named from the crate root, where the
 generated inventory is included.

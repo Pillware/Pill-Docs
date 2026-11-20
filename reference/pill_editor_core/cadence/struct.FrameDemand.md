@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-578"></a>
+<a id="rustdoc-item-622"></a>
 
 # Struct `pill_editor_core::cadence::FrameDemand`
 
@@ -19,7 +19,7 @@ cleared at the end of the frame that honoured it.
 
 ## Fields
 
-<a id="rustdoc-item-572"></a>
+<a id="rustdoc-item-616"></a>
 
 ### `input`
 
@@ -30,7 +30,7 @@ input: bool
 Input arrived from a window - a pointer move or button, a key or text,
 the wheel - or a drag out of the editor finished.
 
-<a id="rustdoc-item-573"></a>
+<a id="rustdoc-item-617"></a>
 
 ### `scripted`
 
@@ -40,7 +40,7 @@ scripted: bool
 
 A scripted command arrived from the test channel.
 
-<a id="rustdoc-item-574"></a>
+<a id="rustdoc-item-618"></a>
 
 ### `snapshot`
 
@@ -50,7 +50,7 @@ snapshot: bool
 
 The snapshot this frame published differs from the last one.
 
-<a id="rustdoc-item-575"></a>
+<a id="rustdoc-item-619"></a>
 
 ### `resized`
 
@@ -60,7 +60,7 @@ resized: bool
 
 The window's size or its scale factor changed.
 
-<a id="rustdoc-item-576"></a>
+<a id="rustdoc-item-620"></a>
 
 ### `animating`
 
@@ -71,7 +71,7 @@ animating: bool
 Something is moving: the engine is not paused, or a camera navigation
 or scripted drag is in flight.
 
-<a id="rustdoc-item-577"></a>
+<a id="rustdoc-item-621"></a>
 
 ### `repaint_requested`
 
@@ -83,7 +83,7 @@ egui asked for a repaint at its own pace.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-579"></a>
+<a id="rustdoc-item-623"></a>
 
 ### `any`
 
@@ -93,7 +93,7 @@ pub fn any(self: &Self) -> bool;
 
 Whether any reason to draw is set.
 
-<a id="rustdoc-item-581"></a>
+<a id="rustdoc-item-625"></a>
 
 ### `urgent`
 
@@ -105,7 +105,7 @@ Whether input, a scripted command, a changed snapshot or a resize asked
 for the frame.
 
 The other two reasons - something moving and egui's repaint request -
-are checked separately by [`Cadence::decide`](struct.Cadence.md#rustdoc-item-580).
+are checked separately by [`Cadence::decide`](struct.Cadence.md#rustdoc-item-624).
 
 ## Trait implementations
 

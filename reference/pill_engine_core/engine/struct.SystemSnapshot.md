@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-4229"></a>
+<a id="rustdoc-item-5791"></a>
 
 # Struct `pill_engine_core::engine::SystemSnapshot`
 
@@ -8,17 +8,17 @@
 pub struct SystemSnapshot;
 ```
 
-Source: `engine\pill_engine_core\src\engine.rs:206`
+Source: `engine\pill_engine_core\src\engine.rs:246`
 
 A read-only snapshot of one registered system.
 
 `index` is the position in the registration vector and is the stable key
 for toggling, because system **names are not unique** —
-[`Engine::set_system_enabled`](struct.Engine.md#rustdoc-item-4228) matches the first system with a given name.
+[`Engine::set_system_enabled`](struct.Engine.md#rustdoc-item-5790) matches the first system with a given name.
 
 ## Fields
 
-<a id="rustdoc-item-4222"></a>
+<a id="rustdoc-item-5784"></a>
 
 ### `index`
 
@@ -29,7 +29,7 @@ index: usize
 Position in the registration vector, which is the key that names
 exactly one system.
 
-<a id="rustdoc-item-4223"></a>
+<a id="rustdoc-item-5785"></a>
 
 ### `name`
 
@@ -40,7 +40,7 @@ name: String
 Registration name, shown in the UI and used by the name-keyed calls,
 which match the first system that has it.
 
-<a id="rustdoc-item-4224"></a>
+<a id="rustdoc-item-5786"></a>
 
 ### `owner`
 
@@ -51,7 +51,7 @@ owner: SystemOwner
 What registered this system: the project, the renderer, the engine, or
 one extension.
 
-<a id="rustdoc-item-4225"></a>
+<a id="rustdoc-item-5787"></a>
 
 ### `enabled`
 
@@ -61,7 +61,7 @@ enabled: bool
 
 Whether the system currently participates in frame execution.
 
-<a id="rustdoc-item-4226"></a>
+<a id="rustdoc-item-5788"></a>
 
 ### `hot_patchable`
 
@@ -71,7 +71,7 @@ hot_patchable: bool
 
 Whether the system has a hot-patch dispatch slot in the registry.
 
-<a id="rustdoc-item-4227"></a>
+<a id="rustdoc-item-5789"></a>
 
 ### `name_is_ambiguous`
 
@@ -93,15 +93,15 @@ warn instead of toggling an ambiguous target.
 - `TryFrom<U>`
 - `Any`
 - `ToOwned`
+- `CastableFrom<ST, Uninit, Uninit>`
+- `CastableFrom<ST, Initialized, Initialized>`
+- `Read<Exclusive, BecauseExclusive>`
 - `Instrument`
 - `WithSubscriber`
 - `IntoEither`
 - `Pointable`
 - `OwoColorize`
 - `ErasedDestructor`
-- `CastableFrom<ST, Uninit, Uninit>`
-- `CastableFrom<ST, Initialized, Initialized>`
-- `Read<Exclusive, BecauseExclusive>`
 - `Clone`
 - `Debug`
 - `StructuralPartialEq`

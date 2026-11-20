@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-3942"></a>
+<a id="rustdoc-item-4199"></a>
 
 # Struct `pill_development_host::asset_browser::StandaloneType`
 
@@ -14,7 +14,7 @@ A standalone asset type that a new file can be created for.
 
 ## Fields
 
-<a id="rustdoc-item-4505"></a>
+<a id="rustdoc-item-4764"></a>
 
 ### `type_name`
 
@@ -24,7 +24,7 @@ type_name: String
 
 The registered type name, written to the file's `asset_type`.
 
-<a id="rustdoc-item-4506"></a>
+<a id="rustdoc-item-4765"></a>
 
 ### `display_name`
 
@@ -34,7 +34,7 @@ display_name: String
 
 The last `::` segment of the type name, shown in a dropdown.
 
-<a id="rustdoc-item-4507"></a>
+<a id="rustdoc-item-4766"></a>
 
 ### `extension`
 

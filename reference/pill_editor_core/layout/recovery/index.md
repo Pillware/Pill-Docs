@@ -1,19 +1,19 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-5368"></a>
+<a id="rustdoc-item-7331"></a>
 
 # Module `pill_editor_core::layout::recovery`
 
-Visibility: `{'restricted': {'parent': 5266, 'path': '::layout'}}` · Source: `editor\pill_editor_core\src\layout\recovery.rs:1`
+Visibility: `{'restricted': {'parent': 7229, 'path': '::layout'}}` · Source: `editor\pill_editor_core\src\layout\recovery.rs:1`
 
 The recovery document: editor state a run saves as it goes, so the next
 run can bring it back after an abrupt exit.
 
 ## Responsibilities
 
-- [`RecoveryDocument`](struct.RecoveryDocument.md#rustdoc-item-5323): the dock, the selection and the version stamp,
-  saved as a JSON document beside the layout file.
-- [`write`] / [`read`](fn.read.md#rustdoc-item-5366) / [`remove`](fn.remove.md#rustdoc-item-5367): the three operations the editor
+- [`RecoveryDocument`](struct.RecoveryDocument.md#rustdoc-item-7286): the dock, the selection and the version stamp,
+  saved as a YAML document beside the layout file.
+- [`write`] / [`read`](fn.read.md#rustdoc-item-7329) / [`remove`](fn.remove.md#rustdoc-item-7330): the three operations the editor
   executable calls on that file.
 
 ## Design
@@ -33,14 +33,14 @@ rule.
 ## Module contents
 
 ### Structs
-- [`RecoveryDocument`](struct.RecoveryDocument.md#rustdoc-item-5323) — The editor state a run saves as it goes, so the next run can restore it
+- [`RecoveryDocument`](struct.RecoveryDocument.md#rustdoc-item-7286) — The editor state a run saves as it goes, so the next run can restore it
 
 ### Functions
-- [`read`](fn.read.md#rustdoc-item-5366) — Reads the document a previous run left behind.
-- [`recovery_path`](fn.recovery_path.md#rustdoc-item-5364) — The recovery document's path: the layout directory, beside the layout
-- [`remove`](fn.remove.md#rustdoc-item-5367) — Removes the document. The run it described is ending cleanly, so there is
-- [`write`](fn.write.md#rustdoc-item-5365) — Writes the document, replacing the previous one.
+- [`read`](fn.read.md#rustdoc-item-7329) — Reads the document a previous run left behind.
+- [`recovery_path`](fn.recovery_path.md#rustdoc-item-7327) — The recovery document's path: the layout directory, beside the layout
+- [`remove`](fn.remove.md#rustdoc-item-7330) — Removes the document. The run it described is ending cleanly, so there is
+- [`write`](fn.write.md#rustdoc-item-7328) — Writes the document, replacing the previous one.
 
 ### Constants
-- [`RECOVERY_FILE`](constant.RECOVERY_FILE.md#rustdoc-item-5317) — The recovery document's file name, in the same folder as the layout
-- [`RECOVERY_VERSION`](constant.RECOVERY_VERSION.md#rustdoc-item-5316) — The recovery document's version. A document that carries any other version
+- [`RECOVERY_FILE`](constant.RECOVERY_FILE.md#rustdoc-item-7280) — The recovery document's file name, in the same folder as the layout
+- [`RECOVERY_VERSION`](constant.RECOVERY_VERSION.md#rustdoc-item-7279) — The recovery document's version. A document that carries any other version

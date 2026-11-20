@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-3423"></a>
+<a id="rustdoc-item-3679"></a>
 
 # Function `pill_development_host::project_module::loaded::start_csharp_assembly_build`
 
@@ -8,7 +8,7 @@
 pub(in project_module::loaded) fn start_csharp_assembly_build(project: &mut crate::csharp::CSharpProject, workspace_root: &std::path::Path, config: &crate::ProjectModuleConfig, cancel_flag: Option<(std::sync::Arc<std::sync::atomic::AtomicU64>, u64)>) -> ManagedReloadStart;
 ```
 
-Visibility: `{'restricted': {'parent': 3421, 'path': '::project_module::loaded'}}` · Source: `hosting\pill_development_host\src\project_module.rs:534`
+Visibility: `{'restricted': {'parent': 3677, 'path': '::project_module::loaded'}}` · Source: `hosting\pill_development_host\src\project_module.rs:526`
 
 Starts a C# assembly build on its own worker thread.
 

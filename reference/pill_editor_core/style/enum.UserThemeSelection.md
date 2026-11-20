@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-8373"></a>
+<a id="rustdoc-item-10435"></a>
 
 # Enum `pill_editor_core::style::UserThemeSelection`
 
@@ -8,13 +8,13 @@
 pub enum UserThemeSelection { ... }
 ```
 
-Source: `editor\pill_editor_core\src\style.rs:573`
+Source: `editor\pill_editor_core\src\style.rs:574`
 
 What the user's `theme` preference selected.
 
 ## Variants
 
-<a id="rustdoc-item-8368"></a>
+<a id="rustdoc-item-10430"></a>
 
 ### `None`
 
@@ -24,7 +24,7 @@ None
 
 The preference is absent or blank: no user layer.
 
-<a id="rustdoc-item-8370"></a>
+<a id="rustdoc-item-10432"></a>
 
 ### `Legacy`
 
@@ -36,7 +36,7 @@ A bare theme name such as `dark` or `light`, left over from a preference
 that named a theme instead of a file. The executable warns about it and
 adds no layer.
 
-<a id="rustdoc-item-8372"></a>
+<a id="rustdoc-item-10434"></a>
 
 ### `File`
 
@@ -48,7 +48,7 @@ A theme file, absolute or relative to the editor's state directory.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-8374"></a>
+<a id="rustdoc-item-10436"></a>
 
 ### `from_preference`
 
@@ -58,10 +58,10 @@ pub fn from_preference(preference_text: Option<&str>, state_directory: &std::pat
 
 Reads the value of the `theme` preference.
 
-A value ending in `.json` or `.theme` names a file. Anything else is a
-bare theme name, which adds no layer. A relative path is joined to
-`state_directory`, the folder that holds the preferences file. A
-missing or blank value selects [`UserThemeSelection::None`](#rustdoc-item-8368).
+A value ending in `.theme`, `.yaml` or `.yml` names a file. Anything
+else is a bare theme name, which adds no layer. A relative path is
+joined to `state_directory`, the folder that holds the preferences
+file. A missing or blank value selects [`UserThemeSelection::None`](#rustdoc-item-10430).
 
 ## Trait implementations
 

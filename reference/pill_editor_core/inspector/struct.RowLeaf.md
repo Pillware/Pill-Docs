@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-4687"></a>
+<a id="rustdoc-item-6650"></a>
 
 # Struct `pill_editor_core::inspector::RowLeaf`
 
@@ -8,7 +8,7 @@
 pub struct RowLeaf;
 ```
 
-Source: `editor\pill_editor_core\src\inspector.rs:281`
+Source: `editor\pill_editor_core\src\inspector.rs:285`
 
 One writable leaf of a grouped row.
 
@@ -19,7 +19,7 @@ records one step.
 
 ## Fields
 
-<a id="rustdoc-item-4684"></a>
+<a id="rustdoc-item-6647"></a>
 
 ### `index`
 
@@ -29,7 +29,7 @@ index: usize
 
 The field's position in the component's field list (the value's, too).
 
-<a id="rustdoc-item-4685"></a>
+<a id="rustdoc-item-6648"></a>
 
 ### `field`
 
@@ -39,7 +39,7 @@ field: String
 
 The field's registered name, which the edit names.
 
-<a id="rustdoc-item-4686"></a>
+<a id="rustdoc-item-6649"></a>
 
 ### `element`
 

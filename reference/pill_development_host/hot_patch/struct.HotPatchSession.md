@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-2608"></a>
+<a id="rustdoc-item-2682"></a>
 
 # Struct `pill_development_host::hot_patch::HotPatchSession`
 
@@ -17,7 +17,7 @@ history, keyed to the package, build command and staged rlib it patches.
 
 ## Fields
 
-<a id="rustdoc-item-2596"></a>
+<a id="rustdoc-item-2670"></a>
 
 ### `workspace_root`
 
@@ -27,7 +27,7 @@ workspace_root: std::path::PathBuf
 
 _No documentation provided._
 
-<a id="rustdoc-item-2597"></a>
+<a id="rustdoc-item-2671"></a>
 
 ### `package`
 
@@ -37,7 +37,7 @@ package: String
 
 _No documentation provided._
 
-<a id="rustdoc-item-2598"></a>
+<a id="rustdoc-item-2672"></a>
 
 ### `crate_root`
 
@@ -47,7 +47,7 @@ crate_root: std::path::PathBuf
 
 _No documentation provided._
 
-<a id="rustdoc-item-2599"></a>
+<a id="rustdoc-item-2673"></a>
 
 ### `source_root`
 
@@ -57,7 +57,7 @@ source_root: std::path::PathBuf
 
 _No documentation provided._
 
-<a id="rustdoc-item-2600"></a>
+<a id="rustdoc-item-2674"></a>
 
 ### `package_rlib`
 
@@ -69,7 +69,7 @@ The patched crate's own rlib - the staged copy the host built, so
 generated sources can `use <crate>::*` and get the identical types the
 running module holds.
 
-<a id="rustdoc-item-2601"></a>
+<a id="rustdoc-item-2675"></a>
 
 ### `build_command`
 
@@ -84,7 +84,7 @@ nowhere else, and a different feature set means different crate
 metadata - so a patch built from a bare `cargo build -p <pkg>` line
 disagrees with the running world about every `TypeId`.
 
-<a id="rustdoc-item-2602"></a>
+<a id="rustdoc-item-2676"></a>
 
 ### `snapshots`
 
@@ -95,7 +95,7 @@ snapshots: std::collections::HashMap<std::path::PathBuf, Snapshot>
 Last seen contents of every watched source file, with the modification
 time each was read at.
 
-<a id="rustdoc-item-2603"></a>
+<a id="rustdoc-item-2677"></a>
 
 ### `snapshot_taken_at`
 
@@ -110,7 +110,7 @@ this session did not cause, and an edit that happened before the session
 armed and was therefore captured as the baseline. The second one looks
 exactly like a broken watcher from outside.
 
-<a id="rustdoc-item-2604"></a>
+<a id="rustdoc-item-2678"></a>
 
 ### `rustc_line`
 
@@ -120,7 +120,7 @@ rustc_line: Option<compile::CargoRustcLine>
 
 Compiler flags, captured from cargo once and reused.
 
-<a id="rustdoc-item-2605"></a>
+<a id="rustdoc-item-2679"></a>
 
 ### `generations`
 
@@ -130,7 +130,7 @@ generations: Vec<generations::Generation>
 
 Loaded patches, never unloaded.
 
-<a id="rustdoc-item-2606"></a>
+<a id="rustdoc-item-2680"></a>
 
 ### `active_generations`
 
@@ -142,7 +142,7 @@ Which generation each patched function is currently running, so a
 failure can report what the process is still executing and a rollback
 knows where it started. Absent means generation zero, the original.
 
-<a id="rustdoc-item-2607"></a>
+<a id="rustdoc-item-2681"></a>
 
 ### `counter`
 
@@ -154,7 +154,7 @@ Makes each patch's crate name and artifact unique within the process.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-2609"></a>
+<a id="rustdoc-item-2683"></a>
 
 ### `active_generation`
 
@@ -167,7 +167,7 @@ The number of the generation that is running for one function.
 Zero means the code the artifact was built with, which is also what a
 function that was never patched reports.
 
-<a id="rustdoc-item-2610"></a>
+<a id="rustdoc-item-2684"></a>
 
 ### `previous_install`
 
@@ -183,7 +183,7 @@ its own body. A generation delivered by prologue patching also answers
 `None`: its address is the body the patch compiled, written over the
 function's first bytes, so it cannot be installed into a redirect slot.
 
-<a id="rustdoc-item-2611"></a>
+<a id="rustdoc-item-2685"></a>
 
 ### `generations`
 
@@ -193,7 +193,7 @@ pub(crate) fn generations(self: &Self) -> Vec<PatchGeneration>;
 
 Every generation recorded for every function this session has patched.
 
-<a id="rustdoc-item-2612"></a>
+<a id="rustdoc-item-2686"></a>
 
 ### `forget_prologue_patches`
 
@@ -215,7 +215,7 @@ the baseline is whatever the artifact now ships, and a rollback must not
 install a body from a previous revision into it. Patching the function
 again makes the history reachable from that new baseline.
 
-<a id="rustdoc-item-2613"></a>
+<a id="rustdoc-item-2687"></a>
 
 ### `knows_function`
 
@@ -226,7 +226,7 @@ pub(crate) fn knows_function(self: &Self, qualified: &str) -> bool;
 Whether this function has an active generation recorded. A rollback
 needs that entry before it can reach the history.
 
-<a id="rustdoc-item-2614"></a>
+<a id="rustdoc-item-2688"></a>
 
 ### `rollback`
 
@@ -251,7 +251,7 @@ restore, or when an artifact refuses an address. The active-generation
 entry is updated only on success, and a prologue path that fails partway
 leaves the copies it already rewrote in the state it put them.
 
-<a id="rustdoc-item-2615"></a>
+<a id="rustdoc-item-2689"></a>
 
 ### `restore_prologue_baseline`
 
@@ -266,7 +266,7 @@ The bytes to write come from the first generation. Every later generation
 saved the jump its predecessor wrote, so restoring from the newest would
 put a patch back rather than remove one.
 
-<a id="rustdoc-item-2616"></a>
+<a id="rustdoc-item-2690"></a>
 
 ### `restore_baseline`
 
@@ -280,7 +280,7 @@ A system has one baseline address, recorded in the engine's registry. A
 plain function has one per artifact, so each artifact is asked to empty
 its own slot instead of being handed an address that belongs to another.
 
-<a id="rustdoc-item-2618"></a>
+<a id="rustdoc-item-2692"></a>
 
 ### `new`
 
@@ -295,7 +295,7 @@ Returns `None` when the module has no function the host could address,
 so a module without one pays nothing, and when the crate's own rlib was
 not built - a patch could not link it.
 
-<a id="rustdoc-item-2620"></a>
+<a id="rustdoc-item-2694"></a>
 
 ### `refresh_snapshots`
 
@@ -305,7 +305,7 @@ pub(crate) fn refresh_snapshots(self: &mut Self);
 
 Re-read every `.rs` file under the source root into the snapshot map.
 
-The snapshot is the baseline that [`classify`](#rustdoc-item-2619) compares
+The snapshot is the baseline that [`classify`](#rustdoc-item-2693) compares
 against, so it must always describe **what is currently running**. Two
 things keep it honest: a successful patch records the new contents
 itself, and a full reload refreshes it through this method. Without the
@@ -314,7 +314,7 @@ stale forever. Every later edit would then be compared against old
 contents, reported as a change outside a function body, and refused,
 even though the reload had already applied it.
 
-<a id="rustdoc-item-2621"></a>
+<a id="rustdoc-item-2695"></a>
 
 ### `begin_attempt`
 
@@ -331,10 +331,10 @@ touches the engine or a loaded artifact, so the caller can hand the
 result to another thread and install it at a later frame boundary.
 
 The expensive half, `rustc` and `LoadLibrary`, belongs to
-[`worker::build_attempt`](worker/fn.build_attempt.md#rustdoc-item-2332). The finished patch is installed by
-[`Self::activate_attempt`](#rustdoc-item-2438).
+[`worker::build_attempt`](worker/fn.build_attempt.md#rustdoc-item-2406). The finished patch is installed by
+[`Self::activate_attempt`](#rustdoc-item-2512).
 
-<a id="rustdoc-item-2619"></a>
+<a id="rustdoc-item-2693"></a>
 
 ### `classify`
 
@@ -356,7 +356,7 @@ change outside the hot bodies, a second changed file, an unresolvable
 receiver type, a receiver-less associated function, a duplicate bare
 name, or an edit that happened before the baseline was taken.
 
-<a id="rustdoc-item-2622"></a>
+<a id="rustdoc-item-2696"></a>
 
 ### `prepare_body`
 
@@ -380,7 +380,7 @@ complete: generating the patch source, creating or writing in the
 scratch directory, refreshing the staged rlib, or capturing the
 compiler flags.
 
-<a id="rustdoc-item-2438"></a>
+<a id="rustdoc-item-2512"></a>
 
 ### `activate_attempt`
 
@@ -397,7 +397,7 @@ that touches the engine, a loaded artifact or a dispatch slot happens
 here, on the thread that owns the frame boundary: the prologue route
 rewrites live code, so this is a requirement rather than a preference.
 
-<a id="rustdoc-item-2623"></a>
+<a id="rustdoc-item-2697"></a>
 
 ### `install_body`
 
@@ -418,7 +418,7 @@ Returns `resolve` when the patch does not report the replacement this
 route asked for, and `install` when a running copy refuses it, usually
 because the function's signature no longer matches.
 
-<a id="rustdoc-item-2624"></a>
+<a id="rustdoc-item-2698"></a>
 
 ### `generate`
 
@@ -441,7 +441,7 @@ Returns the reason the source cannot be produced: the function is not in
 the changed source, a body with a receiver has no known receiver type,
 or its signature text cannot be read.
 
-<a id="rustdoc-item-2625"></a>
+<a id="rustdoc-item-2699"></a>
 
 ### `module_segments`
 
@@ -460,7 +460,7 @@ manifest may point `[lib] path` at a file other than `lib.rs`, and
 treating that file as a module would name every function in the crate
 one segment too deep.
 
-<a id="rustdoc-item-2626"></a>
+<a id="rustdoc-item-2700"></a>
 
 ### `qualified_name`
 
@@ -474,7 +474,7 @@ This is what a build script registers, because it can see the enclosing
 `impl` block. It is the name the prologue route looks up and the one
 used for display and generation bookkeeping.
 
-<a id="rustdoc-item-2627"></a>
+<a id="rustdoc-item-2701"></a>
 
 ### `slot_lookup_name`
 
@@ -484,7 +484,7 @@ pub(in hot_patch) fn slot_lookup_name(self: &Self, path: &Path, declaration: &so
 
 The path a dispatch slot is registered under, which leaves out the type.
 
-It is deliberately different from [`Self::qualified_name`](#rustdoc-item-2626), and the
+It is deliberately different from [`Self::qualified_name`](#rustdoc-item-2700), and the
 difference is forced rather than chosen. A slot's descriptor is an item,
 and an item inside a method body cannot name `Self` (`error[E0401]`). A
 `#[pill_hot_fn]` on a method can therefore only register
@@ -495,7 +495,7 @@ Two hot methods that share a name in one module collide on the slot
 route. The scanner sees both and refuses the edit instead of installing
 into whichever registered first.
 
-<a id="rustdoc-item-2628"></a>
+<a id="rustdoc-item-2702"></a>
 
 ### `refresh_staged_rlib`
 
@@ -513,7 +513,7 @@ crate>`, which names the wrong crate. The build worker adds a hint that
 the staged rlib no longer matches its dependencies.
 
 The source is the private module build tree under the host's profile
-directory ([`crate::config::module_build_artifact_directory`](../config/fn.module_build_artifact_directory.md#rustdoc-item-1256)); a bare
+directory ([`crate::config::module_build_artifact_directory`](../config/fn.module_build_artifact_directory.md#rustdoc-item-1276)); a bare
 `target/debug` holds nothing the host built. The host loads the module
 DLL, not this rlib, so a wrong-featured copy here can make this one
 patch fail; the next real build replaces it.
@@ -523,7 +523,7 @@ patch fail; the next real build replaces it.
 Returns the error text when a freshly built rlib exists but cannot be
 copied over the staged copy.
 
-<a id="rustdoc-item-2629"></a>
+<a id="rustdoc-item-2703"></a>
 
 ### `rustc_line`
 

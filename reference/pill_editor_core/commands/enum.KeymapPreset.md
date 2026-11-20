@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-905"></a>
+<a id="rustdoc-item-949"></a>
 
 # Enum `pill_editor_core::commands::KeymapPreset`
 
@@ -8,13 +8,13 @@
 pub enum KeymapPreset { ... }
 ```
 
-Source: `editor\pill_editor_core\src\commands.rs:381`
+Source: `editor\pill_editor_core\src\commands.rs:382`
 
 The keymap presets the editor ships.
 
 ## Variants
 
-<a id="rustdoc-item-1400"></a>
+<a id="rustdoc-item-1445"></a>
 
 ### `Blender`
 
@@ -24,7 +24,7 @@ Blender
 
 The default preset: Blender-like.
 
-<a id="rustdoc-item-1401"></a>
+<a id="rustdoc-item-1446"></a>
 
 ### `Unity`
 
@@ -34,7 +34,7 @@ Unity
 
 Unity-like shortcuts.
 
-<a id="rustdoc-item-1402"></a>
+<a id="rustdoc-item-1447"></a>
 
 ### `Godot`
 
@@ -44,7 +44,7 @@ Godot
 
 Godot-like shortcuts.
 
-<a id="rustdoc-item-1403"></a>
+<a id="rustdoc-item-1448"></a>
 
 ### `Unreal`
 

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-496"></a>
+<a id="rustdoc-item-506"></a>
 
 # Struct `pill_csharp_bridge::components::BindingStore`
 
@@ -21,7 +21,7 @@ between frames, so the two never overlap.
 
 ## Fields
 
-<a id="rustdoc-item-779"></a>
+<a id="rustdoc-item-801"></a>
 
 ### `bindings`
 
@@ -33,7 +33,7 @@ The table itself.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-782"></a>
+<a id="rustdoc-item-804"></a>
 
 ### `new`
 
@@ -43,7 +43,7 @@ pub(crate) fn new(bindings: std::collections::HashMap<StableComponentId, Compone
 
 Wrap one binding table.
 
-<a id="rustdoc-item-783"></a>
+<a id="rustdoc-item-805"></a>
 
 ### `read`
 
@@ -59,7 +59,7 @@ writer either finishes the one entry it was changing or leaves it out,
 so turning the poisoned lock into an error would add a failure mode no
 caller can act on.
 
-<a id="rustdoc-item-785"></a>
+<a id="rustdoc-item-807"></a>
 
 ### `write`
 
@@ -67,7 +67,7 @@ caller can act on.
 pub(crate) fn write(self: &Self) -> RwLockWriteGuard<'_, std::collections::HashMap<StableComponentId, ComponentBinding>>;
 ```
 
-Borrow the table for writing, with the same rule as [`Self::read`](#rustdoc-item-783).
+Borrow the table for writing, with the same rule as [`Self::read`](#rustdoc-item-805).
 
 ## Trait implementations
 

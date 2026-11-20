@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-6295"></a>
+<a id="rustdoc-item-8332"></a>
 
 # Constant `pill_editor_core::preferences::PREFERENCE_FIELDS`
 
@@ -8,6 +8,6 @@
 pub const PREFERENCE_FIELDS: [PreferenceField; 12] = _;
 ```
 
-Source: `editor\pill_editor_core\src\preferences.rs:85`
+Source: `editor\pill_editor_core\src\preferences.rs:91`
 
 The editable rows, in the order the tab draws them.

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1708"></a>
+<a id="rustdoc-item-1718"></a>
 
 # Constant `pill_core::telemetry::telemetry_target::SYSTEM`
 

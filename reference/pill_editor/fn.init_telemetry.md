@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1594"></a>
+<a id="rustdoc-item-2098"></a>
 
 # Function `pill_editor::init_telemetry`
 

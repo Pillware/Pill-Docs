@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-389"></a>
+<a id="rustdoc-item-432"></a>
 
 # Struct `pill_editor_core::boundary::EguiShellFrame`
 
@@ -8,13 +8,13 @@
 pub struct EguiShellFrame;
 ```
 
-Source: `editor\pill_editor_core\src\boundary.rs:179`
+Source: `editor\pill_editor_core\src\boundary.rs:211`
 
 One shell pass's output, as plain data.
 
 ## Fields
 
-<a id="rustdoc-item-366"></a>
+<a id="rustdoc-item-409"></a>
 
 ### `meshes`
 
@@ -25,7 +25,7 @@ meshes: Vec<egui::epaint::ClippedPrimitive>
 Tessellated meshes to draw. Paint callbacks are removed when the frame
 is built.
 
-<a id="rustdoc-item-368"></a>
+<a id="rustdoc-item-411"></a>
 
 ### `textures`
 
@@ -35,7 +35,7 @@ textures: egui::TexturesDelta
 
 Texture uploads the renderer must apply before drawing.
 
-<a id="rustdoc-item-370"></a>
+<a id="rustdoc-item-413"></a>
 
 ### `pixels_per_point`
 
@@ -45,7 +45,7 @@ pixels_per_point: f32
 
 The pixels-per-point the meshes were tessellated with.
 
-<a id="rustdoc-item-371"></a>
+<a id="rustdoc-item-414"></a>
 
 ### `wants_pointer`
 
@@ -56,7 +56,7 @@ wants_pointer: bool
 Whether egui wants the pointer: when true, a click should go to the UI
 rather than to a scene viewport.
 
-<a id="rustdoc-item-372"></a>
+<a id="rustdoc-item-415"></a>
 
 ### `wants_keyboard`
 
@@ -67,7 +67,7 @@ wants_keyboard: bool
 Whether egui wants the keyboard: when true, key presses should go to
 the UI.
 
-<a id="rustdoc-item-373"></a>
+<a id="rustdoc-item-416"></a>
 
 ### `cursor_icon`
 
@@ -77,7 +77,7 @@ cursor_icon: egui::CursorIcon
 
 The cursor icon egui asked for.
 
-<a id="rustdoc-item-375"></a>
+<a id="rustdoc-item-418"></a>
 
 ### `clipboard_text`
 
@@ -87,7 +87,7 @@ clipboard_text: Option<String>
 
 Text egui asked to copy to the clipboard.
 
-<a id="rustdoc-item-376"></a>
+<a id="rustdoc-item-419"></a>
 
 ### `scene_rects`
 
@@ -101,7 +101,7 @@ viewport follows the dock layout. A slot left `None` hides that
 viewport's window, because its tab is not shown. The list has one slot
 per view the dock knows, one past its highest view index.
 
-<a id="rustdoc-item-377"></a>
+<a id="rustdoc-item-420"></a>
 
 ### `game_rect`
 
@@ -114,7 +114,7 @@ places the primary surface's child window here, so the game view
 follows the dock layout. `None` hides that window, because the Game tab
 is not shown.
 
-<a id="rustdoc-item-378"></a>
+<a id="rustdoc-item-421"></a>
 
 ### `overlay_regions`
 
@@ -126,7 +126,7 @@ The UI rectangles the shell drew this pass, in logical points. A click
 inside one belongs to the UI, not the scene, so the frontend never asks
 the scene what is under it.
 
-<a id="rustdoc-item-379"></a>
+<a id="rustdoc-item-422"></a>
 
 ### `ime_allowed`
 
@@ -136,7 +136,7 @@ ime_allowed: bool
 
 Whether IME composition should be enabled.
 
-<a id="rustdoc-item-380"></a>
+<a id="rustdoc-item-423"></a>
 
 ### `ime_rect`
 
@@ -146,7 +146,7 @@ ime_rect: Option<ShellRect>
 
 Where the IME candidate window should appear, in logical points.
 
-<a id="rustdoc-item-381"></a>
+<a id="rustdoc-item-424"></a>
 
 ### `drag_out`
 
@@ -157,7 +157,7 @@ drag_out: Option<String>
 The asset path a tile drag hands to the OS. The frontend starts an OLE
 drag with it, so the person can drop the file into Explorer.
 
-<a id="rustdoc-item-382"></a>
+<a id="rustdoc-item-425"></a>
 
 ### `requests`
 
@@ -169,7 +169,7 @@ The asks this pass raised for the executable: a Problems row to open, an
 undo or redo, a dock tab to show. The executable drains them at its
 frame boundary and never reads the shell session for them.
 
-<a id="rustdoc-item-384"></a>
+<a id="rustdoc-item-427"></a>
 
 ### `quit_requested`
 
@@ -181,7 +181,7 @@ Whether the shell's menu asked the editor to quit. The winit frontend
 ends the run when it sees this flag; a browser frontend ignores it,
 because a page cannot close itself safely.
 
-<a id="rustdoc-item-385"></a>
+<a id="rustdoc-item-428"></a>
 
 ### `repaint_after`
 
@@ -193,7 +193,7 @@ How soon egui asked for the next pass, when it asked at all. `None`
 means no pass was requested. The frontend only checks whether a request
 was made, and draws the next frame at once when one was.
 
-<a id="rustdoc-item-387"></a>
+<a id="rustdoc-item-430"></a>
 
 ### `popout_frames`
 
@@ -208,7 +208,7 @@ disappears from the list has its window closed.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-390"></a>
+<a id="rustdoc-item-433"></a>
 
 ### `discard_unapplied_textures`
 

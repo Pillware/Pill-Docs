@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-6373"></a>
+<a id="rustdoc-item-8410"></a>
 
 # Function `pill_editor_core::preferences::keymap_preset`
 
@@ -8,7 +8,7 @@
 pub fn keymap_preset(document: &serde_json::Map<String, serde_json::Value>) -> crate::commands::KeymapPreset;
 ```
 
-Source: `editor\pill_editor_core\src\preferences.rs:257`
+Source: `editor\pill_editor_core\src\preferences.rs:263`
 
 Returns the keymap preset the file selects.
 

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1505"></a>
+<a id="rustdoc-item-1529"></a>
 
 # Function `pill_csharp_bridge::manifest::split_manifest_kinds`
 
@@ -18,5 +18,5 @@ above; only what they are registered as differs.
 ## Panics
 
 Panics when a declared default does not parse. Both callers pass a manifest
-that [`parse_and_validate_manifest`](fn.parse_and_validate_manifest.md#rustdoc-item-1504) already validated, and that function
+that [`parse_and_validate_manifest`](fn.parse_and_validate_manifest.md#rustdoc-item-1528) already validated, and that function
 refuses such a default, so this cannot fire for them.

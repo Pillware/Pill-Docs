@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-422"></a>
+<a id="rustdoc-item-424"></a>
 
 # Function `pill_project_ui::install_with_theme`
 
@@ -8,7 +8,7 @@
 pub fn install_with_theme(engine: &mut pill_engine_core::Engine, install: ThemeInstall);
 ```
 
-Source: `ui\pill_project_ui\src\lib.rs:476`
+Source: `ui\pill_project_ui\src\lib.rs:482`
 
 Install a project's theme: the code default merged with an optional
 `.theme` override, plus the system that re-applies it on a reimport.

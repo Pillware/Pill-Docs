@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-2004"></a>
+<a id="rustdoc-item-2029"></a>
 
 # Enum `pill_csharp_bridge::resources::ResourceUndo`
 
@@ -19,7 +19,7 @@ invent the bytes it dropped. Neither has a variant for that reason.
 
 ## Variants
 
-<a id="rustdoc-item-2003"></a>
+<a id="rustdoc-item-2028"></a>
 
 ### `Renamed`
 

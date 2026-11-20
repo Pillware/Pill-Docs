@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-866"></a>
+<a id="rustdoc-item-862"></a>
 
 # Constant `pill_master_renderer::overlay::font::FONT_TEXTURE`
 
@@ -8,7 +8,7 @@
 pub(crate) const FONT_TEXTURE: pill_ui_frame::TextureId = _;
 ```
 
-Visibility: `crate` · Source: `extensions\pill_master_renderer\pill_master_renderer\src\overlay\font.rs:118`
+Visibility: `crate` · Source: `extensions\pill_master_renderer\modules\runtime\gpu\src\overlay\font.rs:118`
 
 The texture the label list samples the font from.
 

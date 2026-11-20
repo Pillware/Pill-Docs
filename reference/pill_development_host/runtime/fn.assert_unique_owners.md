@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-4108"></a>
+<a id="rustdoc-item-4365"></a>
 
 # Function `pill_development_host::runtime::assert_unique_owners`
 
@@ -8,7 +8,7 @@
 pub(in runtime) fn assert_unique_owners(subjects: &[(&str, pill_engine::SystemOwner)]);
 ```
 
-Visibility: `{'restricted': {'parent': 3859, 'path': '::runtime'}}` · Source: `hosting\pill_development_host\src\runtime.rs:1280`
+Visibility: `{'restricted': {'parent': 4115, 'path': '::runtime'}}` · Source: `hosting\pill_development_host\src\runtime.rs:1294`
 
 Debug assertion: every entry of `subjects` names a distinct owner.
 

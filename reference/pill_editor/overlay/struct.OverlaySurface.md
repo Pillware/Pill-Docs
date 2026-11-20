@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-438"></a>
+<a id="rustdoc-item-494"></a>
 
 # Struct `pill_editor::overlay::OverlaySurface`
 
@@ -8,13 +8,13 @@
 pub struct OverlaySurface;
 ```
 
-Source: `editor\pill_editor\src\overlay.rs:78`
+Source: `editor\pill_editor\src\overlay.rs:103`
 
 The composition overlay over the editor window.
 
 ## Fields
 
-<a id="rustdoc-item-430"></a>
+<a id="rustdoc-item-484"></a>
 
 ### `mode`
 
@@ -24,7 +24,7 @@ mode: OverlayMode
 
 The posture this surface was created in.
 
-<a id="rustdoc-item-431"></a>
+<a id="rustdoc-item-485"></a>
 
 ### `composition`
 
@@ -36,7 +36,7 @@ The DirectComposition tree the surface is set on. It is kept alive
 and committed for the surface's whole life; only the composition
 posture has one.
 
-<a id="rustdoc-item-432"></a>
+<a id="rustdoc-item-486"></a>
 
 ### `surface`
 
@@ -46,7 +46,19 @@ surface: wgpu::Surface<'static>
 
 The overlay's swapchain, drawn through the composition visual.
 
-<a id="rustdoc-item-434"></a>
+<a id="rustdoc-item-488"></a>
+
+### `floating_window`
+
+```rust
+floating_window: Option<std::sync::Arc<winit::window::Window>>
+```
+
+The window the floating posture draws into. Only that posture has one:
+the other two draw into a window the editor already owns, whose
+placement is not the overlay's to set.
+
+<a id="rustdoc-item-490"></a>
 
 ### `surface_configuration`
 
@@ -57,7 +69,7 @@ surface_configuration: wgpu::SurfaceConfiguration
 The swapchain's configuration: the window's client area in physical
 pixels, the editor's format, the posture's composition mode.
 
-<a id="rustdoc-item-436"></a>
+<a id="rustdoc-item-492"></a>
 
 ### `has_drawn_content`
 
@@ -68,7 +80,7 @@ has_drawn_content: bool
 Whether the last frame drew content, so the first blank frame after
 content clears the swapchain and later blanks cost no GPU work.
 
-<a id="rustdoc-item-437"></a>
+<a id="rustdoc-item-493"></a>
 
 ### `frame_count`
 
@@ -80,7 +92,7 @@ Overlay frames presented since startup.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-439"></a>
+<a id="rustdoc-item-496"></a>
 
 ### `new`
 
@@ -90,6 +102,10 @@ pub fn new(instance: &wgpu::Instance, adapter: &wgpu::Adapter, device: &wgpu::De
 
 Create the composition overlay for `window`.
 
+DirectComposition and the `CompositionVisual` surface target wgpu takes
+from it are Windows-only, so this posture exists there alone; every
+other platform starts in [`Self::new_window`](#rustdoc-item-495) instead.
+
 #### Errors
 
 Returns the reason, which the executable logs, when the adapter is not
@@ -97,7 +113,7 @@ DX12, when the composition tree cannot be built or committed, when the
 surface cannot be created from the visual, or when the swapchain cannot
 carry the given format and premultiplied alpha.
 
-<a id="rustdoc-item-445"></a>
+<a id="rustdoc-item-495"></a>
 
 ### `new_window`
 
@@ -117,7 +133,7 @@ no transparency, so every backend can provide it.
 Returns the reason, which the executable logs, when the window surface
 cannot be created or does not offer the editor's format.
 
-<a id="rustdoc-item-446"></a>
+<a id="rustdoc-item-501"></a>
 
 ### `mode`
 
@@ -127,7 +143,17 @@ pub fn mode(self: &Self) -> OverlayMode;
 
 Returns the posture this surface draws in.
 
-<a id="rustdoc-item-447"></a>
+<a id="rustdoc-item-502"></a>
+
+### `floating_window`
+
+```rust
+pub fn floating_window(self: &Self) -> Option<&Arc<Window>>;
+```
+
+The window the floating posture draws into, if this is that posture.
+
+<a id="rustdoc-item-503"></a>
 
 ### `resize`
 
@@ -138,7 +164,7 @@ pub fn resize(self: &mut Self, device: &wgpu::Device, window_size: (u32, u32));
 Resize the swapchain to `window_size` physical pixels (the window's
 client area), and commit the composition tree when there is one.
 
-<a id="rustdoc-item-448"></a>
+<a id="rustdoc-item-504"></a>
 
 ### `frames`
 
@@ -148,7 +174,7 @@ pub fn frames(self: &Self) -> u64;
 
 Returns the number of overlay frames presented since startup.
 
-<a id="rustdoc-item-449"></a>
+<a id="rustdoc-item-505"></a>
 
 ### `render`
 

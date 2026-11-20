@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1563"></a>
+<a id="rustdoc-item-1573"></a>
 
 # Module `pill_core::system_ticks`
 
@@ -34,11 +34,11 @@ into a caller.
 ## Module contents
 
 ### Functions
-- [`last_run_tick`](fn.last_run_tick.md#rustdoc-item-1565) — Returns the tick at which the system on this thread last ran.
-- [`replace_last_run_tick`](fn.replace_last_run_tick.md#rustdoc-item-1566) — Replaces this thread's last-run tick and returns the previous value.
-- [`replace_this_run_tick`](fn.replace_this_run_tick.md#rustdoc-item-1568) — Replaces this thread's reserved tick and returns the previous value.
-- [`this_run_tick`](fn.this_run_tick.md#rustdoc-item-1567) — Returns the tick reserved for the system on this thread.
+- [`last_run_tick`](fn.last_run_tick.md#rustdoc-item-1575) — Returns the tick at which the system on this thread last ran.
+- [`replace_last_run_tick`](fn.replace_last_run_tick.md#rustdoc-item-1576) — Replaces this thread's last-run tick and returns the previous value.
+- [`replace_this_run_tick`](fn.replace_this_run_tick.md#rustdoc-item-1578) — Replaces this thread's reserved tick and returns the previous value.
+- [`this_run_tick`](fn.this_run_tick.md#rustdoc-item-1577) — Returns the tick reserved for the system on this thread.
 
 ### Constants
-- [`LAST_RUN_TICK`](constant.LAST_RUN_TICK.md#rustdoc-item-1560) — The tick at which the system on this thread last ran. `None` outside a
-- [`THIS_RUN_TICK`](constant.THIS_RUN_TICK.md#rustdoc-item-1564) — The tick reserved for the system on this thread. `None` means the
+- [`LAST_RUN_TICK`](constant.LAST_RUN_TICK.md#rustdoc-item-1570) — The tick at which the system on this thread last ran. `None` outside a
+- [`THIS_RUN_TICK`](constant.THIS_RUN_TICK.md#rustdoc-item-1574) — The tick reserved for the system on this thread. `None` means the

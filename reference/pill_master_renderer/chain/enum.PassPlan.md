@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-462"></a>
+<a id="rustdoc-item-459"></a>
 
 # Enum `pill_master_renderer::chain::PassPlan`
 
@@ -8,13 +8,13 @@
 pub(crate) enum PassPlan<'a> { ... }
 ```
 
-Visibility: `crate` · Source: `extensions\pill_master_renderer\pill_master_renderer\src\chain.rs:103`
+Visibility: `crate` · Source: `extensions\pill_master_renderer\modules\runtime\gpu\src\chain.rs:103`
 
 One pass the renderer will record.
 
 ## Variants
 
-<a id="rustdoc-item-455"></a>
+<a id="rustdoc-item-452"></a>
 
 ### `Geometry`
 
@@ -34,7 +34,7 @@ The first pass that names a shader and writes only the surface also
 takes the runs no pass in the chain claimed, so an assigned material is
 never left off the screen.
 
-<a id="rustdoc-item-461"></a>
+<a id="rustdoc-item-458"></a>
 
 ### `Fullscreen`
 
@@ -46,7 +46,7 @@ Three vertices and no vertex buffers, reading what earlier passes wrote.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-463"></a>
+<a id="rustdoc-item-460"></a>
 
 ### `label`
 
@@ -56,7 +56,7 @@ pub(crate) fn label(self: &Self) -> &str;
 
 Pass name, used as the wgpu render-pass label and in the chain log.
 
-<a id="rustdoc-item-464"></a>
+<a id="rustdoc-item-461"></a>
 
 ### `outputs`
 
@@ -66,7 +66,7 @@ pub(crate) fn outputs(self: &Self) -> &[PassOutput<'_>];
 
 Where this pass writes, its own target first.
 
-<a id="rustdoc-item-465"></a>
+<a id="rustdoc-item-462"></a>
 
 ### `clears`
 
@@ -76,7 +76,7 @@ pub(crate) fn clears(self: &Self) -> bool;
 
 Whether this pass opens the targets it writes.
 
-<a id="rustdoc-item-466"></a>
+<a id="rustdoc-item-463"></a>
 
 ### `draws`
 

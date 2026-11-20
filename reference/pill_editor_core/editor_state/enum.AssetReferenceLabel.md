@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-2753"></a>
+<a id="rustdoc-item-2887"></a>
 
 # Enum `pill_editor_core::editor_state::AssetReferenceLabel`
 
@@ -8,13 +8,13 @@
 pub enum AssetReferenceLabel { ... }
 ```
 
-Source: `editor\pill_editor_core\src\editor_state\mod.rs:167`
+Source: `editor\pill_editor_core\src\editor_state\mod.rs:209`
 
 What an asset reference field currently names, as the Inspector shows it.
 
 ## Variants
 
-<a id="rustdoc-item-2866"></a>
+<a id="rustdoc-item-3000"></a>
 
 ### `Unset`
 
@@ -24,7 +24,7 @@ Unset
 
 The field is cleared and holds the invalid handle.
 
-<a id="rustdoc-item-2868"></a>
+<a id="rustdoc-item-3002"></a>
 
 ### `Named`
 
@@ -35,7 +35,7 @@ Named
 The field addresses a live asset, named by its path (or the name its
 creator gave it).
 
-<a id="rustdoc-item-2869"></a>
+<a id="rustdoc-item-3003"></a>
 
 ### `Unnamed`
 
@@ -45,7 +45,7 @@ Unnamed
 
 The field addresses a live asset that has no name.
 
-<a id="rustdoc-item-2870"></a>
+<a id="rustdoc-item-3004"></a>
 
 ### `Missing`
 
@@ -58,7 +58,7 @@ handle is stale.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-2871"></a>
+<a id="rustdoc-item-3005"></a>
 
 ### `of`
 
@@ -69,7 +69,7 @@ pub fn of(world: &pill_engine::World, value: &FieldValue) -> Option<Self>;
 Returns the label of an asset value, read through the world's import
 registry.
 
-<a id="rustdoc-item-2872"></a>
+<a id="rustdoc-item-3006"></a>
 
 ### `text`
 

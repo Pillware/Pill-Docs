@@ -1,12 +1,12 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1366"></a>
+<a id="rustdoc-item-1411"></a>
 
 # Module `pill_master_renderer_data::components`
 
-Source: `extensions\pill_master_renderer\pill_master_renderer_data\src\components\mod.rs:1`
+Source: `extensions\pill_master_renderer\modules\runtime\data\src\components\mod.rs:1`
 
-The world-side draw components and [`register_components`](fn.register_components.md#rustdoc-item-1364).
+The world-side draw components and [`register_components`](fn.register_components.md#rustdoc-item-1409).
 The components a game places in the world for the master renderer.
 
 ## Responsibilities
@@ -16,7 +16,7 @@ The components a game places in the world for the master renderer.
 - Re-export the scene types every renderer shares - the camera component and
   the viewport rectangle from the renderer contract, the transform component
   from the engine - so a game imports them all from here.
-- Register the components with the world through [`register_components`](fn.register_components.md#rustdoc-item-1364),
+- Register the components with the world through [`register_components`](fn.register_components.md#rustdoc-item-1409),
   field layouts included, for the C# mirror codegen and the editor.
 
 ## Design
@@ -38,17 +38,17 @@ instead of deriving a new one.
 ## Module contents
 
 ### Modules
-- [`directional_light`](directional_light/index.md#rustdoc-item-1363) — The directional light a scene declares.
-- [`mesh_renderer`](mesh_renderer/index.md#rustdoc-item-1369) — The mesh renderer component, and the builder that assembles one.
+- [`directional_light`](directional_light/index.md#rustdoc-item-1408) — The directional light a scene declares.
+- [`mesh_renderer`](mesh_renderer/index.md#rustdoc-item-1414) — The mesh renderer component, and the builder that assembles one.
 
 ### Functions
-- [`register_components`](fn.register_components.md#rustdoc-item-1364) — Registers the renderer's scene components with the world, field layouts
+- [`register_components`](fn.register_components.md#rustdoc-item-1409) — Registers the renderer's scene components with the world, field layouts
 
 ## Re-exports
 
 - `pub use pill_engine::common_components::TransformComponent;`
 - `pub use pill_renderer_api::components::CameraComponent;`
 - `pub use pill_renderer_api::components::RenderViewport;`
-- [`pub use directional_light::DirectionalLightComponent;`](directional_light/struct.DirectionalLightComponent.md#rustdoc-item-1314)
-- [`pub use mesh_renderer::MeshRendererComponent;`](mesh_renderer/struct.MeshRendererComponent.md#rustdoc-item-1368)
-- [`pub use mesh_renderer::MeshRendererComponentBuilder;`](mesh_renderer/struct.MeshRendererComponentBuilder.md#rustdoc-item-1370)
+- [`pub use directional_light::DirectionalLightComponent;`](directional_light/struct.DirectionalLightComponent.md#rustdoc-item-1303)
+- [`pub use mesh_renderer::MeshRendererComponent;`](mesh_renderer/struct.MeshRendererComponent.md#rustdoc-item-1413)
+- [`pub use mesh_renderer::MeshRendererComponentBuilder;`](mesh_renderer/struct.MeshRendererComponentBuilder.md#rustdoc-item-1415)

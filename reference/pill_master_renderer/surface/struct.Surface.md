@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1915"></a>
+<a id="rustdoc-item-1958"></a>
 
 # Struct `pill_master_renderer::surface::Surface`
 
@@ -8,12 +8,12 @@
 pub struct Surface;
 ```
 
-Source: `extensions\pill_master_renderer\pill_master_renderer\src\surface.rs:54`
+Source: `extensions\pill_master_renderer\modules\runtime\gpu\src\surface.rs:54`
 
 A window's swapchain, its configuration, and the colour format its
 pipelines draw in.
 
-Built by [`Surface::create`](#rustdoc-item-2008) or [`Surface::create_additional`](#rustdoc-item-2906), and
+Built by [`Surface::create`](#rustdoc-item-2051) or [`Surface::create_additional`](#rustdoc-item-2943), and
 reconfigured in place for the rest of its life. The device it was configured
 against is passed in rather than held: the same device creates every other
 GPU object in the renderer, so holding it here would make this type look
@@ -21,7 +21,7 @@ like the device's owner as well as the surface's.
 
 ## Fields
 
-<a id="rustdoc-item-2901"></a>
+<a id="rustdoc-item-2938"></a>
 
 ### `surface`
 
@@ -31,7 +31,7 @@ surface: wgpu::Surface<'static>
 
 _No documentation provided._
 
-<a id="rustdoc-item-2903"></a>
+<a id="rustdoc-item-2940"></a>
 
 ### `surface_configuration`
 
@@ -41,7 +41,7 @@ surface_configuration: wgpu::SurfaceConfiguration
 
 _No documentation provided._
 
-<a id="rustdoc-item-2904"></a>
+<a id="rustdoc-item-2941"></a>
 
 ### `render_format`
 
@@ -51,9 +51,9 @@ render_format: wgpu::TextureFormat
 
 The render format: what the pipelines render to and what each frame is
 drawn through. It is the configured format with an sRGB suffix where
-the surface has an sRGB variant; see [`Surface::create`](#rustdoc-item-2008).
+the surface has an sRGB variant; see [`Surface::create`](#rustdoc-item-2051).
 
-<a id="rustdoc-item-2905"></a>
+<a id="rustdoc-item-2942"></a>
 
 ### `backend`
 
@@ -66,7 +66,7 @@ timeline with.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-2008"></a>
+<a id="rustdoc-item-2051"></a>
 
 ### `create`
 
@@ -78,7 +78,7 @@ Builds the GPU bootstrap: instance, surface, adapter, device and queue.
 
 Returns the surface beside the device and queue it was configured with,
 and the instance and adapter it was built from:
-[`Surface::create_additional`](#rustdoc-item-2906) needs both to build further surfaces.
+[`Surface::create_additional`](#rustdoc-item-2943) needs both to build further surfaces.
 
 #### Errors
 
@@ -92,7 +92,7 @@ for.
 `window` must name a live window, and that window must outlive the
 returned surface: nothing here keeps it alive.
 
-<a id="rustdoc-item-2906"></a>
+<a id="rustdoc-item-2943"></a>
 
 ### `create_additional`
 
@@ -115,13 +115,13 @@ Returns [`RendererError::SurfaceCreation`] when the window's surface
 cannot be created or the adapter cannot present to it,
 [`RendererError::UnsupportedSurface`] when it cannot draw in
 `render_format`, [`RendererError::Backend`] when it offers no alpha
-mode, and the configuration errors of [`configure`](fn.configure.md#rustdoc-item-2910).
+mode, and the configuration errors of [`configure`](fn.configure.md#rustdoc-item-2947).
 
 #### Safety
 
 `window` must name a live window that outlives the returned surface.
 
-<a id="rustdoc-item-2912"></a>
+<a id="rustdoc-item-2949"></a>
 
 ### `backend`
 
@@ -131,7 +131,7 @@ pub fn backend(self: &Self) -> wgpu::Backend;
 
 The graphics API the device behind this surface runs on.
 
-<a id="rustdoc-item-2913"></a>
+<a id="rustdoc-item-2950"></a>
 
 ### `format`
 
@@ -144,7 +144,7 @@ and the format of the view each frame is drawn through: the configured
 format's sRGB variant, or the configured format itself where the
 surface has no sRGB variant.
 
-<a id="rustdoc-item-2914"></a>
+<a id="rustdoc-item-2951"></a>
 
 ### `size`
 
@@ -154,7 +154,7 @@ pub fn size(self: &Self) -> (u32, u32);
 
 The configured size, in physical pixels.
 
-<a id="rustdoc-item-2915"></a>
+<a id="rustdoc-item-2952"></a>
 
 ### `composites`
 
@@ -166,11 +166,11 @@ Whether the swapchain image's alpha reaches the compositor.
 
 This decides whether a transparent pixel means "leave this pixel to
 whatever else paints this window" or is simply opaque black, because
-only a compositing mode carries alpha out of the image. [`configure`](fn.configure.md#rustdoc-item-2910)
+only a compositing mode carries alpha out of the image. [`configure`](fn.configure.md#rustdoc-item-2947)
 records the mode the surface accepted, so an `Opaque` fallback shows up
 here instead of being assumed away.
 
-<a id="rustdoc-item-2916"></a>
+<a id="rustdoc-item-2953"></a>
 
 ### `configuration`
 
@@ -180,7 +180,7 @@ pub fn configuration(self: &Self) -> &wgpu::SurfaceConfiguration;
 
 The whole configuration, for resources sized alongside the surface.
 
-<a id="rustdoc-item-2917"></a>
+<a id="rustdoc-item-2954"></a>
 
 ### `resize`
 
@@ -190,7 +190,7 @@ pub fn resize(self: &mut Self, device: &wgpu::Device, width: u32, height: u32) -
 
 Reconfigures the surface for a new size.
 
-The new size goes through [`configure`](fn.configure.md#rustdoc-item-2910), with its `Opaque` fallback, and
+The new size goes through [`configure`](fn.configure.md#rustdoc-item-2947), with its `Opaque` fallback, and
 is only committed once the surface accepted it. A refusal therefore
 leaves the old configuration in place, instead of one that disagrees
 with the swapchain.
@@ -200,7 +200,7 @@ with the swapchain.
 Returns [`RendererError::Backend`] when every candidate configuration
 was refused, with each refusal collected.
 
-<a id="rustdoc-item-2918"></a>
+<a id="rustdoc-item-2955"></a>
 
 ### `acquire`
 
@@ -216,7 +216,7 @@ Returns [`RendererError::Backend`] when the swapchain is still lost or
 outdated after one reconfiguration, and again with wgpu's status for any
 other acquisition failure.
 
-<a id="rustdoc-item-2919"></a>
+<a id="rustdoc-item-2956"></a>
 
 ### `reconfigure`
 
@@ -233,7 +233,7 @@ recreating.
 #### Errors
 
 Returns [`RendererError::Backend`] when every candidate alpha mode was
-refused, as [`configure`](fn.configure.md#rustdoc-item-2910) reports it.
+refused, as [`configure`](fn.configure.md#rustdoc-item-2947) reports it.
 
 ## Trait implementations
 

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-2516"></a>
+<a id="rustdoc-item-2615"></a>
 
 # Enum `pill_editor_core::editor_state::command::CommandFamily`
 
@@ -8,14 +8,14 @@
 pub enum CommandFamily { ... }
 ```
 
-Source: `editor\pill_editor_core\src\editor_state\command.rs:626`
+Source: `editor\pill_editor_core\src\editor_state\command.rs:795`
 
 The family a command belongs to, which is also the applier module that
 applies it.
 
 ## Variants
 
-<a id="rustdoc-item-2614"></a>
+<a id="rustdoc-item-2713"></a>
 
 ### `World`
 
@@ -26,7 +26,7 @@ World
 World edits: component fields, array elements, the entity and component
 lifecycle, and resource fields.
 
-<a id="rustdoc-item-2615"></a>
+<a id="rustdoc-item-2714"></a>
 
 ### `Engine`
 
@@ -36,7 +36,7 @@ Engine
 
 Engine controls: pause, step, the gizmo tool, the grid, a system toggle.
 
-<a id="rustdoc-item-2616"></a>
+<a id="rustdoc-item-2715"></a>
 
 ### `Selection`
 
@@ -46,7 +46,7 @@ Selection
 
 Selection changes and the request that arms the next scene click.
 
-<a id="rustdoc-item-2617"></a>
+<a id="rustdoc-item-2716"></a>
 
 ### `Document`
 
@@ -56,7 +56,7 @@ Document
 
 Scene documents and preferences.
 
-<a id="rustdoc-item-2618"></a>
+<a id="rustdoc-item-2717"></a>
 
 ### `Asset`
 

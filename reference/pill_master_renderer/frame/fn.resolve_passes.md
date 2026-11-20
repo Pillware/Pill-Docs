@@ -8,7 +8,7 @@
 pub(in frame) fn resolve_passes(assets: &pill_engine::AssetManager, manager: Option<&crate::resources::RenderingManager>) -> Vec<ResolvedPass>;
 ```
 
-Visibility: `{'restricted': {'parent': 238, 'path': '::frame'}}` · Source: `extensions\pill_master_renderer\pill_master_renderer\src\frame.rs:115`
+Visibility: `{'restricted': {'parent': 238, 'path': '::frame'}}` · Source: `extensions\pill_master_renderer\modules\runtime\gpu\src\frame.rs:115`
 
 Returns the pass chain this frame should run, read from the pipeline the
 game selected.

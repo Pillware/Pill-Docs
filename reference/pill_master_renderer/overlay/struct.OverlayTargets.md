@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1286"></a>
+<a id="rustdoc-item-1327"></a>
 
 # Struct `pill_master_renderer::overlay::OverlayTargets`
 
@@ -8,7 +8,7 @@
 pub(crate) struct OverlayTargets;
 ```
 
-Visibility: `crate` · Source: `extensions\pill_master_renderer\pill_master_renderer\src\overlay\mod.rs:181`
+Visibility: `crate` · Source: `extensions\pill_master_renderer\modules\runtime\gpu\src\overlay\mod.rs:197`
 
 The targets one surface's overlay draws into.
 
@@ -22,7 +22,7 @@ never allocates them.
 
 ## Fields
 
-<a id="rustdoc-item-1280"></a>
+<a id="rustdoc-item-1321"></a>
 
 ### `width`
 
@@ -32,7 +32,7 @@ width: u32
 
 _No documentation provided._
 
-<a id="rustdoc-item-1281"></a>
+<a id="rustdoc-item-1322"></a>
 
 ### `height`
 
@@ -42,7 +42,7 @@ height: u32
 
 _No documentation provided._
 
-<a id="rustdoc-item-1282"></a>
+<a id="rustdoc-item-1323"></a>
 
 ### `mask_view`
 
@@ -53,7 +53,7 @@ mask_view: wgpu::TextureView
 The silhouettes of the outlined meshes, drawn here and read by the edge
 pass.
 
-<a id="rustdoc-item-1283"></a>
+<a id="rustdoc-item-1324"></a>
 
 ### `outline_bind_group`
 
@@ -63,7 +63,7 @@ outline_bind_group: wgpu::BindGroup
 
 _No documentation provided._
 
-<a id="rustdoc-item-1285"></a>
+<a id="rustdoc-item-1326"></a>
 
 ### `pick_targets`
 

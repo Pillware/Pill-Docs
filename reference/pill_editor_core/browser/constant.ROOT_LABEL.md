@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-458"></a>
+<a id="rustdoc-item-502"></a>
 
 # Constant `pill_editor_core::browser::ROOT_LABEL`
 

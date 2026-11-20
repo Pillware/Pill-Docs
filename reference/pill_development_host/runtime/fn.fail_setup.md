@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-4114"></a>
+<a id="rustdoc-item-4371"></a>
 
 # Function `pill_development_host::runtime::fail_setup`
 
@@ -8,7 +8,7 @@
 pub(in runtime) fn fail_setup(runtime: pill_player::Runtime, error: pill_core::error::HostError) -> pill_core::error::HostError;
 ```
 
-Visibility: `{'restricted': {'parent': 3859, 'path': '::runtime'}}` · Source: `hosting\pill_development_host\src\runtime.rs:1428`
+Visibility: `{'restricted': {'parent': 4115, 'path': '::runtime'}}` · Source: `hosting\pill_development_host\src\runtime.rs:1442`
 
 Report a setup failure, then tear the half-built host down world-first.
 

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-2863"></a>
+<a id="rustdoc-item-2937"></a>
 
 # Struct `pill_development_host::layout_record::DependencyVersion`
 
@@ -14,7 +14,7 @@ One declared crate and the versions the lockfile resolved for it.
 
 ## Fields
 
-<a id="rustdoc-item-2861"></a>
+<a id="rustdoc-item-2935"></a>
 
 ### `name`
 
@@ -24,7 +24,7 @@ name: String
 
 The crate name as the resource declared it.
 
-<a id="rustdoc-item-2862"></a>
+<a id="rustdoc-item-2936"></a>
 
 ### `versions`
 

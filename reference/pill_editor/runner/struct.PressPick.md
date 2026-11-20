@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-526"></a>
+<a id="rustdoc-item-585"></a>
 
 # Struct `pill_editor::runner::PressPick`
 
@@ -8,14 +8,14 @@
 pub(in runner) struct PressPick;
 ```
 
-Visibility: `{'restricted': {'parent': 483, 'path': '::runner'}}` · Source: `editor\pill_editor\src\runner\mod.rs:3962`
+Visibility: `{'restricted': {'parent': 539, 'path': '::runner'}}` · Source: `editor\pill_editor\src\runner\mod.rs:4603`
 
 The pick a scene press asked: the view and press pixel it happened at,
 and the request id its answer will carry.
 
 ## Fields
 
-<a id="rustdoc-item-1517"></a>
+<a id="rustdoc-item-2021"></a>
 
 ### `view`
 
@@ -25,7 +25,7 @@ view: usize
 
 The view the press landed in.
 
-<a id="rustdoc-item-1518"></a>
+<a id="rustdoc-item-2022"></a>
 
 ### `x`
 
@@ -36,7 +36,7 @@ x: f32
 The press pixel's horizontal coordinate, in the view's physical surface
 pixels.
 
-<a id="rustdoc-item-1519"></a>
+<a id="rustdoc-item-2023"></a>
 
 ### `y`
 
@@ -47,7 +47,7 @@ y: f32
 The press pixel's vertical coordinate, in the view's physical surface
 pixels.
 
-<a id="rustdoc-item-1520"></a>
+<a id="rustdoc-item-2024"></a>
 
 ### `request_id`
 

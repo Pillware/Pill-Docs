@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-628"></a>
+<a id="rustdoc-item-644"></a>
 
 # Function `pill_csharp_bridge::backend::register_managed_systems`
 
@@ -8,7 +8,7 @@
 pub(in backend) fn register_managed_systems(engine: &mut pill_engine::Engine, bindings: &std::sync::Arc<super::components::BindingStore>, exports: SystemExports, subject: &str) -> Result<Vec<ManagedSystemSnapshot>, pill_core::error::CSharpError>;
 ```
 
-Visibility: `{'restricted': {'parent': 400, 'path': '::backend'}}` · Source: `csharp\pill_csharp_bridge\src\backend.rs:522`
+Visibility: `{'restricted': {'parent': 403, 'path': '::backend'}}` · Source: `csharp\pill_csharp_bridge\src\backend.rs:581`
 
 Resolves and registers every managed system in one step.
 
@@ -18,4 +18,4 @@ reload calls them separately - see `CSharpRuntime::reregister_systems`.
 
 ## Errors
 
-Whatever [`prepare_managed_systems`](fn.prepare_managed_systems.md#rustdoc-item-518) refuses.
+Whatever [`prepare_managed_systems`](fn.prepare_managed_systems.md#rustdoc-item-528) refuses.

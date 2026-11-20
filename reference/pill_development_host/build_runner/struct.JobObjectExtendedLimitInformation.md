@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-702"></a>
+<a id="rustdoc-item-704"></a>
 
 # Struct `pill_development_host::build_runner::JobObjectExtendedLimitInformation`
 
@@ -8,14 +8,14 @@
 pub(in build_runner) struct JobObjectExtendedLimitInformation;
 ```
 
-Visibility: `{'restricted': {'parent': 545, 'path': '::build_runner'}}` · Source: `hosting\pill_development_host\src\build_runner.rs:975`
+Visibility: `{'restricted': {'parent': 546, 'path': '::build_runner'}}` · Source: `hosting\pill_development_host\src\build_runner.rs:976`
 
 `JOBOBJECT_EXTENDED_LIMIT_INFORMATION`, the memory layout that the
 extended-limit information class expects.
 
 ## Fields
 
-<a id="rustdoc-item-696"></a>
+<a id="rustdoc-item-698"></a>
 
 ### `basic_limit_information`
 
@@ -25,7 +25,7 @@ basic_limit_information: JobObjectBasicLimitInformation
 
 _No documentation provided._
 
-<a id="rustdoc-item-697"></a>
+<a id="rustdoc-item-699"></a>
 
 ### `io_info`
 
@@ -35,7 +35,7 @@ io_info: [u64; 6]
 
 `IO_COUNTERS`: six `ULONGLONG`s, always zeroed.
 
-<a id="rustdoc-item-698"></a>
+<a id="rustdoc-item-700"></a>
 
 ### `process_memory_limit`
 
@@ -45,7 +45,7 @@ process_memory_limit: usize
 
 _No documentation provided._
 
-<a id="rustdoc-item-699"></a>
+<a id="rustdoc-item-701"></a>
 
 ### `job_memory_limit`
 
@@ -55,7 +55,7 @@ job_memory_limit: usize
 
 _No documentation provided._
 
-<a id="rustdoc-item-700"></a>
+<a id="rustdoc-item-702"></a>
 
 ### `peak_process_memory_used`
 
@@ -65,7 +65,7 @@ peak_process_memory_used: usize
 
 _No documentation provided._
 
-<a id="rustdoc-item-701"></a>
+<a id="rustdoc-item-703"></a>
 
 ### `peak_job_memory_used`
 

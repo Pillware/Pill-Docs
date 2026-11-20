@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-8052"></a>
+<a id="rustdoc-item-10114"></a>
 
 # Struct `pill_editor_core::state_watch::FileStamp`
 
@@ -18,7 +18,7 @@ so creating the file is noticed.
 
 ## Fields
 
-<a id="rustdoc-item-8048"></a>
+<a id="rustdoc-item-10110"></a>
 
 ### `modification_time`
 
@@ -28,7 +28,7 @@ modification_time: Option<std::time::SystemTime>
 
 The file's modification time, when the filesystem reports one.
 
-<a id="rustdoc-item-8051"></a>
+<a id="rustdoc-item-10113"></a>
 
 ### `length_bytes`
 
@@ -40,7 +40,7 @@ The file's length in bytes.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-8053"></a>
+<a id="rustdoc-item-10115"></a>
 
 ### `of`
 

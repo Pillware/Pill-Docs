@@ -95,18 +95,16 @@ Your own asset type only needs a shared name if another module also uses it.
 
 ## How do I declare my own asset type?
 
-Derive `PillAsset` and say which kind it is:
+Declare it with `#[asset]` and say which kind it is:
 
 ```rust
-#[derive(PillAsset)]
-#[pill(imported)] // or #[pill(standalone)]
+#[asset(imported)] // or #[asset(standalone)]
+#[derive(Debug, Clone)]
 pub struct Sound { /* ... */ }
-
-pill_engine::trait_type_map::impl_trait_accessible!(dyn Asset; Sound);
 ```
 
-- The derive declares the type: your module's entry point registers it with the import registry on every load, so you don't call `register_asset` yourself.
-- You still write the `ImportedAsset` (how to decode the source file, and its import settings) or `StandaloneAsset` impl by hand, plus the `impl_trait_accessible!` line.
+- The attribute declares the type and emits the `impl_trait_accessible!` line the store needs: your module's entry point registers the type with the import registry on every load, so you don't call `register_asset` yourself.
+- You still write the `ImportedAsset` (how to decode the source file, and its import settings) or `StandaloneAsset` impl by hand.
 - `pill_audio`'s `Sound` is a complete imported example.
 
 ## What happens when I edit an asset file while the project runs?
@@ -146,8 +144,8 @@ Restarting the project after such a change is the simplest option.
 | Imported assets and `.meta` files                           | `pill_engine_core`, `asset_metadata.rs`                       |
 | Standalone assets (`.material`)                             | `pill_engine_core`, `asset_standalone.rs`                     |
 | Asset references in scenes                                  | `pill_engine_core`, `saved_references.rs` and `scene.rs`      |
-| `#[derive(PillAsset)]`                                      | `pill_engine_macros`, `lib.rs`                                |
+| `#[asset]`                                      | `pill_engine_macros`, `lib.rs`                                |
 | Watching `res` and reimporting edited assets                | `pill_development_host`, `watchers/asset.rs`                  |
-| The renderer's asset types                                  | `pill_master_renderer_data/src/assets/`                       |
-| A declared imported asset type                              | `pill_audio/src/sound.rs`, `Sound`                            |
+| The renderer's asset types                                  | `pill_master_renderer/modules/runtime/data/src/assets/`                       |
+| A declared imported asset type                              | `pill_audio/modules/runtime/src/sound.rs`, `Sound`                            |
 | A real project loading meshes, textures and materials       | `examples/pills/pills_rust/src/lib.rs`, `load_assets`         |

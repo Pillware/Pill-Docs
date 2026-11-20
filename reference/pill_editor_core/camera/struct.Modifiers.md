@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-821"></a>
+<a id="rustdoc-item-865"></a>
 
 # Struct `pill_editor_core::camera::Modifiers`
 
@@ -16,7 +16,7 @@ rules compare booleans.
 
 ## Fields
 
-<a id="rustdoc-item-818"></a>
+<a id="rustdoc-item-862"></a>
 
 ### `shift`
 
@@ -26,7 +26,7 @@ shift: bool
 
 Shift held.
 
-<a id="rustdoc-item-819"></a>
+<a id="rustdoc-item-863"></a>
 
 ### `control`
 
@@ -36,7 +36,7 @@ control: bool
 
 Control held.
 
-<a id="rustdoc-item-820"></a>
+<a id="rustdoc-item-864"></a>
 
 ### `alt`
 

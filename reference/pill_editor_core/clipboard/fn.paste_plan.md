@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1167"></a>
+<a id="rustdoc-item-1212"></a>
 
 # Function `pill_editor_core::clipboard::paste_plan`
 
@@ -8,7 +8,7 @@
 pub fn paste_plan(payload: &Payload, selection: &crate::editor_state::EditorSelection, snapshot: &crate::editor_state::EditorSnapshot) -> Result<PastePlan, String>;
 ```
 
-Source: `editor\pill_editor_core\src\clipboard.rs:413`
+Source: `editor\pill_editor_core\src\clipboard.rs:421`
 
 Builds the recorded step a paste applies.
 
@@ -18,7 +18,7 @@ plus one `SetField` per field. A field payload becomes one `SetField`. An
 asset payload queues no command, because it only moves the selection.
 
 In an entity payload, a component this build does not register is skipped
-and named in [`PastePlan::skipped`](struct.PastePlan.md#rustdoc-item-1114). A field whose token does not parse is
+and named in [`PastePlan::skipped`](struct.PastePlan.md#rustdoc-item-1159). A field whose token does not parse is
 skipped the same way in every payload kind that carries fields, so a paste
 never writes a value it could not read; the field keeps its current value,
 or the component's default when the component is new.

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-2539"></a>
+<a id="rustdoc-item-2613"></a>
 
 # Struct `pill_development_host::hot_patch::Snapshot`
 
@@ -8,7 +8,7 @@
 pub(in hot_patch) struct Snapshot;
 ```
 
-Visibility: `{'restricted': {'parent': 1968, 'path': '::hot_patch'}}` · Source: `hosting\pill_development_host\src\hot_patch\mod.rs:346`
+Visibility: `{'restricted': {'parent': 2042, 'path': '::hot_patch'}}` · Source: `hosting\pill_development_host\src\hot_patch\mod.rs:346`
 
 One watched source file as this session last read it.
 
@@ -18,7 +18,7 @@ update one half without the other.
 
 ## Fields
 
-<a id="rustdoc-item-2537"></a>
+<a id="rustdoc-item-2611"></a>
 
 ### `contents`
 
@@ -28,7 +28,7 @@ contents: String
 
 The file's contents at the moment it was read.
 
-<a id="rustdoc-item-2538"></a>
+<a id="rustdoc-item-2612"></a>
 
 ### `modified`
 
@@ -50,7 +50,7 @@ report an earlier time, and the edit would be missed.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-2540"></a>
+<a id="rustdoc-item-2614"></a>
 
 ### `read`
 
@@ -63,7 +63,7 @@ Read one file into a snapshot, or `None` when it cannot be read.
 The time is taken from the same file in the same moment as the contents,
 so the two cannot describe different reads.
 
-<a id="rustdoc-item-2541"></a>
+<a id="rustdoc-item-2615"></a>
 
 ### `is_current`
 

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-951"></a>
+<a id="rustdoc-item-947"></a>
 
 # Struct `pill_master_renderer::overlay::picking::PendingReadback`
 
@@ -8,14 +8,14 @@
 pub(in overlay::picking) struct PendingReadback;
 ```
 
-Visibility: `{'restricted': {'parent': 946, 'path': '::overlay::picking'}}` · Source: `extensions\pill_master_renderer\pill_master_renderer\src\overlay\picking.rs:46`
+Visibility: `{'restricted': {'parent': 942, 'path': '::overlay::picking'}}` · Source: `extensions\pill_master_renderer\modules\runtime\gpu\src\overlay\picking.rs:46`
 
 The copies one frame recorded for one surface, kept until their pixels can
 be read.
 
 ## Fields
 
-<a id="rustdoc-item-947"></a>
+<a id="rustdoc-item-943"></a>
 
 ### `readback`
 
@@ -23,9 +23,9 @@ be read.
 readback: crate::readback::MappedReadback
 ```
 
-One slot of [`BYTES_PER_SLOT`](constant.BYTES_PER_SLOT.md#rustdoc-item-945) bytes per request, in request order.
+One slot of [`BYTES_PER_SLOT`](constant.BYTES_PER_SLOT.md#rustdoc-item-941) bytes per request, in request order.
 
-<a id="rustdoc-item-948"></a>
+<a id="rustdoc-item-944"></a>
 
 ### `requests`
 
@@ -35,7 +35,7 @@ requests: Vec<pill_renderer_api::PickRequest>
 
 The requests, one per slot.
 
-<a id="rustdoc-item-950"></a>
+<a id="rustdoc-item-946"></a>
 
 ### `queue_entities`
 

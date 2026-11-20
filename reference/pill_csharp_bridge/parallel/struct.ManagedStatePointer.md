@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1756"></a>
+<a id="rustdoc-item-1780"></a>
 
 # Struct `pill_csharp_bridge::parallel::ManagedStatePointer`
 
@@ -8,14 +8,14 @@
 pub(in parallel) struct ManagedStatePointer;
 ```
 
-Visibility: `{'restricted': {'parent': 1752, 'path': '::parallel'}}` · Source: `csharp\pill_csharp_bridge\src\parallel.rs:64`
+Visibility: `{'restricted': {'parent': 1776, 'path': '::parallel'}}` · Source: `csharp\pill_csharp_bridge\src\parallel.rs:64`
 
 The managed caller's state pointer, wrapped so it can be sent to Rayon
 workers.
 
 ## Fields
 
-<a id="rustdoc-item-1755"></a>
+<a id="rustdoc-item-1779"></a>
 
 ### `0`
 
@@ -27,7 +27,7 @@ _No documentation provided._
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-1757"></a>
+<a id="rustdoc-item-1781"></a>
 
 ### `pointer`
 

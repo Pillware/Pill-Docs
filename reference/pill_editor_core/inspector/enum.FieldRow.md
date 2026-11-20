@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-4760"></a>
+<a id="rustdoc-item-6723"></a>
 
 # Enum `pill_editor_core::inspector::FieldRow`
 
@@ -8,13 +8,13 @@
 pub enum FieldRow { ... }
 ```
 
-Source: `editor\pill_editor_core\src\inspector.rs:292`
+Source: `editor\pill_editor_core\src\inspector.rs:296`
 
 One row of a component section.
 
 ## Variants
 
-<a id="rustdoc-item-4724"></a>
+<a id="rustdoc-item-6687"></a>
 
 ### `Header`
 
@@ -24,7 +24,7 @@ Header
 
 A separator line with the text a field's `[Header]` declared.
 
-<a id="rustdoc-item-4726"></a>
+<a id="rustdoc-item-6689"></a>
 
 ### `Space`
 
@@ -34,7 +34,7 @@ Space
 
 A vertical gap a field's `[Space]` declared.
 
-<a id="rustdoc-item-4731"></a>
+<a id="rustdoc-item-6694"></a>
 
 ### `Single`
 
@@ -44,7 +44,7 @@ Single
 
 One field with the widget its kind asks for.
 
-<a id="rustdoc-item-4737"></a>
+<a id="rustdoc-item-6700"></a>
 
 ### `Vector`
 
@@ -55,7 +55,7 @@ Vector
 A short array of scalars: one row, one widget per element, labelled
 with the element's axis (`X`, `Y`, `Z`, `W`) - Unity's vector row.
 
-<a id="rustdoc-item-4742"></a>
+<a id="rustdoc-item-6705"></a>
 
 ### `Asset`
 
@@ -66,7 +66,7 @@ Asset
 A reference to an asset: the asset it names, a picker of the assets
 of its type, a clear button and a drop target for the Assets tab.
 
-<a id="rustdoc-item-4746"></a>
+<a id="rustdoc-item-6709"></a>
 
 ### `Entity`
 
@@ -78,7 +78,7 @@ A reference to another entity: the referenced
 entity's Hierarchy label, a picker over the scene's entities, a
 viewport pick, a clear button and a drop target for the Entities tab.
 
-<a id="rustdoc-item-4750"></a>
+<a id="rustdoc-item-6713"></a>
 
 ### `Color`
 
@@ -90,7 +90,7 @@ A colour: one swatch, and a popup that holds the picker. Its leaves are
 the channels, which are either one array field's elements or one scalar
 field each.
 
-<a id="rustdoc-item-4755"></a>
+<a id="rustdoc-item-6718"></a>
 
 ### `VectorGroup`
 
@@ -102,7 +102,7 @@ A vector assembled from consecutive leaves that share a dotted prefix
 and carry a `#[pill(vector)]` decorator. It draws as one row of X/Y/Z
 numeric fields, the way a `[f32; 3]` field already draws.
 
-<a id="rustdoc-item-4759"></a>
+<a id="rustdoc-item-6722"></a>
 
 ### `ReadOnly`
 

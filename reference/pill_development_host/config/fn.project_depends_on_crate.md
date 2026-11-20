@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1266"></a>
+<a id="rustdoc-item-1286"></a>
 
 # Function `pill_development_host::config::project_depends_on_crate`
 
@@ -8,7 +8,7 @@
 pub(crate) fn project_depends_on_crate(workspace_root: &std::path::Path, project: &ProjectModuleConfig, crate_name: &str) -> bool;
 ```
 
-Visibility: `crate` · Source: `hosting\pill_development_host\src\config.rs:1660`
+Visibility: `crate` · Source: `hosting\pill_development_host\src\config.rs:1867`
 
 Whether the project manifest declares a direct dependency on `crate_name`.
 

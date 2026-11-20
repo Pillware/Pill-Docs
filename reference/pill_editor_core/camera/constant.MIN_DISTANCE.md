@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-714"></a>
+<a id="rustdoc-item-758"></a>
 
 # Constant `pill_editor_core::camera::MIN_DISTANCE`
 

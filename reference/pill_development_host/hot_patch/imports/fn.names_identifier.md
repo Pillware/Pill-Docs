@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-2084"></a>
+<a id="rustdoc-item-2158"></a>
 
 # Function `pill_development_host::hot_patch::imports::names_identifier`
 
@@ -8,7 +8,7 @@
 pub(in hot_patch::imports) fn names_identifier(body: &str, name: &str) -> bool;
 ```
 
-Visibility: `{'restricted': {'parent': 2048, 'path': '::hot_patch::imports'}}` · Source: `hosting\pill_development_host\src\hot_patch\imports.rs:377`
+Visibility: `{'restricted': {'parent': 2122, 'path': '::hot_patch::imports'}}` · Source: `hosting\pill_development_host\src\hot_patch\imports.rs:377`
 
 Whether `body` names `name` as a whole identifier of its code.
 

@@ -8,7 +8,7 @@
 pub struct RendererShaderHandle;
 ```
 
-Source: `extensions\pill_master_renderer\pill_master_renderer\src\resources\renderer_shader.rs:47`
+Source: `extensions\pill_master_renderer\modules\runtime\gpu\src\resources\renderer_shader.rs:47`
 
 A typed handle for the slots of the map it was issued by.
 
@@ -17,7 +17,7 @@ kind of handle from another.
 
 ## Fields
 
-<a id="rustdoc-item-2628"></a>
+<a id="rustdoc-item-2668"></a>
 
 ### `0`
 
@@ -29,7 +29,7 @@ _No documentation provided._
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-2630"></a>
+<a id="rustdoc-item-2670"></a>
 
 ### `new`
 
@@ -40,7 +40,7 @@ pub fn new(index: u32, version: ::core::num::NonZeroU32) -> Self;
 Builds a handle from a slot index and the version the slot
 must still have for the handle to work.
 
-<a id="rustdoc-item-2631"></a>
+<a id="rustdoc-item-2671"></a>
 
 ### `data`
 

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-6743"></a>
+<a id="rustdoc-item-8791"></a>
 
 # Struct `pill_editor_core::scripted::KeyChord`
 
@@ -8,13 +8,13 @@
 pub struct KeyChord;
 ```
 
-Source: `editor\pill_editor_core\src\scripted.rs:460`
+Source: `editor\pill_editor_core\src\scripted.rs:515`
 
 One keyboard chord a `key` line injects.
 
 ## Fields
 
-<a id="rustdoc-item-7081"></a>
+<a id="rustdoc-item-9139"></a>
 
 ### `key`
 
@@ -24,7 +24,7 @@ key: pill_engine::KeyCode
 
 The key itself.
 
-<a id="rustdoc-item-7082"></a>
+<a id="rustdoc-item-9140"></a>
 
 ### `control`
 
@@ -34,7 +34,7 @@ control: bool
 
 Whether Control is held.
 
-<a id="rustdoc-item-7083"></a>
+<a id="rustdoc-item-9141"></a>
 
 ### `shift`
 
@@ -44,7 +44,7 @@ shift: bool
 
 Whether Shift is held.
 
-<a id="rustdoc-item-7084"></a>
+<a id="rustdoc-item-9142"></a>
 
 ### `alt`
 
@@ -54,7 +54,7 @@ alt: bool
 
 Whether Alt is held.
 
-<a id="rustdoc-item-7085"></a>
+<a id="rustdoc-item-9143"></a>
 
 ### `super_key`
 
@@ -66,7 +66,7 @@ Whether the platform's Super key (Windows, Command) is held.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-7086"></a>
+<a id="rustdoc-item-9144"></a>
 
 ### `label`
 
@@ -77,7 +77,7 @@ pub fn label(self: &Self) -> String;
 The chord written out, as the log line and a suite read it:
 `ctrl+shift+z`, `w`.
 
-<a id="rustdoc-item-7087"></a>
+<a id="rustdoc-item-9145"></a>
 
 ### `typed_character`
 

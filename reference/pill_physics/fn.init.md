@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-857"></a>
+<a id="rustdoc-item-1096"></a>
 
 # Function `pill_physics::init`
 
@@ -8,9 +8,9 @@
 pub fn init(_engine: &mut Engine) -> u32;
 ```
 
-Source: `extensions\pill_physics\pill_physics\src\pill_physics.rs:88`
+Source: `extensions\pill_physics\modules\runtime\src\pill_physics.rs:92`
 
-Runs once per module image, after [`register`](fn.register.md#rustdoc-item-330), and builds nothing of its
+Runs once per module image, after [`register`](fn.register.md#rustdoc-item-492), and builds nothing of its
 own.
 
 The simulation starts empty on purpose: a world's bodies belong to the

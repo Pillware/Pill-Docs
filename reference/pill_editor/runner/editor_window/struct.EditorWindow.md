@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-625"></a>
+<a id="rustdoc-item-696"></a>
 
 # Struct `pill_editor::runner::editor_window::EditorWindow`
 
@@ -8,13 +8,13 @@
 pub(in runner) struct EditorWindow;
 ```
 
-Visibility: `{'restricted': {'parent': 483, 'path': '::runner'}}` · Source: `editor\pill_editor\src\runner\editor_window.rs:27`
+Visibility: `{'restricted': {'parent': 539, 'path': '::runner'}}` · Source: `editor\pill_editor\src\runner\editor_window.rs:27`
 
 The editor's window, its host, and everything the frame loop owns.
 
 ## Fields
 
-<a id="rustdoc-item-484"></a>
+<a id="rustdoc-item-540"></a>
 
 ### `window`
 
@@ -22,10 +22,13 @@ The editor's window, its host, and everything the frame loop owns.
 window: std::sync::Arc<winit::window::Window>
 ```
 
-The main window: the shell's UI, and the game view's primary surface
-only when the game window could not be created.
+The main window: the editor's own window, and the game view's primary
+surface only when the game window could not be created. The shell's UI
+is drawn into the overlay, not here: the composition visual on Windows
+and the floating window on Unix, with the window surface as the
+fallback posture.
 
-<a id="rustdoc-item-485"></a>
+<a id="rustdoc-item-541"></a>
 
 ### `device`
 
@@ -36,7 +39,7 @@ device: wgpu::Device
 The editor's own GPU device, which draws the UI; the project's
 renderer keeps its own device inside the host.
 
-<a id="rustdoc-item-486"></a>
+<a id="rustdoc-item-542"></a>
 
 ### `queue`
 
@@ -46,7 +49,7 @@ queue: wgpu::Queue
 
 The queue of the editor's device.
 
-<a id="rustdoc-item-487"></a>
+<a id="rustdoc-item-543"></a>
 
 ### `instance`
 
@@ -56,7 +59,7 @@ instance: wgpu::Instance
 
 The editor's instance, kept for late overlay creation.
 
-<a id="rustdoc-item-488"></a>
+<a id="rustdoc-item-544"></a>
 
 ### `adapter`
 
@@ -67,7 +70,7 @@ adapter: wgpu::Adapter
 The adapter the editor's device runs on, kept for late overlay
 creation.
 
-<a id="rustdoc-item-489"></a>
+<a id="rustdoc-item-545"></a>
 
 ### `host`
 
@@ -77,7 +80,7 @@ host: pill_development_host::RenderingHost
 
 The host: the project, its extensions and the shell module.
 
-<a id="rustdoc-item-491"></a>
+<a id="rustdoc-item-547"></a>
 
 ### `views`
 
@@ -90,7 +93,7 @@ camera and renderer surface. A slot is `None` when its window could not
 be created. The vector grows when the dock reports a view it does not
 hold yet.
 
-<a id="rustdoc-item-494"></a>
+<a id="rustdoc-item-550"></a>
 
 ### `game_surface`
 
@@ -102,7 +105,7 @@ The game viewport's window, when one could be created: it carries
 the primary surface, so the project's renderer presents the game
 view there. `None` leaves the primary on the main window.
 
-<a id="rustdoc-item-496"></a>
+<a id="rustdoc-item-552"></a>
 
 ### `popouts`
 
@@ -114,7 +117,7 @@ One window per popped-out tab, keyed by the tab's wire name. Each has
 its own swapchain and its own egui renderer, because the UI that draws
 into it is a separate pass.
 
-<a id="rustdoc-item-499"></a>
+<a id="rustdoc-item-555"></a>
 
 ### `cameras`
 
@@ -126,7 +129,30 @@ The editor's cameras, one per scene viewport. Navigation moves only the
 active viewport's camera, and a scene ray always projects through the
 camera of the view it was cast in.
 
-<a id="rustdoc-item-501"></a>
+<a id="rustdoc-item-557"></a>
+
+### `play_cameras`
+
+```rust
+play_cameras: Option<Vec<pill_editor_core::camera::OrbitCamera>>
+```
+
+The scene cameras as Play found them. A session may move a view - the
+Game tab has its own camera, but a person can still orbit a scene one -
+and Stop puts these back, so the edit view returns where it was.
+
+<a id="rustdoc-item-558"></a>
+
+### `last_run_mode`
+
+```rust
+last_run_mode: Option<pill_engine_core::RunMode>
+```
+
+The run mode the last frame saw, so entering and leaving a session is
+noticed exactly once.
+
+<a id="rustdoc-item-560"></a>
 
 ### `active_view`
 
@@ -137,7 +163,7 @@ active_view: usize
 The viewport the last scene click activated; the gizmo and the
 viewport commands read it.
 
-<a id="rustdoc-item-502"></a>
+<a id="rustdoc-item-561"></a>
 
 ### `left_down`
 
@@ -149,7 +175,7 @@ Whether the left mouse button is down in each scene view. A pick
 answers a frame or two after the press, and a handle grab starts a
 drag only while the button is still held.
 
-<a id="rustdoc-item-503"></a>
+<a id="rustdoc-item-562"></a>
 
 ### `camera_drag`
 
@@ -159,7 +185,7 @@ camera_drag: Option<CameraDrag>
 
 The camera navigation drag in flight, when one is.
 
-<a id="rustdoc-item-505"></a>
+<a id="rustdoc-item-564"></a>
 
 ### `modifiers`
 
@@ -169,7 +195,7 @@ modifiers: pill_editor_core::camera::Modifiers
 
 The keyboard modifiers held, as last reported by a modifiers event.
 
-<a id="rustdoc-item-507"></a>
+<a id="rustdoc-item-566"></a>
 
 ### `keymap`
 
@@ -180,7 +206,7 @@ keymap: pill_editor_core::commands::KeymapPreset
 The keymap preset the preferences name. It decides which mouse chords
 the viewport navigation uses.
 
-<a id="rustdoc-item-509"></a>
+<a id="rustdoc-item-568"></a>
 
 ### `camera_dirty`
 
@@ -191,7 +217,7 @@ camera_dirty: Vec<bool>
 Whether each view's published camera binding is stale. Navigation marks
 it, and the next frame publishes the surface camera again.
 
-<a id="rustdoc-item-510"></a>
+<a id="rustdoc-item-569"></a>
 
 ### `egui_renderer`
 
@@ -201,7 +227,7 @@ egui_renderer: egui_wgpu::Renderer
 
 egui's own renderer on the editor's device.
 
-<a id="rustdoc-item-511"></a>
+<a id="rustdoc-item-570"></a>
 
 ### `overlay`
 
@@ -213,7 +239,7 @@ The surface the UI is presented through: the composition overlay, or
 the window surface when composition is refused. `None` until it is
 created, and left `None` when neither posture works.
 
-<a id="rustdoc-item-512"></a>
+<a id="rustdoc-item-571"></a>
 
 ### `no_overlay`
 
@@ -224,7 +250,7 @@ no_overlay: bool
 `PILL_EDITOR_NO_OVERLAY` asked for the window-surface posture, so the
 composition overlay is never retried.
 
-<a id="rustdoc-item-513"></a>
+<a id="rustdoc-item-572"></a>
 
 ### `overlay_retry_frame`
 
@@ -235,7 +261,10 @@ overlay_retry_frame: u64
 The frame index of the last overlay creation attempt, so the next
 retry waits 120 frames from it.
 
-<a id="rustdoc-item-514"></a>
+Only the composition overlay is retried, and it is Windows-only, so the
+bookkeeping is compiled there alone.
+
+<a id="rustdoc-item-573"></a>
 
 ### `fallback_context`
 
@@ -245,7 +274,7 @@ fallback_context: egui::Context
 
 The editor's fallback context, used while no shell module is loaded.
 
-<a id="rustdoc-item-516"></a>
+<a id="rustdoc-item-575"></a>
 
 ### `reported_fallback`
 
@@ -255,7 +284,7 @@ reported_fallback: bool
 
 Whether the fallback UI was reported already.
 
-<a id="rustdoc-item-517"></a>
+<a id="rustdoc-item-576"></a>
 
 ### `pending_events`
 
@@ -265,7 +294,7 @@ pending_events: Vec<pill_engine_core::InputEvent>
 
 The window events not yet pushed into the engine's input.
 
-<a id="rustdoc-item-519"></a>
+<a id="rustdoc-item-578"></a>
 
 ### `shell_events`
 
@@ -275,7 +304,7 @@ shell_events: Vec<pill_engine_core::InputEvent>
 
 The editor's own windows' events, not yet handed to the shell.
 
-<a id="rustdoc-item-520"></a>
+<a id="rustdoc-item-579"></a>
 
 ### `shell_cursor`
 
@@ -287,7 +316,7 @@ The pointer's last position over the editor's windows, in the main
 window's client pixels. The shell input carries it, so a release that
 arrives without a move still has a position.
 
-<a id="rustdoc-item-522"></a>
+<a id="rustdoc-item-581"></a>
 
 ### `notices`
 
@@ -298,7 +327,7 @@ notices: pill_editor_core::notices::EditorNotices
 The notices the editor publishes for the shell: the toast events and
 the Problems rows.
 
-<a id="rustdoc-item-524"></a>
+<a id="rustdoc-item-583"></a>
 
 ### `scene_cursor`
 
@@ -310,7 +339,7 @@ The last pointer position each scene window reported, in its own
 client-area physical pixels. It is `None` until that window reports its
 first move.
 
-<a id="rustdoc-item-525"></a>
+<a id="rustdoc-item-584"></a>
 
 ### `press_pick`
 
@@ -322,7 +351,7 @@ The scene left press waiting for its pick answer: the view, the press
 position and the pick id. A handle answer starts a gizmo drag while
 the button is still held; an entity answer moves the selection.
 
-<a id="rustdoc-item-527"></a>
+<a id="rustdoc-item-586"></a>
 
 ### `outlined_entities`
 
@@ -333,7 +362,7 @@ outlined_entities: Vec<pill_engine_core::Entity>
 The entities the renderer's outline set currently names, so the world
 resource is written once per selection change.
 
-<a id="rustdoc-item-529"></a>
+<a id="rustdoc-item-588"></a>
 
 ### `overlay_regions`
 
@@ -344,7 +373,19 @@ overlay_regions: Vec<pill_editor_core::boundary::ShellRect>
 The overlay chips' rectangles the shell reported last frame, in
 logical points. A click inside one belongs to the UI, not the scene.
 
-<a id="rustdoc-item-531"></a>
+<a id="rustdoc-item-590"></a>
+
+### `scene_rects`
+
+```rust
+scene_rects: Vec<Option<pill_editor_core::boundary::ShellRect>>
+```
+
+The scene view rectangles the shell reported last frame, in logical
+points, one slot per view. The published viewport state names the
+active view's entry.
+
+<a id="rustdoc-item-591"></a>
 
 ### `gizmo_drag`
 
@@ -354,7 +395,7 @@ gizmo_drag: Option<GizmoDrag>
 
 The gizmo drag in flight, when one is.
 
-<a id="rustdoc-item-533"></a>
+<a id="rustdoc-item-593"></a>
 
 ### `gizmo_geometry`
 
@@ -365,7 +406,62 @@ gizmo_geometry: pill_editor_core::gizmo::GizmoGeometry
 The gizmo geometry drawn this frame. The hover test runs against these
 exact handles, so the highlight cannot disagree with what is on screen.
 
-<a id="rustdoc-item-535"></a>
+<a id="rustdoc-item-595"></a>
+
+### `element_handles`
+
+```rust
+element_handles: Vec<tools::ElementHandle>
+```
+
+The active tool's element handles drawn this frame, in the tool's own
+report order. The hover, the press and the marquee all read them, so
+nothing acts on an element that is no longer drawn.
+
+<a id="rustdoc-item-597"></a>
+
+### `element_kinds`
+
+```rust
+element_kinds: Vec<tools::ElementKind>
+```
+
+The kinds the active tool described this frame, which the marquee reads
+for its box-select rule.
+
+<a id="rustdoc-item-599"></a>
+
+### `element_map`
+
+```rust
+element_map: gizmo::ElementHandleMap
+```
+
+What this frame's element handles point at, by handle id.
+
+<a id="rustdoc-item-601"></a>
+
+### `element_logged`
+
+```rust
+element_logged: Option<(usize, Vec<(u64, i32, i32, bool)>)>
+```
+
+The last element handles the log reported: the view and each element's
+screen position and selection. The lines appear on a change, not every
+frame.
+
+<a id="rustdoc-item-602"></a>
+
+### `marquee`
+
+```rust
+marquee: Option<MarqueeDrag>
+```
+
+The marquee drag in flight, when one is.
+
+<a id="rustdoc-item-604"></a>
 
 ### `hovered_handle`
 
@@ -375,7 +471,7 @@ hovered_handle: Option<u32>
 
 The handle under the pointer, when one is.
 
-<a id="rustdoc-item-536"></a>
+<a id="rustdoc-item-605"></a>
 
 ### `gizmo_reference`
 
@@ -386,7 +482,7 @@ gizmo_reference: f32
 How long the handles were when they were last built, in world units.
 The hover test's radius and the drag guides' dash length follow it.
 
-<a id="rustdoc-item-537"></a>
+<a id="rustdoc-item-606"></a>
 
 ### `gizmo_hit_radius`
 
@@ -397,7 +493,7 @@ gizmo_hit_radius: f32
 The handle hit radius as a fraction of the handle length, from the
 preferences file: the hover test and the press share it.
 
-<a id="rustdoc-item-538"></a>
+<a id="rustdoc-item-607"></a>
 
 ### `render_previews`
 
@@ -407,7 +503,7 @@ render_previews: bool
 
 Whether the preferences file asks for rendered asset previews.
 
-<a id="rustdoc-item-539"></a>
+<a id="rustdoc-item-608"></a>
 
 ### `preview_in_flight`
 
@@ -418,7 +514,7 @@ preview_in_flight: std::collections::HashMap<u64, String>
 The preview images the renderer has not answered yet, keyed by the
 image id the preview request returned.
 
-<a id="rustdoc-item-541"></a>
+<a id="rustdoc-item-610"></a>
 
 ### `gizmo_guides`
 
@@ -429,18 +525,18 @@ gizmo_guides: Option<bool>
 Whether the drag guides were drawn last frame. The log line appears
 when this changes, not every frame.
 
-<a id="rustdoc-item-542"></a>
+<a id="rustdoc-item-611"></a>
 
 ### `gizmo_logged`
 
 ```rust
-gizmo_logged: Option<(pill_editor_core::gizmo::GizmoMode, pill_editor_core::gizmo::GizmoSpace, i32, i32)>
+gizmo_logged: Option<(pill_editor_core::gizmo::GizmoMode, pill_editor_core::gizmo::GizmoSpace, Option<String>, i32, i32)>
 ```
 
 The last logged gizmo anchor header (mode, space, x and y). The log
 line appears when it changes, and on the heartbeat.
 
-<a id="rustdoc-item-545"></a>
+<a id="rustdoc-item-614"></a>
 
 ### `synthetic_press_ids`
 
@@ -452,7 +548,7 @@ The pick ids a scripted gizmo grab requested. The first answer that
 names a handle starts the drag; an answer that misses every handle
 refuses it.
 
-<a id="rustdoc-item-546"></a>
+<a id="rustdoc-item-615"></a>
 
 ### `synthetic_gizmo_pending`
 
@@ -462,7 +558,7 @@ synthetic_gizmo_pending: Option<(f32, f32)>
 
 The pixel delta a scripted grab applies once its pick answers.
 
-<a id="rustdoc-item-547"></a>
+<a id="rustdoc-item-616"></a>
 
 ### `synthetic_gizmo_hold`
 
@@ -474,7 +570,7 @@ Whether a scripted press keeps the drag open instead of finishing it.
 The `gizmo press`, `gizmo move` and `gizmo release` commands then drive
 the same drag a real mouse does, one command per frame.
 
-<a id="rustdoc-item-548"></a>
+<a id="rustdoc-item-617"></a>
 
 ### `synthetic_gizmo_press`
 
@@ -485,7 +581,7 @@ synthetic_gizmo_press: Option<(f32, f32)>
 The press pixel of the scripted drag in flight, in its view's physical
 pixels. Every scripted move measures its delta from here.
 
-<a id="rustdoc-item-549"></a>
+<a id="rustdoc-item-618"></a>
 
 ### `synthetic_gizmo_view`
 
@@ -495,7 +591,7 @@ synthetic_gizmo_view: Option<usize>
 
 The view a scripted grab belongs to.
 
-<a id="rustdoc-item-550"></a>
+<a id="rustdoc-item-619"></a>
 
 ### `asset_entries`
 
@@ -506,7 +602,7 @@ asset_entries: Vec<pill_editor_core::editor_state::AssetListing>
 The asset browser's rows. They refresh on a cadence and at once after
 any file command, and the Assets tab draws them.
 
-<a id="rustdoc-item-552"></a>
+<a id="rustdoc-item-621"></a>
 
 ### `asset_walk`
 
@@ -518,7 +614,7 @@ The rows the last walk found, before the module roots' synthetic
 folders are added. The next walk is compared against this to tell
 whether the tree moved.
 
-<a id="rustdoc-item-553"></a>
+<a id="rustdoc-item-622"></a>
 
 ### `standalone_types`
 
@@ -528,7 +624,7 @@ standalone_types: Vec<pill_editor_core::editor_state::StandaloneTypeInfo>
 
 The live standalone asset types the create dialog offers.
 
-<a id="rustdoc-item-555"></a>
+<a id="rustdoc-item-624"></a>
 
 ### `asset_listing_dirty`
 
@@ -539,7 +635,7 @@ asset_listing_dirty: bool
 Whether a file command changed the tree. The next frame then refreshes
 the listing at once instead of waiting for the cadence.
 
-<a id="rustdoc-item-556"></a>
+<a id="rustdoc-item-625"></a>
 
 ### `drop_preview`
 
@@ -550,7 +646,7 @@ drop_preview: Option<std::path::PathBuf>
 The file an OS drag is carrying over the editor, if one is. It is the
 subject of the drop preview.
 
-<a id="rustdoc-item-558"></a>
+<a id="rustdoc-item-627"></a>
 
 ### `recovered`
 
@@ -561,7 +657,7 @@ recovered: Option<pill_editor_core::layout::RecoveryDocument>
 The recovery document a previous run left behind. It is applied on the
 first frame where the shell's session exists.
 
-<a id="rustdoc-item-560"></a>
+<a id="rustdoc-item-629"></a>
 
 ### `last_recovery_key`
 
@@ -572,7 +668,7 @@ last_recovery_key: Option<String>
 The state the last recovery write captured, so an unchanged editor
 does not rewrite the document every frame.
 
-<a id="rustdoc-item-561"></a>
+<a id="rustdoc-item-630"></a>
 
 ### `ime_allowed`
 
@@ -582,7 +678,7 @@ ime_allowed: bool
 
 Whether the main window currently takes IME input.
 
-<a id="rustdoc-item-562"></a>
+<a id="rustdoc-item-631"></a>
 
 ### `ime_rect`
 
@@ -593,7 +689,7 @@ ime_rect: Option<(f32, f32, f32, f32)>
 The caret rectangle the IME candidate window follows, in logical
 points.
 
-<a id="rustdoc-item-563"></a>
+<a id="rustdoc-item-632"></a>
 
 ### `asset_detail`
 
@@ -603,7 +699,7 @@ asset_detail: Option<pill_editor_core::editor_state::AssetDetail>
 
 The selected asset's detail for the Inspector's asset section.
 
-<a id="rustdoc-item-565"></a>
+<a id="rustdoc-item-634"></a>
 
 ### `asset_detail_path`
 
@@ -614,7 +710,7 @@ asset_detail_path: Option<String>
 The path `asset_detail` was captured for, so the capture follows the
 selection without a disk read every frame.
 
-<a id="rustdoc-item-566"></a>
+<a id="rustdoc-item-635"></a>
 
 ### `preferences`
 
@@ -626,7 +722,7 @@ The preferences file's text and stamp, read again when the file moves.
 On a change, the live reader applies the history limits and the
 snapping steps.
 
-<a id="rustdoc-item-568"></a>
+<a id="rustdoc-item-637"></a>
 
 ### `keybindings`
 
@@ -637,7 +733,7 @@ keybindings: pill_editor_core::state_watch::StateFileWatch
 The keybindings file: a change re-applies the preset and the overrides
 to the command registry.
 
-<a id="rustdoc-item-569"></a>
+<a id="rustdoc-item-638"></a>
 
 ### `keybindings_applied`
 
@@ -649,7 +745,7 @@ Whether the keybindings watcher has applied once. The first pass
 applies the editor's default preset even when there is no file, and
 until it has applied, the file is re-read every frame.
 
-<a id="rustdoc-item-570"></a>
+<a id="rustdoc-item-639"></a>
 
 ### `log_buffer`
 
@@ -659,7 +755,7 @@ log_buffer: pill_core::telemetry::capture::LogBuffer
 
 The telemetry capture ring the Console tab reads.
 
-<a id="rustdoc-item-572"></a>
+<a id="rustdoc-item-641"></a>
 
 ### `preferences_document`
 
@@ -670,7 +766,7 @@ preferences_document: serde_json::Map<String, serde_json::Value>
 The parsed preferences document the snapshot's view and the scripted
 dump build on.
 
-<a id="rustdoc-item-575"></a>
+<a id="rustdoc-item-644"></a>
 
 ### `theme`
 
@@ -681,7 +777,7 @@ theme: pill_ui_theme::Theme
 The theme the editor's UI paints with: the code default, merged with
 the user's file and the project's layer.
 
-<a id="rustdoc-item-577"></a>
+<a id="rustdoc-item-646"></a>
 
 ### `theme_generation`
 
@@ -693,7 +789,7 @@ The generation of the theme the layers resolved to. It moves when a
 resolution changes the theme, and the shell installs the new theme
 only when it moves.
 
-<a id="rustdoc-item-578"></a>
+<a id="rustdoc-item-647"></a>
 
 ### `theme_layers`
 
@@ -701,9 +797,9 @@ only when it moves.
 theme_layers: Vec<pill_editor_core::style::ThemeLayerInfo>
 ```
 
-The layers [`Self::theme`](#rustdoc-item-575) was merged from, in apply order.
+The layers [`Self::theme`](#rustdoc-item-644) was merged from, in apply order.
 
-<a id="rustdoc-item-580"></a>
+<a id="rustdoc-item-649"></a>
 
 ### `theme_fonts`
 
@@ -714,7 +810,7 @@ theme_fonts: pill_editor_core::kit::style::ThemeFonts
 The font bytes the layers resolved. The snapshot carries them beside
 the theme, so the shell installs both together.
 
-<a id="rustdoc-item-582"></a>
+<a id="rustdoc-item-651"></a>
 
 ### `theme_watch`
 
@@ -725,7 +821,7 @@ theme_watch: ThemeWatch
 What the last theme resolution read, so a poll only merges when a
 layer moved.
 
-<a id="rustdoc-item-584"></a>
+<a id="rustdoc-item-653"></a>
 
 ### `fallback_theme_generation`
 
@@ -736,7 +832,7 @@ fallback_theme_generation: u64
 The theme generation the fallback context paints with, so the no-shell
 posture follows a theme change the same way the shell does.
 
-<a id="rustdoc-item-585"></a>
+<a id="rustdoc-item-654"></a>
 
 ### `gizmo_project`
 
@@ -746,7 +842,7 @@ gizmo_project: Option<String>
 
 The project directory name the per-project preferences are keyed by.
 
-<a id="rustdoc-item-586"></a>
+<a id="rustdoc-item-655"></a>
 
 ### `gizmo_persisted`
 
@@ -757,7 +853,20 @@ gizmo_persisted: Option<pill_editor_core::gizmo::GizmoSettings>
 The gizmo settings last written to the preferences file, so an
 unchanged tool writes nothing.
 
-<a id="rustdoc-item-588"></a>
+<a id="rustdoc-item-657"></a>
+
+### `gizmo_hidden_persisted`
+
+```rust
+gizmo_hidden_persisted: Option<Vec<String>>
+```
+
+The hidden component gizmo types last written to the preferences file,
+so an unchanged list writes nothing. `None` means the file has not been
+read yet, which is how the first frame knows not to write its empty
+list over the file's.
+
+<a id="rustdoc-item-658"></a>
 
 ### `focused`
 
@@ -767,7 +876,19 @@ focused: bool
 
 Whether the main window currently has focus.
 
-<a id="rustdoc-item-589"></a>
+<a id="rustdoc-item-659"></a>
+
+### `overlay_placement`
+
+```rust
+overlay_placement: Option<(i32, i32, u32, u32)>
+```
+
+The screen position and size the floating overlay window was last
+given, in physical pixels. Only the floating posture has one: it is a
+window of its own, so it has to be moved with the editor by hand.
+
+<a id="rustdoc-item-660"></a>
 
 ### `size`
 
@@ -777,7 +898,7 @@ size: (u32, u32)
 
 The main window's client size in physical pixels.
 
-<a id="rustdoc-item-590"></a>
+<a id="rustdoc-item-661"></a>
 
 ### `scale_factor`
 
@@ -788,7 +909,7 @@ scale_factor: f32
 The window's scale factor: how many physical pixels one logical point
 covers.
 
-<a id="rustdoc-item-591"></a>
+<a id="rustdoc-item-662"></a>
 
 ### `frame_index`
 
@@ -798,7 +919,7 @@ frame_index: u64
 
 The editor frames run since startup.
 
-<a id="rustdoc-item-592"></a>
+<a id="rustdoc-item-663"></a>
 
 ### `last_frame_time`
 
@@ -808,7 +929,7 @@ last_frame_time: Option<pill_core::platform::Instant>
 
 When the last frame started, for the smoothed FPS.
 
-<a id="rustdoc-item-594"></a>
+<a id="rustdoc-item-665"></a>
 
 ### `last_heartbeat`
 
@@ -820,7 +941,7 @@ When the heartbeat last printed. It fires every 210 frames or every two
 seconds, whichever comes first, so a slow run (the benchmark's debug
 posture) still reports inside its window.
 
-<a id="rustdoc-item-595"></a>
+<a id="rustdoc-item-666"></a>
 
 ### `fps`
 
@@ -830,7 +951,7 @@ fps: f32
 
 The smoothed frame rate, logged with the heartbeat.
 
-<a id="rustdoc-item-596"></a>
+<a id="rustdoc-item-667"></a>
 
 ### `started`
 
@@ -840,7 +961,7 @@ started: pill_core::platform::Instant
 
 When the run started. The test deadline is measured from here.
 
-<a id="rustdoc-item-597"></a>
+<a id="rustdoc-item-668"></a>
 
 ### `claimed_pointer`
 
@@ -851,7 +972,7 @@ claimed_pointer: bool
 Whether egui claimed the pointer in the last frame. A change is logged,
 so a suite can see the routing decision.
 
-<a id="rustdoc-item-598"></a>
+<a id="rustdoc-item-669"></a>
 
 ### `claimed_keyboard`
 
@@ -861,7 +982,7 @@ claimed_keyboard: bool
 
 Whether egui claimed the keyboard in the last frame.
 
-<a id="rustdoc-item-599"></a>
+<a id="rustdoc-item-670"></a>
 
 ### `last_cursor`
 
@@ -873,7 +994,7 @@ The cursor egui asked for in the last frame. A change is logged once
 rather than every frame, which is how a suite sees a splitter's widened
 grab band ask for its resize cursor.
 
-<a id="rustdoc-item-601"></a>
+<a id="rustdoc-item-672"></a>
 
 ### `test_channel`
 
@@ -883,7 +1004,7 @@ test_channel: Option<crate::test_channel::TestChannel>
 
 The scripted command channel, when the environment names one.
 
-<a id="rustdoc-item-603"></a>
+<a id="rustdoc-item-674"></a>
 
 ### `scripted_drag`
 
@@ -893,7 +1014,7 @@ scripted_drag: Option<ScriptedDrag>
 
 A scripted left-button drag in flight, when one is.
 
-<a id="rustdoc-item-605"></a>
+<a id="rustdoc-item-676"></a>
 
 ### `scene_title`
 
@@ -904,7 +1025,7 @@ scene_title: String
 The scene title last reported, so the log names each state the
 document went through once instead of every frame.
 
-<a id="rustdoc-item-606"></a>
+<a id="rustdoc-item-677"></a>
 
 ### `test_seconds`
 
@@ -914,7 +1035,7 @@ test_seconds: Option<f64>
 
 Quit after this many seconds, when the environment asks for it.
 
-<a id="rustdoc-item-607"></a>
+<a id="rustdoc-item-678"></a>
 
 ### `quit`
 
@@ -924,7 +1045,7 @@ quit: bool
 
 A quit the scripted channel or the deadline asked for.
 
-<a id="rustdoc-item-608"></a>
+<a id="rustdoc-item-679"></a>
 
 ### `cadence`
 
@@ -934,7 +1055,7 @@ cadence: pill_editor_core::cadence::Cadence
 
 When the loop draws next.
 
-<a id="rustdoc-item-610"></a>
+<a id="rustdoc-item-681"></a>
 
 ### `demand`
 
@@ -944,7 +1065,7 @@ demand: pill_editor_core::cadence::FrameDemand
 
 What has asked for the next frame since the last one ran.
 
-<a id="rustdoc-item-612"></a>
+<a id="rustdoc-item-683"></a>
 
 ### `next_wake`
 
@@ -954,7 +1075,7 @@ next_wake: pill_editor_core::cadence::FrameWake
 
 The decision the last frame left for the loop.
 
-<a id="rustdoc-item-614"></a>
+<a id="rustdoc-item-685"></a>
 
 ### `repaint_after`
 
@@ -964,7 +1085,7 @@ repaint_after: Option<std::time::Duration>
 
 egui's own repaint request from the last shell pass.
 
-<a id="rustdoc-item-615"></a>
+<a id="rustdoc-item-686"></a>
 
 ### `last_demand`
 
@@ -974,7 +1095,7 @@ last_demand: pill_editor_core::cadence::FrameDemand
 
 What asked for the last frame, kept for the cadence dump.
 
-<a id="rustdoc-item-616"></a>
+<a id="rustdoc-item-687"></a>
 
 ### `badges`
 
@@ -985,7 +1106,7 @@ badges: Vec<pill_editor_core::boundary::ShellBadge>
 The entity badges this frame's scene views draw:
 every visible view's entities, projected to logical points.
 
-<a id="rustdoc-item-618"></a>
+<a id="rustdoc-item-689"></a>
 
 ### `polling`
 
@@ -996,7 +1117,7 @@ polling: bool
 Whether the last decision left the loop polling. The
 `[editor] frame idle` line appears once per transition.
 
-<a id="rustdoc-item-619"></a>
+<a id="rustdoc-item-690"></a>
 
 ### `idle_frame_millis_max`
 
@@ -1007,7 +1128,7 @@ idle_frame_millis_max: f32
 The most expensive frame drawn while polling since the last heartbeat,
 in milliseconds. It is the measured cost of an idle frame.
 
-<a id="rustdoc-item-620"></a>
+<a id="rustdoc-item-691"></a>
 
 ### `snapshot_changed_field`
 
@@ -1018,20 +1139,21 @@ snapshot_changed_field: Option<String>
 The snapshot field whose change last asked for a frame. The log names a
 churning reason once rather than every frame.
 
-<a id="rustdoc-item-621"></a>
+<a id="rustdoc-item-692"></a>
 
-### `panel_markers`
+### `module_markers`
 
 ```rust
-panel_markers: std::collections::HashMap<String, std::sync::Arc<pill_editor_core::panels::ModuleLiveness>>
+module_markers: std::collections::HashMap<String, std::sync::Arc<pill_editor_core::panels::ModuleLiveness>>
 ```
 
-One liveness marker per module that registered a panel. The executable
-holds the strong handle and drops it when the module reloads, which is
-what makes the module's panels read "module not loaded". The module
-itself only queues requests.
+One liveness marker per module that registered a panel or an editor
+API callback. The executable holds the strong handle and drops it when
+the module reloads, which is what makes the module's panels read
+"module not loaded" and keeps its callbacks from being called. The
+module itself only queues requests.
 
-<a id="rustdoc-item-623"></a>
+<a id="rustdoc-item-694"></a>
 
 ### `panel_requests`
 
@@ -1044,7 +1166,7 @@ again after an unload without the module running.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-626"></a>
+<a id="rustdoc-item-697"></a>
 
 ### `apply_asset_previews`
 
@@ -1062,7 +1184,7 @@ texture stays in the session until the listing changes - and the tiles
 to ask for come from the grid's own list of what it drew this pass, so
 scrolling only costs work for what is on screen.
 
-<a id="rustdoc-item-627"></a>
+<a id="rustdoc-item-698"></a>
 
 ### `refresh_asset_listing`
 
@@ -1077,7 +1199,7 @@ create dialog offers.
 Returns whether the listing changed, so the captured asset detail is
 read again only when it may be stale.
 
-<a id="rustdoc-item-628"></a>
+<a id="rustdoc-item-699"></a>
 
 ### `refresh_asset_detail`
 
@@ -1091,7 +1213,7 @@ is a disk read, so the capture follows the listing's cadence instead of
 running every frame. A settings write forgets the captured path, so the
 widgets see the document the command wrote.
 
-<a id="rustdoc-item-629"></a>
+<a id="rustdoc-item-700"></a>
 
 ### `asset_field_decorators`
 
@@ -1107,7 +1229,7 @@ explanation where the document is defined, so the Inspector draws the
 row the type asked for without knowing the type. A type that declares
 none gets the rows an undecorated document gets.
 
-<a id="rustdoc-item-631"></a>
+<a id="rustdoc-item-702"></a>
 
 ### `asset_reference_fields`
 
@@ -1128,7 +1250,7 @@ entries from its own list.
 Returns an empty list when the asset has no settings document, or when
 no import registry holds a registered type.
 
-<a id="rustdoc-item-633"></a>
+<a id="rustdoc-item-704"></a>
 
 ### `asset_label`
 
@@ -1142,7 +1264,7 @@ store loaded it under, or `None` when neither knows the guid. A chain's
 built-in passes are built in code, so their guid is the only thing a
 file walk can know about them.
 
-<a id="rustdoc-item-634"></a>
+<a id="rustdoc-item-705"></a>
 
 ### `shader_texture_slots`
 
@@ -1160,7 +1282,7 @@ turns that guid into a path, and the shader's metadata file at that path
 declares the slots. An empty list means the document names no shader, or
 the shader is not in the listing or cannot be read.
 
-<a id="rustdoc-item-635"></a>
+<a id="rustdoc-item-706"></a>
 
 ### `read_asset_settings`
 
@@ -1173,7 +1295,7 @@ through the import registry - the same reader the `SetAssetSettings`
 command uses. `None` when no registered type imports the path or its
 document cannot be read.
 
-<a id="rustdoc-item-636"></a>
+<a id="rustdoc-item-707"></a>
 
 ### `preview_drop`
 
@@ -1186,7 +1308,7 @@ the folder it would land in, so the person sees where a drop goes before
 letting go. The toast is not repeated while the same path stays the
 dragged one.
 
-<a id="rustdoc-item-638"></a>
+<a id="rustdoc-item-709"></a>
 
 ### `cancel_drop_preview`
 
@@ -1196,7 +1318,7 @@ pub(in runner) fn cancel_drop_preview(self: &mut Self);
 
 Clears the drop preview when the drag has left every window.
 
-<a id="rustdoc-item-639"></a>
+<a id="rustdoc-item-710"></a>
 
 ### `drop_folder`
 
@@ -1207,7 +1329,7 @@ pub(in runner) fn drop_folder(self: &mut Self) -> String;
 Returns the Assets folder a drop lands in, as a store path: the
 session's open folder under `res`, or `res` itself for the root.
 
-<a id="rustdoc-item-640"></a>
+<a id="rustdoc-item-711"></a>
 
 ### `drop_files`
 
@@ -1222,7 +1344,7 @@ directory would need a recursive walk with its own refusals. The refusal
 is a toast as well as a log line. Files become one recorded
 `ImportFiles` step, so undo takes them off the disk again.
 
-<a id="rustdoc-item-642"></a>
+<a id="rustdoc-item-713"></a>
 
 ### `open`
 
@@ -1234,13 +1356,171 @@ Create the window, the editor's device, the host and the views.
 
 #### Errors
 
-Returns [`EditorError::WindowCreation`](../../frontend/enum.EditorError.md#rustdoc-item-265) when the main window cannot be
-created, [`EditorError::AdapterRequest`](../../frontend/enum.EditorError.md#rustdoc-item-268) or
-[`EditorError::DeviceRequest`](../../frontend/enum.EditorError.md#rustdoc-item-271) when the editor's GPU device cannot be
-set up, and [`EditorError::Host`](../../frontend/enum.EditorError.md#rustdoc-item-259) or [`EditorError::Renderer`](../../frontend/enum.EditorError.md#rustdoc-item-262) when the
+Returns [`EditorError::WindowCreation`](../../frontend/enum.EditorError.md#rustdoc-item-316) when the main window cannot be
+created, [`EditorError::AdapterRequest`](../../frontend/enum.EditorError.md#rustdoc-item-319) or
+[`EditorError::DeviceRequest`](../../frontend/enum.EditorError.md#rustdoc-item-322) when the editor's GPU device cannot be
+set up, and [`EditorError::Host`](../../frontend/enum.EditorError.md#rustdoc-item-310) or [`EditorError::Renderer`](../../frontend/enum.EditorError.md#rustdoc-item-313) when the
 project, its modules and the renderer cannot start.
 
-<a id="rustdoc-item-646"></a>
+<a id="rustdoc-item-716"></a>
+
+### `publish_element_handles`
+
+```rust
+pub(in runner) fn publish_element_handles(self: &mut Self);
+```
+
+Publishes the active tool's elements as this frame's handles.
+
+The handles are drawn as the debug drawing's point primitive, so one
+report reaches every scene view at its own pixel size; the same frame
+keeps their world positions, kinds and handle ids for the press, the
+hover and the marquee. A tool that reports nothing clears all of it, so
+nothing from an earlier tool can be pressed.
+
+<a id="rustdoc-item-717"></a>
+
+### `element_handle_at`
+
+```rust
+pub(in runner) fn element_handle_at(self: &Self, view: usize, x: f32, y: f32) -> Option<u32>;
+```
+
+The element handle under one pixel of one scene view.
+
+The last drawn handle wins a tie, which is the order the renderer's own
+pick buffer resolves, and the pixel test is the pick quad's square: a
+press that lights a handle up is a press that selects it.
+
+<a id="rustdoc-item-718"></a>
+
+### `scene_handle_at`
+
+```rust
+pub(in runner) fn scene_handle_at(self: &Self, view: usize, x: f32, y: f32) -> Option<SceneHandle>;
+```
+
+What one pixel of one scene view hits: an element handle first, because
+the points draw on top of the gizmo, then a gizmo handle.
+
+<a id="rustdoc-item-720"></a>
+
+### `active_tool_boxes_select`
+
+```rust
+pub(in runner) fn active_tool_boxes_select(self: &Self) -> bool;
+```
+
+Whether the active tool offers a kind a marquee may select, which is
+what makes a press in empty space start one.
+
+<a id="rustdoc-item-721"></a>
+
+### `apply_element_click`
+
+```rust
+pub(in runner) fn apply_element_click(self: &mut Self, target: gizmo::ElementHandleTarget, click: SelectionClick);
+```
+
+Applies one element click to the shared selection as one recorded step,
+using this frame's report order for a range.
+
+<a id="rustdoc-item-725"></a>
+
+### `apply_element_click_with`
+
+```rust
+pub(in runner) fn apply_element_click_with(self: &mut Self, target: gizmo::ElementHandleTarget, click: SelectionClick, report: &[ElementRef]);
+```
+
+Applies one element click against an explicit report order.
+
+The pointer path passes this frame's handles; the scripted channel
+passes the report it just read, so neither has to depend on the other's
+frame. The active tool is asked first: it may select what it likes, run
+recorded commands, or swallow the press. Only an answer of
+[`tools::PressResponse::Default`] reaches the editor's own rule, which
+is what lets a component tool override a click without the editor
+knowing anything about it. A refusal changes nothing and logs why.
+
+<a id="rustdoc-item-727"></a>
+
+### `element_report`
+
+```rust
+pub(in runner) fn element_report(self: &Self) -> Vec<ElementRef>;
+```
+
+The elements this frame's handles stand for, in the tool's report
+order.
+
+<a id="rustdoc-item-729"></a>
+
+### `begin_marquee`
+
+```rust
+pub(in runner) fn begin_marquee(self: &mut Self, view: usize, point: (f32, f32));
+```
+
+Starts a marquee at a press in empty space. The drag only becomes a
+marquee once the pointer moves past [`MARQUEE_DRAG_PIXELS`](../element_tools/constant.MARQUEE_DRAG_PIXELS.md#rustdoc-item-728); until then
+it is still the click that asks what is under the pixel.
+
+<a id="rustdoc-item-730"></a>
+
+### `update_marquee`
+
+```rust
+pub(in runner) fn update_marquee(self: &mut Self, view: usize, point: (f32, f32));
+```
+
+Feeds one move to a marquee, making it live on the move that passes the
+drag threshold.
+
+<a id="rustdoc-item-731"></a>
+
+### `take_marquee`
+
+```rust
+pub(in runner) fn take_marquee(self: &mut Self, view: usize) -> Option<MarqueeDrag>;
+```
+
+Takes the marquee open for `view`, if any, so the release can decide
+what it was.
+
+<a id="rustdoc-item-732"></a>
+
+### `apply_marquee`
+
+```rust
+pub(in runner) fn apply_marquee(self: &mut Self, drag: MarqueeDrag);
+```
+
+Applies a live marquee: the elements of one kind its rectangle covers
+become the selection, in one recorded step.
+
+<a id="rustdoc-item-733"></a>
+
+### `cancel_marquee`
+
+```rust
+pub(in runner) fn cancel_marquee(self: &mut Self, reason: &str);
+```
+
+Drops the marquee in flight because no release is coming.
+
+<a id="rustdoc-item-734"></a>
+
+### `shell_marquee`
+
+```rust
+pub(in runner) fn shell_marquee(self: &Self) -> Option<ShellMarquee>;
+```
+
+The marquee the shell draws over a viewport, in the main window's
+logical points like its badges, or `None` when no live drag is open.
+
+<a id="rustdoc-item-738"></a>
 
 ### `frame`
 
@@ -1255,16 +1535,16 @@ a scene view the dock opened this frame creates its child window
 through it.
 
 The order of the phases matters. The resources a pass reads are
-published before [`Self::run_world`](#rustdoc-item-645), the answers that pass produced are
+published before [`Self::run_world`](#rustdoc-item-737), the answers that pass produced are
 consumed after it, and presentation is last. A later phase never reads
 what an earlier one computed in a local variable - it gets a field or a
 return value instead.
 
 #### Errors
 
-Returns [`EditorError::Renderer`](../../frontend/enum.EditorError.md#rustdoc-item-262) when the world frame fails.
+Returns [`EditorError::Renderer`](../../frontend/enum.EditorError.md#rustdoc-item-313) when the world frame fails.
 
-<a id="rustdoc-item-647"></a>
+<a id="rustdoc-item-739"></a>
 
 ### `begin_frame`
 
@@ -1274,7 +1554,7 @@ pub(in runner) fn begin_frame(self: &mut Self, frame_started: Instant);
 
 Samples this frame's rate and logs the heartbeat line when one is due.
 
-<a id="rustdoc-item-648"></a>
+<a id="rustdoc-item-740"></a>
 
 ### `publish_frame_inputs`
 
@@ -1289,7 +1569,7 @@ cameras and badges the frame draws are published. The shell's own input
 record is filled here, before the pass that reads it. The host's notices
 and the open scene's title are reported here as well.
 
-<a id="rustdoc-item-650"></a>
+<a id="rustdoc-item-742"></a>
 
 ### `service_editor_requests`
 
@@ -1304,7 +1584,39 @@ contract names. The watchers, the panels and the clipboard follow, all
 before the snapshot, so the tabs draw this frame's state and not a
 frame-old one.
 
-<a id="rustdoc-item-651"></a>
+<a id="rustdoc-item-743"></a>
+
+### `publish_viewport_state`
+
+```rust
+pub(in runner) fn publish_viewport_state(self: &mut Self);
+```
+
+Publishes the viewport state a callback reads.
+
+The active view and the pointer live in this executable, so they reach
+the editor API's context through a resource. The pointer is stored in
+the scene window's physical pixels and is published in logical points;
+the rectangle is the one the shell drew last frame, because the frame's
+draw happens after this boundary.
+
+<a id="rustdoc-item-744"></a>
+
+### `track_play_cameras`
+
+```rust
+pub(in runner) fn track_play_cameras(self: &mut Self);
+```
+
+Copies the scene cameras when a play session starts and puts them back
+when it stops.
+
+The engine restores the entities and the editor restores its own state;
+a camera is neither, because it lives in this executable. A session that
+moved a view therefore has to be undone here, or Stop would leave the
+person looking from wherever the game left the camera.
+
+<a id="rustdoc-item-745"></a>
 
 ### `publish_frame_resources`
 
@@ -1314,7 +1626,7 @@ pub(in runner) fn publish_frame_resources(self: &mut Self);
 
 Publishes the resources the frame reads, before it runs.
 
-<a id="rustdoc-item-645"></a>
+<a id="rustdoc-item-737"></a>
 
 ### `run_world`
 
@@ -1326,9 +1638,9 @@ Runs the world frame; the shell's egui pass runs inside it.
 
 #### Errors
 
-Returns [`EditorError::Renderer`](../../frontend/enum.EditorError.md#rustdoc-item-262) when the host's frame fails.
+Returns [`EditorError::Renderer`](../../frontend/enum.EditorError.md#rustdoc-item-313) when the host's frame fails.
 
-<a id="rustdoc-item-652"></a>
+<a id="rustdoc-item-746"></a>
 
 ### `consume_frame_answers`
 
@@ -1338,7 +1650,7 @@ pub(in runner) fn consume_frame_answers(self: &mut Self);
 
 Consumes the answers this frame's pass produced.
 
-<a id="rustdoc-item-653"></a>
+<a id="rustdoc-item-747"></a>
 
 ### `present_frame`
 
@@ -1348,7 +1660,7 @@ pub(in runner) fn present_frame(self: &mut Self, event_loop: &ActiveEventLoop);
 
 Draws the shell frame through the overlay; no later phase draws.
 
-<a id="rustdoc-item-654"></a>
+<a id="rustdoc-item-748"></a>
 
 ### `end_frame`
 
@@ -1359,7 +1671,7 @@ pub(in runner) fn end_frame(self: &mut Self, frame_started: Instant);
 Runs the scripted channel and the quit deadline, then decides the next
 wake.
 
-<a id="rustdoc-item-655"></a>
+<a id="rustdoc-item-749"></a>
 
 ### `decide_next_wake`
 
@@ -1378,7 +1690,7 @@ whatever egui asked to redraw gets its frame.
 A frame that leaves the loop polling logs `[editor] frame idle` once per
 transition, with this frame's cost.
 
-<a id="rustdoc-item-656"></a>
+<a id="rustdoc-item-750"></a>
 
 ### `animating`
 
@@ -1391,7 +1703,7 @@ Whether something is moving, so the next frame is already owed.
 A paused project stops animating, but a camera navigation and a
 scripted drag still move something.
 
-<a id="rustdoc-item-657"></a>
+<a id="rustdoc-item-751"></a>
 
 ### `next_wake`
 
@@ -1401,7 +1713,7 @@ pub(in runner) fn next_wake(self: &Self) -> FrameWake;
 
 The wake the last frame left for the loop.
 
-<a id="rustdoc-item-659"></a>
+<a id="rustdoc-item-753"></a>
 
 ### `advance_scripted_drag`
 
@@ -1413,7 +1725,27 @@ Advances a scripted drag by one frame: first the press, then the move,
 then the release. The line it logs on the release tells a suite that
 the drag is over and the pointer is free again.
 
-<a id="rustdoc-item-660"></a>
+A drag that starts inside a scene viewport is a scene gesture as well
+as a UI one: its press, move and release reach the viewport's own
+handlers, which is how a suite drags a handle or a marquee. The
+viewport is decided at the press and every later stage keeps it,
+because the pointer may leave the viewport mid-drag.
+
+<a id="rustdoc-item-754"></a>
+
+### `scripted_scene_view`
+
+```rust
+pub(in runner::scripted_channel) fn scripted_scene_view(self: &Self, point: (f32, f32)) -> Option<usize>;
+```
+
+The scene view a scripted point in the main window falls in, when the
+point is not also over the shell's own UI.
+
+A point over an overlay region belongs to the UI, exactly as it does
+for a scripted click, so the drag is not a scene gesture there.
+
+<a id="rustdoc-item-756"></a>
 
 ### `dump_assets`
 
@@ -1424,7 +1756,7 @@ pub(in runner) fn dump_assets(self: &mut Self);
 Logs the asset browser's rows: the count first, then one line per row
 with its kind and flags. A suite reads the listing from these lines.
 
-<a id="rustdoc-item-661"></a>
+<a id="rustdoc-item-757"></a>
 
 ### `dump_browser`
 
@@ -1436,7 +1768,7 @@ Logs the Assets tab's open folder and the rows its grid lists there.
 A suite can check tree and grid navigation from these lines, with no
 pixel clicks.
 
-<a id="rustdoc-item-662"></a>
+<a id="rustdoc-item-758"></a>
 
 ### `dump_cadence`
 
@@ -1450,7 +1782,7 @@ Two dumps separated by an idle stretch show which redraw mode the loop
 is in. When the loop waits instead of presenting every frame, the frame
 count grows at the idle poll's pace, not at the display's.
 
-<a id="rustdoc-item-663"></a>
+<a id="rustdoc-item-759"></a>
 
 ### `dump_console`
 
@@ -1461,7 +1793,7 @@ pub(in runner) fn dump_console(self: &mut Self);
 Logs the Console tab's filters, the counts they leave and the first
 visible row, for the suites.
 
-<a id="rustdoc-item-664"></a>
+<a id="rustdoc-item-760"></a>
 
 ### `dump_engine_assets`
 
@@ -1473,7 +1805,7 @@ Logs the store's own assets: the ones no file backs. Every picker
 offers them beside the listing's rows, so a suite can check what a
 picker reaches beyond the project's `res`.
 
-<a id="rustdoc-item-665"></a>
+<a id="rustdoc-item-761"></a>
 
 ### `dump_entities`
 
@@ -1484,7 +1816,7 @@ pub(in runner) fn dump_entities(self: &mut Self);
 Logs the entity list and each row's component names, for the suites. A
 collection test finds its subject this way.
 
-<a id="rustdoc-item-666"></a>
+<a id="rustdoc-item-762"></a>
 
 ### `dump_field`
 
@@ -1497,7 +1829,7 @@ Logs one component field's value, for the scripted
 handle, and the component name may be abbreviated to its `::Name`
 suffix.
 
-<a id="rustdoc-item-667"></a>
+<a id="rustdoc-item-763"></a>
 
 ### `dump_grid`
 
@@ -1509,7 +1841,33 @@ Logs the scene grid's state: whether it is on, its cell size, and the
 surfaces the renderer draws it on. This is the same resolution the
 renderer makes from the same bindings.
 
-<a id="rustdoc-item-668"></a>
+<a id="rustdoc-item-764"></a>
+
+### `dump_gizmos`
+
+```rust
+pub(in runner) fn dump_gizmos(self: &mut Self);
+```
+
+Logs every registered component gizmo: its type, when it draws, whether
+an editor hid it, and how many entities it drew in the last frame.
+
+The line also names the surfaces that show the drawing: the frame's
+editor views, which are the surfaces the renderer draws chrome on. A
+game's own surface never is one, so the game view never shows a gizmo.
+
+<a id="rustdoc-item-765"></a>
+
+### `dump_play`
+
+```rust
+pub(in runner) fn dump_play(self: &mut Self);
+```
+
+Logs the play session's state: the run mode, the pause flag and the
+world's restore epoch, which moves on every Stop.
+
+<a id="rustdoc-item-766"></a>
 
 ### `dump_panels`
 
@@ -1519,7 +1877,7 @@ pub(in runner) fn dump_panels(self: &mut Self);
 
 Logs the module panels, for the suites.
 
-<a id="rustdoc-item-669"></a>
+<a id="rustdoc-item-767"></a>
 
 ### `dump_preferences`
 
@@ -1532,7 +1890,7 @@ them, then the project key and whether the file remembers it. This is
 the tab's exact data, so a suite can check a save or a tool choice
 without reading the tab's pixels.
 
-<a id="rustdoc-item-670"></a>
+<a id="rustdoc-item-768"></a>
 
 ### `dump_problems`
 
@@ -1540,9 +1898,15 @@ without reading the tab's pixels.
 pub(in runner) fn dump_problems(self: &mut Self);
 ```
 
-Log the Problems count and the first ten rows, for the suites.
+Log the Problems count and the first forty rows, for the suites.
 
-<a id="rustdoc-item-671"></a>
+Each row carries its index in the panel, so a suite can open the row it
+matched instead of assuming which row came first. The window is wide
+enough that a build's own warnings - the shared workspace's dead code
+and unused imports, reported before a project's error - cannot push
+that error past the end of the dump.
+
+<a id="rustdoc-item-769"></a>
 
 ### `dump_resources`
 
@@ -1552,7 +1916,7 @@ pub(in runner) fn dump_resources(self: &mut Self);
 
 Logs the editable resources and their values, for the suites.
 
-<a id="rustdoc-item-672"></a>
+<a id="rustdoc-item-770"></a>
 
 ### `dump_scenes`
 
@@ -1564,7 +1928,7 @@ Logs the placed rectangle of every scene view, in the main window's
 physical pixels, for the suite's scripted clicks. The game view's
 rectangle follows when the game window exists.
 
-<a id="rustdoc-item-673"></a>
+<a id="rustdoc-item-771"></a>
 
 ### `dump_selection`
 
@@ -1572,10 +1936,14 @@ rectangle follows when the game window exists.
 pub(in runner) fn dump_selection(self: &mut Self);
 ```
 
-Logs the selected entities, primary last, and the selected asset
-(`dump selection`).
+Logs the selected entities, primary last, the selected asset and the
+selected elements (`dump selection`).
 
-<a id="rustdoc-item-674"></a>
+An element row carries the world translation the active tool reports for
+it, which is how a suite reads what a drag wrote. An element no tool
+reports has no transform to show, and its three numbers are `nan`.
+
+<a id="rustdoc-item-772"></a>
 
 ### `dump_standalone_types`
 
@@ -1586,7 +1954,7 @@ pub(in runner) fn dump_standalone_types(self: &mut Self);
 Logs the live standalone types the create dialog offers. A suite reads
 the first one to drive a create.
 
-<a id="rustdoc-item-675"></a>
+<a id="rustdoc-item-773"></a>
 
 ### `dump_stats`
 
@@ -1596,7 +1964,7 @@ pub(in runner) fn dump_stats(self: &mut Self);
 
 Logs the Statistics tab's numbers, for the suites.
 
-<a id="rustdoc-item-676"></a>
+<a id="rustdoc-item-774"></a>
 
 ### `dump_systems`
 
@@ -1609,7 +1977,7 @@ puts the engine's pause flag on the count line. This is the tab's exact
 data, so a suite can check a toggle or a pause without reading the
 tab's pixels.
 
-<a id="rustdoc-item-677"></a>
+<a id="rustdoc-item-775"></a>
 
 ### `dump_tabs`
 
@@ -1620,7 +1988,7 @@ pub(in runner) fn dump_tabs(self: &mut Self);
 Logs the dock's layout for the suite's assertions: the surface count,
 one line per leaf and one line per popped-out tab.
 
-<a id="rustdoc-item-678"></a>
+<a id="rustdoc-item-776"></a>
 
 ### `dump_theme`
 
@@ -1635,7 +2003,7 @@ values it resolved (`dump theme`).
 These are the values the executable hands the shell, so a suite can
 check a layer change without reading the tab's pixels.
 
-<a id="rustdoc-item-679"></a>
+<a id="rustdoc-item-777"></a>
 
 ### `dump_viewport`
 
@@ -1647,7 +2015,7 @@ Logs the active viewport, the interaction state, the hovered handle and
 every view's camera. These are the inputs to navigation and viewport
 routing, and a suite can read them with no pixel clicks.
 
-<a id="rustdoc-item-680"></a>
+<a id="rustdoc-item-778"></a>
 
 ### `dump_windows`
 
@@ -1657,7 +2025,7 @@ pub(in runner) fn dump_windows(self: &mut Self);
 
 Logs the panel windows on screen, for the suites.
 
-<a id="rustdoc-item-681"></a>
+<a id="rustdoc-item-779"></a>
 
 ### `inject_click`
 
@@ -1674,7 +2042,7 @@ while a point with no widget reaches the scene. Press and release
 arrive in one input frame, which the engine reports as both edges, and
 the egui bridge forwards them in order.
 
-<a id="rustdoc-item-682"></a>
+<a id="rustdoc-item-780"></a>
 
 ### `inject_key`
 
@@ -1690,7 +2058,7 @@ The editor's own tool shortcuts read winit events, not the engine's
 input stream, so the chord also runs the handler a real press runs.
 Without that, `key w` would reach the shell but never switch the tool.
 
-<a id="rustdoc-item-684"></a>
+<a id="rustdoc-item-782"></a>
 
 ### `inject_rclick`
 
@@ -1704,7 +2072,7 @@ through the same input path a real click enters.
 The shell's egui pass hit-tests and routes it, so a context menu opens
 over whatever is under the pointer. It never reaches the scene.
 
-<a id="rustdoc-item-685"></a>
+<a id="rustdoc-item-783"></a>
 
 ### `interaction_name`
 
@@ -1715,7 +2083,7 @@ pub(in runner) fn interaction_name(self: &Self) -> &'static str;
 Returns the viewport interaction state's name. Only one owner holds the
 pointer at a time, so the dump and the logs say who has it.
 
-<a id="rustdoc-item-687"></a>
+<a id="rustdoc-item-785"></a>
 
 ### `poll_test_channel`
 
@@ -1733,7 +2101,7 @@ The commands a line queued are applied before the next line runs. An
 append reaches the loop as one batch, so without that order an append
 that edits and then reads would answer the value the edit replaced.
 
-<a id="rustdoc-item-688"></a>
+<a id="rustdoc-item-786"></a>
 
 ### `queue_input`
 
@@ -1747,7 +2115,7 @@ A scripted click or key stands in for a user's, so the UI has to see it
 the way a real event arrives, through the shell's list. The game still
 receives what a user's event would.
 
-<a id="rustdoc-item-689"></a>
+<a id="rustdoc-item-787"></a>
 
 ### `run_scripted`
 
@@ -1760,7 +2128,7 @@ Runs one parsed scripted command.
 No grammar is left here: each arm names its side effect, so the verbs
 and their arguments have one home, the core parser.
 
-<a id="rustdoc-item-691"></a>
+<a id="rustdoc-item-789"></a>
 
 ### `scripted_asset_edit`
 
@@ -1771,7 +2139,7 @@ pub(in runner) fn scripted_asset_edit(self: &mut Self, edit: AssetEdit);
 Queues one `edit asset` command as the recorded edit the Assets tab's
 actions also queue.
 
-<a id="rustdoc-item-693"></a>
+<a id="rustdoc-item-791"></a>
 
 ### `scripted_asset_settings`
 
@@ -1790,7 +2158,7 @@ Returns a message when the key path is malformed, when no asset at
 `path` has a settings document, or when the text is not a value of the
 leaf's kind or the path cannot be reached in the document.
 
-<a id="rustdoc-item-694"></a>
+<a id="rustdoc-item-792"></a>
 
 ### `scripted_browser`
 
@@ -1802,7 +2170,7 @@ Opens a folder in the Assets tab's browser (`root` opens the asset
 root), through the shell's session state. It stands in for a click in
 the folder tree.
 
-<a id="rustdoc-item-695"></a>
+<a id="rustdoc-item-793"></a>
 
 ### `scripted_camera`
 
@@ -1813,7 +2181,7 @@ pub(in runner) fn scripted_camera(self: &mut Self, navigation: CameraNavigation,
 Applies a scripted camera gesture to the active viewport, through the
 same math a drag uses.
 
-<a id="rustdoc-item-697"></a>
+<a id="rustdoc-item-795"></a>
 
 ### `scripted_clipboard`
 
@@ -1825,7 +2193,7 @@ Runs one scripted clipboard command (`command editor.copy/cut/paste`).
 It queues the same request the Edit menu's rows queue, so the test
 channel drives the menu's own path.
 
-<a id="rustdoc-item-699"></a>
+<a id="rustdoc-item-797"></a>
 
 ### `scripted_component_edit`
 
@@ -1842,7 +2210,7 @@ component attach or detach the Inspector's menu items queue.
 Returns a message when the display handle names no entity or the
 component name resolves to no component.
 
-<a id="rustdoc-item-700"></a>
+<a id="rustdoc-item-798"></a>
 
 ### `scripted_console_filter`
 
@@ -1853,7 +2221,7 @@ pub(in runner) fn scripted_console_filter(self: &mut Self, level: &str);
 Runs `console filter <level>`, which sets the lowest level the Console
 tab shows. The next frame applies it to the history.
 
-<a id="rustdoc-item-701"></a>
+<a id="rustdoc-item-799"></a>
 
 ### `scripted_console_search`
 
@@ -1864,7 +2232,7 @@ pub(in runner) fn scripted_console_search(self: &mut Self, text: String);
 Runs `console search <text>`, which sets the Console tab's substring
 filter.
 
-<a id="rustdoc-item-702"></a>
+<a id="rustdoc-item-800"></a>
 
 ### `scripted_dialog_set_name`
 
@@ -1875,7 +2243,7 @@ pub(in runner) fn scripted_dialog_set_name(self: &mut Self, dialog_name: &str);
 Sets the open dialog's name field, as typing into the window's text
 field does.
 
-<a id="rustdoc-item-703"></a>
+<a id="rustdoc-item-801"></a>
 
 ### `scripted_dialog_submit`
 
@@ -1889,7 +2257,7 @@ The dialog is taken out of the session, submitted, and put back,
 because the submit also needs the pending command queue. The world
 cannot lend two mutable resources at once.
 
-<a id="rustdoc-item-704"></a>
+<a id="rustdoc-item-802"></a>
 
 ### `scripted_edit_array`
 
@@ -1907,7 +2275,7 @@ Returns a message when the target does not resolve - no entity, no
 component or no such field - when the index is outside the array, or
 when the text does not parse against the element's kind.
 
-<a id="rustdoc-item-705"></a>
+<a id="rustdoc-item-803"></a>
 
 ### `scripted_edit_preference`
 
@@ -1920,7 +2288,7 @@ the same `SetPreferences` batch the tab's Save button queues, holding
 just that row. The value is everything after the key, so a text value
 keeps its spaces.
 
-<a id="rustdoc-item-706"></a>
+<a id="rustdoc-item-804"></a>
 
 ### `scripted_edit_resource`
 
@@ -1936,7 +2304,7 @@ recorded `SetResourceField`.
 Returns a message when the resource has no such editable field, or when
 the text does not parse against the field's current kind.
 
-<a id="rustdoc-item-707"></a>
+<a id="rustdoc-item-805"></a>
 
 ### `scripted_edit_selection`
 
@@ -1958,7 +2326,7 @@ Returns a message when nothing is selected, when the target does not
 resolve against the primary entity, or when the text does not name a
 value for the field.
 
-<a id="rustdoc-item-708"></a>
+<a id="rustdoc-item-806"></a>
 
 ### `scripted_edit_set`
 
@@ -1976,7 +2344,7 @@ The text is parsed against the field's current kind.
 Returns a message when the target does not resolve, or when the text
 does not name a value for the field.
 
-<a id="rustdoc-item-709"></a>
+<a id="rustdoc-item-807"></a>
 
 ### `scripted_edit_system`
 
@@ -1987,7 +2355,7 @@ pub(in runner) fn scripted_edit_system(self: &mut Self, index: usize, enabled: b
 Runs `edit system <index> on|off` from the scripted channel: the same
 recorded, undoable toggle the Systems tab's on/off buttons queue.
 
-<a id="rustdoc-item-710"></a>
+<a id="rustdoc-item-808"></a>
 
 ### `scripted_entity_create`
 
@@ -1999,7 +2367,7 @@ Runs `editor.entity_create` from the scripted channel: the recorded
 edit that creates one empty entity, as the Entities menu's New Entity
 does.
 
-<a id="rustdoc-item-711"></a>
+<a id="rustdoc-item-809"></a>
 
 ### `scripted_entity_delete`
 
@@ -2011,7 +2379,95 @@ Runs `editor.entity_delete`: the selected entity's recorded delete, with
 the destroy and the selection clear as one step. When the selection
 holds no entity, it logs a note and does nothing.
 
-<a id="rustdoc-item-712"></a>
+<a id="rustdoc-item-810"></a>
+
+### `scripted_drag_element`
+
+```rust
+pub(in runner) fn scripted_drag_element(self: &mut Self, id: u64, delta: [f32; 3]) -> Result<(), String>;
+```
+
+Runs `drag element <id> <dx> <dy> <dz>`: a direct nudge of one element
+by a world delta, queued as the recorded write a gizmo drag ends with.
+
+The element's new transform comes from the active tool's own report, so
+the editor never guesses where a tool keeps its data, and the write goes
+back through the same `set_element_transforms` hook a drag uses.
+
+#### Errors
+
+Returns a message when nothing is selected, when the tool reports no
+elements, or when it reports no element with that id.
+
+<a id="rustdoc-item-811"></a>
+
+### `scripted_element_menu`
+
+```rust
+pub(in runner) fn scripted_element_menu(self: &mut Self, item: &str) -> Result<(), String>;
+```
+
+Runs `element menu <item>`: the row of the active tool's element context
+menu a click on it queues.
+
+The row is checked against the tool's own report first, so a line that
+names a row the tool does not offer is refused instead of queueing a
+request nothing answers. The queued command is the same one the menu
+draws, and the frame boundary asks the tool what it means.
+
+#### Errors
+
+Returns a message when nothing is selected, when the tool adds no rows,
+or when it does not offer that row.
+
+<a id="rustdoc-item-812"></a>
+
+### `dump_elements`
+
+```rust
+pub(in runner) fn dump_elements(self: &mut Self);
+```
+
+Logs what the active tool reports (`dump elements`): one line per
+element with its world place, then one line per menu row it offers.
+
+A run with no selected entity or no reporting tool logs the count line
+alone, so a suite can tell "nothing selected" from "the tool reports
+nothing".
+
+<a id="rustdoc-item-813"></a>
+
+### `delete_selected_elements`
+
+```rust
+pub(in runner) fn delete_selected_elements(self: &mut Self) -> bool;
+```
+
+Queues the tool's recorded removal of the element selection, and
+answers whether there was one to remove.
+
+The batch is the removal and then the slot's clear, in that order: the
+undo runs the other way round, so it puts the full selection back first
+and re-inserts the elements after it. A run with no element selection,
+or a tool that cannot remove, answers `false` and leaves Delete to the
+entity rule.
+
+<a id="rustdoc-item-814"></a>
+
+### `tool_element_key`
+
+```rust
+pub(in runner) fn tool_element_key(self: &mut Self, key: KeyCode) -> bool;
+```
+
+Offers one key press to the active tool's element selection, and
+answers whether the tool took it.
+
+The tool hears the key before the keybindings do, so a component tool
+can own a chord while its element selection is up; every other key - and
+every key with no element selection - falls through to the editor.
+
+<a id="rustdoc-item-816"></a>
 
 ### `scripted_gizmo_handle`
 
@@ -2023,7 +2479,7 @@ Resolves a scripted handle name to its handle id. `x`/`y`/`z` name the
 active tool's axes, and `xy`/`xz`/`yz` name the translation planes,
 which only the translate tool offers.
 
-<a id="rustdoc-item-713"></a>
+<a id="rustdoc-item-817"></a>
 
 ### `scripted_gizmo_release`
 
@@ -2037,7 +2493,19 @@ Finishes the drag a `gizmo press` started, like a mouse release.
 
 Returns a message when no gizmo drag is in flight.
 
-<a id="rustdoc-item-714"></a>
+<a id="rustdoc-item-818"></a>
+
+### `scripted_space_cycle`
+
+```rust
+pub(in runner) fn scripted_space_cycle(self: &mut Self);
+```
+
+Runs `editor.tool_space_toggle` from the scripted channel: it queues the
+same `CycleGizmoSpace` edit the toolbox's space row queues, so a suite
+reaches a tool's own frame the way a click does.
+
+<a id="rustdoc-item-819"></a>
 
 ### `scripted_gizmo_tool`
 
@@ -2050,7 +2518,7 @@ Runs `editor.tool_*` from the scripted channel: it queues the same
 edit is applied but never recorded, because a tool choice is a control,
 not an edit.
 
-<a id="rustdoc-item-715"></a>
+<a id="rustdoc-item-820"></a>
 
 ### `scripted_hover`
 
@@ -2065,7 +2533,7 @@ a real pointer move.
 
 Returns a message when `view` is not a scene view index.
 
-<a id="rustdoc-item-716"></a>
+<a id="rustdoc-item-821"></a>
 
 ### `scripted_hover_ui`
 
@@ -2080,7 +2548,7 @@ a tooltip or a resize cursor moves the pointer here. The stored cursor
 keeps the position on later frames, just like a real move that has
 stopped moving.
 
-<a id="rustdoc-item-717"></a>
+<a id="rustdoc-item-822"></a>
 
 ### `scripted_new_scene_view`
 
@@ -2097,7 +2565,7 @@ the front.
 Returns a message when every scene view is already open. A shell that
 has not attached yet only warns, and the same line works once it has.
 
-<a id="rustdoc-item-718"></a>
+<a id="rustdoc-item-823"></a>
 
 ### `scripted_palette`
 
@@ -2112,7 +2580,7 @@ This touches only the palette's model state. The shell's pass draws the
 popup and runs the selected row, so a scripted run and a click take the
 same action path.
 
-<a id="rustdoc-item-721"></a>
+<a id="rustdoc-item-826"></a>
 
 ### `scripted_panel_field`
 
@@ -2125,7 +2593,7 @@ Queues the component-field write a module panel's own row would queue
 
 The row is a drag value the test channel cannot press, so the write goes
 where the row puts it: into the shared `PanelCommands` queue.
-[`Self::apply_panel_commands`](#rustdoc-item-720) applies that queue at the next frame
+[`Self::apply_panel_commands`](#rustdoc-item-825) applies that queue at the next frame
 boundary. A test therefore drives the panel contract itself - the queue,
 the recorded field edit and its undo step - and not a second write path.
 
@@ -2133,7 +2601,7 @@ the recorded field edit and its undo step - and not a second write path.
 
 Returns a message when the selection holds no primary entity.
 
-<a id="rustdoc-item-722"></a>
+<a id="rustdoc-item-827"></a>
 
 ### `scripted_panel_restore`
 
@@ -2146,7 +2614,7 @@ Runs `panel restore <source>`, which binds that module's panels again.
 The requests the executable kept are registered against a fresh liveness
 marker, which is what a reload's re-registration does.
 
-<a id="rustdoc-item-723"></a>
+<a id="rustdoc-item-828"></a>
 
 ### `scripted_panel_unload`
 
@@ -2158,10 +2626,10 @@ Runs `panel unload <source>`, which drops one module's liveness marker.
 
 This leaves the registry in the state a module unload leaves it in,
 because the marker is what an unload drops. The tab then reads
-"module not loaded", and the panel's draw function is no longer handed
-out.
+"module not loaded", and neither the panel's draw function nor the
+module's editor-API callbacks are handed out.
 
-<a id="rustdoc-item-724"></a>
+<a id="rustdoc-item-829"></a>
 
 ### `scripted_panel_window`
 
@@ -2175,7 +2643,7 @@ windows.
 The panel decides what the id means, so this drives the same code its
 button does.
 
-<a id="rustdoc-item-725"></a>
+<a id="rustdoc-item-830"></a>
 
 ### `scripted_pause_toggle`
 
@@ -2187,7 +2655,49 @@ Runs `editor.pause_toggle` from the scripted channel: it queues the flip
 of the engine's pause flag, applied but never recorded. That is the same
 walk the Systems tab's Pause/Resume button takes.
 
-<a id="rustdoc-item-726"></a>
+<a id="rustdoc-item-831"></a>
+
+### `scripted_play`
+
+```rust
+pub(in runner) fn scripted_play(self: &mut Self);
+```
+
+Runs `editor.play` from the scripted channel: the same queued
+`EnterPlay` the toolbar's Play button queues.
+
+<a id="rustdoc-item-832"></a>
+
+### `scripted_stop`
+
+```rust
+pub(in runner) fn scripted_stop(self: &mut Self);
+```
+
+Runs `editor.stop` from the scripted channel: the same queued `ExitPlay`
+the toolbar's Stop button queues.
+
+<a id="rustdoc-item-833"></a>
+
+### `scripted_play_toggle`
+
+```rust
+pub(in runner) fn scripted_play_toggle(self: &mut Self);
+```
+
+Runs `editor.play_toggle`: Play while editing, Stop while playing.
+
+<a id="rustdoc-item-834"></a>
+
+### `queue_play_command`
+
+```rust
+pub(in runner::scripted_channel) fn queue_play_command(self: &mut Self, command: EditorCommand);
+```
+
+Queues one play command for the frame boundary's drain.
+
+<a id="rustdoc-item-835"></a>
 
 ### `scripted_pick_entity`
 
@@ -2204,7 +2714,7 @@ the next scene press names the field's reference.
 Returns a message when the target does not resolve, or when the field
 does not hold an entity reference.
 
-<a id="rustdoc-item-727"></a>
+<a id="rustdoc-item-836"></a>
 
 ### `scripted_popout`
 
@@ -2220,7 +2730,7 @@ menu makes, driven from the scripted channel.
 Returns a message for the game view, which is the primary surface's
 window, and when the tab is already docked or already out.
 
-<a id="rustdoc-item-729"></a>
+<a id="rustdoc-item-838"></a>
 
 ### `scripted_problem_open`
 
@@ -2235,7 +2745,7 @@ this line waits for the editor it launched, and one frame of delay would
 make the assertion race the launch. The body is the one the frame drain
 calls, so the two paths differ only in when they run.
 
-<a id="rustdoc-item-730"></a>
+<a id="rustdoc-item-839"></a>
 
 ### `scripted_redo`
 
@@ -2246,7 +2756,7 @@ pub(in runner) fn scripted_redo(self: &mut Self);
 Runs `editor.redo` from the scripted channel: the same walk, which
 queues the next step's forward batch.
 
-<a id="rustdoc-item-731"></a>
+<a id="rustdoc-item-840"></a>
 
 ### `scripted_scene`
 
@@ -2261,7 +2771,7 @@ boundary.
 Document commands are not recorded, because they replace the world
 instead of editing it, so the batch is queued unrecorded.
 
-<a id="rustdoc-item-732"></a>
+<a id="rustdoc-item-841"></a>
 
 ### `scripted_select_asset`
 
@@ -2272,7 +2782,7 @@ pub(in runner) fn scripted_select_asset(self: &mut Self, path: &str);
 Sets the scripted asset selection: the same shared resource an Assets row
 click writes. The line is logged so a suite can watch either path.
 
-<a id="rustdoc-item-733"></a>
+<a id="rustdoc-item-842"></a>
 
 ### `scripted_select_entity`
 
@@ -2290,7 +2800,7 @@ but the handle a pick logged still resolves here.
 
 Returns a message when the display handle names no entity.
 
-<a id="rustdoc-item-734"></a>
+<a id="rustdoc-item-843"></a>
 
 ### `scripted_select_extend`
 
@@ -2310,7 +2820,82 @@ means. What the modifiers do is the shell's `click_from_modifiers`.
 
 Returns a message when the display handle names no entity.
 
-<a id="rustdoc-item-736"></a>
+<a id="rustdoc-item-844"></a>
+
+### `scripted_select_elements`
+
+```rust
+pub(in runner) fn scripted_select_elements(self: &mut Self, ids: Vec<u64>, add: bool) -> Result<(), String>;
+```
+
+Runs `select element <ids>` / `select element add <id>`: the recorded
+element selection a tool's own click makes.
+
+While a tool reports elements, every id is resolved against its report
+and applied through the same click rule a pointer press uses: the first
+id is the click the verb names, the rest extend it, and a kind mismatch
+logs the same refusal a Ctrl-click across kinds does. Without a
+reporting tool the ids are taken as given, under the kind the current
+selection carries.
+
+#### Errors
+
+Returns a message when no entity is selected to own the elements, and
+when a reporting tool does not report one of the ids.
+
+<a id="rustdoc-item-845"></a>
+
+### `scripted_select_unreported_elements`
+
+```rust
+pub(in runner::scripted_channel) fn scripted_select_unreported_elements(self: &mut Self, owner: Entity, ids: Vec<u64>, add: bool) -> Result<(), String>;
+```
+
+The element selection of a run with no reporting tool: the ids are
+taken as given, under the kind the current selection names.
+
+#### Errors
+
+Returns a message when the selection resource is missing; the owner has
+already been resolved by the caller.
+
+<a id="rustdoc-item-846"></a>
+
+### `scripted_tool`
+
+```rust
+pub(in runner) fn scripted_tool(self: &mut Self, name: Option<String>) -> Result<(), String>;
+```
+
+Runs `tool <name>` / `tool none`: the recorded activation a toolbox row
+makes.
+
+A built-in's name also queues the gizmo-mode command its row would, so
+the scripted channel, the toolbox and the shortcuts all end in the same
+place. An unknown name is refused with the tools that exist, which is
+what the grammar's own line says.
+
+#### Errors
+
+Returns the registry's refusal when no tool has that name.
+
+<a id="rustdoc-item-847"></a>
+
+### `dump_tools`
+
+```rust
+pub(in runner) fn dump_tools(self: &mut Self);
+```
+
+Logs the registered tools and which one is active (`dump tools`).
+
+Every extension follows the tool it extends, with the place it takes in
+that tool's chain and whether it is attached to what is selected right
+now. `attached` is what a reader compares between two entities: an
+extension that requires a component is only attached to an entity that
+carries it.
+
+<a id="rustdoc-item-848"></a>
 
 ### `scripted_select_resource`
 
@@ -2321,7 +2906,7 @@ pub(in runner) fn scripted_select_resource(self: &mut Self, resource_name: &str)
 Runs `select resource <name>`: the recorded selection a resource row
 makes.
 
-<a id="rustdoc-item-737"></a>
+<a id="rustdoc-item-849"></a>
 
 ### `scripted_step`
 
@@ -2332,7 +2917,23 @@ pub(in runner) fn scripted_step(self: &mut Self);
 Runs `editor.step` from the scripted channel: it queues one single step,
 applied but never recorded. That is the same walk the Step button takes.
 
-<a id="rustdoc-item-738"></a>
+<a id="rustdoc-item-850"></a>
+
+### `scripted_extensions`
+
+```rust
+pub(in runner) fn scripted_extensions(self: &mut Self, enabled: bool);
+```
+
+Runs `extensions on|off`: registers or drops the fixture tool's two
+extensions.
+
+Every other suite area drives the plain fixture tool, so the extensions
+arrive only when an area asks for them. The registration is the one a
+module's editor crate makes at load time, which is why what it logs about
+a chord clash is the same line.
+
+<a id="rustdoc-item-851"></a>
 
 ### `scripted_toolbar`
 
@@ -2343,7 +2944,7 @@ pub(in runner) fn scripted_toolbar(self: &mut Self, action: ToolbarAction);
 Runs one Assets toolbar button from the scripted channel, through the
 same core helpers the buttons call, enablement rules included.
 
-<a id="rustdoc-item-740"></a>
+<a id="rustdoc-item-853"></a>
 
 ### `scripted_undo`
 
@@ -2355,7 +2956,7 @@ Runs `editor.undo` from the scripted channel. The shared core walk pops
 the newest step and queues its inverse, applied but never recorded, which
 is the same walk the browser editor and the native editor take.
 
-<a id="rustdoc-item-741"></a>
+<a id="rustdoc-item-854"></a>
 
 ### `start_scripted_drag`
 
@@ -2364,7 +2965,7 @@ pub(in runner) fn start_scripted_drag(self: &mut Self, from: (f32, f32), to: (f3
 ```
 
 Queues a scripted left-button drag. The press, the move and the release
-arrive one per frame through [`Self::advance_scripted_drag`](#rustdoc-item-659), which is
+arrive one per frame through [`Self::advance_scripted_drag`](#rustdoc-item-753), which is
 the shape egui's drag detection needs. The events enter through the same
 input path a real drag enters, so a panel's drag handle reacts exactly as
 it does for a user.
@@ -2373,7 +2974,7 @@ it does for a user.
 
 Returns a message when a scripted drag is already in flight.
 
-<a id="rustdoc-item-743"></a>
+<a id="rustdoc-item-856"></a>
 
 ### `publish_gizmo_geometry`
 
@@ -2393,7 +2994,7 @@ world follows the active view's camera distance. The debug drawing
 holds only one frame's worth of gizmo geometry, so nothing has to be
 cleared here.
 
-<a id="rustdoc-item-744"></a>
+<a id="rustdoc-item-857"></a>
 
 ### `gizmo_shortcut`
 
@@ -2409,7 +3010,7 @@ keybindings override changes the editor without a restart. A key with
 no binding does nothing here, so the rest of the editor and the game
 still receive it.
 
-<a id="rustdoc-item-746"></a>
+<a id="rustdoc-item-860"></a>
 
 ### `set_gizmo_tool`
 
@@ -2420,7 +3021,11 @@ pub(in runner) fn set_gizmo_tool(self: &mut Self, mode: GizmoMode);
 Switches the gizmo's mode; the keyboard shortcuts and the scripted
 `gizmo` verb call this.
 
-<a id="rustdoc-item-747"></a>
+The switch is queued as the same [`EditorCommand::SetGizmoTool`] the
+toolbox rows, the viewport menu and the inspector queue, so the editor
+API's tool event has one source and the shortcut cannot bypass it.
+
+<a id="rustdoc-item-861"></a>
 
 ### `gizmo_length`
 
@@ -2432,7 +3037,7 @@ Returns the handle length, in world units, at `gizmo_origin` in
 `view`: a constant fraction of that view's camera distance, clamped so
 the handles neither become too small to grab nor cover the scene.
 
-<a id="rustdoc-item-748"></a>
+<a id="rustdoc-item-862"></a>
 
 ### `scene_pixel_size`
 
@@ -2443,7 +3048,7 @@ pub(in runner) fn scene_pixel_size(self: &Self, view: usize) -> Option<(f32, f32
 Returns one scene view's surface size in physical pixels, or `None`
 when that view has no window.
 
-<a id="rustdoc-item-749"></a>
+<a id="rustdoc-item-863"></a>
 
 ### `scene_ray`
 
@@ -2460,7 +3065,7 @@ of view of the camera in the renderer contract. Those are the same
 numbers the renderer projects with, so a pick and a drag agree about
 what a pixel looks at.
 
-<a id="rustdoc-item-750"></a>
+<a id="rustdoc-item-864"></a>
 
 ### `project_to_screen`
 
@@ -2472,7 +3077,7 @@ Returns where a world point appears on the active scene view's
 surface, in physical pixels. Returns `None` when the view has no
 window or the point is at or behind the camera.
 
-<a id="rustdoc-item-751"></a>
+<a id="rustdoc-item-865"></a>
 
 ### `project_to_screen_in`
 
@@ -2484,7 +3089,7 @@ Returns where a world point appears on one scene view's surface, in
 physical pixels. Returns `None` when the view has no window or the
 point is at or behind the camera.
 
-<a id="rustdoc-item-752"></a>
+<a id="rustdoc-item-866"></a>
 
 ### `screen_projection`
 
@@ -2496,7 +3101,7 @@ The camera and surface terms that place a world point on one scene
 view, captured once so a caller projecting many points does not
 recompute them per point. Returns `None` when the view has no window.
 
-<a id="rustdoc-item-754"></a>
+<a id="rustdoc-item-868"></a>
 
 ### `begin_gizmo_drag`
 
@@ -2507,7 +3112,7 @@ pub(in runner) fn begin_gizmo_drag(self: &mut Self, view: usize, handle: u32, pr
 Begins a drag from a handle pick. The press pixel's ray records the
 parameter or angle that every later move is measured against.
 
-<a id="rustdoc-item-755"></a>
+<a id="rustdoc-item-869"></a>
 
 ### `update_gizmo_drag`
 
@@ -2524,7 +3129,24 @@ the previous frame's value, so a snapped or clamped drag cannot add up
 rounding errors. The drag also keeps the basis its handles were built
 in, so a local-space drag follows the object's own axes.
 
-<a id="rustdoc-item-756"></a>
+<a id="rustdoc-item-870"></a>
+
+### `update_element_drag`
+
+```rust
+pub(in runner::transform_gizmo) fn update_element_drag(self: &mut Self, drag: &GizmoDrag, ray_origin: [f32; 3], ray_direction: [f32; 3]);
+```
+
+Applies one move of an element drag: measures this position against the
+press the way the entity drag does, turns the measurement into world
+transforms for every dragged element, and hands them to the active
+tool's write-back.
+
+The tool owns the component the elements live in, so nothing here names
+a field and a move records nothing. The release queues the one recorded
+step, through the same write-back an undo replays.
+
+<a id="rustdoc-item-872"></a>
 
 ### `write_translation`
 
@@ -2535,7 +3157,7 @@ pub(in runner) fn write_translation(self: &mut Self, entity: Entity, translation
 Writes a translation straight into the world. Returns false when a
 component refused the write.
 
-<a id="rustdoc-item-757"></a>
+<a id="rustdoc-item-873"></a>
 
 ### `write_rotation`
 
@@ -2546,7 +3168,7 @@ pub(in runner) fn write_rotation(self: &mut Self, entity: Entity, rotation: [f32
 Writes a rotation straight into the world. Returns false when a
 component refused the write.
 
-<a id="rustdoc-item-758"></a>
+<a id="rustdoc-item-874"></a>
 
 ### `write_scale`
 
@@ -2557,7 +3179,7 @@ pub(in runner) fn write_scale(self: &mut Self, entity: Entity, scale: [f32; 3]) 
 Writes a scale straight into the world. Returns false when a component
 refused the write.
 
-<a id="rustdoc-item-759"></a>
+<a id="rustdoc-item-875"></a>
 
 ### `note_gizmo_write`
 
@@ -2568,7 +3190,7 @@ pub(in runner) fn note_gizmo_write(self: &mut Self, transform_field: &'static st
 Notes what the drag in flight last wrote, so its release can record
 one step for it. A restore has no drag in flight and notes nothing.
 
-<a id="rustdoc-item-760"></a>
+<a id="rustdoc-item-876"></a>
 
 ### `write_transform_field`
 
@@ -2583,7 +3205,7 @@ A refusal is logged here, where the entity, the field and the element
 index are still known. Callers only see a `false`, which becomes
 `ended without a move` and reads the same as a drag that never moved.
 
-<a id="rustdoc-item-761"></a>
+<a id="rustdoc-item-877"></a>
 
 ### `restore_transform`
 
@@ -2596,7 +3218,7 @@ drag leaves the object exactly where it started. Returns false when
 any of the three writes was refused, so the cancel can say so instead
 of reporting a clean restore.
 
-<a id="rustdoc-item-763"></a>
+<a id="rustdoc-item-879"></a>
 
 ### `record_gizmo_drag`
 
@@ -2613,7 +3235,7 @@ which the drag has already overwritten with the final one. Without the
 write, the step would record the final value as its starting point,
 and the first undo would use up a history entry and change nothing.
 
-<a id="rustdoc-item-764"></a>
+<a id="rustdoc-item-880"></a>
 
 ### `end_gizmo_drag`
 
@@ -2625,7 +3247,7 @@ Ends the drag in flight and reports what it wrote. The guides and the
 active highlight go with it, so the handles are drawn in their idle or
 hovered look on the next frame.
 
-<a id="rustdoc-item-765"></a>
+<a id="rustdoc-item-881"></a>
 
 ### `cancel_gizmo_drag`
 
@@ -2637,7 +3259,7 @@ Cancels the drag in flight. The transform from before the press is
 written back and the drag is dropped, so losing the focus leaves no
 half-applied move (and no guides) behind.
 
-<a id="rustdoc-item-766"></a>
+<a id="rustdoc-item-882"></a>
 
 ### `cancel_interactions`
 
@@ -2648,7 +3270,7 @@ pub(in runner) fn cancel_interactions(self: &mut Self, reason: &str);
 Drops every interaction in flight. The focus was lost, so no press or
 release is coming to finish them.
 
-<a id="rustdoc-item-767"></a>
+<a id="rustdoc-item-883"></a>
 
 ### `start_synthetic_gizmo_drag`
 
@@ -2660,7 +3282,7 @@ Presses one handle of the active tool for the scripted channel. The
 press pixel is the handle's grab point projected, so the pick that
 answers it proves the same geometry the renderer draws.
 
-<a id="rustdoc-item-768"></a>
+<a id="rustdoc-item-884"></a>
 
 ### `gizmo_settings`
 
@@ -2671,7 +3293,27 @@ pub(in runner) fn gizmo_settings(self: &mut Self) -> GizmoSettings;
 Returns the gizmo settings from the world, or the defaults when no
 state exists.
 
-<a id="rustdoc-item-770"></a>
+<a id="rustdoc-item-886"></a>
+
+### `sync_floating_overlay`
+
+```rust
+pub(in runner) fn sync_floating_overlay(self: &mut Self);
+```
+
+Keeps the floating overlay window over the editor's client area.
+
+The overlay is a window of its own, so nothing moves it with the editor
+window: it is placed at the client origin and sized to the client area
+whenever either changes, and it is shown only while the editor is
+focused. An unmanaged window is stacked above every other window, so
+leaving it up while the editor is in the background would paint the UI
+over whatever the person switched to.
+
+Every other posture draws into a window the editor already owns, and
+this does nothing there.
+
+<a id="rustdoc-item-887"></a>
 
 ### `resize`
 
@@ -2681,7 +3323,7 @@ pub(in runner) fn resize(self: &mut Self, width: u32, height: u32);
 
 Handles a resize of the main window, in physical pixels.
 
-<a id="rustdoc-item-771"></a>
+<a id="rustdoc-item-888"></a>
 
 ### `view_origin`
 
@@ -2697,7 +3339,7 @@ A resize never moves the window, so the origin stays valid even after
 the layout clears the placement cache. A drag across a separator
 therefore never makes the pointer jump.
 
-<a id="rustdoc-item-772"></a>
+<a id="rustdoc-item-889"></a>
 
 ### `resize_scene`
 
@@ -2711,7 +3353,7 @@ The view's surface reconfigures with the window; without that, the
 scene would be drawn at the old size inside the tab. The placement cache
 is cleared, so the next layout pass re-applies the dock's rectangle.
 
-<a id="rustdoc-item-773"></a>
+<a id="rustdoc-item-890"></a>
 
 ### `resize_game`
 
@@ -2726,7 +3368,7 @@ surfaces do; without that, the project would be drawn at the old size
 inside the Game tab. The placement cache is cleared, so the next layout
 pass re-applies the dock's rectangle.
 
-<a id="rustdoc-item-774"></a>
+<a id="rustdoc-item-891"></a>
 
 ### `game_origin`
 
@@ -2738,7 +3380,7 @@ Returns the game window's client-area origin, in the main window's
 client coordinates and in physical pixels: the same bridge the scene
 views use for pointer positions.
 
-<a id="rustdoc-item-775"></a>
+<a id="rustdoc-item-892"></a>
 
 ### `ensure_scene_views`
 
@@ -2754,7 +3396,7 @@ the person just added is the list's last slot. Each new view gets its
 own window, surface and camera here, the same three the startup views
 get, and starts hidden: the placement that follows this frame shows it.
 
-<a id="rustdoc-item-776"></a>
+<a id="rustdoc-item-893"></a>
 
 ### `place_views`
 
@@ -2769,7 +3411,7 @@ It runs at startup and on a resize, before the shell's own scene
 rectangles are applied. The other views stay hidden until their tabs
 show.
 
-<a id="rustdoc-item-777"></a>
+<a id="rustdoc-item-894"></a>
 
 ### `pop_view_window`
 
@@ -2784,7 +3426,7 @@ The first call replaces the view's child window with a top-level one,
 because a child window can never reach another monitor. Later calls
 only follow the pop-out as it moves.
 
-<a id="rustdoc-item-778"></a>
+<a id="rustdoc-item-895"></a>
 
 ### `ensure_view_docked`
 
@@ -2798,7 +3440,7 @@ dock.
 A view the platform forced onto a detached window is left alone: that
 window is the view's dock window, not a pop-out's.
 
-<a id="rustdoc-item-779"></a>
+<a id="rustdoc-item-896"></a>
 
 ### `place_view_rect`
 
@@ -2809,7 +3451,7 @@ pub(in runner) fn place_view_rect(self: &mut Self, view: usize, rect: ShellRect)
 Places one scene view at the dock's scene rectangle, converted from
 logical points to the client area's physical pixels.
 
-<a id="rustdoc-item-780"></a>
+<a id="rustdoc-item-897"></a>
 
 ### `place_game_rect`
 
@@ -2820,7 +3462,7 @@ pub(in runner) fn place_game_rect(self: &mut Self, rect: ShellRect);
 Places the game window at the dock's game rectangle, converted from
 logical points to the client area's physical pixels.
 
-<a id="rustdoc-item-781"></a>
+<a id="rustdoc-item-899"></a>
 
 ### `view_rect_pixels`
 
@@ -2834,7 +3476,27 @@ physical pixels, clamped inside the client area.
 The dock's rectangle can overshoot the window while a split is being
 dragged.
 
-<a id="rustdoc-item-782"></a>
+A view's window is grown by [`COMPOSITION_VIEW_OVERSHOOT`](../constant.COMPOSITION_VIEW_OVERSHOOT.md#rustdoc-item-898) only while
+the composition overlay draws the UI above it. Without that overlay the
+view window is above the UI, so a grown window hides the tab bar and the
+edge of the panel next to it - the view looks too large and slightly out
+of place.
+
+<a id="rustdoc-item-900"></a>
+
+### `overlay_is_composition`
+
+```rust
+pub(in runner) fn overlay_is_composition(self: &Self) -> bool;
+```
+
+Whether the UI is drawn above the scene and game windows.
+
+Only the composition overlay is: it is a visual over the whole window,
+while the window surface is the main window itself, which a child window
+covers.
+
+<a id="rustdoc-item-901"></a>
 
 ### `hide_view`
 
@@ -2845,7 +3507,7 @@ pub(in runner) fn hide_view(self: &mut Self, view: usize);
 Hides one scene view's window because its tab is not shown this pass:
 another tab of its group is active, or the tab was closed.
 
-<a id="rustdoc-item-783"></a>
+<a id="rustdoc-item-902"></a>
 
 ### `hide_game`
 
@@ -2856,7 +3518,7 @@ pub(in runner) fn hide_game(self: &mut Self);
 Hides the game window because its tab is not shown this pass, so no
 child window can paint over the tab that is.
 
-<a id="rustdoc-item-784"></a>
+<a id="rustdoc-item-903"></a>
 
 ### `scene_window_event`
 
@@ -2875,7 +3537,24 @@ leaves that window, so a gizmo drag or a navigation that crosses the
 viewport's edge carries on and no other viewport takes the pointer
 mid-drag.
 
-<a id="rustdoc-item-786"></a>
+<a id="rustdoc-item-905"></a>
+
+### `scene_pointer_moved`
+
+```rust
+pub(in runner) fn scene_pointer_moved(self: &mut Self, view: usize, point: (f32, f32));
+```
+
+Routes one pointer move to the scene's own handlers, wherever it came
+from: a real window event or the scripted channel's drag. A navigation,
+a gizmo drag or a marquee in flight takes the move; otherwise the hover
+follows the pointer.
+
+The gesture's owner keeps the pointer: winit reports a drag's moves to
+the window whose press started it, and the scripted channel drives the
+same methods, so a drag that crosses the viewport's edge carries on.
+
+<a id="rustdoc-item-906"></a>
 
 ### `activate_view`
 
@@ -2889,7 +3568,7 @@ gizmo's handle length and the scripted viewport commands address.
 Only a press inside a scene view reaches here, so a click on the
 editor's own UI never activates a viewport.
 
-<a id="rustdoc-item-787"></a>
+<a id="rustdoc-item-907"></a>
 
 ### `present_popouts`
 
@@ -2906,7 +3585,7 @@ window closed, and every other frame is painted into its own window
 through its own renderer. The pass itself already ran in the shell, so
 nothing here reads egui's context.
 
-<a id="rustdoc-item-789"></a>
+<a id="rustdoc-item-909"></a>
 
 ### `open_popout`
 
@@ -2917,7 +3596,7 @@ pub(in runner) fn open_popout(self: &mut Self, event_loop: &ActiveEventLoop, tab
 Opens one popped-out tab's window, a plain top-level window with its own
 swapchain and its own egui renderer.
 
-<a id="rustdoc-item-790"></a>
+<a id="rustdoc-item-910"></a>
 
 ### `publish_popout_geometry`
 
@@ -2929,7 +3608,7 @@ Refreshes each popped-out window's input record with its geometry, its
 focus and this frame's rate. The record's events were appended earlier,
 as the window reported them.
 
-<a id="rustdoc-item-791"></a>
+<a id="rustdoc-item-911"></a>
 
 ### `close_popout`
 
@@ -2940,7 +3619,7 @@ pub(in runner) fn close_popout(self: &mut Self, tab: &str);
 Closes `tab`'s window and redocks its tab. Closing a window is a
 redock, so the tab is never lost that way.
 
-<a id="rustdoc-item-792"></a>
+<a id="rustdoc-item-912"></a>
 
 ### `popout_event`
 
@@ -2951,7 +3630,7 @@ pub(in runner) fn popout_event(self: &mut Self, tab: &str, event: InputEvent);
 Appends one event to `tab`'s input record, and keeps the window's own
 cursor position alongside it.
 
-<a id="rustdoc-item-793"></a>
+<a id="rustdoc-item-913"></a>
 
 ### `clear_popout_events`
 
@@ -2962,7 +3641,7 @@ pub(in runner) fn clear_popout_events(self: &mut Self);
 Clears every popped-out window's event list once the frame that read it
 has been presented, so no event is replayed into a second pass.
 
-<a id="rustdoc-item-794"></a>
+<a id="rustdoc-item-914"></a>
 
 ### `present_ui`
 
@@ -2977,7 +3656,7 @@ With no overlay at all, only the popped-out windows are painted; the
 main window's frame is skipped, and creating the composition overlay is
 retried.
 
-<a id="rustdoc-item-795"></a>
+<a id="rustdoc-item-915"></a>
 
 ### `fallback_frame`
 
@@ -2991,7 +3670,7 @@ and a Retry button that asks the host to rebuild the module. The scene
 keeps rendering behind the panel, because the editor's own frame is
 untouched.
 
-<a id="rustdoc-item-797"></a>
+<a id="rustdoc-item-917"></a>
 
 ### `retry_overlay`
 
@@ -3005,9 +3684,20 @@ frames.
 The window-surface posture is never retried: either
 `PILL_EDITOR_NO_OVERLAY` asked for it, or it was already taken as the
 fallback. The composition overlay is the posture that failed, so it is
-the one worth another attempt.
+the one worth another attempt - and it only exists where
+DirectComposition does, which is Windows.
 
-<a id="rustdoc-item-798"></a>
+<a id="rustdoc-item-918"></a>
+
+### `retry_composition_overlay`
+
+```rust
+pub(in runner::windows) fn retry_composition_overlay(self: &mut Self);
+```
+
+One attempt at the composition overlay, on the retry schedule.
+
+<a id="rustdoc-item-920"></a>
 
 ### `retry_shell_module`
 
@@ -3021,7 +3711,7 @@ Asks the host to rebuild the shell module and logs the outcome.
 loaded generation to rebuild as if its sources had been saved, so a fix
 made while the editor is in safe mode takes effect without a restart.
 
-<a id="rustdoc-item-799"></a>
+<a id="rustdoc-item-921"></a>
 
 ### `apply_cursor_icon`
 
@@ -3036,7 +3726,7 @@ The resize shapes matter as much as the pointing hand: the dock asks
 for one over a splitter, and without it the wider grab area around the
 splitter is invisible to the person dragging it.
 
-<a id="rustdoc-item-800"></a>
+<a id="rustdoc-item-922"></a>
 
 ### `apply_ime`
 
@@ -3051,7 +3741,7 @@ caret is. This executable owns the window, so it is the only place that
 can pass those decisions to the platform. The rectangle is in logical
 points, the unit the window's IME cursor area takes.
 
-<a id="rustdoc-item-802"></a>
+<a id="rustdoc-item-924"></a>
 
 ### `navigation_for`
 
@@ -3062,7 +3752,7 @@ pub(in runner) fn navigation_for(self: &Self, button: CameraButton) -> Option<Ca
 The navigation gesture a press means right now, if any: no gesture
 while a gizmo drag or another navigation owns the pointer.
 
-<a id="rustdoc-item-804"></a>
+<a id="rustdoc-item-926"></a>
 
 ### `press_scene`
 
@@ -3071,14 +3761,43 @@ pub(in runner) fn press_scene(self: &mut Self, view: usize, x: f32, y: f32);
 ```
 
 Handle a left press: a handle under the pointer starts its drag in this
-same press, and only a miss queues the object pick.
+same press, only a miss queues the object pick.
 
 The CPU hit test answers first because the pick's answer arrives a frame
 later. Without it, a handle highlighted under the pointer could lose the
 press to the pick, which would clear the selection. The hover and the
 press read the same hitbox, so the highlight and the grab always agree.
 
-<a id="rustdoc-item-805"></a>
+An element handle under the press selects instead of dragging: the tool
+layer's click rule applies, with the modifiers this press holds. A miss
+starts a marquee candidate while the active tool offers a kind that
+allows box select; a press that never moves is still a click, and its
+release asks the pick what is under the pixel.
+
+<a id="rustdoc-item-927"></a>
+
+### `press_element`
+
+```rust
+pub(in runner) fn press_element(self: &mut Self, view: usize, handle: u32);
+```
+
+Selects the element one handle of the active tool stands for, with the
+click the held modifiers name.
+
+<a id="rustdoc-item-929"></a>
+
+### `request_scene_pick`
+
+```rust
+pub(in runner) fn request_scene_pick(self: &mut Self, view: usize, x: f32, y: f32);
+```
+
+Queues a pick at one pixel of one scene view. The answer arrives in
+[`Self::drain_scene_picks`](#rustdoc-item-928), which moves the selection or starts a
+drag.
+
+<a id="rustdoc-item-930"></a>
 
 ### `release_scene`
 
@@ -3087,10 +3806,12 @@ pub(in runner) fn release_scene(self: &mut Self, view: usize);
 ```
 
 A left release in `view`: it ends the gizmo drag a press started -
-the drag applied its moves all along - and does nothing when the
-press became a selection.
+the drag applied its moves all along - and finishes a marquee.
 
-<a id="rustdoc-item-806"></a>
+A marquee that never became a drag is a click on empty space, so its
+release queues the pick the press would have queued.
+
+<a id="rustdoc-item-931"></a>
 
 ### `begin_camera_navigation`
 
@@ -3101,7 +3822,7 @@ pub(in runner) fn begin_camera_navigation(self: &mut Self, view: usize, navigati
 Begin a camera navigation: the press records the anchor pixel every
 later move measures its delta against.
 
-<a id="rustdoc-item-807"></a>
+<a id="rustdoc-item-932"></a>
 
 ### `update_camera_navigation`
 
@@ -3112,7 +3833,7 @@ pub(in runner) fn update_camera_navigation(self: &mut Self, point: (f32, f32));
 Apply one navigation move. The pixel delta since the last move is
 applied through the gesture's own limits.
 
-<a id="rustdoc-item-808"></a>
+<a id="rustdoc-item-933"></a>
 
 ### `apply_camera_gesture`
 
@@ -3123,7 +3844,7 @@ pub(in runner) fn apply_camera_gesture(self: &mut Self, view: usize, navigation:
 Move one view's camera by a gesture's pixel delta. The mouse drags and
 the scripted channel both call this.
 
-<a id="rustdoc-item-809"></a>
+<a id="rustdoc-item-934"></a>
 
 ### `end_camera_navigation`
 
@@ -3133,7 +3854,7 @@ pub(in runner) fn end_camera_navigation(self: &mut Self);
 
 End the navigation in flight, logging the gesture that finished.
 
-<a id="rustdoc-item-810"></a>
+<a id="rustdoc-item-935"></a>
 
 ### `zoom_camera`
 
@@ -3143,7 +3864,7 @@ pub(in runner) fn zoom_camera(self: &mut Self, view: usize, lines: f32);
 
 Zoom one view's camera by a wheel's line count.
 
-<a id="rustdoc-item-811"></a>
+<a id="rustdoc-item-936"></a>
 
 ### `update_hover`
 
@@ -3154,9 +3875,10 @@ pub(in runner) fn update_hover(self: &mut Self, view: usize, point: (f32, f32));
 Update the hovered handle from the pointer's ray, tested against the
 handles the last frame drew. The radius follows the handle length, so it
 matches the drawn line rather than a fixed world distance, and the
-preference scales it.
+preference scales it. An element handle answers before the gizmo does,
+because the points draw on top of it.
 
-<a id="rustdoc-item-812"></a>
+<a id="rustdoc-item-937"></a>
 
 ### `handle_at`
 
@@ -3170,7 +3892,7 @@ The hover highlight and the press both answer through this one call,
 so a handle that lights up under the pointer is a handle the press
 grabs.
 
-<a id="rustdoc-item-813"></a>
+<a id="rustdoc-item-938"></a>
 
 ### `set_hovered_handle`
 
@@ -3181,7 +3903,10 @@ pub(in runner) fn set_hovered_handle(self: &mut Self, view: usize, handle: Optio
 Record the hovered handle, logging the change once - the suite's
 window into the feedback states.
 
-<a id="rustdoc-item-814"></a>
+An element handle logs its own tokens, so a suite can tell the tool's
+points from the transform gizmo's arms without decoding the id.
+
+<a id="rustdoc-item-939"></a>
 
 ### `publish_cameras`
 
@@ -3192,7 +3917,7 @@ pub(in runner) fn publish_cameras(self: &mut Self);
 Publish every view's camera binding whose camera moved: the renderer
 reads the binding, so a navigation shows on the next frame.
 
-<a id="rustdoc-item-815"></a>
+<a id="rustdoc-item-940"></a>
 
 ### `scene_point_is_ui`
 
@@ -3200,11 +3925,14 @@ reads the binding, so a navigation shows on the next frame.
 pub(in runner) fn scene_point_is_ui(self: &Self, view: usize) -> bool;
 ```
 
-Whether a scene view's pointer is over one of the overlay's chips. The
-pointer's child-local pixels are mapped into the main window's logical
-points, because that is where the shell reported the chips.
+Whether a scene view's pointer is over the shell's own UI rather than
+the viewport: one of the overlay's chips, or the margin the composition
+overlay grows the view's window by, where the shell draws the tab bar
+and the splitters. The pointer's child-local pixels are mapped into the
+main window's logical points, because that is where the shell reported
+both.
 
-<a id="rustdoc-item-816"></a>
+<a id="rustdoc-item-941"></a>
 
 ### `scene_view_at`
 
@@ -3215,7 +3943,7 @@ pub(in runner) fn scene_view_at(self: &Self, x: f32, y: f32) -> Option<usize>;
 The scene view whose window holds a main-window physical point, if
 one does: a scripted click inside it is a scene click.
 
-<a id="rustdoc-item-818"></a>
+<a id="rustdoc-item-942"></a>
 
 ### `queue_scene_pick_at`
 
@@ -3224,10 +3952,10 @@ pub(in runner) fn queue_scene_pick_at(self: &mut Self, view: usize, x: u32, y: u
 ```
 
 Queue one pick at an explicit surface pixel and return its id. The
-answer arrives in [`Self::drain_scene_picks`](#rustdoc-item-817). This is the half the
+answer arrives in [`Self::drain_scene_picks`](#rustdoc-item-928). This is the half the
 click pick and the scripted gizmo grab share.
 
-<a id="rustdoc-item-817"></a>
+<a id="rustdoc-item-928"></a>
 
 ### `drain_scene_picks`
 
@@ -3240,7 +3968,7 @@ to it, empty space clears the selection, and a handle starts a gizmo
 drag. The next publish derives the outline and the handles from the new
 selection.
 
-<a id="rustdoc-item-820"></a>
+<a id="rustdoc-item-944"></a>
 
 ### `publish_badges`
 
@@ -3257,7 +3985,7 @@ is capped at [`pill_editor_core::boundary::BADGES_PER_VIEW_MAX`], and an
 entity behind the camera or outside the viewport is left out, so the
 overlay stays readable instead of covering the scene with chips.
 
-<a id="rustdoc-item-821"></a>
+<a id="rustdoc-item-945"></a>
 
 ### `entity_translations`
 
@@ -3276,7 +4004,7 @@ layout is the one the generic field path reads, so the executable still
 needs no query of its own outside a frame. A transform whose
 `translation` is not three `f32`s yields no translations at all.
 
-<a id="rustdoc-item-822"></a>
+<a id="rustdoc-item-946"></a>
 
 ### `apply_recovered_state`
 
@@ -3293,7 +4021,7 @@ replaces it before that frame draws. The selection is restored from
 display handles looked up in the live entity table: a recovered run
 spawns the same entities, and a run that does not simply selects less.
 
-<a id="rustdoc-item-824"></a>
+<a id="rustdoc-item-948"></a>
 
 ### `autosave_recovery`
 
@@ -3303,9 +4031,9 @@ pub(in runner) fn autosave_recovery(self: &mut Self);
 
 Write the recovery document when the key built from the arrangement and
 the selection changed. The key is compared on a slow cadence, so a
-change reaches the file within [`RECOVERY_AUTOSAVE_FRAMES`](../constant.RECOVERY_AUTOSAVE_FRAMES.md#rustdoc-item-823) frames.
+change reaches the file within [`RECOVERY_AUTOSAVE_FRAMES`](../constant.RECOVERY_AUTOSAVE_FRAMES.md#rustdoc-item-947) frames.
 
-<a id="rustdoc-item-825"></a>
+<a id="rustdoc-item-949"></a>
 
 ### `publish_selection_outline`
 
@@ -3318,7 +4046,20 @@ outline drawn around every selected entity, whether the Entities tab or
 a scene pick moved the selection. One resource write per change, before
 the frame that draws it.
 
-<a id="rustdoc-item-826"></a>
+<a id="rustdoc-item-950"></a>
+
+### `publish_gizmo_selection`
+
+```rust
+pub(in runner) fn publish_gizmo_selection(self: &mut Self);
+```
+
+Publish the shared selection as the entity set the engine's gizmo pass
+draws for: what a component's own gizmo sees as selected, whether the
+Entities tab or a scene pick moved the selection. One resource write per
+change, before the frame that draws it.
+
+<a id="rustdoc-item-951"></a>
 
 ### `run_bound_command`
 
@@ -3335,7 +4076,7 @@ table in this executable. A chord bound to a command this executable
 does not implement is found, logs `[editor] shortcut has no action
 yet`, and does nothing.
 
-<a id="rustdoc-item-829"></a>
+<a id="rustdoc-item-953"></a>
 
 ### `visible_scene_view`
 
@@ -3345,7 +4086,7 @@ pub(in runner) fn visible_scene_view(self: &Self) -> Option<usize>;
 
 The first visible scene view, the scripted drag's default target.
 
-<a id="rustdoc-item-830"></a>
+<a id="rustdoc-item-954"></a>
 
 ### `resolve_edit_target`
 
@@ -3361,7 +4102,7 @@ component name and the field's current value.
 Returns a message naming the entity, the component or the field that
 could not be found, which the scripted channel reports back.
 
-<a id="rustdoc-item-832"></a>
+<a id="rustdoc-item-956"></a>
 
 ### `queue_settings_value`
 
@@ -3371,7 +4112,7 @@ pub(in runner) fn queue_settings_value(self: &mut Self, path: &str, key: &str, p
 
 Queue the recorded step that writes `patched` over `path`'s settings.
 
-<a id="rustdoc-item-833"></a>
+<a id="rustdoc-item-957"></a>
 
 ### `pick_reference`
 
@@ -3386,7 +4127,7 @@ The row decides the shape - the object form for a named reference, a
 bare guid for a texture slot - so a scripted pick and a click cannot
 write different documents.
 
-<a id="rustdoc-item-835"></a>
+<a id="rustdoc-item-959"></a>
 
 ### `sync_panels`
 
@@ -3399,9 +4140,9 @@ Apply the module panels' registration requests.
 A request names a draw function that lives in the requesting module's
 image, so the executable ties it to that module's liveness marker. The
 registry hands the function out only while the marker is alive, and a
-reload drops the marker (see [`Self::fold_host_notices`](#rustdoc-item-834)).
+reload drops the marker (see [`Self::fold_host_notices`](#rustdoc-item-958)).
 
-<a id="rustdoc-item-836"></a>
+<a id="rustdoc-item-960"></a>
 
 ### `apply_clipboard`
 
@@ -3417,7 +4158,7 @@ not be pasted - an unregistered component, a field this build no longer
 carries - is named in a notice, because a paste that quietly dropped
 part of an entity is worse than one that says what it left out.
 
-<a id="rustdoc-item-837"></a>
+<a id="rustdoc-item-961"></a>
 
 ### `apply_paste`
 
@@ -3427,7 +4168,37 @@ pub(in runner) fn apply_paste(self: &mut Self);
 
 Read the OS clipboard and apply what it carries, as one recorded step.
 
-<a id="rustdoc-item-720"></a>
+<a id="rustdoc-item-962"></a>
+
+### `sync_hooks`
+
+```rust
+pub(in runner) fn sync_hooks(self: &mut Self);
+```
+
+Apply the editor API's callback requests.
+
+A request names a callback that lives in the requesting module's image,
+so the executable ties it to that module's liveness marker. The
+registry hands a callback out only while the marker is alive, and a
+reload drops the marker (see [`Self::fold_host_notices`](#rustdoc-item-958)).
+
+<a id="rustdoc-item-963"></a>
+
+### `apply_hook_notices`
+
+```rust
+pub(in runner) fn apply_hook_notices(self: &mut Self);
+```
+
+Fold the notices the editor API's callbacks posted into the toast list.
+
+A notice written into [`EditorNotices`] by the shared core would be
+erased by this executable's next republish, so the drain collects them
+in its own queue and they take the same path as the editor's own
+toasts.
+
+<a id="rustdoc-item-825"></a>
 
 ### `apply_panel_commands`
 
@@ -3441,7 +4212,7 @@ The same contract `EditorCommand` follows: a panel queues a request, the
 executable applies it at the frame boundary, so a panel from a module
 never leaves the world half-edited.
 
-<a id="rustdoc-item-838"></a>
+<a id="rustdoc-item-964"></a>
 
 ### `panel_field_write`
 
@@ -3451,7 +4222,7 @@ pub(in runner) fn panel_field_write(self: &mut Self, entity: Entity, component: 
 
 Write one component field from a panel, recorded.
 
-<a id="rustdoc-item-839"></a>
+<a id="rustdoc-item-965"></a>
 
 ### `panel_element_write`
 
@@ -3461,7 +4232,7 @@ pub(in runner) fn panel_element_write(self: &mut Self, entity: Entity, component
 
 Write one array element from a panel, recorded.
 
-<a id="rustdoc-item-840"></a>
+<a id="rustdoc-item-966"></a>
 
 ### `publish_snapshot`
 
@@ -3478,7 +4249,7 @@ Inspector's data) is rebuilt for the current selection every frame: that
 is one entity's components, cheap to read, and it keeps the tab's values
 current.
 
-<a id="rustdoc-item-842"></a>
+<a id="rustdoc-item-968"></a>
 
 ### `apply_pending_commands`
 
@@ -3495,7 +4266,7 @@ exactly this contract. The parts only this executable can do are the
 asset listing refresh a file batch asks for and the reveal and focus
 requests.
 
-<a id="rustdoc-item-843"></a>
+<a id="rustdoc-item-969"></a>
 
 ### `apply_focuses`
 
@@ -3511,7 +4282,7 @@ open folder lives in the session the shell only borrows for one pass, so
 the request comes here. Handling it in one place also produces the one
 log line a suite can read.
 
-<a id="rustdoc-item-844"></a>
+<a id="rustdoc-item-970"></a>
 
 ### `apply_reveals`
 
@@ -3527,7 +4298,7 @@ therefore crosses as a path, and the answer is an OS process. A refusal
 (no mounted directory, a path that left the root, a path that no longer
 exists) becomes a console line, never a panic.
 
-<a id="rustdoc-item-845"></a>
+<a id="rustdoc-item-971"></a>
 
 ### `persist_gizmo_settings`
 
@@ -3542,7 +4313,22 @@ project. The file coming back through the live reader is what keeps the
 snapshot's remembered entry accurate. An unchanged choice writes
 nothing.
 
-<a id="rustdoc-item-847"></a>
+<a id="rustdoc-item-972"></a>
+
+### `persist_gizmo_visibility`
+
+```rust
+pub(in runner) fn persist_gizmo_visibility(self: &mut Self);
+```
+
+Write the component gizmo types the editor hides to the preferences
+file when the list moved.
+
+The list is what a reload and the next session start from, so the
+executable owns the write: a module reload replaces the registry's
+entries but not its switches, and a restart reads this file back.
+
+<a id="rustdoc-item-974"></a>
 
 ### `watch_preferences`
 
@@ -3559,13 +4345,13 @@ document that the snapshot's preferences view and the dump read is
 refreshed here too.
 
 The file is read when its metadata moved, and once per
-[`STATE_FILE_POLL_FRAMES`](../constant.STATE_FILE_POLL_FRAMES.md#rustdoc-item-846) regardless, so a coarse or unchanged
+[`STATE_FILE_POLL_FRAMES`](../constant.STATE_FILE_POLL_FRAMES.md#rustdoc-item-973) regardless, so a coarse or unchanged
 timestamp still reaches the editor within a fraction of a second. The
 tool's mode, space and toggle keep whatever the world state holds, so
 the stale copy a persisting write leaves behind never moves the live
 tool. The snapping steps come from the file, one set for every project.
 
-<a id="rustdoc-item-848"></a>
+<a id="rustdoc-item-975"></a>
 
 ### `watch_theme`
 
@@ -3585,10 +4371,10 @@ item, the project wins.
 A layer that cannot be read, loaded or merged logs a warning and is
 skipped, so one broken file never costs the other layers' values. A
 result that matches the theme already applied leaves the generation
-alone. The poll re-merges at least once per [`STATE_FILE_POLL_FRAMES`](../constant.STATE_FILE_POLL_FRAMES.md#rustdoc-item-846)
+alone. The poll re-merges at least once per [`STATE_FILE_POLL_FRAMES`](../constant.STATE_FILE_POLL_FRAMES.md#rustdoc-item-973)
 frames and whenever a stamp moves.
 
-<a id="rustdoc-item-849"></a>
+<a id="rustdoc-item-976"></a>
 
 ### `stamp_fonts`
 
@@ -3601,7 +4387,7 @@ Stamp each family's resolved font source and report whether one moved.
 One `stat` per family per poll; a moved stamp makes the poll run the
 merge, which re-reads the fonts and installs them again.
 
-<a id="rustdoc-item-850"></a>
+<a id="rustdoc-item-977"></a>
 
 ### `refresh_fonts`
 
@@ -3619,7 +4405,7 @@ is a file relative to the user document's own directory. A font that
 cannot be loaded logs a warning and leaves its family to the built-in
 ones, with the family name still registered.
 
-<a id="rustdoc-item-852"></a>
+<a id="rustdoc-item-979"></a>
 
 ### `read_font_bytes`
 
@@ -3632,7 +4418,7 @@ The bytes one font source holds, or `None` with the refusal logged.
 A refusal logs once per source and text: the merge re-reads the fonts
 on every poll it runs.
 
-<a id="rustdoc-item-854"></a>
+<a id="rustdoc-item-981"></a>
 
 ### `read_font_source`
 
@@ -3643,7 +4429,7 @@ pub(in runner) fn read_font_source(self: &mut Self, source: &FontSource) -> Resu
 The bytes one font source holds (`None` when the store holds no
 copy), or the refusal's text.
 
-<a id="rustdoc-item-855"></a>
+<a id="rustdoc-item-982"></a>
 
 ### `project_layer_settled`
 
@@ -3654,7 +4440,7 @@ pub(in runner) fn project_layer_settled(self: &mut Self) -> bool;
 Whether the project layer's content is the version last merged, so a
 poll that found no stamp moved can stop before merging.
 
-<a id="rustdoc-item-856"></a>
+<a id="rustdoc-item-983"></a>
 
 ### `load_project_layer`
 
@@ -3669,7 +4455,7 @@ loaded from, so the file is imported (and scope-checked) again.
 `file_moved` means the same file changed, so the store's copy is read
 again.
 
-<a id="rustdoc-item-858"></a>
+<a id="rustdoc-item-985"></a>
 
 ### `watch_keybindings`
 
@@ -3683,10 +4469,10 @@ The registry owns the preset and the overrides. This function reads the
 file, hands it over and reports what came back: the preset, the number
 of overrides, every problem the file had, and one line per chord that
 two commands now answer to. A missing or malformed file falls back to
-[`editor_default_keybindings`](../fn.editor_default_keybindings.md#rustdoc-item-857), so Unity's table stands until the file
+[`editor_default_keybindings`](../fn.editor_default_keybindings.md#rustdoc-item-984), so Unity's table stands until the file
 names a preset.
 
-<a id="rustdoc-item-859"></a>
+<a id="rustdoc-item-986"></a>
 
 ### `open_problem`
 
@@ -3705,7 +4491,7 @@ The row's `file:line` is appended as one argument, which is the form VS
 Code, CLion and every other editor's command line accepts. A missing
 or empty preference falls back to `code`.
 
-<a id="rustdoc-item-860"></a>
+<a id="rustdoc-item-987"></a>
 
 ### `publish_console_lines`
 
@@ -3719,7 +4505,7 @@ One owned copy per line, capped by the model: the ring's own strings
 belong to `pill_core`, and the tab must outlive every reload that
 happened while the line was being written.
 
-<a id="rustdoc-item-861"></a>
+<a id="rustdoc-item-988"></a>
 
 ### `report_scene_title`
 
@@ -3734,22 +4520,24 @@ logged only when it changed, so the log names each state the document
 went through - which is what the editor suite waits for. The window's
 own title is fixed (`Pill`), so nothing here touches it.
 
-<a id="rustdoc-item-862"></a>
+<a id="rustdoc-item-989"></a>
 
 ### `start_drag_out`
 
 ```rust
-pub(in runner) fn start_drag_out(self: &mut Self, path: &str);
+pub(in runner) fn start_drag_out(self: &mut Self, path: &str, driven_by_pointer: bool);
 ```
 
 Hand one asset to the OS as a file drag.
 
 The shell reports the asset's project-relative path; the target needs a
 file on disk, so it is resolved through the host's asset directory
-first. The drag itself blocks in OLE's modal loop, which is why nothing
-else happens on this thread until the person drops or cancels.
+first. A drag the pointer started then blocks in OLE's modal loop, which
+is why nothing else happens on this thread until the person drops or
+cancels; `driven_by_pointer` is false for the scripted channel, whose
+input never reaches the pointer, and that drag stops before the loop.
 
-<a id="rustdoc-item-834"></a>
+<a id="rustdoc-item-958"></a>
 
 ### `fold_host_notices`
 
@@ -3764,7 +4552,7 @@ for its module, and a clean reload clears the rows its module left
 behind. The resource is rewritten only when something arrived, so the
 shell's read stays cheap.
 
-<a id="rustdoc-item-863"></a>
+<a id="rustdoc-item-990"></a>
 
 ### `push_toast`
 
@@ -3779,7 +4567,7 @@ early when the host said nothing; an editor warning (a keybinding
 conflict, a refused drop) has to reach the same event list and the
 world resource on its own, or the stack would only ever show reloads.
 
-<a id="rustdoc-item-865"></a>
+<a id="rustdoc-item-992"></a>
 
 ### `undock_tab`
 
@@ -3789,7 +4577,7 @@ pub(in runner) fn undock_tab(self: &mut Self, tab: EditorTab);
 
 Float a dock tab into its own egui window, through the shell's state.
 
-<a id="rustdoc-item-866"></a>
+<a id="rustdoc-item-993"></a>
 
 ### `activate_tab`
 
@@ -3802,7 +4590,7 @@ state: the scripted channel's stand-in for clicking a tab button.
 The game viewport depends on it - only the tab that is drawn reports
 a rectangle - and so do the suite's checks of the other tabs.
 
-<a id="rustdoc-item-867"></a>
+<a id="rustdoc-item-994"></a>
 
 ### `drain_shell_requests`
 
@@ -3816,9 +4604,9 @@ The pass raises its asks while it draws and `settle_pass` moves them
 onto [`EguiShellFrame`]; this phase answers them after the pass and
 before presentation: undo and redo through the scripted channel's own
 walk, a dock tab through the shared activation, a Problems row through
-[`Self::open_problem`](#rustdoc-item-859), and a quit through the frame's flag.
+[`Self::open_problem`](#rustdoc-item-986), and a quit through the frame's flag.
 
-<a id="rustdoc-item-868"></a>
+<a id="rustdoc-item-995"></a>
 
 ### `request_quit`
 

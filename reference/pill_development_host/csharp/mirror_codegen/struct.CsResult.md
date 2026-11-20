@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1594"></a>
+<a id="rustdoc-item-1669"></a>
 
 # Struct `pill_development_host::csharp::mirror_codegen::CsResult`
 
@@ -8,13 +8,13 @@
 pub(in csharp::mirror_codegen) struct CsResult;
 ```
 
-Visibility: `{'restricted': {'parent': 1426, 'path': '::csharp::mirror_codegen'}}` · Source: `hosting\pill_development_host\src\csharp\mirror_codegen.rs:244`
+Visibility: `{'restricted': {'parent': 1501, 'path': '::csharp::mirror_codegen'}}` · Source: `hosting\pill_development_host\src\csharp\mirror_codegen.rs:244`
 
 One function result, translated to C#.
 
 ## Fields
 
-<a id="rustdoc-item-1591"></a>
+<a id="rustdoc-item-1666"></a>
 
 ### `csharp_type`
 
@@ -24,7 +24,7 @@ csharp_type: String
 
 The C# return type.
 
-<a id="rustdoc-item-1592"></a>
+<a id="rustdoc-item-1667"></a>
 
 ### `buffer_size_expression`
 
@@ -35,7 +35,7 @@ buffer_size_expression: String
 The number of bytes the return buffer must hold, written as a C#
 expression. Empty means the default buffer.
 
-<a id="rustdoc-item-1593"></a>
+<a id="rustdoc-item-1668"></a>
 
 ### `read_statement`
 

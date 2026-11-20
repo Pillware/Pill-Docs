@@ -1,10 +1,10 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1119"></a>
+<a id="rustdoc-item-919"></a>
 
 # Module `pill_editor::runner::windows`
 
-Visibility: `{'restricted': {'parent': 483, 'path': '::runner'}}` · Source: `editor\pill_editor\src\runner\windows.rs:1`
+Visibility: `{'restricted': {'parent': 539, 'path': '::runner'}}` · Source: `editor\pill_editor\src\runner\windows.rs:1`
 
 The editor's windows: surfaces, child windows, popouts and presentation.
 

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-5911"></a>
+<a id="rustdoc-item-7876"></a>
 
 # Struct `pill_editor_core::panels::PanelComponentValues`
 
@@ -14,7 +14,7 @@ One component of the selected entity, as a panel sees it.
 
 ## Fields
 
-<a id="rustdoc-item-5908"></a>
+<a id="rustdoc-item-7873"></a>
 
 ### `component`
 
@@ -24,7 +24,7 @@ component: String
 
 The component's registered type name.
 
-<a id="rustdoc-item-5909"></a>
+<a id="rustdoc-item-7874"></a>
 
 ### `fields`
 

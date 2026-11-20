@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-3665"></a>
+<a id="rustdoc-item-3921"></a>
 
 # Function `pill_development_host::reload::initialize_generation`
 

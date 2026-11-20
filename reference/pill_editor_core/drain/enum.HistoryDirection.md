@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1878"></a>
+<a id="rustdoc-item-1927"></a>
 
 # Enum `pill_editor_core::drain::HistoryDirection`
 
@@ -8,13 +8,13 @@
 pub enum HistoryDirection { ... }
 ```
 
-Source: `editor\pill_editor_core\src\drain.rs:255`
+Source: `editor\pill_editor_core\src\drain.rs:390`
 
 Which way a history walk goes.
 
 ## Variants
 
-<a id="rustdoc-item-2244"></a>
+<a id="rustdoc-item-2304"></a>
 
 ### `Undo`
 
@@ -24,7 +24,7 @@ Undo
 
 Applies the newest step's inverse.
 
-<a id="rustdoc-item-2245"></a>
+<a id="rustdoc-item-2305"></a>
 
 ### `Redo`
 
@@ -36,7 +36,7 @@ Reapplies the next step's forward batch.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-2246"></a>
+<a id="rustdoc-item-2306"></a>
 
 ### `name`
 

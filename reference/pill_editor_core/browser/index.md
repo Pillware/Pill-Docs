@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-569"></a>
+<a id="rustdoc-item-613"></a>
 
 # Module `pill_editor_core::browser`
 
@@ -38,25 +38,25 @@ breadcrumb and the scripted channel agree on one state.
 ## Module contents
 
 ### Structs
-- [`AssetRoot`](struct.AssetRoot.md#rustdoc-item-460) — One root of the Assets panel: the key that opening its row sets, and the
-- [`ProjectBrowser`](struct.ProjectBrowser.md#rustdoc-item-512) — The Assets tab's project browser: the state both panes share.
+- [`AssetRoot`](struct.AssetRoot.md#rustdoc-item-504) — One root of the Assets panel: the key that opening its row sets, and the
+- [`ProjectBrowser`](struct.ProjectBrowser.md#rustdoc-item-556) — The Assets tab's project browser: the state both panes share.
 
 ### Functions
-- [`breadcrumb`](fn.breadcrumb.md#rustdoc-item-565) — Builds the breadcrumb of `folder`: the root it belongs to, then one
-- [`child_folders`](fn.child_folders.md#rustdoc-item-564) — Returns the direct child folders of `folder`, in the order [`children`]
-- [`children`](fn.children.md#rustdoc-item-563) — Returns the direct children of `folder`: folders first, then files, each
-- [`drop_folder_relative`](fn.drop_folder_relative.md#rustdoc-item-567) — Returns the folder a drop lands in, relative to the asset root, from the
-- [`file_name`](fn.file_name.md#rustdoc-item-561) — Returns a path's own name: its last `/`-separated segment.
-- [`is_direct_child`](fn.is_direct_child.md#rustdoc-item-562) — Returns whether `path` is a direct child of `folder`. The empty folder is
-- [`is_folder`](fn.is_folder.md#rustdoc-item-559) — Returns whether a row is a folder: the one kind the tree and the grid treat
-- [`is_root`](fn.is_root.md#rustdoc-item-556) — Returns whether `key` is one of the panel's roots.
-- [`parent_folder`](fn.parent_folder.md#rustdoc-item-560) — Returns the folder a path lives in: its parent, or empty for the asset
-- [`root_of`](fn.root_of.md#rustdoc-item-558) — Returns the root `folder` belongs to: the extensions root for everything
-- [`sort_rows`](fn.sort_rows.md#rustdoc-item-568) — Sorts rows with folders first, then by name without regard to case.
-- [`tile_columns`](fn.tile_columns.md#rustdoc-item-566) — Returns how many tiles fit across `available_width` points when each cell
+- [`breadcrumb`](fn.breadcrumb.md#rustdoc-item-609) — Builds the breadcrumb of `folder`: the root it belongs to, then one
+- [`child_folders`](fn.child_folders.md#rustdoc-item-608) — Returns the direct child folders of `folder`, in the order [`children`]
+- [`children`](fn.children.md#rustdoc-item-607) — Returns the direct children of `folder`: folders first, then files, each
+- [`drop_folder_relative`](fn.drop_folder_relative.md#rustdoc-item-611) — Returns the folder a drop lands in, relative to the asset root, from the
+- [`file_name`](fn.file_name.md#rustdoc-item-605) — Returns a path's own name: its last `/`-separated segment.
+- [`is_direct_child`](fn.is_direct_child.md#rustdoc-item-606) — Returns whether `path` is a direct child of `folder`. The empty folder is
+- [`is_folder`](fn.is_folder.md#rustdoc-item-603) — Returns whether a row is a folder: the one kind the tree and the grid treat
+- [`is_root`](fn.is_root.md#rustdoc-item-600) — Returns whether `key` is one of the panel's roots.
+- [`parent_folder`](fn.parent_folder.md#rustdoc-item-604) — Returns the folder a path lives in: its parent, or empty for the asset
+- [`root_of`](fn.root_of.md#rustdoc-item-602) — Returns the root `folder` belongs to: the extensions root for everything
+- [`sort_rows`](fn.sort_rows.md#rustdoc-item-612) — Sorts rows with folders first, then by name without regard to case.
+- [`tile_columns`](fn.tile_columns.md#rustdoc-item-610) — Returns how many tiles fit across `available_width` points when each cell
 
 ### Constants
-- [`DEFAULT_TILE_SIZE`](constant.DEFAULT_TILE_SIZE.md#rustdoc-item-461) — The tile size the grid starts at, in points.
-- [`ROOT_LABEL`](constant.ROOT_LABEL.md#rustdoc-item-458) — The label of the project's root row. Inside the project's tree it is also
-- [`ROOTS`](constant.ROOTS.md#rustdoc-item-459) — The panel's roots, in the order the tree draws them: the project's own
-- [`TILE_SIZE_RANGE`](constant.TILE_SIZE_RANGE.md#rustdoc-item-462) — The tile sizes the grid's slider spans, in points.
+- [`DEFAULT_TILE_SIZE`](constant.DEFAULT_TILE_SIZE.md#rustdoc-item-505) — The tile size the grid starts at, in points.
+- [`ROOT_LABEL`](constant.ROOT_LABEL.md#rustdoc-item-502) — The label of the project's root row. Inside the project's tree it is also
+- [`ROOTS`](constant.ROOTS.md#rustdoc-item-503) — The panel's roots, in the order the tree draws them: the project's own
+- [`TILE_SIZE_RANGE`](constant.TILE_SIZE_RANGE.md#rustdoc-item-506) — The tile sizes the grid's slider spans, in points.

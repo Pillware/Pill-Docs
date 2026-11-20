@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-423"></a>
+<a id="rustdoc-item-425"></a>
 
 # Function `pill_project_ui::install`
 
@@ -8,12 +8,12 @@
 pub fn install(engine: &mut pill_engine_core::Engine);
 ```
 
-Source: `ui\pill_project_ui\src\lib.rs:458`
+Source: `ui\pill_project_ui\src\lib.rs:464`
 
 Put a [`GameUi`](struct.GameUi.md#rustdoc-item-305) into `engine`'s world with the fallback theme, the frame
 slot a renderer drains, and the theme re-apply system.
 
-A project that wants its own look calls [`install_with_theme`](fn.install_with_theme.md#rustdoc-item-422) instead.
+A project that wants its own look calls [`install_with_theme`](fn.install_with_theme.md#rustdoc-item-424) instead.
 An existing UI is kept, so a project reload does not reset the context, its
 fonts, or the state the player typed into it. The slot is what tells a
 renderer that this world's UI is the game's.

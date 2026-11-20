@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-626"></a>
+<a id="rustdoc-item-670"></a>
 
 # Enum `pill_editor_core::cadence::FrameWake`
 
@@ -14,7 +14,7 @@ When the loop draws next.
 
 ## Variants
 
-<a id="rustdoc-item-623"></a>
+<a id="rustdoc-item-667"></a>
 
 ### `Immediate`
 
@@ -24,7 +24,7 @@ Immediate
 
 Draw as soon as the loop gets the turn.
 
-<a id="rustdoc-item-625"></a>
+<a id="rustdoc-item-669"></a>
 
 ### `After`
 

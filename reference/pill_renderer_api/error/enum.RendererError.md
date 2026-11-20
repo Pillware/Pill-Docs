@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-179"></a>
+<a id="rustdoc-item-182"></a>
 
 # Enum `pill_renderer_api::error::RendererError`
 
@@ -13,13 +13,13 @@ Source: `rendering\pill_renderer_api\src\error.rs:34`
 Failures the renderer reports to its host.
 
 Only failures a host or frontend acts on get a variant of their own. The
-backend's startup and swapchain failures all arrive as [`Self::Backend`](#rustdoc-item-351),
+backend's startup and swapchain failures all arrive as [`Self::Backend`](#rustdoc-item-414),
 with the text the GPU module wrote, so a new way for a device to fail needs
 no change here.
 
 ## Variants
 
-<a id="rustdoc-item-349"></a>
+<a id="rustdoc-item-412"></a>
 
 ### `SurfaceCreation`
 
@@ -29,7 +29,7 @@ SurfaceCreation
 
 The GPU surface could not be created for the supplied window.
 
-<a id="rustdoc-item-351"></a>
+<a id="rustdoc-item-414"></a>
 
 ### `Backend`
 
@@ -45,7 +45,7 @@ wgpu's error values stay inside the renderer module, which writes their
 text into `detail`. The host acts on the one thing the variant says: the
 backend did not start, or did not hand this frame a surface.
 
-<a id="rustdoc-item-192"></a>
+<a id="rustdoc-item-195"></a>
 
 ### `UnsupportedSurface`
 
@@ -57,7 +57,7 @@ The renderer cannot draw into the surface the caller asked for. It may
 draw a single surface only, the id may name the surface it was built
 on, or the surface cannot use the format the renderer draws with.
 
-<a id="rustdoc-item-353"></a>
+<a id="rustdoc-item-416"></a>
 
 ### `RendererResourceNotFound`
 
@@ -68,7 +68,7 @@ RendererResourceNotFound
 A resource the call referenced - a camera, a shader - is not in
 storage.
 
-<a id="rustdoc-item-355"></a>
+<a id="rustdoc-item-418"></a>
 
 ### `Other`
 
@@ -94,15 +94,15 @@ read as a stutter.
 - `TryFrom<U>`
 - `Any`
 - `ToString`
+- `CastableFrom<ST, Uninit, Uninit>`
+- `CastableFrom<ST, Initialized, Initialized>`
+- `Read<Exclusive, BecauseExclusive>`
 - `Instrument`
 - `WithSubscriber`
 - `IntoEither`
 - `Pointable`
 - `OwoColorize`
 - `ErasedDestructor`
-- `CastableFrom<ST, Uninit, Uninit>`
-- `CastableFrom<ST, Initialized, Initialized>`
-- `Read<Exclusive, BecauseExclusive>`
 - `Debug`
 - `Diagnostic`
 - `Error`

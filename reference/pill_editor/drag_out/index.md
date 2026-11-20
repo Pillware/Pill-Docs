@@ -36,7 +36,18 @@ while the editor's frame stays frozen.
 The same rule applies before the loop. `DoDragDrop` only asks its drop
 source whether to continue when input arrives, so a drag started with no
 button held would leave the editor frozen until more input arrived.
-[`start`] reads the button first and starts no drag.
+[`start`] reads the button first and starts no drag. A drag no pointer
+started - a scripted one - never runs the loop at all, for the same reason.
+
+## Platforms
+
+An OLE drag source is what makes a file draggable out of the editor, and it
+exists on Windows alone. Everywhere else [`start`] answers
+[`DragOutOutcome::Unsupported`] without starting anything, and the runner
+logs that once per request; nothing else in the editor is affected. winit
+offers no drag source on Unix, so a real implementation would have to speak
+XDND or the Wayland data-device protocol itself, which is why the platform
+split is here and not in a dependency.
 
 ## Module contents
 
@@ -45,10 +56,11 @@ button held would leave the editor frozen until more input arrived.
 - [`EditorDropSource_Impl`](struct.EditorDropSource_Impl.md#rustdoc-item-26)
 
 ### Enums
-- [`DragOutOutcome`](enum.DragOutOutcome.md#rustdoc-item-188) — How a drag out ended, for the caller's log line.
+- [`DragOutOutcome`](enum.DragOutOutcome.md#rustdoc-item-191) — How a drag out ended, for the caller's log line.
+- [`DropEffect`](enum.DropEffect.md#rustdoc-item-184) — The effect a drop target reported, without naming the platform's own type.
 
 ### Functions
-- [`initialize_ole`](fn.initialize_ole.md#rustdoc-item-251) — Initialises OLE on the calling thread, once.
-- [`left_button_held`](fn.left_button_held.md#rustdoc-item-247) — Whether the left button is held right now.
-- [`run_modal_drag`](fn.run_modal_drag.md#rustdoc-item-249) — Runs the modal drag over one prepared data object.
-- [`start`](fn.start.md#rustdoc-item-248) — Hands `absolute_path` to OLE as a file drag and blocks until the drag ends.
+- [`initialize_ole`](fn.initialize_ole.md#rustdoc-item-302) — Initialises OLE on the calling thread, once.
+- [`left_button_held`](fn.left_button_held.md#rustdoc-item-299) — Whether the left button is held right now.
+- [`run_modal_drag`](fn.run_modal_drag.md#rustdoc-item-300) — Runs the modal drag over one prepared data object.
+- [`start`](fn.start.md#rustdoc-item-188) — Hands `absolute_path` to OLE as a file drag and blocks until the drag ends.

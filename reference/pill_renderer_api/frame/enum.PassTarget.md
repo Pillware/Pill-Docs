@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-452"></a>
+<a id="rustdoc-item-516"></a>
 
 # Enum `pill_renderer_api::frame::PassTarget`
 
@@ -14,7 +14,7 @@ Where a pass reads from and writes to.
 
 ## Variants
 
-<a id="rustdoc-item-449"></a>
+<a id="rustdoc-item-513"></a>
 
 ### `Surface`
 
@@ -26,7 +26,7 @@ The swapchain image. No pass can sample it, so a pass that writes here
 belongs at the end of the chain: the renderer warns when a chain has
 several surface passes, or has its one anywhere but last.
 
-<a id="rustdoc-item-451"></a>
+<a id="rustdoc-item-515"></a>
 
 ### `Offscreen`
 
@@ -51,6 +51,9 @@ target, so the mistake never reaches the window as a flat picture.
 - `TryFrom<U>`
 - `Any`
 - `ToOwned`
+- `CastableFrom<ST, Uninit, Uninit>`
+- `CastableFrom<ST, Initialized, Initialized>`
+- `Read<Exclusive, BecauseExclusive>`
 - `DeserializeOwned`
 - `Instrument`
 - `WithSubscriber`
@@ -58,9 +61,7 @@ target, so the mistake never reaches the window as a flat picture.
 - `Pointable`
 - `OwoColorize`
 - `ErasedDestructor`
-- `CastableFrom<ST, Uninit, Uninit>`
-- `CastableFrom<ST, Initialized, Initialized>`
-- `Read<Exclusive, BecauseExclusive>`
+- `Equivalent<K>`
 - `Clone`
 - `Debug`
 - `StructuralPartialEq`

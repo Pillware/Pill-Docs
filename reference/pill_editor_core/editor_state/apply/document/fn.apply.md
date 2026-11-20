@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-2392"></a>
+<a id="rustdoc-item-2453"></a>
 
 # Function `pill_editor_core::editor_state::apply::document::apply`
 
@@ -8,7 +8,7 @@
 pub(in editor_state::apply) fn apply(engine: &mut pill_engine::Engine, command: &EditorCommand) -> Result<command::CommandOutcome, String>;
 ```
 
-Visibility: `{'restricted': {'parent': 2390, 'path': '::editor_state::apply'}}` · Source: `editor\pill_editor_core\src\editor_state\apply\document.rs:43`
+Visibility: `{'restricted': {'parent': 2451, 'path': '::editor_state::apply'}}` · Source: `editor\pill_editor_core\src\editor_state\apply\document.rs:43`
 
 Applies one document command.
 

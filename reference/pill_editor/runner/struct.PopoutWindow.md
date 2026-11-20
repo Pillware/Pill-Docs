@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-498"></a>
+<a id="rustdoc-item-554"></a>
 
 # Struct `pill_editor::runner::PopoutWindow`
 
@@ -8,7 +8,7 @@
 pub(in runner) struct PopoutWindow;
 ```
 
-Visibility: `{'restricted': {'parent': 483, 'path': '::runner'}}` · Source: `editor\pill_editor\src\runner\mod.rs:3393`
+Visibility: `{'restricted': {'parent': 539, 'path': '::runner'}}` · Source: `editor\pill_editor\src\runner\mod.rs:3897`
 
 One popped-out tab's window: the window, its own
 swapchain and its own egui renderer.
@@ -18,7 +18,7 @@ panel out is putting it on another monitor, where a child window cannot go.
 
 ## Fields
 
-<a id="rustdoc-item-1263"></a>
+<a id="rustdoc-item-1712"></a>
 
 ### `window`
 
@@ -28,7 +28,7 @@ window: std::sync::Arc<winit::window::Window>
 
 The window the pass is presented into.
 
-<a id="rustdoc-item-1264"></a>
+<a id="rustdoc-item-1713"></a>
 
 ### `surface`
 
@@ -38,7 +38,7 @@ surface: crate::overlay::OverlaySurface
 
 The window's swapchain, in the opaque window posture.
 
-<a id="rustdoc-item-1265"></a>
+<a id="rustdoc-item-1714"></a>
 
 ### `renderer`
 
@@ -50,7 +50,7 @@ egui's renderer for this window. Its textures belong to this renderer,
 which is why each pop-out owns one: two renderers cannot share a
 texture namespace across swapchains.
 
-<a id="rustdoc-item-1266"></a>
+<a id="rustdoc-item-1715"></a>
 
 ### `presented`
 

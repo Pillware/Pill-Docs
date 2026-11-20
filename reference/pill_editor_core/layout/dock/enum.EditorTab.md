@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-5139"></a>
+<a id="rustdoc-item-7102"></a>
 
 # Enum `pill_editor_core::layout::dock::EditorTab`
 
@@ -17,7 +17,7 @@ schema change (`LAYOUT_SCHEMA_VERSION`).
 
 ## Variants
 
-<a id="rustdoc-item-5127"></a>
+<a id="rustdoc-item-7090"></a>
 
 ### `Scene`
 
@@ -30,7 +30,7 @@ draws nothing, so that view's child window shows through. The payload
 is the view's index, which is what pairs the tab with a child window,
 a renderer surface and a camera.
 
-<a id="rustdoc-item-5128"></a>
+<a id="rustdoc-item-7091"></a>
 
 ### `Game`
 
@@ -42,7 +42,7 @@ The game viewport's placeholder: like the scene tabs, but its child
 window carries the primary surface, so it shows the project through
 the project's own camera.
 
-<a id="rustdoc-item-5129"></a>
+<a id="rustdoc-item-7092"></a>
 
 ### `Entities`
 
@@ -52,7 +52,7 @@ Entities
 
 The world's entities: id, name, click to select.
 
-<a id="rustdoc-item-5130"></a>
+<a id="rustdoc-item-7093"></a>
 
 ### `Systems`
 
@@ -62,7 +62,7 @@ Systems
 
 The world's systems: name, stage, enabled.
 
-<a id="rustdoc-item-5131"></a>
+<a id="rustdoc-item-7094"></a>
 
 ### `Inspector`
 
@@ -72,7 +72,7 @@ Inspector
 
 The selected entity's detail: its components and their field values.
 
-<a id="rustdoc-item-5132"></a>
+<a id="rustdoc-item-7095"></a>
 
 ### `Assets`
 
@@ -82,7 +82,7 @@ Assets
 
 The project's assets: the folder tree, the tile grid and the toolbar.
 
-<a id="rustdoc-item-5133"></a>
+<a id="rustdoc-item-7096"></a>
 
 ### `Console`
 
@@ -92,7 +92,7 @@ Console
 
 The engine's and the project's recent log lines.
 
-<a id="rustdoc-item-5134"></a>
+<a id="rustdoc-item-7097"></a>
 
 ### `Problems`
 
@@ -102,7 +102,7 @@ Problems
 
 Build errors and warnings, grouped by module.
 
-<a id="rustdoc-item-5135"></a>
+<a id="rustdoc-item-7098"></a>
 
 ### `Statistics`
 
@@ -112,7 +112,7 @@ Statistics
 
 Frame, pass and per-tab timings.
 
-<a id="rustdoc-item-5136"></a>
+<a id="rustdoc-item-7099"></a>
 
 ### `Preferences`
 
@@ -123,7 +123,7 @@ Preferences
 The preferences file's editor-wide rows and the current project's
 remembered gizmo choices.
 
-<a id="rustdoc-item-5138"></a>
+<a id="rustdoc-item-7101"></a>
 
 ### `Module`
 
@@ -138,7 +138,7 @@ module has unloaded.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-5140"></a>
+<a id="rustdoc-item-7103"></a>
 
 ### `ALL`
 
@@ -148,7 +148,7 @@ const ALL: [EditorTab; 11] = _;
 
 Every built-in tab, in the order the Window menu lists them.
 
-<a id="rustdoc-item-5141"></a>
+<a id="rustdoc-item-7104"></a>
 
 ### `scene_view`
 
@@ -158,7 +158,7 @@ pub fn scene_view(self: Self) -> Option<u8>;
 
 The view index, when this is a scene view's tab.
 
-<a id="rustdoc-item-5142"></a>
+<a id="rustdoc-item-7105"></a>
 
 ### `title`
 
@@ -171,7 +171,7 @@ The tab's display title.
 A title, not a `&'static str`: the scene views are numbered, so the
 second and later ones build their own name.
 
-<a id="rustdoc-item-5143"></a>
+<a id="rustdoc-item-7106"></a>
 
 ### `name`
 
@@ -182,7 +182,7 @@ pub fn name(self: Self) -> String;
 The wire name the logs and the scripted channel use: `scene`, then
 `scene2` for the second view and on.
 
-<a id="rustdoc-item-5144"></a>
+<a id="rustdoc-item-7107"></a>
 
 ### `module_slot`
 
@@ -192,7 +192,7 @@ pub fn module_slot(self: Self) -> Option<u16>;
 
 The panel slot, when this is a module panel's tab.
 
-<a id="rustdoc-item-5145"></a>
+<a id="rustdoc-item-7108"></a>
 
 ### `from_wire`
 
@@ -200,7 +200,7 @@ The panel slot, when this is a module panel's tab.
 pub fn from_wire(name: &str) -> Option<EditorTab>;
 ```
 
-The tab a wire name names: the inverse of [`EditorTab::name`](#rustdoc-item-5143).
+The tab a wire name names: the inverse of [`EditorTab::name`](#rustdoc-item-7106).
 
 The scripted channel and the frontend's popout windows share this
 parser, so a name that parses in one place parses in the other. A

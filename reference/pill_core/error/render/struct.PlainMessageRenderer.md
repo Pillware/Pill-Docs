@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-660"></a>
+<a id="rustdoc-item-670"></a>
 
 # Struct `pill_core::error::render::PlainMessageRenderer`
 
@@ -14,12 +14,12 @@ A renderer that turns every role back into plain text.
 
 Each value is written exactly as it is given, with no styling. A message
 therefore reads the same in a log file, in a test assertion, or in a
-terminal without colour. [`EngineMessage::to_plain_message`](trait.EngineMessage.md#rustdoc-item-668) is the usual
+terminal without colour. [`EngineMessage::to_plain_message`](trait.EngineMessage.md#rustdoc-item-678) is the usual
 way to reach it.
 
 ## Fields
 
-<a id="rustdoc-item-669"></a>
+<a id="rustdoc-item-679"></a>
 
 ### `writer`
 
@@ -31,7 +31,7 @@ _No documentation provided._
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-671"></a>
+<a id="rustdoc-item-681"></a>
 
 ### `new`
 

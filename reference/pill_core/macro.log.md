@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-2128"></a>
+<a id="rustdoc-item-2138"></a>
 
 # Macro `pill_core::log`
 
@@ -19,4 +19,4 @@ Only available with the `dev-logs` feature. Without it the macro expands
 to nothing. Use these macros for diagnostics while developing, never for
 permanent telemetry.
 
-[`DEV_LOG_TARGET`]: telemetry/constant.DEV_LOG_TARGET.md#rustdoc-item-1720
+[`DEV_LOG_TARGET`]: telemetry/constant.DEV_LOG_TARGET.md#rustdoc-item-1730

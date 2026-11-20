@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1029"></a>
+<a id="rustdoc-item-1051"></a>
 
 # Struct `pill_csharp_bridge::context::ActiveScopeData`
 
@@ -8,7 +8,7 @@
 pub(in context) struct ActiveScopeData;
 ```
 
-Visibility: `{'restricted': {'parent': 1030, 'path': '::context'}}` · Source: `csharp\pill_csharp_bridge\src\context.rs:89`
+Visibility: `{'restricted': {'parent': 1052, 'path': '::context'}}` · Source: `csharp\pill_csharp_bridge\src\context.rs:89`
 
 One complete managed invocation scope.
 
@@ -18,7 +18,7 @@ installed scope on this thread.
 
 ## Fields
 
-<a id="rustdoc-item-1036"></a>
+<a id="rustdoc-item-1058"></a>
 
 ### `world`
 
@@ -28,7 +28,7 @@ world: *mut pill_engine::World
 
 _No documentation provided._
 
-<a id="rustdoc-item-1037"></a>
+<a id="rustdoc-item-1059"></a>
 
 ### `queue`
 
@@ -38,7 +38,7 @@ queue: *mut pill_engine::commands::CommandQueue
 
 _No documentation provided._
 
-<a id="rustdoc-item-1039"></a>
+<a id="rustdoc-item-1061"></a>
 
 ### `accesses`
 
@@ -48,7 +48,7 @@ accesses: (*const super::abi::NativeSystemAccess, usize)
 
 _No documentation provided._
 
-<a id="rustdoc-item-1040"></a>
+<a id="rustdoc-item-1062"></a>
 
 ### `bindings`
 
@@ -58,7 +58,7 @@ bindings: *const std::collections::HashMap<StableComponentId, ComponentBinding>
 
 _No documentation provided._
 
-<a id="rustdoc-item-1041"></a>
+<a id="rustdoc-item-1063"></a>
 
 ### `uses_commands`
 
@@ -68,7 +68,7 @@ uses_commands: bool
 
 _No documentation provided._
 
-<a id="rustdoc-item-1042"></a>
+<a id="rustdoc-item-1064"></a>
 
 ### `exclusive`
 
@@ -80,7 +80,7 @@ Whether the invocation holds the whole world, as a startup method does.
 Every resource access is then allowed without a declaration, because
 nothing else can be running.
 
-<a id="rustdoc-item-1043"></a>
+<a id="rustdoc-item-1065"></a>
 
 ### `scope_token`
 

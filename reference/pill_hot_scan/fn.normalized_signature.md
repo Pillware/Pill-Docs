@@ -8,7 +8,7 @@
 pub fn normalized_signature(source: &str, mask: &[bool], declaration_start: usize) -> String;
 ```
 
-Source: `hosting\pill_hot_scan\src\lib.rs:789`
+Source: `hosting\pill_hot_scan\src\lib.rs:816`
 
 The declaration from `fn` up to the body, with whitespace collapsed.
 

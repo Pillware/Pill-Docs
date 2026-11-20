@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1363"></a>
+<a id="rustdoc-item-1405"></a>
 
 # Struct `pill_master_renderer::stream_buffer::StreamBuffer`
 
@@ -8,14 +8,14 @@
 pub(crate) struct StreamBuffer;
 ```
 
-Visibility: `crate` · Source: `extensions\pill_master_renderer\pill_master_renderer\src\stream_buffer.rs:26`
+Visibility: `crate` · Source: `extensions\pill_master_renderer\modules\runtime\gpu\src\stream_buffer.rs:26`
 
 A buffer that is rewritten for each surface and replaced by a larger one
 when the bytes do not fit.
 
 ## Fields
 
-<a id="rustdoc-item-2864"></a>
+<a id="rustdoc-item-2901"></a>
 
 ### `debug_label`
 
@@ -25,7 +25,7 @@ debug_label: &'static str
 
 _No documentation provided._
 
-<a id="rustdoc-item-2866"></a>
+<a id="rustdoc-item-2903"></a>
 
 ### `usage`
 
@@ -35,7 +35,7 @@ usage: wgpu::BufferUsages
 
 _No documentation provided._
 
-<a id="rustdoc-item-2868"></a>
+<a id="rustdoc-item-2905"></a>
 
 ### `allocated_buffer`
 
@@ -45,7 +45,7 @@ allocated_buffer: Option<wgpu::Buffer>
 
 _No documentation provided._
 
-<a id="rustdoc-item-2869"></a>
+<a id="rustdoc-item-2906"></a>
 
 ### `capacity_bytes`
 
@@ -57,7 +57,7 @@ _No documentation provided._
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-2870"></a>
+<a id="rustdoc-item-2907"></a>
 
 ### `new`
 
@@ -69,7 +69,7 @@ Creates an empty stream for buffers of `usage` (`VERTEX`, `INDEX`, ...).
 The first write allocates the GPU buffer, and adds `COPY_DST` to `usage`
 because every write copies bytes into it.
 
-<a id="rustdoc-item-2871"></a>
+<a id="rustdoc-item-2908"></a>
 
 ### `write`
 

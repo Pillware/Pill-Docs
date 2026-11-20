@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-3520"></a>
+<a id="rustdoc-item-3776"></a>
 
 # Function `pill_development_host::reload::build_load_and_commit`
 
@@ -14,7 +14,7 @@ Builds, loads and commits one native generation, for either subject.
 
 Both subjects run the same three steps in the same order, and a failure
 anywhere leaves the current generation running: compile (`build`), load a
-private copy, then swap through [`ReloadTransaction`](struct.ReloadTransaction.md#rustdoc-item-3513). Their differences are
+private copy, then swap through [`ReloadTransaction`](struct.ReloadTransaction.md#rustdoc-item-3769). Their differences are
 parameters, not a second lifecycle: which build function to call, whether
 the ABI check applies, and the refusal text the suites wait for.
 

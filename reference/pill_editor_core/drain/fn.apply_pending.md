@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1875"></a>
+<a id="rustdoc-item-1924"></a>
 
 # Function `pill_editor_core::drain::apply_pending`
 
@@ -8,7 +8,7 @@
 pub fn apply_pending(engine: &mut pill_engine::Engine, now_millis: u64) -> DrainOutcome;
 ```
 
-Source: `editor\pill_editor_core\src\drain.rs:65`
+Source: `editor\pill_editor_core\src\drain.rs:73`
 
 Applies every queued batch, then prunes a history a reload invalidated.
 

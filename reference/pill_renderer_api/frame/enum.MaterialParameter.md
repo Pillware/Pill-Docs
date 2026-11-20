@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-594"></a>
+<a id="rustdoc-item-661"></a>
 
 # Enum `pill_renderer_api::frame::MaterialParameter`
 
@@ -23,7 +23,7 @@ written: `{"Scalar": 1.0}`, `{"Bool": true}` or
 
 ## Variants
 
-<a id="rustdoc-item-589"></a>
+<a id="rustdoc-item-656"></a>
 
 ### `Scalar`
 
@@ -33,7 +33,7 @@ Scalar
 
 One `f32`, in the first four bytes of the slot.
 
-<a id="rustdoc-item-591"></a>
+<a id="rustdoc-item-658"></a>
 
 ### `Bool`
 
@@ -43,7 +43,7 @@ Bool
 
 A boolean, packed as a `u32` of 0 or 1.
 
-<a id="rustdoc-item-593"></a>
+<a id="rustdoc-item-660"></a>
 
 ### `Color`
 
@@ -64,6 +64,9 @@ An RGB colour: three `f32`s, with the rest of the slot as padding.
 - `TryFrom<U>`
 - `Any`
 - `ToOwned`
+- `CastableFrom<ST, Uninit, Uninit>`
+- `CastableFrom<ST, Initialized, Initialized>`
+- `Read<Exclusive, BecauseExclusive>`
 - `DeserializeOwned`
 - `Instrument`
 - `WithSubscriber`
@@ -71,9 +74,6 @@ An RGB colour: three `f32`s, with the rest of the slot as padding.
 - `Pointable`
 - `OwoColorize`
 - `ErasedDestructor`
-- `CastableFrom<ST, Uninit, Uninit>`
-- `CastableFrom<ST, Initialized, Initialized>`
-- `Read<Exclusive, BecauseExclusive>`
 - `Clone`
 - `Debug`
 - `StructuralPartialEq`

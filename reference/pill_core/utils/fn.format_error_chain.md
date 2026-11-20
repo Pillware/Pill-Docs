@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-2075"></a>
+<a id="rustdoc-item-2085"></a>
 
 # Function `pill_core::utils::format_error_chain`
 
@@ -17,7 +17,7 @@ cause that names the actual problem - which import could not be resolved,
 or which file was not found - is only in the chain, not in that text. This
 function appends every cause in order, separated by `: `.
 
-Use [`get_project_error_message`](fn.get_project_error_message.md#rustdoc-item-2074) when a multi-line report is wanted. This
+Use [`get_project_error_message`](fn.get_project_error_message.md#rustdoc-item-2084) when a multi-line report is wanted. This
 one is shaped for a single log line.
 
 ## Examples

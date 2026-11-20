@@ -1,10 +1,10 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-4377"></a>
+<a id="rustdoc-item-4636"></a>
 
 # Module `pill_development_host::watchers::shared`
 
-Visibility: `{'restricted': {'parent': 4303, 'path': '::watchers'}}` · Source: `hosting\pill_development_host\src\watchers\shared.rs:1`
+Visibility: `{'restricted': {'parent': 4562, 'path': '::watchers'}}` · Source: `hosting\pill_development_host\src\watchers\shared.rs:1`
 
 The settled watcher every worker is built on, the event filter they share,
 and the project's source-tree watcher.
@@ -36,23 +36,23 @@ reload is never lost.
 ## Module contents
 
 ### Structs
-- [`SourceTrigger`](struct.SourceTrigger.md#rustdoc-item-1676) — What one debounce window produced: when its signal fired, and how long the
-- [`TriggerLog`](struct.TriggerLog.md#rustdoc-item-3905) — The project watcher's most recent triggers.
+- [`SourceTrigger`](struct.SourceTrigger.md#rustdoc-item-1751) — What one debounce window produced: when its signal fired, and how long the
+- [`TriggerLog`](struct.TriggerLog.md#rustdoc-item-4162) — The project watcher's most recent triggers.
 
 ### Functions
-- [`canonicalize_through_existing_ancestor`](fn.canonicalize_through_existing_ancestor.md#rustdoc-item-4447) — Resolve a path that may no longer exist.
-- [`debounce_duration`](fn.debounce_duration.md#rustdoc-item-4445) — Returns how long a burst of file events is joined into one signal, read
-- [`is_relevant_event`](fn.is_relevant_event.md#rustdoc-item-4446) — Whether an event kind is a source change worth rebuilding for.
-- [`is_relevant_path`](fn.is_relevant_path.md#rustdoc-item-4448) — Whether a changed absolute path should start a rebuild.
-- [`is_relevant_relative_path`](fn.is_relevant_relative_path.md#rustdoc-item-4449) — Whether a path relative to the watch root should start a rebuild.
-- [`spawn_settled_watcher`](fn.spawn_settled_watcher.md#rustdoc-item-4452) — Spawn the notify watcher and its debounce worker, the part the source,
-- [`spawn_source_watcher`](fn.spawn_source_watcher.md#rustdoc-item-4454) — Watch the configured source tree and ask for a reload from a worker
+- [`canonicalize_through_existing_ancestor`](fn.canonicalize_through_existing_ancestor.md#rustdoc-item-4706) — Resolve a path that may no longer exist.
+- [`debounce_duration`](fn.debounce_duration.md#rustdoc-item-4704) — Returns how long a burst of file events is joined into one signal, read
+- [`is_relevant_event`](fn.is_relevant_event.md#rustdoc-item-4705) — Whether an event kind is a source change worth rebuilding for.
+- [`is_relevant_path`](fn.is_relevant_path.md#rustdoc-item-4707) — Whether a changed absolute path should start a rebuild.
+- [`is_relevant_relative_path`](fn.is_relevant_relative_path.md#rustdoc-item-4708) — Whether a path relative to the watch root should start a rebuild.
+- [`spawn_settled_watcher`](fn.spawn_settled_watcher.md#rustdoc-item-4711) — Spawn the notify watcher and its debounce worker, the part the source,
+- [`spawn_source_watcher`](fn.spawn_source_watcher.md#rustdoc-item-4713) — Watch the configured source tree and ask for a reload from a worker
 
 ### Constants
-- [`DEBOUNCE_OVERRIDE_VARIABLE`](constant.DEBOUNCE_OVERRIDE_VARIABLE.md#rustdoc-item-4378) — Environment variable overriding the debounce window.
-- [`DEFAULT_DEBOUNCE_MILLISECONDS`](constant.DEFAULT_DEBOUNCE_MILLISECONDS.md#rustdoc-item-4376) — File events that arrive within this window are joined into one reload.
-- [`EDITOR_TEMPORARY_FILE_SUFFIXES`](constant.EDITOR_TEMPORARY_FILE_SUFFIXES.md#rustdoc-item-4380) — Suffixes editors use for temporary and swap files written around saves.
-- [`HIDDEN_FILE_PREFIX`](constant.HIDDEN_FILE_PREFIX.md#rustdoc-item-4381) — A file whose name starts with this is hidden, and never holds source code.
-- [`IGNORED_DIRECTORY_NAMES`](constant.IGNORED_DIRECTORY_NAMES.md#rustdoc-item-4379) — Directory names that never contain source code worth rebuilding for.
-- [`REPORTED_PATH_LIMIT`](constant.REPORTED_PATH_LIMIT.md#rustdoc-item-4382) — Maximum number of changed paths printed per reload report.
-- [`TRIGGER_LOG_CAPACITY`](constant.TRIGGER_LOG_CAPACITY.md#rustdoc-item-4383) — How many recent triggers [`TriggerLog`] keeps for the frame loop.
+- [`DEBOUNCE_OVERRIDE_VARIABLE`](constant.DEBOUNCE_OVERRIDE_VARIABLE.md#rustdoc-item-4637) — Environment variable overriding the debounce window.
+- [`DEFAULT_DEBOUNCE_MILLISECONDS`](constant.DEFAULT_DEBOUNCE_MILLISECONDS.md#rustdoc-item-4635) — File events that arrive within this window are joined into one reload.
+- [`EDITOR_TEMPORARY_FILE_SUFFIXES`](constant.EDITOR_TEMPORARY_FILE_SUFFIXES.md#rustdoc-item-4639) — Suffixes editors use for temporary and swap files written around saves.
+- [`HIDDEN_FILE_PREFIX`](constant.HIDDEN_FILE_PREFIX.md#rustdoc-item-4640) — A file whose name starts with this is hidden, and never holds source code.
+- [`IGNORED_DIRECTORY_NAMES`](constant.IGNORED_DIRECTORY_NAMES.md#rustdoc-item-4638) — Directory names that never contain source code worth rebuilding for.
+- [`REPORTED_PATH_LIMIT`](constant.REPORTED_PATH_LIMIT.md#rustdoc-item-4641) — Maximum number of changed paths printed per reload report.
+- [`TRIGGER_LOG_CAPACITY`](constant.TRIGGER_LOG_CAPACITY.md#rustdoc-item-4642) — How many recent triggers [`TriggerLog`] keeps for the frame loop.

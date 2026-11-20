@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1481"></a>
+<a id="rustdoc-item-1527"></a>
 
 # Constant `pill_master_renderer::profiler::FRAMES_IN_FLIGHT`
 
@@ -8,7 +8,7 @@
 pub(in profiler) const FRAMES_IN_FLIGHT: usize = 8;
 ```
 
-Visibility: `{'restricted': {'parent': 1480, 'path': '::profiler'}}` · Source: `extensions\pill_master_renderer\pill_master_renderer\src\profiler.rs:73`
+Visibility: `{'restricted': {'parent': 1526, 'path': '::profiler'}}` · Source: `extensions\pill_master_renderer\modules\runtime\gpu\src\profiler.rs:73`
 
 How many frames can be waiting for their results at once.
 

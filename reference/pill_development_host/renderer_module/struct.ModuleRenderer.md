@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-3804"></a>
+<a id="rustdoc-item-4060"></a>
 
 # Struct `pill_development_host::renderer_module::ModuleRenderer`
 
@@ -8,7 +8,7 @@
 pub(in renderer_module) struct ModuleRenderer;
 ```
 
-Visibility: `{'restricted': {'parent': 3718, 'path': '::renderer_module'}}` · Source: `hosting\pill_development_host\src\renderer_module.rs:311`
+Visibility: `{'restricted': {'parent': 3974, 'path': '::renderer_module'}}` · Source: `hosting\pill_development_host\src\renderer_module.rs:311`
 
 A renderer backend that lives in the renderer module.
 
@@ -17,7 +17,7 @@ export returned, and hands it back to the module's detach export on drop.
 
 ## Fields
 
-<a id="rustdoc-item-3799"></a>
+<a id="rustdoc-item-4055"></a>
 
 ### `module_backend`
 
@@ -27,7 +27,7 @@ module_backend: std::ptr::NonNull<Box<dyn PillRenderer>>
 
 The renderer backend the module built, owned by this value.
 
-<a id="rustdoc-item-3803"></a>
+<a id="rustdoc-item-4059"></a>
 
 ### `detach_export`
 
@@ -40,7 +40,7 @@ module.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-3805"></a>
+<a id="rustdoc-item-4061"></a>
 
 ### `module_backend`
 
@@ -50,7 +50,7 @@ pub(in renderer_module) fn module_backend(self: &Self) -> &dyn PillRenderer;
 
 The module's backend, borrowed for a call that only reads it.
 
-<a id="rustdoc-item-3806"></a>
+<a id="rustdoc-item-4062"></a>
 
 ### `module_backend_mut`
 

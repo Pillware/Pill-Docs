@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-565"></a>
+<a id="rustdoc-item-609"></a>
 
 # Function `pill_editor_core::browser::breadcrumb`
 

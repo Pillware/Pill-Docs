@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-4420"></a>
+<a id="rustdoc-item-6381"></a>
 
 # Constant `pill_editor_core::icons::FAMILY`
 

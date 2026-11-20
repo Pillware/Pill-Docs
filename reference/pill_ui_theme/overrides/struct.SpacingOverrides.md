@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-171"></a>
+<a id="rustdoc-item-175"></a>
 
 # Struct `pill_ui_theme::overrides::SpacingOverrides`
 
@@ -8,13 +8,13 @@
 pub struct SpacingOverrides;
 ```
 
-Source: `ui\pill_ui_theme\src\overrides.rs:160`
+Source: `ui\pill_ui_theme\src\overrides.rs:164`
 
 The layout metrics [`ThemeOverrides`](struct.ThemeOverrides.md#rustdoc-item-0) can change.
 
 ## Fields
 
-<a id="rustdoc-item-355"></a>
+<a id="rustdoc-item-363"></a>
 
 ### `item_spacing`
 
@@ -22,9 +22,9 @@ The layout metrics [`ThemeOverrides`](struct.ThemeOverrides.md#rustdoc-item-0) c
 item_spacing: Option<[f32; 2]>
 ```
 
-See [`Spacing::item_spacing`](../theme/struct.Spacing.md#rustdoc-item-354).
+See [`Spacing::item_spacing`](../theme/struct.Spacing.md#rustdoc-item-362).
 
-<a id="rustdoc-item-357"></a>
+<a id="rustdoc-item-365"></a>
 
 ### `button_padding`
 
@@ -32,9 +32,9 @@ See [`Spacing::item_spacing`](../theme/struct.Spacing.md#rustdoc-item-354).
 button_padding: Option<[f32; 2]>
 ```
 
-See [`Spacing::button_padding`](../theme/struct.Spacing.md#rustdoc-item-356).
+See [`Spacing::button_padding`](../theme/struct.Spacing.md#rustdoc-item-364).
 
-<a id="rustdoc-item-359"></a>
+<a id="rustdoc-item-367"></a>
 
 ### `interact_size`
 
@@ -42,9 +42,9 @@ See [`Spacing::button_padding`](../theme/struct.Spacing.md#rustdoc-item-356).
 interact_size: Option<[f32; 2]>
 ```
 
-See [`Spacing::interact_size`](../theme/struct.Spacing.md#rustdoc-item-358).
+See [`Spacing::interact_size`](../theme/struct.Spacing.md#rustdoc-item-366).
 
-<a id="rustdoc-item-361"></a>
+<a id="rustdoc-item-369"></a>
 
 ### `window_margin`
 
@@ -52,9 +52,9 @@ See [`Spacing::interact_size`](../theme/struct.Spacing.md#rustdoc-item-358).
 window_margin: Option<f32>
 ```
 
-See [`Spacing::window_margin`](../theme/struct.Spacing.md#rustdoc-item-360).
+See [`Spacing::window_margin`](../theme/struct.Spacing.md#rustdoc-item-368).
 
-<a id="rustdoc-item-363"></a>
+<a id="rustdoc-item-371"></a>
 
 ### `menu_margin`
 
@@ -62,9 +62,9 @@ See [`Spacing::window_margin`](../theme/struct.Spacing.md#rustdoc-item-360).
 menu_margin: Option<f32>
 ```
 
-See [`Spacing::menu_margin`](../theme/struct.Spacing.md#rustdoc-item-362).
+See [`Spacing::menu_margin`](../theme/struct.Spacing.md#rustdoc-item-370).
 
-<a id="rustdoc-item-365"></a>
+<a id="rustdoc-item-373"></a>
 
 ### `indent`
 
@@ -72,9 +72,9 @@ See [`Spacing::menu_margin`](../theme/struct.Spacing.md#rustdoc-item-362).
 indent: Option<f32>
 ```
 
-See [`Spacing::indent`](../theme/struct.Spacing.md#rustdoc-item-364).
+See [`Spacing::indent`](../theme/struct.Spacing.md#rustdoc-item-372).
 
-<a id="rustdoc-item-367"></a>
+<a id="rustdoc-item-375"></a>
 
 ### `slider_width`
 
@@ -82,9 +82,9 @@ See [`Spacing::indent`](../theme/struct.Spacing.md#rustdoc-item-364).
 slider_width: Option<f32>
 ```
 
-See [`Spacing::slider_width`](../theme/struct.Spacing.md#rustdoc-item-366).
+See [`Spacing::slider_width`](../theme/struct.Spacing.md#rustdoc-item-374).
 
-<a id="rustdoc-item-369"></a>
+<a id="rustdoc-item-377"></a>
 
 ### `slider_rail_height`
 
@@ -92,9 +92,9 @@ See [`Spacing::slider_width`](../theme/struct.Spacing.md#rustdoc-item-366).
 slider_rail_height: Option<f32>
 ```
 
-See [`Spacing::slider_rail_height`](../theme/struct.Spacing.md#rustdoc-item-368).
+See [`Spacing::slider_rail_height`](../theme/struct.Spacing.md#rustdoc-item-376).
 
-<a id="rustdoc-item-371"></a>
+<a id="rustdoc-item-379"></a>
 
 ### `icon_width`
 
@@ -102,9 +102,9 @@ See [`Spacing::slider_rail_height`](../theme/struct.Spacing.md#rustdoc-item-368)
 icon_width: Option<f32>
 ```
 
-See [`Spacing::icon_width`](../theme/struct.Spacing.md#rustdoc-item-370).
+See [`Spacing::icon_width`](../theme/struct.Spacing.md#rustdoc-item-378).
 
-<a id="rustdoc-item-373"></a>
+<a id="rustdoc-item-381"></a>
 
 ### `icon_width_inner`
 
@@ -112,9 +112,9 @@ See [`Spacing::icon_width`](../theme/struct.Spacing.md#rustdoc-item-370).
 icon_width_inner: Option<f32>
 ```
 
-See [`Spacing::icon_width_inner`](../theme/struct.Spacing.md#rustdoc-item-372).
+See [`Spacing::icon_width_inner`](../theme/struct.Spacing.md#rustdoc-item-380).
 
-<a id="rustdoc-item-375"></a>
+<a id="rustdoc-item-383"></a>
 
 ### `icon_spacing`
 
@@ -122,9 +122,9 @@ See [`Spacing::icon_width_inner`](../theme/struct.Spacing.md#rustdoc-item-372).
 icon_spacing: Option<f32>
 ```
 
-See [`Spacing::icon_spacing`](../theme/struct.Spacing.md#rustdoc-item-374).
+See [`Spacing::icon_spacing`](../theme/struct.Spacing.md#rustdoc-item-382).
 
-<a id="rustdoc-item-377"></a>
+<a id="rustdoc-item-385"></a>
 
 ### `menu_width`
 
@@ -132,9 +132,9 @@ See [`Spacing::icon_spacing`](../theme/struct.Spacing.md#rustdoc-item-374).
 menu_width: Option<f32>
 ```
 
-See [`Spacing::menu_width`](../theme/struct.Spacing.md#rustdoc-item-376).
+See [`Spacing::menu_width`](../theme/struct.Spacing.md#rustdoc-item-384).
 
-<a id="rustdoc-item-379"></a>
+<a id="rustdoc-item-387"></a>
 
 ### `tooltip_width`
 
@@ -142,9 +142,9 @@ See [`Spacing::menu_width`](../theme/struct.Spacing.md#rustdoc-item-376).
 tooltip_width: Option<f32>
 ```
 
-See [`Spacing::tooltip_width`](../theme/struct.Spacing.md#rustdoc-item-378).
+See [`Spacing::tooltip_width`](../theme/struct.Spacing.md#rustdoc-item-386).
 
-<a id="rustdoc-item-381"></a>
+<a id="rustdoc-item-389"></a>
 
 ### `combo_width`
 
@@ -152,9 +152,9 @@ See [`Spacing::tooltip_width`](../theme/struct.Spacing.md#rustdoc-item-378).
 combo_width: Option<f32>
 ```
 
-See [`Spacing::combo_width`](../theme/struct.Spacing.md#rustdoc-item-380).
+See [`Spacing::combo_width`](../theme/struct.Spacing.md#rustdoc-item-388).
 
-<a id="rustdoc-item-383"></a>
+<a id="rustdoc-item-391"></a>
 
 ### `combo_height`
 
@@ -162,9 +162,9 @@ See [`Spacing::combo_width`](../theme/struct.Spacing.md#rustdoc-item-380).
 combo_height: Option<f32>
 ```
 
-See [`Spacing::combo_height`](../theme/struct.Spacing.md#rustdoc-item-382).
+See [`Spacing::combo_height`](../theme/struct.Spacing.md#rustdoc-item-390).
 
-<a id="rustdoc-item-385"></a>
+<a id="rustdoc-item-393"></a>
 
 ### `text_edit_width`
 
@@ -172,9 +172,9 @@ See [`Spacing::combo_height`](../theme/struct.Spacing.md#rustdoc-item-382).
 text_edit_width: Option<f32>
 ```
 
-See [`Spacing::text_edit_width`](../theme/struct.Spacing.md#rustdoc-item-384).
+See [`Spacing::text_edit_width`](../theme/struct.Spacing.md#rustdoc-item-392).
 
-<a id="rustdoc-item-387"></a>
+<a id="rustdoc-item-395"></a>
 
 ### `menu_spacing`
 
@@ -182,9 +182,9 @@ See [`Spacing::text_edit_width`](../theme/struct.Spacing.md#rustdoc-item-384).
 menu_spacing: Option<f32>
 ```
 
-See [`Spacing::menu_spacing`](../theme/struct.Spacing.md#rustdoc-item-386).
+See [`Spacing::menu_spacing`](../theme/struct.Spacing.md#rustdoc-item-394).
 
-<a id="rustdoc-item-389"></a>
+<a id="rustdoc-item-397"></a>
 
 ### `scroll_bar_width`
 
@@ -192,9 +192,9 @@ See [`Spacing::menu_spacing`](../theme/struct.Spacing.md#rustdoc-item-386).
 scroll_bar_width: Option<f32>
 ```
 
-See [`Spacing::scroll_bar_width`](../theme/struct.Spacing.md#rustdoc-item-388).
+See [`Spacing::scroll_bar_width`](../theme/struct.Spacing.md#rustdoc-item-396).
 
-<a id="rustdoc-item-391"></a>
+<a id="rustdoc-item-399"></a>
 
 ### `scroll_floating`
 
@@ -202,7 +202,7 @@ See [`Spacing::scroll_bar_width`](../theme/struct.Spacing.md#rustdoc-item-388).
 scroll_floating: Option<bool>
 ```
 
-See [`Spacing::scroll_floating`](../theme/struct.Spacing.md#rustdoc-item-390).
+See [`Spacing::scroll_floating`](../theme/struct.Spacing.md#rustdoc-item-398).
 
 ## Trait implementations
 

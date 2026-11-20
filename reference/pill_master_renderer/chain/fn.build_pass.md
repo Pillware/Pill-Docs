@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-581"></a>
+<a id="rustdoc-item-578"></a>
 
 # Function `pill_master_renderer::chain::build_pass`
 
@@ -8,7 +8,7 @@
 pub(in chain) fn build_pass(pass: &crate::frame::ResolvedPass, shaders_by_key: &std::collections::HashMap<u64, &crate::assets::Shader>, defined_targets: &std::collections::HashSet<String>, context: &ChainContext<'_>) -> PassSlot;
 ```
 
-Visibility: `{'restricted': {'parent': 534, 'path': '::chain'}}` · Source: `extensions\pill_master_renderer\pill_master_renderer\src\chain.rs:658`
+Visibility: `{'restricted': {'parent': 531, 'path': '::chain'}}` · Source: `extensions\pill_master_renderer\modules\runtime\gpu\src\chain.rs:658`
 
 One pass's GPU object, or the reason there is none.
 

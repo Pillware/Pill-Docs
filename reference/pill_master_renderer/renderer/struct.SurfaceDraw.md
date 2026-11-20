@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1963"></a>
+<a id="rustdoc-item-2006"></a>
 
 # Struct `pill_master_renderer::renderer::SurfaceDraw`
 
@@ -8,19 +8,19 @@
 pub(in renderer) struct SurfaceDraw<'a>;
 ```
 
-Visibility: `{'restricted': {'parent': 1847, 'path': '::renderer'}}` · Source: `extensions\pill_master_renderer\pill_master_renderer\src\renderer.rs:241`
+Visibility: `{'restricted': {'parent': 1890, 'path': '::renderer'}}` · Source: `extensions\pill_master_renderer\modules\runtime\gpu\src\renderer.rs:241`
 
 One surface's frame between the acquire and the present.
 
 Everything the recording phases need that changes per frame: the acquired
 image, the view the passes draw into, the camera, the viewport and the
-frame itself. Holding it apart from [`SurfaceTarget`](struct.SurfaceTarget.md#rustdoc-item-1863) is what lets the
+frame itself. Holding it apart from [`SurfaceTarget`](struct.SurfaceTarget.md#rustdoc-item-1906) is what lets the
 phases be recorded in named steps without threading a dozen arguments
 through each.
 
 ## Fields
 
-<a id="rustdoc-item-1954"></a>
+<a id="rustdoc-item-1997"></a>
 
 ### `surface_id`
 
@@ -30,7 +30,7 @@ surface_id: u32
 
 Which surface this is, as the overlay and the UI name it.
 
-<a id="rustdoc-item-1955"></a>
+<a id="rustdoc-item-1998"></a>
 
 ### `image`
 
@@ -40,7 +40,7 @@ image: wgpu::SurfaceTexture
 
 The image acquired from the surface, presented at the end.
 
-<a id="rustdoc-item-1957"></a>
+<a id="rustdoc-item-2000"></a>
 
 ### `view`
 
@@ -50,7 +50,7 @@ view: wgpu::TextureView
 
 The view the passes draw into, through the surface's own format.
 
-<a id="rustdoc-item-1958"></a>
+<a id="rustdoc-item-2001"></a>
 
 ### `size`
 
@@ -60,7 +60,7 @@ size: (u32, u32)
 
 The size of the acquired image, in pixels.
 
-<a id="rustdoc-item-1959"></a>
+<a id="rustdoc-item-2002"></a>
 
 ### `viewport`
 
@@ -70,7 +70,7 @@ viewport: crate::components::RenderViewport
 
 The region of it this frame covers.
 
-<a id="rustdoc-item-1960"></a>
+<a id="rustdoc-item-2003"></a>
 
 ### `camera`
 
@@ -80,7 +80,7 @@ camera: renderer_camera::RendererCameraHandle
 
 The camera this surface is drawn through.
 
-<a id="rustdoc-item-1961"></a>
+<a id="rustdoc-item-2004"></a>
 
 ### `frame`
 
@@ -90,7 +90,7 @@ frame: &'a crate::frame::RenderFrame
 
 The frame being drawn.
 
-<a id="rustdoc-item-1962"></a>
+<a id="rustdoc-item-2005"></a>
 
 ### `render_queue`
 

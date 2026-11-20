@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-3294"></a>
+<a id="rustdoc-item-3549"></a>
 
 # Module `pill_development_host::notices`
 
@@ -12,7 +12,7 @@ Host activity notes for an attached editor frontend.
 
 ## Responsibilities
 
-- Define [`HostNotice`](enum.HostNotice.md#rustdoc-item-3298): what happened, in editor-agnostic terms.
+- Define [`HostNotice`](enum.HostNotice.md#rustdoc-item-3553): what happened, in editor-agnostic terms.
 - Queue notices from anywhere in `pill_development_host`, dropping the
   oldest once the queue is full.
 - Hand the queue to the frontend's per-frame drain ([`take`]).
@@ -39,15 +39,15 @@ enough.
 ## Module contents
 
 ### Enums
-- [`HostNotice`](enum.HostNotice.md#rustdoc-item-3298) — One event the host reports to an attached editor frontend.
+- [`HostNotice`](enum.HostNotice.md#rustdoc-item-3553) — One event the host reports to an attached editor frontend.
 
 ### Functions
-- [`notice_kind_log_name`](fn.notice_kind_log_name.md#rustdoc-item-3344) — The name a notice's kind is logged under.
-- [`push`](fn.push.md#rustdoc-item-3295) — Queues one notice for the frontend's next drain, dropping the oldest when
-- [`take`](fn.take.md#rustdoc-item-3296) — Takes every queued notice, oldest first.
+- [`notice_kind_log_name`](fn.notice_kind_log_name.md#rustdoc-item-3599) — The name a notice's kind is logged under.
+- [`push`](fn.push.md#rustdoc-item-3550) — Queues one notice for the frontend's next drain, dropping the oldest when
+- [`take`](fn.take.md#rustdoc-item-3551) — Takes every queued notice, oldest first.
 
 ### Constants
-- [`NOTICE_CAPACITY`](constant.NOTICE_CAPACITY.md#rustdoc-item-3293) — How many notices can wait for a drain; past this the oldest are dropped.
+- [`NOTICE_CAPACITY`](constant.NOTICE_CAPACITY.md#rustdoc-item-3548) — How many notices can wait for a drain; past this the oldest are dropped.
 
 ### Statics
-- [`NOTICE_QUEUE`](static.NOTICE_QUEUE.md#rustdoc-item-3297) — The queue [`push`] fills and [`take`] empties.
+- [`NOTICE_QUEUE`](static.NOTICE_QUEUE.md#rustdoc-item-3552) — The queue [`push`] fills and [`take`] empties.

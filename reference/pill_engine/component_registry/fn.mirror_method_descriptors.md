@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-304"></a>
+<a id="rustdoc-item-312"></a>
 
 # Function `pill_engine::component_registry::mirror_method_descriptors`
 
@@ -8,7 +8,7 @@
 pub fn mirror_method_descriptors() -> Vec<&'static PillMethodDescriptor>;
 ```
 
-Source: `engine\pill_engine\src\component_registry.rs:301`
+Source: `engine\pill_engine\src\component_registry.rs:308`
 
 Every mirror row this artifact declares: methods
 (`#[pill_mirror_impl]`/`#[pill_mirror_method]`), free functions

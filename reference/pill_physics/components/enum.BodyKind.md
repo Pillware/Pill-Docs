@@ -8,7 +8,7 @@
 pub enum BodyKind { ... }
 ```
 
-Source: `extensions\pill_physics\pill_physics\src\components.rs:29`
+Source: `extensions\pill_physics\modules\runtime\src\components.rs:31`
 
 How the simulation is allowed to move a body.
 
@@ -76,6 +76,7 @@ Game code sets its velocity, and the simulation moves it from there.
 - `CastableFrom<ST, Uninit, Uninit>`
 - `CastableFrom<ST, Initialized, Initialized>`
 - `Read<Exclusive, BecauseExclusive>`
+- `Equivalent<K>`
 - `MaybeSync`
 - `SupersetOf<SS>`
 - `Scalar`
@@ -83,7 +84,6 @@ Game code sets its velocity, and the simulation moves it from there.
 - `Downcast`
 - `DowncastSend`
 - `DowncastSync`
-- `Equivalent<K>`
 - `Debug`
 - `Clone`
 - `Copy`
@@ -93,3 +93,5 @@ Game code sets its velocity, and the simulation moves it from there.
 - `Default`
 - `Serialize`
 - `Deserialize<'de>`
+- `MirrorValue`
+- `MirrorReturn`

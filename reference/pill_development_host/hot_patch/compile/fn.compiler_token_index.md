@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1966"></a>
+<a id="rustdoc-item-2040"></a>
 
 # Function `pill_development_host::hot_patch::compile::compiler_token_index`
 
@@ -8,7 +8,7 @@
 pub(in hot_patch::compile) fn compiler_token_index(tokens: &[String]) -> usize;
 ```
 
-Visibility: `{'restricted': {'parent': 1910, 'path': '::hot_patch::compile'}}` · Source: `hosting\pill_development_host\src\hot_patch\compile.rs:761`
+Visibility: `{'restricted': {'parent': 1984, 'path': '::hot_patch::compile'}}` · Source: `hosting\pill_development_host\src\hot_patch\compile.rs:761`
 
 Returns the index of the actual `rustc` binary in a captured invocation.
 

@@ -8,7 +8,7 @@
 pub(crate) fn mirror_object(attribute: proc_macro2::TokenStream, item: syn::Item) -> syn::Result<proc_macro2::TokenStream>;
 ```
 
-Visibility: `crate` · Source: `engine\pill_engine_macros\src\mirror.rs:1256`
+Visibility: `crate` · Source: `engine\pill_engine_macros\src\mirror.rs:1259`
 
 Expand `#[pill_mirror_object]` on a struct or enum.
 

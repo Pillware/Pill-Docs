@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-177"></a>
+<a id="rustdoc-item-181"></a>
 
 # Struct `pill_ui_theme::overrides::FontsOverrides`
 
@@ -8,13 +8,13 @@
 pub struct FontsOverrides;
 ```
 
-Source: `ui\pill_ui_theme\src\overrides.rs:298`
+Source: `ui\pill_ui_theme\src\overrides.rs:302`
 
 The font paths [`ThemeOverrides`](struct.ThemeOverrides.md#rustdoc-item-0) can name.
 
 ## Fields
 
-<a id="rustdoc-item-664"></a>
+<a id="rustdoc-item-672"></a>
 
 ### `body`
 
@@ -24,7 +24,7 @@ body: Option<String>
 
 The body font's path.
 
-<a id="rustdoc-item-665"></a>
+<a id="rustdoc-item-673"></a>
 
 ### `display`
 
@@ -34,7 +34,7 @@ display: Option<String>
 
 The display font's path.
 
-<a id="rustdoc-item-666"></a>
+<a id="rustdoc-item-674"></a>
 
 ### `monospace`
 

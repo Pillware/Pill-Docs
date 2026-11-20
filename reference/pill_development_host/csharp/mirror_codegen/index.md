@@ -1,10 +1,10 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1426"></a>
+<a id="rustdoc-item-1501"></a>
 
 # Module `pill_development_host::csharp::mirror_codegen`
 
-Visibility: `{'restricted': {'parent': 1331, 'path': '::csharp'}}` · Source: `hosting\pill_development_host\src\csharp\mirror_codegen.rs:1`
+Visibility: `{'restricted': {'parent': 1405, 'path': '::csharp'}}` · Source: `hosting\pill_development_host\src\csharp\mirror_codegen.rs:1`
 
 The C# members, object classes, enums and resource markers generated from
 a module's mirror descriptors.
@@ -38,29 +38,29 @@ layout that `Push*` and `Result*` calls write is the contract with
 ## Module contents
 
 ### Structs
-- [`CsArgument`](struct.CsArgument.md#rustdoc-item-1567) — One function argument, translated to C#.
-- [`CsResult`](struct.CsResult.md#rustdoc-item-1594) — One function result, translated to C#.
-- [`DeclaredType`](struct.DeclaredType.md#rustdoc-item-1503) — One object type, enum or resource a module declares through a type row.
-- [`MirrorScope`](struct.MirrorScope.md#rustdoc-item-1327) — Every type a module's signatures can name.
-- [`MirrorType`](struct.MirrorType.md#rustdoc-item-1468) — One type a module's signatures can name, with the C# declaration it maps
+- [`CsArgument`](struct.CsArgument.md#rustdoc-item-1642) — One function argument, translated to C#.
+- [`CsResult`](struct.CsResult.md#rustdoc-item-1669) — One function result, translated to C#.
+- [`DeclaredType`](struct.DeclaredType.md#rustdoc-item-1578) — One object type, enum or resource a module declares through a type row.
+- [`MirrorScope`](struct.MirrorScope.md#rustdoc-item-1401) — Every type a module's signatures can name.
+- [`MirrorType`](struct.MirrorType.md#rustdoc-item-1543) — One type a module's signatures can name, with the C# declaration it maps
 
 ### Enums
-- [`MemberHost`](enum.MemberHost.md#rustdoc-item-1624) — The place a generated member belongs to.
-- [`MirrorKind`](enum.MirrorKind.md#rustdoc-item-1431) — What a mirrored Rust type becomes on the C# side.
+- [`MemberHost`](enum.MemberHost.md#rustdoc-item-1699) — The place a generated member belongs to.
+- [`MirrorKind`](enum.MirrorKind.md#rustdoc-item-1506) — What a mirrored Rust type becomes on the C# side.
 
 ### Functions
-- [`array_type`](fn.array_type.md#rustdoc-item-1652) — The C# type for an `array:<element>:<length>` tag.
-- [`crate_namespace`](fn.crate_namespace.md#rustdoc-item-1648) — The namespace a declared type is written into: the root of its crate, so
-- [`emit_declared_type`](fn.emit_declared_type.md#rustdoc-item-1659) — Writes one declared type and wraps it in its namespace: an object class,
-- [`emit_free_function_class`](fn.emit_free_function_class.md#rustdoc-item-1660) — Writes the static class that mirrors a module's free functions.
-- [`emit_member`](fn.emit_member.md#rustdoc-item-1656) — Writes the C# member, or members, for one mirrored function.
-- [`last_segment`](fn.last_segment.md#rustdoc-item-1649) — The last `::` segment of a Rust path.
-- [`lower_argument`](fn.lower_argument.md#rustdoc-item-1653) — Turns one argument tag into its C# parameter declaration, push statement
-- [`lower_result`](fn.lower_result.md#rustdoc-item-1654) — Turns one result tag into the C# return type, buffer size and read
-- [`members_of`](fn.members_of.md#rustdoc-item-1657) — The functions mirrored onto one owner, skipping the `__`-named rows: the
-- [`parameter_name`](fn.parameter_name.md#rustdoc-item-1655) — The C# parameter name for one argument: the Rust name, or the positional
-- [`primitive`](fn.primitive.md#rustdoc-item-1650) — The C# type and width of a primitive tag.
-- [`tuple_layout`](fn.tuple_layout.md#rustdoc-item-1651) — The byte offset and C# type of each element in a tuple of primitives,
+- [`array_type`](fn.array_type.md#rustdoc-item-1727) — The C# type for an `array:<element>:<length>` tag.
+- [`crate_namespace`](fn.crate_namespace.md#rustdoc-item-1723) — The namespace a declared type is written into: the root of its crate, so
+- [`emit_declared_type`](fn.emit_declared_type.md#rustdoc-item-1734) — Writes one declared type and wraps it in its namespace: an object class,
+- [`emit_free_function_class`](fn.emit_free_function_class.md#rustdoc-item-1735) — Writes the static class that mirrors a module's free functions.
+- [`emit_member`](fn.emit_member.md#rustdoc-item-1731) — Writes the C# member, or members, for one mirrored function.
+- [`last_segment`](fn.last_segment.md#rustdoc-item-1724) — The last `::` segment of a Rust path.
+- [`lower_argument`](fn.lower_argument.md#rustdoc-item-1728) — Turns one argument tag into its C# parameter declaration, push statement
+- [`lower_result`](fn.lower_result.md#rustdoc-item-1729) — Turns one result tag into the C# return type, buffer size and read
+- [`members_of`](fn.members_of.md#rustdoc-item-1732) — The functions mirrored onto one owner, skipping the `__`-named rows: the
+- [`parameter_name`](fn.parameter_name.md#rustdoc-item-1730) — The C# parameter name for one argument: the Rust name, or the positional
+- [`primitive`](fn.primitive.md#rustdoc-item-1725) — The C# type and width of a primitive tag.
+- [`tuple_layout`](fn.tuple_layout.md#rustdoc-item-1726) — The byte offset and C# type of each element in a tuple of primitives,
 
 ### Constants
-- [`ASSET_MANAGER`](constant.ASSET_MANAGER.md#rustdoc-item-1425) — The runtime's own resource marker for the engine's asset store.
+- [`ASSET_MANAGER`](constant.ASSET_MANAGER.md#rustdoc-item-1500) — The runtime's own resource marker for the engine's asset store.

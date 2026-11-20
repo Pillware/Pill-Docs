@@ -8,6 +8,6 @@
 pub(crate) fn receiver_path(function: &HotFunction) -> String;
 ```
 
-Visibility: `crate` · Source: `hosting\pill_hot_scan\src\lib.rs:1337`
+Visibility: `crate` · Source: `hosting\pill_hot_scan\src\lib.rs:1364`
 
 The trailing part of an inventory name: everything after the module path.

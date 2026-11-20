@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1770"></a>
+<a id="rustdoc-item-1780"></a>
 
 # Enum `pill_core::telemetry::TimestampFormat`
 
@@ -13,12 +13,12 @@ Source: `engine\pill_core\src\telemetry.rs:236`
 How the local time at the start of every log line is written.
 
 Chosen by the project's `logging: timestamp:` setting and applied with
-[`set_timestamp_format`](fn.set_timestamp_format.md#rustdoc-item-1769). It is one process-wide value, held in
+[`set_timestamp_format`](fn.set_timestamp_format.md#rustdoc-item-1779). It is one process-wide value, held in
 `pill_core` so every DLL's log lines agree.
 
 ## Variants
 
-<a id="rustdoc-item-1767"></a>
+<a id="rustdoc-item-1777"></a>
 
 ### `DateTime`
 
@@ -28,7 +28,7 @@ DateTime
 
 `[dd.mm.yyyy hh:mm:ss:mmm]`, written `date_time` in settings.
 
-<a id="rustdoc-item-1768"></a>
+<a id="rustdoc-item-1778"></a>
 
 ### `Time`
 
@@ -40,7 +40,7 @@ Time
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-1771"></a>
+<a id="rustdoc-item-1781"></a>
 
 ### `parse`
 
@@ -62,7 +62,7 @@ use pill_core::telemetry::TimestampFormat;
 assert_eq!(TimestampFormat::parse("time"), Ok(TimestampFormat::Time));
 ```
 
-<a id="rustdoc-item-1772"></a>
+<a id="rustdoc-item-1782"></a>
 
 ### `as_str`
 
@@ -70,9 +70,9 @@ assert_eq!(TimestampFormat::parse("time"), Ok(TimestampFormat::Time));
 pub fn as_str(self: Self) -> &'static str;
 ```
 
-The settings name of this format, as [`Self::parse`](#rustdoc-item-1771) reads it.
+The settings name of this format, as [`Self::parse`](#rustdoc-item-1781) reads it.
 
-<a id="rustdoc-item-1773"></a>
+<a id="rustdoc-item-1783"></a>
 
 ### `pattern`
 

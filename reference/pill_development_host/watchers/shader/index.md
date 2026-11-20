@@ -1,10 +1,10 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-4305"></a>
+<a id="rustdoc-item-4564"></a>
 
 # Module `pill_development_host::watchers::shader`
 
-Visibility: `{'restricted': {'parent': 4303, 'path': '::watchers'}}` · Source: `hosting\pill_development_host\src\watchers\shader.rs:1`
+Visibility: `{'restricted': {'parent': 4562, 'path': '::watchers'}}` · Source: `hosting\pill_development_host\src\watchers\shader.rs:1`
 
 A shader source tree: an edit is cooked again and queued as one output per
 changed file.
@@ -46,14 +46,14 @@ in as edits.
 ## Module contents
 
 ### Structs
-- [`CookedShader`](struct.CookedShader.md#rustdoc-item-4309) — One re-cooked WGSL file, waiting for the main thread.
-- [`ShaderWatcher`](struct.ShaderWatcher.md#rustdoc-item-4059) — A running shader watcher. Dropping it stops the worker the next time it
+- [`CookedShader`](struct.CookedShader.md#rustdoc-item-4568) — One re-cooked WGSL file, waiting for the main thread.
+- [`ShaderWatcher`](struct.ShaderWatcher.md#rustdoc-item-4316) — A running shader watcher. Dropping it stops the worker the next time it
 
 ### Functions
-- [`cook_edited_shaders`](fn.cook_edited_shaders.md#rustdoc-item-4373) — Cooks the tree after the edits in `edited_paths` settled, and returns every
-- [`is_shader_source`](fn.is_shader_source.md#rustdoc-item-4371) — Whether an edited file is one a cook reads.
-- [`read_output_texts`](fn.read_output_texts.md#rustdoc-item-4372) — Returns the text of every cooked `.wgsl` file under `shaders_directory`,
-- [`relative_path_from_root`](fn.relative_path_from_root.md#rustdoc-item-4374) — Returns `path` relative to `root`, using `/` as the separator, in the form
+- [`cook_edited_shaders`](fn.cook_edited_shaders.md#rustdoc-item-4632) — Cooks the tree after the edits in `edited_paths` settled, and returns every
+- [`is_shader_source`](fn.is_shader_source.md#rustdoc-item-4630) — Whether an edited file is one a cook reads.
+- [`read_output_texts`](fn.read_output_texts.md#rustdoc-item-4631) — Returns the text of every cooked `.wgsl` file under `shaders_directory`,
+- [`relative_path_from_root`](fn.relative_path_from_root.md#rustdoc-item-4633) — Returns `path` relative to `root`, using `/` as the separator, in the form
 
 ### Constants
-- [`SOURCE_EXTENSION`](constant.SOURCE_EXTENSION.md#rustdoc-item-4304) — Extension of the source files whose edits start a cook.
+- [`SOURCE_EXTENSION`](constant.SOURCE_EXTENSION.md#rustdoc-item-4563) — Extension of the source files whose edits start a cook.

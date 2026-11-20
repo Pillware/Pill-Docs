@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-2354"></a>
+<a id="rustdoc-item-2428"></a>
 
 # Constant `pill_development_host::hot_patch::PATCH_NAME_PREFIX`
 
@@ -8,7 +8,7 @@
 pub(in hot_patch) const PATCH_NAME_PREFIX: &str = "pill_patch::";
 ```
 
-Visibility: `{'restricted': {'parent': 1968, 'path': '::hot_patch'}}` · Source: `hosting\pill_development_host\src\hot_patch\mod.rs:128`
+Visibility: `{'restricted': {'parent': 2042, 'path': '::hot_patch'}}` · Source: `hosting\pill_development_host\src\hot_patch\mod.rs:128`
 
 Prefix that separates a patch's registry entry from the crate's own.
 

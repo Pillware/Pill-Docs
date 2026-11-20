@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-306"></a>
+<a id="rustdoc-item-314"></a>
 
 # Function `pill_engine::component_registry::copy_descriptors`
 
@@ -8,7 +8,7 @@
 pub unsafe fn copy_descriptors<T: Copy>(descriptors: &[&'static T], out_descriptors: *mut T, max_descriptor_count: u32) -> u32;
 ```
 
-Source: `engine\pill_engine\src\component_registry.rs:335`
+Source: `engine\pill_engine\src\component_registry.rs:342`
 
 Copy up to `max_descriptor_count` descriptors into `out_descriptors`,
 returning how many were written.

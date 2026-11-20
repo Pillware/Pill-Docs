@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-449"></a>
+<a id="rustdoc-item-493"></a>
 
 # Function `pill_editor_core::boundary::frame_from_output`
 
@@ -8,7 +8,7 @@
 pub fn frame_from_output(context: &egui::Context, egui_output: egui::FullOutput) -> EguiShellFrame;
 ```
 
-Source: `editor\pill_editor_core\src\boundary.rs:299`
+Source: `editor\pill_editor_core\src\boundary.rs:337`
 
 Builds the frame the frontend drains, from egui's output for one pass.
 

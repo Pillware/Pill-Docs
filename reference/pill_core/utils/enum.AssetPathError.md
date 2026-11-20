@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-2034"></a>
+<a id="rustdoc-item-2044"></a>
 
 # Enum `pill_core::utils::AssetPathError`
 
@@ -18,7 +18,7 @@ Loaders that check a path before reading it report this type;
 
 ## Variants
 
-<a id="rustdoc-item-2030"></a>
+<a id="rustdoc-item-2040"></a>
 
 ### `InvalidPath`
 
@@ -29,7 +29,7 @@ InvalidPath
 The path names nothing usable: it does not exist, or it carries no file
 extension.
 
-<a id="rustdoc-item-2033"></a>
+<a id="rustdoc-item-2043"></a>
 
 ### `InvalidFormat`
 

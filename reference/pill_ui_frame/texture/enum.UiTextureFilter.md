@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-430"></a>
+<a id="rustdoc-item-435"></a>
 
 # Enum `pill_ui_frame::texture::UiTextureFilter`
 
@@ -14,7 +14,7 @@ How a backend samples a UI texture.
 
 ## Variants
 
-<a id="rustdoc-item-428"></a>
+<a id="rustdoc-item-433"></a>
 
 ### `Nearest`
 
@@ -25,7 +25,7 @@ Nearest
 One texel per pixel, keeping edges sharp. Used for glyph atlases and
 pixel art.
 
-<a id="rustdoc-item-429"></a>
+<a id="rustdoc-item-434"></a>
 
 ### `Linear`
 
@@ -56,6 +56,7 @@ photo-like textures and scaled drawings.
 - `CastableFrom<ST, Uninit, Uninit>`
 - `CastableFrom<ST, Initialized, Initialized>`
 - `Read<Exclusive, BecauseExclusive>`
+- `Equivalent<K>`
 - `Copy`
 - `Clone`
 - `Debug`

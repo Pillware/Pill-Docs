@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-2011"></a>
+<a id="rustdoc-item-2085"></a>
 
 # Struct `pill_development_host::hot_patch::generations::PatchGeneration`
 
@@ -14,7 +14,7 @@ One entry in a function's patch history, for hosts and tooling.
 
 ## Fields
 
-<a id="rustdoc-item-2007"></a>
+<a id="rustdoc-item-2081"></a>
 
 ### `function`
 
@@ -24,7 +24,7 @@ function: String
 
 Qualified name of the patched function.
 
-<a id="rustdoc-item-2008"></a>
+<a id="rustdoc-item-2082"></a>
 
 ### `number`
 
@@ -35,7 +35,7 @@ number: u32
 One-based position in the history; the code the artifact was built with
 is generation zero and has no entry.
 
-<a id="rustdoc-item-2009"></a>
+<a id="rustdoc-item-2083"></a>
 
 ### `address`
 
@@ -45,7 +45,7 @@ address: usize
 
 The address that makes this generation active.
 
-<a id="rustdoc-item-2010"></a>
+<a id="rustdoc-item-2084"></a>
 
 ### `age_seconds`
 

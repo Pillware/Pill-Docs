@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-818"></a>
+<a id="rustdoc-item-814"></a>
 
 # Function `pill_master_renderer::preview::mesh_framing_transform`
 
@@ -8,7 +8,7 @@
 pub(in preview) fn mesh_framing_transform(vertices: &[crate::assets::MeshVertex]) -> Option<[[f32; 4]; 4]>;
 ```
 
-Visibility: `{'restricted': {'parent': 592, 'path': '::preview'}}` · Source: `extensions\pill_master_renderer\pill_master_renderer\src\preview.rs:786`
+Visibility: `{'restricted': {'parent': 589, 'path': '::preview'}}` · Source: `extensions\pill_master_renderer\modules\runtime\gpu\src\preview.rs:786`
 
 Builds the transform a mesh preview draws through.
 

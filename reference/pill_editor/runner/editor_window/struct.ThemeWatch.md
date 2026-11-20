@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-583"></a>
+<a id="rustdoc-item-652"></a>
 
 # Struct `pill_editor::runner::editor_window::ThemeWatch`
 
@@ -8,7 +8,7 @@
 pub(in runner) struct ThemeWatch;
 ```
 
-Visibility: `{'restricted': {'parent': 483, 'path': '::runner'}}` · Source: `editor\pill_editor\src\runner\editor_window.rs:304`
+Visibility: `{'restricted': {'parent': 539, 'path': '::runner'}}` · Source: `editor\pill_editor\src\runner\editor_window.rs:347`
 
 What the last theme resolution read.
 
@@ -19,7 +19,7 @@ when nothing moved.
 
 ## Fields
 
-<a id="rustdoc-item-895"></a>
+<a id="rustdoc-item-1022"></a>
 
 ### `selection`
 
@@ -29,7 +29,7 @@ selection: pill_editor_core::style::UserThemeSelection
 
 The preference's value, as last resolved.
 
-<a id="rustdoc-item-897"></a>
+<a id="rustdoc-item-1024"></a>
 
 ### `user_stamp`
 
@@ -39,7 +39,7 @@ user_stamp: pill_editor_core::state_watch::FileStamp
 
 The user file's metadata when it was last read.
 
-<a id="rustdoc-item-899"></a>
+<a id="rustdoc-item-1026"></a>
 
 ### `legacy_logged`
 
@@ -49,7 +49,7 @@ legacy_logged: Option<String>
 
 The legacy name already reported, so one value logs once.
 
-<a id="rustdoc-item-900"></a>
+<a id="rustdoc-item-1027"></a>
 
 ### `settings_stamp`
 
@@ -59,7 +59,7 @@ settings_stamp: pill_editor_core::state_watch::FileStamp
 
 `editor_settings.yaml`'s metadata when it was last read.
 
-<a id="rustdoc-item-901"></a>
+<a id="rustdoc-item-1028"></a>
 
 ### `settings`
 
@@ -69,7 +69,7 @@ settings: Option<Result<pill_development_host::EditorSettings, String>>
 
 The settings file's last read, or the message that refused it.
 
-<a id="rustdoc-item-903"></a>
+<a id="rustdoc-item-1030"></a>
 
 ### `project_path`
 
@@ -79,7 +79,7 @@ project_path: Option<String>
 
 The project layer's path, as last resolved.
 
-<a id="rustdoc-item-904"></a>
+<a id="rustdoc-item-1031"></a>
 
 ### `project_stamp`
 
@@ -89,7 +89,7 @@ project_stamp: pill_editor_core::state_watch::FileStamp
 
 The project layer's file metadata when it was last read.
 
-<a id="rustdoc-item-905"></a>
+<a id="rustdoc-item-1032"></a>
 
 ### `project_handle`
 
@@ -99,7 +99,7 @@ project_handle: Option<pill_engine_core::Handle<pill_ui_theme::ThemeOverrides>>
 
 The project layer's handle in the asset store.
 
-<a id="rustdoc-item-907"></a>
+<a id="rustdoc-item-1034"></a>
 
 ### `project_version`
 
@@ -109,7 +109,7 @@ project_version: Option<u64>
 
 The handle's content version when it was last merged.
 
-<a id="rustdoc-item-908"></a>
+<a id="rustdoc-item-1035"></a>
 
 ### `font_sources`
 
@@ -120,7 +120,7 @@ font_sources: [Option<FontSource>; 3]
 Where each family's font comes from, as last resolved (body, display,
 monospace).
 
-<a id="rustdoc-item-909"></a>
+<a id="rustdoc-item-1036"></a>
 
 ### `font_stamps`
 
@@ -130,7 +130,7 @@ font_stamps: [pill_editor_core::state_watch::FileStamp; 3]
 
 The resolved source files' metadata when they were last read.
 
-<a id="rustdoc-item-910"></a>
+<a id="rustdoc-item-1037"></a>
 
 ### `fonts`
 
@@ -140,7 +140,7 @@ fonts: pill_editor_core::kit::style::ThemeFonts
 
 The font bytes the sources gave, as last installed.
 
-<a id="rustdoc-item-911"></a>
+<a id="rustdoc-item-1038"></a>
 
 ### `refusals_logged`
 
@@ -154,7 +154,7 @@ quiet and only a different text logs again.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-912"></a>
+<a id="rustdoc-item-1039"></a>
 
 ### `is_new_refusal`
 
@@ -165,7 +165,7 @@ pub(in runner) fn is_new_refusal(self: &mut Self, slot: &str, refusal: &str) -> 
 Record `refusal` for `slot` and report whether it is new, which is
 when the caller logs it: the first refusal, or one whose text changed.
 
-<a id="rustdoc-item-913"></a>
+<a id="rustdoc-item-1040"></a>
 
 ### `clear_refusal`
 

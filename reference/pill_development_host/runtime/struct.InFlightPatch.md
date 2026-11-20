@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-3910"></a>
+<a id="rustdoc-item-4167"></a>
 
 # Struct `pill_development_host::runtime::InFlightPatch`
 
@@ -8,19 +8,19 @@
 pub(in runtime) struct InFlightPatch;
 ```
 
-Visibility: `{'restricted': {'parent': 3859, 'path': '::runtime'}}` · Source: `hosting\pill_development_host\src\runtime.rs:2193`
+Visibility: `{'restricted': {'parent': 4115, 'path': '::runtime'}}` · Source: `hosting\pill_development_host\src\runtime.rs:2292`
 
 One patch build running on its own thread.
 
 The build compiles and maps the patch; installing it stays on the frame
-thread, which is what [`advance_patch_attempt`](fn.advance_patch_attempt.md#rustdoc-item-4166) does when the report
+thread, which is what [`advance_patch_attempt`](fn.advance_patch_attempt.md#rustdoc-item-4423) does when the report
 arrives. The thread is joined on collection, on teardown, and nowhere else -
 a build that outlived its host would be a thread still running code that is
 about to be unloaded.
 
 ## Fields
 
-<a id="rustdoc-item-4162"></a>
+<a id="rustdoc-item-4419"></a>
 
 ### `subject`
 
@@ -31,7 +31,7 @@ subject: PatchSubject
 Which session the build is for, and who consumes its pending
 generation once the patch is live.
 
-<a id="rustdoc-item-4163"></a>
+<a id="rustdoc-item-4420"></a>
 
 ### `pending_generation`
 
@@ -43,7 +43,7 @@ The generation counter captured when the build started. A save that
 arrives while it compiles advances the counter past this value and must
 stay pending.
 
-<a id="rustdoc-item-4164"></a>
+<a id="rustdoc-item-4421"></a>
 
 ### `receiver`
 
@@ -53,7 +53,7 @@ receiver: mpsc::Receiver<(worker::PatchAttempt, Vec<worker::BodyOutcome>)>
 
 The build's report, once it has one.
 
-<a id="rustdoc-item-4165"></a>
+<a id="rustdoc-item-4422"></a>
 
 ### `thread`
 

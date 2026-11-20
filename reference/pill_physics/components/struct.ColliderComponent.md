@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-277"></a>
+<a id="rustdoc-item-366"></a>
 
 # Struct `pill_physics::components::ColliderComponent`
 
@@ -8,17 +8,19 @@
 pub struct ColliderComponent;
 ```
 
-Source: `extensions\pill_physics\pill_physics\src\components.rs:140`
+Source: `extensions\pill_physics\modules\runtime\src\components.rs:144`
 
 The shape an entity occupies in the simulation and how it responds to
 touching something.
 
 A body has no collision without a collider, so the manager simulates the
-entities that carry both components.
+entities that carry both components. The component also declares the gizmo
+that outlines it: the engine draws it wherever a gizmo pass is installed,
+and the settings document's `debug_draw` switch decides whether it draws.
 
 ## Fields
 
-<a id="rustdoc-item-269"></a>
+<a id="rustdoc-item-357"></a>
 
 ### `shape`
 
@@ -28,7 +30,7 @@ shape: ColliderShape
 
 The shape the dimensions are read as.
 
-<a id="rustdoc-item-270"></a>
+<a id="rustdoc-item-358"></a>
 
 ### `dimensions`
 
@@ -36,10 +38,21 @@ The shape the dimensions are read as.
 dimensions: [f32; 3]
 ```
 
-The shape's measurements, in world units; see [`ColliderShape`](enum.ColliderShape.md#rustdoc-item-149) for
+The shape's measurements, in world units; see [`ColliderShape`](enum.ColliderShape.md#rustdoc-item-158) for
 which slots each shape uses. Unused slots are ignored.
 
-<a id="rustdoc-item-271"></a>
+<a id="rustdoc-item-359"></a>
+
+### `offset`
+
+```rust
+offset: [f32; 3]
+```
+
+Where the shape's centre sits relative to the entity's position, in the
+entity's own axes: it turns with the entity's rotation.
+
+<a id="rustdoc-item-360"></a>
 
 ### `friction`
 
@@ -49,7 +62,7 @@ friction: f32
 
 How much a contact resists sliding. `0.0` is ice, `1.0` grips.
 
-<a id="rustdoc-item-272"></a>
+<a id="rustdoc-item-361"></a>
 
 ### `restitution`
 
@@ -60,7 +73,7 @@ restitution: f32
 How much speed a contact gives back. `0.0` lands dead, `1.0` bounces
 forever.
 
-<a id="rustdoc-item-273"></a>
+<a id="rustdoc-item-362"></a>
 
 ### `density`
 
@@ -71,7 +84,7 @@ density: f32
 Mass per cubic meter. Two bodies of the same size push each other
 according to this, so a stone ball shoves a wooden crate aside.
 
-<a id="rustdoc-item-274"></a>
+<a id="rustdoc-item-363"></a>
 
 ### `sensor`
 
@@ -81,7 +94,7 @@ sensor: bool
 
 Whether the collider only detects contacts without pushing anything.
 
-<a id="rustdoc-item-275"></a>
+<a id="rustdoc-item-364"></a>
 
 ### `collision_group`
 
@@ -91,7 +104,7 @@ collision_group: u32
 
 The collision groups this collider belongs to, as a bit mask.
 
-<a id="rustdoc-item-276"></a>
+<a id="rustdoc-item-365"></a>
 
 ### `collision_mask`
 
@@ -103,7 +116,7 @@ The collision groups this collider may touch, as a bit mask.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-278"></a>
+<a id="rustdoc-item-367"></a>
 
 ### `FIELD_LAYOUT`
 
@@ -137,6 +150,7 @@ macro; pass it to `World::register_component_with_layout`.
 - `Read<Exclusive, BecauseExclusive>`
 - `MaybeSync`
 - `SupersetOf<SS>`
+- `Scalar`
 - `Same`
 - `Downcast`
 - `DowncastSend`
@@ -144,8 +158,11 @@ macro; pass it to `World::register_component_with_layout`.
 - `Debug`
 - `Clone`
 - `Copy`
+- `StructuralPartialEq`
+- `PartialEq`
 - `Serialize`
 - `Deserialize<'de>`
 - `Component`
 - `ComponentLayout`
+- `ComponentFields`
 - `Default`

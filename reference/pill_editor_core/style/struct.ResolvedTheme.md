@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-8210"></a>
+<a id="rustdoc-item-10272"></a>
 
 # Struct `pill_editor_core::style::ResolvedTheme`
 
@@ -8,13 +8,13 @@
 pub(in style) struct ResolvedTheme;
 ```
 
-Visibility: `{'restricted': {'parent': 8137, 'path': '::style'}}` · Source: `editor\pill_editor_core\src\style.rs:147`
+Visibility: `{'restricted': {'parent': 10199, 'path': '::style'}}` · Source: `editor\pill_editor_core\src\style.rs:148`
 
 The theme the editor last resolved, with the palette it records.
 
 ## Fields
 
-<a id="rustdoc-item-8203"></a>
+<a id="rustdoc-item-10265"></a>
 
 ### `theme`
 
@@ -24,7 +24,7 @@ theme: pill_ui_theme::Theme
 
 The tokens every context paints with.
 
-<a id="rustdoc-item-8204"></a>
+<a id="rustdoc-item-10266"></a>
 
 ### `palette`
 
@@ -32,9 +32,9 @@ The tokens every context paints with.
 palette: Palette
 ```
 
-[`ResolvedTheme::theme`](#rustdoc-item-8203) as egui colours.
+[`ResolvedTheme::theme`](#rustdoc-item-10265) as egui colours.
 
-<a id="rustdoc-item-8205"></a>
+<a id="rustdoc-item-10267"></a>
 
 ### `layers`
 
@@ -42,9 +42,9 @@ palette: Palette
 layers: Vec<ThemeLayerInfo>
 ```
 
-The layers [`ResolvedTheme::theme`](#rustdoc-item-8203) was merged from, in apply order.
+The layers [`ResolvedTheme::theme`](#rustdoc-item-10265) was merged from, in apply order.
 
-<a id="rustdoc-item-8206"></a>
+<a id="rustdoc-item-10268"></a>
 
 ### `fonts`
 
@@ -54,7 +54,7 @@ fonts: kit::style::ThemeFonts
 
 The font bytes the layers resolved.
 
-<a id="rustdoc-item-8207"></a>
+<a id="rustdoc-item-10269"></a>
 
 ### `generation`
 
@@ -65,7 +65,7 @@ generation: u64
 The executable's layer generation. When it changes, there is a new
 theme to install.
 
-<a id="rustdoc-item-8208"></a>
+<a id="rustdoc-item-10270"></a>
 
 ### `contexts`
 
@@ -76,7 +76,7 @@ contexts: u64
 How many context installs have run. The log line's `contexts` field
 carries it.
 
-<a id="rustdoc-item-8209"></a>
+<a id="rustdoc-item-10271"></a>
 
 ### `installed`
 

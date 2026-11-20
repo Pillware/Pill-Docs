@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1874"></a>
+<a id="rustdoc-item-1899"></a>
 
 # Function `pill_csharp_bridge::queries::write_entity_chunk`
 
@@ -8,7 +8,7 @@
 pub(in queries) fn write_entity_chunk(chunk_output: *mut super::abi::ComponentChunk, archetype: pill_engine::archetype::ArchetypeId, entities: &[pill_engine::Entity], change_tick: u32, scope_token: u32);
 ```
 
-Visibility: `{'restricted': {'parent': 1872, 'path': '::queries'}}` · Source: `csharp\pill_csharp_bridge\src\queries.rs:101`
+Visibility: `{'restricted': {'parent': 1897, 'path': '::queries'}}` · Source: `csharp\pill_csharp_bridge\src\queries.rs:101`
 
 Write one archetype's entity column chunk into the managed caller's output
 buffer.

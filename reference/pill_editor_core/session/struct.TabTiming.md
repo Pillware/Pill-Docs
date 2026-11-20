@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-7421"></a>
+<a id="rustdoc-item-9482"></a>
 
 # Struct `pill_editor_core::session::TabTiming`
 
@@ -8,13 +8,13 @@
 pub struct TabTiming;
 ```
 
-Source: `editor\pill_editor_core\src\session.rs:267`
+Source: `editor\pill_editor_core\src\session.rs:272`
 
 One tab's measured cost, smoothed so a single slow frame does not dominate.
 
 ## Fields
 
-<a id="rustdoc-item-7418"></a>
+<a id="rustdoc-item-9479"></a>
 
 ### `tab`
 
@@ -24,7 +24,7 @@ tab: crate::layout::EditorTab
 
 Which tab.
 
-<a id="rustdoc-item-7419"></a>
+<a id="rustdoc-item-9480"></a>
 
 ### `micros`
 
@@ -34,7 +34,7 @@ micros: f64
 
 The exponentially weighted mean of one body pass, in microseconds.
 
-<a id="rustdoc-item-7420"></a>
+<a id="rustdoc-item-9481"></a>
 
 ### `passes`
 

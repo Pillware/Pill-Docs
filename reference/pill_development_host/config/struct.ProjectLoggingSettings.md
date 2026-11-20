@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1094"></a>
+<a id="rustdoc-item-1111"></a>
 
 # Struct `pill_development_host::config::ProjectLoggingSettings`
 
@@ -8,7 +8,7 @@
 pub struct ProjectLoggingSettings;
 ```
 
-Source: `hosting\pill_development_host\src\config.rs:527`
+Source: `hosting\pill_development_host\src\config.rs:660`
 
 The `logging:` section of `project_settings.yaml`, as written.
 
@@ -19,12 +19,12 @@ logging:
     engine::rendering: info
 ```
 
-Read as text and checked by [`Self::validate`](#rustdoc-item-1093), so a misspelled level is
+Read as text and checked by [`Self::validate`](#rustdoc-item-1110), so a misspelled level is
 an error naming it rather than a serde message about an enum.
 
 ## Fields
 
-<a id="rustdoc-item-1088"></a>
+<a id="rustdoc-item-1105"></a>
 
 ### `level`
 
@@ -35,7 +35,7 @@ level: Option<String>
 One level for every target: `off`, `error`, `warn`, `info`, `debug` or
 `trace`.
 
-<a id="rustdoc-item-1089"></a>
+<a id="rustdoc-item-1106"></a>
 
 ### `timestamp`
 
@@ -45,7 +45,7 @@ timestamp: Option<String>
 
 How each line writes its local time: `date_time` or `time`.
 
-<a id="rustdoc-item-1090"></a>
+<a id="rustdoc-item-1107"></a>
 
 ### `source_location`
 
@@ -55,7 +55,7 @@ source_location: Option<bool>
 
 Whether each line ends with its source `file:line` (default false).
 
-<a id="rustdoc-item-1091"></a>
+<a id="rustdoc-item-1108"></a>
 
 ### `targets`
 
@@ -67,7 +67,7 @@ Per-target levels, by `tracing` target or target prefix.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-1093"></a>
+<a id="rustdoc-item-1110"></a>
 
 ### `validate`
 

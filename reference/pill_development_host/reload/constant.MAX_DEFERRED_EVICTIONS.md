@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-3427"></a>
+<a id="rustdoc-item-3683"></a>
 
 # Constant `pill_development_host::reload::MAX_DEFERRED_EVICTIONS`
 
@@ -8,7 +8,7 @@
 pub(in reload) const MAX_DEFERRED_EVICTIONS: u32 = 3;
 ```
 
-Visibility: `{'restricted': {'parent': 3428, 'path': '::reload'}}` · Source: `hosting\pill_development_host\src\reload.rs:67`
+Visibility: `{'restricted': {'parent': 3684, 'path': '::reload'}}` · Source: `hosting\pill_development_host\src\reload.rs:67`
 
 Number of deferred evictions in a row allowed before the warning becomes an
 error.

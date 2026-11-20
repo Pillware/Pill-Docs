@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-945"></a>
+<a id="rustdoc-item-954"></a>
 
 # Struct `pill_development_host::config::HostConfig`
 
@@ -8,17 +8,17 @@
 pub struct HostConfig;
 ```
 
-Source: `hosting\pill_development_host\src\config.rs:436`
+Source: `hosting\pill_development_host\src\config.rs:552`
 
 Complete host configuration: the project module plus every extension
 the host should build, watch and load.
 
-Assembled by [`Self::from_environment`](#rustdoc-item-903) so executable crates stay free of
+Assembled by [`Self::from_environment`](#rustdoc-item-912) so executable crates stay free of
 any project or module identity.
 
 ## Fields
 
-<a id="rustdoc-item-988"></a>
+<a id="rustdoc-item-1002"></a>
 
 ### `name`
 
@@ -29,7 +29,19 @@ name: String
 The project's display name from `project_settings.yaml`; used as the
 window title.
 
-<a id="rustdoc-item-989"></a>
+<a id="rustdoc-item-1003"></a>
+
+### `project_directory`
+
+```rust
+project_directory: Option<std::path::PathBuf>
+```
+
+The project directory the configuration was read from, resolved
+against the workspace root and canonicalized when it exists; `None`
+when the configuration was not read from a project directory.
+
+<a id="rustdoc-item-1004"></a>
 
 ### `build_binary_name`
 
@@ -40,7 +52,7 @@ build_binary_name: String
 The artifact file base from `project_settings.yaml`; letters, digits
 and underscores only, so it is safe as a file name.
 
-<a id="rustdoc-item-990"></a>
+<a id="rustdoc-item-1005"></a>
 
 ### `project`
 
@@ -50,7 +62,7 @@ project: ProjectModuleConfig
 
 The project module selected by `PROJECT_PATH`.
 
-<a id="rustdoc-item-991"></a>
+<a id="rustdoc-item-1006"></a>
 
 ### `extensions`
 
@@ -62,7 +74,7 @@ Extensions selected by the project's `project_settings.yaml`,
 loaded before the project. When a renderer is selected, its data crate
 (`<renderer>_data`) comes first, whatever the settings list.
 
-<a id="rustdoc-item-992"></a>
+<a id="rustdoc-item-1007"></a>
 
 ### `load_editor_crates`
 
@@ -73,12 +85,13 @@ load_editor_crates: bool
 Whether this host loads extension editor crates: the editor posture.
 
 Only editor frontends set it, through
-[`Self::from_environment_for_editor_frontend`](#rustdoc-item-836). Every other build never
-builds or loads an editor crate. When set, [`Self::extensions`](#rustdoc-item-991) ends
-with the editor crates of the loaded extensions' folders and of every
-editor-only folder.
+[`Self::from_environment_for_editor_frontend`](#rustdoc-item-843). Every other build never
+builds or loads an editor crate. When set, [`Self::extensions`](#rustdoc-item-1006) ends
+with the editor crates of the loaded extensions' folders, then those of
+every editor-only folder, then the editor's own modules (the crates
+under `editor/` tagged for this frontend, the shell among them).
 
-<a id="rustdoc-item-993"></a>
+<a id="rustdoc-item-1008"></a>
 
 ### `first_load_optional`
 
@@ -86,13 +99,14 @@ editor-only folder.
 first_load_optional: Vec<String>
 ```
 
-Editor-only modules (a folder holding only its `<folder>_editor`
-crate) whose first load may fail without aborting setup; the embedder
-handles their absence - the editor's safe mode covers the shell. Filled
-by [`Self::from_environment_for_editor_frontend`](#rustdoc-item-836), empty in every other
+Editor-only modules (a folder holding only its `modules/editor`
+crate, and the editor's own modules under `editor/`) whose first load
+may fail without aborting setup; the embedder handles their absence -
+the editor's safe mode covers the shell. Filled by
+[`Self::from_environment_for_editor_frontend`](#rustdoc-item-843), empty in every other
 posture.
 
-<a id="rustdoc-item-994"></a>
+<a id="rustdoc-item-1009"></a>
 
 ### `renderer`
 
@@ -104,10 +118,10 @@ The renderer's GPU module, from the settings' `renderer:` key
 (`pill_master_renderer` when absent); `None` for `renderer: none`.
 
 Only a windowed host loads it. Its data crate is among
-[`Self::extensions`](#rustdoc-item-991) in every build, headless included, so a project's
+[`Self::extensions`](#rustdoc-item-1006) in every build, headless included, so a project's
 render components exist whether or not anything draws them.
 
-<a id="rustdoc-item-995"></a>
+<a id="rustdoc-item-1010"></a>
 
 ### `assets`
 
@@ -118,7 +132,7 @@ assets: ProjectAssetSettings
 The settings' `assets:` section: what the development host does with
 the project's source assets.
 
-<a id="rustdoc-item-997"></a>
+<a id="rustdoc-item-1012"></a>
 
 ### `logging`
 
@@ -129,7 +143,7 @@ logging: pill_player::LoggingSettings
 The settings' `logging:` section, validated: the log levels the
 frontend applies over the engine's defaults once the project is read.
 
-<a id="rustdoc-item-999"></a>
+<a id="rustdoc-item-1014"></a>
 
 ### `shipping_debug_draw`
 
@@ -141,7 +155,7 @@ The settings' `debug_draw:` key: whether a shipping or web build of
 the project starts with debug drawing on (`false` when absent). The
 development host always draws.
 
-<a id="rustdoc-item-1000"></a>
+<a id="rustdoc-item-1015"></a>
 
 ### `startup_scene`
 
@@ -154,7 +168,7 @@ with, as a path below `res`. Queued into the world before any artifact
 loads, so the load happens between component registration and the
 project's own `init`.
 
-<a id="rustdoc-item-1001"></a>
+<a id="rustdoc-item-1016"></a>
 
 ### `asset_directory`
 
@@ -165,9 +179,26 @@ asset_directory: Option<std::path::PathBuf>
 The project's `res` directory, which asset paths are relative to;
 `None` when the configuration was not read from a project directory.
 
+<a id="rustdoc-item-1017"></a>
+
+### `project_editor`
+
+```rust
+project_editor: Option<ExtensionConfig>
+```
+
+The project's own editor crate, when the project has one and this host
+is an editor host: `<PROJECT_PATH>/<package>_editor/`, discovered by
+convention like an extension's editor crate.
+
+Filled by [`Self::from_environment_for_editor_frontend`](#rustdoc-item-843) and `None` in
+every other posture, so a game build neither builds, watches nor loads
+it. It loads after the project, because it exists to change the editor
+the project runs in.
+
 ## Associated functions and methods
 
-<a id="rustdoc-item-903"></a>
+<a id="rustdoc-item-912"></a>
 
 ### `from_environment`
 
@@ -188,7 +219,7 @@ Returns a [`ConfigError`] when `PROJECT_PATH` is not set, the project
 configuration cannot be derived, the project settings file is missing
 or cannot be read/parsed, or a configured module is invalid.
 
-<a id="rustdoc-item-836"></a>
+<a id="rustdoc-item-843"></a>
 
 ### `from_environment_for_editor_frontend`
 
@@ -196,7 +227,7 @@ or cannot be read/parsed, or a configured module is invalid.
 pub fn from_environment_for_editor_frontend(editor_frontend: &str) -> Result<Self, ConfigError>;
 ```
 
-The editor host's configuration: [`Self::from_environment`](#rustdoc-item-903) plus the
+The editor host's configuration: [`Self::from_environment`](#rustdoc-item-912) plus the
 extensions' editor crates, for a named editor frontend.
 
 Editor crates load, and one whose manifest declares
@@ -206,9 +237,9 @@ load under every editor frontend.
 
 #### Errors
 
-As [`Self::from_environment`](#rustdoc-item-903).
+As [`Self::from_environment`](#rustdoc-item-912).
 
-<a id="rustdoc-item-1002"></a>
+<a id="rustdoc-item-1018"></a>
 
 ### `from_environment_in_posture`
 
@@ -222,9 +253,9 @@ the editor-crate tag convention (`resolve_editor_crates`).
 
 #### Errors
 
-Returns the same [`ConfigError`]s as [`Self::from_environment`](#rustdoc-item-903).
+Returns the same [`ConfigError`]s as [`Self::from_environment`](#rustdoc-item-912).
 
-<a id="rustdoc-item-1004"></a>
+<a id="rustdoc-item-1020"></a>
 
 ### `validate_startup_scene`
 
@@ -243,7 +274,7 @@ Returns [`ConfigError::InvalidStartupScene`] naming the settings file
 and the reason when the value is absolute, climbs out of the asset
 directory, or does not name a `.scene` file.
 
-<a id="rustdoc-item-1007"></a>
+<a id="rustdoc-item-1023"></a>
 
 ### `resolve_renderer`
 
@@ -253,7 +284,7 @@ pub(in config) fn resolve_renderer(setting: Option<&str>, extensions_root: &Path
 
 Resolve the settings' `renderer:` value to a renderer name.
 
-Absent means [`DEFAULT_RENDERER`](constant.DEFAULT_RENDERER.md#rustdoc-item-853); [`NO_RENDERER`](constant.NO_RENDERER.md#rustdoc-item-854) means none. A named
+Absent means [`DEFAULT_RENDERER`](constant.DEFAULT_RENDERER.md#rustdoc-item-860); [`NO_RENDERER`](constant.NO_RENDERER.md#rustdoc-item-861) means none. A named
 renderer must have both of its crates in an extension folder under
 `extensions/`: the GPU module `<renderer>` and the data crate
 `<renderer>_data`. A missing one is a configuration error here rather
@@ -265,7 +296,7 @@ Returns [`ConfigError::InvalidExtensionName`] when the name is not a
 usable directory name, and [`ConfigError::ExtensionDirectoryMissing`]
 when either crate has no folder.
 
-<a id="rustdoc-item-1008"></a>
+<a id="rustdoc-item-1024"></a>
 
 ### `module_names_with_renderer_data`
 
@@ -279,7 +310,7 @@ is selected, then the settings' own list without it.
 First because extensions and the project may use its components. A
 project that also lists the data crate gets it once, not twice.
 
-<a id="rustdoc-item-1011"></a>
+<a id="rustdoc-item-1027"></a>
 
 ### `resolve_extensions`
 
@@ -290,7 +321,7 @@ pub(in config) fn resolve_extensions(module_names: &[String], extensions_root: &
 Resolves the settings file's module names against the extension folders
 under `extensions/`.
 
-Split from [`Self::from_environment`](#rustdoc-item-903) so the validation is testable
+Split from [`Self::from_environment`](#rustdoc-item-912) so the validation is testable
 without changing the process's working directory; no test in this crate
 does that, and it would race the parallel test threads. The checks run
 in the order their errors matter: a name that is not a crate directory
@@ -306,7 +337,7 @@ Returns [`ConfigError::InvalidExtensionName`],
 [`ConfigError::ExtensionDirectoryMissing`] when no folder holds the
 crate.
 
-<a id="rustdoc-item-1013"></a>
+<a id="rustdoc-item-1029"></a>
 
 ### `resolve_editor_crates`
 
@@ -330,6 +361,28 @@ host may load tolerantly (`HostConfig::first_load_optional`).
 
 Returns [`ConfigError::RetiredEditorFrontend`] when an editor crate is
 tagged for the retired `pill_ui` frontend.
+
+<a id="rustdoc-item-1030"></a>
+
+### `resolve_editor_modules`
+
+```rust
+pub(in config) fn resolve_editor_modules(editor_root: &Path, editor_frontend: &str) -> Result<Vec<ExtensionConfig>, ConfigError>;
+```
+
+Returns the editor's own modules an editor host of `editor_frontend`
+loads, in directory name order.
+
+An editor module is a crate directly under `editor_root` whose manifest
+tags an editor frontend; an untagged crate there (an executable, the
+shared core) is not a module, and a crate tagged for another frontend
+loads only under that one. The `generated/` folder holds the wrappers
+and is never searched.
+
+#### Errors
+
+Returns [`ConfigError::RetiredEditorFrontend`] when a crate is tagged for
+the retired `pill_ui` frontend.
 
 ## Trait implementations
 

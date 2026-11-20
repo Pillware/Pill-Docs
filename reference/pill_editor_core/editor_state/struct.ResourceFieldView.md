@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-3585"></a>
+<a id="rustdoc-item-3878"></a>
 
 # Struct `pill_editor_core::editor_state::ResourceFieldView`
 
@@ -8,13 +8,13 @@
 pub struct ResourceFieldView;
 ```
 
-Source: `editor\pill_editor_core\src\editor_state\mod.rs:747`
+Source: `editor\pill_editor_core\src\editor_state\mod.rs:1094`
 
 One editable field of a resource.
 
 ## Fields
 
-<a id="rustdoc-item-3623"></a>
+<a id="rustdoc-item-4000"></a>
 
 ### `field`
 
@@ -24,7 +24,7 @@ field: String
 
 The field's name, the key a write addresses.
 
-<a id="rustdoc-item-3624"></a>
+<a id="rustdoc-item-4001"></a>
 
 ### `label`
 
@@ -34,7 +34,7 @@ label: String
 
 The row's label.
 
-<a id="rustdoc-item-3625"></a>
+<a id="rustdoc-item-4002"></a>
 
 ### `value`
 

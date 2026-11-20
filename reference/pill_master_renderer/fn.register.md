@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-3138"></a>
+<a id="rustdoc-item-3175"></a>
 
 # Function `pill_master_renderer::register`
 
@@ -8,7 +8,7 @@
 pub fn register(_engine: &mut pill_engine::Engine) -> u32;
 ```
 
-Source: `extensions\pill_master_renderer\pill_master_renderer\src\lib.rs:132`
+Source: `extensions\pill_master_renderer\modules\runtime\gpu\src\lib.rs:132`
 
 The registration half: declares nothing itself and returns zero.
 

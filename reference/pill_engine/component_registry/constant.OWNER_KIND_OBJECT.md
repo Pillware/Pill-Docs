@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-186"></a>
+<a id="rustdoc-item-193"></a>
 
 # Constant `pill_engine::component_registry::OWNER_KIND_OBJECT`
 
@@ -8,6 +8,6 @@
 pub const OWNER_KIND_OBJECT: &str = "object";
 ```
 
-Source: `engine\pill_engine\src\component_registry.rs:224`
+Source: `engine\pill_engine\src\component_registry.rs:231`
 
 A row whose owner is a `#[pill_mirror_object]`.

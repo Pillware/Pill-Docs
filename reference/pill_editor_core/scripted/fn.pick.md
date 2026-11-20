@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-7174"></a>
+<a id="rustdoc-item-9232"></a>
 
 # Function `pill_editor_core::scripted::pick`
 
@@ -8,7 +8,7 @@
 pub(in scripted) fn pick(cursor: &mut Cursor<'_>) -> Result<ScriptedCommand, ParseError>;
 ```
 
-Visibility: `{'restricted': {'parent': 7129, 'path': '::scripted'}}` · Source: `editor\pill_editor_core\src\scripted.rs:1031`
+Visibility: `{'restricted': {'parent': 9187, 'path': '::scripted'}}` · Source: `editor\pill_editor_core\src\scripted.rs:1169`
 
 `pick entity <entity> <component> <field>`: arm an entity reference row, so
 the next scene click names its reference.

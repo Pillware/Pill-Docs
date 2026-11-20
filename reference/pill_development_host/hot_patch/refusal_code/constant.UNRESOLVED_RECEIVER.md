@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-2340"></a>
+<a id="rustdoc-item-2414"></a>
 
 # Constant `pill_development_host::hot_patch::refusal_code::UNRESOLVED_RECEIVER`
 

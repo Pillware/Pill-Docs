@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1254"></a>
+<a id="rustdoc-item-1274"></a>
 
 # Function `pill_development_host::config::dioxus_wrapper_args_directory`
 
@@ -8,7 +8,7 @@
 pub(in config) fn dioxus_wrapper_args_directory() -> std::path::PathBuf;
 ```
 
-Visibility: `{'restricted': {'parent': 821, 'path': '::config'}}` · Source: `hosting\pill_development_host\src\config.rs:1437`
+Visibility: `{'restricted': {'parent': 823, 'path': '::config'}}` · Source: `hosting\pill_development_host\src\config.rs:1644`
 
 Directory dx's wrapper writes captured member rustc invocations into.
 

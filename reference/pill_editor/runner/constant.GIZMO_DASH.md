@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1137"></a>
+<a id="rustdoc-item-1584"></a>
 
 # Constant `pill_editor::runner::GIZMO_DASH`
 
@@ -8,7 +8,7 @@
 pub(in runner) const GIZMO_DASH: f32 = 0.05;
 ```
 
-Visibility: `{'restricted': {'parent': 483, 'path': '::runner'}}` · Source: `editor\pill_editor\src\runner\mod.rs:191`
+Visibility: `{'restricted': {'parent': 539, 'path': '::runner'}}` · Source: `editor\pill_editor\src\runner\mod.rs:230`
 
 One dash (and one gap) of the translation displacement line, as a
 fraction of the handle length.

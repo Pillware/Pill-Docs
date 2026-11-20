@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-901"></a>
+<a id="rustdoc-item-897"></a>
 
 # Struct `pill_master_renderer::overlay::font::GlyphQuad`
 
@@ -8,13 +8,13 @@
 pub(in overlay) struct GlyphQuad;
 ```
 
-Visibility: `{'restricted': {'parent': 858, 'path': '::overlay'}}` · Source: `extensions\pill_master_renderer\pill_master_renderer\src\overlay\font.rs:140`
+Visibility: `{'restricted': {'parent': 854, 'path': '::overlay'}}` · Source: `extensions\pill_master_renderer\modules\runtime\gpu\src\overlay\font.rs:140`
 
 One glyph quad: where it goes on screen and which atlas cell it shows.
 
 ## Fields
 
-<a id="rustdoc-item-898"></a>
+<a id="rustdoc-item-894"></a>
 
 ### `origin`
 
@@ -24,7 +24,7 @@ origin: [f32; 2]
 
 Left and top of the quad on screen, in pixels.
 
-<a id="rustdoc-item-899"></a>
+<a id="rustdoc-item-895"></a>
 
 ### `size`
 
@@ -34,7 +34,7 @@ size: [f32; 2]
 
 Width and height of the quad on screen, in pixels.
 
-<a id="rustdoc-item-900"></a>
+<a id="rustdoc-item-896"></a>
 
 ### `atlas_origin`
 

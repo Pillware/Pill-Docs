@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1211"></a>
+<a id="rustdoc-item-1221"></a>
 
 # Function `pill_core::profiling::enabled::client`
 

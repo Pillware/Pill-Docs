@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1339"></a>
+<a id="rustdoc-item-1349"></a>
 
 # Struct `pill_core::profiling::enabled::NonContinuousFrame`
 
@@ -14,7 +14,7 @@ RAII guard for a non-continuous frame. The frame ends on drop.
 
 ## Fields
 
-<a id="rustdoc-item-1337"></a>
+<a id="rustdoc-item-1347"></a>
 
 ### `tracy_frame`
 

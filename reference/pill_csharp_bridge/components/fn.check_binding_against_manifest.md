@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-894"></a>
+<a id="rustdoc-item-916"></a>
 
 # Function `pill_csharp_bridge::components::check_binding_against_manifest`
 

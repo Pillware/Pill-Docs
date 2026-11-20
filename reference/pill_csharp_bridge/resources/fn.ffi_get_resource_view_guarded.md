@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-2039"></a>
+<a id="rustdoc-item-2064"></a>
 
 # Function `pill_csharp_bridge::resources::ffi_get_resource_view_guarded`
 
@@ -8,7 +8,7 @@
 pub(in resources) fn ffi_get_resource_view_guarded(stable_id_low: u64, stable_id_high: u64, access_mode: u8, view_output: *mut super::abi::ResourceView) -> u8;
 ```
 
-Visibility: `{'restricted': {'parent': 1993, 'path': '::resources'}}` · Source: `csharp\pill_csharp_bridge\src\resources.rs:802`
+Visibility: `{'restricted': {'parent': 2018, 'path': '::resources'}}` · Source: `csharp\pill_csharp_bridge\src\resources.rs:802`
 
 Serves one resource's bytes to a managed `Res<T>` or `ResMut<T>`.
 

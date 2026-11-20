@@ -8,7 +8,7 @@
 pub(crate) fn mirror_resource(attribute: proc_macro2::TokenStream, item: syn::Item) -> syn::Result<proc_macro2::TokenStream>;
 ```
 
-Visibility: `crate` · Source: `engine\pill_engine_macros\src\mirror.rs:1428`
+Visibility: `crate` · Source: `engine\pill_engine_macros\src\mirror.rs:1435`
 
 Expand `#[pill_mirror_resource("shared::Name")]` on a struct.
 
@@ -16,6 +16,10 @@ Implements `Resource` with that shared name, which is the identity C#
 computes for the generated marker type. It also declares the type, so its
 `#[pill_mirror_impl]` methods become extension methods on `Res<T>` and
 `ResMut<T>`, and a mirrored function can take it as `&T` or `&mut T`.
+
+The emitted `Resource` impl resolves a `Clone` probe at the type's own site,
+so the editor's play mode can copy the value at Play and put it back at
+Stop. A mirrored resource that does not derive `Clone` refuses Play by name.
 
 ## Errors
 

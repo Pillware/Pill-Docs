@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-5771"></a>
+<a id="rustdoc-item-7736"></a>
 
 # Struct `pill_editor_core::panels::PanelContext`
 
@@ -18,7 +18,7 @@ dangle when that module unloads.
 
 ## Fields
 
-<a id="rustdoc-item-6022"></a>
+<a id="rustdoc-item-7987"></a>
 
 ### `frames_per_second`
 
@@ -28,7 +28,7 @@ frames_per_second: f32
 
 The editor's smoothed frame rate.
 
-<a id="rustdoc-item-6023"></a>
+<a id="rustdoc-item-7988"></a>
 
 ### `selected_entity`
 
@@ -38,7 +38,7 @@ selected_entity: Option<pill_engine::Entity>
 
 The selected entity, when there is one.
 
-<a id="rustdoc-item-6024"></a>
+<a id="rustdoc-item-7989"></a>
 
 ### `entities`
 
@@ -48,7 +48,7 @@ entities: &'a [PanelEntityRow]
 
 The world's entity rows, copied for the pass that draws the panels.
 
-<a id="rustdoc-item-6025"></a>
+<a id="rustdoc-item-7990"></a>
 
 ### `detail`
 
@@ -58,7 +58,7 @@ detail: Option<&'a PanelEntityDetail>
 
 The selected entity's components, when there is a selection.
 
-<a id="rustdoc-item-6026"></a>
+<a id="rustdoc-item-7991"></a>
 
 ### `window`
 
@@ -69,7 +69,7 @@ window: Option<&'a str>
 The window this draw is for: `Some` when the panel is drawing one of
 its own windows, `None` when it is drawing its docked tab.
 
-<a id="rustdoc-item-6027"></a>
+<a id="rustdoc-item-7992"></a>
 
 ### `requested_window`
 
@@ -80,7 +80,7 @@ requested_window: Option<&'a str>
 A window id the editor asked this panel to open - the scripted channel's
 stand-in for clicking the panel's own button.
 
-<a id="rustdoc-item-6028"></a>
+<a id="rustdoc-item-7993"></a>
 
 ### `answer`
 
@@ -91,7 +91,7 @@ answer: Option<&'a PanelAnswer>
 The answer a modal window took, for one draw: the panel acts on it and
 the shell forgets it afterwards.
 
-<a id="rustdoc-item-5792"></a>
+<a id="rustdoc-item-7757"></a>
 
 ### `commands`
 

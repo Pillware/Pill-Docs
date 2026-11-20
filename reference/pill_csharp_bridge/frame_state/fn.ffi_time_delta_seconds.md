@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1199"></a>
+<a id="rustdoc-item-1221"></a>
 
 # Function `pill_csharp_bridge::frame_state::ffi_time_delta_seconds`
 

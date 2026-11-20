@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1115"></a>
+<a id="rustdoc-item-1125"></a>
 
 # Function `pill_core::native_buffer::header_size`
 
@@ -15,4 +15,4 @@ reference-count header.
 
 The result is at least one `usize`, so the header itself is aligned. It is
 also a multiple of `element_align` for the power-of-two alignments
-[`allocate`](fn.allocate.md#rustdoc-item-1114) accepts, which keeps the element area aligned.
+[`allocate`](fn.allocate.md#rustdoc-item-1124) accepts, which keeps the element area aligned.

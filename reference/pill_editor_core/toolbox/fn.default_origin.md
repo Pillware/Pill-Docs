@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-8480"></a>
+<a id="rustdoc-item-10543"></a>
 
 # Function `pill_editor_core::toolbox::default_origin`
 

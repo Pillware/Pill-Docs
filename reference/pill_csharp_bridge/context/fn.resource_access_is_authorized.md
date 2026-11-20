@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1114"></a>
+<a id="rustdoc-item-1136"></a>
 
 # Function `pill_csharp_bridge::context::resource_access_is_authorized`
 
@@ -10,7 +10,7 @@ pub(crate) fn resource_access_is_authorized(key: super::components::StableCompon
 
 Visibility: `crate` · Source: `csharp\pill_csharp_bridge\src\context.rs:441`
 
-The resource counterpart of [`access_is_authorized`](fn.access_is_authorized.md#rustdoc-item-1112).
+The resource counterpart of [`access_is_authorized`](fn.access_is_authorized.md#rustdoc-item-1134).
 
 This is a separate function instead of a flag on the component check
 because the two look at different declarations that happen to share one key

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-682"></a>
+<a id="rustdoc-item-678"></a>
 
 # Struct `pill_master_renderer::preview::MeshParameters`
 
@@ -8,14 +8,14 @@
 pub(in preview) struct MeshParameters;
 ```
 
-Visibility: `{'restricted': {'parent': 592, 'path': '::preview'}}` · Source: `extensions\pill_master_renderer\pill_master_renderer\src\preview.rs:117`
+Visibility: `{'restricted': {'parent': 589, 'path': '::preview'}}` · Source: `extensions\pill_master_renderer\modules\runtime\gpu\src\preview.rs:117`
 
 The uniform a mesh preview writes. It carries the camera framing and the
 colour the mesh is shaded in.
 
 ## Fields
 
-<a id="rustdoc-item-680"></a>
+<a id="rustdoc-item-676"></a>
 
 ### `transform`
 
@@ -25,7 +25,7 @@ transform: [[f32; 4]; 4]
 
 Projection times view, aimed at the centre of the mesh's bounds.
 
-<a id="rustdoc-item-681"></a>
+<a id="rustdoc-item-677"></a>
 
 ### `color`
 

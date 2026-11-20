@@ -8,7 +8,7 @@
 pub(in clipboard) const READ_ATTEMPTS: usize = 10;
 ```
 
-Visibility: `{'restricted': {'parent': 1, 'path': '::clipboard'}}` · Source: `editor\pill_editor\src\clipboard.rs:56`
+Visibility: `{'restricted': {'parent': 1, 'path': '::clipboard'}}` · Source: `editor\pill_editor\src\clipboard.rs:74`
 
 How many attempts a read makes to open a busy clipboard before it reports
 failure.

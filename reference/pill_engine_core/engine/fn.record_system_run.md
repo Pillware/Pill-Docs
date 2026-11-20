@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-4365"></a>
+<a id="rustdoc-item-6082"></a>
 
 # Function `pill_engine_core::engine::record_system_run`
 
@@ -8,7 +8,7 @@
 pub(in engine) fn record_system_run(registered_system: &mut RegisteredSystem, started_at_tick: u32, elapsed_nanos: u64);
 ```
 
-Visibility: `{'restricted': {'parent': 4158, 'path': '::engine'}}` · Source: `engine\pill_engine_core\src\engine.rs:1775`
+Visibility: `{'restricted': {'parent': 5715, 'path': '::engine'}}` · Source: `engine\pill_engine_core\src\engine.rs:2439`
 
 Records what every dispatch path owes a system that just ran.
 

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-504"></a>
+<a id="rustdoc-item-501"></a>
 
 # Struct `pill_master_renderer::rendering_resources_manager::GpuColumn`
 
@@ -8,7 +8,7 @@
 pub(crate) struct GpuColumn<H>;
 ```
 
-Visibility: `crate` · Source: `extensions\pill_master_renderer\pill_master_renderer\src\rendering_resources_manager.rs:68`
+Visibility: `crate` · Source: `extensions\pill_master_renderer\modules\runtime\gpu\src\rendering_resources_manager.rs:68`
 
 One asset type's GPU objects, keyed by asset key.
 
@@ -21,7 +21,7 @@ change - which is what a material asks for when its shader or texture moved.
 
 ## Fields
 
-<a id="rustdoc-item-2055"></a>
+<a id="rustdoc-item-2098"></a>
 
 ### `entries`
 
@@ -33,7 +33,7 @@ _No documentation provided._
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-2057"></a>
+<a id="rustdoc-item-2100"></a>
 
 ### `new`
 
@@ -43,7 +43,7 @@ pub(crate) fn new() -> Self;
 
 Creates a column that holds no objects yet.
 
-<a id="rustdoc-item-2058"></a>
+<a id="rustdoc-item-2101"></a>
 
 ### `handle`
 
@@ -53,7 +53,7 @@ pub(crate) fn handle(self: &Self, key: u64) -> Option<H>;
 
 The handle of the object behind `key`, when one is there.
 
-<a id="rustdoc-item-2059"></a>
+<a id="rustdoc-item-2102"></a>
 
 ### `is_current`
 
@@ -64,7 +64,7 @@ pub(in rendering_resources_manager) fn is_current(self: &Self, key: u64, version
 Returns whether `key`'s object was built from content version
 `version`.
 
-<a id="rustdoc-item-2060"></a>
+<a id="rustdoc-item-2103"></a>
 
 ### `insert`
 
@@ -74,7 +74,7 @@ pub(in rendering_resources_manager) fn insert(self: &mut Self, key: u64, handle:
 
 Records `handle` as `key`'s object, built from `version`.
 
-<a id="rustdoc-item-2061"></a>
+<a id="rustdoc-item-2104"></a>
 
 ### `remove`
 
@@ -85,7 +85,7 @@ pub(in rendering_resources_manager) fn remove(self: &mut Self, key: u64) -> Opti
 Removes `key`'s entry and hands back its handle, for the rebuild that
 replaces or drops the object.
 
-<a id="rustdoc-item-2062"></a>
+<a id="rustdoc-item-2105"></a>
 
 ### `invalidate`
 
@@ -96,7 +96,7 @@ pub(in rendering_resources_manager) fn invalidate(self: &mut Self, key: u64);
 Keeps `key`'s handle but forgets the version, so the next sync rebuilds
 it from the assets it depends on as they are now.
 
-<a id="rustdoc-item-2063"></a>
+<a id="rustdoc-item-2106"></a>
 
 ### `keys`
 
@@ -106,7 +106,7 @@ pub(in rendering_resources_manager) fn keys(self: &Self) -> impl Iterator<Item =
 
 Returns every key the column holds.
 
-<a id="rustdoc-item-2064"></a>
+<a id="rustdoc-item-2107"></a>
 
 ### `invalidate_all`
 

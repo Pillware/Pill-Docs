@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-579"></a>
+<a id="rustdoc-item-580"></a>
 
 # Function `pill_development_host::build_runner::confirm_staged_artifacts`
 
@@ -8,7 +8,7 @@
 pub(in build_runner) fn confirm_staged_artifacts(workspace_root: &std::path::Path, module_name: &str, watch_directory: &str, build_command: &[String], produced: &[std::path::PathBuf]) -> Result<(), pill_core::error::BuildError>;
 ```
 
-Visibility: `{'restricted': {'parent': 545, 'path': '::build_runner'}}` · Source: `hosting\pill_development_host\src\build_runner.rs:409`
+Visibility: `{'restricted': {'parent': 546, 'path': '::build_runner'}}` · Source: `hosting\pill_development_host\src\build_runner.rs:409`
 
 Confirms that a staged artifact set still matches the stamp just written for
 it.

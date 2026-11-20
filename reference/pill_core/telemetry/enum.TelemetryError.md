@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1737"></a>
+<a id="rustdoc-item-1747"></a>
 
 # Enum `pill_core::telemetry::TelemetryError`
 
@@ -17,7 +17,7 @@ the failure, so a caller can show a precise message.
 
 ## Variants
 
-<a id="rustdoc-item-1735"></a>
+<a id="rustdoc-item-1745"></a>
 
 ### `InvalidFilter`
 
@@ -27,7 +27,7 @@ InvalidFilter
 
 A complete `RUST_LOG`-style filter string could not be parsed.
 
-<a id="rustdoc-item-1736"></a>
+<a id="rustdoc-item-1746"></a>
 
 ### `InvalidDirective`
 
@@ -37,7 +37,7 @@ InvalidDirective
 
 One `target=level` directive could not be parsed.
 
-<a id="rustdoc-item-1955"></a>
+<a id="rustdoc-item-1965"></a>
 
 ### `Reload`
 
@@ -47,7 +47,7 @@ Reload
 
 A live filter reload failed.
 
-<a id="rustdoc-item-1919"></a>
+<a id="rustdoc-item-1929"></a>
 
 ### `FileOutput`
 
@@ -57,7 +57,7 @@ FileOutput
 
 The file layer could not be opened.
 
-<a id="rustdoc-item-1920"></a>
+<a id="rustdoc-item-1930"></a>
 
 ### `InstallFailed`
 

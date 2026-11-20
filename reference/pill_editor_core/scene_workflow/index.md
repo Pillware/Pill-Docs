@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-6696"></a>
+<a id="rustdoc-item-8735"></a>
 
 # Module `pill_editor_core::scene_workflow`
 
@@ -33,18 +33,18 @@ previous document owned.
 ## Module contents
 
 ### Structs
-- [`OpenScene`](struct.OpenScene.md#rustdoc-item-6617) — Which `.scene` file the editor's world came from: its path and its guid.
-- [`SceneSession`](struct.SceneSession.md#rustdoc-item-6657) — The editor's document state: the scene file that is open and the unsaved
+- [`OpenScene`](struct.OpenScene.md#rustdoc-item-8655) — Which `.scene` file the editor's world came from: its path and its guid.
+- [`SceneSession`](struct.SceneSession.md#rustdoc-item-8695) — The editor's document state: the scene file that is open and the unsaved
 
 ### Functions
-- [`clear_world`](fn.clear_world.md#rustdoc-item-6698) — Destroy every entity and return how many there were. A destroy that fails
-- [`default_save_path`](fn.default_save_path.md#rustdoc-item-6702) — The path a Save As defaults to: the open scene's path, or
-- [`existing_guid`](fn.existing_guid.md#rustdoc-item-6695) — The guid the scene file at `path` already carries, or `None` when it cannot
-- [`fresh_guid`](fn.fresh_guid.md#rustdoc-item-6697) — A fresh guid for a scene file that does not exist yet.
-- [`is_document_command`](fn.is_document_command.md#rustdoc-item-6700) — Whether `command` changes which scene document is open. The scene commands
-- [`mark_dirty`](fn.mark_dirty.md#rustdoc-item-6689) — Mark the document as changed since it was last saved or opened.
-- [`new_scene`](fn.new_scene.md#rustdoc-item-6690) — Start an empty scene: every entity is removed, no file is open, and the
-- [`open_scene`](fn.open_scene.md#rustdoc-item-6691) — Open the scene at `path`, replacing the world's entities.
-- [`reset_document_state`](fn.reset_document_state.md#rustdoc-item-6699) — Forget the selection and the recorded history. Both name entities that
-- [`scene_file_name`](fn.scene_file_name.md#rustdoc-item-6701) — Add the `.scene` extension to `requested_name` when it has none.
-- [`write_scene`](fn.write_scene.md#rustdoc-item-6694) — Write the world to the open scene, or to `path` for a save-as.
+- [`clear_world`](fn.clear_world.md#rustdoc-item-8737) — Destroy every entity and return how many there were. A destroy that fails
+- [`default_save_path`](fn.default_save_path.md#rustdoc-item-8741) — The path a Save As defaults to: the open scene's path, or
+- [`existing_guid`](fn.existing_guid.md#rustdoc-item-8734) — The guid the scene file at `path` already carries, or `None` when it cannot
+- [`fresh_guid`](fn.fresh_guid.md#rustdoc-item-8736) — A fresh guid for a scene file that does not exist yet.
+- [`is_document_command`](fn.is_document_command.md#rustdoc-item-8739) — Whether `command` changes which scene document is open. The scene commands
+- [`mark_dirty`](fn.mark_dirty.md#rustdoc-item-8728) — Mark the document as changed since it was last saved or opened.
+- [`new_scene`](fn.new_scene.md#rustdoc-item-8729) — Start an empty scene: every entity is removed, no file is open, and the
+- [`open_scene`](fn.open_scene.md#rustdoc-item-8730) — Open the scene at `path`, replacing the world's entities.
+- [`reset_document_state`](fn.reset_document_state.md#rustdoc-item-8738) — Forget the selection and the recorded history. Both name entities that
+- [`scene_file_name`](fn.scene_file_name.md#rustdoc-item-8740) — Add the `.scene` extension to `requested_name` when it has none.
+- [`write_scene`](fn.write_scene.md#rustdoc-item-8733) — Write the world to the open scene, or to `path` for a save-as.

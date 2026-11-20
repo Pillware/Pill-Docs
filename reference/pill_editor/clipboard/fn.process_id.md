@@ -8,7 +8,7 @@
 pub fn process_id() -> u32;
 ```
 
-Source: `editor\pill_editor\src\clipboard.rs:296`
+Source: `editor\pill_editor\src\clipboard.rs:322`
 
 Returns the id of this process, which the clipboard log lines carry.
 

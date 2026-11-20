@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-103"></a>
+<a id="rustdoc-item-106"></a>
 
 # Struct `pill_renderer_api::api::RenderCapabilities`
 
@@ -24,7 +24,7 @@ static slice would point into that image after a reload unmaps it.
 
 ## Fields
 
-<a id="rustdoc-item-97"></a>
+<a id="rustdoc-item-100"></a>
 
 ### `max_texture_size`
 
@@ -34,7 +34,7 @@ max_texture_size: u32
 
 Largest supported 2D texture dimension, in texels.
 
-<a id="rustdoc-item-98"></a>
+<a id="rustdoc-item-101"></a>
 
 ### `max_buffer_bytes`
 
@@ -44,7 +44,7 @@ max_buffer_bytes: u64
 
 Largest single GPU buffer the device accepts, in bytes.
 
-<a id="rustdoc-item-99"></a>
+<a id="rustdoc-item-102"></a>
 
 ### `hdr`
 
@@ -56,7 +56,7 @@ Whether the surface presents high-dynamic-range output (wider range of
 brightness than a normal display shows). No renderer in this
 repository reports `true`.
 
-<a id="rustdoc-item-100"></a>
+<a id="rustdoc-item-103"></a>
 
 ### `consumed_components`
 
@@ -83,15 +83,15 @@ a renderer that reads nothing, like the headless stub.
 - `TryFrom<U>`
 - `Any`
 - `ToOwned`
+- `CastableFrom<ST, Uninit, Uninit>`
+- `CastableFrom<ST, Initialized, Initialized>`
+- `Read<Exclusive, BecauseExclusive>`
 - `Instrument`
 - `WithSubscriber`
 - `IntoEither`
 - `Pointable`
 - `OwoColorize`
 - `ErasedDestructor`
-- `CastableFrom<ST, Uninit, Uninit>`
-- `CastableFrom<ST, Initialized, Initialized>`
-- `Read<Exclusive, BecauseExclusive>`
 - `Debug`
 - `Clone`
 - `Default`

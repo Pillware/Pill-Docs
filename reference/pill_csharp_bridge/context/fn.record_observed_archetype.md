@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1111"></a>
+<a id="rustdoc-item-1133"></a>
 
 # Function `pill_csharp_bridge::context::record_observed_archetype`
 

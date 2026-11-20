@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-3077"></a>
+<a id="rustdoc-item-3333"></a>
 
 # Constant `pill_development_host::native_library::STAGING_GRACE_PERIOD`
 
@@ -8,7 +8,7 @@
 pub(in native_library) const STAGING_GRACE_PERIOD: std::time::Duration = _;
 ```
 
-Visibility: `{'restricted': {'parent': 3075, 'path': '::native_library'}}` · Source: `hosting\pill_development_host\src\native_library.rs:100`
+Visibility: `{'restricted': {'parent': 3326, 'path': '::native_library'}}` · Source: `hosting\pill_development_host\src\native_library.rs:174`
 
 How long another process's staging directory is left alone after its last
 write.
@@ -16,7 +16,7 @@ write.
 This is the liveness check. A running host stages a fresh copy of every DLL
 it loads or reloads, so its directory's modification time keeps moving. One
 that has not been written to for this long belonged to a process that is
-gone. [`process_is_alive`](fn.process_is_alive.md#rustdoc-item-3076) answers exactly on Linux, where the probe needs
+gone. [`process_is_alive`](fn.process_is_alive.md#rustdoc-item-3332) answers exactly on Linux, where the probe needs
 no process-table walk; everywhere else it reports "not alive", and the
 clock decides.
 

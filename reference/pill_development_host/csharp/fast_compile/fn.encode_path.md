@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1421"></a>
+<a id="rustdoc-item-1496"></a>
 
 # Function `pill_development_host::csharp::fast_compile::encode_path`
 
@@ -8,7 +8,7 @@
 pub(in csharp::fast_compile) fn encode_path(path: &std::path::Path) -> Option<std::ffi::CString>;
 ```
 
-Visibility: `{'restricted': {'parent': 1342, 'path': '::csharp::fast_compile'}}` · Source: `hosting\pill_development_host\src\csharp\fast_compile.rs:384`
+Visibility: `{'restricted': {'parent': 1417, 'path': '::csharp::fast_compile'}}` · Source: `hosting\pill_development_host\src\csharp\fast_compile.rs:384`
 
 Encode a path as NUL-terminated UTF-8 for the managed entry points.
 

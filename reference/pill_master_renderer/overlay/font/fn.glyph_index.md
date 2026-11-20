@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-943"></a>
+<a id="rustdoc-item-939"></a>
 
 # Function `pill_master_renderer::overlay::font::glyph_index`
 
@@ -8,7 +8,7 @@
 pub(in overlay::font) fn glyph_index(character: char) -> usize;
 ```
 
-Visibility: `{'restricted': {'parent': 861, 'path': '::overlay::font'}}` · Source: `extensions\pill_master_renderer\pill_master_renderer\src\overlay\font.rs:223`
+Visibility: `{'restricted': {'parent': 857, 'path': '::overlay::font'}}` · Source: `extensions\pill_master_renderer\modules\runtime\gpu\src\overlay\font.rs:223`
 
 The glyph to draw for `character`.
 

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-2678"></a>
+<a id="rustdoc-item-2752"></a>
 
 # Enum `pill_development_host::reload::FirstLoadFailure`
 
@@ -14,7 +14,7 @@ What a failed first load of an artifact costs the world.
 
 ## Variants
 
-<a id="rustdoc-item-3601"></a>
+<a id="rustdoc-item-3857"></a>
 
 ### `ClearWorld`
 
@@ -22,11 +22,11 @@ What a failed first load of an artifact costs the world.
 ClearWorld
 ```
 
-Replace the whole world ([`clear_failed_generation`](fn.clear_failed_generation.md#rustdoc-item-3600)). This is the only
+Replace the whole world ([`clear_failed_generation`](fn.clear_failed_generation.md#rustdoc-item-3856)). This is the only
 safe answer for an artifact that may own data: its columns and resources
 carry drop functions from the image that is about to be unloaded.
 
-<a id="rustdoc-item-3602"></a>
+<a id="rustdoc-item-3858"></a>
 
 ### `ClearSystemsOnly`
 
@@ -44,7 +44,7 @@ never unloaded, so anything it did touch still points at loaded code.
 The renderer module first loads when the window opens, after the project
 has filled the world, so wiping the world there would lose the scene.
 
-<a id="rustdoc-item-3603"></a>
+<a id="rustdoc-item-3859"></a>
 
 ### `ClearGenerationData`
 

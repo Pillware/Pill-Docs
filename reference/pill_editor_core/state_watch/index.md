@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-8050"></a>
+<a id="rustdoc-item-10112"></a>
 
 # Module `pill_editor_core::state_watch`
 
@@ -35,8 +35,8 @@ the theme up again instead of caching a document's text, so
 ## Module contents
 
 ### Structs
-- [`FileStamp`](struct.FileStamp.md#rustdoc-item-8052) — The metadata of a state file, which the editor compares from frame to frame
-- [`StateFileWatch`](struct.StateFileWatch.md#rustdoc-item-8099) — One state file the editor polls.
+- [`FileStamp`](struct.FileStamp.md#rustdoc-item-10114) — The metadata of a state file, which the editor compares from frame to frame
+- [`StateFileWatch`](struct.StateFileWatch.md#rustdoc-item-10161) — One state file the editor polls.
 
 ### Constants
-- [`STATE_FILE_POLL_FRAMES`](constant.STATE_FILE_POLL_FRAMES.md#rustdoc-item-8047) — The number of frames after which a state file is re-read even when its
+- [`STATE_FILE_POLL_FRAMES`](constant.STATE_FILE_POLL_FRAMES.md#rustdoc-item-10109) — The number of frames after which a state file is re-read even when its

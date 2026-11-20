@@ -1,10 +1,10 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-3090"></a>
+<a id="rustdoc-item-3127"></a>
 
 # Module `pill_master_renderer::module_entry`
 
-Source: `extensions\pill_master_renderer\pill_master_renderer\src\module_entry.rs:1`
+Source: `extensions\pill_master_renderer\modules\runtime\gpu\src\module_entry.rs:1`
 
 The C ABI a host drives this renderer through when it loads it as a module.
 
@@ -45,5 +45,5 @@ two symbols.
 ## Module contents
 
 ### Functions
-- [`attach_to_window`](fn.attach_to_window.md#rustdoc-item-3088) — Builds a renderer on the window `window` describes.
-- [`detach_backend`](fn.detach_backend.md#rustdoc-item-3087) — Drops a renderer returned by [`attach_to_window`], inside this image.
+- [`attach_to_window`](fn.attach_to_window.md#rustdoc-item-3125) — Builds a renderer on the window `window` describes.
+- [`detach_backend`](fn.detach_backend.md#rustdoc-item-3124) — Drops a renderer returned by [`attach_to_window`], inside this image.

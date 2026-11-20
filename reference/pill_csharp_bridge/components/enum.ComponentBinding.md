@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-687"></a>
+<a id="rustdoc-item-708"></a>
 
 # Enum `pill_csharp_bridge::components::ComponentBinding`
 
@@ -19,7 +19,7 @@ names no Rust component type.
 
 ## Variants
 
-<a id="rustdoc-item-815"></a>
+<a id="rustdoc-item-837"></a>
 
 ### `Managed`
 
@@ -29,7 +29,7 @@ Managed
 
 A managed layout stored as raw bytes.
 
-<a id="rustdoc-item-820"></a>
+<a id="rustdoc-item-842"></a>
 
 ### `ModuleNative`
 
@@ -48,7 +48,7 @@ rows.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-821"></a>
+<a id="rustdoc-item-843"></a>
 
 ### `component_id`
 

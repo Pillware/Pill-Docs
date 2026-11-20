@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-6385"></a>
+<a id="rustdoc-item-8423"></a>
 
 # Constant `pill_editor_core::previews::RENDER_PREVIEWS_KEY`
 

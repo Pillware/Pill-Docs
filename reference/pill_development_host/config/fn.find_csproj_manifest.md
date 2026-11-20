@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1264"></a>
+<a id="rustdoc-item-1284"></a>
 
 # Function `pill_development_host::config::find_csproj_manifest`
 
@@ -8,7 +8,7 @@
 pub(in config) fn find_csproj_manifest(project_root: &std::path::Path) -> Result<std::path::PathBuf, pill_core::error::ConfigError>;
 ```
 
-Visibility: `{'restricted': {'parent': 821, 'path': '::config'}}` · Source: `hosting\pill_development_host\src\config.rs:1618`
+Visibility: `{'restricted': {'parent': 823, 'path': '::config'}}` · Source: `hosting\pill_development_host\src\config.rs:1825`
 
 Finds a `.csproj` manifest inside a project directory.
 

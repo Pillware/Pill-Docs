@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-2098"></a>
+<a id="rustdoc-item-2172"></a>
 
 # Enum `pill_development_host::hot_patch::routes::PatchCopy`
 
@@ -8,19 +8,19 @@
 pub(in hot_patch::routes) enum PatchCopy<'a> { ... }
 ```
 
-Visibility: `{'restricted': {'parent': 2087, 'path': '::hot_patch::routes'}}` · Source: `hosting\pill_development_host\src\hot_patch\routes.rs:66`
+Visibility: `{'restricted': {'parent': 2161, 'path': '::hot_patch::routes'}}` · Source: `hosting\pill_development_host\src\hot_patch\routes.rs:66`
 
 One loaded image that may carry a copy of the function being patched.
 
 A crate linked into several artifacts is compiled into each of them, and a
 generated patch links its own copy of whatever its body calls. Both kinds
 therefore hold code a replacement has to reach. Treating the two the same
-way here is what lets one traversal ([`every_loaded_copy`](fn.every_loaded_copy.md#rustdoc-item-2097)) serve every
+way here is what lets one traversal ([`every_loaded_copy`](fn.every_loaded_copy.md#rustdoc-item-2171)) serve every
 route.
 
 ## Variants
 
-<a id="rustdoc-item-2093"></a>
+<a id="rustdoc-item-2167"></a>
 
 ### `Artifact`
 
@@ -30,7 +30,7 @@ Artifact
 
 A module or project DLL the host loaded.
 
-<a id="rustdoc-item-2096"></a>
+<a id="rustdoc-item-2170"></a>
 
 ### `Patch`
 
@@ -42,7 +42,7 @@ A patch image compiled earlier in this session.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-2099"></a>
+<a id="rustdoc-item-2173"></a>
 
 ### `install_plain_function`
 
@@ -61,7 +61,7 @@ failure.
 Fails for the same reasons as the wrapped image: it cannot be asked for
 its installer, or it refuses the replacement.
 
-<a id="rustdoc-item-2100"></a>
+<a id="rustdoc-item-2174"></a>
 
 ### `reset_plain_function`
 
@@ -81,7 +81,7 @@ that declares nothing.
 Fails when the image cannot be asked for its reset export, or refuses
 for a reason of its own.
 
-<a id="rustdoc-item-2101"></a>
+<a id="rustdoc-item-2175"></a>
 
 ### `function_address`
 
@@ -96,7 +96,7 @@ The declaration is `None` when the image cannot report one. The prologue
 gate refuses that case: a missing declaration must never pass as
 "nothing to check".
 
-<a id="rustdoc-item-2102"></a>
+<a id="rustdoc-item-2176"></a>
 
 ### `extent_coverage`
 

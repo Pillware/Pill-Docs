@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-178"></a>
+<a id="rustdoc-item-181"></a>
 
 # Trait `pill_renderer_api::api::PillRenderer`
 
@@ -13,7 +13,7 @@ Source: `rendering\pill_renderer_api\src\api.rs:144`
 The contract a renderer implements and a frontend drives once per frame.
 
 Boxing it as `Box<dyn PillRenderer>` lets a frontend swap the wgpu backend
-for [`HeadlessRenderer`](struct.HeadlessRenderer.md#rustdoc-item-204) without touching its frame loop.
+for [`HeadlessRenderer`](struct.HeadlessRenderer.md#rustdoc-item-207) without touching its frame loop.
 
 A wrapper that delegates to another renderer - the host's module renderer
 does - must forward every method, including the ones with defaults. A
@@ -22,7 +22,7 @@ renderer's, and nothing reports the omission.
 
 ## Required and provided items
 
-<a id="rustdoc-item-180"></a>
+<a id="rustdoc-item-183"></a>
 
 ### `capabilities`
 
@@ -35,7 +35,7 @@ Returns the limits of the device the renderer draws on.
 The default returns zeroed limits, which is all a renderer with no GPU
 behind it can say.
 
-<a id="rustdoc-item-181"></a>
+<a id="rustdoc-item-184"></a>
 
 ### `metrics`
 
@@ -48,7 +48,7 @@ Returns the statistics of the most recent frame that drew.
 The counts describe the last [`Self::render`](#rustdoc-item-2) call that drew a frame;
 before the first such frame they are all zero.
 
-<a id="rustdoc-item-183"></a>
+<a id="rustdoc-item-186"></a>
 
 ### `resize_surface`
 
@@ -61,13 +61,13 @@ physical pixels. An id the renderer does not draw does nothing.
 
 A zero width or height means the surface is minimized, and frames skip
 it until a usable size arrives. The primary surface is resized through
-its own id ([`SurfaceId::PRIMARY`](../surface/struct.SurfaceId.md#rustdoc-item-182)) like any other.
+its own id ([`SurfaceId::PRIMARY`](../surface/struct.SurfaceId.md#rustdoc-item-185)) like any other.
 
 This method has no default on purpose: a renderer that forgot to
 forward a resize would keep drawing at the old size, with nothing in
 the log to say why.
 
-<a id="rustdoc-item-185"></a>
+<a id="rustdoc-item-188"></a>
 
 ### `set_surface_viewport`
 
@@ -78,7 +78,7 @@ fn set_surface_viewport(self: &mut Self, id: SurfaceId, viewport: Option<RenderV
 Restricts drawing to a sub-region of surface `id`.
 
 `None` restores full-surface rendering. Required for the same reason
-[`Self::resize_surface`](#rustdoc-item-183) is.
+[`Self::resize_surface`](#rustdoc-item-186) is.
 
 <a id="rustdoc-item-2"></a>
 
@@ -99,14 +99,14 @@ it last uploaded, and the borrow lasts for the call.
 
 #### Errors
 
-Fails with [`RendererError`](../error/enum.RendererError.md#rustdoc-item-179) when the GPU work itself fails: a lost or
+Fails with [`RendererError`](../error/enum.RendererError.md#rustdoc-item-182) when the GPU work itself fails: a lost or
 out-of-memory surface, a renderer resource the call referenced that is
 not in storage, or a command buffer that wgpu refuses at submission.
 
 An asset that will not build is not an error. The pass that needed it
 is reported and skipped.
 
-<a id="rustdoc-item-190"></a>
+<a id="rustdoc-item-193"></a>
 
 ### `invalidate_assets`
 
@@ -120,7 +120,7 @@ Normally the renderer rebuilds only what changed, tracked by content
 versions. This clears that bookkeeping, for a caller that replaced the
 whole asset set and cannot trust the recorded versions any more.
 
-<a id="rustdoc-item-194"></a>
+<a id="rustdoc-item-197"></a>
 
 ### `attach_surface`
 
@@ -131,24 +131,24 @@ unsafe fn attach_surface(self: &mut Self, id: SurfaceId, window: RawWindowData, 
 Starts drawing into another surface: a second window or canvas, sized
 `width` by `height` physical pixels. It is drawn after the primary
 surface, through the camera the frame resolved for it
-([`RenderFrame::surface_views`](../frame/struct.RenderFrame.md#rustdoc-item-191)). Attaching an id that is already
+([`RenderFrame::surface_views`](../frame/struct.RenderFrame.md#rustdoc-item-194)). Attaching an id that is already
 attached replaces that surface.
 
 The default refuses, for a renderer that draws one surface only.
 
 #### Errors
 
-Returns [`RendererError::UnsupportedSurface`](../error/enum.RendererError.md#rustdoc-item-192) if the renderer draws a
-single surface or `id` is [`SurfaceId::PRIMARY`](../surface/struct.SurfaceId.md#rustdoc-item-182). Any other failure is
+Returns [`RendererError::UnsupportedSurface`](../error/enum.RendererError.md#rustdoc-item-195) if the renderer draws a
+single surface or `id` is [`SurfaceId::PRIMARY`](../surface/struct.SurfaceId.md#rustdoc-item-185). Any other failure is
 one the surface creation itself reports.
 
 #### Safety
 
 `window` must name a live window that outlives the surface. The caller
-keeps it alive until [`Self::detach_surface`](#rustdoc-item-193) is called or the renderer
+keeps it alive until [`Self::detach_surface`](#rustdoc-item-196) is called or the renderer
 is dropped, whichever comes first.
 
-<a id="rustdoc-item-193"></a>
+<a id="rustdoc-item-196"></a>
 
 ### `detach_surface`
 
@@ -156,10 +156,10 @@ is dropped, whichever comes first.
 fn detach_surface(self: &mut Self, _id: SurfaceId);
 ```
 
-Stops drawing into a surface attached with [`Self::attach_surface`](#rustdoc-item-194) and
+Stops drawing into a surface attached with [`Self::attach_surface`](#rustdoc-item-197) and
 releases it. An id the renderer does not draw does nothing.
 
-<a id="rustdoc-item-197"></a>
+<a id="rustdoc-item-200"></a>
 
 ### `set_surface_ready`
 
@@ -175,7 +175,7 @@ through its frame callbacks - so the frontend passes that state on. A
 surface that may not present is skipped instead of waited for. Every
 surface starts ready, and the primary surface is paced the same way.
 
-<a id="rustdoc-item-199"></a>
+<a id="rustdoc-item-202"></a>
 
 ### `take_pick_results`
 
@@ -190,10 +190,10 @@ A pick is answered a few frames after it was asked, when the GPU has
 read the result back, and the frame that asked never waits for it. A
 pick on a surface the frame did not draw is answered in the same frame,
 with no hit. The frontend writes what this returns into the world's
-[`crate::PickResults`](../picking/struct.PickResults.md#rustdoc-item-198). The default answers nothing, for a renderer
+[`crate::PickResults`](../picking/struct.PickResults.md#rustdoc-item-201). The default answers nothing, for a renderer
 without a pick buffer.
 
-<a id="rustdoc-item-202"></a>
+<a id="rustdoc-item-205"></a>
 
 ### `take_preview_results`
 
@@ -206,5 +206,5 @@ Takes every preview the GPU has finished since the last call.
 A preview is read back a few frames after it was asked, like a pick. A
 request the renderer cannot draw is refused at once, so the caller does
 not wait for an answer that will never come. The frontend writes what
-this returns into the world's [`crate::PreviewResults`](../preview/struct.PreviewResults.md#rustdoc-item-201). The default
+this returns into the world's [`crate::PreviewResults`](../preview/struct.PreviewResults.md#rustdoc-item-204). The default
 answers nothing, for a renderer without an off-screen preview target.

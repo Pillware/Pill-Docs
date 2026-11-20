@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-677"></a>
+<a id="rustdoc-item-696"></a>
 
 # Function `pill_csharp_bridge::backend::poll_status_is_known`
 
@@ -8,7 +8,7 @@
 pub(crate) fn poll_status_is_known(status: u8) -> bool;
 ```
 
-Visibility: `crate` · Source: `csharp\pill_csharp_bridge\src\backend.rs:1392`
+Visibility: `crate` · Source: `csharp\pill_csharp_bridge\src\backend.rs:1505`
 
 Reports whether a managed-reported poll status is one this host understands.
 

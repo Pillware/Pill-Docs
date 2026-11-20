@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1374"></a>
+<a id="rustdoc-item-1384"></a>
 
 # Constant `pill_core::profiling::PROJECT_SYSTEM_ZONE_COLOR`
 

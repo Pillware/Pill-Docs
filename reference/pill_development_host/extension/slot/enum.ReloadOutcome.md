@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-2686"></a>
+<a id="rustdoc-item-2760"></a>
 
 # Enum `pill_development_host::extension::slot::ReloadOutcome`
 
@@ -8,7 +8,7 @@
 pub(crate) enum ReloadOutcome { ... }
 ```
 
-Visibility: `crate` · Source: `hosting\pill_development_host\src\extension.rs:636`
+Visibility: `crate` · Source: `hosting\pill_development_host\src\extension.rs:641`
 
 What a module reload attempt did.
 
@@ -24,11 +24,11 @@ The outcome carries the generation, so the log lines can name the edit
 the outcome belongs to instead of whatever the counter holds by the time
 they run.
 
-[`Reloaded`]: #rustdoc-item-2682
+[`Reloaded`]: #rustdoc-item-2756
 
 ## Variants
 
-<a id="rustdoc-item-2684"></a>
+<a id="rustdoc-item-2758"></a>
 
 ### `Unchanged`
 
@@ -39,7 +39,7 @@ Unchanged
 The watcher signalled nothing new and no cascade rebuild was
 queued, so no attempt was made.
 
-<a id="rustdoc-item-2682"></a>
+<a id="rustdoc-item-2756"></a>
 
 ### `Reloaded`
 
@@ -49,7 +49,7 @@ Reloaded
 
 The new generation was built, initialized and swapped in.
 
-<a id="rustdoc-item-2683"></a>
+<a id="rustdoc-item-2757"></a>
 
 ### `Failed`
 

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-4303"></a>
+<a id="rustdoc-item-4562"></a>
 
 # Module `pill_development_host::watchers`
 
@@ -33,6 +33,6 @@ they queue, is the only thing that differs.
 ## Module contents
 
 ### Modules
-- [`asset`](asset/index.md#rustdoc-item-4227) — The project's asset directory: an edit there becomes an [`AssetChange`] the
-- [`shader`](shader/index.md#rustdoc-item-4305) — A shader source tree: an edit is cooked again and queued as one output per
-- [`shared`](shared/index.md#rustdoc-item-4377) — The settled watcher every worker is built on, the event filter they share,
+- [`asset`](asset/index.md#rustdoc-item-4486) — The project's asset directory: an edit there becomes an [`AssetChange`] the
+- [`shader`](shader/index.md#rustdoc-item-4564) — A shader source tree: an edit is cooked again and queued as one output per
+- [`shared`](shared/index.md#rustdoc-item-4636) — The settled watcher every worker is built on, the event filter they share,

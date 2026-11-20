@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1169"></a>
+<a id="rustdoc-item-1214"></a>
 
 # Struct `pill_editor_core::editor_state::ComponentSeed`
 
@@ -8,13 +8,13 @@
 pub struct ComponentSeed;
 ```
 
-Source: `editor\pill_editor_core\src\editor_state\mod.rs:147`
+Source: `editor\pill_editor_core\src\editor_state\mod.rs:189`
 
 One component to place on a newly created entity.
 
 ## Fields
 
-<a id="rustdoc-item-2791"></a>
+<a id="rustdoc-item-2925"></a>
 
 ### `type_name`
 
@@ -24,7 +24,7 @@ type_name: String
 
 Registered component type name.
 
-<a id="rustdoc-item-2792"></a>
+<a id="rustdoc-item-2926"></a>
 
 ### `fields`
 

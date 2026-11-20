@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1327"></a>
+<a id="rustdoc-item-1401"></a>
 
 # Struct `pill_development_host::csharp::mirror_codegen::MirrorScope`
 
@@ -8,13 +8,13 @@
 pub(in csharp) struct MirrorScope;
 ```
 
-Visibility: `{'restricted': {'parent': 1331, 'path': '::csharp'}}` · Source: `hosting\pill_development_host\src\csharp\mirror_codegen.rs:87`
+Visibility: `{'restricted': {'parent': 1405, 'path': '::csharp'}}` · Source: `hosting\pill_development_host\src\csharp\mirror_codegen.rs:87`
 
 Every type a module's signatures can name.
 
 ## Fields
 
-<a id="rustdoc-item-1533"></a>
+<a id="rustdoc-item-1608"></a>
 
 ### `types_by_name`
 
@@ -24,7 +24,7 @@ types_by_name: std::collections::BTreeMap<String, MirrorType>
 
 Keyed by the simple Rust name a tag carries.
 
-<a id="rustdoc-item-1534"></a>
+<a id="rustdoc-item-1609"></a>
 
 ### `declared`
 
@@ -37,7 +37,7 @@ deterministic order.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-1535"></a>
+<a id="rustdoc-item-1610"></a>
 
 ### `new`
 
@@ -56,7 +56,7 @@ types.
 Returns an error when a type row names an owner kind this file does not
 know, or when two declared types would get the same C# simple name.
 
-<a id="rustdoc-item-1537"></a>
+<a id="rustdoc-item-1612"></a>
 
 ### `resolve`
 
@@ -71,7 +71,7 @@ The type a tag's name refers to.
 Returns an error that names the tag when this module does not mirror
 that name.
 
-<a id="rustdoc-item-1538"></a>
+<a id="rustdoc-item-1613"></a>
 
 ### `declared_kind`
 
@@ -81,7 +81,7 @@ pub(in csharp) fn declared_kind(self: &Self, type_name: &str) -> Option<&MirrorK
 
 The kind of a declared type, looked up by its Rust qualified name.
 
-<a id="rustdoc-item-1539"></a>
+<a id="rustdoc-item-1614"></a>
 
 ### `typed_handle`
 

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-612"></a>
+<a id="rustdoc-item-622"></a>
 
 # Module `pill_core::error`
 
@@ -35,12 +35,12 @@ only the renderer turns a role into styled text.
 ## Module contents
 
 ### Modules
-- [`host`](host/index.md#rustdoc-item-611) — The error type of every host subsystem, and the root that combines them.
-- [`render`](render/index.md#rustdoc-item-670) — The semantic rendering protocol and its two renderers.
-- [`report`](report/index.md#rustdoc-item-718) — Turns engine errors into miette reports that print their message with
+- [`host`](host/index.md#rustdoc-item-621) — The error type of every host subsystem, and the root that combines them.
+- [`render`](render/index.md#rustdoc-item-680) — The semantic rendering protocol and its two renderers.
+- [`report`](report/index.md#rustdoc-item-728) — Turns engine errors into miette reports that print their message with
 
 ## Re-exports
 
-- [`pub use host;`](host/index.md#rustdoc-item-611)
-- [`pub use render;`](render/index.md#rustdoc-item-670)
-- [`pub use report;`](report/index.md#rustdoc-item-718)
+- [`pub use host;`](host/index.md#rustdoc-item-621)
+- [`pub use render;`](render/index.md#rustdoc-item-680)
+- [`pub use report;`](report/index.md#rustdoc-item-728)

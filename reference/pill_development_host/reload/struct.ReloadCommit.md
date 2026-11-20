@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-3522"></a>
+<a id="rustdoc-item-3778"></a>
 
 # Struct `pill_development_host::reload::ReloadCommit`
 
@@ -14,7 +14,7 @@ What a committed reload registered, for the caller to keep.
 
 ## Fields
 
-<a id="rustdoc-item-3547"></a>
+<a id="rustdoc-item-3803"></a>
 
 ### `exposed_component_names`
 

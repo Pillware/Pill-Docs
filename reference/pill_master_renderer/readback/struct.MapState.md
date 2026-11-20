@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1569"></a>
+<a id="rustdoc-item-1615"></a>
 
 # Struct `pill_master_renderer::readback::MapState`
 
@@ -8,7 +8,7 @@
 pub(crate) struct MapState;
 ```
 
-Visibility: `crate` · Source: `extensions\pill_master_renderer\pill_master_renderer\src\readback.rs:84`
+Visibility: `crate` · Source: `extensions\pill_master_renderer\modules\runtime\gpu\src\readback.rs:84`
 
 One buffer's mapping, shared with the callback that reports it.
 
@@ -18,7 +18,7 @@ the callback wrote before it stored that outcome.
 
 ## Fields
 
-<a id="rustdoc-item-1724"></a>
+<a id="rustdoc-item-1768"></a>
 
 ### `outcome_code`
 
@@ -30,7 +30,7 @@ _No documentation provided._
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-1726"></a>
+<a id="rustdoc-item-1770"></a>
 
 ### `start`
 
@@ -43,7 +43,7 @@ Asks for `buffer` to be mapped for reading.
 Only call this after the submission that wrote the buffer. A map asked
 for earlier makes that submission fail.
 
-<a id="rustdoc-item-1727"></a>
+<a id="rustdoc-item-1771"></a>
 
 ### `finished`
 
@@ -56,7 +56,7 @@ Whether the map has finished, whether it succeeded or failed.
 The frame profiler tests this for each slot of its ring before it reads
 the slot: a slot is read once every map it asked for has finished.
 
-<a id="rustdoc-item-1728"></a>
+<a id="rustdoc-item-1772"></a>
 
 ### `outcome`
 
@@ -66,7 +66,7 @@ pub(crate) fn outcome(self: &Self) -> MapOutcome;
 
 What the device's callback last reported.
 
-<a id="rustdoc-item-1645"></a>
+<a id="rustdoc-item-1691"></a>
 
 ### `poll`
 
@@ -77,7 +77,7 @@ pub(crate) fn poll<T, impl FnOnce(&[u8]) -> T: FnOnce(&[u8]) -> T>(self: &Self, 
 Polls the mapping without waiting.
 
 When the map is done, the bytes are handed to `read` once and the buffer
-is unmapped. A map the device refused answers [`Readback::Failed`](enum.Readback.md#rustdoc-item-1644) and
+is unmapped. A map the device refused answers [`Readback::Failed`](enum.Readback.md#rustdoc-item-1690) and
 the buffer is never read.
 
 ## Trait implementations

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-196"></a>
+<a id="rustdoc-item-199"></a>
 
 # Struct `pill_renderer_api::surface::SurfaceOptions`
 
@@ -14,7 +14,7 @@ Creation options of one surface.
 
 ## Fields
 
-<a id="rustdoc-item-1071"></a>
+<a id="rustdoc-item-1148"></a>
 
 ### `present`
 
@@ -35,15 +35,16 @@ How the surface would like to present.
 - `TryFrom<U>`
 - `Any`
 - `ToOwned`
+- `CastableFrom<ST, Uninit, Uninit>`
+- `CastableFrom<ST, Initialized, Initialized>`
+- `Read<Exclusive, BecauseExclusive>`
 - `Instrument`
 - `WithSubscriber`
 - `IntoEither`
 - `Pointable`
 - `OwoColorize`
 - `ErasedDestructor`
-- `CastableFrom<ST, Uninit, Uninit>`
-- `CastableFrom<ST, Initialized, Initialized>`
-- `Read<Exclusive, BecauseExclusive>`
+- `Equivalent<K>`
 - `Debug`
 - `Clone`
 - `Copy`

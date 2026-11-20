@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-2054"></a>
+<a id="rustdoc-item-2097"></a>
 
 # Function `pill_master_renderer::renderer::viewport_in_target`
 
@@ -8,7 +8,7 @@
 pub(in renderer) fn viewport_in_target(viewport: crate::components::RenderViewport, surface_width: u32, surface_height: u32, target_width: u32, target_height: u32) -> crate::components::RenderViewport;
 ```
 
-Visibility: `{'restricted': {'parent': 1847, 'path': '::renderer'}}` · Source: `extensions\pill_master_renderer\pill_master_renderer\src\renderer.rs:1622`
+Visibility: `{'restricted': {'parent': 1890, 'path': '::renderer'}}` · Source: `extensions\pill_master_renderer\modules\runtime\gpu\src\renderer.rs:1622`
 
 The frame's viewport expressed in the pixels of one pass's target.
 

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-9173"></a>
+<a id="rustdoc-item-10947"></a>
 
 # Static `pill_engine_core::PROFILED_ALLOCATOR`
 
@@ -15,7 +15,7 @@ view.
 
 Only active with the opt-in `profiling-memory` feature. The sampling rate
 comes from
-[`crate::config::PROFILING_MEMORY_ALLOCATIONS_SAMPLING_FREQUENCY`](config/constant.PROFILING_MEMORY_ALLOCATIONS_SAMPLING_FREQUENCY.md#rustdoc-item-3503).
+[`crate::config::PROFILING_MEMORY_ALLOCATIONS_SAMPLING_FREQUENCY`](config/constant.PROFILING_MEMORY_ALLOCATIONS_SAMPLING_FREQUENCY.md#rustdoc-item-2018).
 
 It is declared here and not in the `profiling` module because it is
 generic: every DLL that links it creates its own copy, and that copy calls

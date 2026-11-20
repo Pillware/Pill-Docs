@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-885"></a>
+<a id="rustdoc-item-895"></a>
 
 # Type alias `pill_core::math::Vector3f`
 

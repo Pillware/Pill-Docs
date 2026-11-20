@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-3014"></a>
+<a id="rustdoc-item-3051"></a>
 
 # Struct `pill_master_renderer::ui::renderer::HeldTexture`
 
@@ -8,7 +8,7 @@
 pub(in ui::renderer) struct HeldTexture;
 ```
 
-Visibility: `{'restricted': {'parent': 2958, 'path': '::ui::renderer'}}` · Source: `extensions\pill_master_renderer\pill_master_renderer\src\ui\renderer.rs:530`
+Visibility: `{'restricted': {'parent': 2995, 'path': '::ui::renderer'}}` · Source: `extensions\pill_master_renderer\modules\runtime\gpu\src\ui\renderer.rs:530`
 
 One texture this renderer holds on the GPU: the image, the bind group that
 binds it together with its sampler, its texel size and the revision it was
@@ -16,7 +16,7 @@ uploaded at.
 
 ## Fields
 
-<a id="rustdoc-item-3051"></a>
+<a id="rustdoc-item-3088"></a>
 
 ### `texture`
 
@@ -26,7 +26,7 @@ texture: wgpu::Texture
 
 _No documentation provided._
 
-<a id="rustdoc-item-3052"></a>
+<a id="rustdoc-item-3089"></a>
 
 ### `bind_group`
 
@@ -36,7 +36,7 @@ bind_group: wgpu::BindGroup
 
 _No documentation provided._
 
-<a id="rustdoc-item-3053"></a>
+<a id="rustdoc-item-3090"></a>
 
 ### `texture_size`
 
@@ -46,7 +46,7 @@ texture_size: (u32, u32)
 
 _No documentation provided._
 
-<a id="rustdoc-item-3054"></a>
+<a id="rustdoc-item-3091"></a>
 
 ### `revision`
 

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-457"></a>
+<a id="rustdoc-item-501"></a>
 
 # Module `pill_editor_core::brand`
 
@@ -30,8 +30,8 @@ pin the constant's shape.
 ## Module contents
 
 ### Functions
-- [`mark_color_image`](fn.mark_color_image.md#rustdoc-item-455) — Returns the mark as a white image whose alpha channel is the stored
+- [`mark_color_image`](fn.mark_color_image.md#rustdoc-item-499) — Returns the mark as a white image whose alpha channel is the stored
 
 ### Constants
-- [`MARK_ALPHA`](constant.MARK_ALPHA.md#rustdoc-item-454) — The mark's coverage per texel, stored row by row. The array holds
-- [`MARK_SIDE`](constant.MARK_SIDE.md#rustdoc-item-453) — The mark's width and height in texels. The image is square, and every
+- [`MARK_ALPHA`](constant.MARK_ALPHA.md#rustdoc-item-498) — The mark's coverage per texel, stored row by row. The array holds
+- [`MARK_SIDE`](constant.MARK_SIDE.md#rustdoc-item-497) — The mark's width and height in texels. The image is square, and every

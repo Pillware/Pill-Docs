@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1630"></a>
+<a id="rustdoc-item-1725"></a>
 
 # Function `pill_master_renderer_data::config::import_shader`
 
@@ -8,7 +8,7 @@
 pub(crate) fn import_shader(assets: &mut pill_engine::AssetManager, relative_path: &str, asset_guid: pill_engine::AssetGuid) -> Result<pill_engine::Handle<crate::assets::Shader>, Box<dyn std::error::Error>>;
 ```
 
-Visibility: `crate` · Source: `extensions\pill_master_renderer\pill_master_renderer_data\src\config\mod.rs:179`
+Visibility: `crate` · Source: `extensions\pill_master_renderer\modules\runtime\data\src\config\mod.rs:179`
 
 Imports one of the renderer's own shaders, or hands back the one the store
 already holds.

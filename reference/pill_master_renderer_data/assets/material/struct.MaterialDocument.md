@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-149"></a>
+<a id="rustdoc-item-153"></a>
 
 # Struct `pill_master_renderer_data::assets::material::MaterialDocument`
 
@@ -8,7 +8,7 @@
 pub struct MaterialDocument;
 ```
 
-Source: `extensions\pill_master_renderer\pill_master_renderer_data\src\assets\material.rs:222`
+Source: `extensions\pill_master_renderer\modules\runtime\data\src\assets\material.rs:222`
 
 A material as written in its `.material` file.
 
@@ -81,6 +81,9 @@ See [`Material::rendering_order`](struct.Material.md#rustdoc-item-98).
 - `TryFrom<U>`
 - `Any`
 - `ToOwned`
+- `CastableFrom<ST, Uninit, Uninit>`
+- `CastableFrom<ST, Initialized, Initialized>`
+- `Read<Exclusive, BecauseExclusive>`
 - `DeserializeOwned`
 - `Instrument`
 - `WithSubscriber`
@@ -88,9 +91,6 @@ See [`Material::rendering_order`](struct.Material.md#rustdoc-item-98).
 - `Pointable`
 - `OwoColorize`
 - `ErasedDestructor`
-- `CastableFrom<ST, Uninit, Uninit>`
-- `CastableFrom<ST, Initialized, Initialized>`
-- `Read<Exclusive, BecauseExclusive>`
 - `Clone`
 - `Debug`
 - `Serialize`

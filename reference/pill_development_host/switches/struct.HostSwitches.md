@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-3675"></a>
+<a id="rustdoc-item-3931"></a>
 
 # Struct `pill_development_host::switches::HostSwitches`
 
@@ -14,7 +14,7 @@ Which watchers this run starts, read once when the host starts.
 
 ## Fields
 
-<a id="rustdoc-item-3672"></a>
+<a id="rustdoc-item-3928"></a>
 
 ### `hot_reloading`
 
@@ -24,7 +24,7 @@ hot_reloading: bool
 
 Whether the project's and the extensions' source trees are watched.
 
-<a id="rustdoc-item-3673"></a>
+<a id="rustdoc-item-3929"></a>
 
 ### `function_hot_patching`
 
@@ -34,7 +34,7 @@ function_hot_patching: bool
 
 Whether an edit that arrives may be compiled into the running module.
 
-<a id="rustdoc-item-3674"></a>
+<a id="rustdoc-item-3930"></a>
 
 ### `assets_hot_reloading`
 
@@ -46,7 +46,7 @@ Whether the project's assets and both shader trees are watched.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-3676"></a>
+<a id="rustdoc-item-3932"></a>
 
 ### `from_environment`
 
@@ -56,7 +56,7 @@ pub(crate) fn from_environment() -> Self;
 
 Reads the three variables, treating an absent one as on.
 
-<a id="rustdoc-item-3677"></a>
+<a id="rustdoc-item-3933"></a>
 
 ### `log`
 

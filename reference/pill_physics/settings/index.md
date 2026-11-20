@@ -1,18 +1,18 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-836"></a>
+<a id="rustdoc-item-1073"></a>
 
 # Module `pill_physics::settings`
 
-Source: `extensions\pill_physics\pill_physics\src\settings.rs:1`
+Source: `extensions\pill_physics\modules\runtime\src\settings.rs:1`
 
 The tuning document and its `.physics_settings` asset.
 The manager's tuning document and its settings asset.
 
 ## Responsibilities
 
-- Declares [`PhysicsSettings`](struct.PhysicsSettings.md#rustdoc-item-598), the values a project tunes in one file.
-- Declares [`PhysicsSettingsAsset`](struct.PhysicsSettingsAsset.md#rustdoc-item-676), the `.physics_settings` file the values
+- Declares [`PhysicsSettings`](struct.PhysicsSettings.md#rustdoc-item-799), the values a project tunes in one file.
+- Declares [`PhysicsSettingsAsset`](struct.PhysicsSettingsAsset.md#rustdoc-item-895), the `.physics_settings` file the values
   are read from and written to.
 - Applies a loaded document to the running manager, refusing values the
   simulation cannot run with.
@@ -27,9 +27,9 @@ rather than clamped, and the manager keeps what it had.
 ## Module contents
 
 ### Structs
-- [`PhysicsSettings`](struct.PhysicsSettings.md#rustdoc-item-598) — The tuning of the simulation.
-- [`PhysicsSettingsAsset`](struct.PhysicsSettingsAsset.md#rustdoc-item-676) — The `.physics_settings` document a project tunes the simulation through.
+- [`PhysicsSettings`](struct.PhysicsSettings.md#rustdoc-item-799) — The tuning of the simulation.
+- [`PhysicsSettingsAsset`](struct.PhysicsSettingsAsset.md#rustdoc-item-895) — The `.physics_settings` document a project tunes the simulation through.
 
 ## Re-exports
 
-- [`pub use crate::manager::PhysicsManager;`](../manager/struct.PhysicsManager.md#rustdoc-item-337)
+- [`pub use crate::manager::PhysicsManager;`](../manager/struct.PhysicsManager.md#rustdoc-item-812)

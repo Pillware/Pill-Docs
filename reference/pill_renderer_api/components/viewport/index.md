@@ -1,16 +1,16 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-345"></a>
+<a id="rustdoc-item-408"></a>
 
 # Module `pill_renderer_api::components::viewport`
 
-Visibility: `{'restricted': {'parent': 300, 'path': '::components'}}` · Source: `rendering\pill_renderer_api\src\components\viewport.rs:1`
+Visibility: `{'restricted': {'parent': 362, 'path': '::components'}}` · Source: `rendering\pill_renderer_api\src\components\viewport.rs:1`
 
 The rectangle of the target a frame draws into.
 
 ## Responsibilities
 
-- Define [`RenderViewport`](struct.RenderViewport.md#rustdoc-item-187): the pixel area inside a surface that the
+- Define [`RenderViewport`](struct.RenderViewport.md#rustdoc-item-190): the pixel area inside a surface that the
   renderer draws into when a frontend asks for only part of it.
 
 ## Design
@@ -22,4 +22,4 @@ in `components/` beside the camera, the contract's other scene type.
 ## Module contents
 
 ### Structs
-- [`RenderViewport`](struct.RenderViewport.md#rustdoc-item-187) — A rectangle of the target that a frame draws into, in pixels.
+- [`RenderViewport`](struct.RenderViewport.md#rustdoc-item-190) — A rectangle of the target that a frame draws into, in pixels.

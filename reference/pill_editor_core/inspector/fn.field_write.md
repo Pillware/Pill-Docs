@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-5067"></a>
+<a id="rustdoc-item-7030"></a>
 
 # Function `pill_editor_core::inspector::field_write`
 
@@ -8,7 +8,7 @@
 pub fn field_write(entity: pill_engine::Entity, component: &str, field: &str, current: &pill_engine::FieldValue, value_text: &str) -> Result<RecordedEdit, String>;
 ```
 
-Source: `editor\pill_editor_core\src\inspector.rs:1387`
+Source: `editor\pill_editor_core\src\inspector.rs:1394`
 
 One field's write, decided in one place.
 

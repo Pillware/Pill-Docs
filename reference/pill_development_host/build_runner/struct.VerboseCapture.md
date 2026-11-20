@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-594"></a>
+<a id="rustdoc-item-596"></a>
 
 # Struct `pill_development_host::build_runner::VerboseCapture`
 
@@ -8,7 +8,7 @@
 pub(in build_runner) struct VerboseCapture;
 ```
 
-Visibility: `{'restricted': {'parent': 545, 'path': '::build_runner'}}` · Source: `hosting\pill_development_host\src\build_runner.rs:697`
+Visibility: `{'restricted': {'parent': 546, 'path': '::build_runner'}}` · Source: `hosting\pill_development_host\src\build_runner.rs:698`
 
 Harvests the module crate's `rustc` invocation out of a build the host was
 going to run anyway.
@@ -30,7 +30,7 @@ terminal, because cargo turns it off for a pipe.
 
 ## Fields
 
-<a id="rustdoc-item-590"></a>
+<a id="rustdoc-item-592"></a>
 
 ### `crate_names`
 
@@ -40,7 +40,7 @@ crate_names: Vec<String>
 
 The crate names to look for: the modules that one invocation builds.
 
-<a id="rustdoc-item-591"></a>
+<a id="rustdoc-item-593"></a>
 
 ### `workspace_root`
 
@@ -51,7 +51,7 @@ workspace_root: std::path::PathBuf
 The workspace the build runs in. The flags cache lands under that
 workspace, not in a shared temporary directory.
 
-<a id="rustdoc-item-592"></a>
+<a id="rustdoc-item-594"></a>
 
 ### `reader`
 
@@ -63,7 +63,7 @@ The reader thread and the lines it found, available once joined.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-595"></a>
+<a id="rustdoc-item-597"></a>
 
 ### `arm`
 
@@ -78,7 +78,7 @@ Returns `None` for a build that is not cargo (the managed backend's
 `dotnet`): it has no rustc line to harvest and must keep its inherited
 streams. It also returns `None` when nothing asked for a capture.
 
-<a id="rustdoc-item-596"></a>
+<a id="rustdoc-item-598"></a>
 
 ### `start`
 
@@ -88,7 +88,7 @@ pub(in build_runner) fn start(self: Self, child: &mut std::process::Child) -> Se
 
 Starts reading the child's stderr on a thread.
 
-<a id="rustdoc-item-597"></a>
+<a id="rustdoc-item-599"></a>
 
 ### `finish`
 
@@ -104,7 +104,7 @@ describes it, and the patch pipeline's own freshness check decides
 whether that line still holds. `commands` pairs each requested name with
 the build command its flags cache records.
 
-<a id="rustdoc-item-598"></a>
+<a id="rustdoc-item-600"></a>
 
 ### `abandon`
 
@@ -115,7 +115,7 @@ pub(in build_runner) fn abandon(self: Self);
 Joins the reader without caching anything.
 
 A failed build's stderr still has to finish draining before the ring
-buffer ([`recent_build_output`](fn.recent_build_output.md#rustdoc-item-557)) is read for the failure notice. The
+buffer ([`recent_build_output`](fn.recent_build_output.md#rustdoc-item-558)) is read for the failure notice. The
 harvested rustc lines are dropped because no artifact appeared to
 describe.
 

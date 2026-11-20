@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-727"></a>
+<a id="rustdoc-item-771"></a>
 
 # Struct `pill_editor_core::camera::OrbitCamera`
 
@@ -19,7 +19,7 @@ viewport's" rather than the editor's.
 
 ## Fields
 
-<a id="rustdoc-item-723"></a>
+<a id="rustdoc-item-767"></a>
 
 ### `pivot`
 
@@ -29,7 +29,7 @@ pivot: [f32; 3]
 
 The point the camera looks at and orbits around.
 
-<a id="rustdoc-item-724"></a>
+<a id="rustdoc-item-768"></a>
 
 ### `yaw`
 
@@ -39,7 +39,7 @@ yaw: f32
 
 Rotation around the world's Y axis, in radians.
 
-<a id="rustdoc-item-725"></a>
+<a id="rustdoc-item-769"></a>
 
 ### `pitch`
 
@@ -49,7 +49,7 @@ pitch: f32
 
 Downward tilt, in radians; positive looks down at the pivot.
 
-<a id="rustdoc-item-726"></a>
+<a id="rustdoc-item-770"></a>
 
 ### `distance`
 
@@ -61,7 +61,7 @@ Distance from the pivot.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-728"></a>
+<a id="rustdoc-item-772"></a>
 
 ### `forward`
 
@@ -71,7 +71,7 @@ pub fn forward(self: &Self) -> [f32; 3];
 
 The direction the camera looks along.
 
-<a id="rustdoc-item-729"></a>
+<a id="rustdoc-item-773"></a>
 
 ### `right`
 
@@ -82,7 +82,7 @@ pub fn right(self: &Self) -> [f32; 3];
 The camera's right direction. It is always horizontal, and the gizmo
 builds its screen-space rays from it.
 
-<a id="rustdoc-item-730"></a>
+<a id="rustdoc-item-774"></a>
 
 ### `up`
 
@@ -93,7 +93,7 @@ pub fn up(self: &Self) -> [f32; 3];
 The camera's up direction. It is perpendicular to the look and right
 directions, so it tilts with the pitch.
 
-<a id="rustdoc-item-731"></a>
+<a id="rustdoc-item-775"></a>
 
 ### `eye`
 
@@ -104,7 +104,7 @@ pub fn eye(self: &Self) -> [f32; 3];
 The world position of the eye: the pivot moved back along the look
 direction by `distance`.
 
-<a id="rustdoc-item-732"></a>
+<a id="rustdoc-item-776"></a>
 
 ### `rotation`
 
@@ -115,7 +115,7 @@ pub fn rotation(self: &Self) -> [f32; 4];
 The camera's orientation as an `[x, y, z, w]` quaternion built from
 yaw and pitch, ready for a transform's rotation field.
 
-<a id="rustdoc-item-733"></a>
+<a id="rustdoc-item-777"></a>
 
 ### `orbit`
 
@@ -127,7 +127,7 @@ Turns the camera around the pivot by a drag's pixel delta. Dragging
 right turns the view right, and dragging down raises the eye so it
 looks more steeply down at the pivot.
 
-<a id="rustdoc-item-734"></a>
+<a id="rustdoc-item-778"></a>
 
 ### `pan`
 
@@ -140,7 +140,7 @@ moves the opposite way. `world_per_pixel` is the world height of one
 screen pixel at the pivot's depth; the caller computes it from the
 distance and the field of view.
 
-<a id="rustdoc-item-735"></a>
+<a id="rustdoc-item-779"></a>
 
 ### `dolly`
 
@@ -152,7 +152,7 @@ Moves the eye along the view by a drag's pixel delta. Dragging up moves
 closer and dragging down moves farther, at a rate that feels the same
 at every distance.
 
-<a id="rustdoc-item-736"></a>
+<a id="rustdoc-item-780"></a>
 
 ### `zoom`
 

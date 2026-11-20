@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1204"></a>
+<a id="rustdoc-item-1214"></a>
 
 # Module `pill_core::platform::styling`
 
@@ -11,7 +11,7 @@ Terminal styling for `&str` on the native and web targets.
 
 ## Responsibilities
 
-- Implement [`PillStyle`](../../style/trait.PillStyle.md#rustdoc-item-694) for `&str`, colored and
+- Implement [`PillStyle`](../../style/trait.PillStyle.md#rustdoc-item-704) for `&str`, colored and
   bold through the `colored` crate on native targets.
 - Provide the same methods on `wasm32` as plain text, with a name still put
   in quotation marks.

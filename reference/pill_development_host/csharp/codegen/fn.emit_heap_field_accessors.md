@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1336"></a>
+<a id="rustdoc-item-1411"></a>
 
 # Function `pill_development_host::csharp::codegen::emit_heap_field_accessors`
 
@@ -8,7 +8,7 @@
 pub(in csharp::codegen) fn emit_heap_field_accessors(cs_name: &str, type_name: &str, fields: &[pill_engine::component_registry::ComponentFieldDescriptor], value_types: &[pill_engine::component_registry::PillValueTypeDescriptor], emitted_structs: &mut Vec<EmittedStruct>, methods: &[pill_csharp_bridge::ResolvedMirrorMethod], accessors: &[pill_csharp_bridge::ResolvedFieldAccessor], scope: &mirror_codegen::MirrorScope) -> Result<String, String>;
 ```
 
-Visibility: `{'restricted': {'parent': 1288, 'path': '::csharp::codegen'}}` · Source: `hosting\pill_development_host\src\csharp\codegen.rs:1061`
+Visibility: `{'restricted': {'parent': 1362, 'path': '::csharp::codegen'}}` · Source: `hosting\pill_development_host\src\csharp\codegen.rs:1076`
 
 Writes the C# members that reach a component's heap-owning fields.
 
@@ -47,7 +47,7 @@ Every span is a loan, not ownership: resizing or replacing the container
 makes it invalid, as growing a Rust `Vec` makes its earlier slices invalid.
 
 The parameters are the descriptor fields plus the recursion context, as in
-[`emit_typed_struct`](fn.emit_typed_struct.md#rustdoc-item-1325); clippy's threshold is below the (internal)
+[`emit_typed_struct`](fn.emit_typed_struct.md#rustdoc-item-1399); clippy's threshold is below the (internal)
 signature's size.
 
 ## Errors

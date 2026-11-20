@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-8164"></a>
+<a id="rustdoc-item-10226"></a>
 
 # Struct `pill_editor_core::style::Palette`
 
@@ -8,7 +8,7 @@
 pub struct Palette;
 ```
 
-Source: `editor\pill_editor_core\src\style.rs:64`
+Source: `editor\pill_editor_core\src\style.rs:65`
 
 The editor's colour roles as egui colours, copied from the last installed
 theme.
@@ -19,7 +19,7 @@ colour at once.
 
 ## Fields
 
-<a id="rustdoc-item-8141"></a>
+<a id="rustdoc-item-10203"></a>
 
 ### `frame`
 
@@ -29,7 +29,7 @@ frame: egui::Color32
 
 The window frame and tab-strip background.
 
-<a id="rustdoc-item-8142"></a>
+<a id="rustdoc-item-10204"></a>
 
 ### `panel`
 
@@ -39,7 +39,7 @@ panel: egui::Color32
 
 A panel's and tab body's background.
 
-<a id="rustdoc-item-8143"></a>
+<a id="rustdoc-item-10205"></a>
 
 ### `panel_raised`
 
@@ -49,7 +49,7 @@ panel_raised: egui::Color32
 
 A raised surface: menus, hovered rows, tooltips.
 
-<a id="rustdoc-item-8144"></a>
+<a id="rustdoc-item-10206"></a>
 
 ### `control`
 
@@ -59,7 +59,7 @@ control: egui::Color32
 
 A flat control's fill on a panel.
 
-<a id="rustdoc-item-8145"></a>
+<a id="rustdoc-item-10207"></a>
 
 ### `well`
 
@@ -69,7 +69,7 @@ well: egui::Color32
 
 Inputs and wells.
 
-<a id="rustdoc-item-8146"></a>
+<a id="rustdoc-item-10208"></a>
 
 ### `line`
 
@@ -79,7 +79,7 @@ line: egui::Color32
 
 Borders and separators.
 
-<a id="rustdoc-item-8147"></a>
+<a id="rustdoc-item-10209"></a>
 
 ### `text`
 
@@ -89,7 +89,7 @@ text: egui::Color32
 
 Normal text.
 
-<a id="rustdoc-item-8148"></a>
+<a id="rustdoc-item-10210"></a>
 
 ### `text_strong`
 
@@ -99,7 +99,7 @@ text_strong: egui::Color32
 
 Emphasized text: active tab titles, hovered labels.
 
-<a id="rustdoc-item-8149"></a>
+<a id="rustdoc-item-10211"></a>
 
 ### `text_muted`
 
@@ -109,7 +109,7 @@ text_muted: egui::Color32
 
 Muted text: inactive tab titles, secondary labels.
 
-<a id="rustdoc-item-8150"></a>
+<a id="rustdoc-item-10212"></a>
 
 ### `accent`
 
@@ -119,7 +119,7 @@ accent: egui::Color32
 
 The accent: the active tab's underline and other highlighted marks.
 
-<a id="rustdoc-item-8151"></a>
+<a id="rustdoc-item-10213"></a>
 
 ### `accent_hot`
 
@@ -130,7 +130,7 @@ accent_hot: egui::Color32
 A brighter accent: the link colour and the face of an accented control
 while it is hovered or held.
 
-<a id="rustdoc-item-8152"></a>
+<a id="rustdoc-item-10214"></a>
 
 ### `success`
 
@@ -140,7 +140,7 @@ success: egui::Color32
 
 Success and running states.
 
-<a id="rustdoc-item-8153"></a>
+<a id="rustdoc-item-10215"></a>
 
 ### `warning`
 
@@ -150,7 +150,7 @@ warning: egui::Color32
 
 Warnings.
 
-<a id="rustdoc-item-8154"></a>
+<a id="rustdoc-item-10216"></a>
 
 ### `danger`
 
@@ -160,7 +160,7 @@ danger: egui::Color32
 
 Errors and destructive actions.
 
-<a id="rustdoc-item-8155"></a>
+<a id="rustdoc-item-10217"></a>
 
 ### `selection`
 
@@ -170,7 +170,7 @@ selection: egui::Color32
 
 A selected row's tint.
 
-<a id="rustdoc-item-8156"></a>
+<a id="rustdoc-item-10218"></a>
 
 ### `selection_bar`
 
@@ -180,7 +180,7 @@ selection_bar: egui::Color32
 
 A selected row's left bar.
 
-<a id="rustdoc-item-8157"></a>
+<a id="rustdoc-item-10219"></a>
 
 ### `overlay`
 
@@ -190,7 +190,7 @@ overlay: egui::Color32
 
 A floating panel's fill over the scene.
 
-<a id="rustdoc-item-8158"></a>
+<a id="rustdoc-item-10220"></a>
 
 ### `overlay_border`
 
@@ -200,7 +200,7 @@ overlay_border: egui::Color32
 
 A floating panel's border.
 
-<a id="rustdoc-item-8159"></a>
+<a id="rustdoc-item-10221"></a>
 
 ### `shadow`
 
@@ -210,7 +210,7 @@ shadow: egui::Color32
 
 The ink a drop shadow is cast in.
 
-<a id="rustdoc-item-8160"></a>
+<a id="rustdoc-item-10222"></a>
 
 ### `log_info`
 
@@ -220,7 +220,7 @@ log_info: egui::Color32
 
 A log line at `info`.
 
-<a id="rustdoc-item-8161"></a>
+<a id="rustdoc-item-10223"></a>
 
 ### `log_debug`
 
@@ -230,7 +230,7 @@ log_debug: egui::Color32
 
 A log line at `debug`.
 
-<a id="rustdoc-item-8162"></a>
+<a id="rustdoc-item-10224"></a>
 
 ### `log_warn`
 
@@ -240,7 +240,7 @@ log_warn: egui::Color32
 
 A log line at `warn`.
 
-<a id="rustdoc-item-8163"></a>
+<a id="rustdoc-item-10225"></a>
 
 ### `log_error`
 
@@ -252,7 +252,7 @@ A log line at `error`.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-8165"></a>
+<a id="rustdoc-item-10227"></a>
 
 ### `from_theme`
 

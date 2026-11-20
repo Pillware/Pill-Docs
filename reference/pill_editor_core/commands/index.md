@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1399"></a>
+<a id="rustdoc-item-1444"></a>
 
 # Module `pill_editor_core::commands`
 
@@ -39,33 +39,34 @@ key vocabulary changes. The conversions to and from
 ## Module contents
 
 ### Structs
-- [`Chord`](struct.Chord.md#rustdoc-item-1297) — One shortcut: a key plus the modifiers that must be held with it.
-- [`ChordParseError`](struct.ChordParseError.md#rustdoc-item-1289) — The reason a chord or key name could not be parsed.
-- [`CommandInbox`](struct.CommandInbox.md#rustdoc-item-1835) — The world resource that carries a frame's executed command ids to the
-- [`CommandRegistry`](struct.CommandRegistry.md#rustdoc-item-1509) — Every command every owner registered, plus the preset and the file
-- [`CommandSpec`](struct.CommandSpec.md#rustdoc-item-1463) — One registered command.
-- [`CommandView`](struct.CommandView.md#rustdoc-item-1524) — One registered command as the UI sees it.
-- [`EditorPreferences`](struct.EditorPreferences.md#rustdoc-item-1655) — The typed view of the preferences file. It holds the keys the executable
-- [`GizmoPreferences`](struct.GizmoPreferences.md#rustdoc-item-1649) — The gizmo tool's persisted state.
-- [`GizmoProjectPreferences`](struct.GizmoProjectPreferences.md#rustdoc-item-1743) — One project's gizmo choices.
-- [`KeybindingsFile`](struct.KeybindingsFile.md#rustdoc-item-1520) — The keybindings file: the active preset and the per-command chord
-- [`PendingCommandBatch`](struct.PendingCommandBatch.md#rustdoc-item-1872) — One queued batch and what the executable does with it at the frame
+- [`Chord`](struct.Chord.md#rustdoc-item-1342) — One shortcut: a key plus the modifiers that must be held with it.
+- [`ChordParseError`](struct.ChordParseError.md#rustdoc-item-1334) — The reason a chord or key name could not be parsed.
+- [`CommandInbox`](struct.CommandInbox.md#rustdoc-item-1883) — The world resource that carries a frame's executed command ids to the
+- [`CommandRegistry`](struct.CommandRegistry.md#rustdoc-item-1554) — Every command every owner registered, plus the preset and the file
+- [`CommandSpec`](struct.CommandSpec.md#rustdoc-item-1508) — One registered command.
+- [`CommandView`](struct.CommandView.md#rustdoc-item-1569) — One registered command as the UI sees it.
+- [`EditorPreferences`](struct.EditorPreferences.md#rustdoc-item-1701) — The typed view of the preferences file. It holds the keys the executable
+- [`GizmoPreferences`](struct.GizmoPreferences.md#rustdoc-item-1695) — The gizmo tool's persisted state.
+- [`GizmoProjectPreferences`](struct.GizmoProjectPreferences.md#rustdoc-item-1790) — One project's gizmo choices.
+- [`KeybindingsFile`](struct.KeybindingsFile.md#rustdoc-item-1565) — The keybindings file: the active preset and the per-command chord
+- [`PendingCommandBatch`](struct.PendingCommandBatch.md#rustdoc-item-1921) — One queued batch and what the executable does with it at the frame
 - [`PendingEditorCommands`](struct.PendingEditorCommands.md#rustdoc-item-167) — The world resource holding the engine mutations queued by command
-- [`SnappingSteps`](struct.SnappingSteps.md#rustdoc-item-1647) — Snapping steps the gizmo's drags use.
+- [`SnappingSteps`](struct.SnappingSteps.md#rustdoc-item-1693) — Snapping steps the gizmo's drags use.
 
 ### Enums
-- [`KeymapPreset`](enum.KeymapPreset.md#rustdoc-item-905) — The keymap presets the editor ships.
-- [`KeyName`](enum.KeyName.md#rustdoc-item-1220) — The key vocabulary command bindings use.
+- [`KeymapPreset`](enum.KeymapPreset.md#rustdoc-item-949) — The keymap presets the editor ships.
+- [`KeyName`](enum.KeyName.md#rustdoc-item-1265) — The key vocabulary command bindings use.
 
 ### Functions
-- [`builtin_commands`](fn.builtin_commands.md#rustdoc-item-1603) — The built-in commands every editor has (owner `editor`).
-- [`default_scale_step`](fn.default_scale_step.md#rustdoc-item-1736) — The scale step a preferences file without one uses.
-- [`ensure_command_resources`](fn.ensure_command_resources.md#rustdoc-item-1957) — Inserts every command resource the editor relies on, keeping the values a
-- [`menu_tree`](fn.menu_tree.md#rustdoc-item-1602) — Groups the registry's commands by their top-level menu, in command order.
-- [`read_gizmo_settings`](fn.read_gizmo_settings.md#rustdoc-item-1831) — Reads the gizmo settings a project starts a session with.
-- [`write_gizmo_preferences`](fn.write_gizmo_preferences.md#rustdoc-item-1833) — Writes one project's gizmo choices into the preferences file.
+- [`builtin_commands`](fn.builtin_commands.md#rustdoc-item-1649) — The built-in commands every editor has (owner `editor`).
+- [`default_scale_step`](fn.default_scale_step.md#rustdoc-item-1782) — The scale step a preferences file without one uses.
+- [`ensure_command_resources`](fn.ensure_command_resources.md#rustdoc-item-2013) — Inserts every command resource the editor relies on, keeping the values a
+- [`menu_tree`](fn.menu_tree.md#rustdoc-item-1648) — Groups the registry's commands by their top-level menu, in command order.
+- [`read_gizmo_settings`](fn.read_gizmo_settings.md#rustdoc-item-1878) — Reads the gizmo settings a project starts a session with.
+- [`write_gizmo_hidden_types`](fn.write_gizmo_hidden_types.md#rustdoc-item-1881) — Writes the component gizmo types the editor hides into the preferences
+- [`write_gizmo_preferences`](fn.write_gizmo_preferences.md#rustdoc-item-1880) — Writes one project's gizmo choices into the preferences file.
 
 ### Constants
-- [`KEYBINDINGS_FILE`](constant.KEYBINDINGS_FILE.md#rustdoc-item-1830) — The keybindings file's name, next to the layout file.
-- [`LETTERS`](constant.LETTERS.md#rustdoc-item-1398) — The letter keys in alphabetical order. A single letter parses by its index
-- [`PREFERENCES_FILE`](constant.PREFERENCES_FILE.md#rustdoc-item-1829) — The preferences file's name, next to the layout file.
+- [`KEYBINDINGS_FILE`](constant.KEYBINDINGS_FILE.md#rustdoc-item-1877) — The keybindings file's name, next to the layout file.
+- [`LETTERS`](constant.LETTERS.md#rustdoc-item-1443) — The letter keys in alphabetical order. A single letter parses by its index
+- [`PREFERENCES_FILE`](constant.PREFERENCES_FILE.md#rustdoc-item-1876) — The preferences file's name, next to the layout file.

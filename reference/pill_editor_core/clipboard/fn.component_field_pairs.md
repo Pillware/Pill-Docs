@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1171"></a>
+<a id="rustdoc-item-1216"></a>
 
 # Function `pill_editor_core::clipboard::component_field_pairs`
 
@@ -8,7 +8,7 @@
 pub fn component_field_pairs(component: &crate::editor_state::ComponentView) -> Vec<(String, pill_engine::FieldValue)>;
 ```
 
-Source: `editor\pill_editor_core\src\clipboard.rs:613`
+Source: `editor\pill_editor_core\src\clipboard.rs:621`
 
 Pairs each field of one component view with its current value.
 

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-350"></a>
+<a id="rustdoc-item-353"></a>
 
 # Struct `pill_ui_frame::frame::UiFrame`
 
@@ -15,7 +15,7 @@ and the textures those lists sample.
 
 ## Fields
 
-<a id="rustdoc-item-346"></a>
+<a id="rustdoc-item-349"></a>
 
 ### `draws`
 
@@ -25,7 +25,7 @@ draws: Vec<UiDraw>
 
 The lists to draw, in draw order (later entries draw over earlier).
 
-<a id="rustdoc-item-348"></a>
+<a id="rustdoc-item-351"></a>
 
 ### `textures`
 
@@ -37,11 +37,11 @@ The textures the lists sample, and the ids of the ones to free.
 The set holds a texture only when its content changed since the last
 time the producer sent it, so an empty set means there is nothing to
 upload or free. A renderer that was just rebuilt holds no textures
-and asks for them again (see [`crate::texture`](../texture/index.md#rustdoc-item-347)).
+and asks for them again (see [`crate::texture`](../texture/index.md#rustdoc-item-350)).
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-351"></a>
+<a id="rustdoc-item-354"></a>
 
 ### `is_empty`
 
@@ -51,7 +51,7 @@ pub fn is_empty(self: &Self) -> bool;
 
 Returns `true` when there is nothing to draw, upload or free.
 
-<a id="rustdoc-item-352"></a>
+<a id="rustdoc-item-355"></a>
 
 ### `clear`
 

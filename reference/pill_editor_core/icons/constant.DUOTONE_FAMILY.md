@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-4421"></a>
+<a id="rustdoc-item-6382"></a>
 
 # Constant `pill_editor_core::icons::DUOTONE_FAMILY`
 

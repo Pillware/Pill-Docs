@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1245"></a>
+<a id="rustdoc-item-1255"></a>
 
 # Function `pill_core::profiling::enabled::lane_wanted`
 
@@ -8,7 +8,7 @@
 pub(in profiling::enabled) fn lane_wanted(fine_lane: bool) -> bool;
 ```
 
-Visibility: `{'restricted': {'parent': 1217, 'path': '::profiling::enabled'}}` · Source: `engine\pill_core\src\profiling.rs:197`
+Visibility: `{'restricted': {'parent': 1227, 'path': '::profiling::enabled'}}` · Source: `engine\pill_core\src\profiling.rs:197`
 
 Whether a zone on the fine (`profile::fine`) or coarse
 (`profile::coarse`) lane would reach a connected profiler.

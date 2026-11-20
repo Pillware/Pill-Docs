@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-4202"></a>
+<a id="rustdoc-item-4459"></a>
 
 # Function `pill_development_host::runtime::advance_managed_build`
 
@@ -8,7 +8,7 @@
 pub(in runtime) fn advance_managed_build(host: &mut DevHost);
 ```
 
-Visibility: `{'restricted': {'parent': 3859, 'path': '::runtime'}}` · Source: `hosting\pill_development_host\src\runtime.rs:2632`
+Visibility: `{'restricted': {'parent': 4115, 'path': '::runtime'}}` · Source: `hosting\pill_development_host\src\runtime.rs:2731`
 
 Collect a finished C# assembly build and complete its reload at this frame
 boundary.

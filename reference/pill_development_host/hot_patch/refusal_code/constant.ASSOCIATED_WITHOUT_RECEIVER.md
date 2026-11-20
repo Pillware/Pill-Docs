@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-2341"></a>
+<a id="rustdoc-item-2415"></a>
 
 # Constant `pill_development_host::hot_patch::refusal_code::ASSOCIATED_WITHOUT_RECEIVER`
 

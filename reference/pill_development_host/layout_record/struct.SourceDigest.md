@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-2819"></a>
+<a id="rustdoc-item-2893"></a>
 
 # Struct `pill_development_host::layout_record::SourceDigest`
 
@@ -14,7 +14,7 @@ One declared source file and the hash of its contents.
 
 ## Fields
 
-<a id="rustdoc-item-2816"></a>
+<a id="rustdoc-item-2890"></a>
 
 ### `path`
 
@@ -24,7 +24,7 @@ path: String
 
 The path as the resource declared it.
 
-<a id="rustdoc-item-2818"></a>
+<a id="rustdoc-item-2892"></a>
 
 ### `hash`
 
@@ -32,7 +32,7 @@ The path as the resource declared it.
 hash: u64
 ```
 
-FNV-1a of the file's contents, or [`MISSING_SOURCE_HASH`](constant.MISSING_SOURCE_HASH.md#rustdoc-item-2817) when the file
+FNV-1a of the file's contents, or [`MISSING_SOURCE_HASH`](constant.MISSING_SOURCE_HASH.md#rustdoc-item-2891) when the file
 could not be read.
 
 ## Trait implementations

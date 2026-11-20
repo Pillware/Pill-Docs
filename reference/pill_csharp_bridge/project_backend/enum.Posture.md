@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1794"></a>
+<a id="rustdoc-item-1818"></a>
 
 # Enum `pill_csharp_bridge::project_backend::Posture`
 
@@ -8,13 +8,13 @@
 pub(in project_backend) enum Posture { ... }
 ```
 
-Visibility: `{'restricted': {'parent': 1795, 'path': '::project_backend'}}` · Source: `csharp\pill_csharp_bridge\src\project_backend.rs:35`
+Visibility: `{'restricted': {'parent': 1819, 'path': '::project_backend'}}` · Source: `csharp\pill_csharp_bridge\src\project_backend.rs:35`
 
 How the managed project is hosted.
 
 ## Variants
 
-<a id="rustdoc-item-1792"></a>
+<a id="rustdoc-item-1816"></a>
 
 ### `CoreClr`
 
@@ -25,7 +25,7 @@ CoreClr
 CoreCLR started through hostfxr, which loads the runtime and project
 assemblies. The .NET runtime must be installed on the machine.
 
-<a id="rustdoc-item-1793"></a>
+<a id="rustdoc-item-1817"></a>
 
 ### `NativeAot`
 
@@ -56,6 +56,7 @@ install and runs no JIT.
 - `CastableFrom<ST, Uninit, Uninit>`
 - `CastableFrom<ST, Initialized, Initialized>`
 - `Read<Exclusive, BecauseExclusive>`
+- `Equivalent<K>`
 - `Clone`
 - `Copy`
 - `Debug`

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-4225"></a>
+<a id="rustdoc-item-4484"></a>
 
 # Function `pill_development_host::runtime::print_startup_configuration`
 
@@ -8,7 +8,7 @@
 pub(in runtime) fn print_startup_configuration(workspace_root: &std::path::Path, project_module_config: &crate::ProjectModuleConfig);
 ```
 
-Visibility: `{'restricted': {'parent': 3859, 'path': '::runtime'}}` · Source: `hosting\pill_development_host\src\runtime.rs:4032`
+Visibility: `{'restricted': {'parent': 4115, 'path': '::runtime'}}` · Source: `hosting\pill_development_host\src\runtime.rs:4258`
 
 Print the selected backend before any build output starts streaming.
 

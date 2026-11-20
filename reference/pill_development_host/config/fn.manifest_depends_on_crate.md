@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1267"></a>
+<a id="rustdoc-item-1287"></a>
 
 # Function `pill_development_host::config::manifest_depends_on_crate`
 
@@ -8,7 +8,7 @@
 pub(in config) fn manifest_depends_on_crate(manifest: &str, crate_name: &str) -> bool;
 ```
 
-Visibility: `{'restricted': {'parent': 821, 'path': '::config'}}` · Source: `hosting\pill_development_host\src\config.rs:1684`
+Visibility: `{'restricted': {'parent': 823, 'path': '::config'}}` · Source: `hosting\pill_development_host\src\config.rs:1891`
 
 Whether a `Cargo.toml` declares a dependency on `crate_name`.
 

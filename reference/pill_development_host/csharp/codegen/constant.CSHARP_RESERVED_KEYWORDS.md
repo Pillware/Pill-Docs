@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1287"></a>
+<a id="rustdoc-item-1361"></a>
 
 # Constant `pill_development_host::csharp::codegen::CSHARP_RESERVED_KEYWORDS`
 
@@ -8,7 +8,7 @@
 pub(in csharp::codegen) const CSHARP_RESERVED_KEYWORDS: &[&str] = _;
 ```
 
-Visibility: `{'restricted': {'parent': 1288, 'path': '::csharp::codegen'}}` · Source: `hosting\pill_development_host\src\csharp\codegen.rs:57`
+Visibility: `{'restricted': {'parent': 1362, 'path': '::csharp::codegen'}}` · Source: `hosting\pill_development_host\src\csharp\codegen.rs:57`
 
 C# reserved keywords that cannot name a parameter.
 

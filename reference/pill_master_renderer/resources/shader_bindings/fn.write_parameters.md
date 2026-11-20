@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-2850"></a>
+<a id="rustdoc-item-2887"></a>
 
 # Function `pill_master_renderer::resources::shader_bindings::write_parameters`
 
@@ -8,7 +8,7 @@
 pub(crate) fn write_parameters(queue: &wgpu::Queue, buffer: &wgpu::Buffer, parameter_slots: &indexmap::IndexMap<String, crate::assets::ShaderParameterSlot>, parameters: &std::collections::BTreeMap<String, pill_renderer_api::frame::MaterialParameter>);
 ```
 
-Visibility: `crate` · Source: `extensions\pill_master_renderer\pill_master_renderer\src\resources\shader_bindings.rs:64`
+Visibility: `crate` · Source: `extensions\pill_master_renderer\modules\runtime\gpu\src\resources\shader_bindings.rs:64`
 
 Packs the parameter values of a material or a pass into the uniform buffer
 its shader reads.

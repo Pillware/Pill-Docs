@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-3420"></a>
+<a id="rustdoc-item-3676"></a>
 
 # Function `pill_development_host::project_module::loaded::poll_managed_assembly_swap`
 
@@ -8,7 +8,7 @@
 pub(in project_module::loaded) fn poll_managed_assembly_swap(project: &mut crate::csharp::CSharpProject, engine: &mut pill_engine::Engine) -> bool;
 ```
 
-Visibility: `{'restricted': {'parent': 3421, 'path': '::project_module::loaded'}}` · Source: `hosting\pill_development_host\src\project_module.rs:444`
+Visibility: `{'restricted': {'parent': 3677, 'path': '::project_module::loaded'}}` · Source: `hosting\pill_development_host\src\project_module.rs:451`
 
 Polls the managed loader and returns whether it swapped the assembly.
 

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-5614"></a>
+<a id="rustdoc-item-7580"></a>
 
 # Struct `pill_editor_core::notices::Notice`
 
@@ -15,7 +15,7 @@ the editor.
 
 ## Fields
 
-<a id="rustdoc-item-5611"></a>
+<a id="rustdoc-item-7577"></a>
 
 ### `seq`
 
@@ -26,7 +26,7 @@ seq: u64
 An id that increases for the life of the session. The shell's toast
 list keys on it, so a redrawn frame never queues a line it shows.
 
-<a id="rustdoc-item-5612"></a>
+<a id="rustdoc-item-7578"></a>
 
 ### `level`
 
@@ -36,7 +36,7 @@ level: NoticeLevel
 
 How serious it is.
 
-<a id="rustdoc-item-5613"></a>
+<a id="rustdoc-item-7579"></a>
 
 ### `text`
 

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-922"></a>
+<a id="rustdoc-item-966"></a>
 
 # Enum `pill_editor_core::clipboard::Payload`
 
@@ -17,7 +17,7 @@ component, of one field value, or of one asset reference.
 
 ## Variants
 
-<a id="rustdoc-item-912"></a>
+<a id="rustdoc-item-956"></a>
 
 ### `Entity`
 
@@ -27,7 +27,7 @@ Entity
 
 One entity, as the components a fresh entity is seeded with.
 
-<a id="rustdoc-item-914"></a>
+<a id="rustdoc-item-958"></a>
 
 ### `Component`
 
@@ -37,7 +37,7 @@ Component
 
 One component, as the values a paste writes onto an entity.
 
-<a id="rustdoc-item-919"></a>
+<a id="rustdoc-item-963"></a>
 
 ### `Field`
 
@@ -47,7 +47,7 @@ Field
 
 One field value, carried as its token.
 
-<a id="rustdoc-item-921"></a>
+<a id="rustdoc-item-965"></a>
 
 ### `Asset`
 
@@ -59,7 +59,7 @@ One asset reference, by project-relative path.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-923"></a>
+<a id="rustdoc-item-967"></a>
 
 ### `kind`
 

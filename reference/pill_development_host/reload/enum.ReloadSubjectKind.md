@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-3435"></a>
+<a id="rustdoc-item-3691"></a>
 
 # Enum `pill_development_host::reload::ReloadSubjectKind`
 
@@ -20,7 +20,7 @@ reload that works but is reported as the wrong subject.
 
 ## Variants
 
-<a id="rustdoc-item-3433"></a>
+<a id="rustdoc-item-3689"></a>
 
 ### `Project`
 
@@ -32,7 +32,7 @@ The game project. It owns the scheduler and tags no registrations, and
 its completion line is the one the migration and auto-reload suites
 wait for.
 
-<a id="rustdoc-item-3434"></a>
+<a id="rustdoc-item-3690"></a>
 
 ### `Extension`
 
@@ -45,7 +45,7 @@ extensions, so its registrations are tagged with its owner.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-3436"></a>
+<a id="rustdoc-item-3692"></a>
 
 ### `scopes_registration`
 
@@ -59,7 +59,7 @@ owner, so a later reload clears only that subject's systems.
 Only an extension tags them. The project owns the scheduler and leaves
 registrations untagged.
 
-<a id="rustdoc-item-3437"></a>
+<a id="rustdoc-item-3693"></a>
 
 ### `completion_message`
 
@@ -69,7 +69,7 @@ pub(in reload) fn completion_message(self: &Self) -> &'static str;
 
 Log line written once the swap succeeds.
 
-<a id="rustdoc-item-3438"></a>
+<a id="rustdoc-item-3694"></a>
 
 ### `forgotten_types_warning`
 
@@ -80,7 +80,7 @@ pub(in reload) fn forgotten_types_warning(self: &Self) -> &'static str;
 Warning written when the new generation stops registering a type whose
 data is still in the world.
 
-<a id="rustdoc-item-3439"></a>
+<a id="rustdoc-item-3695"></a>
 
 ### `build_failed_message`
 
@@ -94,7 +94,7 @@ Kept per kind instead of built from a template: the Python suites wait
 for the project's exact text, and `test_log_contract.py` fails if a
 token they use stops appearing in the Rust source.
 
-<a id="rustdoc-item-3440"></a>
+<a id="rustdoc-item-3696"></a>
 
 ### `load_failed_message`
 
@@ -104,7 +104,7 @@ pub(in reload) fn load_failed_message(self: &Self) -> &'static str;
 
 Failure line for a replacement that could not be loaded.
 
-<a id="rustdoc-item-3441"></a>
+<a id="rustdoc-item-3697"></a>
 
 ### `rejected_message`
 

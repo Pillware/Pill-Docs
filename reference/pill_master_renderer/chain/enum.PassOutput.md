@@ -8,7 +8,7 @@
 pub(crate) enum PassOutput<'a> { ... }
 ```
 
-Visibility: `crate` · Source: `extensions\pill_master_renderer\pill_master_renderer\src\chain.rs:56`
+Visibility: `crate` · Source: `extensions\pill_master_renderer\modules\runtime\gpu\src\chain.rs:56`
 
 Where a pass writes.
 

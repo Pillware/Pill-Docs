@@ -8,7 +8,7 @@
 pub fn declaration_has_attribute(source: &str, mask: &[bool], declaration_start: usize, attribute: &str) -> bool;
 ```
 
-Source: `hosting\pill_hot_scan\src\lib.rs:828`
+Source: `hosting\pill_hot_scan\src\lib.rs:855`
 
 Whether `attribute` appears in the block above this declaration.
 

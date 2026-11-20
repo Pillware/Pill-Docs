@@ -8,7 +8,7 @@
 pub fn declaration_takes_receiver(source: &str, mask: &[bool], declaration_start: usize) -> bool;
 ```
 
-Source: `hosting\pill_hot_scan\src\lib.rs:857`
+Source: `hosting\pill_hot_scan\src\lib.rs:884`
 
 Whether the declaration beginning at `fn` takes a receiver.
 

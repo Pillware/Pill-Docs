@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-8047"></a>
+<a id="rustdoc-item-10109"></a>
 
 # Constant `pill_editor_core::state_watch::STATE_FILE_POLL_FRAMES`
 

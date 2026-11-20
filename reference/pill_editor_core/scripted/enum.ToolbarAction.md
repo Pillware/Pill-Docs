@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-6781"></a>
+<a id="rustdoc-item-8832"></a>
 
 # Enum `pill_editor_core::scripted::ToolbarAction`
 
@@ -8,13 +8,13 @@
 pub enum ToolbarAction { ... }
 ```
 
-Source: `editor\pill_editor_core\src\scripted.rs:416`
+Source: `editor\pill_editor_core\src\scripted.rs:471`
 
 One Assets toolbar button a `toolbar` line presses.
 
 ## Variants
 
-<a id="rustdoc-item-6993"></a>
+<a id="rustdoc-item-9051"></a>
 
 ### `Create`
 
@@ -24,7 +24,7 @@ Create
 
 Open the create dialog.
 
-<a id="rustdoc-item-6994"></a>
+<a id="rustdoc-item-9052"></a>
 
 ### `Rename`
 
@@ -34,7 +34,7 @@ Rename
 
 Open the rename dialog for the selected file.
 
-<a id="rustdoc-item-6995"></a>
+<a id="rustdoc-item-9053"></a>
 
 ### `Delete`
 
@@ -44,7 +44,7 @@ Delete
 
 Delete the selected file.
 
-<a id="rustdoc-item-6996"></a>
+<a id="rustdoc-item-9054"></a>
 
 ### `Meta`
 

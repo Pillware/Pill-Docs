@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-2950"></a>
+<a id="rustdoc-item-2987"></a>
 
 # Function `pill_master_renderer::surface::pick_color_format`
 
@@ -8,7 +8,7 @@
 pub(in surface) fn pick_color_format(available_formats: &[wgpu::TextureFormat]) -> Option<wgpu::TextureFormat>;
 ```
 
-Visibility: `{'restricted': {'parent': 2900, 'path': '::surface'}}` · Source: `extensions\pill_master_renderer\pill_master_renderer\src\surface.rs:520`
+Visibility: `{'restricted': {'parent': 2937, 'path': '::surface'}}` · Source: `extensions\pill_master_renderer\modules\runtime\gpu\src\surface.rs:520`
 
 The configured colour format to ask a surface for.
 

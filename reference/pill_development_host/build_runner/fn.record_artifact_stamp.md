@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-576"></a>
+<a id="rustdoc-item-577"></a>
 
 # Function `pill_development_host::build_runner::record_artifact_stamp`
 
@@ -8,7 +8,7 @@
 pub(in build_runner) fn record_artifact_stamp(workspace_root: &std::path::Path, module_name: &str, source_identity: &str, build_command: &[String], artifacts: &[std::path::PathBuf]);
 ```
 
-Visibility: `{'restricted': {'parent': 545, 'path': '::build_runner'}}` · Source: `hosting\pill_development_host\src\build_runner.rs:345`
+Visibility: `{'restricted': {'parent': 546, 'path': '::build_runner'}}` · Source: `hosting\pill_development_host\src\build_runner.rs:345`
 
 Records that the host itself produced these artifacts with this command.
 

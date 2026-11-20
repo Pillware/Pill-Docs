@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-6617"></a>
+<a id="rustdoc-item-8655"></a>
 
 # Struct `pill_editor_core::scene_workflow::OpenScene`
 
@@ -14,7 +14,7 @@ Which `.scene` file the editor's world came from: its path and its guid.
 
 ## Fields
 
-<a id="rustdoc-item-6615"></a>
+<a id="rustdoc-item-8653"></a>
 
 ### `path`
 
@@ -24,7 +24,7 @@ path: String
 
 The scene's path below the asset directory, `/`-separated.
 
-<a id="rustdoc-item-6616"></a>
+<a id="rustdoc-item-8654"></a>
 
 ### `guid`
 

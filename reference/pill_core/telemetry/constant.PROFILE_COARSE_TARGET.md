@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1721"></a>
+<a id="rustdoc-item-1731"></a>
 
 # Constant `pill_core::telemetry::PROFILE_COARSE_TARGET`
 

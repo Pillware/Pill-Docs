@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-124"></a>
+<a id="rustdoc-item-127"></a>
 
 # Struct `pill_audio::audio_manager::AudioManager`
 
@@ -8,7 +8,7 @@
 pub struct AudioManager;
 ```
 
-Source: `extensions\pill_audio\pill_audio\src\audio_manager.rs:66`
+Source: `extensions\pill_audio\modules\runtime\src\audio_manager.rs:72`
 
 Owns the output stream and the pooled sinks that play through it.
 
@@ -17,12 +17,18 @@ the stream stops all audio. It is a resource for that reason, and because
 there is exactly one audio device.
 
 It declares its settings surface in the module's `register`
-([`AudioSettingsAsset`](struct.AudioSettingsAsset.md#rustdoc-item-247)): the applier points into that image, so every
+([`AudioSettingsAsset`](struct.AudioSettingsAsset.md#rustdoc-item-312)): the applier points into that image, so every
 generation re-points it.
+
+It is a [`PlayState::Keep`](pill_engine::PlayState::Keep) resource: the
+output stream belongs to the machine, so there is nothing to copy at Play,
+and putting a pre-play copy back would drop the live stream and stop the
+audio. What plays is decided by the entities' components, which the session
+does restore.
 
 ## Fields
 
-<a id="rustdoc-item-234"></a>
+<a id="rustdoc-item-299"></a>
 
 ### `_stream`
 
@@ -33,7 +39,7 @@ _stream: rodio::OutputStream
 The output stream. Nothing reads it after construction, but dropping it
 silences every sink, so it is held for its lifetime alone.
 
-<a id="rustdoc-item-238"></a>
+<a id="rustdoc-item-303"></a>
 
 ### `stream_handle`
 
@@ -42,9 +48,9 @@ stream_handle: rodio::OutputStreamHandle
 ```
 
 Handle used to build sinks against the stream. Also handed out by
-[`AudioManager::stream_handle`](#rustdoc-item-237).
+[`AudioManager::stream_handle`](#rustdoc-item-302).
 
-<a id="rustdoc-item-240"></a>
+<a id="rustdoc-item-305"></a>
 
 ### `ambient_sinks`
 
@@ -55,7 +61,7 @@ ambient_sinks: Vec<rodio::Sink>
 Non-positional sinks, indexed by the sink index a source stores in
 [`AudioSourceComponent::sink`].
 
-<a id="rustdoc-item-242"></a>
+<a id="rustdoc-item-307"></a>
 
 ### `spatial_sinks`
 
@@ -65,7 +71,7 @@ spatial_sinks: Vec<rodio::SpatialSink>
 
 Positional sinks, indexed the same way.
 
-<a id="rustdoc-item-244"></a>
+<a id="rustdoc-item-309"></a>
 
 ### `free_ambient_sink_indices`
 
@@ -75,7 +81,7 @@ free_ambient_sink_indices: Vec<u32>
 
 Indices of the ambient sinks that no source holds.
 
-<a id="rustdoc-item-245"></a>
+<a id="rustdoc-item-310"></a>
 
 ### `free_spatial_sink_indices`
 
@@ -85,7 +91,7 @@ free_spatial_sink_indices: Vec<u32>
 
 Indices of the spatial sinks that no source holds.
 
-<a id="rustdoc-item-246"></a>
+<a id="rustdoc-item-311"></a>
 
 ### `ear_separation`
 
@@ -95,13 +101,13 @@ ear_separation: f32
 
 Half the distance between the listener's ears, as the project set it.
 
-The sinks were built with [`EAR_SEPARATION`](constant.EAR_SEPARATION.md#rustdoc-item-233); a settings document may
+The sinks were built with [`EAR_SEPARATION`](constant.EAR_SEPARATION.md#rustdoc-item-298); a settings document may
 move them while the device runs, so the value the manager was built with
 is kept to tell a real change from a repeated one.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-248"></a>
+<a id="rustdoc-item-314"></a>
 
 ### `settings`
 
@@ -111,7 +117,7 @@ pub fn settings(self: &Self) -> AudioSettings;
 
 The settings this device is running with.
 
-<a id="rustdoc-item-230"></a>
+<a id="rustdoc-item-295"></a>
 
 ### `new`
 
@@ -123,10 +129,10 @@ Opens the default output device and builds both sink pools.
 
 Returns `None` when there is no audio device: a headless CI runner, a
 container, a machine with audio turned off. That is an ordinary
-condition rather than an error. [`crate::register`](../fn.register.md#rustdoc-item-186) then installs no
+condition rather than an error. [`crate::register`](../fn.register.md#rustdoc-item-249) then installs no
 manager, and [`crate::audio_system`] only drains queued sound loads.
 
-<a id="rustdoc-item-250"></a>
+<a id="rustdoc-item-316"></a>
 
 ### `with_defaults`
 
@@ -136,7 +142,7 @@ pub fn with_defaults() -> Option<Self>;
 
 Opens the default device with the default pool sizes.
 
-<a id="rustdoc-item-251"></a>
+<a id="rustdoc-item-317"></a>
 
 ### `acquire`
 
@@ -149,7 +155,7 @@ Takes a free sink index from the pool that `sound_type` names.
 Returns `None` when every sink of that kind is busy, which limits the
 number of voices instead of allocating more under load.
 
-<a id="rustdoc-item-253"></a>
+<a id="rustdoc-item-319"></a>
 
 ### `release`
 
@@ -166,7 +172,7 @@ the queued ones within a few milliseconds. Handing back an index the
 pool already holds is refused, because a double free would give one
 sink to two sources.
 
-<a id="rustdoc-item-254"></a>
+<a id="rustdoc-item-320"></a>
 
 ### `is_playing`
 
@@ -178,7 +184,7 @@ Returns whether the sink has audio queued and is not paused.
 
 An index with no sink of that kind reports `false`.
 
-<a id="rustdoc-item-255"></a>
+<a id="rustdoc-item-321"></a>
 
 ### `is_finished`
 
@@ -190,7 +196,7 @@ Returns whether the sink has drained everything appended to it.
 
 An index with no sink of that kind counts as finished.
 
-<a id="rustdoc-item-256"></a>
+<a id="rustdoc-item-322"></a>
 
 ### `start`
 
@@ -203,7 +209,7 @@ Queues `sound` on `sink_index` and starts playing it at `volume`.
 Returns `false` and leaves the sink untouched when the bytes cannot be
 decoded or when `sink_index` names no sink of that kind.
 
-<a id="rustdoc-item-257"></a>
+<a id="rustdoc-item-323"></a>
 
 ### `pause`
 
@@ -213,7 +219,7 @@ pub(crate) fn pause(self: &Self, sound_type: SoundType, sink_index: u32);
 
 Halts a sink without returning it to the pool.
 
-<a id="rustdoc-item-258"></a>
+<a id="rustdoc-item-324"></a>
 
 ### `set_volume`
 
@@ -223,7 +229,7 @@ pub(crate) fn set_volume(self: &Self, sound_type: SoundType, sink_index: u32, vo
 
 Sets a sink's playback volume, where 1.0 is the sound's own level.
 
-<a id="rustdoc-item-259"></a>
+<a id="rustdoc-item-325"></a>
 
 ### `set_emitter`
 
@@ -233,7 +239,7 @@ pub(crate) fn set_emitter(self: &Self, sink_index: u32, emitter_position: [f32; 
 
 Moves a spatial sink's emitter to a world position.
 
-<a id="rustdoc-item-260"></a>
+<a id="rustdoc-item-326"></a>
 
 ### `set_ears`
 
@@ -246,7 +252,7 @@ Moves the ears of every spatial sink.
 The ears belong to the listener, not to a sound, so they are set on
 every spatial sink at once instead of per source.
 
-<a id="rustdoc-item-237"></a>
+<a id="rustdoc-item-302"></a>
 
 ### `stream_handle`
 
@@ -256,7 +262,7 @@ pub fn stream_handle(self: &Self) -> &rodio::OutputStreamHandle;
 
 Returns the stream handle, for code that builds its own sinks.
 
-<a id="rustdoc-item-261"></a>
+<a id="rustdoc-item-327"></a>
 
 ### `free_counts`
 

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-643"></a>
+<a id="rustdoc-item-641"></a>
 
 # Struct `pill_master_renderer_data::assets::rendering_pipeline::RenderingPipelineDocument`
 
@@ -8,14 +8,14 @@
 pub struct RenderingPipelineDocument;
 ```
 
-Source: `extensions\pill_master_renderer\pill_master_renderer_data\src\assets\rendering_pipeline.rs:150`
+Source: `extensions\pill_master_renderer\modules\runtime\data\src\assets\rendering_pipeline.rs:150`
 
 The pipeline as its file holds it. The passes are listed in the order they
 run.
 
 ## Fields
 
-<a id="rustdoc-item-688"></a>
+<a id="rustdoc-item-684"></a>
 
 ### `passes`
 
@@ -36,6 +36,9 @@ The passes, in the order they run.
 - `TryFrom<U>`
 - `Any`
 - `ToOwned`
+- `CastableFrom<ST, Uninit, Uninit>`
+- `CastableFrom<ST, Initialized, Initialized>`
+- `Read<Exclusive, BecauseExclusive>`
 - `DeserializeOwned`
 - `Instrument`
 - `WithSubscriber`
@@ -43,9 +46,6 @@ The passes, in the order they run.
 - `Pointable`
 - `OwoColorize`
 - `ErasedDestructor`
-- `CastableFrom<ST, Uninit, Uninit>`
-- `CastableFrom<ST, Initialized, Initialized>`
-- `Read<Exclusive, BecauseExclusive>`
 - `Clone`
 - `Debug`
 - `Default`

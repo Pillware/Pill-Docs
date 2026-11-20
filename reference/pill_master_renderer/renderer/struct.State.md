@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-495"></a>
+<a id="rustdoc-item-492"></a>
 
 # Struct `pill_master_renderer::renderer::State`
 
@@ -8,19 +8,19 @@
 pub struct State;
 ```
 
-Source: `extensions\pill_master_renderer\pill_master_renderer\src\renderer.rs:708`
+Source: `extensions\pill_master_renderer\modules\runtime\gpu\src\renderer.rs:708`
 
 The wgpu state every surface shares: the device, the queue, the caches and
 the painters.
 
-It lives in a field of [`Renderer`](struct.Renderer.md#rustdoc-item-1865) rather than as loose fields, so the
+It lives in a field of [`Renderer`](struct.Renderer.md#rustdoc-item-1908) rather than as loose fields, so the
 shared GPU objects have one home and the asset caches stay separate.
 Nothing sized to a single surface lives here; that belongs to
-[`SurfaceTarget`](struct.SurfaceTarget.md#rustdoc-item-1863), one per surface.
+[`SurfaceTarget`](struct.SurfaceTarget.md#rustdoc-item-1906), one per surface.
 
 ## Fields
 
-<a id="rustdoc-item-1990"></a>
+<a id="rustdoc-item-2033"></a>
 
 ### `renderer_resource_storage`
 
@@ -31,7 +31,7 @@ renderer_resource_storage: crate::resources::RendererResourceStorage
 The per-type cache of every GPU resource - shaders, textures, meshes,
 materials and cameras - and the engine parameters table.
 
-<a id="rustdoc-item-1991"></a>
+<a id="rustdoc-item-2034"></a>
 
 ### `surface_format`
 
@@ -45,7 +45,7 @@ All surfaces use one format. A surface attached later is refused if it
 cannot be drawn in this format, so each asset's GPU object can be built
 once, whatever surfaces exist.
 
-<a id="rustdoc-item-1992"></a>
+<a id="rustdoc-item-2035"></a>
 
 ### `device`
 
@@ -55,7 +55,7 @@ device: wgpu::Device
 
 The device every GPU object in this module is created from.
 
-<a id="rustdoc-item-1993"></a>
+<a id="rustdoc-item-2036"></a>
 
 ### `queue`
 
@@ -65,7 +65,7 @@ queue: wgpu::Queue
 
 The queue every upload and frame submission goes through.
 
-<a id="rustdoc-item-1994"></a>
+<a id="rustdoc-item-2037"></a>
 
 ### `depth_format`
 
@@ -76,7 +76,7 @@ depth_format: wgpu::TextureFormat
 Format of the depth buffer each surface owns, and of every geometry
 pass's depth attachment.
 
-<a id="rustdoc-item-1995"></a>
+<a id="rustdoc-item-2038"></a>
 
 ### `mesh_drawer`
 
@@ -86,7 +86,7 @@ mesh_drawer: crate::drawers::mesh_drawer::MeshDrawer
 
 Records the geometry passes and holds the instance buffer they read.
 
-<a id="rustdoc-item-1996"></a>
+<a id="rustdoc-item-2039"></a>
 
 ### `gpu_profiler`
 
@@ -97,7 +97,7 @@ gpu_profiler: Option<crate::profiler::Profiler>
 GPU timestamps and pipeline statistics, when `PILL_GPU_PROFILE` asked
 for them and the device has the features.
 
-<a id="rustdoc-item-1997"></a>
+<a id="rustdoc-item-2040"></a>
 
 ### `frames_since_gpu_report`
 
@@ -107,7 +107,7 @@ frames_since_gpu_report: u32
 
 Frames rendered since the GPU profiler last logged its numbers.
 
-<a id="rustdoc-item-1998"></a>
+<a id="rustdoc-item-2041"></a>
 
 ### `camera_bind_group_layout`
 
@@ -117,7 +117,7 @@ camera_bind_group_layout: wgpu::BindGroupLayout
 
 Layout every camera bind group is built from.
 
-<a id="rustdoc-item-1999"></a>
+<a id="rustdoc-item-2042"></a>
 
 ### `instance`
 
@@ -128,7 +128,7 @@ instance: wgpu::Instance
 The instance the surfaces were created from; a surface attached later
 needs it.
 
-<a id="rustdoc-item-2001"></a>
+<a id="rustdoc-item-2044"></a>
 
 ### `adapter`
 
@@ -139,7 +139,7 @@ adapter: wgpu::Adapter
 The adapter the device runs on; a surface attached later is checked
 against it.
 
-<a id="rustdoc-item-2003"></a>
+<a id="rustdoc-item-2046"></a>
 
 ### `overlay`
 
@@ -149,7 +149,7 @@ overlay: crate::overlay::Overlay
 
 Debug drawing, outlines and picking, drawn over every surface's chain.
 
-<a id="rustdoc-item-2004"></a>
+<a id="rustdoc-item-2047"></a>
 
 ### `preview`
 
@@ -160,7 +160,7 @@ preview: crate::preview::PreviewRenderer
 The asset preview path: one small off-screen render per request, read
 back between frames.
 
-<a id="rustdoc-item-2005"></a>
+<a id="rustdoc-item-2048"></a>
 
 ### `ui_renderer`
 
@@ -172,7 +172,7 @@ The UI painter: the game's UI and the debug labels, over every
 surface's overlay. Its pipeline is tied to the surfaces' colour format,
 and the debug font is registered in it from the start.
 
-<a id="rustdoc-item-2007"></a>
+<a id="rustdoc-item-2050"></a>
 
 ### `frames_since_ui_report`
 
@@ -185,7 +185,7 @@ stays readable while the end-to-end suites still see the token.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-2009"></a>
+<a id="rustdoc-item-2052"></a>
 
 ### `new`
 
@@ -196,7 +196,7 @@ pub(in renderer) async unsafe fn new(window: RawWindowData, width: u32, height: 
 The shared state, beside the primary surface's target.
 
 The surface is one of the surfaces the state draws rather than part of
-its own state, so it comes back as a [`SurfaceTarget`](struct.SurfaceTarget.md#rustdoc-item-1863) like every
+its own state, so it comes back as a [`SurfaceTarget`](struct.SurfaceTarget.md#rustdoc-item-1906) like every
 surface attached later.
 
 #### Errors
@@ -207,9 +207,9 @@ is refused, or the overlay or the resource storage cannot be created.
 
 #### Safety
 
-As [`Surface::create`](../surface/struct.Surface.md#rustdoc-item-2008): `window` must outlive the state.
+As [`Surface::create`](../surface/struct.Surface.md#rustdoc-item-2051): `window` must outlive the state.
 
-<a id="rustdoc-item-2010"></a>
+<a id="rustdoc-item-2053"></a>
 
 ### `record_ui`
 
@@ -225,7 +225,7 @@ through this same path with its own id, and all of a surface's lists go
 to the painter in one call. [`Renderer::render`] applied the frame's
 textures before this ran, so nothing here uploads.
 
-<a id="rustdoc-item-2011"></a>
+<a id="rustdoc-item-2054"></a>
 
 ### `render`
 
@@ -246,7 +246,7 @@ Returns the error when the surface's image cannot be acquired, when the
 device was lost, or when wgpu refuses the frame's commands at
 submission.
 
-<a id="rustdoc-item-2012"></a>
+<a id="rustdoc-item-2055"></a>
 
 ### `begin_surface_frame`
 
@@ -265,7 +265,7 @@ here, so the recording phases only record.
 Returns the error when the device was lost, or when the surface's image
 cannot be acquired.
 
-<a id="rustdoc-item-2013"></a>
+<a id="rustdoc-item-2056"></a>
 
 ### `record_pass`
 
@@ -278,7 +278,7 @@ Record one pass of the chain into `encoder`.
 A pass whose target or camera is gone records nothing: the chain log
 already named the pass that could not be built.
 
-<a id="rustdoc-item-2014"></a>
+<a id="rustdoc-item-2057"></a>
 
 ### `pass_color_attachments`
 
@@ -293,7 +293,7 @@ The colour attachments a pass writes, in the order the shader's
 because drawing into the remaining targets would leave a picture the
 next pass cannot read.
 
-<a id="rustdoc-item-2015"></a>
+<a id="rustdoc-item-2058"></a>
 
 ### `record_geometry_pass`
 
@@ -306,7 +306,7 @@ pipeline it built or through each instance's own material.
 
 Returns whether a GPU timestamp was written before the pass.
 
-<a id="rustdoc-item-2016"></a>
+<a id="rustdoc-item-2059"></a>
 
 ### `record_fullscreen_pass`
 
@@ -319,7 +319,7 @@ clipped to the frame's rectangle.
 
 Returns whether a GPU timestamp was written before the pass.
 
-<a id="rustdoc-item-2017"></a>
+<a id="rustdoc-item-2060"></a>
 
 ### `record_overlay_and_ui`
 
@@ -329,7 +329,7 @@ pub(in renderer) fn record_overlay_and_ui(self: &mut Self, encoder: &mut wgpu::C
 
 Record the overlay and the UI over the chain's picture.
 
-<a id="rustdoc-item-2018"></a>
+<a id="rustdoc-item-2061"></a>
 
 ### `finish_surface_frame`
 

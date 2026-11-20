@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-4718"></a>
+<a id="rustdoc-item-5001"></a>
 
 # Enum `pill_engine_core::error::RemoveComponentError`
 
@@ -17,7 +17,7 @@ is missing or does not carry the component being removed.
 
 ## Variants
 
-<a id="rustdoc-item-4716"></a>
+<a id="rustdoc-item-5278"></a>
 
 ### `EntityNotFound`
 
@@ -27,7 +27,7 @@ EntityNotFound
 
 The entity does not exist (was destroyed or never created).
 
-<a id="rustdoc-item-4717"></a>
+<a id="rustdoc-item-5279"></a>
 
 ### `ComponentNotFound`
 
@@ -49,15 +49,16 @@ The entity does not have a component of this type.
 - `Any`
 - `ToOwned`
 - `ToString`
+- `CastableFrom<ST, Uninit, Uninit>`
+- `CastableFrom<ST, Initialized, Initialized>`
+- `Read<Exclusive, BecauseExclusive>`
 - `Instrument`
 - `WithSubscriber`
 - `IntoEither`
 - `Pointable`
 - `OwoColorize`
 - `ErasedDestructor`
-- `CastableFrom<ST, Uninit, Uninit>`
-- `CastableFrom<ST, Initialized, Initialized>`
-- `Read<Exclusive, BecauseExclusive>`
+- `Equivalent<K>`
 - `Debug`
 - `Diagnostic`
 - `Error`

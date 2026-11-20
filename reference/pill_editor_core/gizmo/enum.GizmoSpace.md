@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1740"></a>
+<a id="rustdoc-item-1786"></a>
 
 # Enum `pill_editor_core::gizmo::GizmoSpace`
 
@@ -8,13 +8,13 @@
 pub enum GizmoSpace { ... }
 ```
 
-Source: `editor\pill_editor_core\src\gizmo.rs:305`
+Source: `editor\pill_editor_core\src\gizmo.rs:330`
 
 What "the axes" mean: the world's, or the entity's own.
 
 ## Variants
 
-<a id="rustdoc-item-3871"></a>
+<a id="rustdoc-item-4254"></a>
 
 ### `World`
 
@@ -24,7 +24,7 @@ World
 
 The world's X/Y/Z.
 
-<a id="rustdoc-item-3872"></a>
+<a id="rustdoc-item-4255"></a>
 
 ### `Local`
 

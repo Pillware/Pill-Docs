@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-428"></a>
+<a id="rustdoc-item-430"></a>
 
 # Function `pill_project_ui::register_reload_system`
 
@@ -8,7 +8,7 @@
 pub(crate) fn register_reload_system(engine: &mut pill_engine_core::Engine);
 ```
 
-Visibility: `crate` · Source: `ui\pill_project_ui\src\lib.rs:609`
+Visibility: `crate` · Source: `ui\pill_project_ui\src\lib.rs:615`
 
 Register the re-apply system once per project generation.
 

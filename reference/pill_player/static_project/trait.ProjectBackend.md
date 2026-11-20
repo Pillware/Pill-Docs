@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-586"></a>
+<a id="rustdoc-item-589"></a>
 
 # Trait `pill_player::static_project::ProjectBackend`
 
@@ -18,7 +18,7 @@ what it returns until the engine is gone.
 
 ## Required and provided items
 
-<a id="rustdoc-item-585"></a>
+<a id="rustdoc-item-588"></a>
 
 ### `start`
 

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1431"></a>
+<a id="rustdoc-item-1506"></a>
 
 # Enum `pill_development_host::csharp::mirror_codegen::MirrorKind`
 
@@ -8,13 +8,13 @@
 pub(in csharp) enum MirrorKind { ... }
 ```
 
-Visibility: `{'restricted': {'parent': 1331, 'path': '::csharp'}}` · Source: `hosting\pill_development_host\src\csharp\mirror_codegen.rs:48`
+Visibility: `{'restricted': {'parent': 1405, 'path': '::csharp'}}` · Source: `hosting\pill_development_host\src\csharp\mirror_codegen.rs:48`
 
 What a mirrored Rust type becomes on the C# side.
 
 ## Variants
 
-<a id="rustdoc-item-1427"></a>
+<a id="rustdoc-item-1502"></a>
 
 ### `Object`
 
@@ -24,7 +24,7 @@ Object
 
 A `#[pill_mirror_object]` class.
 
-<a id="rustdoc-item-1428"></a>
+<a id="rustdoc-item-1503"></a>
 
 ### `Enum`
 
@@ -34,7 +34,7 @@ Enum
 
 A `#[derive(PillMirror)]` enum.
 
-<a id="rustdoc-item-1429"></a>
+<a id="rustdoc-item-1504"></a>
 
 ### `Resource`
 
@@ -44,7 +44,7 @@ Resource
 
 A `#[pill_mirror_resource]` marker (or the runtime's `AssetManager`).
 
-<a id="rustdoc-item-1430"></a>
+<a id="rustdoc-item-1505"></a>
 
 ### `Value`
 

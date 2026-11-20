@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-466"></a>
+<a id="rustdoc-item-596"></a>
 
 # Function `pill_audio::listener_geometry::ear_positions`
 
@@ -8,7 +8,7 @@
 pub fn ear_positions(listener_translation: [f32; 3], facing_degrees: f32) -> ([f32; 3], [f32; 3]);
 ```
 
-Source: `extensions\pill_audio\pill_audio\src\listener_geometry.rs:31`
+Source: `extensions\pill_audio\modules\runtime\src\listener_geometry.rs:31`
 
 Returns the two points where a listener's ears sit.
 

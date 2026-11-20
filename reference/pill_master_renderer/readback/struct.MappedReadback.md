@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-768"></a>
+<a id="rustdoc-item-764"></a>
 
 # Struct `pill_master_renderer::readback::MappedReadback`
 
@@ -8,13 +8,13 @@
 pub(crate) struct MappedReadback;
 ```
 
-Visibility: `crate` · Source: `extensions\pill_master_renderer\pill_master_renderer\src\readback.rs:161`
+Visibility: `crate` · Source: `extensions\pill_master_renderer\modules\runtime\gpu\src\readback.rs:161`
 
 A readback buffer that remembers its own mapping.
 
 ## Fields
 
-<a id="rustdoc-item-1756"></a>
+<a id="rustdoc-item-1800"></a>
 
 ### `buffer`
 
@@ -24,7 +24,7 @@ buffer: wgpu::Buffer
 
 _No documentation provided._
 
-<a id="rustdoc-item-1757"></a>
+<a id="rustdoc-item-1801"></a>
 
 ### `map_state`
 
@@ -36,7 +36,7 @@ _No documentation provided._
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-1758"></a>
+<a id="rustdoc-item-1802"></a>
 
 ### `new`
 
@@ -46,7 +46,7 @@ pub(crate) fn new(buffer: Buffer) -> Self;
 
 Wraps a buffer created with `MAP_READ`, with nothing mapped yet.
 
-<a id="rustdoc-item-1759"></a>
+<a id="rustdoc-item-1803"></a>
 
 ### `buffer`
 
@@ -56,7 +56,7 @@ pub(crate) fn buffer(self: &Self) -> &Buffer;
 
 The buffer, for the copies a frame records into it.
 
-<a id="rustdoc-item-1760"></a>
+<a id="rustdoc-item-1804"></a>
 
 ### `start`
 
@@ -66,7 +66,7 @@ pub(crate) fn start(self: &mut Self);
 
 Asks for the map, unless one is already under way.
 
-<a id="rustdoc-item-1761"></a>
+<a id="rustdoc-item-1805"></a>
 
 ### `poll`
 
@@ -76,8 +76,8 @@ pub(crate) fn poll<T, impl FnOnce(&[u8]) -> T: FnOnce(&[u8]) -> T>(self: &mut Se
 
 Polls the map without waiting, decoding through `read` once.
 
-While no map is under way this answers [`Readback::Pending`](enum.Readback.md#rustdoc-item-1641), and keeps
-answering it until [`Self::start`](#rustdoc-item-1760) asks for the next map.
+While no map is under way this answers [`Readback::Pending`](enum.Readback.md#rustdoc-item-1687), and keeps
+answering it until [`Self::start`](#rustdoc-item-1804) asks for the next map.
 
 ## Trait implementations
 

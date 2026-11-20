@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-6705"></a>
+<a id="rustdoc-item-8744"></a>
 
 # Enum `pill_editor_core::scripted::PaletteRequest`
 
@@ -8,7 +8,7 @@
 pub enum PaletteRequest { ... }
 ```
 
-Source: `editor\pill_editor_core\src\scripted.rs:346`
+Source: `editor\pill_editor_core\src\scripted.rs:390`
 
 What a `palette` line asks of the command palette.
 
@@ -18,7 +18,7 @@ make.
 
 ## Variants
 
-<a id="rustdoc-item-6894"></a>
+<a id="rustdoc-item-8948"></a>
 
 ### `Query`
 
@@ -28,7 +28,7 @@ Query
 
 Open the palette with this query in the field.
 
-<a id="rustdoc-item-6895"></a>
+<a id="rustdoc-item-8949"></a>
 
 ### `Run`
 
@@ -38,7 +38,7 @@ Run
 
 Run the selected row and close.
 
-<a id="rustdoc-item-6896"></a>
+<a id="rustdoc-item-8950"></a>
 
 ### `Close`
 

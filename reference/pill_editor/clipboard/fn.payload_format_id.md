@@ -8,7 +8,7 @@
 pub(in clipboard) fn payload_format_id() -> Option<u32>;
 ```
 
-Visibility: `{'restricted': {'parent': 1, 'path': '::clipboard'}}` · Source: `editor\pill_editor\src\clipboard.rs:70`
+Visibility: `{'restricted': {'parent': 1, 'path': '::clipboard'}}` · Source: `editor\pill_editor\src\clipboard.rs:90`
 
 Returns the clipboard format id the editor registers its copied text under.
 

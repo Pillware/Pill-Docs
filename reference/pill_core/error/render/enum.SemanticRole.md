@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-617"></a>
+<a id="rustdoc-item-627"></a>
 
 # Enum `pill_core::error::render::SemanticRole`
 
@@ -17,7 +17,7 @@ the appearance for its own medium.
 
 ## Variants
 
-<a id="rustdoc-item-613"></a>
+<a id="rustdoc-item-623"></a>
 
 ### `General`
 
@@ -27,7 +27,7 @@ General
 
 General engine objects: `Scene`, `Component`, `System`, `Resource`.
 
-<a id="rustdoc-item-614"></a>
+<a id="rustdoc-item-624"></a>
 
 ### `Specific`
 
@@ -37,7 +37,7 @@ Specific
 
 Specific engine objects or types: `Texture`, `Surface`, `Handle`.
 
-<a id="rustdoc-item-615"></a>
+<a id="rustdoc-item-625"></a>
 
 ### `Module`
 
@@ -47,7 +47,7 @@ Module
 
 Module-level concepts: `Engine`, `Renderer`, `Window`.
 
-<a id="rustdoc-item-616"></a>
+<a id="rustdoc-item-626"></a>
 
 ### `Name`
 

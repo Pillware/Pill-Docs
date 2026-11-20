@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1690"></a>
+<a id="rustdoc-item-1765"></a>
 
 # Struct `pill_development_host::csharp::ManagedReloadSummary`
 
@@ -8,25 +8,13 @@
 pub(crate) struct ManagedReloadSummary;
 ```
 
-Visibility: `crate` · Source: `hosting\pill_development_host\src\csharp\mod.rs:318`
+Visibility: `crate` · Source: `hosting\pill_development_host\src\csharp\mod.rs:294`
 
 A finished managed reload, broken down by phase, in milliseconds.
 
 ## Fields
 
-<a id="rustdoc-item-1768"></a>
-
-### `total_ms`
-
-```rust
-total_ms: f64
-```
-
-Save to swap: the whole operation. Measured from the edited file's own
-timestamp when the watcher could read one, and from the signal
-otherwise; `detect_ms` is `NaN` in the second case.
-
-<a id="rustdoc-item-1769"></a>
+<a id="rustdoc-item-1842"></a>
 
 ### `detect_ms`
 
@@ -37,7 +25,7 @@ detect_ms: f64
 Save to signal, the debounce wait included; `NaN` when the watcher
 could not measure it.
 
-<a id="rustdoc-item-1770"></a>
+<a id="rustdoc-item-1843"></a>
 
 ### `queue_ms`
 
@@ -47,7 +35,7 @@ queue_ms: f64
 
 Signal to the frame loop consuming it.
 
-<a id="rustdoc-item-1771"></a>
+<a id="rustdoc-item-1844"></a>
 
 ### `build_ms`
 
@@ -57,7 +45,7 @@ build_ms: f64
 
 Consume to rebuilt assembly; `NaN` when no build was recorded.
 
-<a id="rustdoc-item-1772"></a>
+<a id="rustdoc-item-1845"></a>
 
 ### `swap_ms`
 
@@ -68,16 +56,22 @@ swap_ms: f64
 Rebuilt assembly to the loader's swap; measured from the signal when no
 build was recorded.
 
-<a id="rustdoc-item-1773"></a>
+## Associated functions and methods
 
-### `build_kind`
+<a id="rustdoc-item-1846"></a>
+
+### `stage_ms`
 
 ```rust
-build_kind: &'static str
+pub(crate) fn stage_ms(self: &Self) -> f64;
 ```
 
-What produced the assembly: `"roslyn"`, `"msbuild"`, or `"unknown"`
-when no build was recorded.
+The report's `stage` phase: the watcher's debounce plus the wait for the
+frame loop, which is everything that precedes the build here.
+
+The native report's `stage` is everything before its cargo build, so
+adding the two waits is the honest mapping rather than two phases the
+shared grammar has no name for. A `NaN` detect contributes nothing.
 
 ## Trait implementations
 

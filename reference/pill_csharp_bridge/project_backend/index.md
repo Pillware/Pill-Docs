@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1795"></a>
+<a id="rustdoc-item-1819"></a>
 
 # Module `pill_csharp_bridge::project_backend`
 
@@ -17,15 +17,15 @@ A C# project as the runtime's external project backend.
 ## Design
 
 The runtime never names the bridge: a C# shipping bundle builds a
-[`CSharpBackend`](struct.CSharpBackend.md#rustdoc-item-1833) and hands it over as
+[`CSharpBackend`](struct.CSharpBackend.md#rustdoc-item-1858) and hands it over as
 `StaticProjectBackend::External`, and the runtime keeps the returned
-[`CSharpRuntime`](../backend/struct.CSharpRuntime.md#rustdoc-item-500) alive beside the engine. A build that runs no C# therefore
+[`CSharpRuntime`](../backend/struct.CSharpRuntime.md#rustdoc-item-510) alive beside the engine. A build that runs no C# therefore
 links none of this.
 
 ## Module contents
 
 ### Structs
-- [`CSharpBackend`](struct.CSharpBackend.md#rustdoc-item-1833) — A shipped C# project: where its assemblies are, and how to host them.
+- [`CSharpBackend`](struct.CSharpBackend.md#rustdoc-item-1858) — A shipped C# project: where its assemblies are, and how to host them.
 
 ### Enums
-- [`Posture`](enum.Posture.md#rustdoc-item-1794) — How the managed project is hosted.
+- [`Posture`](enum.Posture.md#rustdoc-item-1818) — How the managed project is hosted.

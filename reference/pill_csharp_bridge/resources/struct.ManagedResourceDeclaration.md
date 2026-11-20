@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1506"></a>
+<a id="rustdoc-item-1530"></a>
 
 # Struct `pill_csharp_bridge::resources::ManagedResourceDeclaration`
 
@@ -18,7 +18,7 @@ than reusing the component entry and leaving fields unread.
 
 ## Fields
 
-<a id="rustdoc-item-1956"></a>
+<a id="rustdoc-item-1981"></a>
 
 ### `full_name`
 
@@ -28,7 +28,7 @@ full_name: String
 
 Full managed type name, which is also the resource's engine name.
 
-<a id="rustdoc-item-1957"></a>
+<a id="rustdoc-item-1982"></a>
 
 ### `size`
 
@@ -38,7 +38,7 @@ size: usize
 
 Width of the declared layout in bytes.
 
-<a id="rustdoc-item-1958"></a>
+<a id="rustdoc-item-1983"></a>
 
 ### `align`
 
@@ -48,7 +48,7 @@ align: usize
 
 Alignment of the declared layout in bytes.
 
-<a id="rustdoc-item-1959"></a>
+<a id="rustdoc-item-1984"></a>
 
 ### `schema_hash`
 
@@ -58,7 +58,7 @@ schema_hash: u64
 
 Hash of the managed field schema.
 
-<a id="rustdoc-item-1960"></a>
+<a id="rustdoc-item-1985"></a>
 
 ### `aliases`
 
@@ -69,7 +69,7 @@ aliases: Vec<String>
 The names of live registrations this resource renames onto itself. A
 rename migrates the stored value instead of refusing the manifest.
 
-<a id="rustdoc-item-1961"></a>
+<a id="rustdoc-item-1986"></a>
 
 ### `fields`
 

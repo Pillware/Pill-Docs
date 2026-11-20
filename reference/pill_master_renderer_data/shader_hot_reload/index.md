@@ -1,10 +1,10 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1679"></a>
+<a id="rustdoc-item-1776"></a>
 
 # Module `pill_master_renderer_data::shader_hot_reload`
 
-Source: `extensions\pill_master_renderer\pill_master_renderer_data\src\shader_hot_reload.rs:1`
+Source: `extensions\pill_master_renderer\modules\runtime\data\src\shader_hot_reload.rs:1`
 
 Development shader reload: puts the WGSL the host re-cooked into the shader
 assets built from that source.
@@ -42,9 +42,9 @@ build has no sources to watch and no host to deliver edits.
 ## Module contents
 
 ### Functions
-- [`apply_shader_source`](fn.apply_shader_source.md#rustdoc-item-1677) — Replaces one stage's WGSL in every recorded shader asset built from
-- [`pill_render_data_shader_changed`](fn.pill_render_data_shader_changed.md#rustdoc-item-1675) — Writes one re-cooked WGSL file into the shader assets built from it, in
-- [`read_text`](fn.read_text.md#rustdoc-item-1678) — Borrows `length` bytes at `pointer` as UTF-8 text.
+- [`apply_shader_source`](fn.apply_shader_source.md#rustdoc-item-1774) — Replaces one stage's WGSL in every recorded shader asset built from
+- [`pill_render_data_shader_changed`](fn.pill_render_data_shader_changed.md#rustdoc-item-1772) — Writes one re-cooked WGSL file into the shader assets built from it, in
+- [`read_text`](fn.read_text.md#rustdoc-item-1775) — Borrows `length` bytes at `pointer` as UTF-8 text.
 
 ### Constants
-- [`SHADER_CHANGE_REFUSED`](constant.SHADER_CHANGE_REFUSED.md#rustdoc-item-1676) — What [`pill_render_data_shader_changed`] returns when it cannot reach the
+- [`SHADER_CHANGE_REFUSED`](constant.SHADER_CHANGE_REFUSED.md#rustdoc-item-1773) — What [`pill_render_data_shader_changed`] returns when it cannot reach the

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-3513"></a>
+<a id="rustdoc-item-3769"></a>
 
 # Struct `pill_development_host::reload::ReloadTransaction`
 
@@ -18,7 +18,7 @@ transaction.
 
 ## Fields
 
-<a id="rustdoc-item-3502"></a>
+<a id="rustdoc-item-3758"></a>
 
 ### `subject`
 
@@ -28,7 +28,7 @@ subject: &'a str
 
 Name that appears in every log line and analytics record.
 
-<a id="rustdoc-item-3503"></a>
+<a id="rustdoc-item-3759"></a>
 
 ### `kind`
 
@@ -39,7 +39,7 @@ kind: ReloadSubjectKind
 The kind of subject, which decides the log wording and whether
 registrations are scoped.
 
-<a id="rustdoc-item-3504"></a>
+<a id="rustdoc-item-3760"></a>
 
 ### `owner`
 
@@ -49,7 +49,7 @@ owner: pill_engine::SystemOwner
 
 The systems this reload may clear.
 
-<a id="rustdoc-item-3505"></a>
+<a id="rustdoc-item-3761"></a>
 
 ### `current`
 
@@ -59,7 +59,7 @@ current: &'a mut crate::native_library::NativeLibrary
 
 The generation being retired. It stays loaded for the whole transaction.
 
-<a id="rustdoc-item-3506"></a>
+<a id="rustdoc-item-3762"></a>
 
 ### `old_libraries`
 
@@ -69,7 +69,7 @@ old_libraries: &'a mut Vec<crate::native_library::NativeLibrary>
 
 Retired generations that are still loaded.
 
-<a id="rustdoc-item-3507"></a>
+<a id="rustdoc-item-3763"></a>
 
 ### `registered_type_names`
 
@@ -79,7 +79,7 @@ registered_type_names: &'a mut Vec<String>
 
 Persistable type names the previous `init` registered.
 
-<a id="rustdoc-item-3508"></a>
+<a id="rustdoc-item-3764"></a>
 
 ### `registered_schemas`
 
@@ -88,9 +88,9 @@ registered_schemas: &'a mut Vec<(String, u64)>
 ```
 
 Schema hash of each persistable type the previous `init` registered, as
-that generation declared it. See [`stale_components`](fn.stale_components.md#rustdoc-item-2698).
+that generation declared it. See [`stale_components`](fn.stale_components.md#rustdoc-item-2772).
 
-<a id="rustdoc-item-3509"></a>
+<a id="rustdoc-item-3765"></a>
 
 ### `registered_resource_ids`
 
@@ -104,7 +104,7 @@ Compared with what the new generation registers. That lets a resource
 type the subject no longer owns be dropped while the image holding its
 drop function is still loaded.
 
-<a id="rustdoc-item-3510"></a>
+<a id="rustdoc-item-3766"></a>
 
 ### `peer_component_names`
 
@@ -122,7 +122,7 @@ registration. The world keeps an append-only registration log, which
 cannot say who declares a type now. That is why the caller passes the
 set in instead of this code querying it.
 
-<a id="rustdoc-item-3511"></a>
+<a id="rustdoc-item-3767"></a>
 
 ### `layout_record`
 
@@ -137,7 +137,7 @@ The record describes the generation that loaded last, so a step before
 the new `init` can compare the declared resources with it and drop the
 ones whose layout changed.
 
-<a id="rustdoc-item-3512"></a>
+<a id="rustdoc-item-3768"></a>
 
 ### `graveyard_policy`
 
@@ -149,7 +149,7 @@ Whether retired generations may be released.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-3514"></a>
+<a id="rustdoc-item-3770"></a>
 
 ### `begin_registration`
 
@@ -160,7 +160,7 @@ pub(in reload) fn begin_registration(self: &Self, engine: &mut Engine);
 Starts the new generation's registration scope when this subject uses
 one.
 
-<a id="rustdoc-item-3515"></a>
+<a id="rustdoc-item-3771"></a>
 
 ### `end_registration`
 
@@ -170,7 +170,7 @@ pub(in reload) fn end_registration(self: &Self, engine: &mut Engine);
 
 Ends the registration scope again.
 
-<a id="rustdoc-item-3516"></a>
+<a id="rustdoc-item-3772"></a>
 
 ### `drop_resources_whose_layout_changed`
 
@@ -190,7 +190,7 @@ Each dropped resource is reported once, naming what changed and what was
 done. The person edited a file, and the edit having a consequence for
 live state is worth a line at warning level.
 
-<a id="rustdoc-item-3518"></a>
+<a id="rustdoc-item-3774"></a>
 
 ### `retire_library`
 
@@ -213,7 +213,7 @@ function table from whichever image created it. So if
 [`World::columns_without_factory`] returns a non-zero count, the release
 waits and logs a warning instead of calling into freed memory.
 
-<a id="rustdoc-item-3519"></a>
+<a id="rustdoc-item-3775"></a>
 
 ### `deferred_eviction_count`
 
@@ -228,7 +228,7 @@ When it is false it clears the count and returns zero. The count is kept
 per subject because the project and each extension retire on their own,
 and one stuck subject must not hide another's state or be hidden by it.
 
-<a id="rustdoc-item-3521"></a>
+<a id="rustdoc-item-3777"></a>
 
 ### `commit`
 
@@ -238,7 +238,7 @@ pub(crate) fn commit(self: Self, engine: &mut Engine, engine_api: &EngineApi, ne
 
 Runs the whole sequence against a replacement that is already loaded.
 
-The compile and load that come first live in [`build_load_and_commit`](fn.build_load_and_commit.md#rustdoc-item-3520).
+The compile and load that come first live in [`build_load_and_commit`](fn.build_load_and_commit.md#rustdoc-item-3776).
 The steps below count on from those.
 
 Returns `None` when the new generation failed to initialize and the

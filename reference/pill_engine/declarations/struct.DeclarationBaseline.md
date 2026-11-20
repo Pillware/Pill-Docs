@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-360"></a>
+<a id="rustdoc-item-405"></a>
 
 # Struct `pill_engine::declarations::DeclarationBaseline`
 
@@ -8,7 +8,7 @@
 pub struct DeclarationBaseline;
 ```
 
-Source: `engine\pill_engine\src\declarations.rs:56`
+Source: `engine\pill_engine\src\declarations.rs:101`
 
 How many declarations of each kind the process held when an artifact's
 image was mapped.
@@ -22,7 +22,7 @@ everything.
 
 ## Fields
 
-<a id="rustdoc-item-356"></a>
+<a id="rustdoc-item-399"></a>
 
 ### `components`
 
@@ -32,7 +32,7 @@ components: usize
 
 Components declared before the image was mapped.
 
-<a id="rustdoc-item-357"></a>
+<a id="rustdoc-item-400"></a>
 
 ### `systems`
 
@@ -42,7 +42,17 @@ systems: usize
 
 Systems declared before the image was mapped.
 
-<a id="rustdoc-item-358"></a>
+<a id="rustdoc-item-401"></a>
+
+### `scripts`
+
+```rust
+scripts: usize
+```
+
+Script components declared before the image was mapped.
+
+<a id="rustdoc-item-402"></a>
 
 ### `resources`
 
@@ -52,7 +62,7 @@ resources: usize
 
 Resources declared before the image was mapped.
 
-<a id="rustdoc-item-359"></a>
+<a id="rustdoc-item-403"></a>
 
 ### `assets`
 
@@ -62,9 +72,19 @@ assets: usize
 
 Asset types declared before the image was mapped.
 
+<a id="rustdoc-item-404"></a>
+
+### `value_types`
+
+```rust
+value_types: usize
+```
+
+Value types declared before the image was mapped.
+
 ## Associated functions and methods
 
-<a id="rustdoc-item-361"></a>
+<a id="rustdoc-item-406"></a>
 
 ### `current`
 
@@ -85,15 +105,16 @@ Counts every declaration the process holds now.
 - `TryFrom<U>`
 - `Any`
 - `ToOwned`
+- `CastableFrom<ST, Uninit, Uninit>`
+- `CastableFrom<ST, Initialized, Initialized>`
+- `Read<Exclusive, BecauseExclusive>`
 - `Instrument`
 - `WithSubscriber`
 - `IntoEither`
 - `Pointable`
 - `OwoColorize`
 - `ErasedDestructor`
-- `CastableFrom<ST, Uninit, Uninit>`
-- `CastableFrom<ST, Initialized, Initialized>`
-- `Read<Exclusive, BecauseExclusive>`
+- `Equivalent<K>`
 - `Clone`
 - `Copy`
 - `Debug`

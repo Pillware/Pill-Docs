@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-361"></a>
+<a id="rustdoc-item-364"></a>
 
 # Module `pill_csharp_bridge::aot_runtime`
 
@@ -33,4 +33,4 @@ pointers are obtained differs.
 ## Module contents
 
 ### Structs
-- [`AotRuntimeContext`](struct.AotRuntimeContext.md#rustdoc-item-362) — Owns a loaded NativeAOT library and resolves its unmanaged exports.
+- [`AotRuntimeContext`](struct.AotRuntimeContext.md#rustdoc-item-365) — Owns a loaded NativeAOT library and resolves its unmanaged exports.

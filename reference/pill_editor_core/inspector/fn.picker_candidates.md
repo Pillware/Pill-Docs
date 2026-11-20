@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-4978"></a>
+<a id="rustdoc-item-6941"></a>
 
 # Function `pill_editor_core::inspector::picker_candidates`
 
@@ -8,7 +8,7 @@
 pub fn picker_candidates<'a>(listing: &'a [crate::editor_state::AssetListing], engine_assets: &'a [crate::editor_state::EngineAsset], asset_type: Option<&str>) -> (Vec<&'a crate::editor_state::AssetListing>, Vec<&'a crate::editor_state::EngineAsset>);
 ```
 
-Source: `editor\pill_editor_core\src\inspector.rs:1058`
+Source: `editor\pill_editor_core\src\inspector.rs:1065`
 
 The rows a picker offers for `asset_type`.
 

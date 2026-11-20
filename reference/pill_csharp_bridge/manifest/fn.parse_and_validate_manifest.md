@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1504"></a>
+<a id="rustdoc-item-1528"></a>
 
 # Function `pill_csharp_bridge::manifest::parse_and_validate_manifest`
 
@@ -24,4 +24,4 @@ identity, or when an alias is empty, names a live declaration or is declared
 by two entries. It also fails on an invalid layout (a size of zero or above
 `u32::MAX`, a zero or non-power-of-two alignment, or a layout the allocator
 cannot express), on overlapping sibling fields, on any error
-[`validate_field_manifest`](fn.validate_field_manifest.md#rustdoc-item-1494) reports, and on a resource marked `shared`.
+[`validate_field_manifest`](fn.validate_field_manifest.md#rustdoc-item-1518) reports, and on a resource marked `shared`.

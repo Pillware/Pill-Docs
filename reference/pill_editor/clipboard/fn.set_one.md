@@ -8,7 +8,7 @@
 pub(in clipboard) fn set_one(text: &str, format: u32) -> Result<(), String>;
 ```
 
-Visibility: `{'restricted': {'parent': 1, 'path': '::clipboard'}}` · Source: `editor\pill_editor\src\clipboard.rs:138`
+Visibility: `{'restricted': {'parent': 1, 'path': '::clipboard'}}` · Source: `editor\pill_editor\src\clipboard.rs:161`
 
 Puts one UTF-16 copy of `text` on the clipboard under `format`.
 

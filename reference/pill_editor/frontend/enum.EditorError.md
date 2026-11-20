@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-272"></a>
+<a id="rustdoc-item-323"></a>
 
 # Enum `pill_editor::frontend::EditorError`
 
@@ -14,7 +14,7 @@ Anything that can end an editor run.
 
 ## Variants
 
-<a id="rustdoc-item-254"></a>
+<a id="rustdoc-item-305"></a>
 
 ### `EventLoopCreation`
 
@@ -24,7 +24,7 @@ EventLoopCreation
 
 The `winit` event loop could not be created.
 
-<a id="rustdoc-item-256"></a>
+<a id="rustdoc-item-307"></a>
 
 ### `EventLoopRun`
 
@@ -34,7 +34,7 @@ EventLoopRun
 
 The event loop's `run_app` reported a failure.
 
-<a id="rustdoc-item-259"></a>
+<a id="rustdoc-item-310"></a>
 
 ### `Host`
 
@@ -44,7 +44,7 @@ Host
 
 Setting up the host failed before any frame ran.
 
-<a id="rustdoc-item-262"></a>
+<a id="rustdoc-item-313"></a>
 
 ### `Renderer`
 
@@ -54,7 +54,7 @@ Renderer
 
 A frame through the project's renderer failed.
 
-<a id="rustdoc-item-265"></a>
+<a id="rustdoc-item-316"></a>
 
 ### `WindowCreation`
 
@@ -64,7 +64,7 @@ WindowCreation
 
 The native window could not be created.
 
-<a id="rustdoc-item-268"></a>
+<a id="rustdoc-item-319"></a>
 
 ### `AdapterRequest`
 
@@ -74,7 +74,7 @@ AdapterRequest
 
 No GPU adapter could be found for the editor.
 
-<a id="rustdoc-item-271"></a>
+<a id="rustdoc-item-322"></a>
 
 ### `DeviceRequest`
 

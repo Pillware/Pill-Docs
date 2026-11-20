@@ -8,7 +8,7 @@
 pub struct StaticProject;
 ```
 
-Source: `hosting\pill_player\src\static_project.rs:142`
+Source: `hosting\pill_player\src\static_project.rs:150`
 
 A project and its extensions, compiled into the binary.
 
@@ -18,7 +18,7 @@ built or watched.
 
 ## Fields
 
-<a id="rustdoc-item-651"></a>
+<a id="rustdoc-item-655"></a>
 
 ### `name`
 
@@ -28,7 +28,7 @@ name: &'static str
 
 Project name, used in logs and as the window title.
 
-<a id="rustdoc-item-652"></a>
+<a id="rustdoc-item-656"></a>
 
 ### `backend`
 
@@ -38,7 +38,7 @@ backend: StaticProjectBackend
 
 How to reach the project itself.
 
-<a id="rustdoc-item-653"></a>
+<a id="rustdoc-item-657"></a>
 
 ### `modules`
 
@@ -54,7 +54,7 @@ them first. A managed project also needs every module's components
 registered before its assembly loads, so the bindings it is handed can
 resolve them.
 
-<a id="rustdoc-item-654"></a>
+<a id="rustdoc-item-658"></a>
 
 ### `renderer`
 
@@ -66,7 +66,7 @@ The renderer this binary links, when it was built to draw.
 
 `None` for a headless shipping build, which links no renderer at all.
 
-<a id="rustdoc-item-656"></a>
+<a id="rustdoc-item-660"></a>
 
 ### `asset_pack`
 
@@ -78,9 +78,9 @@ The project's `res` directory as an asset pack, embedded in the binary
 by the shipping bundle and mounted before anything initializes.
 
 `None` for a project without a `res` directory, and for the browser
-posture, whose pack is fetched instead (see [`Self::asset_pack_url`](#rustdoc-item-655)).
+posture, whose pack is fetched instead (see [`Self::asset_pack_url`](#rustdoc-item-659)).
 
-<a id="rustdoc-item-655"></a>
+<a id="rustdoc-item-659"></a>
 
 ### `asset_pack_url`
 
@@ -96,7 +96,7 @@ it.
 pack instead and leaves this `None`, and this crate ignores it: fetching
 is a browser's job.
 
-<a id="rustdoc-item-658"></a>
+<a id="rustdoc-item-662"></a>
 
 ### `logging`
 
@@ -105,9 +105,9 @@ logging: StaticLogging
 ```
 
 The `logging:` section of the project's settings, as the bundle
-generator validated it; [`StaticLogging::NONE`](struct.StaticLogging.md#rustdoc-item-657) for none.
+generator validated it; [`StaticLogging::NONE`](struct.StaticLogging.md#rustdoc-item-661) for none.
 
-<a id="rustdoc-item-660"></a>
+<a id="rustdoc-item-664"></a>
 
 ### `debug_draw`
 
@@ -118,7 +118,7 @@ debug_draw: bool
 Whether debug drawing starts on: the settings' `debug_draw:` key,
 `false` when absent. A system can still switch it at runtime.
 
-<a id="rustdoc-item-661"></a>
+<a id="rustdoc-item-665"></a>
 
 ### `startup_scene`
 
@@ -135,7 +135,7 @@ external backend gets it once its `start` has returned.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-664"></a>
+<a id="rustdoc-item-668"></a>
 
 ### `initialize`
 
@@ -152,7 +152,7 @@ re-registered, but the attribution still decides which systems a pause
 suspends and how a system list labels them.
 
 On success it returns an external backend's guard, which the caller must
-keep alive for as long as the engine lives (see [`ProjectBackend::start`](trait.ProjectBackend.md#rustdoc-item-585)).
+keep alive for as long as the engine lives (see [`ProjectBackend::start`](trait.ProjectBackend.md#rustdoc-item-588)).
 A natively linked project returns `None`.
 
 #### Errors
@@ -177,13 +177,13 @@ partially registered world.
 - `TryFrom<U>`
 - `Any`
 - `ToOwned`
+- `CastableFrom<ST, Uninit, Uninit>`
+- `CastableFrom<ST, Initialized, Initialized>`
+- `Read<Exclusive, BecauseExclusive>`
 - `Instrument`
 - `WithSubscriber`
 - `IntoEither`
 - `Pointable`
 - `OwoColorize`
 - `ErasedDestructor`
-- `CastableFrom<ST, Uninit, Uninit>`
-- `CastableFrom<ST, Initialized, Initialized>`
-- `Read<Exclusive, BecauseExclusive>`
 - `Clone`

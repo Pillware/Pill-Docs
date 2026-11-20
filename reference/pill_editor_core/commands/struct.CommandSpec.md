@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1463"></a>
+<a id="rustdoc-item-1508"></a>
 
 # Struct `pill_editor_core::commands::CommandSpec`
 
@@ -8,13 +8,13 @@
 pub struct CommandSpec;
 ```
 
-Source: `editor\pill_editor_core\src\commands.rs:413`
+Source: `editor\pill_editor_core\src\commands.rs:414`
 
 One registered command.
 
 ## Fields
 
-<a id="rustdoc-item-1457"></a>
+<a id="rustdoc-item-1502"></a>
 
 ### `id`
 
@@ -24,7 +24,7 @@ id: String
 
 Stable identifier (`editor.pause_toggle`).
 
-<a id="rustdoc-item-1458"></a>
+<a id="rustdoc-item-1503"></a>
 
 ### `title`
 
@@ -34,7 +34,7 @@ title: String
 
 The title menus and the palette show.
 
-<a id="rustdoc-item-1459"></a>
+<a id="rustdoc-item-1504"></a>
 
 ### `menu_path`
 
@@ -44,7 +44,7 @@ menu_path: Vec<String>
 
 Menu path (`["Edit", "Undo"]`); an empty path means no menu bar row.
 
-<a id="rustdoc-item-1460"></a>
+<a id="rustdoc-item-1505"></a>
 
 ### `shortcuts`
 
@@ -55,7 +55,7 @@ shortcuts: std::collections::BTreeMap<KeymapPreset, Vec<Chord>>
 The default binding per preset; a preset that is absent leaves the
 command unbound in it.
 
-<a id="rustdoc-item-1461"></a>
+<a id="rustdoc-item-1506"></a>
 
 ### `global`
 
@@ -67,7 +67,7 @@ Whether the shortcut is a global binding. A global binding is meant to
 fire even while a text field has focus, where every other shortcut
 yields to the field.
 
-<a id="rustdoc-item-1462"></a>
+<a id="rustdoc-item-1507"></a>
 
 ### `separator_before`
 
@@ -80,7 +80,7 @@ with the rows after it.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-1464"></a>
+<a id="rustdoc-item-1509"></a>
 
 ### `new`
 
@@ -90,7 +90,7 @@ pub fn new(id: &str, title: &str) -> Self;
 
 Builds a command with a title and no menu or bindings yet.
 
-<a id="rustdoc-item-1465"></a>
+<a id="rustdoc-item-1510"></a>
 
 ### `menu`
 
@@ -100,7 +100,7 @@ pub fn menu(self: Self, path: &[&str]) -> Self;
 
 Adds a menu path.
 
-<a id="rustdoc-item-1466"></a>
+<a id="rustdoc-item-1511"></a>
 
 ### `separator`
 
@@ -110,7 +110,7 @@ pub fn separator(self: Self) -> Self;
 
 Marks that a rule is drawn above this command's menu row.
 
-<a id="rustdoc-item-1467"></a>
+<a id="rustdoc-item-1512"></a>
 
 ### `bind`
 
@@ -126,7 +126,7 @@ Panics when `chord_text` is not valid chord text. Every caller is in
 this file (the built-in table and its tests), so a bad string is a
 mistake here rather than input to handle.
 
-<a id="rustdoc-item-1468"></a>
+<a id="rustdoc-item-1513"></a>
 
 ### `global`
 

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-7228"></a>
+<a id="rustdoc-item-9286"></a>
 
 # Constant `pill_editor_core::session::PANEL_BUDGET_FRAMES`
 

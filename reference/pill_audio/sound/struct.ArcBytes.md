@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-486"></a>
+<a id="rustdoc-item-616"></a>
 
 # Struct `pill_audio::sound::ArcBytes`
 
@@ -8,7 +8,7 @@
 pub struct ArcBytes;
 ```
 
-Source: `extensions\pill_audio\pill_audio\src\sound.rs:265`
+Source: `extensions\pill_audio\modules\runtime\src\sound.rs:260`
 
 A byte buffer shared through an `Arc`, which a decoder can read as a slice.
 
@@ -19,7 +19,7 @@ through the shared buffer.
 
 ## Fields
 
-<a id="rustdoc-item-626"></a>
+<a id="rustdoc-item-757"></a>
 
 ### `0`
 

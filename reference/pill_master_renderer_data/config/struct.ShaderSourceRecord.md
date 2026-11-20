@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1461"></a>
+<a id="rustdoc-item-1558"></a>
 
 # Struct `pill_master_renderer_data::config::ShaderSourceRecord`
 
@@ -8,7 +8,7 @@
 pub struct ShaderSourceRecord;
 ```
 
-Source: `extensions\pill_master_renderer\pill_master_renderer_data\src\config\mod.rs:137`
+Source: `extensions\pill_master_renderer\modules\runtime\data\src\config\mod.rs:137`
 
 The cooked files a built-in shader asset was built from.
 
@@ -22,7 +22,7 @@ was imported from.
 
 ## Fields
 
-<a id="rustdoc-item-1591"></a>
+<a id="rustdoc-item-1687"></a>
 
 ### `shader_asset_name`
 
@@ -34,7 +34,7 @@ The name the shader asset is stored under. That is the path of the
 `.hlsl` source it was imported from, because an imported asset is named
 after the path it came from.
 
-<a id="rustdoc-item-1592"></a>
+<a id="rustdoc-item-1688"></a>
 
 ### `vertex_path`
 
@@ -44,7 +44,7 @@ vertex_path: &'static str
 
 Its vertex stage.
 
-<a id="rustdoc-item-1593"></a>
+<a id="rustdoc-item-1689"></a>
 
 ### `fragment_path`
 
@@ -65,15 +65,15 @@ Its fragment stage.
 - `TryFrom<U>`
 - `Any`
 - `ToOwned`
+- `CastableFrom<ST, Uninit, Uninit>`
+- `CastableFrom<ST, Initialized, Initialized>`
+- `Read<Exclusive, BecauseExclusive>`
 - `Instrument`
 - `WithSubscriber`
 - `IntoEither`
 - `Pointable`
 - `OwoColorize`
 - `ErasedDestructor`
-- `CastableFrom<ST, Uninit, Uninit>`
-- `CastableFrom<ST, Initialized, Initialized>`
-- `Read<Exclusive, BecauseExclusive>`
 - `Equivalent<K>`
 - `Debug`
 - `Clone`

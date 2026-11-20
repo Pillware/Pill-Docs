@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-4059"></a>
+<a id="rustdoc-item-4316"></a>
 
 # Struct `pill_development_host::watchers::shader::ShaderWatcher`
 
@@ -15,7 +15,7 @@ has a shader to queue.
 
 ## Fields
 
-<a id="rustdoc-item-4344"></a>
+<a id="rustdoc-item-4603"></a>
 
 ### `cooked_shaders`
 
@@ -27,7 +27,7 @@ The re-cooked files the worker has queued, oldest first.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-4345"></a>
+<a id="rustdoc-item-4604"></a>
 
 ### `spawn`
 
@@ -48,7 +48,7 @@ Returns a [`WatcherError`] when the watcher or its worker thread cannot
 be created, or when the directory cannot be registered with the
 watcher.
 
-<a id="rustdoc-item-4346"></a>
+<a id="rustdoc-item-4605"></a>
 
 ### `drain`
 

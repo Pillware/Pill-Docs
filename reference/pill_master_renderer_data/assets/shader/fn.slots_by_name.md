@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-948"></a>
+<a id="rustdoc-item-940"></a>
 
 # Function `pill_master_renderer_data::assets::shader::slots_by_name`
 
@@ -8,7 +8,7 @@
 pub fn slots_by_name<S: SlotName, impl IntoIterator<Item = S>: IntoIterator<Item = _>>(shader_name: &str, declared: &'static str, slots: impl IntoIterator<Item = _>) -> indexmap::IndexMap<String, S>;
 ```
 
-Source: `extensions\pill_master_renderer\pill_master_renderer_data\src\assets\shader.rs:474`
+Source: `extensions\pill_master_renderer\modules\runtime\data\src\assets\shader.rs:474`
 
 Key a list of slots by the names they carry, keeping the list's order.
 

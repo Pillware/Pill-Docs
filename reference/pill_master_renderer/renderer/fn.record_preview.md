@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-2044"></a>
+<a id="rustdoc-item-2087"></a>
 
 # Function `pill_master_renderer::renderer::record_preview`
 
@@ -8,7 +8,7 @@
 pub(in renderer) fn record_preview(renderer: &mut Renderer, frame: &crate::frame::RenderFrame, assets_manager: &pill_engine::AssetManager);
 ```
 
-Visibility: `{'restricted': {'parent': 1847, 'path': '::renderer'}}` · Source: `extensions\pill_master_renderer\pill_master_renderer\src\renderer.rs:1394`
+Visibility: `{'restricted': {'parent': 1890, 'path': '::renderer'}}` · Source: `extensions\pill_master_renderer\modules\runtime\gpu\src\renderer.rs:1394`
 
 Draw one asset preview, when the frame asked for one and the previous
 preview has been handed over.

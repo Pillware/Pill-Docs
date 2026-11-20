@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1560"></a>
+<a id="rustdoc-item-2064"></a>
 
 # Module `pill_editor::test_channel`
 
@@ -32,7 +32,7 @@ window or engine type.
 ## Module contents
 
 ### Structs
-- [`TestChannel`](struct.TestChannel.md#rustdoc-item-602) — Reads the command lines a test suite appends to a file.
+- [`TestChannel`](struct.TestChannel.md#rustdoc-item-673) — Reads the command lines a test suite appends to a file.
 
 ### Functions
-- [`seconds_from_environment`](fn.seconds_from_environment.md#rustdoc-item-1593) — Returns how many seconds the editor runs before quitting gracefully, when
+- [`seconds_from_environment`](fn.seconds_from_environment.md#rustdoc-item-2097) — Returns how many seconds the editor runs before quitting gracefully, when

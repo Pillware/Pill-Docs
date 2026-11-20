@@ -1,10 +1,10 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1067"></a>
+<a id="rustdoc-item-1277"></a>
 
 # Module `pill_editor::runner::frame`
 
-Visibility: `{'restricted': {'parent': 483, 'path': '::runner'}}` · Source: `editor\pill_editor\src\runner\frame.rs:1`
+Visibility: `{'restricted': {'parent': 539, 'path': '::runner'}}` · Source: `editor\pill_editor\src\runner\frame.rs:1`
 
 Runs one editor frame as a series of named phases.
 

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1124"></a>
+<a id="rustdoc-item-1134"></a>
 
 # Struct `pill_core::platform::clock::Instant`
 
@@ -18,7 +18,7 @@ and arithmetic with [`Duration`].
 
 ## Fields
 
-<a id="rustdoc-item-1122"></a>
+<a id="rustdoc-item-1132"></a>
 
 ### `0`
 
@@ -30,7 +30,7 @@ _No documentation provided._
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-1125"></a>
+<a id="rustdoc-item-1135"></a>
 
 ### `now`
 
@@ -40,7 +40,7 @@ pub fn now() -> Self;
 
 The current instant.
 
-<a id="rustdoc-item-1126"></a>
+<a id="rustdoc-item-1136"></a>
 
 ### `elapsed`
 
@@ -50,7 +50,7 @@ pub fn elapsed(self: &Self) -> Duration;
 
 The time elapsed since this instant.
 
-<a id="rustdoc-item-1129"></a>
+<a id="rustdoc-item-1139"></a>
 
 ### `duration_since`
 
@@ -65,9 +65,9 @@ as [`std::time::Instant::duration_since`]. This and
 [`saturating_duration_since`] do the same thing; prefer this one in new
 code.
 
-[`saturating_duration_since`]: #rustdoc-item-1128
+[`saturating_duration_since`]: #rustdoc-item-1138
 
-<a id="rustdoc-item-1128"></a>
+<a id="rustdoc-item-1138"></a>
 
 ### `saturating_duration_since`
 
@@ -77,10 +77,10 @@ pub fn saturating_duration_since(self: &Self, earlier: Instant) -> Duration;
 
 The time from `earlier` to this instant, zero if `earlier` is later.
 
-The same operation as [`duration_since`](#rustdoc-item-1129), under
+The same operation as [`duration_since`](#rustdoc-item-1139), under
 the name the standard library uses.
 
-<a id="rustdoc-item-1130"></a>
+<a id="rustdoc-item-1140"></a>
 
 ### `checked_duration_since`
 
@@ -90,7 +90,7 @@ pub fn checked_duration_since(self: &Self, earlier: Instant) -> Option<Duration>
 
 The time from `earlier` to this instant, or `None` if `earlier` is later.
 
-<a id="rustdoc-item-1131"></a>
+<a id="rustdoc-item-1141"></a>
 
 ### `checked_add`
 
@@ -100,7 +100,7 @@ pub fn checked_add(self: &Self, duration: Duration) -> Option<Instant>;
 
 This instant moved forward by `duration`, or `None` on overflow.
 
-<a id="rustdoc-item-1132"></a>
+<a id="rustdoc-item-1142"></a>
 
 ### `checked_sub`
 

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-770"></a>
+<a id="rustdoc-item-772"></a>
 
 # Function `pill_development_host::build_runner::stage_artifact`
 
@@ -8,7 +8,7 @@
 pub(in build_runner) fn stage_artifact(build_output: &std::path::Path, hot_output: &std::path::Path) -> Result<(), pill_core::error::BuildError>;
 ```
 
-Visibility: `{'restricted': {'parent': 545, 'path': '::build_runner'}}` · Source: `hosting\pill_development_host\src\build_runner.rs:1646`
+Visibility: `{'restricted': {'parent': 546, 'path': '::build_runner'}}` · Source: `hosting\pill_development_host\src\build_runner.rs:1647`
 
 Copies one freshly built artifact into its private hot-load location.
 

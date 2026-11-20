@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-434"></a>
+<a id="rustdoc-item-540"></a>
 
 # Function `pill_engine_macros::parse_patch_arguments`
 
@@ -8,7 +8,7 @@
 pub(crate) fn parse_patch_arguments(attribute: proc_macro::TokenStream) -> Result<PatchArguments, syn::Error>;
 ```
 
-Visibility: `crate` · Source: `engine\pill_engine_macros\src\lib.rs:2496`
+Visibility: `crate` · Source: `engine\pill_engine_macros\src\lib.rs:3607`
 
 Parse `name = "...", self_type = Path` from an attribute argument list.
 

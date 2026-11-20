@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-2028"></a>
+<a id="rustdoc-item-2038"></a>
 
 # Function `pill_core::telemetry::reload_filter`
 
@@ -8,7 +8,7 @@
 pub(in telemetry) fn reload_filter<S>(handle: &reload::Handle<tracing_subscriber::EnvFilter, S>, filter: tracing_subscriber::EnvFilter) -> Result<(), TelemetryError>;
 ```
 
-Visibility: `{'restricted': {'parent': 1726, 'path': '::telemetry'}}` · Source: `engine\pill_core\src\telemetry.rs:1117`
+Visibility: `{'restricted': {'parent': 1736, 'path': '::telemetry'}}` · Source: `engine\pill_core\src\telemetry.rs:1117`
 
 Replace one layer's live filter, reporting a refused reload.
 
@@ -17,5 +17,5 @@ rather than once per layer.
 
 ## Errors
 
-Returns [`TelemetryError::Reload`](enum.TelemetryError.md#rustdoc-item-1955) when the subscriber refuses the new
+Returns [`TelemetryError::Reload`](enum.TelemetryError.md#rustdoc-item-1965) when the subscriber refuses the new
 filter; the old filter stays active.

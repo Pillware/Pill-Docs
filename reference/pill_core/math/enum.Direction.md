@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-908"></a>
+<a id="rustdoc-item-918"></a>
 
 # Enum `pill_core::math::Direction`
 
@@ -18,7 +18,7 @@ workspace uses the enum yet.
 
 ## Variants
 
-<a id="rustdoc-item-896"></a>
+<a id="rustdoc-item-906"></a>
 
 ### `Forward`
 
@@ -28,7 +28,7 @@ Forward
 
 Local forward.
 
-<a id="rustdoc-item-897"></a>
+<a id="rustdoc-item-907"></a>
 
 ### `Backward`
 
@@ -38,7 +38,7 @@ Backward
 
 Local backward.
 
-<a id="rustdoc-item-898"></a>
+<a id="rustdoc-item-908"></a>
 
 ### `Right`
 
@@ -48,7 +48,7 @@ Right
 
 Local right.
 
-<a id="rustdoc-item-899"></a>
+<a id="rustdoc-item-909"></a>
 
 ### `Left`
 
@@ -58,7 +58,7 @@ Left
 
 Local left.
 
-<a id="rustdoc-item-900"></a>
+<a id="rustdoc-item-910"></a>
 
 ### `Up`
 
@@ -68,7 +68,7 @@ Up
 
 Local up.
 
-<a id="rustdoc-item-901"></a>
+<a id="rustdoc-item-911"></a>
 
 ### `Down`
 
@@ -78,7 +78,7 @@ Down
 
 Local down.
 
-<a id="rustdoc-item-902"></a>
+<a id="rustdoc-item-912"></a>
 
 ### `WorldForward`
 
@@ -88,7 +88,7 @@ WorldForward
 
 World forward.
 
-<a id="rustdoc-item-903"></a>
+<a id="rustdoc-item-913"></a>
 
 ### `WorldBackward`
 
@@ -98,7 +98,7 @@ WorldBackward
 
 World backward.
 
-<a id="rustdoc-item-904"></a>
+<a id="rustdoc-item-914"></a>
 
 ### `WorldRight`
 
@@ -108,7 +108,7 @@ WorldRight
 
 World right.
 
-<a id="rustdoc-item-905"></a>
+<a id="rustdoc-item-915"></a>
 
 ### `WorldLeft`
 
@@ -118,7 +118,7 @@ WorldLeft
 
 World left.
 
-<a id="rustdoc-item-906"></a>
+<a id="rustdoc-item-916"></a>
 
 ### `WorldUp`
 
@@ -128,7 +128,7 @@ WorldUp
 
 World up.
 
-<a id="rustdoc-item-907"></a>
+<a id="rustdoc-item-917"></a>
 
 ### `WorldDown`
 

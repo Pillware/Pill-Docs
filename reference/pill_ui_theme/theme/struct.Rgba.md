@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-780"></a>
+<a id="rustdoc-item-789"></a>
 
 # Struct `pill_ui_theme::theme::Rgba`
 
@@ -15,7 +15,7 @@ An sRGB colour with straight (not premultiplied) alpha, stored as
 
 ## Fields
 
-<a id="rustdoc-item-779"></a>
+<a id="rustdoc-item-788"></a>
 
 ### `0`
 
@@ -27,7 +27,7 @@ _No documentation provided._
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-781"></a>
+<a id="rustdoc-item-790"></a>
 
 ### `rgb`
 
@@ -37,7 +37,7 @@ pub const fn rgb(red: u8, green: u8, blue: u8) -> Self;
 
 An opaque colour.
 
-<a id="rustdoc-item-782"></a>
+<a id="rustdoc-item-791"></a>
 
 ### `with_alpha`
 
@@ -47,7 +47,7 @@ pub const fn with_alpha(red: u8, green: u8, blue: u8, alpha: u8) -> Self;
 
 A colour with an explicit alpha.
 
-<a id="rustdoc-item-783"></a>
+<a id="rustdoc-item-792"></a>
 
 ### `parse`
 
@@ -62,7 +62,7 @@ Parse `#rrggbb` or `#rrggbbaa`.
 A message containing the refused text, when it lacks the `#`, has the
 wrong length, or has a channel that is not hexadecimal.
 
-<a id="rustdoc-item-784"></a>
+<a id="rustdoc-item-793"></a>
 
 ### `hex`
 
@@ -72,7 +72,7 @@ pub fn hex(self: Self) -> String;
 
 The colour as `#rrggbb`, or `#rrggbbaa` when it is not opaque.
 
-<a id="rustdoc-item-785"></a>
+<a id="rustdoc-item-794"></a>
 
 ### `with_alpha_factor`
 
@@ -103,6 +103,7 @@ The colour with its alpha scaled by `factor` (0.0..=1.0).
 - `Pointable`
 - `OwoColorize`
 - `ErasedDestructor`
+- `Equivalent<K>`
 - `Clone`
 - `Copy`
 - `Debug`

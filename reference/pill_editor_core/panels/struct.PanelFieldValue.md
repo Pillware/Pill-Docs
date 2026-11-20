@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-5910"></a>
+<a id="rustdoc-item-7875"></a>
 
 # Struct `pill_editor_core::panels::PanelFieldValue`
 
@@ -14,7 +14,7 @@ One field value, rendered for a panel.
 
 ## Fields
 
-<a id="rustdoc-item-5947"></a>
+<a id="rustdoc-item-7912"></a>
 
 ### `name`
 
@@ -24,7 +24,7 @@ name: String
 
 The field's name.
 
-<a id="rustdoc-item-5948"></a>
+<a id="rustdoc-item-7913"></a>
 
 ### `value`
 

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-2709"></a>
+<a id="rustdoc-item-2843"></a>
 
 # Struct `pill_editor_core::editor_state::ComponentFieldView`
 
@@ -8,19 +8,19 @@
 pub struct ComponentFieldView;
 ```
 
-Source: `editor\pill_editor_core\src\editor_state\mod.rs:98`
+Source: `editor\pill_editor_core\src\editor_state\mod.rs:140`
 
 One field of a component's layout, as the editor's own snapshot keeps it.
 
 The registry's [`ComponentFieldDescriptor`] borrows its name and its
 decorators from the artifact that declared them. That artifact can be
 unloaded between two captures, for example a project module replaced by a
-reload. This type owns both, so nothing reachable from [`EditorSnapshot`](struct.EditorSnapshot.md#rustdoc-item-1162)
+reload. This type owns both, so nothing reachable from [`EditorSnapshot`](struct.EditorSnapshot.md#rustdoc-item-1207)
 keeps a module image alive.
 
 ## Fields
 
-<a id="rustdoc-item-2705"></a>
+<a id="rustdoc-item-2839"></a>
 
 ### `name`
 
@@ -30,7 +30,7 @@ name: String
 
 The field's registered name.
 
-<a id="rustdoc-item-2706"></a>
+<a id="rustdoc-item-2840"></a>
 
 ### `decorators`
 
@@ -42,7 +42,7 @@ The presentation decorators the field declared, in declaration order.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-2710"></a>
+<a id="rustdoc-item-2844"></a>
 
 ### `from_descriptor`
 

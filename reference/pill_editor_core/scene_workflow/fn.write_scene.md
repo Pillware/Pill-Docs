@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-6694"></a>
+<a id="rustdoc-item-8733"></a>
 
 # Function `pill_editor_core::scene_workflow::write_scene`
 
@@ -8,7 +8,7 @@
 pub fn write_scene(engine: &mut pill_engine::Engine, path: Option<&str>) -> Result<OpenScene, String>;
 ```
 
-Source: `editor\pill_editor_core\src\scene_workflow.rs:187`
+Source: `editor\pill_editor_core\src\scene_workflow.rs:193`
 
 Write the world to the open scene, or to `path` for a save-as.
 

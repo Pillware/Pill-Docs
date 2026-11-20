@@ -17,7 +17,7 @@ compiled in every configuration.
 
 ## Fields
 
-<a id="rustdoc-item-2062"></a>
+<a id="rustdoc-item-2087"></a>
 
 ### `type_name`
 
@@ -28,7 +28,7 @@ type_name: String
 Fully-qualified Rust type name the method belongs to - or, for a free
 function (`is_free_function`), the path of the module declaring it.
 
-<a id="rustdoc-item-2063"></a>
+<a id="rustdoc-item-2088"></a>
 
 ### `method_name`
 
@@ -38,7 +38,7 @@ method_name: String
 
 Rust method name, snake_case.
 
-<a id="rustdoc-item-2064"></a>
+<a id="rustdoc-item-2089"></a>
 
 ### `return_tag`
 
@@ -48,7 +48,7 @@ return_tag: String
 
 Return type tag; empty for a `()` return.
 
-<a id="rustdoc-item-2065"></a>
+<a id="rustdoc-item-2090"></a>
 
 ### `arg_tags`
 
@@ -58,7 +58,7 @@ arg_tags: Vec<String>
 
 Argument type tags, in declaration order.
 
-<a id="rustdoc-item-2066"></a>
+<a id="rustdoc-item-2091"></a>
 
 ### `arg_names`
 
@@ -70,7 +70,7 @@ Argument names from the Rust source, in declaration order (`alpha`,
 `beta`), so the generated C# mirror names its parameters identically.
 Parallel to `arg_tags`.
 
-<a id="rustdoc-item-2067"></a>
+<a id="rustdoc-item-2092"></a>
 
 ### `address`
 
@@ -80,7 +80,7 @@ address: usize
 
 Address of the C-ABI trampoline; zero for a type row with none.
 
-<a id="rustdoc-item-2068"></a>
+<a id="rustdoc-item-2093"></a>
 
 ### `is_free_function`
 
@@ -92,7 +92,7 @@ Whether the declaration is a `#[pill_mirror_fn]` free function. The
 codegen then emits a static method on a static class named after the
 declaring module, instead of an instance method on a struct mirror.
 
-<a id="rustdoc-item-2069"></a>
+<a id="rustdoc-item-2094"></a>
 
 ### `crate_name`
 
@@ -105,7 +105,7 @@ the macro's expansion site. The host keeps only the entries whose
 `crate_name` matches the module being generated or published, so an
 artifact cannot claim declarations from a crate it only links.
 
-<a id="rustdoc-item-2070"></a>
+<a id="rustdoc-item-2095"></a>
 
 ### `receiver`
 
@@ -116,7 +116,7 @@ receiver: String
 How the method takes the value it is called on: empty for none, or
 `"ref"`, `"mut"` or `"value"`.
 
-<a id="rustdoc-item-2071"></a>
+<a id="rustdoc-item-2096"></a>
 
 ### `owner_kind`
 

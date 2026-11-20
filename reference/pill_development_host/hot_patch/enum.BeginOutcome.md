@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-2439"></a>
+<a id="rustdoc-item-2513"></a>
 
 # Enum `pill_development_host::hot_patch::BeginOutcome`
 
@@ -15,11 +15,11 @@ What starting a patch attempt found, and whether a build is owed.
 The frame loop reads them this way: `Unchanged` and `NotPatchable` leave the
 pending edit for the reload path, `Failed` reports what is still running, and
 `Ready` hands the build to a worker whose product is installed by
-[`HotPatchSession::activate_attempt`](struct.HotPatchSession.md#rustdoc-item-2438).
+[`HotPatchSession::activate_attempt`](struct.HotPatchSession.md#rustdoc-item-2512).
 
 ## Variants
 
-<a id="rustdoc-item-2429"></a>
+<a id="rustdoc-item-2503"></a>
 
 ### `Unchanged`
 
@@ -29,7 +29,7 @@ Unchanged
 
 Nothing relevant changed.
 
-<a id="rustdoc-item-2431"></a>
+<a id="rustdoc-item-2505"></a>
 
 ### `NotPatchable`
 
@@ -39,7 +39,7 @@ NotPatchable
 
 The change is real but out of scope; the caller should reload normally.
 
-<a id="rustdoc-item-2435"></a>
+<a id="rustdoc-item-2509"></a>
 
 ### `Failed`
 
@@ -49,7 +49,7 @@ Failed
 
 Preparing the replacement failed; the caller should reload normally.
 
-<a id="rustdoc-item-2437"></a>
+<a id="rustdoc-item-2511"></a>
 
 ### `Ready`
 

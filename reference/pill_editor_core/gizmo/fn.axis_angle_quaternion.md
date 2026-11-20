@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-4176"></a>
+<a id="rustdoc-item-4651"></a>
 
 # Function `pill_editor_core::gizmo::axis_angle_quaternion`
 
@@ -8,7 +8,7 @@
 pub fn axis_angle_quaternion(axis: [f32; 3], radians: f32) -> [f32; 4];
 ```
 
-Source: `editor\pill_editor_core\src\gizmo.rs:949`
+Source: `editor\pill_editor_core\src\gizmo.rs:1067`
 
 Returns the `[x, y, z, w]` quaternion that turns by `radians` around
 `axis`.

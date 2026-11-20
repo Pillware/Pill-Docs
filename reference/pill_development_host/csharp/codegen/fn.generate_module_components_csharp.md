@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1318"></a>
+<a id="rustdoc-item-1392"></a>
 
 # Function `pill_development_host::csharp::codegen::generate_module_components_csharp`
 

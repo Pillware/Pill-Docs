@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-442"></a>
+<a id="rustdoc-item-443"></a>
 
 # Struct `pill_development_host::analytics::ReportColumn`
 
@@ -8,14 +8,14 @@
 pub(in analytics) struct ReportColumn;
 ```
 
-Visibility: `{'restricted': {'parent': 1, 'path': '::analytics'}}` · Source: `hosting\pill_development_host\src\analytics.rs:1258`
+Visibility: `{'restricted': {'parent': 1, 'path': '::analytics'}}` · Source: `hosting\pill_development_host\src\analytics.rs:1295`
 
 One column of the startup table. It holds the header, the alignment, one
 cell per module row and the total row.
 
 ## Fields
 
-<a id="rustdoc-item-438"></a>
+<a id="rustdoc-item-439"></a>
 
 ### `header`
 
@@ -25,7 +25,7 @@ header: &'static str
 
 _No documentation provided._
 
-<a id="rustdoc-item-439"></a>
+<a id="rustdoc-item-440"></a>
 
 ### `left_aligned`
 
@@ -35,7 +35,7 @@ left_aligned: bool
 
 _No documentation provided._
 
-<a id="rustdoc-item-440"></a>
+<a id="rustdoc-item-441"></a>
 
 ### `cells`
 
@@ -45,7 +45,7 @@ cells: Vec<String>
 
 _No documentation provided._
 
-<a id="rustdoc-item-441"></a>
+<a id="rustdoc-item-442"></a>
 
 ### `total`
 
@@ -57,7 +57,7 @@ _No documentation provided._
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-443"></a>
+<a id="rustdoc-item-444"></a>
 
 ### `width`
 
@@ -67,7 +67,7 @@ pub(in analytics) fn width(self: &Self) -> usize;
 
 The widest of the header, the cells and the total.
 
-<a id="rustdoc-item-444"></a>
+<a id="rustdoc-item-445"></a>
 
 ### `pad`
 

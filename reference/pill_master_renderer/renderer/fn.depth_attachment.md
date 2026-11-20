@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-2050"></a>
+<a id="rustdoc-item-2093"></a>
 
 # Function `pill_master_renderer::renderer::depth_attachment`
 
@@ -8,7 +8,7 @@
 pub(in renderer) fn depth_attachment(view: &wgpu::TextureView, clear: bool) -> wgpu::RenderPassDepthStencilAttachment<'_>;
 ```
 
-Visibility: `{'restricted': {'parent': 1847, 'path': '::renderer'}}` · Source: `extensions\pill_master_renderer\pill_master_renderer\src\renderer.rs:1578`
+Visibility: `{'restricted': {'parent': 1890, 'path': '::renderer'}}` · Source: `extensions\pill_master_renderer\modules\runtime\gpu\src\renderer.rs:1578`
 
 The depth attachment a geometry pass writes, or a skybox reads.
 

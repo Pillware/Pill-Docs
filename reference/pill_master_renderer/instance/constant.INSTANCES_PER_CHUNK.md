@@ -8,7 +8,7 @@
 pub(in instance) const INSTANCES_PER_CHUNK: usize = 2048;
 ```
 
-Visibility: `{'restricted': {'parent': 275, 'path': '::instance'}}` · Source: `extensions\pill_master_renderer\pill_master_renderer\src\instance.rs:46`
+Visibility: `{'restricted': {'parent': 275, 'path': '::instance'}}` · Source: `extensions\pill_master_renderer\modules\runtime\gpu\src\instance.rs:46`
 
 How many instances one chunk of the parallel build holds.
 

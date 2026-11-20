@@ -8,7 +8,7 @@
 pub(crate) fn report_uncaptured_errors(device: &wgpu::Device);
 ```
 
-Visibility: `crate` · Source: `extensions\pill_master_renderer\pill_master_renderer\src\error.rs:75`
+Visibility: `crate` · Source: `extensions\pill_master_renderer\modules\runtime\gpu\src\error.rs:75`
 
 Sends GPU errors that no error scope captured to the log.
 

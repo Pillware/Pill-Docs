@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-732"></a>
+<a id="rustdoc-item-736"></a>
 
 # Function `pill_player::static_project::apply_manager_settings`
 
@@ -8,7 +8,7 @@
 pub(in static_project) fn apply_manager_settings(engine: &mut pill_engine::Engine);
 ```
 
-Visibility: `{'restricted': {'parent': 733, 'path': '::static_project'}}` · Source: `hosting\pill_player\src\static_project.rs:342`
+Visibility: `{'restricted': {'parent': 737, 'path': '::static_project'}}` · Source: `hosting\pill_player\src\static_project.rs:355`
 
 Applies every manager's settings asset, reading each one from the mounted
 asset roots - in a bundle, the pack.

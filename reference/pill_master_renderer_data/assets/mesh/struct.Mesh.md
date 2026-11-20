@@ -8,7 +8,7 @@
 pub struct Mesh;
 ```
 
-Source: `extensions\pill_master_renderer\pill_master_renderer_data\src\assets\mesh.rs:77`
+Source: `extensions\pill_master_renderer\modules\runtime\data\src\assets\mesh.rs:77`
 
 One drawable piece of geometry, holding interleaved vertices and a 32-bit
 index list.
@@ -154,20 +154,20 @@ as an OBJ, and when the result holds no vertices or no indices.
 - `TryFrom<U>`
 - `Any`
 - `ToOwned`
+- `CastableFrom<ST, Uninit, Uninit>`
+- `CastableFrom<ST, Initialized, Initialized>`
+- `Read<Exclusive, BecauseExclusive>`
 - `Instrument`
 - `WithSubscriber`
 - `IntoEither`
 - `Pointable`
 - `OwoColorize`
 - `ErasedDestructor`
-- `CastableFrom<ST, Uninit, Uninit>`
-- `CastableFrom<ST, Initialized, Initialized>`
-- `Read<Exclusive, BecauseExclusive>`
+- `Clone`
+- `Debug`
 - `MirrorObject`
 - `Asset`
 - `MirrorValue`
 - `MirrorReturn`
-- `Clone`
-- `Debug`
-- `ImportedAsset`
 - `TraitAccessible<dyn Asset>`
+- `ImportedAsset`

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-354"></a>
+<a id="rustdoc-item-376"></a>
 
 # Function `pill_engine_macros::emit_resize_trampoline`
 
@@ -8,7 +8,7 @@
 pub(crate) fn emit_resize_trampoline(type_ident: &syn::Ident, field_ident: &syn::Ident, doc: proc_macro2::TokenStream) -> AccessorEmission;
 ```
 
-Visibility: `crate` · Source: `engine\pill_engine_macros\src\lib.rs:894`
+Visibility: `crate` · Source: `engine\pill_engine_macros\src\lib.rs:1207`
 
 Emits the resize trampoline that every container kind shares.
 

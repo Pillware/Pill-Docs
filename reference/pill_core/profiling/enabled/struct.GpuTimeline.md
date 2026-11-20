@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1277"></a>
+<a id="rustdoc-item-1287"></a>
 
 # Struct `pill_core::profiling::enabled::GpuTimeline`
 
@@ -19,7 +19,7 @@ exist only inside `pill_core.dll`.
 
 ## Fields
 
-<a id="rustdoc-item-1275"></a>
+<a id="rustdoc-item-1285"></a>
 
 ### `context`
 
@@ -31,7 +31,7 @@ _No documentation provided._
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-1278"></a>
+<a id="rustdoc-item-1288"></a>
 
 ### `new`
 
@@ -45,7 +45,7 @@ One tick of that clock lasts `period_nanoseconds`. Returns `None`
 when Tracy is not running, or when the process has already created
 Tracy's 255 GPU contexts.
 
-<a id="rustdoc-item-1280"></a>
+<a id="rustdoc-item-1290"></a>
 
 ### `begin_span`
 
@@ -55,7 +55,7 @@ pub fn begin_span(self: &Self, name: &str, file: &str, line: u32) -> Option<GpuT
 
 Opens a GPU zone called `name`, recorded now on the calling thread.
 Its GPU start and end arrive later through
-[`GpuTimelineSpan::upload`](struct.GpuTimelineSpan.md#rustdoc-item-1279). `None` when Tracy has too many spans
+[`GpuTimelineSpan::upload`](struct.GpuTimelineSpan.md#rustdoc-item-1289). `None` when Tracy has too many spans
 waiting for their timestamps.
 
 ## Trait implementations

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-3680"></a>
+<a id="rustdoc-item-4057"></a>
 
 # Module `pill_editor_core::entities`
 
@@ -31,5 +31,5 @@ the inverses already collected, to that handle.
 ## Module contents
 
 ### Functions
-- [`entity_create`](fn.entity_create.md#rustdoc-item-3678) — Returns the recorded create: one empty entity, with the history label
-- [`entity_delete`](fn.entity_delete.md#rustdoc-item-3679) — Returns the recorded delete: clearing the selection and destroying the
+- [`entity_create`](fn.entity_create.md#rustdoc-item-4055) — Returns the recorded create: one empty entity, with the history label
+- [`entity_delete`](fn.entity_delete.md#rustdoc-item-4056) — Returns the recorded delete: clearing the selection and destroying the

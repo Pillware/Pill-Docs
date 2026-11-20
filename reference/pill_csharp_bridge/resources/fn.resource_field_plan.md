@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-2033"></a>
+<a id="rustdoc-item-2058"></a>
 
 # Function `pill_csharp_bridge::resources::resource_field_plan`
 
@@ -8,7 +8,7 @@
 pub(in resources) fn resource_field_plan(previous: &[ResourceFieldLayout], arriving: &[ResourceFieldLayout]) -> pill_engine::archetype::FieldPlan;
 ```
 
-Visibility: `{'restricted': {'parent': 1993, 'path': '::resources'}}` · Source: `csharp\pill_csharp_bridge\src\resources.rs:621`
+Visibility: `{'restricted': {'parent': 2018, 'path': '::resources'}}` · Source: `csharp\pill_csharp_bridge\src\resources.rs:621`
 
 Builds the byte plan from one resource shape to another, and applies the
 declared defaults to the fields the diff leaves empty.

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1872"></a>
+<a id="rustdoc-item-1897"></a>
 
 # Module `pill_csharp_bridge::queries`
 
@@ -33,17 +33,17 @@ a chunk for, so it cannot be used to probe arbitrary archetypes.
 ## Module contents
 
 ### Functions
-- [`ffi_entity_count`](fn.ffi_entity_count.md#rustdoc-item-1883) — Panic-guarded entry point for [`ffi_entity_count_guarded`].
-- [`ffi_entity_count_guarded`](fn.ffi_entity_count_guarded.md#rustdoc-item-1882) — Write the current entity count while a managed system is active.
-- [`ffi_entity_stable_id`](fn.ffi_entity_stable_id.md#rustdoc-item-1885) — Panic-guarded entry point for [`ffi_entity_stable_id_guarded`].
-- [`ffi_entity_stable_id_guarded`](fn.ffi_entity_stable_id_guarded.md#rustdoc-item-1884) — Write a live entity's stable id, split into two `u64` halves.
-- [`ffi_get_archetype_chunk`](fn.ffi_get_archetype_chunk.md#rustdoc-item-1879) — Panic-guarded entry point for [`ffi_get_archetype_chunk_guarded`].
-- [`ffi_get_archetype_chunk_guarded`](fn.ffi_get_archetype_chunk_guarded.md#rustdoc-item-1878) — Return one component chunk of an archetype the managed enumerator already
-- [`ffi_get_component_chunk`](fn.ffi_get_component_chunk.md#rustdoc-item-1877) — Panic-guarded entry point for [`ffi_get_component_chunk_guarded`].
-- [`ffi_get_component_chunk_guarded`](fn.ffi_get_component_chunk_guarded.md#rustdoc-item-1876) — Return a component chunk to managed code after checking the system's
-- [`ffi_get_entity_chunk`](fn.ffi_get_entity_chunk.md#rustdoc-item-1881) — Panic-guarded entry point for [`ffi_get_entity_chunk_guarded`].
-- [`ffi_get_entity_chunk_guarded`](fn.ffi_get_entity_chunk_guarded.md#rustdoc-item-1880) — Return the entity column of the archetype at `chunk_index`.
-- [`module_binding_matches_live_column`](fn.module_binding_matches_live_column.md#rustdoc-item-1875) — Whether a module's native binding still matches the live column's layout.
-- [`record_served_archetype`](fn.record_served_archetype.md#rustdoc-item-1871) — Record the archetype of a chunk a validated term just served.
-- [`write_component_chunk`](fn.write_component_chunk.md#rustdoc-item-1873) — Write one component column chunk into the managed caller's output buffer.
-- [`write_entity_chunk`](fn.write_entity_chunk.md#rustdoc-item-1874) — Write one archetype's entity column chunk into the managed caller's output
+- [`ffi_entity_count`](fn.ffi_entity_count.md#rustdoc-item-1908) — Panic-guarded entry point for [`ffi_entity_count_guarded`].
+- [`ffi_entity_count_guarded`](fn.ffi_entity_count_guarded.md#rustdoc-item-1907) — Write the current entity count while a managed system is active.
+- [`ffi_entity_stable_id`](fn.ffi_entity_stable_id.md#rustdoc-item-1910) — Panic-guarded entry point for [`ffi_entity_stable_id_guarded`].
+- [`ffi_entity_stable_id_guarded`](fn.ffi_entity_stable_id_guarded.md#rustdoc-item-1909) — Write a live entity's stable id, split into two `u64` halves.
+- [`ffi_get_archetype_chunk`](fn.ffi_get_archetype_chunk.md#rustdoc-item-1904) — Panic-guarded entry point for [`ffi_get_archetype_chunk_guarded`].
+- [`ffi_get_archetype_chunk_guarded`](fn.ffi_get_archetype_chunk_guarded.md#rustdoc-item-1903) — Return one component chunk of an archetype the managed enumerator already
+- [`ffi_get_component_chunk`](fn.ffi_get_component_chunk.md#rustdoc-item-1902) — Panic-guarded entry point for [`ffi_get_component_chunk_guarded`].
+- [`ffi_get_component_chunk_guarded`](fn.ffi_get_component_chunk_guarded.md#rustdoc-item-1901) — Return a component chunk to managed code after checking the system's
+- [`ffi_get_entity_chunk`](fn.ffi_get_entity_chunk.md#rustdoc-item-1906) — Panic-guarded entry point for [`ffi_get_entity_chunk_guarded`].
+- [`ffi_get_entity_chunk_guarded`](fn.ffi_get_entity_chunk_guarded.md#rustdoc-item-1905) — Return the entity column of the archetype at `chunk_index`.
+- [`module_binding_matches_live_column`](fn.module_binding_matches_live_column.md#rustdoc-item-1900) — Whether a module's native binding still matches the live column's layout.
+- [`record_served_archetype`](fn.record_served_archetype.md#rustdoc-item-1896) — Record the archetype of a chunk a validated term just served.
+- [`write_component_chunk`](fn.write_component_chunk.md#rustdoc-item-1898) — Write one component column chunk into the managed caller's output buffer.
+- [`write_entity_chunk`](fn.write_entity_chunk.md#rustdoc-item-1899) — Write one archetype's entity column chunk into the managed caller's output

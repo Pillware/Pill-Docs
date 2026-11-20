@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1445"></a>
+<a id="rustdoc-item-1455"></a>
 
 # Function `pill_core::profiling::compute_batch_packing_efficiency`
 

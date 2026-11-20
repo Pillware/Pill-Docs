@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-734"></a>
+<a id="rustdoc-item-736"></a>
 
 # Struct `pill_development_host::build_runner::JobObjectBasicAccountingInformation`
 
@@ -8,14 +8,14 @@
 pub(in build_runner) struct JobObjectBasicAccountingInformation;
 ```
 
-Visibility: `{'restricted': {'parent': 545, 'path': '::build_runner'}}` · Source: `hosting\pill_development_host\src\build_runner.rs:989`
+Visibility: `{'restricted': {'parent': 546, 'path': '::build_runner'}}` · Source: `hosting\pill_development_host\src\build_runner.rs:990`
 
 `JOBOBJECT_BASIC_ACCOUNTING_INFORMATION`; the drain wait polls its
 `active_processes` field.
 
 ## Fields
 
-<a id="rustdoc-item-726"></a>
+<a id="rustdoc-item-728"></a>
 
 ### `total_user_time`
 
@@ -25,7 +25,7 @@ total_user_time: i64
 
 _No documentation provided._
 
-<a id="rustdoc-item-727"></a>
+<a id="rustdoc-item-729"></a>
 
 ### `total_kernel_time`
 
@@ -35,7 +35,7 @@ total_kernel_time: i64
 
 _No documentation provided._
 
-<a id="rustdoc-item-728"></a>
+<a id="rustdoc-item-730"></a>
 
 ### `this_period_total_user_time`
 
@@ -45,7 +45,7 @@ this_period_total_user_time: i64
 
 _No documentation provided._
 
-<a id="rustdoc-item-729"></a>
+<a id="rustdoc-item-731"></a>
 
 ### `this_period_total_kernel_time`
 
@@ -55,7 +55,7 @@ this_period_total_kernel_time: i64
 
 _No documentation provided._
 
-<a id="rustdoc-item-730"></a>
+<a id="rustdoc-item-732"></a>
 
 ### `total_page_fault_count`
 
@@ -65,7 +65,7 @@ total_page_fault_count: u32
 
 _No documentation provided._
 
-<a id="rustdoc-item-731"></a>
+<a id="rustdoc-item-733"></a>
 
 ### `total_processes`
 
@@ -75,7 +75,7 @@ total_processes: u32
 
 _No documentation provided._
 
-<a id="rustdoc-item-732"></a>
+<a id="rustdoc-item-734"></a>
 
 ### `active_processes`
 
@@ -85,7 +85,7 @@ active_processes: u32
 
 _No documentation provided._
 
-<a id="rustdoc-item-733"></a>
+<a id="rustdoc-item-735"></a>
 
 ### `total_terminated_processes`
 

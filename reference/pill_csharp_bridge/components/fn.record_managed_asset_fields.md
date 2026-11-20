@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-982"></a>
+<a id="rustdoc-item-1004"></a>
 
 # Function `pill_csharp_bridge::components::record_managed_asset_fields`
 
@@ -8,7 +8,7 @@
 pub(in components) fn record_managed_asset_fields(engine: &mut pill_engine::Engine, component_id: pill_engine::ComponentId, component: &super::manifest::ManagedManifestEntry);
 ```
 
-Visibility: `{'restricted': {'parent': 781, 'path': '::components'}}` · Source: `csharp\pill_csharp_bridge\src\components.rs:1127`
+Visibility: `{'restricted': {'parent': 803, 'path': '::components'}}` · Source: `csharp\pill_csharp_bridge\src\components.rs:1127`
 
 Record which asset type each `Handle<T>` field of a managed component
 references, as the derive does for a Rust component.

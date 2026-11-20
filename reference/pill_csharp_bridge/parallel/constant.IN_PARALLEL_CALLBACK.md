@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1753"></a>
+<a id="rustdoc-item-1777"></a>
 
 # Constant `pill_csharp_bridge::parallel::IN_PARALLEL_CALLBACK`
 
@@ -8,7 +8,7 @@
 pub(in parallel) const IN_PARALLEL_CALLBACK: $crate::thread::LocalKey<std::cell::Cell<bool>> = _;
 ```
 
-Visibility: `{'restricted': {'parent': 1752, 'path': '::parallel'}}` · Source: `csharp\pill_csharp_bridge\src\parallel.rs:43`
+Visibility: `{'restricted': {'parent': 1776, 'path': '::parallel'}}` · Source: `csharp\pill_csharp_bridge\src\parallel.rs:43`
 
 Whether this thread is inside a parallel callback right now.
 

@@ -8,7 +8,7 @@
 pub fn setup(project: crate::StaticProject) -> Result<Runtime, pill_core::error::HostError>;
 ```
 
-Source: `hosting\pill_player\src\runtime.rs:707`
+Source: `hosting\pill_player\src\runtime.rs:714`
 
 Create the engine and initialize a statically linked project, mounting the
 pack the project embeds.

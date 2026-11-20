@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-894"></a>
+<a id="rustdoc-item-904"></a>
 
 # Type alias `pill_core::math::Matrix4f`
 

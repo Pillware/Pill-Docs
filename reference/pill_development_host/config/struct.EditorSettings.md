@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1137"></a>
+<a id="rustdoc-item-1155"></a>
 
 # Struct `pill_development_host::config::EditorSettings`
 
@@ -8,13 +8,13 @@
 pub struct EditorSettings;
 ```
 
-Source: `hosting\pill_development_host\src\config.rs:1250`
+Source: `hosting\pill_development_host\src\config.rs:1432`
 
 What `editor_settings.yaml` selected for the editor.
 
 ## Fields
 
-<a id="rustdoc-item-1136"></a>
+<a id="rustdoc-item-1153"></a>
 
 ### `editor_theme`
 
@@ -24,6 +24,17 @@ editor_theme: Option<String>
 
 The `editor_theme:` value, as the file spells it: a path below the
 project's `res`.
+
+<a id="rustdoc-item-1154"></a>
+
+### `focus_game_on_play`
+
+```rust
+focus_game_on_play: bool
+```
+
+The `focus_game_on_play:` value: whether Play brings the Game tab
+forward. Absent means `true`, which is what a person expects of Play.
 
 ## Trait implementations
 
@@ -48,7 +59,7 @@ project's `res`.
 - `Equivalent<K>`
 - `Clone`
 - `Debug`
-- `Default`
 - `StructuralPartialEq`
 - `PartialEq`
 - `Eq`
+- `Default`

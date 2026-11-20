@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-800"></a>
+<a id="rustdoc-item-870"></a>
 
 # Struct `pill_renderer_api::surface::SurfaceCameras`
 
@@ -14,12 +14,12 @@ The camera bindings of every surface, by surface id.
 
 The frontend writes this into the world as a resource. A surface with no
 entry draws through the frame's chosen camera when it is the primary one,
-and draws nothing otherwise. An entry for [`SurfaceId::PRIMARY`](struct.SurfaceId.md#rustdoc-item-182) replaces
+and draws nothing otherwise. An entry for [`SurfaceId::PRIMARY`](struct.SurfaceId.md#rustdoc-item-185) replaces
 the choice the frame would make among the world's cameras.
 
 ## Fields
 
-<a id="rustdoc-item-1142"></a>
+<a id="rustdoc-item-1220"></a>
 
 ### `bindings`
 
@@ -29,7 +29,7 @@ bindings: std::collections::BTreeMap<SurfaceId, CameraBinding>
 
 Binding per surface.
 
-<a id="rustdoc-item-1143"></a>
+<a id="rustdoc-item-1221"></a>
 
 ### `grid`
 
@@ -42,7 +42,7 @@ frontend turns it on.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-1144"></a>
+<a id="rustdoc-item-1222"></a>
 
 ### `set`
 
@@ -64,15 +64,15 @@ Binds `binding` to `surface`, or removes the surface's binding with
 - `TryFrom<U>`
 - `Any`
 - `ToOwned`
+- `CastableFrom<ST, Uninit, Uninit>`
+- `CastableFrom<ST, Initialized, Initialized>`
+- `Read<Exclusive, BecauseExclusive>`
 - `Instrument`
 - `WithSubscriber`
 - `IntoEither`
 - `Pointable`
 - `OwoColorize`
 - `ErasedDestructor`
-- `CastableFrom<ST, Uninit, Uninit>`
-- `CastableFrom<ST, Initialized, Initialized>`
-- `Read<Exclusive, BecauseExclusive>`
 - `Debug`
 - `Clone`
 - `Default`

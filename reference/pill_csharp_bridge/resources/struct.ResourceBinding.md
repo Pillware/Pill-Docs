@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1889"></a>
+<a id="rustdoc-item-1914"></a>
 
 # Struct `pill_csharp_bridge::resources::ResourceBinding`
 
@@ -17,7 +17,7 @@ That is why there is one kind of binding here where a component has two.
 
 ## Fields
 
-<a id="rustdoc-item-1886"></a>
+<a id="rustdoc-item-1911"></a>
 
 ### `resource_id`
 
@@ -27,7 +27,7 @@ resource_id: pill_engine::ResourceId
 
 Engine id the resource was registered under.
 
-<a id="rustdoc-item-1888"></a>
+<a id="rustdoc-item-1913"></a>
 
 ### `declaration`
 

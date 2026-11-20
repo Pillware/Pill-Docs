@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-596"></a>
+<a id="rustdoc-item-612"></a>
 
 # Struct `pill_csharp_bridge::backend::PreparedManagedSystem`
 
@@ -8,7 +8,7 @@
 pub(in backend) struct PreparedManagedSystem;
 ```
 
-Visibility: `{'restricted': {'parent': 400, 'path': '::backend'}}` · Source: `csharp\pill_csharp_bridge\src\backend.rs:336`
+Visibility: `{'restricted': {'parent': 403, 'path': '::backend'}}` · Source: `csharp\pill_csharp_bridge\src\backend.rs:361`
 
 One managed system that has been resolved and checked, but not yet given to
 the engine.
@@ -22,7 +22,7 @@ instead of clearing them first and finding out that the new set cannot run.
 
 ## Fields
 
-<a id="rustdoc-item-589"></a>
+<a id="rustdoc-item-602"></a>
 
 ### `name`
 
@@ -32,7 +32,7 @@ name: String
 
 Name the system registers under, after the synthetic fallback.
 
-<a id="rustdoc-item-590"></a>
+<a id="rustdoc-item-603"></a>
 
 ### `access`
 
@@ -42,7 +42,7 @@ access: pill_engine::SystemAccess
 
 Scheduler access list, already resolved against the binding table.
 
-<a id="rustdoc-item-592"></a>
+<a id="rustdoc-item-605"></a>
 
 ### `managed_access`
 
@@ -52,7 +52,7 @@ managed_access: Box<[super::abi::NativeSystemAccess]>
 
 Reflected managed accesses the run closure installs its scope from.
 
-<a id="rustdoc-item-593"></a>
+<a id="rustdoc-item-606"></a>
 
 ### `uses_commands`
 
@@ -62,7 +62,37 @@ uses_commands: bool
 
 Whether the managed system declared a `Commands` parameter.
 
-<a id="rustdoc-item-594"></a>
+<a id="rustdoc-item-607"></a>
+
+### `order`
+
+```rust
+order: i32
+```
+
+Declared order within the phase.
+
+<a id="rustdoc-item-608"></a>
+
+### `phase`
+
+```rust
+phase: pill_engine::RunPhase
+```
+
+Declared frame phase.
+
+<a id="rustdoc-item-609"></a>
+
+### `run_in_edit_mode`
+
+```rust
+run_in_edit_mode: bool
+```
+
+Whether the system also runs in edit mode.
+
+<a id="rustdoc-item-610"></a>
 
 ### `system_index`
 
@@ -72,7 +102,7 @@ system_index: u32
 
 Managed discovery index this system is dispatched by.
 
-<a id="rustdoc-item-595"></a>
+<a id="rustdoc-item-611"></a>
 
 ### `snapshot`
 

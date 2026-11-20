@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1000"></a>
+<a id="rustdoc-item-1044"></a>
 
 # Enum `pill_editor_core::clipboard::ClipboardAction`
 
@@ -14,7 +14,7 @@ The three clipboard commands the Edit menu and the shortcuts run.
 
 ## Variants
 
-<a id="rustdoc-item-997"></a>
+<a id="rustdoc-item-1041"></a>
 
 ### `Copy`
 
@@ -24,7 +24,7 @@ Copy
 
 Put the selection on the clipboard.
 
-<a id="rustdoc-item-998"></a>
+<a id="rustdoc-item-1042"></a>
 
 ### `Cut`
 
@@ -34,7 +34,7 @@ Cut
 
 Put the selection on the clipboard and delete it.
 
-<a id="rustdoc-item-999"></a>
+<a id="rustdoc-item-1043"></a>
 
 ### `Paste`
 

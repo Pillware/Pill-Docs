@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1363"></a>
+<a id="rustdoc-item-1373"></a>
 
 # Function `pill_core::profiling::profiling_extras::plot_config`
 

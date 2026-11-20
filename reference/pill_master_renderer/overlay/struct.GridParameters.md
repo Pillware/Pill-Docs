@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1240"></a>
+<a id="rustdoc-item-1281"></a>
 
 # Struct `pill_master_renderer::overlay::GridParameters`
 
@@ -8,7 +8,7 @@
 pub(in overlay) struct GridParameters;
 ```
 
-Visibility: `{'restricted': {'parent': 858, 'path': '::overlay'}}` · Source: `extensions\pill_master_renderer\pill_master_renderer\src\overlay\mod.rs:159`
+Visibility: `{'restricted': {'parent': 854, 'path': '::overlay'}}` · Source: `extensions\pill_master_renderer\modules\runtime\gpu\src\overlay\mod.rs:175`
 
 The grid uniform: the cell size in `cell_size[0]`, and the drawing region in
 `viewport`, in pixels. The fragment shader turns each pixel back into a
@@ -16,7 +16,7 @@ clip-space ray through that region.
 
 ## Fields
 
-<a id="rustdoc-item-1238"></a>
+<a id="rustdoc-item-1279"></a>
 
 ### `cell_size`
 
@@ -26,7 +26,7 @@ cell_size: [f32; 4]
 
 _No documentation provided._
 
-<a id="rustdoc-item-1239"></a>
+<a id="rustdoc-item-1280"></a>
 
 ### `viewport`
 

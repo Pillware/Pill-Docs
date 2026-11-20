@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-308"></a>
+<a id="rustdoc-item-316"></a>
 
 # Function `pill_engine::component_registry::register_all_components`
 
@@ -8,7 +8,7 @@
 pub fn register_all_components(world: &mut crate::World) -> Result<(), crate::error::WorldError>;
 ```
 
-Source: `engine\pill_engine\src\component_registry.rs:372`
+Source: `engine\pill_engine\src\component_registry.rs:379`
 
 Register every component this artifact declares with the derive.
 

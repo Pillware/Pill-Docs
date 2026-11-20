@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-509"></a>
+<a id="rustdoc-item-519"></a>
 
 # Struct `pill_csharp_bridge::config::CSharpModuleConfig`
 
@@ -20,7 +20,7 @@ directories.
 
 ## Fields
 
-<a id="rustdoc-item-988"></a>
+<a id="rustdoc-item-1010"></a>
 
 ### `runtime_assembly_name`
 
@@ -30,7 +30,7 @@ runtime_assembly_name: String
 
 Name of the runtime assembly that hosts the collectible loader.
 
-<a id="rustdoc-item-989"></a>
+<a id="rustdoc-item-1011"></a>
 
 ### `runtime_output_subdirectory`
 
@@ -40,7 +40,7 @@ runtime_output_subdirectory: String
 
 Output subdirectory for the runtime assembly, relative to the workspace root.
 
-<a id="rustdoc-item-990"></a>
+<a id="rustdoc-item-1012"></a>
 
 ### `project_assembly_name`
 
@@ -50,7 +50,7 @@ project_assembly_name: String
 
 Name of the project assembly loaded by the runtime.
 
-<a id="rustdoc-item-991"></a>
+<a id="rustdoc-item-1013"></a>
 
 ### `project_output_subdirectory`
 
@@ -62,7 +62,7 @@ Output subdirectory for the project assembly, relative to the workspace root.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-992"></a>
+<a id="rustdoc-item-1014"></a>
 
 ### `new`
 

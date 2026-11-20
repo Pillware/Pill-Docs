@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1001"></a>
+<a id="rustdoc-item-995"></a>
 
 # Struct `pill_master_renderer_data::assets::shader::ShaderImportSettings`
 
@@ -8,7 +8,7 @@
 pub struct ShaderImportSettings;
 ```
 
-Source: `extensions\pill_master_renderer\pill_master_renderer_data\src\assets\shader.rs:409`
+Source: `extensions\pill_master_renderer\modules\runtime\data\src\assets\shader.rs:409`
 
 How to build a shader from its `.hlsl` source: the settings its `.hlsl.meta`
 holds.
@@ -19,7 +19,7 @@ existed still load.
 
 ## Fields
 
-<a id="rustdoc-item-1061"></a>
+<a id="rustdoc-item-1053"></a>
 
 ### `vertex`
 
@@ -32,7 +32,7 @@ The vertex stage, by path relative to the same root as the source.
 One `.hlsl` file holds one stage and a shader needs two, so the meta
 says which vertex stage this source pairs with.
 
-<a id="rustdoc-item-1062"></a>
+<a id="rustdoc-item-1054"></a>
 
 ### `parameters`
 
@@ -42,7 +42,7 @@ parameters: Vec<ShaderParameterSlot>
 
 The uniforms the shader declares, in the order their values pack.
 
-<a id="rustdoc-item-1063"></a>
+<a id="rustdoc-item-1055"></a>
 
 ### `textures`
 
@@ -53,7 +53,7 @@ textures: Vec<ShaderTextureSlot>
 The textures the shader declares, each with its texture and sampler
 bindings.
 
-<a id="rustdoc-item-1064"></a>
+<a id="rustdoc-item-1056"></a>
 
 ### `engine_parameters`
 
@@ -63,7 +63,7 @@ engine_parameters: bool
 
 Whether the shader reads the engine's parameters, at set 0.
 
-<a id="rustdoc-item-1065"></a>
+<a id="rustdoc-item-1057"></a>
 
 ### `camera_parameters`
 
@@ -84,6 +84,9 @@ Whether the shader reads the camera's parameters, at set 1.
 - `TryFrom<U>`
 - `Any`
 - `ToOwned`
+- `CastableFrom<ST, Uninit, Uninit>`
+- `CastableFrom<ST, Initialized, Initialized>`
+- `Read<Exclusive, BecauseExclusive>`
 - `DeserializeOwned`
 - `Instrument`
 - `WithSubscriber`
@@ -91,9 +94,6 @@ Whether the shader reads the camera's parameters, at set 1.
 - `Pointable`
 - `OwoColorize`
 - `ErasedDestructor`
-- `CastableFrom<ST, Uninit, Uninit>`
-- `CastableFrom<ST, Initialized, Initialized>`
-- `Read<Exclusive, BecauseExclusive>`
 - `Equivalent<K>`
 - `Debug`
 - `Clone`

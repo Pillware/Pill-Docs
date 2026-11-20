@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1672"></a>
+<a id="rustdoc-item-1682"></a>
 
 # Struct `pill_core::telemetry::capture::CaptureLayer`
 
@@ -11,11 +11,11 @@ pub struct CaptureLayer;
 Source: `engine\pill_core\src\telemetry\capture.rs:165`
 
 A tracing layer that copies events at or above a level into a
-[`LogBuffer`](struct.LogBuffer.md#rustdoc-item-1631).
+[`LogBuffer`](struct.LogBuffer.md#rustdoc-item-1641).
 
 ## Fields
 
-<a id="rustdoc-item-1670"></a>
+<a id="rustdoc-item-1680"></a>
 
 ### `buffer`
 
@@ -25,7 +25,7 @@ buffer: LogBuffer
 
 _No documentation provided._
 
-<a id="rustdoc-item-1671"></a>
+<a id="rustdoc-item-1681"></a>
 
 ### `minimum_level`
 
@@ -37,7 +37,7 @@ _No documentation provided._
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-1673"></a>
+<a id="rustdoc-item-1683"></a>
 
 ### `new`
 

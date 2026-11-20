@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-493"></a>
+<a id="rustdoc-item-549"></a>
 
 # Struct `pill_editor::runner::SceneView`
 
@@ -8,13 +8,13 @@
 pub(in runner) struct SceneView;
 ```
 
-Visibility: `{'restricted': {'parent': 483, 'path': '::runner'}}` · Source: `editor\pill_editor\src\runner\mod.rs:3181`
+Visibility: `{'restricted': {'parent': 539, 'path': '::runner'}}` · Source: `editor\pill_editor\src\runner\mod.rs:3680`
 
 One scene view: its child window and its renderer surface.
 
 ## Fields
 
-<a id="rustdoc-item-1220"></a>
+<a id="rustdoc-item-1668"></a>
 
 ### `window`
 
@@ -24,7 +24,7 @@ window: SurfaceWindow
 
 The child window the project's renderer presents the scene into.
 
-<a id="rustdoc-item-1221"></a>
+<a id="rustdoc-item-1669"></a>
 
 ### `surface_id`
 
@@ -34,7 +34,19 @@ surface_id: pill_player::SurfaceId
 
 The renderer surface id the scene draws through.
 
-<a id="rustdoc-item-1223"></a>
+<a id="rustdoc-item-1671"></a>
+
+### `body_rect`
+
+```rust
+body_rect: Option<pill_editor_core::boundary::ShellRect>
+```
+
+The dock's rectangle for the viewport body, in the shell's logical
+points, from the last placement. The window is grown past it, and a
+press in that margin belongs to the shell's chrome.
+
+<a id="rustdoc-item-1672"></a>
 
 ### `popped`
 
@@ -50,7 +62,7 @@ forced is not a popped-out one, which is why the flag exists apart from
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-1224"></a>
+<a id="rustdoc-item-1673"></a>
 
 ### `open`
 
@@ -62,7 +74,7 @@ Create the `view`-th scene view's child window.
 
 A refusal is logged and leaves that view without a window.
 
-<a id="rustdoc-item-1225"></a>
+<a id="rustdoc-item-1674"></a>
 
 ### `attach_to`
 
@@ -77,7 +89,7 @@ The one attach path: the startup window, a popped-out top-level and a
 redocked child all come through here, so the camera publish cannot be
 forgotten on one of them.
 
-<a id="rustdoc-item-1226"></a>
+<a id="rustdoc-item-1675"></a>
 
 ### `attach`
 
@@ -87,7 +99,7 @@ pub(in runner) fn attach(self: &mut Self, host: &mut RenderingHost, camera: &Orb
 
 Attach the view to the window it was opened with.
 
-<a id="rustdoc-item-1227"></a>
+<a id="rustdoc-item-1676"></a>
 
 ### `rebind_window`
 

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-822"></a>
+<a id="rustdoc-item-824"></a>
 
 # Constant `pill_development_host::config::CARGO_TIMINGS_ENVIRONMENT_VARIABLE`
 
@@ -8,7 +8,7 @@
 pub(in config) const CARGO_TIMINGS_ENVIRONMENT_VARIABLE: &str = "PILL_CARGO_TIMINGS";
 ```
 
-Visibility: `{'restricted': {'parent': 821, 'path': '::config'}}` · Source: `hosting\pill_development_host\src\config.rs:55`
+Visibility: `{'restricted': {'parent': 823, 'path': '::config'}}` · Source: `hosting\pill_development_host\src\config.rs:55`
 
 Opt-in variable that adds cargo's `--timings` report to every host-driven
 build.

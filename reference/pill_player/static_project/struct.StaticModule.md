@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-556"></a>
+<a id="rustdoc-item-559"></a>
 
 # Struct `pill_player::static_project::StaticModule`
 
@@ -18,7 +18,7 @@ module, named the same way, but reached by a direct call instead of the
 
 ## Fields
 
-<a id="rustdoc-item-554"></a>
+<a id="rustdoc-item-557"></a>
 
 ### `name`
 
@@ -29,7 +29,7 @@ name: &'static str
 Crate name, used for logging exactly as the reloading host uses the
 extension's name.
 
-<a id="rustdoc-item-555"></a>
+<a id="rustdoc-item-558"></a>
 
 ### `init`
 
@@ -53,14 +53,14 @@ export. Here this crate calls it directly.
 - `TryFrom<U>`
 - `Any`
 - `ToOwned`
+- `CastableFrom<ST, Uninit, Uninit>`
+- `CastableFrom<ST, Initialized, Initialized>`
+- `Read<Exclusive, BecauseExclusive>`
 - `Instrument`
 - `WithSubscriber`
 - `IntoEither`
 - `Pointable`
 - `OwoColorize`
 - `ErasedDestructor`
-- `CastableFrom<ST, Uninit, Uninit>`
-- `CastableFrom<ST, Initialized, Initialized>`
-- `Read<Exclusive, BecauseExclusive>`
 - `Clone`
 - `Copy`

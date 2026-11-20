@@ -1,17 +1,17 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-2370"></a>
+<a id="rustdoc-item-2412"></a>
 
 # Module `pill_master_renderer::resources::renderer_material`
 
-Visibility: `{'restricted': {'parent': 2227, 'path': '::resources'}}` · Source: `extensions\pill_master_renderer\pill_master_renderer\src\resources\renderer_material.rs:1`
+Visibility: `{'restricted': {'parent': 2270, 'path': '::resources'}}` · Source: `extensions\pill_master_renderer\modules\runtime\gpu\src\resources\renderer_material.rs:1`
 
 What one material becomes on the GPU: the bind groups its draws bind.
 
 ## Responsibilities
 
 - Build the two bind groups a material's draws bind, following the slots
-  its shader declares ([`RendererMaterial`](struct.RendererMaterial.md#rustdoc-item-2423)). Parameters go to group 2 and
+  its shader declares ([`RendererMaterial`](struct.RendererMaterial.md#rustdoc-item-2464)). Parameters go to group 2 and
   textures to group 3.
 - Pack the material's parameter values, one 16-byte slot each, in
   declaration order. A pass packs through the same two functions, so a
@@ -34,5 +34,5 @@ exactly as long as the group that reads it.
 ## Module contents
 
 ### Structs
-- [`RendererMaterial`](struct.RendererMaterial.md#rustdoc-item-2423) — One material's GPU resources: the bind groups its draws bind.
+- [`RendererMaterial`](struct.RendererMaterial.md#rustdoc-item-2464) — One material's GPU resources: the bind groups its draws bind.
 - [`RendererMaterialHandle`](struct.RendererMaterialHandle.md#rustdoc-item-7) — A typed handle for the slots of the map it was issued by.

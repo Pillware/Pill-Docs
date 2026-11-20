@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-659"></a>
+<a id="rustdoc-item-663"></a>
 
 # Struct `pill_player::static_project::StaticLogging`
 
@@ -8,16 +8,16 @@
 pub struct StaticLogging;
 ```
 
-Source: `hosting\pill_player\src\static_project.rs:290`
+Source: `hosting\pill_player\src\static_project.rs:303`
 
 A project's logging settings, compiled into the binary as text.
 
 Text rather than levels, so the generated bundle names no engine type.
-[`Self::settings`](#rustdoc-item-697) reads it into [`LoggingSettings`](../telemetry/struct.LoggingSettings.md#rustdoc-item-698).
+[`Self::settings`](#rustdoc-item-701) reads it into [`LoggingSettings`](../telemetry/struct.LoggingSettings.md#rustdoc-item-702).
 
 ## Fields
 
-<a id="rustdoc-item-693"></a>
+<a id="rustdoc-item-697"></a>
 
 ### `level`
 
@@ -27,7 +27,7 @@ level: Option<&'static str>
 
 The `level:` key, when the settings set one.
 
-<a id="rustdoc-item-694"></a>
+<a id="rustdoc-item-698"></a>
 
 ### `timestamp`
 
@@ -37,7 +37,7 @@ timestamp: Option<&'static str>
 
 The `timestamp:` key (`date_time` or `time`), when the settings set one.
 
-<a id="rustdoc-item-695"></a>
+<a id="rustdoc-item-699"></a>
 
 ### `source_location`
 
@@ -47,7 +47,7 @@ source_location: Option<bool>
 
 The `source_location:` key, when the settings set one.
 
-<a id="rustdoc-item-696"></a>
+<a id="rustdoc-item-700"></a>
 
 ### `targets`
 
@@ -60,7 +60,7 @@ bundle generator writes them in that order.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-657"></a>
+<a id="rustdoc-item-661"></a>
 
 ### `NONE`
 
@@ -70,7 +70,7 @@ const NONE: Self = _;
 
 No logging settings: the engine's defaults apply.
 
-<a id="rustdoc-item-697"></a>
+<a id="rustdoc-item-701"></a>
 
 ### `settings`
 
@@ -97,15 +97,15 @@ generator refuses all three.
 - `TryFrom<U>`
 - `Any`
 - `ToOwned`
+- `CastableFrom<ST, Uninit, Uninit>`
+- `CastableFrom<ST, Initialized, Initialized>`
+- `Read<Exclusive, BecauseExclusive>`
 - `Instrument`
 - `WithSubscriber`
 - `IntoEither`
 - `Pointable`
 - `OwoColorize`
 - `ErasedDestructor`
-- `CastableFrom<ST, Uninit, Uninit>`
-- `CastableFrom<ST, Initialized, Initialized>`
-- `Read<Exclusive, BecauseExclusive>`
 - `Clone`
 - `Copy`
 - `Debug`

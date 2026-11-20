@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-6746"></a>
+<a id="rustdoc-item-8794"></a>
 
 # Enum `pill_editor_core::scripted::Dump`
 
@@ -8,13 +8,13 @@
 pub enum Dump { ... }
 ```
 
-Source: `editor\pill_editor_core\src\scripted.rs:357`
+Source: `editor\pill_editor_core\src\scripted.rs:401`
 
 Which piece of editor state a `dump` logs.
 
 ## Variants
 
-<a id="rustdoc-item-6934"></a>
+<a id="rustdoc-item-8988"></a>
 
 ### `Tabs`
 
@@ -24,7 +24,7 @@ Tabs
 
 `dump tabs` - the dock's surfaces and their tabs.
 
-<a id="rustdoc-item-6935"></a>
+<a id="rustdoc-item-8989"></a>
 
 ### `Scenes`
 
@@ -34,7 +34,7 @@ Scenes
 
 `dump scenes` - the scene view rectangles and the game view's.
 
-<a id="rustdoc-item-6936"></a>
+<a id="rustdoc-item-8990"></a>
 
 ### `Viewport`
 
@@ -45,7 +45,7 @@ Viewport
 `dump viewport` - the active view, the interaction state, the hovered
 handle and every view's camera.
 
-<a id="rustdoc-item-6937"></a>
+<a id="rustdoc-item-8991"></a>
 
 ### `Grid`
 
@@ -55,7 +55,29 @@ Grid
 
 `dump grid` - the scene grid's switch and the surfaces it draws on.
 
-<a id="rustdoc-item-6938"></a>
+<a id="rustdoc-item-8992"></a>
+
+### `Gizmos`
+
+```rust
+Gizmos
+```
+
+`dump gizmos` - every component gizmo the world registered, whether an
+editor hid its type, and how many entities it drew last frame.
+
+<a id="rustdoc-item-8993"></a>
+
+### `Play`
+
+```rust
+Play
+```
+
+`dump play` - the run mode, the pause flag and the world's restore
+epoch.
+
+<a id="rustdoc-item-8994"></a>
 
 ### `Assets`
 
@@ -65,7 +87,7 @@ Assets
 
 `dump assets` - the asset listing's rows.
 
-<a id="rustdoc-item-6939"></a>
+<a id="rustdoc-item-8995"></a>
 
 ### `EngineAssets`
 
@@ -76,7 +98,7 @@ EngineAssets
 `dump engine-assets` - the assets the store holds that no file backs,
 which a picker offers beside the listing's rows.
 
-<a id="rustdoc-item-6940"></a>
+<a id="rustdoc-item-8996"></a>
 
 ### `Browser`
 
@@ -86,7 +108,7 @@ Browser
 
 `dump browser` - the project browser's open folder and open rows.
 
-<a id="rustdoc-item-6941"></a>
+<a id="rustdoc-item-8997"></a>
 
 ### `StandaloneTypes`
 
@@ -96,7 +118,7 @@ StandaloneTypes
 
 `dump standalone-types` - the types the create dialog offers.
 
-<a id="rustdoc-item-6942"></a>
+<a id="rustdoc-item-8998"></a>
 
 ### `Systems`
 
@@ -106,7 +128,28 @@ Systems
 
 `dump systems` - the registered systems and their state.
 
-<a id="rustdoc-item-6943"></a>
+<a id="rustdoc-item-8999"></a>
+
+### `Tools`
+
+```rust
+Tools
+```
+
+`dump tools` - the registered tools and the active one.
+
+<a id="rustdoc-item-9000"></a>
+
+### `Elements`
+
+```rust
+Elements
+```
+
+`dump elements` - the active tool's report for the selected entity, as
+the editor draws and picks it.
+
+<a id="rustdoc-item-9001"></a>
 
 ### `Preferences`
 
@@ -116,7 +159,7 @@ Preferences
 
 `dump preferences` - the preferences document and the live halves.
 
-<a id="rustdoc-item-6944"></a>
+<a id="rustdoc-item-9002"></a>
 
 ### `Theme`
 
@@ -128,7 +171,7 @@ Theme
 merged from, and the generation number that moves when they resolve
 again.
 
-<a id="rustdoc-item-6945"></a>
+<a id="rustdoc-item-9003"></a>
 
 ### `Console`
 
@@ -138,7 +181,7 @@ Console
 
 `dump console` - the Console tab's filters and the rows they leave.
 
-<a id="rustdoc-item-6946"></a>
+<a id="rustdoc-item-9004"></a>
 
 ### `Problems`
 
@@ -148,7 +191,7 @@ Problems
 
 `dump problems` - the Problems rows and their locations.
 
-<a id="rustdoc-item-6947"></a>
+<a id="rustdoc-item-9005"></a>
 
 ### `Stats`
 
@@ -158,7 +201,7 @@ Stats
 
 `dump stats` - the Statistics tab's frame and per-tab timings.
 
-<a id="rustdoc-item-6948"></a>
+<a id="rustdoc-item-9006"></a>
 
 ### `Cadence`
 
@@ -168,7 +211,7 @@ Cadence
 
 `dump cadence` - the redraw counters.
 
-<a id="rustdoc-item-6949"></a>
+<a id="rustdoc-item-9007"></a>
 
 ### `Panels`
 
@@ -178,7 +221,7 @@ Panels
 
 `dump panels` - the module panels and their timings.
 
-<a id="rustdoc-item-6950"></a>
+<a id="rustdoc-item-9008"></a>
 
 ### `Windows`
 
@@ -188,7 +231,7 @@ Windows
 
 `dump windows` - the panel windows on screen.
 
-<a id="rustdoc-item-6951"></a>
+<a id="rustdoc-item-9009"></a>
 
 ### `Entities`
 
@@ -199,7 +242,7 @@ Entities
 `dump entities` - the entity list with each row's component names,
 which is what a collection test needs to find its subject.
 
-<a id="rustdoc-item-6952"></a>
+<a id="rustdoc-item-9010"></a>
 
 ### `Selection`
 
@@ -209,7 +252,7 @@ Selection
 
 `dump selection` - the selected entities, primary last.
 
-<a id="rustdoc-item-6953"></a>
+<a id="rustdoc-item-9011"></a>
 
 ### `Resources`
 
@@ -219,7 +262,7 @@ Resources
 
 `dump resources` - the editable world resources and their values.
 
-<a id="rustdoc-item-6957"></a>
+<a id="rustdoc-item-9015"></a>
 
 ### `Field`
 

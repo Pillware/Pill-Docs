@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1810"></a>
+<a id="rustdoc-item-1820"></a>
 
 # Function `pill_core::telemetry::timestamp_format_from_discriminant`
 
@@ -8,7 +8,7 @@
 pub(in telemetry) const fn timestamp_format_from_discriminant(discriminant: u8) -> Option<TimestampFormat>;
 ```
 
-Visibility: `{'restricted': {'parent': 1726, 'path': '::telemetry'}}` · Source: `engine\pill_core\src\telemetry.rs:293`
+Visibility: `{'restricted': {'parent': 1736, 'path': '::telemetry'}}` · Source: `engine\pill_core\src\telemetry.rs:293`
 
 Decodes a stored discriminant; `None` for a byte no variant wrote.
 

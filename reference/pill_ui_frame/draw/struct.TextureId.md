@@ -47,6 +47,7 @@ _No documentation provided._
 - `CastableFrom<ST, Uninit, Uninit>`
 - `CastableFrom<ST, Initialized, Initialized>`
 - `Read<Exclusive, BecauseExclusive>`
+- `Equivalent<K>`
 - `Copy`
 - `Clone`
 - `Debug`

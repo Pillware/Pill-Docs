@@ -29,10 +29,25 @@ export const guideSidebarItems: DefaultTheme.SidebarItem[] = [
           { "text": "Components", "link": "/guide/user_guide/concepts/components" },
           { "text": "Entities", "link": "/guide/user_guide/concepts/entities" },
           { "text": "Resources", "link": "/guide/user_guide/concepts/resources" },
+          { "text": "Script components", "link": "/guide/user_guide/concepts/script_components" },
           { "text": "ECS systems", "link": "/guide/user_guide/concepts/systems" }
         ]
       },
-      { "text": "Editor", "link": "/guide/user_guide/editor/editor" },
+      {
+        "text": "Rendering",
+        "collapsed": false,
+        "items": [
+          { "text": "Rendering", "link": "/guide/user_guide/rendering/rendering" }
+        ]
+      },
+      {
+        "text": "Editor",
+        "collapsed": false,
+        "items": [
+          { "text": "Editor", "link": "/guide/user_guide/editor/editor" },
+          { "text": "Extending the editor", "link": "/guide/user_guide/editor/extending_editor" }
+        ]
+      },
       {
         "text": "Advanced",
         "collapsed": false,
@@ -57,6 +72,8 @@ export const guideSidebarItems: DefaultTheme.SidebarItem[] = [
           { "text": "Engine crates", "link": "/guide/engine_guide/levels/engine" },
           { "text": "Extensions", "link": "/guide/engine_guide/levels/extensions" },
           { "text": "Modules", "link": "/guide/engine_guide/levels/modules" },
+          { "text": "Rendering", "link": "/guide/engine_guide/levels/rendering" },
+          { "text": "User interface", "link": "/guide/engine_guide/levels/user_interface" },
           {
             "text": "Frontends",
             "collapsed": false,
@@ -90,6 +107,7 @@ export const guideSidebarItems: DefaultTheme.SidebarItem[] = [
           { "text": "Components", "link": "/guide/engine_guide/concepts/components" },
           { "text": "Entities", "link": "/guide/engine_guide/concepts/entities" },
           { "text": "Resources", "link": "/guide/engine_guide/concepts/resources" },
+          { "text": "Script components", "link": "/guide/engine_guide/concepts/script_components" },
           { "text": "ECS systems", "link": "/guide/engine_guide/concepts/systems" }
         ]
       },
@@ -111,7 +129,22 @@ export const guideSidebarItems: DefaultTheme.SidebarItem[] = [
           { "text": "Documentation", "link": "/guide/engine_guide/devops/documentation" }
         ]
       },
-      { "text": "Editor", "link": "/guide/engine_guide/editor/editor" },
+      {
+        "text": "Editor",
+        "collapsed": false,
+        "items": [
+          { "text": "Editor", "link": "/guide/engine_guide/editor/editor" },
+          { "text": "How the editor works", "link": "/guide/engine_guide/editor/editor_implementation" },
+          { "text": "Extending the editor", "link": "/guide/engine_guide/editor/extending_editor" }
+        ]
+      },
+      {
+        "text": "Rendering",
+        "collapsed": false,
+        "items": [
+          { "text": "How rendering works", "link": "/guide/engine_guide/rendering/rendering" }
+        ]
+      },
       {
         "text": "Other",
         "collapsed": false,
@@ -120,6 +153,7 @@ export const guideSidebarItems: DefaultTheme.SidebarItem[] = [
           { "text": "Containers across Pill", "link": "/guide/engine_guide/other/containers_across_pill" },
           { "text": "Dynamic data", "link": "/guide/engine_guide/other/dynamic_data" },
           { "text": "Environment variables", "link": "/guide/engine_guide/other/environment_variables" },
+          { "text": "How gizmos are drawn", "link": "/guide/engine_guide/other/gizmos_rendering" },
           { "text": "Profiling", "link": "/guide/engine_guide/other/profiling" }
         ]
       }
@@ -133,6 +167,7 @@ export const guideSidebarItems: DefaultTheme.SidebarItem[] = [
       { "text": "Code of conduct", "link": "/guide/other/code-of-conduct" },
       { "text": "Coding standards", "link": "/guide/other/coding-standards" },
       { "text": "Contributing", "link": "/guide/other/contributing" },
+      { "text": "Partner license", "link": "/guide/other/partner-license" },
       { "text": "Writing guidelines", "link": "/guide/other/guide_writing_guidelines" }
     ]
   }

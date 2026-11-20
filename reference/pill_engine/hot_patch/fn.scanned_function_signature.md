@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-569"></a>
+<a id="rustdoc-item-723"></a>
 
 # Function `pill_engine::hot_patch::scanned_function_signature`
 

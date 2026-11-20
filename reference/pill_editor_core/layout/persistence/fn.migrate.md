@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-5309"></a>
+<a id="rustdoc-item-7272"></a>
 
 # Function `pill_editor_core::layout::persistence::migrate`
 
@@ -8,7 +8,7 @@
 pub(in layout::persistence) fn migrate(dock: &mut super::EditorDock) -> Option<u32>;
 ```
 
-Visibility: `{'restricted': {'parent': 5269, 'path': '::layout::persistence'}}` · Source: `editor\pill_editor_core\src\layout\persistence.rs:138`
+Visibility: `{'restricted': {'parent': 7232, 'path': '::layout::persistence'}}` · Source: `editor\pill_editor_core\src\layout\persistence.rs:138`
 
 Upgrade an older document in place, returning the version it came from;
 `None` when this build has no rule for that version.

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-2213"></a>
+<a id="rustdoc-item-2287"></a>
 
 # Struct `pill_development_host::hot_patch::worker::PreparedBody`
 
@@ -14,7 +14,7 @@ A changed body, ready to compile.
 
 ## Fields
 
-<a id="rustdoc-item-2241"></a>
+<a id="rustdoc-item-2315"></a>
 
 ### `declaration`
 
@@ -24,7 +24,7 @@ declaration: source::HotFunction
 
 The declaration as the scanner reported it.
 
-<a id="rustdoc-item-2243"></a>
+<a id="rustdoc-item-2317"></a>
 
 ### `qualified`
 
@@ -34,7 +34,7 @@ qualified: String
 
 The name the engine registry and the prologue route are keyed by.
 
-<a id="rustdoc-item-2244"></a>
+<a id="rustdoc-item-2318"></a>
 
 ### `slot_name`
 
@@ -46,7 +46,7 @@ The name a dispatch slot is keyed by, which leaves out the receiver
 type. It is kept here from preparation because activation files the
 slot route under it.
 
-<a id="rustdoc-item-2245"></a>
+<a id="rustdoc-item-2319"></a>
 
 ### `crate_name`
 
@@ -56,7 +56,7 @@ crate_name: String
 
 The patch crate's name, unique within the process.
 
-<a id="rustdoc-item-2246"></a>
+<a id="rustdoc-item-2320"></a>
 
 ### `source_path`
 
@@ -66,7 +66,7 @@ source_path: std::path::PathBuf
 
 The generated source on disk.
 
-<a id="rustdoc-item-2247"></a>
+<a id="rustdoc-item-2321"></a>
 
 ### `artifact_path`
 
@@ -76,7 +76,7 @@ artifact_path: std::path::PathBuf
 
 Where the compiled library is written.
 
-<a id="rustdoc-item-2248"></a>
+<a id="rustdoc-item-2322"></a>
 
 ### `extra_externs`
 
@@ -86,7 +86,7 @@ extra_externs: Vec<String>
 
 `--extern` entries beyond the ones the replayed line carries.
 
-<a id="rustdoc-item-2249"></a>
+<a id="rustdoc-item-2323"></a>
 
 ### `staged_dependencies`
 
@@ -96,7 +96,7 @@ staged_dependencies: std::path::PathBuf
 
 The directory holding the dependency rlibs the replayed line names.
 
-<a id="rustdoc-item-2250"></a>
+<a id="rustdoc-item-2324"></a>
 
 ### `line`
 
@@ -106,7 +106,7 @@ line: super::compile::CargoRustcLine
 
 The captured compiler invocation to replay.
 
-<a id="rustdoc-item-2251"></a>
+<a id="rustdoc-item-2325"></a>
 
 ### `package`
 

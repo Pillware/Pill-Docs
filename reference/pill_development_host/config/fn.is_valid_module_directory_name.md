@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1275"></a>
+<a id="rustdoc-item-1295"></a>
 
 # Function `pill_development_host::config::is_valid_module_directory_name`
 
@@ -8,7 +8,7 @@
 pub(in config) fn is_valid_module_directory_name(module_directory_name: &str) -> bool;
 ```
 
-Visibility: `{'restricted': {'parent': 821, 'path': '::config'}}` · Source: `hosting\pill_development_host\src\config.rs:1801`
+Visibility: `{'restricted': {'parent': 823, 'path': '::config'}}` · Source: `hosting\pill_development_host\src\config.rs:2009`
 
 Whether `module_directory_name` is a usable extension folder name.
 

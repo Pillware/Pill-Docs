@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1495"></a>
+<a id="rustdoc-item-1519"></a>
 
 # Function `pill_csharp_bridge::manifest::field_decorations`
 

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-3383"></a>
+<a id="rustdoc-item-3638"></a>
 
 # Enum `pill_development_host::project_module::loaded::LoadedProject`
 
@@ -18,7 +18,7 @@ only changes across a full restart.
 
 ## Variants
 
-<a id="rustdoc-item-3380"></a>
+<a id="rustdoc-item-3635"></a>
 
 ### `Native`
 
@@ -28,7 +28,7 @@ Native
 
 A mapped native module plus any retired DLLs that must stay mapped.
 
-<a id="rustdoc-item-3382"></a>
+<a id="rustdoc-item-3637"></a>
 
 ### `CSharp`
 
@@ -41,7 +41,7 @@ with the in-process compiler that rebuilds it.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-3384"></a>
+<a id="rustdoc-item-3639"></a>
 
 ### `native_library`
 
@@ -54,7 +54,7 @@ The native library the loaded project uses now, as a patch target.
 `None` for the C# backend, which has no native redirect slots to
 install into.
 
-<a id="rustdoc-item-3385"></a>
+<a id="rustdoc-item-3640"></a>
 
 ### `stale_components`
 
@@ -66,9 +66,9 @@ The persistable components the native project registered whose
 layout has been replaced since, by another module's reload. Empty
 while the layouts are current, and always empty for the C# backend,
 whose components are its own descriptor-defined set. See
-[`crate::reload::stale_components`](../../reload/fn.stale_components.md#rustdoc-item-2698).
+[`crate::reload::stale_components`](../../reload/fn.stale_components.md#rustdoc-item-2772).
 
-<a id="rustdoc-item-3386"></a>
+<a id="rustdoc-item-3641"></a>
 
 ### `component_names`
 
@@ -83,7 +83,7 @@ A module reload reads it to decide whether a type it forgot is
 still declared by the project. Empty for the C# backend, whose
 components are its own descriptor-defined set.
 
-<a id="rustdoc-item-3387"></a>
+<a id="rustdoc-item-3642"></a>
 
 ### `start`
 
@@ -100,7 +100,7 @@ artifact is missing, when the native library cannot be loaded, when the
 module's `pill_module_init` reports a non-zero initialization status, or
 when the managed runtime fails to start the C# project.
 
-<a id="rustdoc-item-3388"></a>
+<a id="rustdoc-item-3643"></a>
 
 ### `reload`
 
@@ -122,7 +122,7 @@ records pointing into an image the graveyard will unmap.
 the build cancels the compilation in flight, and the next frame
 tries again.
 
-<a id="rustdoc-item-3389"></a>
+<a id="rustdoc-item-3644"></a>
 
 ### `poll_managed_reload`
 
@@ -143,7 +143,7 @@ past the frame that started the build, which is why the swap - and
 the bookkeeping it invalidates - is checked here as well as when
 the build completes.
 
-<a id="rustdoc-item-3390"></a>
+<a id="rustdoc-item-3645"></a>
 
 ### `arm_managed_reload_timing`
 
@@ -158,7 +158,7 @@ A native project has no managed reload to time, so it ignores the
 signal and arms nothing. The caller takes the trigger out of the
 watcher's log for this reload either way, so none is left pending.
 
-<a id="rustdoc-item-3391"></a>
+<a id="rustdoc-item-3646"></a>
 
 ### `abandon_managed_reload_timing`
 
@@ -168,18 +168,31 @@ pub(crate) fn abandon_managed_reload_timing(self: &mut Self);
 
 Drops an armed managed reload timing whose reload produced no swap.
 
-<a id="rustdoc-item-3392"></a>
+<a id="rustdoc-item-3647"></a>
+
+### `finish_managed_reload_timing`
+
+```rust
+pub(crate) fn finish_managed_reload_timing(self: &mut Self) -> Option<ManagedReloadSummary>;
+```
+
+Finishes the managed backend's armed reload timing at the swap.
+
+A native project has no managed reload to time, so it returns
+`None`; the caller records the swap with zeros.
+
+<a id="rustdoc-item-3648"></a>
 
 ### `record_assembly_rebuilt_at`
 
 ```rust
-pub(crate) fn record_assembly_rebuilt_at(self: &mut Self, finished_at: Instant, build_kind: &'static str);
+pub(crate) fn record_assembly_rebuilt_at(self: &mut Self, finished_at: Instant);
 ```
 
 Records a managed assembly rebuild that finished at `finished_at`,
 and what produced it.
 
-<a id="rustdoc-item-3393"></a>
+<a id="rustdoc-item-3649"></a>
 
 ### `notify_assembly_replaced`
 
@@ -190,7 +203,7 @@ pub(crate) fn notify_assembly_replaced(self: &mut Self);
 Collapses the managed loader's debounce after the in-process
 compiler wrote a settled assembly.
 
-<a id="rustdoc-item-3394"></a>
+<a id="rustdoc-item-3650"></a>
 
 ### `start_managed_reload`
 
@@ -200,9 +213,9 @@ pub(crate) fn start_managed_reload(self: &mut Self, workspace_root: &Path, confi
 
 Starts a managed reload: the assembly builds on its own thread
 while the frame loop keeps running, and the result is collected
-when the build reports. See [`ManagedReloadStart`](enum.ManagedReloadStart.md#rustdoc-item-3350).
+when the build reports. See [`ManagedReloadStart`](enum.ManagedReloadStart.md#rustdoc-item-3605).
 
-<a id="rustdoc-item-3346"></a>
+<a id="rustdoc-item-3601"></a>
 
 ### `collect_managed_build`
 
@@ -214,7 +227,7 @@ Tries to collect a finished managed assembly build without waiting.
 
 A native project never has one.
 
-<a id="rustdoc-item-3348"></a>
+<a id="rustdoc-item-3603"></a>
 
 ### `build_now`
 
@@ -226,13 +239,13 @@ Builds the managed assembly on the frame thread and returns the
 report.
 
 The synchronous twin of the build worker: the same compiler/MSBuild
-selection, wrapped as a [`BuildReport`](../../csharp/struct.BuildReport.md#rustdoc-item-1681) so the caller consumes it
+selection, wrapped as a [`BuildReport`](../../csharp/struct.BuildReport.md#rustdoc-item-1756) so the caller consumes it
 through the one outcome handler the worker's reports also go
 through. Used when the worker could not start, or when one stopped
 without reporting. `None` for a native project, which has no
 assembly to build.
 
-<a id="rustdoc-item-3395"></a>
+<a id="rustdoc-item-3651"></a>
 
 ### `managed_build_in_flight`
 

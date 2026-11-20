@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-2130"></a>
+<a id="rustdoc-item-2140"></a>
 
 # Macro `pill_core::dev_error`
 

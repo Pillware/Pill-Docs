@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1323"></a>
+<a id="rustdoc-item-1397"></a>
 
 # Function `pill_development_host::csharp::codegen::generate_components_csharp`
 
@@ -12,9 +12,9 @@ Visibility: `crate` · Source: `hosting\pill_development_host\src\csharp\codegen
 
 Writes `generated/<module_name>_Components.g.cs` inside `crate_root`.
 
-This is the implementation behind [`generate_module_components_csharp`](fn.generate_module_components_csharp.md#rustdoc-item-1318). It
+This is the implementation behind [`generate_module_components_csharp`](fn.generate_module_components_csharp.md#rustdoc-item-1392). It
 takes the directory that holds the module's `generated/` folder directly.
 
 ## Errors
 
-Returns the same errors as [`generate_module_components_csharp`](fn.generate_module_components_csharp.md#rustdoc-item-1318).
+Returns the same errors as [`generate_module_components_csharp`](fn.generate_module_components_csharp.md#rustdoc-item-1392).

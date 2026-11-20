@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1245"></a>
+<a id="rustdoc-item-1268"></a>
 
 # Module `pill_csharp_bridge::managed_buffer`
 
@@ -37,8 +37,8 @@ difference is legitimate.
 ## Module contents
 
 ### Enums
-- [`ManagedBufferError`](enum.ManagedBufferError.md#rustdoc-item-1208) — Why one managed payload could not be fetched.
+- [`ManagedBufferError`](enum.ManagedBufferError.md#rustdoc-item-1230) — Why one managed payload could not be fetched.
 
 ### Functions
-- [`fetch_managed_buffer`](fn.fetch_managed_buffer.md#rustdoc-item-1243) — Fetches one managed payload through the two-call protocol.
-- [`manifest_fetch_error`](fn.manifest_fetch_error.md#rustdoc-item-1244) — Reports a failed manifest fetch as the typed error the load fails with.
+- [`fetch_managed_buffer`](fn.fetch_managed_buffer.md#rustdoc-item-1266) — Fetches one managed payload through the two-call protocol.
+- [`manifest_fetch_error`](fn.manifest_fetch_error.md#rustdoc-item-1267) — Reports a failed manifest fetch as the typed error the load fails with.

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-2072"></a>
+<a id="rustdoc-item-2082"></a>
 
 # Function `pill_core::utils::enum_variant_eq`
 

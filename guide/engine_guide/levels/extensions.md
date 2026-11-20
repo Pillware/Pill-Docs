@@ -15,14 +15,15 @@ This page covers what is specific to extensions: how they are organized, found, 
 | How does a project use its types?         | It adds the extension's crate to its own `Cargo.toml` as a normal dependency.                           |
 | What can an extension add?                | Components, resources and managers, ECS systems, asset types, a settings asset, and its own asset files. |
 | Does an extension have to be registered anywhere? | No. The host finds it by its folder; there is no list to edit.                                  |
-| Can it add editor tools?                  | Yes, in an optional `<extension>_editor` crate that only the editor loads.                              |
+| Can it add editor tools?                  | Yes, in an optional `<extension>_editor` crate in `modules/editor/` that only the editor loads.         |
 | What happens in shipping mode?            | It is linked into the executable, and its asset files are packed with the project's.                    |
 
 ```
  project_settings.yaml                      modules/extensions/
  ─────────────────────                      ───────────────────
  modules:                                   pill_physics/
-   - "pill_physics"   ── the host finds ──►   pill_physics/            (the crate)
+   - "pill_physics"   ── the host finds ──►   modules/runtime/         (the crate)
+                                              modules/editor/          (optional)
                                               examples/stacked_boxes/  (optional)
                                               generated/               (written by the host)
                                             pill_audio/
@@ -41,22 +42,24 @@ Splitting features into modules also keeps hot reload fast. When you edit the au
 
 ## What does an extension folder hold?
 
-Each extension has one folder under `modules/extensions/`. The folder holds the extension's crates and a few optional folders beside them:
+Each extension has one folder under `modules/extensions/`. The folder holds the extension's crates in its `modules/` folder, and a few optional folders beside it:
 
 ```
 modules/extensions/pill_physics/
-  pill_physics/                 ← the runtime crate (a plain Rust library)
-    Cargo.toml
-    build.rs                    ← writes the hot patch function list
-    src/pill_physics.rs         ← crate root, named after the crate
-    res/                        ← optional: the extension's own asset files
-  pill_physics_editor/          ← optional: editor tools (none exists for physics today)
+  modules/
+    runtime/                    ← the runtime crate, `pill_physics` (a plain Rust library)
+      Cargo.toml
+      build.rs                  ← writes the hot patch function list
+      src/pill_physics.rs       ← crate root, named after the crate
+      res/                      ← optional: the extension's own asset files
+    editor/                     ← optional: the editor crate, `pill_physics_editor` (the collider tool)
   examples/stacked_boxes/       ← optional: runnable example projects
   generated/                    ← written by the host, never by hand
     host_module_pill_physics/
+    host_module_pill_physics_editor/
 ```
 
-Most folders hold one runtime crate named after the folder. A folder may hold more than one: `pill_master_renderer/` holds both the renderer's data crate and its GPU module.
+The folder names the crates it holds: the crate in `modules/runtime/` is named after the folder, and the crate in `modules/editor/` is named after the folder with `_editor` added. The host checks this at start-up and stops with an error naming the crate when a name does not match, so a path always tells you which crate it holds. One folder is the exception: `pill_master_renderer/modules/runtime/` holds two crates, the renderer's data crate in `data/` and its GPU module in `gpu/`.
 
 A few conventions are the same in every extension crate:
 
@@ -96,11 +99,11 @@ An extension's components are **shared** so the project and the extension agree 
 
 When the project depends on `pill_physics`, the physics crate's code is compiled into the project's DLL as well as into the physics DLL. Rust gives the two copies of `RigidBodyComponent` different type ids. Without extra help, the project's query and the physics ECS system would look for two different component types.
 
-So the components an extension exposes are marked `#[pill(shared)]`. A shared component's identity is a hash of its name, not its Rust type id. Every DLL computes the same hash, so both copies refer to the same column in the world.
+So the components an extension exposes are marked `shared`. A shared component's identity is a hash of its name, not its Rust type id. Every DLL computes the same hash, so both copies refer to the same column in the world.
 
 ```rust
-#[derive(PillComponent)]
-#[pill(persistable, shared)]
+#[component(persistable, shared)]
+#[derive(Debug, Clone, Copy)]
 pub struct RigidBodyComponent { /* ... */ }
 ```
 
@@ -110,10 +113,10 @@ A shared component has a cost: when its layout changes, every module that compil
 
 The host finds an extension by its folder. There is no list of extensions to edit anywhere.
 
-The workspace manifest includes every `extensions/*/pill_*` crate, and the host looks up each name under `modules:` in `modules/extensions/`:
+The workspace manifest includes every `extensions/*/modules/*` crate, and names the master renderer's two crates explicitly. The host indexes every extension crate by the package name its `Cargo.toml` declares, then looks up each name under `modules:` in that index:
 
-1. It first tries `extensions/<name>/<name>/`.
-2. If that does not exist, it searches every other folder for a crate with that name, in name order. This is how `pill_master_renderer_data` is found inside `pill_master_renderer/`.
+1. A crate in the folder of its own name wins: `pill_physics` is found in `pill_physics/modules/runtime/`.
+2. Otherwise, the first folder in name order that holds a crate with that name. This is how `pill_master_renderer_data` is found in `pill_master_renderer/modules/runtime/data/`.
 
 Folders starting with `_` are skipped, and so is `rendering/`, which holds older renderers no build uses.
 
@@ -140,11 +143,11 @@ An extension can add anything a project can add. It declares each item where the
 
 | What                 | How it is declared                                  | Example                                         |
 | -------------------- | --------------------------------------------------- | ----------------------------------------------- |
-| Components           | `#[derive(PillComponent)]`, usually `shared`        | `RigidBodyComponent`, `ColliderComponent`       |
+| Components           | `#[component]`, usually `shared`        | `RigidBodyComponent`, `ColliderComponent`       |
 | ECS systems          | `#[system]` on a free function                      | the physics step                                |
-| Resources            | `#[derive(PillResource)]`, inserted in `register`   | `PhysicsEvents`                                 |
+| Resources            | `#[resource]`, inserted in `register`   | `PhysicsEvents`                                 |
 | Managers             | a resource with `#[pill(manager)]`                  | `PhysicsManager`, which owns the rapier world   |
-| Asset types          | `#[derive(PillAsset)]`                              | `Sound` in `pill_audio`                         |
+| Asset types          | `#[asset]`                              | `Sound` in `pill_audio`                         |
 | A settings asset     | registered in `register`                            | `res/settings/pill_physics.physics_settings`    |
 | Asset files          | a `res` folder declared as the module's root        | the default material in `pill_master_renderer_data` |
 
@@ -178,7 +181,7 @@ How a manager reads its settings is described in [resources.md](../concepts/reso
 
 ## How does an extension add editor tools?
 
-An extension adds editor tools in a second crate in its folder, named `<extension>_editor`. Only the editor loads it. No other build ever compiles it: not standalone, not shipping, not web.
+An extension adds editor tools in a second crate, in its folder's `modules/editor/`, named `<extension>_editor`. Only the editor loads it. No other build ever compiles it: not standalone, not shipping, not web.
 
 Editor tools live in their own crate so they never reach a project build. A project would otherwise compile and ship editor UI it never shows.
 
@@ -188,7 +191,9 @@ The editor handles editor crates on its own:
 - It reloads the editor crate whenever one of those runtime crates reloads, because the editor crate reads their types.
 - A project never lists an editor crate. `modules:` refuses names ending in `_editor`.
 
-A folder that holds **only** an editor crate is an **editor-only extension**. The editor loads it in every project. The editor's own shell, `pill_editor_shell_egui/pill_editor_shell_egui_editor`, is one: it is the docked egui UI, and it is hot-reloaded like any other module.
+A folder that holds **only** an editor crate is an **editor-only extension**. The editor loads it in every project.
+
+The editor's own shell, the docked egui UI, is not an extension. It is `pill_editor_shell` in `modules/editor/`, beside the editor executable and its shared core. The editor still builds, loads and hot-reloads it like any other module: the host loads every crate directly under `modules/editor/` that carries the `editor_frontend` tag below, after every extension.
 
 An editor crate can name the editor it was written for in its `Cargo.toml`:
 
@@ -215,7 +220,7 @@ The rules above apply to every extension. A few extensions have extra rules:
 
 - **The renderer is two extensions in one folder.** `pill_master_renderer_data` holds the renderer's components, asset types and shaders, and loads in every run, headless too. `pill_master_renderer` is the GPU module: it loads only in a windowed run and is the only module that talks to the GPU. Projects depend on the data crate, never on the GPU module. The project picks the renderer with `renderer:` instead of `modules:`, and `renderer: "none"` loads neither crate.
 - **The renderer's GPU module is never unloaded after a reload,** and a reload of its data crate rebuilds the GPU module in the same update. [modules.md](modules.md#what-behaves-differently) explains why.
-- **`pill_test`, `pill_dummy_math`, `pill_dummy_color` and `pill_dummy_random`** are small extensions the test suites use. They are not features to build on.
+- **`pill_test`** is a small extension the test suites use, with an editor crate that exercises the editor's callbacks. It is not a feature to build on.
 - **`extensions/rendering/`** holds older renderers. The workspace excludes it, and the host never searches it.
 - **`extensions/_workspace_anchor/`** is not an extension. It keeps the `extensions/*/generated/*` workspace glob from matching nothing, because Cargo fails on an empty glob.
 
@@ -223,7 +228,7 @@ The rules above apply to every extension. A few extensions have extra rules:
 
 Add a folder and a crate. Nothing else needs to change.
 
-1. Create `modules/extensions/pill_<feature>/pill_<feature>/` with a `Cargo.toml` that sets `crate-type = ["rlib"]`, names the crate root `src/pill_<feature>.rs`, depends on `pill_core` and `pill_engine`, and has a `build.rs` that calls `pill_hot_scan::generate_function_inventory()`.
+1. Create `modules/extensions/pill_<feature>/modules/runtime/` with a `Cargo.toml` whose package is named `pill_<feature>`, that sets `crate-type = ["rlib"]`, names the crate root `src/pill_<feature>.rs`, depends on `pill_core` and `pill_engine`, and has a `build.rs` that calls `pill_hot_scan::generate_function_inventory()`.
 2. In the crate root, put `#[pill_module(register = register)]` on the `init` function, and write a `register` that is safe to run on every reload.
 3. Declare components, ECS systems, resources and asset types where they are defined. Mark components a project will name as `shared`.
 4. List `pill_<feature>` under `modules:` in a project, and add the crate to the project's `Cargo.toml` if the project's code names its types.
@@ -235,13 +240,13 @@ The host generates the wrapper crate in `generated/` the next time it starts.
 
 | What                                                       | Where                                                                       |
 | ---------------------------------------------------------- | --------------------------------------------------------------------------- |
-| Finding an extension's folder, checking `modules:`, load order | `modules/hosting/pill_development_host/src/config.rs` (`resolve_extensions`, `locate_extension_folder`, `module_names_with_renderer_data`) |
+| Finding an extension's folder, checking `modules:`, load order | `modules/hosting/pill_development_host/src/config.rs` (`resolve_extensions`, `find_extension_crate`, `validate_extension_crate_names`, `module_names_with_renderer_data`) |
 | Finding and filtering editor crates                        | `config.rs` (`resolve_editor_crates`, `EDITOR_CRATE_SUFFIX`)                |
 | Loading one extension and reloading it                     | `modules/hosting/pill_development_host/src/extension.rs`                    |
-| The workspace globs that make an extension a member        | `modules/Cargo.toml` (`extensions/*/pill_*`, `extensions/*/generated/*`)    |
+| The workspace globs that make an extension a member        | `modules/Cargo.toml` (`extensions/*/modules/*`, `extensions/*/generated/*`) |
 | Declaring a module's `res` folder                          | `pill_engine::asset_store::declare_module_root`                             |
 | Packing extensions' `res` for shipping                     | `pill_assets::write_asset_pack_with_roots`                                  |
-| The C# mirror an extension generates                       | `modules/extensions/<extension>/<crate>/generated/<crate>_Components.g.cs`   |
+| The C# mirror an extension generates                       | `generated/<crate>_Components.g.cs` in the crate's own folder, for example `modules/extensions/pill_master_renderer/modules/runtime/data/generated/` |
 | Running every example                                      | `devops/tests/test_extension_examples.py`                                   |
 | A small, complete extension to read                        | `modules/extensions/pill_physics/`, `modules/extensions/pill_spline/`       |
 | How every module is loaded and reloaded                    | [modules.md](modules.md)                                                    |

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-4998"></a>
+<a id="rustdoc-item-6961"></a>
 
 # Struct `pill_editor_core::inspector::RecordedEdit`
 
@@ -8,14 +8,14 @@
 pub struct RecordedEdit;
 ```
 
-Source: `editor\pill_editor_core\src\inspector.rs:1314`
+Source: `editor\pill_editor_core\src\inspector.rs:1321`
 
 What one value edit queues: the step's commands, the label it records
 under, and the key that collapses consecutive writes from one drag.
 
 ## Fields
 
-<a id="rustdoc-item-4995"></a>
+<a id="rustdoc-item-6958"></a>
 
 ### `commands`
 
@@ -25,7 +25,7 @@ commands: Vec<crate::editor_state::EditorCommand>
 
 The commands, in the order the batch applies them.
 
-<a id="rustdoc-item-4996"></a>
+<a id="rustdoc-item-6959"></a>
 
 ### `label`
 
@@ -35,7 +35,7 @@ label: String
 
 The history label the step records under.
 
-<a id="rustdoc-item-4997"></a>
+<a id="rustdoc-item-6960"></a>
 
 ### `coalesce`
 
@@ -47,7 +47,7 @@ Consecutive writes sharing this key merge into one undo step.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-4999"></a>
+<a id="rustdoc-item-6962"></a>
 
 ### `from_entity_edit`
 
@@ -57,7 +57,7 @@ pub(in inspector) fn from_entity_edit(edit: (EditorCommand, String), coalesce_ke
 
 One entity's edit, with the key its field coalesces on.
 
-<a id="rustdoc-item-5000"></a>
+<a id="rustdoc-item-6963"></a>
 
 ### `from_selection_batch`
 

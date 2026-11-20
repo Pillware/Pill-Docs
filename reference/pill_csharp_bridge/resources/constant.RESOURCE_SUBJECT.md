@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-2028"></a>
+<a id="rustdoc-item-2053"></a>
 
 # Constant `pill_csharp_bridge::resources::RESOURCE_SUBJECT`
 

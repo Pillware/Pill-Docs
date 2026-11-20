@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-6486"></a>
+<a id="rustdoc-item-8524"></a>
 
 # Function `pill_editor_core::problems::parse_build_output`
 

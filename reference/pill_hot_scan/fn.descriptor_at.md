@@ -8,7 +8,7 @@
 pub(crate) fn descriptor_at(source: &str, mask: &[bool], declaration_start: usize, name: String, kind: HotFunctionKind, enclosing_type_and_trait: (Option<String>, Option<String>), annotated: bool) -> HotFunction;
 ```
 
-Visibility: `crate` · Source: `hosting\pill_hot_scan\src\lib.rs:657`
+Visibility: `crate` · Source: `hosting\pill_hot_scan\src\lib.rs:684`
 
 Build one descriptor from a declaration byte offset.
 

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1863"></a>
+<a id="rustdoc-item-1906"></a>
 
 # Struct `pill_master_renderer::renderer::SurfaceTarget`
 
@@ -8,7 +8,7 @@
 pub(crate) struct SurfaceTarget;
 ```
 
-Visibility: `crate` · Source: `extensions\pill_master_renderer\pill_master_renderer\src\renderer.rs:156`
+Visibility: `crate` · Source: `extensions\pill_master_renderer\modules\runtime\gpu\src\renderer.rs:156`
 
 One surface the renderer draws into, and everything sized to it.
 
@@ -19,7 +19,7 @@ the camera it is drawn through, and the overlay's targets.
 
 ## Fields
 
-<a id="rustdoc-item-1913"></a>
+<a id="rustdoc-item-1956"></a>
 
 ### `id`
 
@@ -29,7 +29,7 @@ id: pill_renderer_api::SurfaceId
 
 Which surface this is, as the frame's views, picks and UI name it.
 
-<a id="rustdoc-item-1914"></a>
+<a id="rustdoc-item-1957"></a>
 
 ### `surface`
 
@@ -39,7 +39,7 @@ surface: crate::surface::Surface
 
 The surface's swapchain.
 
-<a id="rustdoc-item-1916"></a>
+<a id="rustdoc-item-1959"></a>
 
 ### `depth_texture`
 
@@ -49,7 +49,7 @@ depth_texture: crate::resources::RendererTexture
 
 Its depth buffer, sized to it.
 
-<a id="rustdoc-item-1917"></a>
+<a id="rustdoc-item-1960"></a>
 
 ### `offscreen`
 
@@ -59,7 +59,7 @@ offscreen: std::collections::HashMap<String, crate::resources::RendererTexture>
 
 Its offscreen targets, sized to it.
 
-<a id="rustdoc-item-1918"></a>
+<a id="rustdoc-item-1961"></a>
 
 ### `chain`
 
@@ -69,7 +69,7 @@ chain: crate::chain::GpuChain
 
 The chain's pass objects bound to this surface's targets.
 
-<a id="rustdoc-item-1919"></a>
+<a id="rustdoc-item-1962"></a>
 
 ### `camera`
 
@@ -80,7 +80,7 @@ camera: renderer_camera::RendererCameraHandle
 The camera this surface is drawn through, as a handle into the shared
 camera storage.
 
-<a id="rustdoc-item-1921"></a>
+<a id="rustdoc-item-1964"></a>
 
 ### `overlay_targets`
 
@@ -90,7 +90,7 @@ overlay_targets: crate::overlay::OverlayTargets
 
 The overlay's targets, sized to it.
 
-<a id="rustdoc-item-1922"></a>
+<a id="rustdoc-item-1965"></a>
 
 ### `viewport`
 
@@ -100,7 +100,7 @@ viewport: Option<crate::components::RenderViewport>
 
 The region drawn to, or `None` for the whole surface.
 
-<a id="rustdoc-item-1923"></a>
+<a id="rustdoc-item-1966"></a>
 
 ### `minimized`
 
@@ -110,7 +110,7 @@ minimized: bool
 
 Whether the surface is zero-sized.
 
-<a id="rustdoc-item-1924"></a>
+<a id="rustdoc-item-1967"></a>
 
 ### `ready`
 
@@ -120,7 +120,7 @@ ready: bool
 
 Whether the surface may present this frame.
 
-<a id="rustdoc-item-1925"></a>
+<a id="rustdoc-item-1968"></a>
 
 ### `presented`
 
@@ -135,7 +135,7 @@ the renderer was built on - so it starts out presented.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-1926"></a>
+<a id="rustdoc-item-1969"></a>
 
 ### `resize`
 

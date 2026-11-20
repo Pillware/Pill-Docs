@@ -4,7 +4,7 @@
 
 # Module `pill_master_renderer::drawers`
 
-Visibility: `crate` · Source: `extensions\pill_master_renderer\pill_master_renderer\src\drawers\mod.rs:1`
+Visibility: `crate` · Source: `extensions\pill_master_renderer\modules\runtime\gpu\src\drawers\mod.rs:1`
 
 The mesh drawer: batches the instances a frame queues and records the
 instanced draws they become.

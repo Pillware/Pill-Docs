@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-2762"></a>
+<a id="rustdoc-item-2800"></a>
 
 # Function `pill_master_renderer::resources::renderer_shader::check_slot_shape`
 
@@ -8,7 +8,7 @@
 pub(crate) fn check_slot_shape(owner: &str, slot_name: &str, slot_kind: crate::assets::ShaderTextureKind, texture: &crate::resources::RendererTexture) -> crate::error::Result<()>;
 ```
 
-Visibility: `crate` · Source: `extensions\pill_master_renderer\pill_master_renderer\src\resources\renderer_shader.rs:385`
+Visibility: `crate` · Source: `extensions\pill_master_renderer\modules\runtime\gpu\src\resources\renderer_shader.rs:385`
 
 Checks that `texture` fits a slot of `slot_kind`, and names both when it
 does not.

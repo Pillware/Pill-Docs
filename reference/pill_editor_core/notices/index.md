@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-5733"></a>
+<a id="rustdoc-item-7701"></a>
 
 # Module `pill_editor_core::notices`
 
@@ -35,12 +35,12 @@ reload unmaps.
 ## Module contents
 
 ### Structs
-- [`EditorNotices`](struct.EditorNotices.md#rustdoc-item-5696) — The notices the executable publishes for the shell when the host or the
-- [`Notice`](struct.Notice.md#rustdoc-item-5614) — One toast line: something the editor or the host did, shown briefly over
-- [`ProblemRow`](struct.ProblemRow.md#rustdoc-item-3532) — One Problems row: the module or function whose build, load or patch
+- [`EditorNotices`](struct.EditorNotices.md#rustdoc-item-4990) — The notices the executable publishes for the shell when the host or the
+- [`Notice`](struct.Notice.md#rustdoc-item-7580) — One toast line: something the editor or the host did, shown briefly over
+- [`ProblemRow`](struct.ProblemRow.md#rustdoc-item-3821) — One Problems row: the module or function whose build, load or patch
 
 ### Enums
-- [`NoticeLevel`](enum.NoticeLevel.md#rustdoc-item-2068) — How serious one toast is.
+- [`NoticeLevel`](enum.NoticeLevel.md#rustdoc-item-2124) — How serious one toast is.
 
 ### Functions
-- [`level_name`](fn.level_name.md#rustdoc-item-5732) — The wire name of a level: `error`, `warning` or `info`.
+- [`level_name`](fn.level_name.md#rustdoc-item-7700) — The wire name of a level: `error`, `warning` or `info`.

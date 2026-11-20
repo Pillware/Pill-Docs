@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-141"></a>
+<a id="rustdoc-item-144"></a>
 
 # Struct `pill_renderer_api::api::RenderMetrics`
 
@@ -19,7 +19,7 @@ renderer that has not drawn leaves every field at zero.
 
 ## Fields
 
-<a id="rustdoc-item-136"></a>
+<a id="rustdoc-item-139"></a>
 
 ### `prepare_micros`
 
@@ -30,7 +30,7 @@ prepare_micros: u64
 CPU time spent preparing the frame: syncing the assets, building the
 draw queue, and building and uploading the instance buffer.
 
-<a id="rustdoc-item-137"></a>
+<a id="rustdoc-item-140"></a>
 
 ### `submit_micros`
 
@@ -41,7 +41,7 @@ submit_micros: u64
 CPU time spent planning each extra surface's chain and submitting every
 drawn surface to the GPU.
 
-<a id="rustdoc-item-138"></a>
+<a id="rustdoc-item-141"></a>
 
 ### `passes_with_draws`
 
@@ -56,7 +56,7 @@ instance runs it was planned with, using as many commands as those runs
 need. Compare it with `passes` to see how much of the chain drew; it
 says nothing about batching.
 
-<a id="rustdoc-item-139"></a>
+<a id="rustdoc-item-142"></a>
 
 ### `passes`
 
@@ -66,7 +66,7 @@ passes: u32
 
 Passes of the frame's chain, whether or not they drew anything.
 
-<a id="rustdoc-item-140"></a>
+<a id="rustdoc-item-143"></a>
 
 ### `instance_bytes`
 
@@ -87,15 +87,15 @@ Bytes of instance data the frame's draw queue carried.
 - `TryFrom<U>`
 - `Any`
 - `ToOwned`
+- `CastableFrom<ST, Uninit, Uninit>`
+- `CastableFrom<ST, Initialized, Initialized>`
+- `Read<Exclusive, BecauseExclusive>`
 - `Instrument`
 - `WithSubscriber`
 - `IntoEither`
 - `Pointable`
 - `OwoColorize`
 - `ErasedDestructor`
-- `CastableFrom<ST, Uninit, Uninit>`
-- `CastableFrom<ST, Initialized, Initialized>`
-- `Read<Exclusive, BecauseExclusive>`
 - `Debug`
 - `Clone`
 - `Copy`

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1634"></a>
+<a id="rustdoc-item-1680"></a>
 
 # Function `pill_master_renderer::profiler::ensure_buffer_slot`
 
@@ -8,7 +8,7 @@
 pub(in profiler) fn ensure_buffer_slot<'a>(device: &wgpu::Device, slot: &'a mut Option<ResolveSlot>, size: u64, label: &str) -> &'a ResolveSlot;
 ```
 
-Visibility: `{'restricted': {'parent': 1480, 'path': '::profiler'}}` · Source: `extensions\pill_master_renderer\pill_master_renderer\src\profiler.rs:881`
+Visibility: `{'restricted': {'parent': 1526, 'path': '::profiler'}}` · Source: `extensions\pill_master_renderer\modules\runtime\gpu\src\profiler.rs:881`
 
 Returns the slot's buffers, creating them when they cannot hold `size`
 bytes.

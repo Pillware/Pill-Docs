@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-2073"></a>
+<a id="rustdoc-item-2083"></a>
 
 # Function `pill_core::utils::get_enum_variant_type_name`
 

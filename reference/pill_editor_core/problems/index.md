@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-6394"></a>
+<a id="rustdoc-item-8432"></a>
 
 # Module `pill_editor_core::problems`
 
@@ -31,15 +31,15 @@ they are dropped.
 ## Module contents
 
 ### Structs
-- [`Problem`](struct.Problem.md#rustdoc-item-5654) — One problem parsed from a build's output.
+- [`Problem`](struct.Problem.md#rustdoc-item-7620) — One problem parsed from a build's output.
 
 ### Enums
-- [`Severity`](enum.Severity.md#rustdoc-item-6398) — How serious one problem is.
+- [`Severity`](enum.Severity.md#rustdoc-item-8436) — How serious one problem is.
 
 ### Functions
-- [`parse_build_output`](fn.parse_build_output.md#rustdoc-item-6486) — Parses `output` into problems, in the order the compiler reported them.
-- [`parse_header`](fn.parse_header.md#rustdoc-item-6487) — Returns the severity and the message of a rustc header line, or `None`
-- [`parse_span`](fn.parse_span.md#rustdoc-item-6488) — Returns the `file`, `line` and `column` of a rustc span line
+- [`parse_build_output`](fn.parse_build_output.md#rustdoc-item-8524) — Parses `output` into problems, in the order the compiler reported them.
+- [`parse_header`](fn.parse_header.md#rustdoc-item-8525) — Returns the severity and the message of a rustc header line, or `None`
+- [`parse_span`](fn.parse_span.md#rustdoc-item-8526) — Returns the `file`, `line` and `column` of a rustc span line
 
 ### Constants
-- [`SPAN_LOOKAHEAD`](constant.SPAN_LOOKAHEAD.md#rustdoc-item-6393) — How many lines after a header the parser looks for the span line that
+- [`SPAN_LOOKAHEAD`](constant.SPAN_LOOKAHEAD.md#rustdoc-item-8431) — How many lines after a header the parser looks for the span line that

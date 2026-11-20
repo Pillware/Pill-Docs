@@ -8,7 +8,7 @@
 pub struct Material;
 ```
 
-Source: `extensions\pill_master_renderer\pill_master_renderer_data\src\assets\material.rs:73`
+Source: `extensions\pill_master_renderer\modules\runtime\data\src\assets\material.rs:73`
 
 How a surface looks: the shader a draw runs and the values that shader
 reads.
@@ -116,20 +116,20 @@ the builder asks for it up front.
 - `TryFrom<U>`
 - `Any`
 - `ToOwned`
+- `CastableFrom<ST, Uninit, Uninit>`
+- `CastableFrom<ST, Initialized, Initialized>`
+- `Read<Exclusive, BecauseExclusive>`
 - `Instrument`
 - `WithSubscriber`
 - `IntoEither`
 - `Pointable`
 - `OwoColorize`
 - `ErasedDestructor`
-- `CastableFrom<ST, Uninit, Uninit>`
-- `CastableFrom<ST, Initialized, Initialized>`
-- `Read<Exclusive, BecauseExclusive>`
+- `Clone`
+- `Debug`
 - `MirrorObject`
 - `Asset`
 - `MirrorValue`
 - `MirrorReturn`
-- `Clone`
-- `Debug`
-- `StandaloneAsset`
 - `TraitAccessible<dyn Asset>`
+- `StandaloneAsset`

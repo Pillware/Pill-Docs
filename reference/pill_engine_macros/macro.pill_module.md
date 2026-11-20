@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-441"></a>
+<a id="rustdoc-item-547"></a>
 
 # Procedural macro `pill_engine_macros::pill_module`
 
@@ -8,7 +8,7 @@
 proc_macro pill_module
 ```
 
-Source: `engine\pill_engine_macros\src\lib.rs:3261`
+Source: `engine\pill_engine_macros\src\lib.rs:4372`
 
 Wraps an extension's `init` function and generates the `pill_module_*`
 C-ABI exports. The annotated function must have the signature

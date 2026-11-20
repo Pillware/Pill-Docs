@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-437"></a>
+<a id="rustdoc-item-543"></a>
 
 # Function `pill_engine_macros::hot_patch_resolver_export`
 
@@ -8,7 +8,7 @@
 pub(crate) fn hot_patch_resolver_export(export_name: &proc_macro2::Ident, gate: &proc_macro2::TokenStream) -> proc_macro2::TokenStream;
 ```
 
-Visibility: `crate` · Source: `engine\pill_engine_macros\src\lib.rs:2871`
+Visibility: `crate` · Source: `engine\pill_engine_macros\src\lib.rs:3982`
 
 The exported resolver every loadable artifact provides.
 

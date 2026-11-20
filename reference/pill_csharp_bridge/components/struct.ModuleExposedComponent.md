@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-510"></a>
+<a id="rustdoc-item-520"></a>
 
 # Struct `pill_csharp_bridge::components::ModuleExposedComponent`
 
@@ -14,12 +14,12 @@ One native component an extension registered, exposed to managed code under
 a derived C#-facing name.
 
 The host collects these after the extensions load and hands them to the C#
-backend, which creates a byte-level [`ComponentBinding::ModuleNative`](enum.ComponentBinding.md#rustdoc-item-820) for
+backend, which creates a byte-level [`ComponentBinding::ModuleNative`](enum.ComponentBinding.md#rustdoc-item-842) for
 each one so `project_cs` can query and write the module's real storage.
 
 ## Fields
 
-<a id="rustdoc-item-851"></a>
+<a id="rustdoc-item-873"></a>
 
 ### `csharp_name`
 
@@ -32,7 +32,7 @@ C#-facing name derived from the registered Rust type name
 its mirror struct under exactly this full name so the stable 128-bit
 identity matches.
 
-<a id="rustdoc-item-852"></a>
+<a id="rustdoc-item-874"></a>
 
 ### `component_id`
 
@@ -42,7 +42,7 @@ component_id: pill_engine::ComponentId
 
 Engine ID of the module-registered native component.
 
-<a id="rustdoc-item-853"></a>
+<a id="rustdoc-item-875"></a>
 
 ### `size`
 
@@ -52,7 +52,7 @@ size: usize
 
 Size in bytes of the native layout.
 
-<a id="rustdoc-item-854"></a>
+<a id="rustdoc-item-876"></a>
 
 ### `align`
 
@@ -62,7 +62,7 @@ align: usize
 
 Alignment in bytes of the native layout.
 
-<a id="rustdoc-item-855"></a>
+<a id="rustdoc-item-877"></a>
 
 ### `fields`
 

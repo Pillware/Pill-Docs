@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1669"></a>
+<a id="rustdoc-item-1693"></a>
 
 # Struct `pill_csharp_bridge::manifest_apply::JournalEntry`
 
@@ -8,7 +8,7 @@
 pub(in manifest_apply) struct JournalEntry<Binding, Undo>;
 ```
 
-Visibility: `{'restricted': {'parent': 970, 'path': '::manifest_apply'}}` · Source: `csharp\pill_csharp_bridge\src\manifest_apply.rs:200`
+Visibility: `{'restricted': {'parent': 992, 'path': '::manifest_apply'}}` · Source: `csharp\pill_csharp_bridge\src\manifest_apply.rs:200`
 
 One applied entry, recorded so a later refusal can undo it.
 
@@ -19,7 +19,7 @@ step whose effect cannot be reversed.
 
 ## Fields
 
-<a id="rustdoc-item-1666"></a>
+<a id="rustdoc-item-1690"></a>
 
 ### `written_entry`
 
@@ -30,7 +30,7 @@ written_entry: (super::components::StableComponentId, Option<Binding>)
 The table entry the step wrote: the identity, and the binding that was
 there before, or `None` when the key was new.
 
-<a id="rustdoc-item-1667"></a>
+<a id="rustdoc-item-1691"></a>
 
 ### `removed`
 
@@ -40,7 +40,7 @@ removed: Option<(super::components::StableComponentId, Binding)>
 
 A predecessor the step removed, and the binding it held.
 
-<a id="rustdoc-item-1668"></a>
+<a id="rustdoc-item-1692"></a>
 
 ### `undo`
 

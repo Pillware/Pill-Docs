@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-6379"></a>
+<a id="rustdoc-item-8417"></a>
 
 # Function `pill_editor_core::preferences::set_key`
 
@@ -8,7 +8,7 @@
 pub fn set_key(document: &mut serde_json::Map<String, serde_json::Value>, key: &str, value: serde_json::Value) -> Result<(), String>;
 ```
 
-Source: `editor\pill_editor_core\src\preferences.rs:353`
+Source: `editor\pill_editor_core\src\preferences.rs:376`
 
 Sets one dotted key, creating intermediate objects on the way.
 

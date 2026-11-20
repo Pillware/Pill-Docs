@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-240"></a>
+<a id="rustdoc-item-241"></a>
 
 # Procedural macro `pill_engine_macros::PillComponent`
 
@@ -8,23 +8,29 @@
 proc_macro PillComponent
 ```
 
-Source: `engine\pill_engine_macros\src\lib.rs:90`
+Source: `engine\pill_engine_macros\src\lib.rs:103`
 
 Turns a component type into its engine registration.
 
+A project or module writes [`component`] rather than this derive; the
+attribute expands to this derive plus the `#[pill(...)]` arguments below,
+and this form stays available for a generated file.
+
 Generates `impl Component for T`, a descriptor submitted into this
-artifact's compile-time registry, and the field layout read by the schema
-hash and the C# mirror codegen.
+artifact's compile-time registry, the field layout read by the schema hash
+and the C# mirror codegen, and a `<Type>Field` enum naming every field in
+code (see `pill_engine::ComponentFields`).
 
 Type-level helpers (`#[pill(...)]` on the type):
 - `persistable` - the component survives a reload through schema migration.
   The type must implement `Serialize + DeserializeOwned + Default`, the same
   bounds [`World::register_persistable_component_with_layout`] requires.
-- `shared`, `shared = "crate::Name"` - gives the type one identity in every
+- `shared`, `shared = "prefix::Name"` - gives the type one identity in every
   binary that links it. Without it, each binary has its own `TypeId` and its
   own column, and neither binary sees the other's entities. The identity is
-  `module_path!()::TypeName` unless pinned, and it must be unique across the
-  whole process.
+  `<crate>::<Type>` unless pinned, and must be unique across the whole
+  process; a pin is `<prefix>::<Type>` too, for a type published under a
+  family name rather than its crate's.
 
 Field decorators (`#[pill(...)]` on a field, Unity's vocabulary). A field
 may take several, comma-separated or as one attribute each. They change
@@ -53,3 +59,4 @@ native code only to resize. `E` must be `Copy`, because the buffer runs no
 element drop glue.
 
 [`World::register_persistable_component_with_layout`]: ::pill_engine::World::register_persistable_component_with_layout
+[`component`]: macro@component

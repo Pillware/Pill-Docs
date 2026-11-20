@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-3693"></a>
+<a id="rustdoc-item-4070"></a>
 
 # Enum `pill_editor_core::error::LayoutPersistenceError`
 
@@ -12,7 +12,7 @@ Source: `editor\pill_editor_core\src\error.rs:40`
 
 The failures of the persisted dock layout.
 
-A save reports [`Self::Serialization`](#rustdoc-item-3689) and [`Self::Filesystem`](#rustdoc-item-3692). The other
+A save reports [`Self::Serialization`](#rustdoc-item-4066) and [`Self::Filesystem`](#rustdoc-item-4069). The other
 two name the ways a saved document can be unusable: it does not parse, or
 the layout model rejects it.
 
@@ -20,7 +20,7 @@ A failed save leaves the previous document as it was.
 
 ## Variants
 
-<a id="rustdoc-item-3684"></a>
+<a id="rustdoc-item-4061"></a>
 
 ### `Invalid`
 
@@ -31,7 +31,7 @@ Invalid
 The saved file does not parse as a document of the current layout
 schema.
 
-<a id="rustdoc-item-3687"></a>
+<a id="rustdoc-item-4064"></a>
 
 ### `Validation`
 
@@ -39,10 +39,10 @@ schema.
 Validation
 ```
 
-The loaded model failed a check in [`LayoutError`](../layout/persistence/enum.LayoutError.md#rustdoc-item-3686), such as a schema
+The loaded model failed a check in [`LayoutError`](../layout/persistence/enum.LayoutError.md#rustdoc-item-4063), such as a schema
 version this build does not know.
 
-<a id="rustdoc-item-3689"></a>
+<a id="rustdoc-item-4066"></a>
 
 ### `Serialization`
 
@@ -50,9 +50,9 @@ version this build does not know.
 Serialization
 ```
 
-The dock model could not be turned into JSON, so nothing was written.
+The dock model could not be turned into YAML, so nothing was written.
 
-<a id="rustdoc-item-3692"></a>
+<a id="rustdoc-item-4069"></a>
 
 ### `Filesystem`
 

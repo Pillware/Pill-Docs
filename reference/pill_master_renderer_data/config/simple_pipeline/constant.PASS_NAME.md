@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1530"></a>
+<a id="rustdoc-item-1627"></a>
 
 # Constant `pill_master_renderer_data::config::simple_pipeline::PASS_NAME`
 
@@ -8,6 +8,6 @@
 pub const PASS_NAME: &str = "pill.simple.pass";
 ```
 
-Source: `extensions\pill_master_renderer\pill_master_renderer_data\src\config\simple_pipeline\mod.rs:85`
+Source: `extensions\pill_master_renderer\modules\runtime\data\src\config\simple_pipeline\mod.rs:85`
 
 Asset name of the pass the pipeline holds.

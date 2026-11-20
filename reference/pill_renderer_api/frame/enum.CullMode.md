@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-496"></a>
+<a id="rustdoc-item-561"></a>
 
 # Enum `pill_renderer_api::frame::CullMode`
 
@@ -14,7 +14,7 @@ Which faces a pass drops.
 
 ## Variants
 
-<a id="rustdoc-item-493"></a>
+<a id="rustdoc-item-558"></a>
 
 ### `Back`
 
@@ -24,7 +24,7 @@ Back
 
 Back faces, which is the default for solid geometry.
 
-<a id="rustdoc-item-494"></a>
+<a id="rustdoc-item-559"></a>
 
 ### `Front`
 
@@ -34,7 +34,7 @@ Front
 
 Front faces, for looking at the inside of a shape.
 
-<a id="rustdoc-item-495"></a>
+<a id="rustdoc-item-560"></a>
 
 ### `None`
 
@@ -56,6 +56,9 @@ geometry has no inside.
 - `TryFrom<U>`
 - `Any`
 - `ToOwned`
+- `CastableFrom<ST, Uninit, Uninit>`
+- `CastableFrom<ST, Initialized, Initialized>`
+- `Read<Exclusive, BecauseExclusive>`
 - `DeserializeOwned`
 - `Instrument`
 - `WithSubscriber`
@@ -63,9 +66,7 @@ geometry has no inside.
 - `Pointable`
 - `OwoColorize`
 - `ErasedDestructor`
-- `CastableFrom<ST, Uninit, Uninit>`
-- `CastableFrom<ST, Initialized, Initialized>`
-- `Read<Exclusive, BecauseExclusive>`
+- `Equivalent<K>`
 - `Clone`
 - `Copy`
 - `Debug`

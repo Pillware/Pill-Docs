@@ -8,7 +8,7 @@
 pub(crate) struct DrawingContext;
 ```
 
-Visibility: `crate` · Source: `extensions\pill_master_renderer\pill_master_renderer\src\drawers\mesh_drawer.rs:58`
+Visibility: `crate` · Source: `extensions\pill_master_renderer\modules\runtime\gpu\src\drawers\mesh_drawer.rs:58`
 
 The bound state and instance range of the batch being accumulated.
 

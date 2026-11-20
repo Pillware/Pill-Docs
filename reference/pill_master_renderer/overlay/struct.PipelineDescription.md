@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1422"></a>
+<a id="rustdoc-item-1465"></a>
 
 # Struct `pill_master_renderer::overlay::PipelineDescription`
 
@@ -8,13 +8,13 @@
 pub(in overlay) struct PipelineDescription<'a>;
 ```
 
-Visibility: `{'restricted': {'parent': 858, 'path': '::overlay'}}` · Source: `extensions\pill_master_renderer\pill_master_renderer\src\overlay\mod.rs:1032`
+Visibility: `{'restricted': {'parent': 854, 'path': '::overlay'}}` · Source: `extensions\pill_master_renderer\modules\runtime\gpu\src\overlay\mod.rs:1076`
 
 The settings one overlay pipeline differs in.
 
 ## Fields
 
-<a id="rustdoc-item-1408"></a>
+<a id="rustdoc-item-1451"></a>
 
 ### `label`
 
@@ -24,7 +24,7 @@ label: &'a str
 
 _No documentation provided._
 
-<a id="rustdoc-item-1409"></a>
+<a id="rustdoc-item-1452"></a>
 
 ### `pipeline_layout`
 
@@ -34,7 +34,7 @@ pipeline_layout: &'a wgpu::PipelineLayout
 
 _No documentation provided._
 
-<a id="rustdoc-item-1411"></a>
+<a id="rustdoc-item-1454"></a>
 
 ### `shader_module`
 
@@ -44,7 +44,7 @@ shader_module: &'a wgpu::ShaderModule
 
 _No documentation provided._
 
-<a id="rustdoc-item-1413"></a>
+<a id="rustdoc-item-1456"></a>
 
 ### `vertex_entry_point`
 
@@ -54,7 +54,7 @@ vertex_entry_point: &'a str
 
 _No documentation provided._
 
-<a id="rustdoc-item-1414"></a>
+<a id="rustdoc-item-1457"></a>
 
 ### `fragment_entry_point`
 
@@ -64,7 +64,7 @@ fragment_entry_point: &'a str
 
 _No documentation provided._
 
-<a id="rustdoc-item-1415"></a>
+<a id="rustdoc-item-1458"></a>
 
 ### `vertex_buffers`
 
@@ -74,7 +74,7 @@ vertex_buffers: &'a [wgpu::VertexBufferLayout<'a>]
 
 _No documentation provided._
 
-<a id="rustdoc-item-1416"></a>
+<a id="rustdoc-item-1459"></a>
 
 ### `topology`
 
@@ -84,7 +84,7 @@ topology: wgpu::PrimitiveTopology
 
 _No documentation provided._
 
-<a id="rustdoc-item-1418"></a>
+<a id="rustdoc-item-1461"></a>
 
 ### `color_target`
 
@@ -94,7 +94,7 @@ color_target: Option<wgpu::ColorTargetState>
 
 _No documentation provided._
 
-<a id="rustdoc-item-1420"></a>
+<a id="rustdoc-item-1463"></a>
 
 ### `depth_stencil`
 

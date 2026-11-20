@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1704"></a>
+<a id="rustdoc-item-1714"></a>
 
 # Constant `pill_core::telemetry::telemetry_target::HOT_RELOAD`
 

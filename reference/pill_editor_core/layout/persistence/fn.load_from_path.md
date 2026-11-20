@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-5310"></a>
+<a id="rustdoc-item-7273"></a>
 
 # Function `pill_editor_core::layout::persistence::load_from_path`
 
@@ -8,12 +8,12 @@
 pub(in layout::persistence) fn load_from_path(path: &std::path::Path) -> super::EditorDock;
 ```
 
-Visibility: `{'restricted': {'parent': 5269, 'path': '::layout::persistence'}}` · Source: `editor\pill_editor_core\src\layout\persistence.rs:91`
+Visibility: `{'restricted': {'parent': 7232, 'path': '::layout::persistence'}}` · Source: `editor\pill_editor_core\src\layout\persistence.rs:91`
 
 Load the dock document at `path`, falling back to the default on any
 document this build cannot read.
 
-An older document that [`migrate`](fn.migrate.md#rustdoc-item-5309) has a rule for is upgraded and written
+An older document that [`migrate`](fn.migrate.md#rustdoc-item-7272) has a rule for is upgraded and written
 back before it is returned. Any other document this build cannot use - a
 schema it does not know, a file that does not parse - is replaced by the
 default layout, so the editor always opens.

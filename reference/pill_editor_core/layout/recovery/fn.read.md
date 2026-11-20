@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-5366"></a>
+<a id="rustdoc-item-7329"></a>
 
 # Function `pill_editor_core::layout::recovery::read`
 
@@ -8,7 +8,7 @@
 pub fn read() -> Option<RecoveryDocument>;
 ```
 
-Source: `editor\pill_editor_core\src\layout\recovery.rs:116`
+Source: `editor\pill_editor_core\src\layout\recovery.rs:117`
 
 Reads the document a previous run left behind.
 

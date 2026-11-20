@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1512"></a>
+<a id="rustdoc-item-1536"></a>
 
 # Type alias `pill_csharp_bridge::manifest_apply::Rename`
 
@@ -8,6 +8,6 @@
 pub(in manifest_apply) type Rename<Declaration, Binding, Undo> = fn (_: &mut pill_engine::Engine, _: super::components::StableComponentId, _: &RenamePredecessor<'_, Binding>, _: &Declaration) -> Result<(Binding, Option<Undo>), pill_core::error::CSharpError>;
 ```
 
-Visibility: `{'restricted': {'parent': 970, 'path': '::manifest_apply'}}` · Source: `csharp\pill_csharp_bridge\src\manifest_apply.rs:77`
+Visibility: `{'restricted': {'parent': 992, 'path': '::manifest_apply'}}` · Source: `csharp\pill_csharp_bridge\src\manifest_apply.rs:77`
 
 Register a successor and move a predecessor's data onto it.

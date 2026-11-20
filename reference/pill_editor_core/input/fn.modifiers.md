@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-4616"></a>
+<a id="rustdoc-item-6577"></a>
 
 # Function `pill_editor_core::input::modifiers`
 

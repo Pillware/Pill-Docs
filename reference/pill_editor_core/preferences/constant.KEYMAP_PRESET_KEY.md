@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-6288"></a>
+<a id="rustdoc-item-8324"></a>
 
 # Constant `pill_editor_core::preferences::KEYMAP_PRESET_KEY`
 

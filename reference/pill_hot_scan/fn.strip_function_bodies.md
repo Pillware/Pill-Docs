@@ -8,7 +8,7 @@
 pub fn strip_function_bodies(source: &str, function_names: &std::collections::HashSet<String>) -> String;
 ```
 
-Source: `hosting\pill_hot_scan\src\lib.rs:913`
+Source: `hosting\pill_hot_scan\src\lib.rs:940`
 
 Replace the bodies of the named functions with a placeholder.
 

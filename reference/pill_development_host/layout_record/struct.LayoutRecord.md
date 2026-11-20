@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-2949"></a>
+<a id="rustdoc-item-3023"></a>
 
 # Struct `pill_development_host::layout_record::LayoutRecord`
 
@@ -14,7 +14,7 @@ Every declared resource one subject claimed when it loaded.
 
 ## Fields
 
-<a id="rustdoc-item-2947"></a>
+<a id="rustdoc-item-3021"></a>
 
 ### `version`
 
@@ -24,7 +24,7 @@ version: u32
 
 Format version the record was written with.
 
-<a id="rustdoc-item-2948"></a>
+<a id="rustdoc-item-3022"></a>
 
 ### `resources`
 
@@ -36,7 +36,7 @@ One entry per resource that declared a layout, sorted by resource.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-2950"></a>
+<a id="rustdoc-item-3024"></a>
 
 ### `empty`
 
@@ -47,7 +47,7 @@ pub(in layout_record) fn empty() -> Self;
 An empty record, which compares equal to nothing but reads as "no
 declared resource" rather than as a failure.
 
-<a id="rustdoc-item-2951"></a>
+<a id="rustdoc-item-3025"></a>
 
 ### `layout_of`
 

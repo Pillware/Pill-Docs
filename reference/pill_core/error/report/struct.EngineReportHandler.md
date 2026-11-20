@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-762"></a>
+<a id="rustdoc-item-772"></a>
 
 # Struct `pill_core::error::report::EngineReportHandler`
 
@@ -13,12 +13,12 @@ Source: `engine\pill_core\src\error\report.rs:129`
 Prints a report in the terminal, using miette's graphical layout over the
 engine's diagnostic data.
 
-The styled message is set up by [`engine_report`](fn.engine_report.md#rustdoc-item-761), which wraps the error in
-[`StyledDiagnosticProxy`](struct.StyledDiagnosticProxy.md#rustdoc-item-719) before miette turns it into a report.
+The styled message is set up by [`engine_report`](fn.engine_report.md#rustdoc-item-771), which wraps the error in
+[`StyledDiagnosticProxy`](struct.StyledDiagnosticProxy.md#rustdoc-item-729) before miette turns it into a report.
 
 ## Fields
 
-<a id="rustdoc-item-759"></a>
+<a id="rustdoc-item-769"></a>
 
 ### `graphical_report_handler`
 

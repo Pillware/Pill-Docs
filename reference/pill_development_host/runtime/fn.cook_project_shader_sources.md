@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-4109"></a>
+<a id="rustdoc-item-4366"></a>
 
 # Function `pill_development_host::runtime::cook_project_shader_sources`
 
@@ -8,7 +8,7 @@
 pub(in runtime) fn cook_project_shader_sources(asset_directory: &std::path::Path);
 ```
 
-Visibility: `{'restricted': {'parent': 3859, 'path': '::runtime'}}` · Source: `hosting\pill_development_host\src\runtime.rs:1305`
+Visibility: `{'restricted': {'parent': 4115, 'path': '::runtime'}}` · Source: `hosting\pill_development_host\src\runtime.rs:1319`
 
 Cook every stale shader source under the project's asset directory, beside
 itself, and log what it did.

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-988"></a>
+<a id="rustdoc-item-1062"></a>
 
 # Module `pill_renderer_api::raw_window`
 
@@ -12,7 +12,7 @@ from the frontend that owns the window can create surfaces on it.
 
 ## Responsibilities
 
-- Define [`RawWindowData`](struct.RawWindowData.md#rustdoc-item-195), a `#[repr(C)]` value holding the handles a GPU
+- Define [`RawWindowData`](struct.RawWindowData.md#rustdoc-item-198), a `#[repr(C)]` value holding the handles a GPU
   surface is created from.
 - Build it from any window that implements `raw-window-handle` 0.6 (winit,
   tao), and convert it back to the `raw-window-handle` values wgpu takes.
@@ -34,13 +34,13 @@ the window outlives every surface created from it.
 ## Module contents
 
 ### Structs
-- [`RawWindowData`](struct.RawWindowData.md#rustdoc-item-195) — A window's platform handles, as plain data.
+- [`RawWindowData`](struct.RawWindowData.md#rustdoc-item-198) — A window's platform handles, as plain data.
 
 ### Enums
-- [`RawWindowKind`](enum.RawWindowKind.md#rustdoc-item-904) — The platform whose handles a [`RawWindowData`] carries.
+- [`RawWindowKind`](enum.RawWindowKind.md#rustdoc-item-976) — The platform whose handles a [`RawWindowData`] carries.
 
 ### Functions
-- [`surface_failure_from_handle_error`](fn.surface_failure_from_handle_error.md#rustdoc-item-986) — Turns a failure to read a window's handles into a surface creation error.
+- [`surface_failure_from_handle_error`](fn.surface_failure_from_handle_error.md#rustdoc-item-1060) — Turns a failure to read a window's handles into a surface creation error.
 
 ## Re-exports
 

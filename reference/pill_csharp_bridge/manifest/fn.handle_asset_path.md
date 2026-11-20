@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1322"></a>
+<a id="rustdoc-item-1345"></a>
 
 # Function `pill_csharp_bridge::manifest::handle_asset_path`
 

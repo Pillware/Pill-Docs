@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-857"></a>
+<a id="rustdoc-item-864"></a>
 
 # Constant `pill_development_host::config::LINKING_DEPENDENCY_TABLES`
 
@@ -8,7 +8,7 @@
 pub(in config) const LINKING_DEPENDENCY_TABLES: [&str; 3] = _;
 ```
 
-Visibility: `{'restricted': {'parent': 821, 'path': '::config'}}` · Source: `hosting\pill_development_host\src\config.rs:255`
+Visibility: `{'restricted': {'parent': 823, 'path': '::config'}}` · Source: `hosting\pill_development_host\src\config.rs:285`
 
 Dependency tables whose entries link code into the build.
 

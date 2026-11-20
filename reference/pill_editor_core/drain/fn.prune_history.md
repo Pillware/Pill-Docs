@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-2330"></a>
+<a id="rustdoc-item-2390"></a>
 
 # Function `pill_editor_core::drain::prune_history`
 
@@ -8,7 +8,7 @@
 pub fn prune_history(engine: &mut pill_engine::Engine) -> usize;
 ```
 
-Source: `editor\pill_editor_core\src\drain.rs:372`
+Source: `editor\pill_editor_core\src\drain.rs:507`
 
 Drops the history entries the current component registry cannot resolve.
 

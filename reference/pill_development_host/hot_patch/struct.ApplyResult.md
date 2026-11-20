@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-2513"></a>
+<a id="rustdoc-item-2587"></a>
 
 # Struct `pill_development_host::hot_patch::ApplyResult`
 
@@ -8,7 +8,7 @@
 pub(in hot_patch) struct ApplyResult;
 ```
 
-Visibility: `{'restricted': {'parent': 1968, 'path': '::hot_patch'}}` · Source: `hosting\pill_development_host\src\hot_patch\mod.rs:326`
+Visibility: `{'restricted': {'parent': 2042, 'path': '::hot_patch'}}` · Source: `hosting\pill_development_host\src\hot_patch\mod.rs:326`
 
 What one successfully installed body produced.
 
@@ -18,7 +18,7 @@ below describe this one.
 
 ## Fields
 
-<a id="rustdoc-item-2509"></a>
+<a id="rustdoc-item-2583"></a>
 
 ### `generation`
 
@@ -28,7 +28,7 @@ generation: u32
 
 Which generation this became.
 
-<a id="rustdoc-item-2510"></a>
+<a id="rustdoc-item-2584"></a>
 
 ### `artifact_bytes`
 
@@ -38,7 +38,7 @@ artifact_bytes: u64
 
 Size of the compiled patch on disk.
 
-<a id="rustdoc-item-2511"></a>
+<a id="rustdoc-item-2585"></a>
 
 ### `route`
 
@@ -50,7 +50,7 @@ Which of the three mechanisms delivered it. Reported rather than
 inferred downstream: an annotated and an un-annotated plain function are
 the same `HotFunctionKind` but take completely different routes.
 
-<a id="rustdoc-item-2512"></a>
+<a id="rustdoc-item-2586"></a>
 
 ### `copies`
 

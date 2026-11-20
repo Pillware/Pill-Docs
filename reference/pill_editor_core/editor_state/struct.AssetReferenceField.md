@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-3291"></a>
+<a id="rustdoc-item-3426"></a>
 
 # Struct `pill_editor_core::editor_state::AssetReferenceField`
 
@@ -8,13 +8,13 @@
 pub struct AssetReferenceField;
 ```
 
-Source: `editor\pill_editor_core\src\editor_state\mod.rs:494`
+Source: `editor\pill_editor_core\src\editor_state\mod.rs:542`
 
 One reference field of an asset's settings, as the Inspector draws it.
 
 ## Fields
 
-<a id="rustdoc-item-3372"></a>
+<a id="rustdoc-item-3507"></a>
 
 ### `key`
 
@@ -25,7 +25,7 @@ key: String
 The settings key the edit writes: a field name such as `shader`,
 `textures.<slot>`, or `passes[<index>]`.
 
-<a id="rustdoc-item-3373"></a>
+<a id="rustdoc-item-3508"></a>
 
 ### `target`
 
@@ -35,7 +35,7 @@ target: String
 
 The registered type name its picker offers, as a listing row's kind.
 
-<a id="rustdoc-item-3374"></a>
+<a id="rustdoc-item-3509"></a>
 
 ### `guid`
 
@@ -45,7 +45,7 @@ guid: Option<String>
 
 The guid the document holds now, when it holds one.
 
-<a id="rustdoc-item-3375"></a>
+<a id="rustdoc-item-3510"></a>
 
 ### `nested`
 
@@ -56,7 +56,7 @@ nested: bool
 Whether the document writes `{ "guid": … }` (a named reference) rather
 than a bare guid string (a texture slot).
 
-<a id="rustdoc-item-3376"></a>
+<a id="rustdoc-item-3511"></a>
 
 ### `label`
 

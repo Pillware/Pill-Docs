@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-7168"></a>
+<a id="rustdoc-item-9226"></a>
 
 # Function `pill_editor_core::scripted::scene_action`
 
@@ -8,7 +8,7 @@
 pub(in scripted) fn scene_action(cursor: &mut Cursor<'_>) -> Result<ScriptedCommand, ParseError>;
 ```
 
-Visibility: `{'restricted': {'parent': 7129, 'path': '::scripted'}}` · Source: `editor\pill_editor_core\src\scripted.rs:835`
+Visibility: `{'restricted': {'parent': 9187, 'path': '::scripted'}}` · Source: `editor\pill_editor_core\src\scripted.rs:969`
 
 `scene new|open <path>|save [<path>]`.
 

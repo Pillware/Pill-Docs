@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1509"></a>
+<a id="rustdoc-item-1554"></a>
 
 # Struct `pill_editor_core::commands::CommandRegistry`
 
@@ -8,18 +8,18 @@
 pub struct CommandRegistry;
 ```
 
-Source: `editor\pill_editor_core\src\commands.rs:487`
+Source: `editor\pill_editor_core\src\commands.rs:488`
 
 Every command every owner registered, plus the preset and the file
 overrides that decide each command's chords.
 
-A world resource (inserted by [`CommandRegistry::ensure`](#rustdoc-item-1508)); owners are
+A world resource (inserted by [`CommandRegistry::ensure`](#rustdoc-item-1553)); owners are
 keyed by the module that registered them so a re-registration replaces
 exactly that owner's set.
 
 ## Fields
 
-<a id="rustdoc-item-1505"></a>
+<a id="rustdoc-item-1550"></a>
 
 ### `owners`
 
@@ -29,7 +29,7 @@ owners: std::collections::BTreeMap<String, Vec<CommandSpec>>
 
 _No documentation provided._
 
-<a id="rustdoc-item-1506"></a>
+<a id="rustdoc-item-1551"></a>
 
 ### `overrides`
 
@@ -39,7 +39,7 @@ overrides: std::collections::BTreeMap<String, Vec<Chord>>
 
 _No documentation provided._
 
-<a id="rustdoc-item-1507"></a>
+<a id="rustdoc-item-1552"></a>
 
 ### `preset`
 
@@ -51,7 +51,7 @@ _No documentation provided._
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-1510"></a>
+<a id="rustdoc-item-1555"></a>
 
 ### `with_builtins`
 
@@ -62,7 +62,7 @@ pub fn with_builtins() -> Self;
 Builds a registry holding only the built-in commands, under owner
 `editor`.
 
-<a id="rustdoc-item-1508"></a>
+<a id="rustdoc-item-1553"></a>
 
 ### `ensure`
 
@@ -73,7 +73,7 @@ pub fn ensure(world: &mut pill_engine::World);
 Registers the registry resource in `world` and inserts the built-ins
 when it is absent.
 
-<a id="rustdoc-item-1512"></a>
+<a id="rustdoc-item-1557"></a>
 
 ### `register`
 
@@ -83,7 +83,7 @@ pub fn register(self: &mut Self, owner: &str, commands: Vec<CommandSpec>);
 
 Replaces `owner`'s registrations with `commands`.
 
-<a id="rustdoc-item-1513"></a>
+<a id="rustdoc-item-1558"></a>
 
 ### `commands`
 
@@ -94,7 +94,7 @@ pub fn commands(self: &Self) -> impl Iterator<Item = _>;
 Iterates every command, owners in key order; the built-in commands
 belong to owner `editor`.
 
-<a id="rustdoc-item-1515"></a>
+<a id="rustdoc-item-1560"></a>
 
 ### `command`
 
@@ -104,7 +104,7 @@ pub fn command(self: &Self, id: &str) -> Option<&CommandSpec>;
 
 Returns the command with this id, whichever owner registered it.
 
-<a id="rustdoc-item-1516"></a>
+<a id="rustdoc-item-1561"></a>
 
 ### `preset`
 
@@ -114,7 +114,7 @@ pub fn preset(self: &Self) -> KeymapPreset;
 
 Returns the active preset.
 
-<a id="rustdoc-item-1517"></a>
+<a id="rustdoc-item-1562"></a>
 
 ### `override_count`
 
@@ -125,7 +125,7 @@ pub fn override_count(self: &Self) -> usize;
 Returns how many commands the keybindings file's overrides name; the
 `[editor] keybindings applied` log line prints it.
 
-<a id="rustdoc-item-1518"></a>
+<a id="rustdoc-item-1563"></a>
 
 ### `effective_chords`
 
@@ -137,7 +137,7 @@ Returns the chords a command currently answers to: the file's override
 when it names this command (an empty list means unbound), or the
 preset's defaults otherwise.
 
-<a id="rustdoc-item-1519"></a>
+<a id="rustdoc-item-1564"></a>
 
 ### `apply_file`
 
@@ -152,7 +152,7 @@ for the caller to report.
 An override for a command nothing has registered is kept, so it starts
 working once that id exists.
 
-<a id="rustdoc-item-1522"></a>
+<a id="rustdoc-item-1567"></a>
 
 ### `resolve`
 
@@ -164,9 +164,9 @@ Returns the command a key press runs, or `None` when no command is
 bound to it.
 
 The first command in the registry's order wins when two share a chord;
-[`Self::conflicts`](#rustdoc-item-1521) reports the collision.
+[`Self::conflicts`](#rustdoc-item-1566) reports the collision.
 
-<a id="rustdoc-item-1521"></a>
+<a id="rustdoc-item-1566"></a>
 
 ### `conflicts`
 
@@ -177,7 +177,7 @@ pub fn conflicts(self: &Self) -> Vec<(Chord, Vec<String>)>;
 Returns every chord bound to more than one command, with the ids
 involved.
 
-<a id="rustdoc-item-1523"></a>
+<a id="rustdoc-item-1568"></a>
 
 ### `views`
 

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-3666"></a>
+<a id="rustdoc-item-3922"></a>
 
 # Function `pill_development_host::reload::registered_schemas`
 
@@ -8,7 +8,7 @@
 pub(in reload) fn registered_schemas(world: &pill_engine::World, type_names: &[String]) -> Vec<(String, u64)>;
 ```
 
-Visibility: `{'restricted': {'parent': 3428, 'path': '::reload'}}` · Source: `hosting\pill_development_host\src\reload.rs:1143`
+Visibility: `{'restricted': {'parent': 3684, 'path': '::reload'}}` · Source: `hosting\pill_development_host\src\reload.rs:1143`
 
 Returns the schema hash the world records for each name in `type_names`.
 

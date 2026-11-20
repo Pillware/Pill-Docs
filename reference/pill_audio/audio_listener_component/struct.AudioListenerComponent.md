@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-129"></a>
+<a id="rustdoc-item-132"></a>
 
 # Struct `pill_audio::audio_listener_component::AudioListenerComponent`
 
@@ -8,7 +8,7 @@
 pub struct AudioListenerComponent;
 ```
 
-Source: `extensions\pill_audio\pill_audio\src\audio_listener_component.rs:32`
+Source: `extensions\pill_audio\modules\runtime\src\audio_listener_component.rs:31`
 
 Marks the entity whose position the listener hears from.
 
@@ -19,7 +19,7 @@ listener's position comes from there.
 
 ## Fields
 
-<a id="rustdoc-item-126"></a>
+<a id="rustdoc-item-129"></a>
 
 ### `enabled`
 
@@ -29,7 +29,7 @@ enabled: bool
 
 Whether the system may use this listener.
 
-<a id="rustdoc-item-127"></a>
+<a id="rustdoc-item-130"></a>
 
 ### `facing_degrees`
 
@@ -45,7 +45,7 @@ panning needs a single yaw value.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-130"></a>
+<a id="rustdoc-item-133"></a>
 
 ### `FIELD_LAYOUT`
 
@@ -88,4 +88,5 @@ macro; pass it to `World::register_component_with_layout`.
 - `Deserialize<'de>`
 - `Component`
 - `ComponentLayout`
+- `ComponentFields`
 - `Default`

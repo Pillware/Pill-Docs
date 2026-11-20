@@ -8,7 +8,7 @@
 pub struct EditorDropSource;
 ```
 
-Source: `editor\pill_editor\src\drag_out.rs:49`
+Source: `editor\pill_editor\src\drag_out.rs:68`
 
 The drop source OLE calls while the drag runs.
 

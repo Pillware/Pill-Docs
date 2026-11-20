@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-2353"></a>
+<a id="rustdoc-item-2427"></a>
 
 # Constant `pill_development_host::hot_patch::PATCH_PLAIN_EXPORT`
 

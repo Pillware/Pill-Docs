@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1232"></a>
+<a id="rustdoc-item-1245"></a>
 
 # Struct `pill_ui_theme::theme::Theme`
 
@@ -8,13 +8,13 @@
 pub struct Theme;
 ```
 
-Source: `ui\pill_ui_theme\src\theme.rs:587`
+Source: `ui\pill_ui_theme\src\theme.rs:599`
 
 A complete set of UI tokens.
 
 ## Fields
 
-<a id="rustdoc-item-1224"></a>
+<a id="rustdoc-item-1237"></a>
 
 ### `name`
 
@@ -24,7 +24,7 @@ name: String
 
 A name identifying this theme; a `.theme` document may override it.
 
-<a id="rustdoc-item-1225"></a>
+<a id="rustdoc-item-1238"></a>
 
 ### `dark_mode`
 
@@ -35,7 +35,7 @@ dark_mode: bool
 Whether the theme is dark, with light text on dark surfaces. egui
 reads it as a summary flag and builds no values from it.
 
-<a id="rustdoc-item-1226"></a>
+<a id="rustdoc-item-1239"></a>
 
 ### `palette`
 
@@ -45,7 +45,7 @@ palette: Palette
 
 The colours.
 
-<a id="rustdoc-item-1227"></a>
+<a id="rustdoc-item-1240"></a>
 
 ### `text_styles`
 
@@ -55,7 +55,7 @@ text_styles: std::collections::BTreeMap<String, TextStyle>
 
 The named text styles, in stable order.
 
-<a id="rustdoc-item-1228"></a>
+<a id="rustdoc-item-1241"></a>
 
 ### `spacing`
 
@@ -65,7 +65,7 @@ spacing: Spacing
 
 The layout metrics.
 
-<a id="rustdoc-item-1229"></a>
+<a id="rustdoc-item-1242"></a>
 
 ### `shape`
 
@@ -75,7 +75,7 @@ shape: Shape
 
 The radii, strokes, shadows and accents.
 
-<a id="rustdoc-item-1230"></a>
+<a id="rustdoc-item-1243"></a>
 
 ### `widgets`
 
@@ -85,7 +85,7 @@ widgets: WidgetStates
 
 The five default widget states.
 
-<a id="rustdoc-item-1231"></a>
+<a id="rustdoc-item-1244"></a>
 
 ### `fonts`
 
@@ -97,7 +97,7 @@ The font paths a consumer resolves.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-1233"></a>
+<a id="rustdoc-item-1246"></a>
 
 ### `fallback`
 
@@ -110,7 +110,7 @@ A neutral dark theme built in code.
 `install(engine)` installs this theme. It gives a game a usable look
 with no theme file and no project code.
 
-<a id="rustdoc-item-1234"></a>
+<a id="rustdoc-item-1247"></a>
 
 ### `brutalist`
 
@@ -124,7 +124,7 @@ It has square corners, shadows with no blur, a pink accent and light
 text on near-black surfaces. Its spacing and text sizes are the
 recipe's own.
 
-<a id="rustdoc-item-1235"></a>
+<a id="rustdoc-item-1248"></a>
 
 ### `merged_with`
 
@@ -136,7 +136,7 @@ Apply the present items of `overrides` on top of this theme.
 
 #### Errors
 
-A [`ThemeError`](enum.ThemeError.md#rustdoc-item-180) naming the first item the document gets wrong. The
+A [`ThemeError`](enum.ThemeError.md#rustdoc-item-184) naming the first item the document gets wrong. The
 theme this was called on is left unchanged.
 
 ## Trait implementations

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-2339"></a>
+<a id="rustdoc-item-2413"></a>
 
 # Constant `pill_development_host::hot_patch::refusal_code::EDITED_BEFORE_ARMING`
 

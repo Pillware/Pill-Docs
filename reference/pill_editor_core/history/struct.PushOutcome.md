@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-4323"></a>
+<a id="rustdoc-item-4850"></a>
 
 # Struct `pill_editor_core::history::PushOutcome`
 
@@ -14,7 +14,7 @@ What a push or a limit change did to the history.
 
 ## Fields
 
-<a id="rustdoc-item-4319"></a>
+<a id="rustdoc-item-4846"></a>
 
 ### `steps`
 
@@ -24,7 +24,7 @@ steps: usize
 
 Entries still in the history afterwards.
 
-<a id="rustdoc-item-4320"></a>
+<a id="rustdoc-item-4847"></a>
 
 ### `trimmed`
 
@@ -34,7 +34,7 @@ trimmed: usize
 
 How many of the oldest entries the change dropped.
 
-<a id="rustdoc-item-4321"></a>
+<a id="rustdoc-item-4848"></a>
 
 ### `trim_reason`
 
@@ -44,7 +44,7 @@ trim_reason: Option<TrimReason>
 
 The limit that caused the drop, when one did.
 
-<a id="rustdoc-item-4322"></a>
+<a id="rustdoc-item-4849"></a>
 
 ### `coalesced`
 

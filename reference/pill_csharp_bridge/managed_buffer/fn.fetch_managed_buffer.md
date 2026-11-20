@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1243"></a>
+<a id="rustdoc-item-1266"></a>
 
 # Function `pill_csharp_bridge::managed_buffer::fetch_managed_buffer`
 
@@ -24,9 +24,9 @@ caller has to close over anyway.
 
 ## Errors
 
-Returns [`ManagedBufferError::LengthOutOfRange`](enum.ManagedBufferError.md#rustdoc-item-1204) when the reported length is
-zero, or above `limit`. Returns [`ManagedBufferError::AllocationFailed`](enum.ManagedBufferError.md#rustdoc-item-1206)
+Returns [`ManagedBufferError::LengthOutOfRange`](enum.ManagedBufferError.md#rustdoc-item-1226) when the reported length is
+zero, or above `limit`. Returns [`ManagedBufferError::AllocationFailed`](enum.ManagedBufferError.md#rustdoc-item-1228)
 when a buffer that long cannot be reserved. Returns
-[`ManagedBufferError::CopyFailed`](enum.ManagedBufferError.md#rustdoc-item-1207) when managed code declines to fill it.
+[`ManagedBufferError::CopyFailed`](enum.ManagedBufferError.md#rustdoc-item-1229) when managed code declines to fill it.
 Nothing is allocated in the first case, and the partially filled buffer is
 discarded in the last.

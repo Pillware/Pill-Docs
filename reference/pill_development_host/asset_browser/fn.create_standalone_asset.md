@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-3943"></a>
+<a id="rustdoc-item-4200"></a>
 
 # Function `pill_development_host::asset_browser::create_standalone_asset`
 
@@ -8,7 +8,7 @@
 pub fn create_standalone_asset(world: &mut pill_engine::World, asset_directory: &std::path::Path, type_name: &str, folder: &str, name: &str) -> Result<String, String>;
 ```
 
-Source: `hosting\pill_development_host\src\asset_browser.rs:448`
+Source: `hosting\pill_development_host\src\asset_browser.rs:447`
 
 Creates a new standalone asset of `type_name` called `name` in `folder`
 (relative to `res`; empty for `res` itself) and loads it. Returns its path

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-460"></a>
+<a id="rustdoc-item-504"></a>
 
 # Struct `pill_editor_core::browser::AssetRoot`
 
@@ -19,7 +19,7 @@ key is a root is never listed as another row's child.
 
 ## Fields
 
-<a id="rustdoc-item-464"></a>
+<a id="rustdoc-item-508"></a>
 
 ### `key`
 
@@ -30,7 +30,7 @@ key: &'static str
 The key the root's row opens in the grid. Empty for the project's own
 tree.
 
-<a id="rustdoc-item-465"></a>
+<a id="rustdoc-item-509"></a>
 
 ### `label`
 
@@ -40,7 +40,7 @@ label: &'static str
 
 The label the root's row and the breadcrumb's first segment show.
 
-<a id="rustdoc-item-466"></a>
+<a id="rustdoc-item-510"></a>
 
 ### `read_only`
 

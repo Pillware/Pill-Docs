@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-454"></a>
+<a id="rustdoc-item-464"></a>
 
 # Struct `pill_csharp_bridge::csharp_runtime::DotnetRuntimeContext`
 
@@ -19,7 +19,7 @@ would leave them dangling.
 
 ## Fields
 
-<a id="rustdoc-item-1125"></a>
+<a id="rustdoc-item-1147"></a>
 
 ### `_library`
 
@@ -30,7 +30,7 @@ _library: libloading::Library
 The `hostfxr` library, kept loaded so the function pointers below stay
 valid.
 
-<a id="rustdoc-item-1126"></a>
+<a id="rustdoc-item-1148"></a>
 
 ### `runtime_handle`
 
@@ -40,7 +40,7 @@ runtime_handle: *mut std::ffi::c_void
 
 The context handle that runtime initialization returned.
 
-<a id="rustdoc-item-1127"></a>
+<a id="rustdoc-item-1149"></a>
 
 ### `close`
 
@@ -50,7 +50,7 @@ close: unsafe extern "System" fn (_: *mut std::ffi::c_void) -> i32
 
 The `hostfxr_close` export; `Drop` calls it to release the context.
 
-<a id="rustdoc-item-1128"></a>
+<a id="rustdoc-item-1150"></a>
 
 ### `load_assembly`
 
@@ -63,7 +63,7 @@ The `load_assembly_and_get_function_pointer` delegate that
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-1134"></a>
+<a id="rustdoc-item-1156"></a>
 
 ### `new`
 
@@ -96,7 +96,7 @@ from it.
 - [`CSharpError::RuntimeDelegateFailed`]: `hostfxr` refuses the delegate
   request, or returns no delegate.
 
-<a id="rustdoc-item-1136"></a>
+<a id="rustdoc-item-1158"></a>
 
 ### `resolve_unmanaged_function_pointer`
 

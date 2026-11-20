@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1253"></a>
+<a id="rustdoc-item-1272"></a>
 
 # Function `pill_development_host::config::canonicalize_plain`
 
@@ -8,7 +8,7 @@
 pub(in config) fn canonicalize_plain(path: &std::path::Path) -> Option<std::path::PathBuf>;
 ```
 
-Visibility: `{'restricted': {'parent': 821, 'path': '::config'}}` · Source: `hosting\pill_development_host\src\config.rs:1389`
+Visibility: `{'restricted': {'parent': 823, 'path': '::config'}}` · Source: `hosting\pill_development_host\src\config.rs:1585`
 
 Canonicalize a path without the Windows `\\?\` verbatim prefix.
 

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1499"></a>
+<a id="rustdoc-item-1523"></a>
 
 # Function `pill_csharp_bridge::manifest::parse_default_bytes`
 

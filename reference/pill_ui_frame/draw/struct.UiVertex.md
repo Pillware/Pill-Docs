@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-191"></a>
+<a id="rustdoc-item-194"></a>
 
 # Struct `pill_ui_frame::draw::UiVertex`
 
@@ -17,7 +17,7 @@ One vertex of a UI triangle.
 
 ## Fields
 
-<a id="rustdoc-item-188"></a>
+<a id="rustdoc-item-191"></a>
 
 ### `position`
 
@@ -27,7 +27,7 @@ position: pill_core::math::Vector2f
 
 Position in logical pixels, y down.
 
-<a id="rustdoc-item-189"></a>
+<a id="rustdoc-item-192"></a>
 
 ### `uv`
 
@@ -37,7 +37,7 @@ uv: pill_core::math::Vector2f
 
 Texture coordinate. `(0.0, 0.0)` is the texture's top-left corner.
 
-<a id="rustdoc-item-190"></a>
+<a id="rustdoc-item-193"></a>
 
 ### `color`
 

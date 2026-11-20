@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-567"></a>
+<a id="rustdoc-item-721"></a>
 
 # Function `pill_engine::hot_patch::resolve_hot_function`
 

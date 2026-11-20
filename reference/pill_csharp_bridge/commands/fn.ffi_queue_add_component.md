@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-730"></a>
+<a id="rustdoc-item-751"></a>
 
 # Function `pill_csharp_bridge::commands::ffi_queue_add_component`
 
@@ -10,7 +10,7 @@ pub(crate) extern "C" fn ffi_queue_add_component(entity: *const pill_engine::Ent
 
 Visibility: `crate` · Source: `csharp\pill_csharp_bridge\src\commands.rs:321`
 
-Panic-guarded entry point for [`ffi_queue_add_component_guarded`](fn.ffi_queue_add_component_guarded.md#rustdoc-item-729).
+Panic-guarded entry point for [`ffi_queue_add_component_guarded`](fn.ffi_queue_add_component_guarded.md#rustdoc-item-750).
 
 A panic that crosses the `extern "C"` boundary would abort the process.
 This catches it, logs it, and returns `6` instead, which the managed side

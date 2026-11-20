@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-3288"></a>
+<a id="rustdoc-item-3543"></a>
 
 # Function `pill_development_host::native_library::process_temporary_directory`
 
@@ -8,7 +8,7 @@
 pub(crate) fn process_temporary_directory(workspace_root: &std::path::Path) -> std::path::PathBuf;
 ```
 
-Visibility: `crate` · Source: `hosting\pill_development_host\src\native_library.rs:1615`
+Visibility: `crate` · Source: `hosting\pill_development_host\src\native_library.rs:1902`
 
 Directory used by this host process for temporary native-library copies.
 

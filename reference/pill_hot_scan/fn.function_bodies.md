@@ -8,7 +8,7 @@
 pub fn function_bodies(source: &str, function_names: &std::collections::HashSet<String>) -> std::collections::HashMap<String, String>;
 ```
 
-Source: `hosting\pill_hot_scan\src\lib.rs:947`
+Source: `hosting\pill_hot_scan\src\lib.rs:974`
 
 The body text of each named function that this source declares.
 

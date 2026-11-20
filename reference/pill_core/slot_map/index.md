@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1490"></a>
+<a id="rustdoc-item-1500"></a>
 
 # Module `pill_core::slot_map`
 
@@ -16,7 +16,7 @@ A generational slot arena: numbered slots that hand out stable handles.
 - Check every access against the version a handle was issued with, so a
   handle to a removed value fails instead of reaching whatever value refills
   its slot.
-- Provide [`define_slot_key!`](../macro.define_slot_key.md#rustdoc-item-1543) so a crate can stamp out its own handle types
+- Provide [`define_slot_key!`](../macro.define_slot_key.md#rustdoc-item-1553) so a crate can stamp out its own handle types
   over the shared machinery instead of reimplementing the check.
 
 ## Design
@@ -37,9 +37,9 @@ slot it sits in.
 ## Module contents
 
 ### Structs
-- [`KeyData`](struct.KeyData.md#rustdoc-item-1451) — The slot index and version a handle was issued with.
-- [`Slot`](struct.Slot.md#rustdoc-item-1492) — One entry of a [`SlotMap`]. It holds the slot's current version and the
-- [`SlotMap`](struct.SlotMap.md#rustdoc-item-1487) — A vector of slots that hands out typed [`SlotKey`] handles.
+- [`KeyData`](struct.KeyData.md#rustdoc-item-1461) — The slot index and version a handle was issued with.
+- [`Slot`](struct.Slot.md#rustdoc-item-1502) — One entry of a [`SlotMap`]. It holds the slot's current version and the
+- [`SlotMap`](struct.SlotMap.md#rustdoc-item-1497) — A vector of slots that hands out typed [`SlotKey`] handles.
 
 ### Traits
-- [`SlotKey`](trait.SlotKey.md#rustdoc-item-1488) — A typed handle for one entry of a [`SlotMap`].
+- [`SlotKey`](trait.SlotKey.md#rustdoc-item-1498) — A typed handle for one entry of a [`SlotMap`].

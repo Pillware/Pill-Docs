@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-2817"></a>
+<a id="rustdoc-item-2891"></a>
 
 # Constant `pill_development_host::layout_record::MISSING_SOURCE_HASH`
 
@@ -8,7 +8,7 @@
 pub(in layout_record) const MISSING_SOURCE_HASH: u64 = 0;
 ```
 
-Visibility: `{'restricted': {'parent': 2774, 'path': '::layout_record'}}` · Source: `hosting\pill_development_host\src\layout_record.rs:199`
+Visibility: `{'restricted': {'parent': 2848, 'path': '::layout_record'}}` · Source: `hosting\pill_development_host\src\layout_record.rs:199`
 
 Hash a file cannot be read at all.
 

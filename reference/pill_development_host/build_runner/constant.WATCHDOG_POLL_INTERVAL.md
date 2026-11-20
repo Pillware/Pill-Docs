@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-564"></a>
+<a id="rustdoc-item-565"></a>
 
 # Constant `pill_development_host::build_runner::WATCHDOG_POLL_INTERVAL`
 
@@ -8,7 +8,7 @@
 pub(in build_runner) const WATCHDOG_POLL_INTERVAL: std::time::Duration = _;
 ```
 
-Visibility: `{'restricted': {'parent': 545, 'path': '::build_runner'}}` · Source: `hosting\pill_development_host\src\build_runner.rs:146`
+Visibility: `{'restricted': {'parent': 546, 'path': '::build_runner'}}` · Source: `hosting\pill_development_host\src\build_runner.rs:146`
 
 How often the watchdog looks for build completion or cancellation.
 

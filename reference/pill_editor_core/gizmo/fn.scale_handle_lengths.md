@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-4179"></a>
+<a id="rustdoc-item-4706"></a>
 
 # Function `pill_editor_core::gizmo::scale_handle_lengths`
 
@@ -8,7 +8,7 @@
 pub fn scale_handle_lengths(reference_length: f32, original_scale: [f32; 3], current_scale: [f32; 3], axis_index: usize) -> [f32; 3];
 ```
 
-Source: `editor\pill_editor_core\src\gizmo.rs:1011`
+Source: `editor\pill_editor_core\src\gizmo.rs:1354`
 
 Returns the handle length for each axis during a scale drag.
 

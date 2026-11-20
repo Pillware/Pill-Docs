@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-3716"></a>
+<a id="rustdoc-item-3972"></a>
 
 # Module `pill_development_host::switches`
 
@@ -24,14 +24,14 @@ loads it as a module, and still answers an explicit reload.
 ## Module contents
 
 ### Structs
-- [`HostSwitches`](struct.HostSwitches.md#rustdoc-item-3675) — Which watchers this run starts, read once when the host starts.
+- [`HostSwitches`](struct.HostSwitches.md#rustdoc-item-3931) — Which watchers this run starts, read once when the host starts.
 
 ### Functions
-- [`parse_switch`](fn.parse_switch.md#rustdoc-item-3715) — The rule behind every switch: absent, empty or any unrecognized text means
-- [`switch_value`](fn.switch_value.md#rustdoc-item-3714) — One switch's answer, read from the environment.
+- [`parse_switch`](fn.parse_switch.md#rustdoc-item-3971) — The rule behind every switch: absent, empty or any unrecognized text means
+- [`switch_value`](fn.switch_value.md#rustdoc-item-3970) — One switch's answer, read from the environment.
 
 ### Constants
-- [`ASSETS_HOT_RELOADING_VARIABLE`](constant.ASSETS_HOT_RELOADING_VARIABLE.md#rustdoc-item-3670) — The variable that turns the asset and shader watchers on or off.
-- [`FUNCTION_HOT_PATCHING_VARIABLE`](constant.FUNCTION_HOT_PATCHING_VARIABLE.md#rustdoc-item-3669) — The variable that turns the per-function patch fast path on or off.
-- [`HOT_RELOADING_VARIABLE`](constant.HOT_RELOADING_VARIABLE.md#rustdoc-item-3668) — The variable that turns the source watchers on or off.
-- [`SWITCH_VARIABLES`](constant.SWITCH_VARIABLES.md#rustdoc-item-3671) — The three variable names as one line, for the startup log.
+- [`ASSETS_HOT_RELOADING_VARIABLE`](constant.ASSETS_HOT_RELOADING_VARIABLE.md#rustdoc-item-3926) — The variable that turns the asset and shader watchers on or off.
+- [`FUNCTION_HOT_PATCHING_VARIABLE`](constant.FUNCTION_HOT_PATCHING_VARIABLE.md#rustdoc-item-3925) — The variable that turns the per-function patch fast path on or off.
+- [`HOT_RELOADING_VARIABLE`](constant.HOT_RELOADING_VARIABLE.md#rustdoc-item-3924) — The variable that turns the source watchers on or off.
+- [`SWITCH_VARIABLES`](constant.SWITCH_VARIABLES.md#rustdoc-item-3927) — The three variable names as one line, for the startup log.

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-5386"></a>
+<a id="rustdoc-item-7349"></a>
 
 # Struct `pill_editor_core::session::EguiShellState`
 
@@ -20,7 +20,7 @@ another side answers under requests.
 
 ## Fields
 
-<a id="rustdoc-item-7229"></a>
+<a id="rustdoc-item-9287"></a>
 
 ### `context`
 
@@ -30,7 +30,7 @@ context: egui::Context
 
 The egui context: fonts, memory and widget state.
 
-<a id="rustdoc-item-7230"></a>
+<a id="rustdoc-item-9288"></a>
 
 ### `dock`
 
@@ -40,7 +40,7 @@ dock: crate::layout::EditorDock
 
 The dock layout, persisted across restarts.
 
-<a id="rustdoc-item-7231"></a>
+<a id="rustdoc-item-9289"></a>
 
 ### `frame_index`
 
@@ -51,7 +51,7 @@ frame_index: u64
 How many egui passes the shell has started; the shell's row heartbeat
 and its toast expiry read it.
 
-<a id="rustdoc-item-7232"></a>
+<a id="rustdoc-item-9290"></a>
 
 ### `applied_theme_generation`
 
@@ -75,7 +75,7 @@ asset_dialog: Option<crate::assets::AssetDialog>
 The open asset dialog, if there is one: the create or rename window's
 state, kept here so a shell reload finds it.
 
-<a id="rustdoc-item-7233"></a>
+<a id="rustdoc-item-9291"></a>
 
 ### `preferences_draft`
 
@@ -87,7 +87,7 @@ The Preferences tab's unsaved field values, keyed like the file. It is
 `None` until the tab seeds it from the snapshot and again after a save,
 so the rows re-seed from the file on the next frame.
 
-<a id="rustdoc-item-7234"></a>
+<a id="rustdoc-item-9292"></a>
 
 ### `toolbox`
 
@@ -97,7 +97,7 @@ toolbox: ToolboxSession
 
 The floating viewport toolboxes' session state.
 
-<a id="rustdoc-item-7236"></a>
+<a id="rustdoc-item-9294"></a>
 
 ### `browser`
 
@@ -108,7 +108,7 @@ browser: crate::browser::ProjectBrowser
 The Assets tab's project browser: the folder its grid lists, the
 tree's open folders and the tile size.
 
-<a id="rustdoc-item-7237"></a>
+<a id="rustdoc-item-9295"></a>
 
 ### `mark`
 
@@ -119,7 +119,7 @@ mark: Option<egui::TextureHandle>
 The brand mark's texture, uploaded on the first frame and kept for the
 session: the context owns it, so a shell reload reuses it.
 
-<a id="rustdoc-item-7239"></a>
+<a id="rustdoc-item-9297"></a>
 
 ### `previews`
 
@@ -132,7 +132,7 @@ sent back, the tiles it answered with no pixels, and the tiles this
 pass drew, because the three together answer one question: may this
 tile be asked for now?
 
-<a id="rustdoc-item-7241"></a>
+<a id="rustdoc-item-9299"></a>
 
 ### `menubar`
 
@@ -142,7 +142,7 @@ menubar: MenubarSession
 
 The menu bar's logged geometry and its open state.
 
-<a id="rustdoc-item-7243"></a>
+<a id="rustdoc-item-9301"></a>
 
 ### `inspector`
 
@@ -152,7 +152,7 @@ inspector: InspectorSession
 
 The Inspector's collapsed component sections and its logged geometry.
 
-<a id="rustdoc-item-7244"></a>
+<a id="rustdoc-item-9302"></a>
 
 ### `toasts`
 
@@ -162,7 +162,7 @@ toasts: ToastSession
 
 The toasts the host's notices put on screen.
 
-<a id="rustdoc-item-7246"></a>
+<a id="rustdoc-item-9304"></a>
 
 ### `palette`
 
@@ -172,7 +172,7 @@ palette: PaletteState
 
 The command palette's open state and query.
 
-<a id="rustdoc-item-7248"></a>
+<a id="rustdoc-item-9306"></a>
 
 ### `console_filters`
 
@@ -183,7 +183,7 @@ console_filters: crate::console::ConsoleFilterSettings
 The Console tab's filters. The tab edits them, and the executable copies
 them into the Console history before the next snapshot.
 
-<a id="rustdoc-item-7249"></a>
+<a id="rustdoc-item-9307"></a>
 
 ### `requests`
 
@@ -193,11 +193,11 @@ requests: crate::requests::ShellRequests
 
 The asks this pass raised for the executable: a Problems row, an undo
 or redo, a dock tab. `settle_pass` moves the value onto
-[`crate::boundary::EguiShellFrame`](../boundary/struct.EguiShellFrame.md#rustdoc-item-389), and the executable answers it at
+[`crate::boundary::EguiShellFrame`](../boundary/struct.EguiShellFrame.md#rustdoc-item-432), and the executable answers it at
 its frame boundary, so the executable never reads these from the
 session.
 
-<a id="rustdoc-item-7250"></a>
+<a id="rustdoc-item-9308"></a>
 
 ### `stats`
 
@@ -207,7 +207,7 @@ stats: StatisticsSession
 
 The per-tab and whole-pass timings the Statistics tab shows.
 
-<a id="rustdoc-item-7252"></a>
+<a id="rustdoc-item-9310"></a>
 
 ### `panel_budget`
 
@@ -218,7 +218,7 @@ panel_budget: PanelBudget
 Every module panel's build time, and which of them overshoots the
 budget.
 
-<a id="rustdoc-item-7254"></a>
+<a id="rustdoc-item-9312"></a>
 
 ### `panels_remapped`
 
@@ -231,7 +231,7 @@ from the ids it was written with to the slots the registry uses today.
 It happens once per session, not once per shell generation, so a
 reload never undoes a dock the user rearranged.
 
-<a id="rustdoc-item-7255"></a>
+<a id="rustdoc-item-9313"></a>
 
 ### `panel_windows`
 
@@ -241,7 +241,7 @@ panel_windows: PanelWindowSession
 
 The windows the module panels asked for.
 
-<a id="rustdoc-item-7257"></a>
+<a id="rustdoc-item-9315"></a>
 
 ### `pending_panel_window`
 
@@ -254,7 +254,28 @@ open: the panel's slot and the window id it should choose. The shell
 clears it only in the pass where that panel draws - a request must not
 be dropped by a frame where its tab was not on screen.
 
-<a id="rustdoc-item-7258"></a>
+<a id="rustdoc-item-9316"></a>
+
+### `last_run_mode`
+
+```rust
+last_run_mode: Option<pill_engine::RunMode>
+```
+
+The run mode the last pass drew, so the shell can tell an entering or
+leaving Play from a frame that is merely playing.
+
+<a id="rustdoc-item-9317"></a>
+
+### `tab_before_play`
+
+```rust
+tab_before_play: Option<crate::layout::EditorTab>
+```
+
+The tab that was in front when Play took over, restored on Stop.
+
+<a id="rustdoc-item-9318"></a>
 
 ### `popout_contexts`
 
@@ -270,7 +291,7 @@ where it left it.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-7259"></a>
+<a id="rustdoc-item-9319"></a>
 
 ### `claim_generation`
 
@@ -287,7 +308,7 @@ frame, before its pass: a value the previous generation left in
 `Memory::data` carries that image's drop code, and touching it after
 the reload is a use-after-unmap.
 
-<a id="rustdoc-item-7261"></a>
+<a id="rustdoc-item-9321"></a>
 
 ### `new`
 
@@ -300,7 +321,7 @@ Session state with the editor's theme and the saved dock.
 A document this build cannot use falls back to the default layout and
 logs why (`[editor] layout reset`); a missing one is the first run.
 
-<a id="rustdoc-item-7262"></a>
+<a id="rustdoc-item-9322"></a>
 
 ### `mark_texture`
 

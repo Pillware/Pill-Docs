@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-6139"></a>
+<a id="rustdoc-item-8104"></a>
 
 # Struct `pill_editor_core::panels::PanelRequest`
 
@@ -21,7 +21,7 @@ reload's stale entries go dead with the marker they were bound to.
 
 ## Fields
 
-<a id="rustdoc-item-6135"></a>
+<a id="rustdoc-item-8100"></a>
 
 ### `id`
 
@@ -31,7 +31,7 @@ id: &'static str
 
 The panel's identity, stable across reloads.
 
-<a id="rustdoc-item-6136"></a>
+<a id="rustdoc-item-8101"></a>
 
 ### `title`
 
@@ -41,7 +41,7 @@ title: &'static str
 
 The tab's title.
 
-<a id="rustdoc-item-6137"></a>
+<a id="rustdoc-item-8102"></a>
 
 ### `source`
 
@@ -51,7 +51,7 @@ source: &'static str
 
 The crate registering it.
 
-<a id="rustdoc-item-6138"></a>
+<a id="rustdoc-item-8103"></a>
 
 ### `draw`
 

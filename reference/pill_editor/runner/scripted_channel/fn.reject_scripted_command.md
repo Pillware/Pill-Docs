@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1068"></a>
+<a id="rustdoc-item-1278"></a>
 
 # Function `pill_editor::runner::scripted_channel::reject_scripted_command`
 
@@ -8,7 +8,7 @@
 pub(in runner::scripted_channel) fn reject_scripted_command(command: &str, reason: &str);
 ```
 
-Visibility: `{'restricted': {'parent': 1069, 'path': '::runner::scripted_channel'}}` · Source: `editor\pill_editor\src\runner\scripted_channel.rs:41`
+Visibility: `{'restricted': {'parent': 755, 'path': '::runner::scripted_channel'}}` · Source: `editor\pill_editor\src\runner\scripted_channel.rs:43`
 
 Refuses one scripted line, naming it and why it cannot run.
 

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-973"></a>
+<a id="rustdoc-item-983"></a>
 
 # Struct `pill_core::metrics::EngineMetricsRecorder`
 
@@ -23,7 +23,7 @@ cache Tracy needs.
 
 ## Fields
 
-<a id="rustdoc-item-970"></a>
+<a id="rustdoc-item-980"></a>
 
 ### `tracy_forwarding_state`
 
@@ -35,7 +35,7 @@ _No documentation provided._
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-974"></a>
+<a id="rustdoc-item-984"></a>
 
 ### `new`
 
@@ -48,7 +48,7 @@ Creates a recorder with an empty plot-name cache.
 Without the `tracy` feature there is no cache, because nothing is
 forwarded.
 
-<a id="rustdoc-item-975"></a>
+<a id="rustdoc-item-985"></a>
 
 ### `try_install`
 

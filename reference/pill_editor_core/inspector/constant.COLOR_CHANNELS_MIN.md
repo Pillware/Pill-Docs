@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-4622"></a>
+<a id="rustdoc-item-6583"></a>
 
 # Constant `pill_editor_core::inspector::COLOR_CHANNELS_MIN`
 

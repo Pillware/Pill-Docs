@@ -8,7 +8,7 @@
 pub struct EditorDropSource_Impl;
 ```
 
-Source: `editor\pill_editor\src\drag_out.rs:48`
+Source: `editor\pill_editor\src\drag_out.rs:67`
 
 _No documentation provided._
 

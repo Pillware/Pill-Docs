@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-249"></a>
+<a id="rustdoc-item-315"></a>
 
 # Struct `pill_audio::audio_manager::AudioSettings`
 
@@ -8,7 +8,7 @@
 pub struct AudioSettings;
 ```
 
-Source: `extensions\pill_audio\pill_audio\src\audio_manager.rs:121`
+Source: `extensions\pill_audio\modules\runtime\src\audio_manager.rs:127`
 
 The audio device's tunable settings, as the project's settings asset
 describes them.
@@ -19,14 +19,14 @@ that changed under it. A document that asks for different sizes is refused
 with that reason, and the host is restarted to change them. Ear separation
 can move while the device runs, so it is applied live.
 
-This is the document of [`AudioSettingsAsset`](struct.AudioSettingsAsset.md#rustdoc-item-247): the settings file is a real
+This is the document of [`AudioSettingsAsset`](struct.AudioSettingsAsset.md#rustdoc-item-312): the settings file is a real
 asset (`res/settings/pill_audio.audio_settings`), so an edit is checked
 against this type before it reaches the device, and the Inspector can draw
 its fields.
 
 ## Fields
 
-<a id="rustdoc-item-297"></a>
+<a id="rustdoc-item-366"></a>
 
 ### `ambient_sinks`
 
@@ -36,7 +36,7 @@ ambient_sinks: usize
 
 Voices for non-positional playback.
 
-<a id="rustdoc-item-298"></a>
+<a id="rustdoc-item-367"></a>
 
 ### `spatial_sinks`
 
@@ -46,7 +46,7 @@ spatial_sinks: usize
 
 Voices for positional playback.
 
-<a id="rustdoc-item-299"></a>
+<a id="rustdoc-item-368"></a>
 
 ### `ear_separation`
 

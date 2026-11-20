@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-549"></a>
+<a id="rustdoc-item-552"></a>
 
 # Function `pill_player::runtime::insert_debug_resources`
 

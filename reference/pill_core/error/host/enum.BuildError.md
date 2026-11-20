@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-273"></a>
+<a id="rustdoc-item-280"></a>
 
 # Enum `pill_core::error::host::BuildError`
 
@@ -8,7 +8,7 @@
 pub enum BuildError { ... }
 ```
 
-Source: `engine\pill_core\src\error\host.rs:266`
+Source: `engine\pill_core\src\error\host.rs:295`
 
 Project-module build execution failures.
 
@@ -19,7 +19,7 @@ one that never appeared, and one that was staged and then changed on disk.
 
 ## Variants
 
-<a id="rustdoc-item-249"></a>
+<a id="rustdoc-item-256"></a>
 
 ### `EmptyCommand`
 
@@ -29,7 +29,7 @@ EmptyCommand
 
 The build command list is empty.
 
-<a id="rustdoc-item-252"></a>
+<a id="rustdoc-item-259"></a>
 
 ### `SpawnFailed`
 
@@ -39,7 +39,7 @@ SpawnFailed
 
 The build executable could not be spawned.
 
-<a id="rustdoc-item-255"></a>
+<a id="rustdoc-item-262"></a>
 
 ### `WaitFailed`
 
@@ -49,7 +49,7 @@ WaitFailed
 
 The build child could not be waited on.
 
-<a id="rustdoc-item-259"></a>
+<a id="rustdoc-item-266"></a>
 
 ### `CommandFailed`
 
@@ -59,7 +59,7 @@ CommandFailed
 
 The build command exited with a non-zero status.
 
-<a id="rustdoc-item-262"></a>
+<a id="rustdoc-item-269"></a>
 
 ### `TimedOut`
 
@@ -69,7 +69,7 @@ TimedOut
 
 The build command exceeded its wall-clock deadline.
 
-<a id="rustdoc-item-263"></a>
+<a id="rustdoc-item-270"></a>
 
 ### `Cancelled`
 
@@ -79,7 +79,7 @@ Cancelled
 
 Sources changed again while the build was running.
 
-<a id="rustdoc-item-265"></a>
+<a id="rustdoc-item-272"></a>
 
 ### `OutputMissing`
 
@@ -89,7 +89,7 @@ OutputMissing
 
 The build succeeded but no artifact appeared at the configured path.
 
-<a id="rustdoc-item-269"></a>
+<a id="rustdoc-item-276"></a>
 
 ### `HotArtifactCopyFailed`
 
@@ -99,7 +99,7 @@ HotArtifactCopyFailed
 
 The built library could not be staged into its hot-load directory.
 
-<a id="rustdoc-item-272"></a>
+<a id="rustdoc-item-279"></a>
 
 ### `StagedArtifactChanged`
 

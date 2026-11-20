@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-763"></a>
+<a id="rustdoc-item-765"></a>
 
 # Function `pill_development_host::build_runner::with_compiler_argument_capture`
 
@@ -8,7 +8,7 @@
 pub(in build_runner) fn with_compiler_argument_capture(workspace_root: &std::path::Path, project_config: &crate::ProjectModuleConfig) -> Vec<String>;
 ```
 
-Visibility: `{'restricted': {'parent': 545, 'path': '::build_runner'}}` · Source: `hosting\pill_development_host\src\build_runner.rs:1395`
+Visibility: `{'restricted': {'parent': 546, 'path': '::build_runner'}}` · Source: `hosting\pill_development_host\src\build_runner.rs:1396`
 
 Adds the compiler-command-line capture to a managed project's build.
 

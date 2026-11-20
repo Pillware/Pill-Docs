@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-666"></a>
+<a id="rustdoc-item-710"></a>
 
 # Module `pill_editor_core::cadence`
 
@@ -37,12 +37,12 @@ to do next. Nothing here touches a window, a clock or the world.
 ## Module contents
 
 ### Structs
-- [`Cadence`](struct.Cadence.md#rustdoc-item-670) — The editor's redraw counters, and the mode that sets when it draws next.
-- [`FrameDemand`](struct.FrameDemand.md#rustdoc-item-578) — What asks for the next frame.
+- [`Cadence`](struct.Cadence.md#rustdoc-item-714) — The editor's redraw counters, and the mode that sets when it draws next.
+- [`FrameDemand`](struct.FrameDemand.md#rustdoc-item-622) — What asks for the next frame.
 
 ### Enums
-- [`FrameWake`](enum.FrameWake.md#rustdoc-item-626) — When the loop draws next.
+- [`FrameWake`](enum.FrameWake.md#rustdoc-item-670) — When the loop draws next.
 
 ### Constants
-- [`CONTINUOUS_REDRAW_ENV`](constant.CONTINUOUS_REDRAW_ENV.md#rustdoc-item-570) — The environment variable that makes the loop draw every frame.
-- [`IDLE_POLL`](constant.IDLE_POLL.md#rustdoc-item-571) — How long an idle editor sleeps between frames.
+- [`CONTINUOUS_REDRAW_ENV`](constant.CONTINUOUS_REDRAW_ENV.md#rustdoc-item-614) — The environment variable that makes the loop draw every frame.
+- [`IDLE_POLL`](constant.IDLE_POLL.md#rustdoc-item-615) — How long an idle editor sleeps between frames.

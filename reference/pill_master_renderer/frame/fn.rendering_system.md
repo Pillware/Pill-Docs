@@ -8,7 +8,7 @@
 pub fn rendering_system(frame: pill_engine::ResMut<'_, RenderFrame>, assets: pill_engine::Res<'_, pill_engine::AssetManager>, manager: pill_engine::Res<'_, crate::resources::RenderingManager>, (time, surface_cameras, debug_draw, outlines, pick_requests, ui_slot, preview_requests): (pill_engine::Res<'_, pill_engine::Time>, pill_engine::Res<'_, pill_renderer_api::SurfaceCameras>, pill_engine::ResMut<'_, pill_engine::DebugDraw>, pill_engine::Res<'_, pill_renderer_api::SelectionOutlines>, pill_engine::ResMut<'_, pill_renderer_api::PickRequests>, pill_engine::ResMut<'_, pill_ui_frame::UiFrameSlot>, pill_engine::ResMut<'_, pill_renderer_api::PreviewRequests>), cameras: pill_engine::Query<'_, (pill_engine::Entity, &crate::components::TransformComponent, &crate::components::CameraComponent)>, drawables: pill_engine::Query<'_, (pill_engine::Entity, &crate::components::TransformComponent, &crate::components::MeshRendererComponent)>) -> Result<(), pill_engine::SystemError>;
 ```
 
-Source: `extensions\pill_master_renderer\pill_master_renderer\src\frame.rs:301`
+Source: `extensions\pill_master_renderer\modules\runtime\gpu\src\frame.rs:305`
 
 Fills the frame from the current world, once per update.
 

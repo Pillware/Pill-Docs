@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-2577"></a>
+<a id="rustdoc-item-2617"></a>
 
 # Constant `pill_master_renderer::resources::renderer_resource_storage::INITIAL_SHADER_CAPACITY`
 
@@ -8,7 +8,7 @@
 pub const INITIAL_SHADER_CAPACITY: usize = 10;
 ```
 
-Source: `extensions\pill_master_renderer\pill_master_renderer\src\resources\renderer_resource_storage.rs:40`
+Source: `extensions\pill_master_renderer\modules\runtime\gpu\src\resources\renderer_resource_storage.rs:40`
 
 Starting capacity of the shader slot map.
 

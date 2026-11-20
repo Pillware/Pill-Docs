@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1210"></a>
+<a id="rustdoc-item-1220"></a>
 
 # Struct `pill_core::profiling::GpuStatistics`
 
@@ -12,11 +12,11 @@ Source: `engine\pill_core\src\profiling.rs:94`
 
 The pipeline statistics of one geometry pass.
 
-A frame's totals go to [`plot_gpu_statistics`](enabled/fn.plot_gpu_statistics.md#rustdoc-item-1333).
+A frame's totals go to [`plot_gpu_statistics`](enabled/fn.plot_gpu_statistics.md#rustdoc-item-1343).
 
 ## Fields
 
-<a id="rustdoc-item-1410"></a>
+<a id="rustdoc-item-1420"></a>
 
 ### `vertex_invocations`
 
@@ -26,7 +26,7 @@ vertex_invocations: u64
 
 Vertex shader invocations.
 
-<a id="rustdoc-item-1411"></a>
+<a id="rustdoc-item-1421"></a>
 
 ### `clipper_invocations`
 
@@ -36,7 +36,7 @@ clipper_invocations: u64
 
 Primitives that entered clipping.
 
-<a id="rustdoc-item-1412"></a>
+<a id="rustdoc-item-1422"></a>
 
 ### `clipper_primitives_out`
 
@@ -46,7 +46,7 @@ clipper_primitives_out: u64
 
 Primitives that passed clipping.
 
-<a id="rustdoc-item-1413"></a>
+<a id="rustdoc-item-1423"></a>
 
 ### `fragment_invocations`
 

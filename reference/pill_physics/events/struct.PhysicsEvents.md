@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-486"></a>
+<a id="rustdoc-item-643"></a>
 
 # Struct `pill_physics::events::PhysicsEvents`
 
@@ -8,7 +8,7 @@
 pub struct PhysicsEvents;
 ```
 
-Source: `extensions\pill_physics\pill_physics\src\events.rs:73`
+Source: `extensions\pill_physics\modules\runtime\src\events.rs:74`
 
 One frame's collisions.
 
@@ -18,7 +18,7 @@ ran. Game code that needs an event to outlive the frame copies it out.
 
 ## Fields
 
-<a id="rustdoc-item-482"></a>
+<a id="rustdoc-item-639"></a>
 
 ### `started`
 
@@ -28,7 +28,7 @@ started: Vec<CollisionStarted>
 
 Contacts that began this frame.
 
-<a id="rustdoc-item-484"></a>
+<a id="rustdoc-item-641"></a>
 
 ### `stopped`
 
@@ -38,7 +38,7 @@ stopped: Vec<CollisionStopped>
 
 Contacts that ended this frame.
 
-<a id="rustdoc-item-485"></a>
+<a id="rustdoc-item-642"></a>
 
 ### `contact_forces`
 
@@ -50,7 +50,7 @@ The force of every contact that reported one this frame.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-487"></a>
+<a id="rustdoc-item-644"></a>
 
 ### `is_empty`
 
@@ -60,7 +60,7 @@ pub fn is_empty(self: &Self) -> bool;
 
 Whether nothing collided this frame.
 
-<a id="rustdoc-item-488"></a>
+<a id="rustdoc-item-645"></a>
 
 ### `clear`
 

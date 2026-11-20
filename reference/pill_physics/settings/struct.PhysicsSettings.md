@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-598"></a>
+<a id="rustdoc-item-799"></a>
 
 # Struct `pill_physics::settings::PhysicsSettings`
 
@@ -8,13 +8,13 @@
 pub struct PhysicsSettings;
 ```
 
-Source: `extensions\pill_physics\pill_physics\src\settings.rs:34`
+Source: `extensions\pill_physics\modules\runtime\src\settings.rs:34`
 
 The tuning of the simulation.
 
 ## Fields
 
-<a id="rustdoc-item-736"></a>
+<a id="rustdoc-item-973"></a>
 
 ### `gravity`
 
@@ -25,7 +25,7 @@ gravity: [f32; 3]
 World gravity in world units per second squared. The default is the
 earth's, pointing down.
 
-<a id="rustdoc-item-737"></a>
+<a id="rustdoc-item-974"></a>
 
 ### `fixed_timestep`
 
@@ -37,7 +37,7 @@ The length of one simulation step in seconds. Every step advances the
 world by exactly this much, so the same scene settles the same way at
 any frame rate.
 
-<a id="rustdoc-item-738"></a>
+<a id="rustdoc-item-975"></a>
 
 ### `max_substeps`
 
@@ -48,7 +48,7 @@ max_substeps: u32
 The most steps one frame may run, so a long frame cannot spiral into a
 longer one.
 
-<a id="rustdoc-item-739"></a>
+<a id="rustdoc-item-976"></a>
 
 ### `interpolate`
 
@@ -59,7 +59,7 @@ interpolate: bool
 Whether a body's drawn pose is blended between its last two steps. It
 smooths motion at frame rates that are not a multiple of the step rate.
 
-<a id="rustdoc-item-740"></a>
+<a id="rustdoc-item-977"></a>
 
 ### `debug_draw`
 

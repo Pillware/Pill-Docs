@@ -8,6 +8,6 @@
 pub(in frame) const PRODUCER_UNSET: u8 = 0;
 ```
 
-Visibility: `{'restricted': {'parent': 238, 'path': '::frame'}}` · Source: `extensions\pill_master_renderer\pill_master_renderer\src\frame.rs:65`
+Visibility: `{'restricted': {'parent': 238, 'path': '::frame'}}` · Source: `extensions\pill_master_renderer\modules\runtime\gpu\src\frame.rs:65`
 
 No frame has been filled since this image started.

@@ -8,7 +8,7 @@
 pub fn declaration_is_abi_entry_point(source: &str, mask: &[bool], declaration_start: usize) -> bool;
 ```
 
-Source: `hosting\pill_hot_scan\src\lib.rs:1053`
+Source: `hosting\pill_hot_scan\src\lib.rs:1080`
 
 Whether a declaration carries an attribute that makes it the module ABI's
 entry point.

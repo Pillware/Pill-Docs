@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-2333"></a>
+<a id="rustdoc-item-2407"></a>
 
 # Function `pill_development_host::hot_patch::worker::build_body`
 
@@ -8,7 +8,7 @@
 pub(in hot_patch::worker) fn build_body(body: &PreparedBody) -> Result<BuiltBody, super::PatchRefusal>;
 ```
 
-Visibility: `{'restricted': {'parent': 2334, 'path': '::hot_patch::worker'}}` · Source: `hosting\pill_development_host\src\hot_patch\worker.rs:152`
+Visibility: `{'restricted': {'parent': 2408, 'path': '::hot_patch::worker'}}` · Source: `hosting\pill_development_host\src\hot_patch\worker.rs:152`
 
 Runs the replayed compiler over one body and loads what it produces.
 

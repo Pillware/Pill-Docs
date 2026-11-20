@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-975"></a>
+<a id="rustdoc-item-997"></a>
 
 # Enum `pill_csharp_bridge::manifest_apply::Settlement`
 
@@ -18,7 +18,7 @@ and only the kind knows how its layouts compare.
 
 ## Variants
 
-<a id="rustdoc-item-1539"></a>
+<a id="rustdoc-item-1563"></a>
 
 ### `Unchanged`
 
@@ -28,7 +28,7 @@ Unchanged
 
 The live binding already describes the arriving declaration.
 
-<a id="rustdoc-item-1540"></a>
+<a id="rustdoc-item-1564"></a>
 
 ### `Reshaped`
 

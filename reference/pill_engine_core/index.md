@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-9376"></a>
+<a id="rustdoc-item-11230"></a>
 
 # pill_engine_core API reference
 
@@ -27,190 +27,234 @@ from one, the calling DLL passes it in. It must never depend on
 `pill_engine`.
 
 The module ABI is **Rust-to-Rust by design**: a loaded project or module
-receives an [`EngineApi`](api/struct.EngineApi.md#rustdoc-item-3) with a pointer to the host's engine, and calls
+receives an [`EngineApi`](abi/api/struct.EngineApi.md#rustdoc-item-3) with a pointer to the host's engine, and calls
 the typed API through it. There is no language-neutral plugin table; see
-[`api`](api/index.md#rustdoc-item-74) for why one would need a second copy of the whole API.
+[`api`](abi/api/index.md#rustdoc-item-74) for why one would need a second copy of the whole API.
 
 ## Module contents
 
 ### Modules
-- [`api`](api/index.md#rustdoc-item-74) — The engine API table a loaded project or module receives at its entry
-- [`archetype`](archetype/index.md#rustdoc-item-110) — Archetype-based component storage with structure-of-arrays layout.
-- [`asset`](asset/index.md#rustdoc-item-865) — Many-per-type asset storage addressed by generational handle.
-- [`asset_database`](asset_database/index.md#rustdoc-item-1241) — Every asset of a project by guid and by path, loaded or not.
-- [`asset_import_registry`](asset_import_registry/index.md#rustdoc-item-1318) — Importing assets by file extension, for code that does not know their type.
-- [`asset_loading`](asset_loading/index.md#rustdoc-item-1852) — Loading assets and scenes from game code by path.
-- [`asset_metadata`](asset_metadata/index.md#rustdoc-item-1859) — Metadata files beside an asset's source (`<source_file>.meta`).
-- [`asset_reference`](asset_reference/index.md#rustdoc-item-2153) — Saved references to assets, by guid, that point at the asset in a later
-- [`asset_standalone`](asset_standalone/index.md#rustdoc-item-2216) — Assets stored as their own file in `res`, with no source file.
-- [`asset_store`](asset_store/index.md#rustdoc-item-2228) — Where an asset's bytes come from: mounted packs and the filesystem.
-- [`commands`](commands/index.md#rustdoc-item-2476) — Deferred command queue for structural ECS mutations.
-- [`common_components`](common_components/index.md#rustdoc-item-2744) — Components the engine defines because more than one consumer needs them.
-- [`component`](component/index.md#rustdoc-item-2746) — Component trait, type identification, and change-detection primitives.
-- [`component_field`](component_field/index.md#rustdoc-item-3105) — Generic type-erased component field access for editor-style tools.
-- [`component_registry`](component_registry/index.md#rustdoc-item-3502) — Compile-time field layouts of components and value types, emitted by the
-- [`config`](config/index.md#rustdoc-item-3590) — The engine's tunable constants and the parallel-execution settings.
-- [`debug_draw`](debug_draw/index.md#rustdoc-item-3592) — Immediate debug drawing: lines, shapes, labels and gizmo handles. Any
-- [`diagnostics`](diagnostics/index.md#rustdoc-item-4005) — A periodic report of ECS state, switched on with
-- [`dynamic_buffer`](dynamic_buffer/index.md#rustdoc-item-4109) — Engine-owned native dynamic buffer, re-exported from `pill_core`.
-- [`engine`](engine/index.md#rustdoc-item-4158) — System registration, frame execution, and the parallel dispatch of
-- [`entity`](entity/index.md#rustdoc-item-4423) — Lightweight entity handles with generation-based invalidation.
-- [`error`](error/index.md#rustdoc-item-4998) — Typed error system for the ECS engine.
-- [`hot_patch`](hot_patch/index.md#rustdoc-item-5000) — Per-function hot patching: stable dispatch slots for registered systems.
-- [`input`](input/index.md#rustdoc-item-4306) — Keyboard, mouse and gamepad state maintained by the engine and read through
-- [`manager_settings`](manager_settings/index.md#rustdoc-item-8395) — Settings assets that configure manager resources: the bindings that point a
-- [`mirror`](mirror/index.md#rustdoc-item-6111) — The C ABI a mirrored Rust function crosses to reach C#: argument slots,
-- [`module_abi`](module_abi/index.md#rustdoc-item-6219) — The extension ABI revision the host and every module compare at load time.
-- [`persistence`](persistence/index.md#rustdoc-item-6349) — Component persistence and schema migration for hot-reload.
-- [`profiling`](profiling/index.md#rustdoc-item-6446) — Re-exports the profiling API from `pill_core`.
-- [`query`](query/index.md#rustdoc-item-6743) — Query system for efficient iteration over entities with specific components.
-- [`resource`](resource/index.md#rustdoc-item-1162) — Singleton resources stored in the [`World`], not attached to entities.
-- [`saved_references`](saved_references/index.md#rustdoc-item-7532) — The saved form of asset and entity references: a guid and a stable id, plus
-- [`scene`](scene/index.md#rustdoc-item-7769) — A scene: a world's entities, components and references as one standalone
-- [`scheduler`](scheduler/index.md#rustdoc-item-8013) — Dependency analysis and parallel batch scheduling for system execution.
-- [`scripting`](scripting/index.md#rustdoc-item-8097) — Script components: a component trait with an update step, and a context
-- [`settings`](settings/index.md#rustdoc-item-8477) — Manager settings: the settings asset a manager resource reads, its
-- [`startup_scene`](startup_scene/index.md#rustdoc-item-8506) — The startup scene: the `.scene` a project's settings name, loaded before
-- [`system`](system/index.md#rustdoc-item-8575) — How a plain function's parameters are pulled from the world so the function
-- [`time`](time/index.md#rustdoc-item-8578) — Frame timing maintained by the engine and read through `Res<Time>`.
-- [`type_names`](type_names/index.md#rustdoc-item-8625) — Type names as the rest of the engine sees them: `pill_engine::...` for the
-- [`world`](world/index.md#rustdoc-item-8658) — Central ECS state container - entities, archetypes, components, and
+- [`abi`](abi/index.md#rustdoc-item-241) — The ABI group: the API table a loaded DLL receives, the ABI revision both
+- [`assets`](assets/index.md#rustdoc-item-2016) — Many-per-type asset storage addressed by generational handle.
+- [`config`](config/index.md#rustdoc-item-2105) — The engine's tunable constants and the parallel-execution settings.
+- [`dynamic_buffer`](dynamic_buffer/index.md#rustdoc-item-2108) — Engine-owned native dynamic buffer, re-exported from `pill_core`.
+- [`ecs`](ecs/index.md#rustdoc-item-5660) — The ECS group: entities, components, resources, archetypes, the world and
+- [`engine`](engine/index.md#rustdoc-item-5715) — System registration, frame execution, and the parallel dispatch of
+- [`error`](error/index.md#rustdoc-item-6551) — Typed error system for the ECS engine.
+- [`hot_reload`](hot_reload/index.md#rustdoc-item-7005) — The hot-reload group: the dispatch slots a patch redirects, and the
+- [`reflection`](reflection/index.md#rustdoc-item-7580) — The reflection group: the field layouts the derive macros emit, the
+- [`scene`](scene/index.md#rustdoc-item-8102) — The scene group: a world saved as one file, the references inside it, and
+- [`services`](services/index.md#rustdoc-item-9965) — The services group: the clock and the input the frame was given, the debug
+- [`settings`](settings/index.md#rustdoc-item-10307) — The settings group: the settings asset a manager resource reads its tuning
+- [`systems`](systems/index.md#rustdoc-item-10946) — The systems group: how a function becomes a system, how the frame orders and
 
 ### Statics
-- [`PROFILED_ALLOCATOR`](static.PROFILED_ALLOCATOR.md#rustdoc-item-9173) — Tracy profiled allocator that reports every allocation in Tracy's memory
+- [`PROFILED_ALLOCATOR`](static.PROFILED_ALLOCATOR.md#rustdoc-item-10947) — Tracy profiled allocator that reports every allocation in Tracy's memory
 
 ## Re-exports
 
-- [`pub use api::EngineApi;`](api/struct.EngineApi.md#rustdoc-item-3)
-- [`pub use asset::Asset;`](asset/trait.Asset.md#rustdoc-item-716)
-- [`pub use asset::AssetBindingError;`](asset/enum.AssetBindingError.md#rustdoc-item-833)
-- [`pub use asset::AssetBindingResult;`](asset/type.AssetBindingResult.md#rustdoc-item-863)
-- [`pub use asset::AssetGuid;`](asset/struct.AssetGuid.md#rustdoc-item-974)
-- [`pub use asset::AssetLoadError;`](asset/enum.AssetLoadError.md#rustdoc-item-789)
-- [`pub use asset::AssetLoadResult;`](asset/type.AssetLoadResult.md#rustdoc-item-734)
-- [`pub use asset::AssetLoader;`](asset/enum.AssetLoader.md#rustdoc-item-726)
-- [`pub use asset::AssetManager;`](asset/struct.AssetManager.md#rustdoc-item-714)
-- [`pub use asset::Handle;`](asset/struct.Handle.md#rustdoc-item-869)
-- [`pub use asset_database::AssetDatabase;`](asset_database/struct.AssetDatabase.md#rustdoc-item-1244)
-- [`pub use asset_database::AssetRecord;`](asset_database/struct.AssetRecord.md#rustdoc-item-1168)
-- [`pub use asset_database::GuidConflict;`](asset_database/struct.GuidConflict.md#rustdoc-item-1205)
-- [`pub use asset_import_registry::AssetIdentity;`](asset_import_registry/struct.AssetIdentity.md#rustdoc-item-1403)
-- [`pub use asset_import_registry::ErasedImportError;`](asset_import_registry/enum.ErasedImportError.md#rustdoc-item-826)
-- [`pub use asset_import_registry::ErasedImportOutcome;`](asset_import_registry/struct.ErasedImportOutcome.md#rustdoc-item-1315)
-- [`pub use asset_import_registry::FieldDecorator;`](asset_import_registry/enum.FieldDecorator.md#rustdoc-item-1666)
-- [`pub use asset_import_registry::ImportRegistrationError;`](asset_import_registry/enum.ImportRegistrationError.md#rustdoc-item-1556)
-- [`pub use asset_import_registry::ImportRegistry;`](asset_import_registry/struct.ImportRegistry.md#rustdoc-item-1247)
-- [`pub use asset_import_registry::ScanReport;`](asset_import_registry/struct.ScanReport.md#rustdoc-item-1741)
-- [`pub use asset_loading::import_scene_document;`](asset_loading/fn.import_scene_document.md#rustdoc-item-1846)
-- [`pub use asset_loading::load_scene_asset;`](asset_loading/fn.load_scene_asset.md#rustdoc-item-1849)
-- [`pub use asset_loading::scene_database;`](asset_loading/fn.scene_database.md#rustdoc-item-1848)
-- [`pub use asset_metadata::AssetImport;`](asset_metadata/struct.AssetImport.md#rustdoc-item-1115)
-- [`pub use asset_metadata::AssetImportError;`](asset_metadata/enum.AssetImportError.md#rustdoc-item-829)
-- [`pub use asset_metadata::ImportOutcome;`](asset_metadata/struct.ImportOutcome.md#rustdoc-item-1116)
-- [`pub use asset_metadata::ImportedAsset;`](asset_metadata/trait.ImportedAsset.md#rustdoc-item-1117)
-- [`pub use asset_metadata::MetadataPolicy;`](asset_metadata/enum.MetadataPolicy.md#rustdoc-item-1392)
-- [`pub use asset_metadata::MetadataSource;`](asset_metadata/enum.MetadataSource.md#rustdoc-item-1310)
-- [`pub use asset_metadata::ReimportOutcome;`](asset_metadata/struct.ReimportOutcome.md#rustdoc-item-1122)
-- [`pub use asset_reference::AssetReference;`](asset_reference/struct.AssetReference.md#rustdoc-item-1302)
-- [`pub use asset_standalone::render_standalone;`](asset_standalone/fn.render_standalone.md#rustdoc-item-2214)
-- [`pub use asset_standalone::StandaloneAsset;`](asset_standalone/trait.StandaloneAsset.md#rustdoc-item-1130)
-- [`pub use commands::CommandError;`](error/enum.CommandError.md#rustdoc-item-2568)
-- [`pub use commands::Commands;`](commands/struct.Commands.md#rustdoc-item-2621)
-- [`pub use common_components::register_transform_component;`](common_components/fn.register_transform_component.md#rustdoc-item-2743)
-- [`pub use common_components::TransformComponent;`](common_components/struct.TransformComponent.md#rustdoc-item-2689)
-- [`pub use component::Component;`](component/trait.Component.md#rustdoc-item-494)
-- [`pub use component::ComponentId;`](component/enum.ComponentId.md#rustdoc-item-83)
-- [`pub use component::ComponentTicks;`](component/struct.ComponentTicks.md#rustdoc-item-535)
-- [`pub use component::Tick;`](component/struct.Tick.md#rustdoc-item-2758)
-- [`pub use component_field::ComponentFieldError;`](component_field/enum.ComponentFieldError.md#rustdoc-item-3164)
-- [`pub use component_field::FieldValue;`](component_field/enum.FieldValue.md#rustdoc-item-3110)
-- [`pub use debug_draw::DebugColor;`](debug_draw/type.DebugColor.md#rustdoc-item-3593)
-- [`pub use debug_draw::DebugDraw;`](debug_draw/struct.DebugDraw.md#rustdoc-item-3943)
-- [`pub use debug_draw::DebugFrame;`](debug_draw/struct.DebugFrame.md#rustdoc-item-3868)
-- [`pub use debug_draw::DebugLabel;`](debug_draw/struct.DebugLabel.md#rustdoc-item-3756)
-- [`pub use debug_draw::DebugLifetime;`](debug_draw/enum.DebugLifetime.md#rustdoc-item-3597)
-- [`pub use debug_draw::DebugLine;`](debug_draw/struct.DebugLine.md#rustdoc-item-3719)
-- [`pub use debug_draw::DebugStyle;`](debug_draw/struct.DebugStyle.md#rustdoc-item-3637)
-- [`pub use debug_draw::GizmoLine;`](debug_draw/struct.GizmoLine.md#rustdoc-item-3793)
-- [`pub use debug_draw::GizmoTriangle;`](debug_draw/struct.GizmoTriangle.md#rustdoc-item-3830)
-- [`pub use debug_draw::LabelAnchor;`](debug_draw/enum.LabelAnchor.md#rustdoc-item-3680)
+- [`pub use abi::api::EngineApi;`](abi/api/struct.EngineApi.md#rustdoc-item-3)
+- [`pub use abi::api;`](abi/api/index.md#rustdoc-item-74)
+- [`pub use abi::mirror;`](abi/mirror/index.md#rustdoc-item-115)
+- [`pub use abi::module_abi;`](abi/module_abi/index.md#rustdoc-item-240)
+- [`pub use assets::database::AssetDatabase;`](assets/database/struct.AssetDatabase.md#rustdoc-item-340)
+- [`pub use assets::database::AssetRecord;`](assets/database/struct.AssetRecord.md#rustdoc-item-246)
+- [`pub use assets::database::GuidConflict;`](assets/database/struct.GuidConflict.md#rustdoc-item-299)
+- [`pub use assets::import_registry::AssetIdentity;`](assets/import_registry/struct.AssetIdentity.md#rustdoc-item-514)
+- [`pub use assets::import_registry::ErasedImportError;`](assets/import_registry/enum.ErasedImportError.md#rustdoc-item-636)
+- [`pub use assets::import_registry::ErasedImportOutcome;`](assets/import_registry/struct.ErasedImportOutcome.md#rustdoc-item-422)
+- [`pub use assets::import_registry::FieldDecorator;`](assets/import_registry/enum.FieldDecorator.md#rustdoc-item-790)
+- [`pub use assets::import_registry::ImportRegistrationError;`](assets/import_registry/enum.ImportRegistrationError.md#rustdoc-item-679)
+- [`pub use assets::import_registry::ImportRegistry;`](assets/import_registry/struct.ImportRegistry.md#rustdoc-item-344)
+- [`pub use assets::import_registry::ScanReport;`](assets/import_registry/struct.ScanReport.md#rustdoc-item-867)
+- [`pub use assets::loading::import_scene_document;`](assets/loading/fn.import_scene_document.md#rustdoc-item-977)
+- [`pub use assets::loading::load_scene_asset;`](assets/loading/fn.load_scene_asset.md#rustdoc-item-980)
+- [`pub use assets::loading::scene_database;`](assets/loading/fn.scene_database.md#rustdoc-item-979)
+- [`pub use assets::metadata::AssetImport;`](assets/metadata/struct.AssetImport.md#rustdoc-item-1039)
+- [`pub use assets::metadata::AssetImportError;`](assets/metadata/enum.AssetImportError.md#rustdoc-item-510)
+- [`pub use assets::metadata::ImportOutcome;`](assets/metadata/struct.ImportOutcome.md#rustdoc-item-103)
+- [`pub use assets::metadata::ImportedAsset;`](assets/metadata/trait.ImportedAsset.md#rustdoc-item-94)
+- [`pub use assets::metadata::MetadataPolicy;`](assets/metadata/enum.MetadataPolicy.md#rustdoc-item-501)
+- [`pub use assets::metadata::MetadataSource;`](assets/metadata/enum.MetadataSource.md#rustdoc-item-105)
+- [`pub use assets::metadata::ReimportOutcome;`](assets/metadata/struct.ReimportOutcome.md#rustdoc-item-1139)
+- [`pub use assets::reference::AssetReference;`](assets/reference/struct.AssetReference.md#rustdoc-item-404)
+- [`pub use assets::standalone::render_standalone;`](assets/standalone/fn.render_standalone.md#rustdoc-item-1367)
+- [`pub use assets::standalone::StandaloneAsset;`](assets/standalone/trait.StandaloneAsset.md#rustdoc-item-96)
+- [`pub use assets::storage::Asset;`](assets/storage/trait.Asset.md#rustdoc-item-80)
+- [`pub use assets::storage::AssetBindingError;`](assets/storage/enum.AssetBindingError.md#rustdoc-item-1471)
+- [`pub use assets::storage::AssetBindingResult;`](assets/storage/type.AssetBindingResult.md#rustdoc-item-1501)
+- [`pub use assets::storage::AssetGuid;`](assets/storage/struct.AssetGuid.md#rustdoc-item-98)
+- [`pub use assets::storage::AssetLoadError;`](assets/storage/enum.AssetLoadError.md#rustdoc-item-634)
+- [`pub use assets::storage::AssetLoadResult;`](assets/storage/type.AssetLoadResult.md#rustdoc-item-505)
+- [`pub use assets::storage::AssetLoader;`](assets/storage/enum.AssetLoader.md#rustdoc-item-152)
+- [`pub use assets::storage::AssetManager;`](assets/storage/struct.AssetManager.md#rustdoc-item-77)
+- [`pub use assets::storage::Handle;`](assets/storage/struct.Handle.md#rustdoc-item-147)
+- [`pub use assets::database;`](assets/database/index.md#rustdoc-item-336)
+- [`pub use assets::document;`](assets/document/index.md#rustdoc-item-410)
+- [`pub use assets::import_registry;`](assets/import_registry/index.md#rustdoc-item-425)
+- [`pub use assets::loading;`](assets/loading/index.md#rustdoc-item-983)
+- [`pub use assets::metadata;`](assets/metadata/index.md#rustdoc-item-988)
+- [`pub use assets::reference;`](assets/reference/index.md#rustdoc-item-1301)
+- [`pub use assets::standalone;`](assets/standalone/index.md#rustdoc-item-1369)
+- [`pub use assets::storage;`](assets/storage/index.md#rustdoc-item-1503)
+- [`pub use assets::store;`](assets/store/index.md#rustdoc-item-1779)
+- [`pub use scene::saved_references;`](scene/saved_references/index.md#rustdoc-item-7628)
+- [`pub use scene::startup_scene;`](scene/startup_scene/index.md#rustdoc-item-8100)
+- [`pub use services::debug_draw;`](services/debug_draw/index.md#rustdoc-item-8104)
+- [`pub use services::diagnostics;`](services/diagnostics/index.md#rustdoc-item-8595)
+- [`pub use services::gizmos;`](services/gizmos/index.md#rustdoc-item-8697)
+- [`pub use services::input;`](services/input/index.md#rustdoc-item-6020)
+- [`pub use services::profiling;`](services/profiling/index.md#rustdoc-item-9915)
+- [`pub use services::time;`](services/time/index.md#rustdoc-item-9918)
+- [`pub use settings::manager_settings;`](settings/manager_settings/index.md#rustdoc-item-5560)
+- [`pub use hot_reload::hot_patch;`](hot_reload/hot_patch/index.md#rustdoc-item-6553)
+- [`pub use hot_reload::persistence;`](hot_reload/persistence/index.md#rustdoc-item-5453)
+- [`pub use ecs::commands::CommandError;`](error/enum.CommandError.md#rustdoc-item-2833)
+- [`pub use ecs::commands::Commands;`](ecs/commands/struct.Commands.md#rustdoc-item-2886)
+- [`pub use ecs::common_components::register_transform_component;`](ecs/common_components/fn.register_transform_component.md#rustdoc-item-3008)
+- [`pub use ecs::common_components::TransformComponent;`](ecs/common_components/struct.TransformComponent.md#rustdoc-item-2954)
+- [`pub use ecs::component::Component;`](ecs/component/trait.Component.md#rustdoc-item-2515)
+- [`pub use ecs::component::ComponentId;`](ecs/component/enum.ComponentId.md#rustdoc-item-2117)
+- [`pub use ecs::component::ComponentTicks;`](ecs/component/struct.ComponentTicks.md#rustdoc-item-2556)
+- [`pub use ecs::component::Tick;`](ecs/component/struct.Tick.md#rustdoc-item-3022)
+- [`pub use ecs::entity::Entity;`](ecs/entity/struct.Entity.md#rustdoc-item-2687)
+- [`pub use ecs::entity::EntityId;`](ecs/entity/struct.EntityId.md#rustdoc-item-3419)
+- [`pub use ecs::query::Added;`](ecs/query/filter/struct.Added.md#rustdoc-item-3538)
+- [`pub use ecs::query::BatchStats;`](ecs/query/iter/struct.BatchStats.md#rustdoc-item-3780)
+- [`pub use ecs::query::Changed;`](ecs/query/filter/struct.Changed.md#rustdoc-item-3479)
+- [`pub use ecs::query::Or;`](ecs/query/filter/struct.Or.md#rustdoc-item-3532)
+- [`pub use ecs::query::Query;`](ecs/query/query/struct.Query.md#rustdoc-item-3969)
+- [`pub use ecs::query::QueryFilter;`](ecs/query/filter/trait.QueryFilter.md#rustdoc-item-3537)
+- [`pub use ecs::query::QueryTarget;`](ecs/query/target/trait.QueryTarget.md#rustdoc-item-3019)
+- [`pub use ecs::query::ReadOnlyQueryTarget;`](ecs/query/target/trait.ReadOnlyQueryTarget.md#rustdoc-item-3416)
+- [`pub use ecs::query::Res;`](ecs/query/resource/struct.Res.md#rustdoc-item-1772)
+- [`pub use ecs::query::ResMut;`](ecs/query/resource/struct.ResMut.md#rustdoc-item-4124)
+- [`pub use ecs::query::With;`](ecs/query/filter/struct.With.md#rustdoc-item-3549)
+- [`pub use ecs::query::Without;`](ecs/query/filter/struct.Without.md#rustdoc-item-3555)
+- [`pub use ecs::resource::KeptLayoutDeclaration;`](ecs/resource/struct.KeptLayoutDeclaration.md#rustdoc-item-4583)
+- [`pub use ecs::resource::PlayState;`](ecs/resource/enum.PlayState.md#rustdoc-item-393)
+- [`pub use ecs::resource::ResHandle;`](ecs/resource/struct.ResHandle.md#rustdoc-item-4495)
+- [`pub use ecs::resource::Resource;`](ecs/resource/trait.Resource.md#rustdoc-item-395)
+- [`pub use ecs::resource::ResourceId;`](ecs/resource/enum.ResourceId.md#rustdoc-item-4447)
+- [`pub use ecs::resource::RestoreEpoch;`](ecs/resource/struct.RestoreEpoch.md#rustdoc-item-4306)
+- [`pub use ecs::archetype;`](ecs/archetype/index.md#rustdoc-item-2144)
+- [`pub use ecs::commands;`](ecs/commands/index.md#rustdoc-item-2741)
+- [`pub use ecs::common_components;`](ecs/common_components/index.md#rustdoc-item-3009)
+- [`pub use ecs::component;`](ecs/component/index.md#rustdoc-item-3011)
+- [`pub use ecs::entity;`](ecs/entity/index.md#rustdoc-item-3418)
+- [`pub use ecs::query;`](ecs/query/index.md#rustdoc-item-3772)
+- [`pub use ecs::resource;`](ecs/resource/index.md#rustdoc-item-4292)
+- [`pub use ecs::world;`](ecs/world/index.md#rustdoc-item-4727)
 - [`pub use engine::Engine;`](engine/struct.Engine.md#rustdoc-item-2)
-- [`pub use engine::SystemOwner;`](engine/struct.SystemOwner.md#rustdoc-item-4111)
-- [`pub use engine::SystemSnapshot;`](engine/struct.SystemSnapshot.md#rustdoc-item-4229)
-- [`pub use entity::Entity;`](entity/struct.Entity.md#rustdoc-item-669)
-- [`pub use entity::EntityId;`](entity/struct.EntityId.md#rustdoc-item-3298)
-- [`pub use error::EngineError;`](error/enum.EngineError.md#rustdoc-item-4612)
-- [`pub use error::SystemError;`](error/enum.SystemError.md#rustdoc-item-4320)
-- [`pub use error::SystemFailure;`](error/struct.SystemFailure.md#rustdoc-item-4268)
-- [`pub use hot_patch::HotPatchError;`](hot_patch/enum.HotPatchError.md#rustdoc-item-4315)
-- [`pub use hot_patch::HotPatchRegistry;`](hot_patch/struct.HotPatchRegistry.md#rustdoc-item-4285)
-- [`pub use hot_patch::HotSlot;`](hot_patch/struct.HotSlot.md#rustdoc-item-5096)
-- [`pub use hot_patch::PlainSlot;`](hot_patch/struct.PlainSlot.md#rustdoc-item-5172)
-- [`pub use input::ButtonState;`](input/enum.ButtonState.md#rustdoc-item-5489)
-- [`pub use input::GamepadAxis;`](input/enum.GamepadAxis.md#rustdoc-item-5635)
-- [`pub use input::GamepadButton;`](input/enum.GamepadButton.md#rustdoc-item-5590)
-- [`pub use input::Input;`](input/struct.Input.md#rustdoc-item-5802)
-- [`pub use input::InputEvent;`](input/enum.InputEvent.md#rustdoc-item-4308)
-- [`pub use input::KeyCode;`](input/enum.KeyCode.md#rustdoc-item-5246)
-- [`pub use input::Modifiers;`](input/struct.Modifiers.md#rustdoc-item-5761)
-- [`pub use input::MouseButton;`](input/enum.MouseButton.md#rustdoc-item-5531)
-- [`pub use input::PlayerId;`](input/enum.PlayerId.md#rustdoc-item-5243)
-- [`pub use input::RumbleRequest;`](input/struct.RumbleRequest.md#rustdoc-item-4310)
-- [`pub use input::ScrollDelta;`](input/enum.ScrollDelta.md#rustdoc-item-5723)
-- [`pub use manager_settings::ManagerSettingsApplied;`](manager_settings/struct.ManagerSettingsApplied.md#rustdoc-item-8180)
-- [`pub use manager_settings::ManagerSettingsFailure;`](manager_settings/struct.ManagerSettingsFailure.md#rustdoc-item-8218)
-- [`pub use manager_settings::ManagerSettingsReport;`](manager_settings/struct.ManagerSettingsReport.md#rustdoc-item-8254)
-- [`pub use manager_settings::ManagerSettingsSurface;`](manager_settings/struct.ManagerSettingsSurface.md#rustdoc-item-8296)
-- [`pub use manager_settings::MissingManagerSettings;`](manager_settings/struct.MissingManagerSettings.md#rustdoc-item-8141)
-- [`pub use persistence::PersistResourceManifestEntry;`](persistence/resources/struct.PersistResourceManifestEntry.md#rustdoc-item-6405)
-- [`pub use persistence::ResourceSnapshot;`](persistence/resources/struct.ResourceSnapshot.md#rustdoc-item-6365)
+- [`pub use engine::PlayRefusal;`](engine/struct.PlayRefusal.md#rustdoc-item-5866)
+- [`pub use engine::RunMode;`](engine/enum.RunMode.md#rustdoc-item-5302)
+- [`pub use engine::SystemOptions;`](engine/struct.SystemOptions.md#rustdoc-item-5911)
+- [`pub use engine::SystemOwner;`](engine/struct.SystemOwner.md#rustdoc-item-5662)
+- [`pub use engine::SystemSnapshot;`](engine/struct.SystemSnapshot.md#rustdoc-item-5791)
+- [`pub use error::EngineError;`](error/enum.EngineError.md#rustdoc-item-6186)
+- [`pub use error::SystemError;`](error/enum.SystemError.md#rustdoc-item-6033)
+- [`pub use error::SystemFailure;`](error/struct.SystemFailure.md#rustdoc-item-5972)
+- [`pub use hot_reload::hot_patch::HotPatchError;`](hot_reload/hot_patch/enum.HotPatchError.md#rustdoc-item-6028)
+- [`pub use hot_reload::hot_patch::HotPatchRegistry;`](hot_reload/hot_patch/struct.HotPatchRegistry.md#rustdoc-item-5992)
+- [`pub use hot_reload::hot_patch::HotSlot;`](hot_reload/hot_patch/struct.HotSlot.md#rustdoc-item-6649)
+- [`pub use hot_reload::hot_patch::PlainSlot;`](hot_reload/hot_patch/struct.PlainSlot.md#rustdoc-item-6725)
+- [`pub use hot_reload::persistence::PersistResourceManifestEntry;`](hot_reload/persistence/resources/struct.PersistResourceManifestEntry.md#rustdoc-item-5504)
+- [`pub use hot_reload::persistence::ResourceSnapshot;`](hot_reload/persistence/resources/struct.ResourceSnapshot.md#rustdoc-item-5500)
 - `pub use pill_core::DynamicBuffer;`
-- [`pub use query::Added;`](query/filter/struct.Added.md#rustdoc-item-6509)
-- [`pub use query::BatchStats;`](query/iter/struct.BatchStats.md#rustdoc-item-6751)
-- [`pub use query::Changed;`](query/filter/struct.Changed.md#rustdoc-item-6450)
-- [`pub use query::Or;`](query/filter/struct.Or.md#rustdoc-item-6503)
-- [`pub use query::Query;`](query/query/struct.Query.md#rustdoc-item-6939)
-- [`pub use query::QueryFilter;`](query/filter/trait.QueryFilter.md#rustdoc-item-6508)
-- [`pub use query::QueryTarget;`](query/target/trait.QueryTarget.md#rustdoc-item-2754)
-- [`pub use query::Res;`](query/resource/struct.Res.md#rustdoc-item-1163)
-- [`pub use query::ResMut;`](query/resource/struct.ResMut.md#rustdoc-item-7091)
-- [`pub use query::With;`](query/filter/struct.With.md#rustdoc-item-6520)
-- [`pub use query::Without;`](query/filter/struct.Without.md#rustdoc-item-6526)
-- [`pub use resource::KeptLayoutDeclaration;`](resource/struct.KeptLayoutDeclaration.md#rustdoc-item-7395)
-- [`pub use resource::ResHandle;`](resource/struct.ResHandle.md#rustdoc-item-7307)
-- [`pub use resource::Resource;`](resource/trait.Resource.md#rustdoc-item-715)
-- [`pub use resource::ResourceId;`](resource/enum.ResourceId.md#rustdoc-item-4505)
-- [`pub use saved_references::restore_asset_reference;`](saved_references/fn.restore_asset_reference.md#rustdoc-item-7609)
-- [`pub use saved_references::saved_reference;`](saved_references/fn.saved_reference.md#rustdoc-item-7608)
-- [`pub use saved_references::SavedAssetReference;`](saved_references/struct.SavedAssetReference.md#rustdoc-item-7489)
-- [`pub use saved_references::SavedEntityLink;`](saved_references/struct.SavedEntityLink.md#rustdoc-item-7616)
-- [`pub use saved_references::SavedEntityLinks;`](saved_references/struct.SavedEntityLinks.md#rustdoc-item-7651)
-- [`pub use saved_references::SavedReference;`](saved_references/enum.SavedReference.md#rustdoc-item-7569)
-- [`pub use scene::load_scene;`](scene/fn.load_scene.md#rustdoc-item-1854)
-- [`pub use scene::save_scene;`](scene/fn.save_scene.md#rustdoc-item-7813)
-- [`pub use scene::Scene;`](scene/struct.Scene.md#rustdoc-item-719)
-- [`pub use scene::SceneDocument;`](scene/struct.SceneDocument.md#rustdoc-item-1847)
-- [`pub use scene::SceneEntity;`](scene/struct.SceneEntity.md#rustdoc-item-7690)
-- [`pub use scene::SceneLoad;`](scene/struct.SceneLoad.md#rustdoc-item-1850)
-- [`pub use scene::SceneSave;`](scene/struct.SceneSave.md#rustdoc-item-7814)
-- [`pub use scheduler::SystemAccess;`](scheduler/struct.SystemAccess.md#rustdoc-item-2654)
-- [`pub use scheduler::SystemScheduler;`](scheduler/struct.SystemScheduler.md#rustdoc-item-4266)
-- [`pub use scheduler::TypeKey;`](scheduler/struct.TypeKey.md#rustdoc-item-7968)
-- [`pub use scripting::ScriptComponent;`](scripting/trait.ScriptComponent.md#rustdoc-item-8136)
-- [`pub use scripting::ScriptContext;`](scripting/struct.ScriptContext.md#rustdoc-item-8100)
-- [`pub use settings::SettingsAssetManager;`](settings/trait.SettingsAssetManager.md#rustdoc-item-7356)
-- [`pub use settings::SettingsAssetOps;`](settings/struct.SettingsAssetOps.md#rustdoc-item-7358)
-- [`pub use settings::SettingsOutcome;`](settings/enum.SettingsOutcome.md#rustdoc-item-8179)
-- [`pub use startup_scene::apply_startup_scene;`](startup_scene/fn.apply_startup_scene.md#rustdoc-item-8504)
-- [`pub use startup_scene::queue_startup_scene;`](startup_scene/fn.queue_startup_scene.md#rustdoc-item-8503)
-- [`pub use startup_scene::StartupScene;`](startup_scene/struct.StartupScene.md#rustdoc-item-7257)
-- [`pub use time::Time;`](time/struct.Time.md#rustdoc-item-6083)
+- [`pub use reflection::component_field::parse_enum_tag;`](reflection/component_field/fn.parse_enum_tag.md#rustdoc-item-7209)
+- [`pub use reflection::component_field::ComponentFieldError;`](reflection/component_field/enum.ComponentFieldError.md#rustdoc-item-5245)
+- [`pub use reflection::component_field::EnumFieldTag;`](reflection/component_field/struct.EnumFieldTag.md#rustdoc-item-7258)
+- [`pub use reflection::component_field::FieldValue;`](reflection/component_field/enum.FieldValue.md#rustdoc-item-5530)
+- [`pub use reflection::component_fields::ComponentFieldId;`](reflection/component_fields/trait.ComponentFieldId.md#rustdoc-item-7365)
+- [`pub use reflection::component_fields::ComponentFields;`](reflection/component_fields/trait.ComponentFields.md#rustdoc-item-7367)
+- [`pub use reflection::component_field;`](reflection/component_field/index.md#rustdoc-item-5515)
+- [`pub use reflection::component_fields;`](reflection/component_fields/index.md#rustdoc-item-7369)
+- [`pub use reflection::component_registry;`](reflection/component_registry/index.md#rustdoc-item-7368)
+- [`pub use reflection::type_names;`](reflection/type_names/index.md#rustdoc-item-7575)
+- [`pub use scene::saved_references::restore_asset_reference;`](scene/saved_references/fn.restore_asset_reference.md#rustdoc-item-7706)
+- [`pub use scene::saved_references::saved_reference;`](scene/saved_references/fn.saved_reference.md#rustdoc-item-7705)
+- [`pub use scene::saved_references::SavedAssetReference;`](scene/saved_references/struct.SavedAssetReference.md#rustdoc-item-7584)
+- [`pub use scene::saved_references::SavedEntityLink;`](scene/saved_references/struct.SavedEntityLink.md#rustdoc-item-7713)
+- [`pub use scene::saved_references::SavedEntityLinks;`](scene/saved_references/struct.SavedEntityLinks.md#rustdoc-item-7749)
+- [`pub use scene::saved_references::SavedReference;`](scene/saved_references/enum.SavedReference.md#rustdoc-item-7665)
+- [`pub use scene::scene::load_scene;`](scene/scene/fn.load_scene.md#rustdoc-item-7962)
+- [`pub use scene::scene::save_scene;`](scene/scene/fn.save_scene.md#rustdoc-item-7913)
+- [`pub use scene::scene::Scene;`](scene/scene/struct.Scene.md#rustdoc-item-1366)
+- [`pub use scene::scene::SceneDocument;`](scene/scene/struct.SceneDocument.md#rustdoc-item-978)
+- [`pub use scene::scene::SceneEntity;`](scene/scene/struct.SceneEntity.md#rustdoc-item-7788)
+- [`pub use scene::scene::SceneLoad;`](scene/scene/struct.SceneLoad.md#rustdoc-item-981)
+- [`pub use scene::scene::SceneSave;`](scene/scene/struct.SceneSave.md#rustdoc-item-7914)
+- [`pub use scene::startup_scene::apply_startup_scene;`](scene/startup_scene/fn.apply_startup_scene.md#rustdoc-item-8098)
+- [`pub use scene::startup_scene::queue_startup_scene;`](scene/startup_scene/fn.queue_startup_scene.md#rustdoc-item-8097)
+- [`pub use scene::startup_scene::StartupScene;`](scene/startup_scene/struct.StartupScene.md#rustdoc-item-4309)
+- [`pub use services::debug_draw::DebugColor;`](services/debug_draw/type.DebugColor.md#rustdoc-item-8105)
+- [`pub use services::debug_draw::DebugDraw;`](services/debug_draw/struct.DebugDraw.md#rustdoc-item-4313)
+- [`pub use services::debug_draw::DebugFrame;`](services/debug_draw/struct.DebugFrame.md#rustdoc-item-8461)
+- [`pub use services::debug_draw::DebugLabel;`](services/debug_draw/struct.DebugLabel.md#rustdoc-item-8268)
+- [`pub use services::debug_draw::DebugLifetime;`](services/debug_draw/enum.DebugLifetime.md#rustdoc-item-8109)
+- [`pub use services::debug_draw::DebugLine;`](services/debug_draw/struct.DebugLine.md#rustdoc-item-8231)
+- [`pub use services::debug_draw::DebugStyle;`](services/debug_draw/struct.DebugStyle.md#rustdoc-item-8149)
+- [`pub use services::debug_draw::GizmoLine;`](services/debug_draw/struct.GizmoLine.md#rustdoc-item-8305)
+- [`pub use services::debug_draw::GizmoPoint;`](services/debug_draw/struct.GizmoPoint.md#rustdoc-item-8379)
+- [`pub use services::debug_draw::GizmoPointShape;`](services/debug_draw/enum.GizmoPointShape.md#rustdoc-item-8380)
+- [`pub use services::debug_draw::GizmoTriangle;`](services/debug_draw/struct.GizmoTriangle.md#rustdoc-item-8342)
+- [`pub use services::debug_draw::LabelAnchor;`](services/debug_draw/enum.LabelAnchor.md#rustdoc-item-8192)
+- [`pub use services::gizmos::GizmoChrome;`](services/gizmos/enum.GizmoChrome.md#rustdoc-item-9028)
+- [`pub use services::gizmos::GizmoContext;`](services/gizmos/struct.GizmoContext.md#rustdoc-item-8747)
+- [`pub use services::gizmos::GizmoDeclaration;`](services/gizmos/struct.GizmoDeclaration.md#rustdoc-item-8877)
+- [`pub use services::gizmos::GizmoDraw;`](services/gizmos/struct.GizmoDraw.md#rustdoc-item-8821)
+- [`pub use services::gizmos::GizmoDrawEntry;`](services/gizmos/type.GizmoDrawEntry.md#rustdoc-item-8872)
+- [`pub use services::gizmos::GizmoEntry;`](services/gizmos/struct.GizmoEntry.md#rustdoc-item-8913)
+- [`pub use services::gizmos::GizmoFrame;`](services/gizmos/struct.GizmoFrame.md#rustdoc-item-8742)
+- [`pub use services::gizmos::GizmoRegistry;`](services/gizmos/struct.GizmoRegistry.md#rustdoc-item-4316)
+- [`pub use services::gizmos::GizmoSelection;`](services/gizmos/struct.GizmoSelection.md#rustdoc-item-4319)
+- [`pub use services::gizmos::GizmoWhen;`](services/gizmos/enum.GizmoWhen.md#rustdoc-item-8700)
+- [`pub use services::input::ButtonState;`](services/input/enum.ButtonState.md#rustdoc-item-9314)
+- [`pub use services::input::GamepadAxis;`](services/input/enum.GamepadAxis.md#rustdoc-item-9463)
+- [`pub use services::input::GamepadButton;`](services/input/enum.GamepadButton.md#rustdoc-item-9417)
+- [`pub use services::input::Input;`](services/input/struct.Input.md#rustdoc-item-4322)
+- [`pub use services::input::InputEvent;`](services/input/enum.InputEvent.md#rustdoc-item-6022)
+- [`pub use services::input::KeyCode;`](services/input/enum.KeyCode.md#rustdoc-item-9069)
+- [`pub use services::input::Modifiers;`](services/input/struct.Modifiers.md#rustdoc-item-9591)
+- [`pub use services::input::MouseButton;`](services/input/enum.MouseButton.md#rustdoc-item-9357)
+- [`pub use services::input::PlayerId;`](services/input/enum.PlayerId.md#rustdoc-item-9066)
+- [`pub use services::input::RumbleRequest;`](services/input/struct.RumbleRequest.md#rustdoc-item-6024)
+- [`pub use services::input::ScrollDelta;`](services/input/enum.ScrollDelta.md#rustdoc-item-9553)
+- [`pub use services::time::Time;`](services/time/struct.Time.md#rustdoc-item-4325)
+- [`pub use settings::manager_settings::ManagerSettingsApplied;`](settings/manager_settings/struct.ManagerSettingsApplied.md#rustdoc-item-10008)
+- [`pub use settings::manager_settings::ManagerSettingsFailure;`](settings/manager_settings/struct.ManagerSettingsFailure.md#rustdoc-item-10047)
+- [`pub use settings::manager_settings::ManagerSettingsReport;`](settings/manager_settings/struct.ManagerSettingsReport.md#rustdoc-item-5558)
+- [`pub use settings::manager_settings::ManagerSettingsSurface;`](settings/manager_settings/struct.ManagerSettingsSurface.md#rustdoc-item-5550)
+- [`pub use settings::manager_settings::MissingManagerSettings;`](settings/manager_settings/struct.MissingManagerSettings.md#rustdoc-item-5557)
+- [`pub use settings::settings::SettingsAssetManager;`](settings/settings/trait.SettingsAssetManager.md#rustdoc-item-4544)
+- [`pub use settings::settings::SettingsAssetOps;`](settings/settings/struct.SettingsAssetOps.md#rustdoc-item-4546)
+- [`pub use settings::settings::SettingsOutcome;`](settings/settings/enum.SettingsOutcome.md#rustdoc-item-5554)
+- [`pub use systems::scheduler::RunPhase;`](systems/scheduler/enum.RunPhase.md#rustdoc-item-5714)
+- [`pub use systems::scheduler::SystemAccess;`](systems/scheduler/struct.SystemAccess.md#rustdoc-item-2919)
+- [`pub use systems::scheduler::SystemScheduler;`](systems/scheduler/struct.SystemScheduler.md#rustdoc-item-5970)
+- [`pub use systems::scheduler::TypeKey;`](systems/scheduler/struct.TypeKey.md#rustdoc-item-10309)
+- [`pub use systems::scripting::CreateCause;`](systems/scripting/enum.CreateCause.md#rustdoc-item-4684)
+- [`pub use systems::scripting::CreateInfo;`](systems/scripting/struct.CreateInfo.md#rustdoc-item-4796)
+- [`pub use systems::scripting::DestroyCause;`](systems/scripting/enum.DestroyCause.md#rustdoc-item-4687)
+- [`pub use systems::scripting::DestroyInfo;`](systems/scripting/struct.DestroyInfo.md#rustdoc-item-4802)
+- [`pub use systems::scripting::ScriptComponent;`](systems/scripting/trait.ScriptComponent.md#rustdoc-item-5398)
+- [`pub use systems::scripting::ScriptContext;`](systems/scripting/struct.ScriptContext.md#rustdoc-item-4793)
+- [`pub use systems::scripting::StartCause;`](systems/scripting/enum.StartCause.md#rustdoc-item-4763)
+- [`pub use systems::scripting::StartInfo;`](systems/scripting/struct.StartInfo.md#rustdoc-item-4798)
+- [`pub use systems::scripting::StopCause;`](systems/scripting/enum.StopCause.md#rustdoc-item-10715)
+- [`pub use systems::scripting::StopInfo;`](systems/scripting/struct.StopInfo.md#rustdoc-item-4800)
+- [`pub use systems::scheduler;`](systems/scheduler/index.md#rustdoc-item-10356)
+- [`pub use systems::scripting;`](systems/scripting/index.md#rustdoc-item-10522)
+- [`pub use systems::system;`](systems/system/index.md#rustdoc-item-10945)
+- `pub use serde;`
 - `pub use serde::Deserialize;`
 - `pub use serde::Deserialize;`
 - `pub use serde::Serialize;`
 - `pub use serde::Serialize;`
 - `pub use trait_type_map;`
 - `pub use tracing;`
+- `pub use pill_engine_macros::asset;`
+- `pub use pill_engine_macros::component;`
 - `pub use pill_engine_macros::pill_hot;`
 - `pub use pill_engine_macros::pill_hot_fn;`
 - `pub use pill_engine_macros::pill_hot_resolver;`
@@ -222,19 +266,22 @@ the typed API through it. There is no language-neutral plugin table; see
 - `pub use pill_engine_macros::pill_module;`
 - `pub use pill_engine_macros::pill_project;`
 - `pub use pill_engine_macros::pill_value_type;`
+- `pub use pill_engine_macros::resource;`
+- `pub use pill_engine_macros::script;`
 - `pub use pill_engine_macros::system;`
 - `pub use pill_engine_macros::PillAsset;`
 - `pub use pill_engine_macros::PillComponent;`
 - `pub use pill_engine_macros::PillLayout;`
 - `pub use pill_engine_macros::PillMirror;`
 - `pub use pill_engine_macros::PillResource;`
-- [`pub use world::AddComponentError;`](error/enum.AddComponentError.md#rustdoc-item-4673)
-- [`pub use world::BuildError;`](error/enum.BuildError.md#rustdoc-item-4767)
-- [`pub use world::ColumnChunk;`](world/components/struct.ColumnChunk.md#rustdoc-item-8633)
-- [`pub use world::EntityBuilder;`](world/struct.EntityBuilder.md#rustdoc-item-2661)
-- [`pub use world::EntityRow;`](world/struct.EntityRow.md#rustdoc-item-8769)
-- [`pub use world::RemoveComponentError;`](error/enum.RemoveComponentError.md#rustdoc-item-4718)
-- [`pub use world::World;`](world/struct.World.md#rustdoc-item-2583)
+- [`pub use ecs::world::AddComponentError;`](error/enum.AddComponentError.md#rustdoc-item-4997)
+- [`pub use ecs::world::BuildError;`](error/enum.BuildError.md#rustdoc-item-4999)
+- [`pub use ecs::world::ChangeOrigin;`](ecs/world/change_origin/enum.ChangeOrigin.md#rustdoc-item-4682)
+- [`pub use ecs::world::ColumnChunk;`](ecs/world/components/struct.ColumnChunk.md#rustdoc-item-4733)
+- [`pub use ecs::world::EntityBuilder;`](ecs/world/struct.EntityBuilder.md#rustdoc-item-2926)
+- [`pub use ecs::world::EntityRow;`](ecs/world/struct.EntityRow.md#rustdoc-item-5102)
+- [`pub use ecs::world::RemoveComponentError;`](error/enum.RemoveComponentError.md#rustdoc-item-5001)
+- [`pub use ecs::world::World;`](ecs/world/struct.World.md#rustdoc-item-2848)
 - `pub use pill_core::profile_error;`
 - `pub use pill_core::profile_frame_mark;`
 - `pub use pill_core::profile_init;`

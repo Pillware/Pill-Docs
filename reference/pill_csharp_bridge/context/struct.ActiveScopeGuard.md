@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1073"></a>
+<a id="rustdoc-item-1095"></a>
 
 # Struct `pill_csharp_bridge::context::ActiveScopeGuard`
 
@@ -19,7 +19,7 @@ when managed execution unwinds through a panic.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-1074"></a>
+<a id="rustdoc-item-1096"></a>
 
 ### `install_scope_with_commands`
 
@@ -31,7 +31,7 @@ Publishes one scheduled system's world, command queue, component
 bindings, and declared access list for its synchronous managed
 callbacks.
 
-<a id="rustdoc-item-1075"></a>
+<a id="rustdoc-item-1097"></a>
 
 ### `install_exclusive_scope`
 
@@ -47,7 +47,7 @@ scope holds the world exclusively and needs no access list. That is why
 a startup method can take `Res<T>` / `ResMut<T>` parameters it never
 declared to a scheduler.
 
-<a id="rustdoc-item-1076"></a>
+<a id="rustdoc-item-1098"></a>
 
 ### `install_scope`
 

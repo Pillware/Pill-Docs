@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1468"></a>
+<a id="rustdoc-item-1543"></a>
 
 # Struct `pill_development_host::csharp::mirror_codegen::MirrorType`
 
@@ -8,14 +8,14 @@
 pub(in csharp) struct MirrorType;
 ```
 
-Visibility: `{'restricted': {'parent': 1331, 'path': '::csharp'}}` · Source: `hosting\pill_development_host\src\csharp\mirror_codegen.rs:62`
+Visibility: `{'restricted': {'parent': 1405, 'path': '::csharp'}}` · Source: `hosting\pill_development_host\src\csharp\mirror_codegen.rs:62`
 
 One type a module's signatures can name, with the C# declaration it maps
 to.
 
 ## Fields
 
-<a id="rustdoc-item-1466"></a>
+<a id="rustdoc-item-1541"></a>
 
 ### `kind`
 
@@ -25,7 +25,7 @@ kind: MirrorKind
 
 Which C# declaration it becomes.
 
-<a id="rustdoc-item-1467"></a>
+<a id="rustdoc-item-1542"></a>
 
 ### `csharp_name`
 

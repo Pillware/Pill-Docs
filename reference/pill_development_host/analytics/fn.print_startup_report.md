@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-437"></a>
+<a id="rustdoc-item-438"></a>
 
 # Function `pill_development_host::analytics::print_startup_report`
 
@@ -8,9 +8,9 @@
 pub(crate) fn print_startup_report();
 ```
 
-Visibility: `crate` · Source: `hosting\pill_development_host\src\analytics.rs:1241`
+Visibility: `crate` · Source: `hosting\pill_development_host\src\analytics.rs:1278`
 
 Print the full startup analytics report.
 
 Called once after every module (extension + project) has been built, staged,
-loaded and initialized. See [`render_startup_report`](fn.render_startup_report.md#rustdoc-item-436) for the layout.
+loaded and initialized. See [`render_startup_report`](fn.render_startup_report.md#rustdoc-item-437) for the layout.

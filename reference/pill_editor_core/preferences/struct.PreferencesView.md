@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-3516"></a>
+<a id="rustdoc-item-3805"></a>
 
 # Struct `pill_editor_core::preferences::PreferencesView`
 
@@ -8,7 +8,7 @@
 pub struct PreferencesView;
 ```
 
-Source: `editor\pill_editor_core\src\preferences.rs:174`
+Source: `editor\pill_editor_core\src\preferences.rs:180`
 
 The file's values as the tab shows them.
 
@@ -17,7 +17,7 @@ badges are drawn with, and the project's remembered gizmo entry.
 
 ## Fields
 
-<a id="rustdoc-item-6326"></a>
+<a id="rustdoc-item-8363"></a>
 
 ### `values`
 
@@ -27,7 +27,7 @@ values: std::collections::BTreeMap<String, String>
 
 One display string per editable field, keyed like the fields.
 
-<a id="rustdoc-item-6327"></a>
+<a id="rustdoc-item-8364"></a>
 
 ### `gizmo_icon_size`
 
@@ -39,7 +39,7 @@ The scene badges' icon size, in points. The shell draws with the number
 rather than with the row's text, so the view parses it from the same
 document the rows come from.
 
-<a id="rustdoc-item-6328"></a>
+<a id="rustdoc-item-8365"></a>
 
 ### `project`
 
@@ -49,7 +49,7 @@ project: Option<String>
 
 The project key the per-project entry is remembered under.
 
-<a id="rustdoc-item-6329"></a>
+<a id="rustdoc-item-8366"></a>
 
 ### `project_gizmo`
 
@@ -60,7 +60,7 @@ project_gizmo: crate::commands::GizmoProjectPreferences
 The project's remembered gizmo entry, as the file holds it. A file with
 no entry for this project leaves it at the defaults.
 
-<a id="rustdoc-item-6330"></a>
+<a id="rustdoc-item-8367"></a>
 
 ### `project_remembered`
 
@@ -72,7 +72,7 @@ Whether the file carries the project's entry at all.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-6331"></a>
+<a id="rustdoc-item-8368"></a>
 
 ### `from_document`
 
@@ -86,7 +86,7 @@ Builds the view from one parsed document.
 name the file does not hold leaves `project_gizmo` at its defaults and
 `project_remembered` false.
 
-<a id="rustdoc-item-6333"></a>
+<a id="rustdoc-item-8370"></a>
 
 ### `seed_buffers`
 
@@ -96,7 +96,7 @@ pub fn seed_buffers(self: &Self) -> BTreeMap<String, String>;
 
 Returns a copy of the rows the tab's draft buffers start from.
 
-<a id="rustdoc-item-6334"></a>
+<a id="rustdoc-item-8371"></a>
 
 ### `text`
 

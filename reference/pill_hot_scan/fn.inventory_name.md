@@ -8,7 +8,7 @@
 pub fn inventory_name(crate_name: &str, module_segments: &[String], function: &HotFunction) -> String;
 ```
 
-Source: `hosting\pill_hot_scan\src\lib.rs:1326`
+Source: `hosting\pill_hot_scan\src\lib.rs:1353`
 
 The name one function is registered and looked up under.
 

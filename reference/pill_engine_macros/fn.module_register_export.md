@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-439"></a>
+<a id="rustdoc-item-545"></a>
 
 # Function `pill_engine_macros::module_register_export`
 
@@ -8,7 +8,7 @@
 pub(crate) fn module_register_export(gate: &proc_macro2::TokenStream, register_fn: &proc_macro2::TokenStream) -> proc_macro2::TokenStream;
 ```
 
-Visibility: `crate` · Source: `engine\pill_engine_macros\src\lib.rs:3176`
+Visibility: `crate` · Source: `engine\pill_engine_macros\src\lib.rs:4287`
 
 Emit the registration-only entry point of an artifact that declares one.
 

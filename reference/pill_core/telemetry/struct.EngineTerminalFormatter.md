@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1817"></a>
+<a id="rustdoc-item-1827"></a>
 
 # Struct `pill_core::telemetry::EngineTerminalFormatter`
 
@@ -16,11 +16,11 @@ layers.
 Owns the line's appearance: severity colors, target styling, timestamps,
 file/line, and the message plus its structured fields. It adds that styling
 itself, so callsites write plain text. A message that carries its own colors
-(see [`log_block_colored`](fn.log_block_colored.md#rustdoc-item-1717)) keeps them only on a color-capable layer.
+(see [`log_block_colored`](fn.log_block_colored.md#rustdoc-item-1727)) keeps them only on a color-capable layer.
 
 ## Fields
 
-<a id="rustdoc-item-1816"></a>
+<a id="rustdoc-item-1826"></a>
 
 ### `timestamps_enabled`
 
@@ -32,7 +32,7 @@ _No documentation provided._
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-1818"></a>
+<a id="rustdoc-item-1828"></a>
 
 ### `new`
 
@@ -50,7 +50,7 @@ use pill_core::telemetry::EngineTerminalFormatter;
 let formatter = EngineTerminalFormatter::new();
 ```
 
-<a id="rustdoc-item-1819"></a>
+<a id="rustdoc-item-1829"></a>
 
 ### `without_timestamps`
 

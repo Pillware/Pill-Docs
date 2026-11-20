@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-355"></a>
+<a id="rustdoc-item-357"></a>
 
 # Struct `pill_project_ui::ThemeInstall`
 
@@ -8,7 +8,7 @@
 pub struct ThemeInstall;
 ```
 
-Source: `ui\pill_project_ui\src\lib.rs:409`
+Source: `ui\pill_project_ui\src\lib.rs:415`
 
 A project's UI theme: its code default and an optional override file.
 
@@ -18,7 +18,7 @@ states only the items it changes.
 
 ## Fields
 
-<a id="rustdoc-item-352"></a>
+<a id="rustdoc-item-354"></a>
 
 ### `base`
 
@@ -28,7 +28,7 @@ base: Theme
 
 The project's code default.
 
-<a id="rustdoc-item-353"></a>
+<a id="rustdoc-item-355"></a>
 
 ### `override_path`
 
@@ -40,7 +40,7 @@ A `.theme` override below `res`, when the project names one.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-356"></a>
+<a id="rustdoc-item-358"></a>
 
 ### `new`
 
@@ -50,7 +50,7 @@ pub fn new(base: Theme) -> Self;
 
 A theme install with no override file.
 
-<a id="rustdoc-item-357"></a>
+<a id="rustdoc-item-359"></a>
 
 ### `with_override`
 

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1272"></a>
+<a id="rustdoc-item-1261"></a>
 
 # Function `pill_master_renderer_data::assets::texture::load_shipped_texture`
 
@@ -8,7 +8,7 @@
 pub fn load_shipped_texture(path: &str, texture_type: TextureType) -> pill_engine::AssetLoadResult<Texture>;
 ```
 
-Source: `extensions\pill_master_renderer\pill_master_renderer_data\src\assets\texture.rs:484`
+Source: `extensions\pill_master_renderer\modules\runtime\data\src\assets\texture.rs:484`
 
 Decodes a texture the module ships, read from `path` under its `res` root.
 

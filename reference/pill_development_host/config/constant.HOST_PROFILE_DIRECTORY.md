@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-842"></a>
+<a id="rustdoc-item-849"></a>
 
 # Constant `pill_development_host::config::HOST_PROFILE_DIRECTORY`
 
@@ -8,7 +8,7 @@
 pub(in config) const HOST_PROFILE_DIRECTORY: &str = "debug";
 ```
 
-Visibility: `{'restricted': {'parent': 821, 'path': '::config'}}` · Source: `hosting\pill_development_host\src\config.rs:165`
+Visibility: `{'restricted': {'parent': 823, 'path': '::config'}}` · Source: `hosting\pill_development_host\src\config.rs:195`
 
 Cargo profile directory this host was compiled into, recorded by `build.rs`.
 

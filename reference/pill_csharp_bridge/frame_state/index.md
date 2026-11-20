@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1201"></a>
+<a id="rustdoc-item-1223"></a>
 
 # Module `pill_csharp_bridge::frame_state`
 
@@ -33,8 +33,8 @@ entry reports "not held".
 ## Module contents
 
 ### Functions
-- [`ffi_input_key_held`](fn.ffi_input_key_held.md#rustdoc-item-1196) — Reports whether the key with discriminant `key_discriminant` is held this
-- [`ffi_input_mouse_button_held`](fn.ffi_input_mouse_button_held.md#rustdoc-item-1197) — Reports whether the mouse button with discriminant
-- [`ffi_input_mouse_delta`](fn.ffi_input_mouse_delta.md#rustdoc-item-1198) — Writes the mouse movement since the previous frame to `out_x` and `out_y`
-- [`ffi_time_delta_seconds`](fn.ffi_time_delta_seconds.md#rustdoc-item-1199) — Returns the frame's time step in seconds, capped at the engine's maximum,
-- [`ffi_time_elapsed_seconds`](fn.ffi_time_elapsed_seconds.md#rustdoc-item-1200) — Returns the seconds since the project started, or `0.0` with no active
+- [`ffi_input_key_held`](fn.ffi_input_key_held.md#rustdoc-item-1218) — Reports whether the key with discriminant `key_discriminant` is held this
+- [`ffi_input_mouse_button_held`](fn.ffi_input_mouse_button_held.md#rustdoc-item-1219) — Reports whether the mouse button with discriminant
+- [`ffi_input_mouse_delta`](fn.ffi_input_mouse_delta.md#rustdoc-item-1220) — Writes the mouse movement since the previous frame to `out_x` and `out_y`
+- [`ffi_time_delta_seconds`](fn.ffi_time_delta_seconds.md#rustdoc-item-1221) — Returns the frame's time step in seconds, capped at the engine's maximum,
+- [`ffi_time_elapsed_seconds`](fn.ffi_time_elapsed_seconds.md#rustdoc-item-1222) — Returns the seconds since the project started, or `0.0` with no active

@@ -8,7 +8,7 @@
 pub(crate) fn value_type_encodings(ident: &syn::Ident) -> proc_macro2::TokenStream;
 ```
 
-Visibility: `crate` · Source: `engine\pill_engine_macros\src\mirror.rs:1505`
+Visibility: `crate` · Source: `engine\pill_engine_macros\src\mirror.rs:1529`
 
 The `MirrorValue` and `MirrorReturn` implementations of a value type.
 

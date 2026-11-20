@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-3122"></a>
+<a id="rustdoc-item-3257"></a>
 
 # Enum `pill_editor_core::editor_state::AssetKind`
 
@@ -8,7 +8,7 @@
 pub enum AssetKind { ... }
 ```
 
-Source: `editor\pill_editor_core\src\editor_state\mod.rs:330`
+Source: `editor\pill_editor_core\src\editor_state\mod.rs:378`
 
 What a listing row is: a folder, or the type the host's listing reported
 for the file.
@@ -19,7 +19,7 @@ a row, which would let Rename and Delete queue a move against a directory.
 
 ## Variants
 
-<a id="rustdoc-item-3119"></a>
+<a id="rustdoc-item-3254"></a>
 
 ### `Folder`
 
@@ -30,7 +30,7 @@ Folder
 A directory: the tree expands it, the grid opens it, and no toolbar
 action writes to it.
 
-<a id="rustdoc-item-3121"></a>
+<a id="rustdoc-item-3256"></a>
 
 ### `Type`
 
@@ -39,11 +39,11 @@ Type
 ```
 
 A file's type, as the host reported it: `Texture`, `file`, or a
-registered path like `pill_master_renderer::assets::Material`.
+registered path like `pill_master_renderer::Material`.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-3123"></a>
+<a id="rustdoc-item-3258"></a>
 
 ### `parse`
 
@@ -53,9 +53,9 @@ pub fn parse(label: &str) -> Self;
 
 Parses a listing label into the kind it names.
 
-[`FOLDER_KIND`](constant.FOLDER_KIND.md#rustdoc-item-2662) is the folder; any other label spells a type path.
+[`FOLDER_KIND`](constant.FOLDER_KIND.md#rustdoc-item-2796) is the folder; any other label spells a type path.
 
-<a id="rustdoc-item-3124"></a>
+<a id="rustdoc-item-3259"></a>
 
 ### `is_folder`
 
@@ -65,7 +65,7 @@ pub fn is_folder(self: &Self) -> bool;
 
 Returns whether the row is a directory.
 
-<a id="rustdoc-item-3125"></a>
+<a id="rustdoc-item-3260"></a>
 
 ### `text`
 
@@ -74,9 +74,9 @@ pub fn text(self: &Self) -> &str;
 ```
 
 Returns the label a dump, a scripted channel or a panel row prints:
-[`FOLDER_KIND`](constant.FOLDER_KIND.md#rustdoc-item-2662) or the type path.
+[`FOLDER_KIND`](constant.FOLDER_KIND.md#rustdoc-item-2796) or the type path.
 
-<a id="rustdoc-item-3126"></a>
+<a id="rustdoc-item-3261"></a>
 
 ### `type_leaf`
 

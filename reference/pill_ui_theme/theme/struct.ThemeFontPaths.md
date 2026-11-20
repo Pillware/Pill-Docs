@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-994"></a>
+<a id="rustdoc-item-1006"></a>
 
 # Struct `pill_ui_theme::theme::ThemeFontPaths`
 
@@ -18,7 +18,7 @@ user layer reads the file from disk.
 
 ## Fields
 
-<a id="rustdoc-item-991"></a>
+<a id="rustdoc-item-1003"></a>
 
 ### `body`
 
@@ -28,7 +28,7 @@ body: Option<String>
 
 The body font's path.
 
-<a id="rustdoc-item-992"></a>
+<a id="rustdoc-item-1004"></a>
 
 ### `display`
 
@@ -38,7 +38,7 @@ display: Option<String>
 
 The display font's path.
 
-<a id="rustdoc-item-993"></a>
+<a id="rustdoc-item-1005"></a>
 
 ### `monospace`
 
@@ -68,6 +68,7 @@ The monospace font's path.
 - `Pointable`
 - `OwoColorize`
 - `ErasedDestructor`
+- `Equivalent<K>`
 - `Clone`
 - `Debug`
 - `Default`

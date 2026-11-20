@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1335"></a>
+<a id="rustdoc-item-1410"></a>
 
 # Function `pill_development_host::csharp::codegen::value_type_namespaces`
 
@@ -8,7 +8,7 @@
 pub(in csharp::codegen) fn value_type_namespaces(module_name: &str, exposed: &[pill_csharp_bridge::ModuleExposedComponent], value_types: &[pill_engine::component_registry::PillValueTypeDescriptor]) -> std::collections::HashMap<String, String>;
 ```
 
-Visibility: `{'restricted': {'parent': 1288, 'path': '::csharp::codegen'}}` · Source: `hosting\pill_development_host\src\csharp\codegen.rs:950`
+Visibility: `{'restricted': {'parent': 1362, 'path': '::csharp::codegen'}}` · Source: `hosting\pill_development_host\src\csharp\codegen.rs:968`
 
 Works out the namespace of every value type before anything is written.
 

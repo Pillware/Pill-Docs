@@ -4,7 +4,7 @@
 
 # Module `pill_master_renderer_data::assets::mesh`
 
-Visibility: `{'restricted': {'parent': 248, 'path': '::assets'}}` · Source: `extensions\pill_master_renderer\pill_master_renderer_data\src\assets\mesh.rs:1`
+Visibility: `{'restricted': {'parent': 248, 'path': '::assets'}}` · Source: `extensions\pill_master_renderer\modules\runtime\data\src\assets\mesh.rs:1`
 
 Mesh assets: the vertices and indices the renderer draws, and the decoders
 that build them.
@@ -39,5 +39,5 @@ game never touches renderer state mid frame.
 - [`MeshVertex`](struct.MeshVertex.md#rustdoc-item-254) — One vertex of a mesh, in the layout of the vertex buffer.
 
 ### Functions
-- [`calculate_tangent_space`](fn.calculate_tangent_space.md#rustdoc-item-422) — Builds every vertex's tangent and bitangent from the mesh's triangles and
-- [`normalize_or_fallback`](fn.normalize_or_fallback.md#rustdoc-item-423) — Returns the vector scaled to length 1, or `fallback_axis` when the vector
+- [`calculate_tangent_space`](fn.calculate_tangent_space.md#rustdoc-item-419) — Builds every vertex's tangent and bitangent from the mesh's triangles and
+- [`normalize_or_fallback`](fn.normalize_or_fallback.md#rustdoc-item-420) — Returns the vector scaled to length 1, or `fallback_axis` when the vector

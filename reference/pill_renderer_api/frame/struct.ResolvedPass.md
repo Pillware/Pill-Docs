@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-546"></a>
+<a id="rustdoc-item-612"></a>
 
 # Struct `pill_renderer_api::frame::ResolvedPass`
 
@@ -25,7 +25,7 @@ here is therefore compared without anything else having to learn about it.
 
 ## Fields
 
-<a id="rustdoc-item-716"></a>
+<a id="rustdoc-item-785"></a>
 
 ### `name`
 
@@ -35,7 +35,7 @@ name: String
 
 Label used in logs, profiling and error messages.
 
-<a id="rustdoc-item-717"></a>
+<a id="rustdoc-item-786"></a>
 
 ### `shader`
 
@@ -49,7 +49,7 @@ Key of the shader the pass draws with.
 its own material names. A fullscreen or skybox pass with no shader is
 not drawn.
 
-<a id="rustdoc-item-718"></a>
+<a id="rustdoc-item-787"></a>
 
 ### `settings`
 
@@ -59,7 +59,7 @@ settings: PassSettings
 
 What the pass draws, where it writes, and how the draw is set up.
 
-<a id="rustdoc-item-719"></a>
+<a id="rustdoc-item-788"></a>
 
 ### `parameters`
 
@@ -69,7 +69,7 @@ parameters: std::collections::BTreeMap<String, MaterialParameter>
 
 Uniform parameters, packed exactly as a material packs its own.
 
-<a id="rustdoc-item-721"></a>
+<a id="rustdoc-item-790"></a>
 
 ### `inputs`
 
@@ -79,7 +79,7 @@ inputs: std::collections::BTreeMap<String, String>
 
 Offscreen targets the pass samples, by the texture slot they bind to.
 
-<a id="rustdoc-item-722"></a>
+<a id="rustdoc-item-791"></a>
 
 ### `textures`
 
@@ -92,7 +92,7 @@ they bind to. Each is an asset key, the same kind of key `shader` is.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-723"></a>
+<a id="rustdoc-item-792"></a>
 
 ### `builtin`
 
@@ -116,15 +116,15 @@ single-pass pipeline has the same shape.
 - `TryFrom<U>`
 - `Any`
 - `ToOwned`
+- `CastableFrom<ST, Uninit, Uninit>`
+- `CastableFrom<ST, Initialized, Initialized>`
+- `Read<Exclusive, BecauseExclusive>`
 - `Instrument`
 - `WithSubscriber`
 - `IntoEither`
 - `Pointable`
 - `OwoColorize`
 - `ErasedDestructor`
-- `CastableFrom<ST, Uninit, Uninit>`
-- `CastableFrom<ST, Initialized, Initialized>`
-- `Read<Exclusive, BecauseExclusive>`
 - `Clone`
 - `Debug`
 - `StructuralPartialEq`

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1322"></a>
+<a id="rustdoc-item-1363"></a>
 
 # Struct `pill_master_renderer::overlay::OverlayFrame`
 
@@ -8,13 +8,13 @@
 pub(crate) struct OverlayFrame<'a>;
 ```
 
-Visibility: `crate` · Source: `extensions\pill_master_renderer\pill_master_renderer\src\overlay\mod.rs:197`
+Visibility: `crate` · Source: `extensions\pill_master_renderer\modules\runtime\gpu\src\overlay\mod.rs:213`
 
 One surface's frame, as the overlay needs it.
 
 ## Fields
 
-<a id="rustdoc-item-1313"></a>
+<a id="rustdoc-item-1354"></a>
 
 ### `surface`
 
@@ -24,7 +24,7 @@ surface: u32
 
 The surface being drawn.
 
-<a id="rustdoc-item-1314"></a>
+<a id="rustdoc-item-1355"></a>
 
 ### `color_view`
 
@@ -34,7 +34,7 @@ color_view: &'a wgpu::TextureView
 
 The view the chain drew into.
 
-<a id="rustdoc-item-1315"></a>
+<a id="rustdoc-item-1356"></a>
 
 ### `depth_view`
 
@@ -44,7 +44,7 @@ depth_view: &'a wgpu::TextureView
 
 The depth the chain's geometry left.
 
-<a id="rustdoc-item-1316"></a>
+<a id="rustdoc-item-1357"></a>
 
 ### `viewport`
 
@@ -54,7 +54,7 @@ viewport: crate::components::RenderViewport
 
 The region the scene was drawn into.
 
-<a id="rustdoc-item-1317"></a>
+<a id="rustdoc-item-1358"></a>
 
 ### `camera`
 
@@ -64,7 +64,7 @@ camera: &'a crate::resources::RendererCamera
 
 The camera the surface was drawn through.
 
-<a id="rustdoc-item-1318"></a>
+<a id="rustdoc-item-1359"></a>
 
 ### `frame`
 
@@ -74,7 +74,7 @@ frame: &'a crate::frame::RenderFrame
 
 The frame.
 
-<a id="rustdoc-item-1319"></a>
+<a id="rustdoc-item-1360"></a>
 
 ### `render_queue`
 
@@ -84,7 +84,7 @@ render_queue: &'a [crate::render_queue::RenderQueueItem]
 
 The frame's queue: queue position is instance index.
 
-<a id="rustdoc-item-1320"></a>
+<a id="rustdoc-item-1361"></a>
 
 ### `instance_buffer`
 
@@ -94,7 +94,7 @@ instance_buffer: &'a wgpu::Buffer
 
 The instance buffer the chain drew from.
 
-<a id="rustdoc-item-1321"></a>
+<a id="rustdoc-item-1362"></a>
 
 ### `storage`
 

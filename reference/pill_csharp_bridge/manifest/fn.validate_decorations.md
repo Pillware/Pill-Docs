@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1460"></a>
+<a id="rustdoc-item-1484"></a>
 
 # Function `pill_csharp_bridge::manifest::validate_decorations`
 

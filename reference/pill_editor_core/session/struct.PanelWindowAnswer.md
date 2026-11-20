@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-7338"></a>
+<a id="rustdoc-item-9399"></a>
 
 # Struct `pill_editor_core::session::PanelWindowAnswer`
 
@@ -8,14 +8,14 @@
 pub struct PanelWindowAnswer;
 ```
 
-Source: `editor\pill_editor_core\src\session.rs:192`
+Source: `editor\pill_editor_core\src\session.rs:197`
 
 The answer a modal window took: Apply or Enter accepts, Cancel or Escape
 dismisses.
 
 ## Fields
 
-<a id="rustdoc-item-7335"></a>
+<a id="rustdoc-item-9396"></a>
 
 ### `window`
 
@@ -25,7 +25,7 @@ window: String
 
 The id of the window that was answered.
 
-<a id="rustdoc-item-7336"></a>
+<a id="rustdoc-item-9397"></a>
 
 ### `source`
 
@@ -35,7 +35,7 @@ source: String
 
 The crate that owns it.
 
-<a id="rustdoc-item-7337"></a>
+<a id="rustdoc-item-9398"></a>
 
 ### `accepted`
 

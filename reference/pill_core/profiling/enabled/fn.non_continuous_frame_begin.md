@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1360"></a>
+<a id="rustdoc-item-1370"></a>
 
 # Function `pill_core::profiling::enabled::non_continuous_frame_begin`
 

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1106"></a>
+<a id="rustdoc-item-1116"></a>
 
 # Function `pill_core::metrics::sanitize_plot_name`
 
@@ -8,7 +8,7 @@
 pub(in metrics) fn sanitize_plot_name(metric_name: &str) -> String;
 ```
 
-Visibility: `{'restricted': {'parent': 945, 'path': '::metrics'}}` · Source: `engine\pill_core\src\metrics.rs:242`
+Visibility: `{'restricted': {'parent': 955, 'path': '::metrics'}}` · Source: `engine\pill_core\src\metrics.rs:242`
 
 Turns a metric name into the name of its Tracy plot.
 

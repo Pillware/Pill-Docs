@@ -8,7 +8,7 @@
 pub(in frame) static UI_TEXTURES_REQUESTED: std::sync::atomic::AtomicBool = _;
 ```
 
-Visibility: `{'restricted': {'parent': 238, 'path': '::frame'}}` · Source: `extensions\pill_master_renderer\pill_master_renderer\src\frame.rs:62`
+Visibility: `{'restricted': {'parent': 238, 'path': '::frame'}}` · Source: `extensions\pill_master_renderer\modules\runtime\gpu\src\frame.rs:62`
 
 Whether this renderer image has already asked the UI producer to send its
 textures again.

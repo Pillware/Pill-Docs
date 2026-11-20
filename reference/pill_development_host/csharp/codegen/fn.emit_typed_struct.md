@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1325"></a>
+<a id="rustdoc-item-1399"></a>
 
 # Function `pill_development_host::csharp::codegen::emit_typed_struct`
 
@@ -8,7 +8,7 @@
 pub(in csharp::codegen) fn emit_typed_struct(name: &str, fields: &[pill_engine::component_registry::ComponentFieldDescriptor], size: usize, align: usize, value_types: &[pill_engine::component_registry::PillValueTypeDescriptor], emitted_structs: &mut Vec<EmittedStruct>, methods: &[pill_csharp_bridge::ResolvedMirrorMethod], qualified: &str, accessors: &[pill_csharp_bridge::ResolvedFieldAccessor], owner_type_name: &str, scope: &mirror_codegen::MirrorScope) -> Result<String, String>;
 ```
 
-Visibility: `{'restricted': {'parent': 1288, 'path': '::csharp::codegen'}}` · Source: `hosting\pill_development_host\src\csharp\codegen.rs:514`
+Visibility: `{'restricted': {'parent': 1362, 'path': '::csharp::codegen'}}` · Source: `hosting\pill_development_host\src\csharp\codegen.rs:514`
 
 Writes a typed C# struct from a compile-time field layout.
 

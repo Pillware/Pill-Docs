@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-383"></a>
+<a id="rustdoc-item-426"></a>
 
 # Struct `pill_editor_core::requests::ShellRequests`
 
@@ -14,7 +14,7 @@ The one-shot requests one shell pass raises for the editor executable.
 
 ## Fields
 
-<a id="rustdoc-item-6489"></a>
+<a id="rustdoc-item-8527"></a>
 
 ### `problem_open`
 
@@ -26,7 +26,7 @@ The Problems row a click asked to open, held as an index into the
 editor's problem list. Only the executable can turn the row into a
 `file:line` and open it.
 
-<a id="rustdoc-item-6490"></a>
+<a id="rustdoc-item-8528"></a>
 
 ### `history`
 
@@ -38,7 +38,7 @@ The undo and redo steps the menu bar asked for, oldest first. Each
 entry undoes or redoes one recorded step, and the executable applies
 them in the order they sit here.
 
-<a id="rustdoc-item-6492"></a>
+<a id="rustdoc-item-8530"></a>
 
 ### `pending_tab`
 
@@ -51,7 +51,7 @@ is re-docked by the executable rather than dropped.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-6493"></a>
+<a id="rustdoc-item-8531"></a>
 
 ### `drain`
 
@@ -65,7 +65,7 @@ One call, one boundary: the caller sees every request the pass raised
 and answers them all in one phase, so it cannot answer one request and
 silently leave another behind.
 
-<a id="rustdoc-item-6494"></a>
+<a id="rustdoc-item-8532"></a>
 
 ### `is_empty`
 

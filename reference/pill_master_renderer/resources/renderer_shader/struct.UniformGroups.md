@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-2689"></a>
+<a id="rustdoc-item-2728"></a>
 
 # Struct `pill_master_renderer::resources::renderer_shader::UniformGroups`
 
@@ -8,7 +8,7 @@
 pub struct UniformGroups;
 ```
 
-Source: `extensions\pill_master_renderer\pill_master_renderer\src\resources\renderer_shader.rs:353`
+Source: `extensions\pill_master_renderer\modules\runtime\gpu\src\resources\renderer_shader.rs:353`
 
 Says which of the renderer's shared uniform groups a shader reads.
 
@@ -18,7 +18,7 @@ say which group each one turns on.
 
 ## Fields
 
-<a id="rustdoc-item-2717"></a>
+<a id="rustdoc-item-2756"></a>
 
 ### `engine`
 
@@ -28,7 +28,7 @@ engine: bool
 
 The shader reads group 0, the engine's parameters.
 
-<a id="rustdoc-item-2718"></a>
+<a id="rustdoc-item-2757"></a>
 
 ### `camera`
 

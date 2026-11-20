@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1261"></a>
+<a id="rustdoc-item-1281"></a>
 
 # Function `pill_development_host::config::csharp_build_configuration`
 
@@ -8,10 +8,10 @@
 pub(in config) fn csharp_build_configuration() -> Result<&'static str, pill_core::error::ConfigError>;
 ```
 
-Visibility: `{'restricted': {'parent': 821, 'path': '::config'}}` · Source: `hosting\pill_development_host\src\config.rs:1572`
+Visibility: `{'restricted': {'parent': 823, 'path': '::config'}}` · Source: `hosting\pill_development_host\src\config.rs:1779`
 
 MSBuild configuration the managed project is built in, from
-[`CSHARP_CONFIGURATION_ENVIRONMENT_VARIABLE`](constant.CSHARP_CONFIGURATION_ENVIRONMENT_VARIABLE.md#rustdoc-item-826); `Release` when it is unset.
+[`CSHARP_CONFIGURATION_ENVIRONMENT_VARIABLE`](constant.CSHARP_CONFIGURATION_ENVIRONMENT_VARIABLE.md#rustdoc-item-828); `Release` when it is unset.
 
 The value is matched without regard to case but returned in MSBuild's own
 spelling, because the result also names the output directory the host loads

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-3913"></a>
+<a id="rustdoc-item-4170"></a>
 
 # Struct `pill_development_host::watchers::asset::AssetWatcher`
 
@@ -15,7 +15,7 @@ reports a batch.
 
 ## Fields
 
-<a id="rustdoc-item-4270"></a>
+<a id="rustdoc-item-4529"></a>
 
 ### `changes`
 
@@ -27,7 +27,7 @@ Queued changes, oldest first; at most one per source per batch.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-4272"></a>
+<a id="rustdoc-item-4531"></a>
 
 ### `spawn`
 
@@ -45,7 +45,7 @@ Returns `Ok(None)` when the directory does not exist: a project without
 Returns a [`WatcherError`] when the watcher or its worker thread cannot
 be created, or the directory cannot be registered for watching.
 
-<a id="rustdoc-item-4273"></a>
+<a id="rustdoc-item-4532"></a>
 
 ### `drain`
 

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-8469"></a>
+<a id="rustdoc-item-10532"></a>
 
 # Module `pill_editor_core::systems`
 
@@ -34,8 +34,8 @@ queue and apply at the frame boundary like every other editor edit.
 ## Module contents
 
 ### Functions
-- [`pause_button_label`](fn.pause_button_label.md#rustdoc-item-8467) — The Pause/Resume button's text for the engine's current pause state.
-- [`pause_toggle_command`](fn.pause_toggle_command.md#rustdoc-item-8468) — The pause toggle the Pause/Resume control queues: a `SetPaused` edit that
-- [`system_row_label`](fn.system_row_label.md#rustdoc-item-8464) — The row label for one system: `name (owner)`, marked `[ambiguous]` when
-- [`system_state_label`](fn.system_state_label.md#rustdoc-item-8465) — The state button's text for a system: `on` or `off`.
-- [`system_toggle`](fn.system_toggle.md#rustdoc-item-8466) — The recorded toggle a state button queues: a `SetSystemEnabled` edit
+- [`pause_button_label`](fn.pause_button_label.md#rustdoc-item-10530) — The Pause/Resume button's text for the engine's current pause state.
+- [`pause_toggle_command`](fn.pause_toggle_command.md#rustdoc-item-10531) — The pause toggle the Pause/Resume control queues: a `SetPaused` edit that
+- [`system_row_label`](fn.system_row_label.md#rustdoc-item-10527) — The row label for one system: `name (owner)`, marked `[ambiguous]` when
+- [`system_state_label`](fn.system_state_label.md#rustdoc-item-10528) — The state button's text for a system: `on` or `off`.
+- [`system_toggle`](fn.system_toggle.md#rustdoc-item-10529) — The recorded toggle a state button queues: a `SetSystemEnabled` edit

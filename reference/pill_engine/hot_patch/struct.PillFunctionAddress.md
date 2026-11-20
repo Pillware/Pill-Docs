@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-540"></a>
+<a id="rustdoc-item-694"></a>
 
 # Struct `pill_engine::hot_patch::PillFunctionAddress`
 
@@ -21,7 +21,7 @@ which is the fan-out a patch needs across artifacts.
 
 ## Fields
 
-<a id="rustdoc-item-537"></a>
+<a id="rustdoc-item-691"></a>
 
 ### `qualified_name`
 
@@ -33,7 +33,7 @@ The function's fully-qualified path: the crate, the module path, then
 the function's name - or `Type::method`, or `<Type as Trait>::method`
 for a method.
 
-<a id="rustdoc-item-538"></a>
+<a id="rustdoc-item-692"></a>
 
 ### `address`
 
@@ -46,7 +46,7 @@ The function's address in THIS artifact.
 A function pointer rather than a `usize` because casting a function to
 an integer is not permitted in the constant context that builds this.
 
-<a id="rustdoc-item-539"></a>
+<a id="rustdoc-item-693"></a>
 
 ### `signature`
 
@@ -65,7 +65,7 @@ refuses the patch when they differ.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-541"></a>
+<a id="rustdoc-item-695"></a>
 
 ### `find`
 
@@ -84,13 +84,13 @@ The build-script entry this artifact holds for `qualified_name`.
 - `TryInto<U>`
 - `TryFrom<U>`
 - `Any`
+- `CastableFrom<ST, Uninit, Uninit>`
+- `CastableFrom<ST, Initialized, Initialized>`
+- `Read<Exclusive, BecauseExclusive>`
 - `Instrument`
 - `WithSubscriber`
 - `IntoEither`
 - `Pointable`
 - `OwoColorize`
 - `ErasedDestructor`
-- `CastableFrom<ST, Uninit, Uninit>`
-- `CastableFrom<ST, Initialized, Initialized>`
-- `Read<Exclusive, BecauseExclusive>`
 - `Collect`

@@ -8,7 +8,7 @@
 pub fn write(text: &str) -> Result<(), String>;
 ```
 
-Source: `editor\pill_editor\src\clipboard.rs:92`
+Source: `editor\pill_editor\src\clipboard.rs:113`
 
 Puts `text` on the clipboard, in the editor's own format and as plain text.
 

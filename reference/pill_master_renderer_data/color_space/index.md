@@ -1,10 +1,10 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1311"></a>
+<a id="rustdoc-item-1300"></a>
 
 # Module `pill_master_renderer_data::color_space`
 
-Source: `extensions\pill_master_renderer\pill_master_renderer_data\src\color_space.rs:1`
+Source: `extensions\pill_master_renderer\modules\runtime\data\src\color_space.rs:1`
 
 The sRGB transfer curve the importer and the GPU module share.
 Converts colour channels between sRGB and linear light.
@@ -30,5 +30,5 @@ The UI painter's shader has its own WGSL version of the same curve.
 ## Module contents
 
 ### Functions
-- [`linear_to_srgb`](fn.linear_to_srgb.md#rustdoc-item-1310) — Converts one linear-light channel in `[0, 1]` to its sRGB encoding.
-- [`srgb_to_linear`](fn.srgb_to_linear.md#rustdoc-item-1309) — Converts one sRGB-encoded channel in `[0, 1]` to linear light.
+- [`linear_to_srgb`](fn.linear_to_srgb.md#rustdoc-item-1299) — Converts one linear-light channel in `[0, 1]` to its sRGB encoding.
+- [`srgb_to_linear`](fn.srgb_to_linear.md#rustdoc-item-1298) — Converts one sRGB-encoded channel in `[0, 1]` to linear light.

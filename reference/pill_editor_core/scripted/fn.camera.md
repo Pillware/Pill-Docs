@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-7171"></a>
+<a id="rustdoc-item-9229"></a>
 
 # Function `pill_editor_core::scripted::camera`
 
@@ -8,7 +8,7 @@
 pub(in scripted) fn camera(cursor: &mut Cursor<'_>) -> Result<ScriptedCommand, ParseError>;
 ```
 
-Visibility: `{'restricted': {'parent': 7129, 'path': '::scripted'}}` · Source: `editor\pill_editor_core\src\scripted.rs:917`
+Visibility: `{'restricted': {'parent': 9187, 'path': '::scripted'}}` · Source: `editor\pill_editor_core\src\scripted.rs:1051`
 
 `camera orbit|pan <dx> <dy>`, `camera dolly <dy>`, `camera zoom <lines>`.
 

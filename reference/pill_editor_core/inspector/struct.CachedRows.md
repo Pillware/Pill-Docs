@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-4893"></a>
+<a id="rustdoc-item-6856"></a>
 
 # Struct `pill_editor_core::inspector::CachedRows`
 
@@ -8,17 +8,17 @@
 pub struct CachedRows;
 ```
 
-Source: `editor\pill_editor_core\src\inspector.rs:703`
+Source: `editor\pill_editor_core\src\inspector.rs:707`
 
 One component's cached row model and the selection's write targets.
 
-The rows are rebuilt only when [`row_layout`](fn.row_layout.md#rustdoc-item-4892) changes, and the targets only
+The rows are rebuilt only when [`row_layout`](fn.row_layout.md#rustdoc-item-6855) changes, and the targets only
 when the selection's answer for this component changes. Both live in the
 shared session, so a shell reload keeps them.
 
 ## Fields
 
-<a id="rustdoc-item-4887"></a>
+<a id="rustdoc-item-6850"></a>
 
 ### `layout`
 
@@ -28,7 +28,7 @@ layout: Option<RowLayout>
 
 The layout the cached rows were built from.
 
-<a id="rustdoc-item-4889"></a>
+<a id="rustdoc-item-6852"></a>
 
 ### `rows`
 
@@ -38,7 +38,7 @@ rows: Vec<CachedRow>
 
 The rows, in field order, each with the lines it has already logged.
 
-<a id="rustdoc-item-4890"></a>
+<a id="rustdoc-item-6853"></a>
 
 ### `targets_stamp`
 
@@ -48,7 +48,7 @@ targets_stamp: Option<u64>
 
 The selection the cached targets were derived from.
 
-<a id="rustdoc-item-4891"></a>
+<a id="rustdoc-item-6854"></a>
 
 ### `targets`
 

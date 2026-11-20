@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-2286"></a>
+<a id="rustdoc-item-2328"></a>
 
 # Struct `pill_master_renderer::resources::renderer_camera::CameraParametersData`
 
@@ -8,7 +8,7 @@
 pub struct CameraParametersData;
 ```
 
-Source: `extensions\pill_master_renderer\pill_master_renderer\src\resources\renderer_camera.rs:55`
+Source: `extensions\pill_master_renderer\modules\runtime\gpu\src\resources\renderer_camera.rs:55`
 
 The camera values the shaders read, in the layout of the HLSL
 `CameraParams` constant buffer.
@@ -21,7 +21,7 @@ from the wrong place.
 
 ## Fields
 
-<a id="rustdoc-item-2282"></a>
+<a id="rustdoc-item-2324"></a>
 
 ### `position`
 
@@ -35,7 +35,7 @@ The shader declares three components, and the fourth is kept at zero:
 it is the padding that puts the matrix after it at the offset both
 sides expect.
 
-<a id="rustdoc-item-2284"></a>
+<a id="rustdoc-item-2326"></a>
 
 ### `view_projection_matrix`
 
@@ -46,7 +46,7 @@ view_projection_matrix: pill_core::math::Matrix4f
 The view and projection matrices combined, applied to world-space
 positions by the vertex shader.
 
-<a id="rustdoc-item-2285"></a>
+<a id="rustdoc-item-2327"></a>
 
 ### `inverse_view_projection_matrix`
 
@@ -54,13 +54,13 @@ positions by the vertex shader.
 inverse_view_projection_matrix: pill_core::math::Matrix4f
 ```
 
-The inverse of [`Self::view_projection_matrix`](#rustdoc-item-2284). It takes a clip-space
+The inverse of [`Self::view_projection_matrix`](#rustdoc-item-2326). It takes a clip-space
 point back to world space, which is how a skybox turns a pixel into the
 direction the camera looks along.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-2287"></a>
+<a id="rustdoc-item-2329"></a>
 
 ### `new`
 
@@ -74,7 +74,7 @@ matrices, which the first update replaces.
 `Default` calls this, so both ways of building the parameters agree on
 what "empty" means.
 
-<a id="rustdoc-item-2288"></a>
+<a id="rustdoc-item-2330"></a>
 
 ### `update_data`
 
@@ -90,7 +90,7 @@ the renderer actually draws into. Returns a description of every
 projection input that had to be replaced, or `None` when all of the
 component's values were usable.
 
-<a id="rustdoc-item-2289"></a>
+<a id="rustdoc-item-2331"></a>
 
 ### `calculate_view_matrix`
 
@@ -105,7 +105,7 @@ The rotation decides where forward points. A degenerate rotation would
 spread NaN values through every basis vector of the matrix, so it is
 replaced before this function uses it.
 
-<a id="rustdoc-item-2290"></a>
+<a id="rustdoc-item-2332"></a>
 
 ### `calculate_projection_matrix`
 

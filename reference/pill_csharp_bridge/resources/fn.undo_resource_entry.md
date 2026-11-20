@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-2031"></a>
+<a id="rustdoc-item-2056"></a>
 
 # Function `pill_csharp_bridge::resources::undo_resource_entry`
 
@@ -8,7 +8,7 @@
 pub(in resources) fn undo_resource_entry(engine: &mut pill_engine::Engine, undo: ResourceUndo);
 ```
 
-Visibility: `{'restricted': {'parent': 1993, 'path': '::resources'}}` · Source: `csharp\pill_csharp_bridge\src\resources.rs:497`
+Visibility: `{'restricted': {'parent': 2018, 'path': '::resources'}}` · Source: `csharp\pill_csharp_bridge\src\resources.rs:497`
 
 Moves a renamed resource's value back onto its predecessor, best effort.
 

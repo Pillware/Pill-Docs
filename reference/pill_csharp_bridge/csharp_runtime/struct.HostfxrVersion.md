@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1166"></a>
+<a id="rustdoc-item-1188"></a>
 
 # Struct `pill_csharp_bridge::csharp_runtime::HostfxrVersion`
 
@@ -8,13 +8,13 @@
 pub(in csharp_runtime) struct HostfxrVersion;
 ```
 
-Visibility: `{'restricted': {'parent': 1118, 'path': '::csharp_runtime'}}` · Source: `csharp\pill_csharp_bridge\src\csharp_runtime.rs:364`
+Visibility: `{'restricted': {'parent': 1140, 'path': '::csharp_runtime'}}` · Source: `csharp\pill_csharp_bridge\src\csharp_runtime.rs:364`
 
 One installed `hostfxr` candidate with its parsed version key.
 
 ## Fields
 
-<a id="rustdoc-item-1163"></a>
+<a id="rustdoc-item-1185"></a>
 
 ### `numeric_segments`
 
@@ -25,7 +25,7 @@ numeric_segments: Vec<u32>
 The numeric version parts, which are compared first when versions are
 ordered.
 
-<a id="rustdoc-item-1164"></a>
+<a id="rustdoc-item-1186"></a>
 
 ### `stable`
 
@@ -35,7 +35,7 @@ stable: bool
 
 Whether the version carries no prerelease suffix.
 
-<a id="rustdoc-item-1165"></a>
+<a id="rustdoc-item-1187"></a>
 
 ### `version_directory_path`
 

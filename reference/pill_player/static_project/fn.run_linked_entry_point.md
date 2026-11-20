@@ -1,14 +1,14 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-735"></a>
+<a id="rustdoc-item-740"></a>
 
 # Function `pill_player::static_project::run_linked_entry_point`
 
 ```rust
-pub(crate) fn run_linked_entry_point(engine: &mut pill_engine::Engine, init: fn (_: &mut pill_engine::Engine) -> u32, scope: Option<pill_engine::SystemOwner>, startup_scene: Option<&'static str>) -> Result<(), u32>;
+pub(crate) fn run_linked_entry_point(engine: &mut pill_engine::Engine, register: fn (_: &mut pill_engine::Engine) -> u32, init: fn (_: &mut pill_engine::Engine) -> u32, scope: Option<pill_engine::SystemOwner>, startup_scene: Option<&'static str>) -> Result<(), u32>;
 ```
 
-Visibility: `crate` · Source: `hosting\pill_player\src\static_project.rs:405`
+Visibility: `crate` · Source: `hosting\pill_player\src\static_project.rs:427`
 
 Run one linked entry point the way its generated ABI wrapper would.
 

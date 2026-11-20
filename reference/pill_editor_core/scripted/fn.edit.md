@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-7175"></a>
+<a id="rustdoc-item-9233"></a>
 
 # Function `pill_editor_core::scripted::edit`
 
@@ -8,7 +8,7 @@
 pub(in scripted) fn edit(cursor: &mut Cursor<'_>) -> Result<ScriptedCommand, ParseError>;
 ```
 
-Visibility: `{'restricted': {'parent': 7129, 'path': '::scripted'}}` · Source: `editor\pill_editor_core\src\scripted.rs:1068`
+Visibility: `{'restricted': {'parent': 9187, 'path': '::scripted'}}` · Source: `editor\pill_editor_core\src\scripted.rs:1206`
 
 `edit <target>` and its sub-grammars.
 

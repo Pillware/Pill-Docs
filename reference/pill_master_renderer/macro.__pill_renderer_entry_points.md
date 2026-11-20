@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-3143"></a>
+<a id="rustdoc-item-3180"></a>
 
 # Macro `pill_master_renderer::__pill_renderer_entry_points`
 
@@ -10,7 +10,7 @@ macro_rules! __pill_renderer_entry_points {
 }
 ```
 
-Source: `extensions\pill_master_renderer\pill_master_renderer\src\module_entry.rs:141`
+Source: `extensions\pill_master_renderer\modules\runtime\gpu\src\module_entry.rs:141`
 
 Expands to this crate's renderer ABI exports, `pill_renderer_attach` and
 `pill_renderer_detach`.

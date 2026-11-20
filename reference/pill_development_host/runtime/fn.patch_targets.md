@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-4223"></a>
+<a id="rustdoc-item-4481"></a>
 
 # Function `pill_development_host::runtime::patch_targets`
 
@@ -8,7 +8,7 @@
 pub(in runtime) fn patch_targets<'a>(loaded_project: &'a loaded::LoadedProject, extensions: &'a [slot::ExtensionSlot]) -> Vec<(&'a str, &'a crate::native_library::NativeLibrary)>;
 ```
 
-Visibility: `{'restricted': {'parent': 3859, 'path': '::runtime'}}` · Source: `hosting\pill_development_host\src\runtime.rs:3905`
+Visibility: `{'restricted': {'parent': 4115, 'path': '::runtime'}}` · Source: `hosting\pill_development_host\src\runtime.rs:4101`
 
 Every loaded artifact a plain-function patch must be offered to.
 

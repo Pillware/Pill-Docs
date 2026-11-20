@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-7585"></a>
+<a id="rustdoc-item-9647"></a>
 
 # Enum `pill_editor_core::session::MenubarSlot`
 
@@ -8,14 +8,14 @@
 pub enum MenubarSlot { ... }
 ```
 
-Source: `editor\pill_editor_core\src\session.rs:418`
+Source: `editor\pill_editor_core\src\session.rs:423`
 
 The slot a menu-bar rectangle is remembered under: the strip itself, or one
-title by its [`crate::menubar::Menu::ALL`](../menubar/enum.Menu.md#rustdoc-item-5399) index.
+title by its [`crate::menubar::Menu::ALL`](../menubar/enum.Menu.md#rustdoc-item-7362) index.
 
 ## Variants
 
-<a id="rustdoc-item-7582"></a>
+<a id="rustdoc-item-9643"></a>
 
 ### `Bar`
 
@@ -25,7 +25,7 @@ Bar
 
 The strip behind the titles.
 
-<a id="rustdoc-item-7584"></a>
+<a id="rustdoc-item-9645"></a>
 
 ### `Title`
 
@@ -33,7 +33,17 @@ The strip behind the titles.
 Title
 ```
 
-One menu title, by its index in [`crate::menubar::Menu::ALL`](../menubar/enum.Menu.md#rustdoc-item-5399).
+One menu title, by its index in [`crate::menubar::Menu::ALL`](../menubar/enum.Menu.md#rustdoc-item-7362).
+
+<a id="rustdoc-item-9646"></a>
+
+### `Toolbar`
+
+```rust
+Toolbar
+```
+
+The play controls, centred over the strip.
 
 ## Trait implementations
 

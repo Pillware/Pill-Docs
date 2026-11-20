@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-7170"></a>
+<a id="rustdoc-item-9228"></a>
 
 # Function `pill_editor_core::scripted::gizmo`
 
@@ -8,7 +8,7 @@
 pub(in scripted) fn gizmo(cursor: &mut Cursor<'_>) -> Result<ScriptedCommand, ParseError>;
 ```
 
-Visibility: `{'restricted': {'parent': 7129, 'path': '::scripted'}}` · Source: `editor\pill_editor_core\src\scripted.rs:872`
+Visibility: `{'restricted': {'parent': 9187, 'path': '::scripted'}}` · Source: `editor\pill_editor_core\src\scripted.rs:1006`
 
 `gizmo drag|press|release|<tool>`.
 

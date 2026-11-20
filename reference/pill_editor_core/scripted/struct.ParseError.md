@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-6855"></a>
+<a id="rustdoc-item-8909"></a>
 
 # Struct `pill_editor_core::scripted::ParseError`
 
@@ -8,13 +8,13 @@
 pub struct ParseError;
 ```
 
-Source: `editor\pill_editor_core\src\scripted.rs:523`
+Source: `editor\pill_editor_core\src\scripted.rs:578`
 
 Why a scripted line could not be parsed.
 
 ## Fields
 
-<a id="rustdoc-item-7127"></a>
+<a id="rustdoc-item-9185"></a>
 
 ### `reason`
 
@@ -27,7 +27,7 @@ needs.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-7128"></a>
+<a id="rustdoc-item-9186"></a>
 
 ### `new`
 

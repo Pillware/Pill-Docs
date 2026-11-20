@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1111"></a>
+<a id="rustdoc-item-1121"></a>
 
 # Static `pill_core::native_buffer::LIVE_BLOCKS`
 

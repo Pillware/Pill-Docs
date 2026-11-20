@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-242"></a>
+<a id="rustdoc-item-243"></a>
 
 # Function `pill_engine_macros::handle_type_argument`
 
@@ -8,6 +8,6 @@
 pub(crate) fn handle_type_argument(field_type: &syn::Type) -> Option<&syn::Type>;
 ```
 
-Visibility: `crate` · Source: `engine\pill_engine_macros\src\lib.rs:299`
+Visibility: `crate` · Source: `engine\pill_engine_macros\src\lib.rs:424`
 
 The `T` of a `Handle<T>` type, written with any path prefix.

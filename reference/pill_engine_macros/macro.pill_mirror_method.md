@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-404"></a>
+<a id="rustdoc-item-428"></a>
 
 # Procedural macro `pill_engine_macros::pill_mirror_method`
 
@@ -8,7 +8,7 @@
 proc_macro pill_mirror_method
 ```
 
-Source: `engine\pill_engine_macros\src\lib.rs:1825`
+Source: `engine\pill_engine_macros\src\lib.rs:2218`
 
 Marker attribute for functions inside a `#[pill_mirror_impl]` block.
 

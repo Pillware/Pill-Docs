@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1964"></a>
+<a id="rustdoc-item-2038"></a>
 
 # Function `pill_development_host::hot_patch::compile::touch`
 
@@ -8,7 +8,7 @@
 pub(in hot_patch::compile) fn touch(path: &std::path::Path) -> Result<(), String>;
 ```
 
-Visibility: `{'restricted': {'parent': 1910, 'path': '::hot_patch::compile'}}` · Source: `hosting\pill_development_host\src\hot_patch\compile.rs:661`
+Visibility: `{'restricted': {'parent': 1984, 'path': '::hot_patch::compile'}}` · Source: `hosting\pill_development_host\src\hot_patch\compile.rs:661`
 
 Updates a file's modification time without changing its contents.
 

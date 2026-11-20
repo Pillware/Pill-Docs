@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1924"></a>
+<a id="rustdoc-item-1998"></a>
 
 # Function `pill_development_host::hot_patch::compile::redirect_extern`
 
@@ -8,7 +8,7 @@
 pub(in hot_patch::compile) fn redirect_extern(extern_entry: &str, staged_dependencies: &std::path::Path) -> String;
 ```
 
-Visibility: `{'restricted': {'parent': 1910, 'path': '::hot_patch::compile'}}` · Source: `hosting\pill_development_host\src\hot_patch\compile.rs:625`
+Visibility: `{'restricted': {'parent': 1984, 'path': '::hot_patch::compile'}}` · Source: `hosting\pill_development_host\src\hot_patch\compile.rs:625`
 
 Points one `--extern name=path` entry at the artifact a patch can use.
 

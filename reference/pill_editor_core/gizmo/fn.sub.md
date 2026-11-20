@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-4188"></a>
+<a id="rustdoc-item-4715"></a>
 
 # Function `pill_editor_core::gizmo::sub`
 
@@ -8,6 +8,6 @@
 pub fn sub(left: [f32; 3], right: [f32; 3]) -> [f32; 3];
 ```
 
-Source: `editor\pill_editor_core\src\gizmo.rs:1245`
+Source: `editor\pill_editor_core\src\gizmo.rs:1588`
 
 `left - right`, per component.

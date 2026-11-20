@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-599"></a>
+<a id="rustdoc-item-596"></a>
 
 # Enum `pill_master_renderer::preview::PreviewMode`
 
@@ -8,13 +8,13 @@
 pub(crate) enum PreviewMode { ... }
 ```
 
-Visibility: `crate` · Source: `extensions\pill_master_renderer\pill_master_renderer\src\preview.rs:86`
+Visibility: `crate` · Source: `extensions\pill_master_renderer\modules\runtime\gpu\src\preview.rs:86`
 
 What the fragment shader draws, as the mode the parameters carry.
 
 ## Variants
 
-<a id="rustdoc-item-597"></a>
+<a id="rustdoc-item-594"></a>
 
 ### `Texture`
 
@@ -24,7 +24,7 @@ Texture
 
 A texture, fitted into the square.
 
-<a id="rustdoc-item-598"></a>
+<a id="rustdoc-item-595"></a>
 
 ### `Material`
 

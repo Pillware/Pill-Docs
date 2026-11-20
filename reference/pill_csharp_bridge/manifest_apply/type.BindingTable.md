@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1507"></a>
+<a id="rustdoc-item-1531"></a>
 
 # Type alias `pill_csharp_bridge::manifest_apply::BindingTable`
 

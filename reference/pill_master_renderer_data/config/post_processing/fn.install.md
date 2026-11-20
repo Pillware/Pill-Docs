@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1500"></a>
+<a id="rustdoc-item-1597"></a>
 
 # Function `pill_master_renderer_data::config::post_processing::install`
 
@@ -8,7 +8,7 @@
 pub fn install(assets: &mut pill_engine::AssetManager) -> Result<Vec<pill_engine::Handle<crate::assets::RenderPass>>, Box<dyn std::error::Error>>;
 ```
 
-Source: `extensions\pill_master_renderer\pill_master_renderer_data\src\config\post_processing\mod.rs:198`
+Source: `extensions\pill_master_renderer\modules\runtime\data\src\config\post_processing\mod.rs:198`
 
 Install the four post-processing passes.
 

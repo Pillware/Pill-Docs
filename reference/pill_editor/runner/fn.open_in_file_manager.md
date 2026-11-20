@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1557"></a>
+<a id="rustdoc-item-2061"></a>
 
 # Function `pill_editor::runner::open_in_file_manager`
 
@@ -8,7 +8,7 @@
 pub(in runner) fn open_in_file_manager(target: &std::path::Path);
 ```
 
-Visibility: `{'restricted': {'parent': 483, 'path': '::runner'}}` · Source: `editor\pill_editor\src\runner\mod.rs:4106`
+Visibility: `{'restricted': {'parent': 539, 'path': '::runner'}}` · Source: `editor\pill_editor\src\runner\mod.rs:4747`
 
 Ask the platform's file manager to show `target`: Windows and macOS select
 the file beside its siblings, and the FreeDesktop helper opens the folder

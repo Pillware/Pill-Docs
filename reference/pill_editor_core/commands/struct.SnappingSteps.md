@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1647"></a>
+<a id="rustdoc-item-1693"></a>
 
 # Struct `pill_editor_core::commands::SnappingSteps`
 
@@ -8,13 +8,13 @@
 pub struct SnappingSteps;
 ```
 
-Source: `editor\pill_editor_core\src\commands.rs:907`
+Source: `editor\pill_editor_core\src\commands.rs:924`
 
 Snapping steps the gizmo's drags use.
 
 ## Fields
 
-<a id="rustdoc-item-1695"></a>
+<a id="rustdoc-item-1741"></a>
 
 ### `translation`
 
@@ -24,7 +24,7 @@ translation: f32
 
 Translation step in world units.
 
-<a id="rustdoc-item-1696"></a>
+<a id="rustdoc-item-1742"></a>
 
 ### `rotation_degrees`
 
@@ -34,7 +34,7 @@ rotation_degrees: f32
 
 Rotation step in degrees.
 
-<a id="rustdoc-item-1697"></a>
+<a id="rustdoc-item-1743"></a>
 
 ### `scale`
 

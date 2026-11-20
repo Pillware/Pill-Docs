@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-5118"></a>
+<a id="rustdoc-item-7081"></a>
 
 # Function `pill_editor_core::inspector::patch_settings`
 
@@ -8,7 +8,7 @@
 pub fn patch_settings(document: &mut serde_json::Value, path: &[SettingsKey], value: serde_json::Value) -> Result<(), String>;
 ```
 
-Source: `editor\pill_editor_core\src\inspector.rs:1707`
+Source: `editor\pill_editor_core\src\inspector.rs:1742`
 
 Replace the settings leaf a key path names.
 

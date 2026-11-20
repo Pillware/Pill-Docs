@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-809"></a>
+<a id="rustdoc-item-811"></a>
 
 # Static `pill_development_host::build_runner::BATCH_VALIDATION`
 
@@ -8,7 +8,7 @@
 pub(in build_runner) static BATCH_VALIDATION: std::sync::OnceLock<std::sync::Mutex<Option<BatchValidation>>> = _;
 ```
 
-Visibility: `{'restricted': {'parent': 545, 'path': '::build_runner'}}` · Source: `hosting\pill_development_host\src\build_runner.rs:1972`
+Visibility: `{'restricted': {'parent': 546, 'path': '::build_runner'}}` · Source: `hosting\pill_development_host\src\build_runner.rs:1973`
 
 One startup batch invocation's validation, consumed per module.
 

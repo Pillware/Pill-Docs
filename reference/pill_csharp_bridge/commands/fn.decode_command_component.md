@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-724"></a>
+<a id="rustdoc-item-745"></a>
 
 # Function `pill_csharp_bridge::commands::decode_command_component`
 
@@ -8,7 +8,7 @@
 pub(in commands) fn decode_command_component(binding: super::components::ComponentBinding, blob_bytes: *const u8, blob_size: usize) -> Result<DecodedCommandComponent, String>;
 ```
 
-Visibility: `{'restricted': {'parent': 697, 'path': '::commands'}}` · Source: `csharp\pill_csharp_bridge\src\commands.rs:123`
+Visibility: `{'restricted': {'parent': 718, 'path': '::commands'}}` · Source: `csharp\pill_csharp_bridge\src\commands.rs:123`
 
 Check one component blob and copy it into the form the command queue takes
 for its binding.

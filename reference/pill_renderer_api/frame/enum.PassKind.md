@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-407"></a>
+<a id="rustdoc-item-470"></a>
 
 # Enum `pill_renderer_api::frame::PassKind`
 
@@ -14,7 +14,7 @@ What a pass draws.
 
 ## Variants
 
-<a id="rustdoc-item-404"></a>
+<a id="rustdoc-item-467"></a>
 
 ### `Geometry`
 
@@ -25,7 +25,7 @@ Geometry
 Draws the scene's meshes, one instanced batch for each shader, material
 and mesh.
 
-<a id="rustdoc-item-405"></a>
+<a id="rustdoc-item-468"></a>
 
 ### `Fullscreen`
 
@@ -36,7 +36,7 @@ Fullscreen
 Draws one fullscreen triangle, which is the shape a post-processing pass
 takes.
 
-<a id="rustdoc-item-406"></a>
+<a id="rustdoc-item-469"></a>
 
 ### `Skybox`
 
@@ -60,6 +60,9 @@ a view direction and samples a sky by it.
 - `TryFrom<U>`
 - `Any`
 - `ToOwned`
+- `CastableFrom<ST, Uninit, Uninit>`
+- `CastableFrom<ST, Initialized, Initialized>`
+- `Read<Exclusive, BecauseExclusive>`
 - `DeserializeOwned`
 - `Instrument`
 - `WithSubscriber`
@@ -67,9 +70,7 @@ a view direction and samples a sky by it.
 - `Pointable`
 - `OwoColorize`
 - `ErasedDestructor`
-- `CastableFrom<ST, Uninit, Uninit>`
-- `CastableFrom<ST, Initialized, Initialized>`
-- `Read<Exclusive, BecauseExclusive>`
+- `Equivalent<K>`
 - `Clone`
 - `Copy`
 - `Debug`

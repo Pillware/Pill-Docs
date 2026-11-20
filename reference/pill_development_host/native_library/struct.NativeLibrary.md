@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-2092"></a>
+<a id="rustdoc-item-2166"></a>
 
 # Struct `pill_development_host::native_library::NativeLibrary`
 
@@ -8,7 +8,7 @@
 pub(crate) struct NativeLibrary;
 ```
 
-Visibility: `crate` · Source: `hosting\pill_development_host\src\native_library.rs:608`
+Visibility: `crate` · Source: `hosting\pill_development_host\src\native_library.rs:877`
 
 Owns one loaded native library, either the project or an extension.
 
@@ -19,7 +19,7 @@ panic on a missing optional export.
 
 ## Fields
 
-<a id="rustdoc-item-3192"></a>
+<a id="rustdoc-item-3447"></a>
 
 ### `library`
 
@@ -29,7 +29,7 @@ library: Option<libloading::Library>
 
 Loaded module handle; keeps the native library mapped in memory.
 
-<a id="rustdoc-item-3193"></a>
+<a id="rustdoc-item-3448"></a>
 
 ### `declaration_baseline`
 
@@ -44,7 +44,7 @@ reloaded generation declares its own systems, resources and asset types
 and leaves the retired generation's - whose image the host keeps mapped
 - alone.
 
-<a id="rustdoc-item-3195"></a>
+<a id="rustdoc-item-3450"></a>
 
 ### `module_init`
 
@@ -54,7 +54,7 @@ module_init: unsafe extern "C" fn (_: *const pill_engine::EngineApi) -> u32
 
 Required registration entry point, resolved once at load time.
 
-<a id="rustdoc-item-3196"></a>
+<a id="rustdoc-item-3451"></a>
 
 ### `module_register`
 
@@ -67,7 +67,7 @@ Optional registration-only entry point, resolved once at load time.
 `None` means the artifact predates the split and must be called through
 `pill_module_init` on every generation.
 
-<a id="rustdoc-item-3197"></a>
+<a id="rustdoc-item-3452"></a>
 
 ### `abi_version`
 
@@ -77,7 +77,7 @@ abi_version: Option<u32>
 
 ABI revision the module reports, when it exports one.
 
-<a id="rustdoc-item-3198"></a>
+<a id="rustdoc-item-3453"></a>
 
 ### `value_type_count`
 
@@ -88,7 +88,7 @@ value_type_count: Option<unsafe extern "C" fn () -> u32>
 Optional value-type manifest exports (`#[derive(PillMirror)]`), used by
 the C# mirror codegen to resolve nested struct tags.
 
-<a id="rustdoc-item-3199"></a>
+<a id="rustdoc-item-3454"></a>
 
 ### `copy_value_types`
 
@@ -98,7 +98,7 @@ copy_value_types: Option<unsafe extern "C" fn (_: *mut pill_engine::component_re
 
 _No documentation provided._
 
-<a id="rustdoc-item-3200"></a>
+<a id="rustdoc-item-3455"></a>
 
 ### `mirror_method_count`
 
@@ -109,7 +109,7 @@ mirror_method_count: Option<unsafe extern "C" fn () -> u32>
 Optional mirrored-method manifest exports (`#[pill_mirror_impl]`),
 used by the C# mirror codegen and runtime method table.
 
-<a id="rustdoc-item-3201"></a>
+<a id="rustdoc-item-3456"></a>
 
 ### `copy_mirror_methods`
 
@@ -119,7 +119,7 @@ copy_mirror_methods: Option<unsafe extern "C" fn (_: *mut pill_engine::component
 
 _No documentation provided._
 
-<a id="rustdoc-item-3202"></a>
+<a id="rustdoc-item-3457"></a>
 
 ### `field_accessor_count`
 
@@ -131,7 +131,7 @@ Optional heap-field accessor manifest exports (`#[derive(PillComponent)]`
 components with `Vec`/`String` fields), used by the C# mirror codegen
 and the managed runtime's method table.
 
-<a id="rustdoc-item-3203"></a>
+<a id="rustdoc-item-3458"></a>
 
 ### `copy_field_accessors`
 
@@ -141,7 +141,7 @@ copy_field_accessors: Option<unsafe extern "C" fn (_: *mut pill_engine::componen
 
 _No documentation provided._
 
-<a id="rustdoc-item-3204"></a>
+<a id="rustdoc-item-3459"></a>
 
 ### `temporary_path`
 
@@ -153,7 +153,7 @@ Temporary copy backing this library; deleted when the library drops.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-3211"></a>
+<a id="rustdoc-item-3466"></a>
 
 ### `load_copy`
 
@@ -173,7 +173,7 @@ export `pill_module_init`. A load failure is then re-stated as
 [`LibraryError::MissingImport`] or [`LibraryError::EngineDylibMismatch`]
 when the gathered evidence supports one of those answers.
 
-<a id="rustdoc-item-3212"></a>
+<a id="rustdoc-item-3467"></a>
 
 ### `abi_version`
 
@@ -186,7 +186,7 @@ ABI revision reported by the module, when it exports one.
 `None` means the library predates the versioned contract; the caller
 decides whether that is acceptable for its module kind.
 
-<a id="rustdoc-item-3213"></a>
+<a id="rustdoc-item-3468"></a>
 
 ### `fetch_descriptors`
 
@@ -201,7 +201,7 @@ accessors) follows the same shape: a count export, then a copy export
 filling a host-owned buffer of that many slots and answering how many
 it wrote. The one `unsafe` call pair that protocol needs lives here.
 
-<a id="rustdoc-item-3214"></a>
+<a id="rustdoc-item-3469"></a>
 
 ### `value_type_descriptors`
 
@@ -215,7 +215,7 @@ Empty when the artifact predates the exports or declares no value
 types. The returned descriptors reference static data inside this
 loaded library, which stays mapped for the library's lifetime.
 
-<a id="rustdoc-item-3215"></a>
+<a id="rustdoc-item-3470"></a>
 
 ### `mirror_methods`
 
@@ -234,7 +234,7 @@ is skipped, so a broken descriptor never gives C# a callable that points
 at nothing. A type row without an address (an enum's or a resource's) is
 kept, because the codegen needs it.
 
-<a id="rustdoc-item-3216"></a>
+<a id="rustdoc-item-3471"></a>
 
 ### `field_accessors`
 
@@ -253,7 +253,7 @@ failed is skipped, so the host never publishes a row that cannot be
 called. Checking which operations a mirror really needs is left to the
 codegen, which knows the field's kind.
 
-<a id="rustdoc-item-3217"></a>
+<a id="rustdoc-item-3472"></a>
 
 ### `load`
 
@@ -273,7 +273,7 @@ engine dylibs staged beside it.
 `path` must point to a valid native library whose `pill_module_init`
 export uses the expected C ABI.
 
-<a id="rustdoc-item-3219"></a>
+<a id="rustdoc-item-3474"></a>
 
 ### `call_register`
 
@@ -284,10 +284,10 @@ pub(crate) fn call_register(self: &Self, api: &EngineApi) -> Option<u32>;
 Calls the registration-only entry point, when the artifact exports one.
 
 Returns `None` when it does not: the caller then has to use
-[`Self::call_init`](#rustdoc-item-3218) and accept that the artifact's one-time work runs
+[`Self::call_init`](#rustdoc-item-3473) and accept that the artifact's one-time work runs
 again.
 
-<a id="rustdoc-item-3218"></a>
+<a id="rustdoc-item-3473"></a>
 
 ### `call_init`
 
@@ -301,7 +301,7 @@ Returns the module's status code. Zero means registration succeeded.
 Any other value means the module failed to initialize, so the caller
 must keep the previous generation active.
 
-<a id="rustdoc-item-3222"></a>
+<a id="rustdoc-item-3477"></a>
 
 ### `check_module_abi`
 
@@ -323,7 +323,7 @@ versioned.
 Returns [`ModuleError::AbiVersionMismatch`] when the revisions differ,
 and [`ModuleError::AbiVersionMissing`] when the export is absent.
 
-<a id="rustdoc-item-3224"></a>
+<a id="rustdoc-item-3479"></a>
 
 ### `resolve_export`
 
@@ -345,7 +345,7 @@ growing a field for every such module.
 `T` must be the export's exact function-pointer type. The pointer is
 valid only while this library stays mapped.
 
-<a id="rustdoc-item-3225"></a>
+<a id="rustdoc-item-3480"></a>
 
 ### `install_plain_function`
 
@@ -366,7 +366,7 @@ Returns `Ok(true)` when this artifact installed the replacement. Returns
 library built before this ABI that exports no resolver at all. Returns
 `Err` when the artifact refused because the signature no longer matches.
 
-<a id="rustdoc-item-3226"></a>
+<a id="rustdoc-item-3481"></a>
 
 ### `extent_coverage`
 
@@ -383,7 +383,7 @@ this turns a refusal into a diagnosis: it shows whether the one function
 happens to be a leaf, or whether nothing in the artifact is reachable by
 that route. Returns `None` when the artifact exports no such report.
 
-<a id="rustdoc-item-3227"></a>
+<a id="rustdoc-item-3482"></a>
 
 ### `function_address`
 
@@ -404,7 +404,7 @@ rather than treating it as nothing to verify.
 Returns `None` when the artifact exports no address resolver or has no
 entry for the name.
 
-<a id="rustdoc-item-3228"></a>
+<a id="rustdoc-item-3483"></a>
 
 ### `reset_plain_function`
 
@@ -414,7 +414,7 @@ pub(crate) fn reset_plain_function(self: &Self, qualified_name: &str) -> Result<
 
 Returns this artifact's copy of one `#[pill_hot_fn]` to its own body.
 
-This is the counterpart of [`Self::install_plain_function`](#rustdoc-item-3225), and it is
+This is the counterpart of [`Self::install_plain_function`](#rustdoc-item-3480), and it is
 what a rollback uses: each artifact restores the code it was compiled
 with, instead of being handed an address that belongs to another image.
 

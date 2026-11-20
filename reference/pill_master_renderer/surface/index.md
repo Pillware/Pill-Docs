@@ -1,10 +1,10 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-2900"></a>
+<a id="rustdoc-item-2937"></a>
 
 # Module `pill_master_renderer::surface`
 
-Visibility: `crate` · Source: `extensions\pill_master_renderer\pill_master_renderer\src\surface.rs:1`
+Visibility: `crate` · Source: `extensions\pill_master_renderer\modules\runtime\gpu\src\surface.rs:1`
 
 The window surface, its swapchain, and the lifecycle that keeps them live.
 The window surface and the swapchain lifecycle it carries.
@@ -36,18 +36,18 @@ winit frontend (the standalone host, the editor) attach this renderer.
 ## Module contents
 
 ### Structs
-- [`Surface`](struct.Surface.md#rustdoc-item-1915) — A window's swapchain, its configuration, and the colour format its
+- [`Surface`](struct.Surface.md#rustdoc-item-1958) — A window's swapchain, its configuration, and the colour format its
 
 ### Functions
-- [`alpha_mode_candidates`](fn.alpha_mode_candidates.md#rustdoc-item-2954) — The alpha modes to try, in order: the requested one, then `Opaque`.
-- [`apply_and_probe`](fn.apply_and_probe.md#rustdoc-item-2955) — Configures the surface and acquires a frame from it.
-- [`configuration_attempt_failure`](fn.configuration_attempt_failure.md#rustdoc-item-2956) — Why one configuration attempt failed, or `None` when it succeeded: a
-- [`configure`](fn.configure.md#rustdoc-item-2910) — Reconfigures the surface during a frame (on a resize, or for a lost
-- [`configure_first`](fn.configure_first.md#rustdoc-item-2951) — Configures the surface for the first time, giving up the compositing alpha
-- [`pick_alpha_mode`](fn.pick_alpha_mode.md#rustdoc-item-2952) — The alpha mode to ask a new surface for.
-- [`pick_color_format`](fn.pick_color_format.md#rustdoc-item-2950) — The configured colour format to ask a surface for.
-- [`preferred_present_mode`](fn.preferred_present_mode.md#rustdoc-item-2949) — The present mode a surface asking for `present` gets: that mode when the
-- [`requested_present_mode`](fn.requested_present_mode.md#rustdoc-item-2947) — The present mode `PILL_PRESENT_MODE` asks for, when the surface supports
+- [`alpha_mode_candidates`](fn.alpha_mode_candidates.md#rustdoc-item-2991) — The alpha modes to try, in order: the requested one, then `Opaque`.
+- [`apply_and_probe`](fn.apply_and_probe.md#rustdoc-item-2992) — Configures the surface and acquires a frame from it.
+- [`configuration_attempt_failure`](fn.configuration_attempt_failure.md#rustdoc-item-2993) — Why one configuration attempt failed, or `None` when it succeeded: a
+- [`configure`](fn.configure.md#rustdoc-item-2947) — Reconfigures the surface during a frame (on a resize, or for a lost
+- [`configure_first`](fn.configure_first.md#rustdoc-item-2988) — Configures the surface for the first time, giving up the compositing alpha
+- [`pick_alpha_mode`](fn.pick_alpha_mode.md#rustdoc-item-2989) — The alpha mode to ask a new surface for.
+- [`pick_color_format`](fn.pick_color_format.md#rustdoc-item-2987) — The configured colour format to ask a surface for.
+- [`preferred_present_mode`](fn.preferred_present_mode.md#rustdoc-item-2986) — The present mode a surface asking for `present` gets: that mode when the
+- [`requested_present_mode`](fn.requested_present_mode.md#rustdoc-item-2984) — The present mode `PILL_PRESENT_MODE` asks for, when the surface supports
 
 ### Constants
-- [`PRESENT_MODE_VARIABLE`](constant.PRESENT_MODE_VARIABLE.md#rustdoc-item-2899) — Environment variable that asks for a present mode other than vsync.
+- [`PRESENT_MODE_VARIABLE`](constant.PRESENT_MODE_VARIABLE.md#rustdoc-item-2936) — Environment variable that asks for a present mode other than vsync.

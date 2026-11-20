@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-192"></a>
+<a id="rustdoc-item-255"></a>
 
 # Struct `pill_audio::audio_load_queue::AudioLoadQueue`
 
@@ -8,7 +8,7 @@
 pub struct AudioLoadQueue;
 ```
 
-Source: `extensions\pill_audio\pill_audio\src\audio_load_queue.rs:33`
+Source: `extensions\pill_audio\modules\runtime\src\audio_load_queue.rs:33`
 
 Queued sound loads, keyed by playback name, waiting for the audio system.
 
@@ -17,7 +17,7 @@ id built from `TypeId` differs between the two images.
 
 ## Fields
 
-<a id="rustdoc-item-188"></a>
+<a id="rustdoc-item-251"></a>
 
 ### `sounds`
 
@@ -29,7 +29,7 @@ The encoded bytes of each queued sound, by playback name.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-193"></a>
+<a id="rustdoc-item-256"></a>
 
 ### `load`
 

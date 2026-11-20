@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-3981"></a>
+<a id="rustdoc-item-4363"></a>
 
 # Enum `pill_editor_core::gizmo::HandleKind`
 
@@ -8,13 +8,13 @@
 pub enum HandleKind { ... }
 ```
 
-Source: `editor\pill_editor_core\src\gizmo.rs:412`
+Source: `editor\pill_editor_core\src\gizmo.rs:437`
 
 What a handle id addresses.
 
 ## Variants
 
-<a id="rustdoc-item-3977"></a>
+<a id="rustdoc-item-4359"></a>
 
 ### `Axis`
 
@@ -24,7 +24,7 @@ Axis
 
 One axis of one mode.
 
-<a id="rustdoc-item-3980"></a>
+<a id="rustdoc-item-4362"></a>
 
 ### `Plane`
 
@@ -36,7 +36,7 @@ A translation plane, spanned by two axes.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-3982"></a>
+<a id="rustdoc-item-4364"></a>
 
 ### `axis`
 
@@ -46,7 +46,7 @@ pub fn axis(self: Self) -> Option<(GizmoMode, usize)>;
 
 The axis a single-axis handle drags along; `None` for a plane.
 
-<a id="rustdoc-item-3983"></a>
+<a id="rustdoc-item-4365"></a>
 
 ### `plane`
 

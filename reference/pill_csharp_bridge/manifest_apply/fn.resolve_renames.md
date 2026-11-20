@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1722"></a>
+<a id="rustdoc-item-1746"></a>
 
 # Function `pill_csharp_bridge::manifest_apply::resolve_renames`
 
@@ -8,7 +8,7 @@
 pub(in manifest_apply) fn resolve_renames<Declaration, Binding, Undo>(subject: &ManifestSubject<Declaration, Binding, Undo>, engine: &pill_engine::Engine, previous: &std::collections::HashMap<super::components::StableComponentId, Binding>, declarations: &[Declaration]) -> Result<std::collections::HashMap<super::components::StableComponentId, (super::components::StableComponentId, String)>, pill_core::error::CSharpError>;
 ```
 
-Visibility: `{'restricted': {'parent': 970, 'path': '::manifest_apply'}}` · Source: `csharp\pill_csharp_bridge\src\manifest_apply.rs:383`
+Visibility: `{'restricted': {'parent': 992, 'path': '::manifest_apply'}}` · Source: `csharp\pill_csharp_bridge\src\manifest_apply.rs:383`
 
 Resolve every declaration's aliases to the live entries they name.
 

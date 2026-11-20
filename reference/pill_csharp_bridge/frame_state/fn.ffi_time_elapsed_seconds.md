@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1200"></a>
+<a id="rustdoc-item-1222"></a>
 
 # Function `pill_csharp_bridge::frame_state::ffi_time_elapsed_seconds`
 

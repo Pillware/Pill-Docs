@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-542"></a>
+<a id="rustdoc-item-701"></a>
 
 # Struct `pill_physics::manager::PhysicsStatistics`
 
@@ -8,13 +8,13 @@
 pub struct PhysicsStatistics;
 ```
 
-Source: `extensions\pill_physics\pill_physics\src\manager.rs:71`
+Source: `extensions\pill_physics\modules\runtime\src\manager.rs:83`
 
 A running count of what the simulation did, for logs and tests.
 
 ## Fields
 
-<a id="rustdoc-item-539"></a>
+<a id="rustdoc-item-698"></a>
 
 ### `steps`
 
@@ -24,7 +24,7 @@ steps: u64
 
 Steps run since the manager was created.
 
-<a id="rustdoc-item-540"></a>
+<a id="rustdoc-item-699"></a>
 
 ### `created_bodies`
 
@@ -34,7 +34,7 @@ created_bodies: u64
 
 Bodies created since the manager was created.
 
-<a id="rustdoc-item-541"></a>
+<a id="rustdoc-item-700"></a>
 
 ### `dropped_bodies`
 
@@ -64,6 +64,7 @@ Bodies dropped since the manager was created.
 - `CastableFrom<ST, Uninit, Uninit>`
 - `CastableFrom<ST, Initialized, Initialized>`
 - `Read<Exclusive, BecauseExclusive>`
+- `Equivalent<K>`
 - `MaybeSync`
 - `SupersetOf<SS>`
 - `Scalar`
@@ -71,7 +72,6 @@ Bodies dropped since the manager was created.
 - `Downcast`
 - `DowncastSend`
 - `DowncastSync`
-- `Equivalent<K>`
 - `Debug`
 - `Clone`
 - `Copy`

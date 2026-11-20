@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1494"></a>
+<a id="rustdoc-item-1518"></a>
 
 # Function `pill_csharp_bridge::manifest::validate_field_manifest`
 
@@ -20,10 +20,10 @@ pathological manifest before it costs any real work.
 ## Errors
 
 Returns an error when a field overflows its containing struct, names an
-empty field or type, or declares a type outside the [`BLITTABLE_LEAVES`](constant.BLITTABLE_LEAVES.md#rustdoc-item-1321)
+empty field or type, or declares a type outside the [`BLITTABLE_LEAVES`](constant.BLITTABLE_LEAVES.md#rustdoc-item-1344)
 vocabulary. It also fails when a leaf sits at an offset that is not a
 multiple of its natural alignment, when a handle is not exactly
-[`HANDLE_SIZE`](constant.HANDLE_SIZE.md#rustdoc-item-1250) bytes at a [`HANDLE_ALIGNMENT`](constant.HANDLE_ALIGNMENT.md#rustdoc-item-1251)-byte boundary or declares a
+[`HANDLE_SIZE`](constant.HANDLE_SIZE.md#rustdoc-item-1273) bytes at a [`HANDLE_ALIGNMENT`](constant.HANDLE_ALIGNMENT.md#rustdoc-item-1274)-byte boundary or declares a
 default, when a default does not parse or does not fill the field exactly,
 when a decorator is out of range, when sibling fields overlap, or when the
 nesting limit is exceeded.

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-495"></a>
+<a id="rustdoc-item-494"></a>
 
 # Struct `pill_master_renderer_data::assets::render_pass::RenderPassDocument`
 
@@ -8,7 +8,7 @@
 pub struct RenderPassDocument;
 ```
 
-Source: `extensions\pill_master_renderer\pill_master_renderer_data\src\assets\render_pass.rs:218`
+Source: `extensions\pill_master_renderer\modules\runtime\data\src\assets\render_pass.rs:218`
 
 A pass as written in its `.render_pass` file.
 
@@ -17,13 +17,13 @@ material and textures are guids ([`AssetReference`]), resolved when the file
 loads. Every other field means the same as the [`RenderPass`](struct.RenderPass.md#rustdoc-item-93) field of the
 same name.
 
-The default document is [`RenderPass::new`](struct.RenderPass.md#rustdoc-item-436)'s pass: a geometry pass onto the
+The default document is [`RenderPass::new`](struct.RenderPass.md#rustdoc-item-433)'s pass: a geometry pass onto the
 surface with no shader of its own. The renderer draws that pass as it is, so
 a newly created file is valid before anyone edits it.
 
 ## Fields
 
-<a id="rustdoc-item-501"></a>
+<a id="rustdoc-item-498"></a>
 
 ### `shader`
 
@@ -31,9 +31,9 @@ a newly created file is valid before anyone edits it.
 shader: pill_engine::AssetReference<crate::Shader>
 ```
 
-See [`RenderPass::shader`](struct.RenderPass.md#rustdoc-item-426); unset names no shader of its own.
+See [`RenderPass::shader`](struct.RenderPass.md#rustdoc-item-423); unset names no shader of its own.
 
-<a id="rustdoc-item-502"></a>
+<a id="rustdoc-item-499"></a>
 
 ### `material`
 
@@ -41,9 +41,9 @@ See [`RenderPass::shader`](struct.RenderPass.md#rustdoc-item-426); unset names n
 material: pill_engine::AssetReference<crate::Material>
 ```
 
-See [`RenderPass::material`](struct.RenderPass.md#rustdoc-item-428); unset for none.
+See [`RenderPass::material`](struct.RenderPass.md#rustdoc-item-425); unset for none.
 
-<a id="rustdoc-item-503"></a>
+<a id="rustdoc-item-500"></a>
 
 ### `parameters`
 
@@ -51,9 +51,9 @@ See [`RenderPass::material`](struct.RenderPass.md#rustdoc-item-428); unset for n
 parameters: std::collections::BTreeMap<String, pill_renderer_api::frame::MaterialParameter>
 ```
 
-See [`RenderPass::parameters`](struct.RenderPass.md#rustdoc-item-429).
+See [`RenderPass::parameters`](struct.RenderPass.md#rustdoc-item-426).
 
-<a id="rustdoc-item-504"></a>
+<a id="rustdoc-item-501"></a>
 
 ### `textures`
 
@@ -61,9 +61,9 @@ See [`RenderPass::parameters`](struct.RenderPass.md#rustdoc-item-429).
 textures: std::collections::BTreeMap<String, pill_engine::AssetReference<crate::Texture>>
 ```
 
-See [`RenderPass::textures`](struct.RenderPass.md#rustdoc-item-431).
+See [`RenderPass::textures`](struct.RenderPass.md#rustdoc-item-428).
 
-<a id="rustdoc-item-505"></a>
+<a id="rustdoc-item-502"></a>
 
 ### `inputs`
 
@@ -71,9 +71,9 @@ See [`RenderPass::textures`](struct.RenderPass.md#rustdoc-item-431).
 inputs: std::collections::BTreeMap<String, String>
 ```
 
-See [`RenderPass::inputs`](struct.RenderPass.md#rustdoc-item-430).
+See [`RenderPass::inputs`](struct.RenderPass.md#rustdoc-item-427).
 
-<a id="rustdoc-item-506"></a>
+<a id="rustdoc-item-503"></a>
 
 ### `settings`
 
@@ -81,10 +81,10 @@ See [`RenderPass::inputs`](struct.RenderPass.md#rustdoc-item-430).
 settings: pill_renderer_api::frame::PassSettings
 ```
 
-See [`RenderPass::settings`](struct.RenderPass.md#rustdoc-item-432). The block is flattened, so the file
+See [`RenderPass::settings`](struct.RenderPass.md#rustdoc-item-429). The block is flattened, so the file
 carries its fields at the top level, beside the other ones.
 
-<a id="rustdoc-item-507"></a>
+<a id="rustdoc-item-504"></a>
 
 ### `enabled`
 
@@ -92,7 +92,7 @@ carries its fields at the top level, beside the other ones.
 enabled: bool
 ```
 
-See [`RenderPass::enabled`](struct.RenderPass.md#rustdoc-item-434).
+See [`RenderPass::enabled`](struct.RenderPass.md#rustdoc-item-431).
 
 ## Trait implementations
 
@@ -105,6 +105,9 @@ See [`RenderPass::enabled`](struct.RenderPass.md#rustdoc-item-434).
 - `TryFrom<U>`
 - `Any`
 - `ToOwned`
+- `CastableFrom<ST, Uninit, Uninit>`
+- `CastableFrom<ST, Initialized, Initialized>`
+- `Read<Exclusive, BecauseExclusive>`
 - `DeserializeOwned`
 - `Instrument`
 - `WithSubscriber`
@@ -112,9 +115,6 @@ See [`RenderPass::enabled`](struct.RenderPass.md#rustdoc-item-434).
 - `Pointable`
 - `OwoColorize`
 - `ErasedDestructor`
-- `CastableFrom<ST, Uninit, Uninit>`
-- `CastableFrom<ST, Initialized, Initialized>`
-- `Read<Exclusive, BecauseExclusive>`
 - `Clone`
 - `Debug`
 - `Serialize`

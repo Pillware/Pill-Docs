@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-4803"></a>
+<a id="rustdoc-item-6766"></a>
 
 # Struct `pill_editor_core::inspector::RowLogged`
 
@@ -8,7 +8,7 @@
 pub struct RowLogged;
 ```
 
-Source: `editor\pill_editor_core\src\inspector.rs:668`
+Source: `editor\pill_editor_core\src\inspector.rs:672`
 
 The log lines a drawn row can emit, held as bits. There are two: the row's
 own line, and the `mixed` line that a scalar or vector row adds when the
@@ -20,7 +20,7 @@ the session, so no key has to be built.
 
 ## Fields
 
-<a id="rustdoc-item-4802"></a>
+<a id="rustdoc-item-6765"></a>
 
 ### `0`
 
@@ -32,7 +32,7 @@ _No documentation provided._
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-4804"></a>
+<a id="rustdoc-item-6767"></a>
 
 ### `ROW`
 
@@ -42,7 +42,7 @@ const ROW: u8 = _;
 
 The row's own `[editor] inspector row kind=…` line.
 
-<a id="rustdoc-item-4805"></a>
+<a id="rustdoc-item-6768"></a>
 
 ### `MIXED`
 
@@ -52,7 +52,7 @@ const MIXED: u8 = _;
 
 The `mixed` line a row adds when the selection disagrees on its value.
 
-<a id="rustdoc-item-4806"></a>
+<a id="rustdoc-item-6769"></a>
 
 ### `has`
 
@@ -62,7 +62,7 @@ pub fn has(self: Self, line_bit: u8) -> bool;
 
 Whether the line `line_bit` names has already been logged for this row.
 
-<a id="rustdoc-item-4807"></a>
+<a id="rustdoc-item-6770"></a>
 
 ### `mark`
 

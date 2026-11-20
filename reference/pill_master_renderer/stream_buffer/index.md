@@ -1,10 +1,10 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-2865"></a>
+<a id="rustdoc-item-2902"></a>
 
 # Module `pill_master_renderer::stream_buffer`
 
-Visibility: `crate` · Source: `extensions\pill_master_renderer\pill_master_renderer\src\stream_buffer.rs:1`
+Visibility: `crate` · Source: `extensions\pill_master_renderer\modules\runtime\gpu\src\stream_buffer.rs:1`
 
 A GPU buffer rewritten every surface, shared by the overlay and the UI
 painter.
@@ -30,4 +30,4 @@ before one submission, because the second write replaces the first.
 ## Module contents
 
 ### Structs
-- [`StreamBuffer`](struct.StreamBuffer.md#rustdoc-item-1363) — A buffer that is rewritten for each surface and replaced by a larger one
+- [`StreamBuffer`](struct.StreamBuffer.md#rustdoc-item-1405) — A buffer that is rewritten for each surface and replaced by a larger one

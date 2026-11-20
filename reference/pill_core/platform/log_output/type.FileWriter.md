@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1195"></a>
+<a id="rustdoc-item-1205"></a>
 
 # Type alias `pill_core::platform::log_output::FileWriter`
 

@@ -8,7 +8,7 @@
 pub(in frame) fn frame_asset_key<T: pill_engine::Asset>(handle: pill_engine::Handle<T>) -> pill_renderer_api::AssetKey;
 ```
 
-Visibility: `{'restricted': {'parent': 238, 'path': '::frame'}}` · Source: `extensions\pill_master_renderer\pill_master_renderer\src\frame.rs:100`
+Visibility: `{'restricted': {'parent': 238, 'path': '::frame'}}` · Source: `extensions\pill_master_renderer\modules\runtime\gpu\src\frame.rs:100`
 
 Builds the key the frame uses for `handle`.
 

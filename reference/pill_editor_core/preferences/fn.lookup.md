@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-6376"></a>
+<a id="rustdoc-item-8414"></a>
 
 # Function `pill_editor_core::preferences::lookup`
 
@@ -8,7 +8,7 @@
 pub fn lookup<'a>(document: &'a serde_json::Map<String, serde_json::Value>, key: &str) -> Option<&'a serde_json::Value>;
 ```
 
-Source: `editor\pill_editor_core\src\preferences.rs:312`
+Source: `editor\pill_editor_core\src\preferences.rs:335`
 
 Follows a dotted key through the document.
 

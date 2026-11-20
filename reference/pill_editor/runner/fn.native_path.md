@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1558"></a>
+<a id="rustdoc-item-2062"></a>
 
 # Function `pill_editor::runner::native_path`
 
@@ -8,7 +8,7 @@
 pub(in runner) fn native_path(target: &std::path::Path) -> std::path::PathBuf;
 ```
 
-Visibility: `{'restricted': {'parent': 483, 'path': '::runner'}}` · Source: `editor\pill_editor\src\runner\mod.rs:4148`
+Visibility: `{'restricted': {'parent': 539, 'path': '::runner'}}` · Source: `editor\pill_editor\src\runner\mod.rs:4793`
 
 Rebuild `target` from its components, so its text carries the platform's
 own separators.
@@ -18,3 +18,6 @@ A reveal target is joined from a `/`-separated relative path, and
 same path can read `res/materials/unlit.material` on Windows, where
 Explorer's `/select,` rejects it and opens the user's Documents folder
 instead.
+
+Only the Windows reveal path and its test build the string, so the helper
+is compiled there and under `test`.

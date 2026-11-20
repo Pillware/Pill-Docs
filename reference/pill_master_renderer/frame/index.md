@@ -4,7 +4,7 @@
 
 # Module `pill_master_renderer::frame`
 
-Source: `extensions\pill_master_renderer\pill_master_renderer\src\frame.rs:1`
+Source: `extensions\pill_master_renderer\modules\runtime\gpu\src\frame.rs:1`
 
 The system that turns the world into the frame the renderer draws.
 Fills the frame the renderer draws, once per update.

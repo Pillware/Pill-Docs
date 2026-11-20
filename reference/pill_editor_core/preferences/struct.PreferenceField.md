@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-6296"></a>
+<a id="rustdoc-item-8333"></a>
 
 # Struct `pill_editor_core::preferences::PreferenceField`
 
@@ -8,14 +8,14 @@
 pub struct PreferenceField;
 ```
 
-Source: `editor\pill_editor_core\src\preferences.rs:159`
+Source: `editor\pill_editor_core\src\preferences.rs:165`
 
 One editable preference: the document key, the row's label and the text a
 file without the key shows.
 
 ## Fields
 
-<a id="rustdoc-item-6298"></a>
+<a id="rustdoc-item-8335"></a>
 
 ### `key`
 
@@ -25,7 +25,7 @@ key: &'static str
 
 The file's key; a dot nests into an object.
 
-<a id="rustdoc-item-6299"></a>
+<a id="rustdoc-item-8336"></a>
 
 ### `label`
 
@@ -35,7 +35,7 @@ label: &'static str
 
 The label the row shows.
 
-<a id="rustdoc-item-6300"></a>
+<a id="rustdoc-item-8337"></a>
 
 ### `fallback`
 

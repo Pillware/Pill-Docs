@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-2423"></a>
+<a id="rustdoc-item-2464"></a>
 
 # Struct `pill_master_renderer::resources::renderer_material::RendererMaterial`
 
@@ -8,18 +8,18 @@
 pub struct RendererMaterial;
 ```
 
-Source: `extensions\pill_master_renderer\pill_master_renderer\src\resources\renderer_material.rs:54`
+Source: `extensions\pill_master_renderer\modules\runtime\gpu\src\resources\renderer_material.rs:54`
 
 One material's GPU resources: the bind groups its draws bind.
 
-The game-facing [`Material`](../../preview/enum.PreviewMode.md#rustdoc-item-598) asset says what a surface
+The game-facing [`Material`](../../preview/enum.PreviewMode.md#rustdoc-item-595) asset says what a surface
 looks like; this is what that description becomes on the GPU once the
 shader is known. One is built per material during asset sync and stored
 beside every other GPU resource.
 
 ## Fields
 
-<a id="rustdoc-item-2418"></a>
+<a id="rustdoc-item-2459"></a>
 
 ### `name`
 
@@ -29,7 +29,7 @@ name: String
 
 Label used in logs and error messages, taken from the material asset.
 
-<a id="rustdoc-item-2419"></a>
+<a id="rustdoc-item-2460"></a>
 
 ### `shader_handle`
 
@@ -44,7 +44,7 @@ that share a shader within one rendering order end up adjacent, and
 the drawer rebinds pipeline state once per run instead of once per
 draw.
 
-<a id="rustdoc-item-2420"></a>
+<a id="rustdoc-item-2461"></a>
 
 ### `parameters_bind_group`
 
@@ -57,7 +57,7 @@ Values the shader reads, bound at group 2.
 Built from the shader's declared parameter slots, so a shader that
 declares none leaves this `None` rather than an empty group.
 
-<a id="rustdoc-item-2421"></a>
+<a id="rustdoc-item-2462"></a>
 
 ### `textures_bind_group`
 
@@ -73,7 +73,7 @@ shader that declares no texture slot leaves this `None`.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-2425"></a>
+<a id="rustdoc-item-2466"></a>
 
 ### `new`
 

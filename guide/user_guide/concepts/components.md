@@ -2,7 +2,7 @@
 
 ## Summary
 
-A component is a piece of data attached to an entity, such as its position, its health or the mesh it draws. You declare one with `#[derive(PillComponent)]`, ECS systems read and change components through queries, and two optional attributes decide whether a component survives changes to its own struct (`persistable`) and whether several modules can share it (`shared`).
+A component is a piece of data attached to an entity, such as its position, its health or the mesh it draws. You declare one with `#[component]`, ECS systems read and change components through queries, and two optional arguments decide whether a component survives changes to its own struct (`persistable`) and whether several modules can share it (`shared`).
 
 ## At a glance
 
@@ -23,20 +23,20 @@ Keep components small and focused. An entity gets its full set of behaviour by c
 
 ## How do I declare a component?
 
-Derive `PillComponent`:
+Declare it with `#[component]`:
 
 ```rust
 use pill_engine::*;
 
-#[derive(Debug, Clone, Copy, Default, Serialize, Deserialize, PillComponent)]
-#[pill(persistable)]
+#[component(persistable)]
+#[derive(Debug, Clone, Copy, Default)]
 pub struct Health {
     pub current: f32,
     pub max: f32,
 }
 ```
 
-The derive does the registration for you: every component declared this way in your module is registered automatically when the module loads. You don't need a separate registration call.
+The attribute does the registration for you: every component declared this way in your module is registered automatically when the module loads. You don't need a separate registration call. `persistable` also derives the serde half; `Debug`, `Clone`, `Copy` and `Default` stay your explicit choice.
 
 ## How do I attach components to entities?
 
@@ -103,9 +103,9 @@ What happens when you change a component's **own struct** depends on whether it 
 | the component's fields (added, removed, changed)          | the existing values **cannot be converted**; avoid this while running  | every value is **converted**: kept fields keep their values, new fields start at their default |
 | the component's name or its module (it moved)             | treated as a new component                                            | treated as a new component, unless it has a pinned shared name                         |
 
-> **Example:** you tuned 40 enemies' `Health` while playing, then add a `shield: f32` field and save. With `#[pill(persistable)]`, every enemy keeps its current health, and `shield` starts at `0.0`. Without it, the new code cannot read the existing values, so restart the project after such a change.
+> **Example:** you tuned 40 enemies' `Health` while playing, then add a `shield: f32` field and save. With `persistable` on the declaration, every enemy keeps its current health, and `shield` starts at `0.0`. Without it, the new code cannot read the existing values, so restart the project after such a change.
 
-So use `persistable` unless you have a reason not to. It needs `Serialize`, `Deserialize` and `Default`, as in the `Health` example above. A field that cannot be serialized can be marked `#[serde(skip)]`; it starts at its default after a conversion.
+So use `persistable` unless you have a reason not to. It derives `Serialize` and `Deserialize`, and needs `Default`, as in the `Health` example above. A field that cannot be serialized can be marked `#[serde(skip)]`; it starts at its default after a conversion.
 
 ## When does a component need to be shared?
 
@@ -114,22 +114,22 @@ When more than one module uses the component: an extension defines it and your p
 Every module is a separate DLL with its own compiled copy of the types it uses. Without `shared`, the copies may count as **different** component types, and then each module only sees the entities the other module never created. Nothing warns you; the entities just seem to be missing. `shared` makes the engine identify the component by a name instead, so every module reaches the same component.
 
 ```rust
-#[derive(Debug, Clone, Copy, Default, Serialize, Deserialize, PillComponent)]
-#[pill(shared = "my_extension::Spline", persistable)]
+#[component(shared = "my_extension::Spline", persistable)]
+#[derive(Debug, Clone, Copy, Default)]
 #[repr(C)]
 pub struct Spline {
     pub segments: u32,
 }
 ```
 
-- `#[pill(shared)]` takes the name from the module path. Pin it with `shared = "crate::Name"` so moving the type to another file does not change it.
+- `shared` names the type `<crate>::<Type>`. Pin it with `shared = "prefix::Name"` only when the type should be published under another prefix; moving the type to another file keeps the derived name.
 - The name must be unique in the whole process, and must contain `::`.
 - Add `#[repr(C)]`, so every module lays the fields out in the same order.
 - When you change a shared component's fields, every other module that uses it pauses its ECS systems until it is rebuilt, because their code still expects the old fields.
 
 ## Are components saved in scenes?
 
-Yes. When a scene is saved, every component declared with `#[derive(PillComponent)]` is written field by field, whether or not it is persistable:
+Yes. When a scene is saved, every component declared with `#[component]` is written field by field, whether or not it is persistable:
 
 - an asset handle field (`Handle<Mesh>`) is written as the asset's guid, so it loads the same asset later;
 - an `Entity` field is written as the target's stable id, so the reference is reconnected on load;
@@ -142,8 +142,8 @@ So keep data that must be saved in plain fields: numbers, arrays, nested `#[deri
 With field attributes that only change the Inspector, never the stored data:
 
 ```rust
-#[derive(Debug, Clone, Copy, Default, Serialize, Deserialize, PillComponent)]
-#[pill(persistable)]
+#[component(persistable)]
+#[derive(Debug, Clone, Copy, Default)]
 pub struct Enemy {
     #[pill(header("Movement"), range(0.0, 20.0))]
     pub speed: f32,
@@ -171,10 +171,10 @@ Anything that points into your module's code, because that code is replaced on e
 
 | What                                                   | Where                                                                  |
 | ------------------------------------------------------ | ---------------------------------------------------------------------- |
-| `#[derive(PillComponent)]` and its attributes          | `pill_engine_macros`, `lib.rs`                                         |
+| `#[component]` and its arguments                        | `pill_engine_macros`, `lib.rs`                                         |
 | `Component`, `shared_name`                             | `pill_engine_core`, `component.rs`                                     |
 | `Query` and its filters                                | `pill_engine_core`, `query/`                                           |
 | Saving components in scenes                            | `pill_engine_core`, `scene.rs`                                         |
 | Registering every declared component at module load    | `pill_engine`, `component_registry.rs`                                 |
-| Real components                                        | `pill_master_renderer_data/src/components/`, `pill_physics/src/components.rs`, `pill_spline/src/pill_spline.rs` |
+| Real components                                        | `pill_master_renderer/modules/runtime/data/src/components/`, `pill_physics/modules/runtime/src/components.rs`, `pill_spline/modules/runtime/src/component.rs` |
 | Shared, persistable components in a real project       | `examples/pills/pills_rust/src/game.rs`                                |

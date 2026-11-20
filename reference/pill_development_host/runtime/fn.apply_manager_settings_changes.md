@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-4214"></a>
+<a id="rustdoc-item-4472"></a>
 
 # Function `pill_development_host::runtime::apply_manager_settings_changes`
 
@@ -8,7 +8,7 @@
 pub(in runtime) fn apply_manager_settings_changes(host: &mut DevHost, asset_changes: usize);
 ```
 
-Visibility: `{'restricted': {'parent': 3859, 'path': '::runtime'}}` · Source: `hosting\pill_development_host\src\runtime.rs:3420`
+Visibility: `{'restricted': {'parent': 4115, 'path': '::runtime'}}` · Source: `hosting\pill_development_host\src\runtime.rs:3616`
 
 Re-applies the manager settings assets whose bytes changed, and every one of
 them after a reload.

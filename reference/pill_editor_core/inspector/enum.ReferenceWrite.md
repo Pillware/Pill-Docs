@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-5041"></a>
+<a id="rustdoc-item-7004"></a>
 
 # Enum `pill_editor_core::inspector::ReferenceWrite`
 
@@ -8,13 +8,13 @@
 pub(in inspector) enum ReferenceWrite { ... }
 ```
 
-Visibility: `{'restricted': {'parent': 4798, 'path': '::inspector'}}` · Source: `editor\pill_editor_core\src\inspector.rs:1344`
+Visibility: `{'restricted': {'parent': 6761, 'path': '::inspector'}}` · Source: `editor\pill_editor_core\src\inspector.rs:1351`
 
 What a field's text names when the field is a reference rather than a value.
 
 ## Variants
 
-<a id="rustdoc-item-5038"></a>
+<a id="rustdoc-item-7001"></a>
 
 ### `Asset`
 
@@ -24,7 +24,7 @@ Asset
 
 The asset reference the text names, `None` to clear it.
 
-<a id="rustdoc-item-5040"></a>
+<a id="rustdoc-item-7003"></a>
 
 ### `Entity`
 

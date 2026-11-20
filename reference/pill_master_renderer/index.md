@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-3145"></a>
+<a id="rustdoc-item-3182"></a>
 
 # pill_master_renderer API reference
 
@@ -11,12 +11,12 @@ frames.
 
 ## Responsibilities
 
-- Own the GPU half: the device and surface lifecycle ([`Renderer`](renderer/struct.Renderer.md#rustdoc-item-1865)), the
-  [`resources`](resources/index.md#rustdoc-item-2227) the renderer keeps, the [`drawers`](drawers/index.md#rustdoc-item-170), the [`render_queue`](render_queue/index.md#rustdoc-item-1844)
-  keys that order a frame's draws, and the [`ui`](ui/index.md#rustdoc-item-3085) painter that draws the
+- Own the GPU half: the device and surface lifecycle ([`Renderer`](renderer/struct.Renderer.md#rustdoc-item-1908)), the
+  [`resources`](resources/index.md#rustdoc-item-2270) the renderer keeps, the [`drawers`](drawers/index.md#rustdoc-item-170), the [`render_queue`](render_queue/index.md#rustdoc-item-1887)
+  keys that order a frame's draws, and the [`ui`](ui/index.md#rustdoc-item-3122) painter that draws the
   frame's `pill_ui_frame` lists.
 - Fill each frame from the world ([`frame`](frame/index.md#rustdoc-item-238), the `rendering` system).
-- Install the renderer on an engine through [`register`](fn.register.md#rustdoc-item-3138), which adds that
+- Install the renderer on an engine through [`register`](fn.register.md#rustdoc-item-3175), which adds that
   system. The components and assets are not registered here:
   `pill_master_renderer_data` registers them itself.
 
@@ -33,31 +33,31 @@ compiles against data only.
 ## Module contents
 
 ### Modules
-- [`chain`](chain/index.md#rustdoc-item-534) — Holds the frame's chain as GPU objects and the plan each frame is recorded
+- [`chain`](chain/index.md#rustdoc-item-531) — Holds the frame's chain as GPU objects and the plan each frame is recorded
 - [`drawers`](drawers/index.md#rustdoc-item-170) — The mesh drawer: batches the instances a frame queues and records the
 - [`error`](error/index.md#rustdoc-item-179) — Renderer failures, re-exported from the contract crate, and the capture
 - [`frame`](frame/index.md#rustdoc-item-238) — The system that turns the world into the frame the renderer draws.
 - [`instance`](instance/index.md#rustdoc-item-275) — The per-instance transform the drawer uploads for the vertex shader.
-- [`module_entry`](module_entry/index.md#rustdoc-item-3090) — The C ABI a host drives this renderer through when it loads it as a module.
-- [`overlay`](overlay/index.md#rustdoc-item-858) — Debug drawing, gizmos, selection outlines, picking and the scene grid,
-- [`preview`](preview/index.md#rustdoc-item-592) — The asset preview path: one small off-screen render, read back as pixels.
-- [`profiler`](profiler/index.md#rustdoc-item-1480) — The query sets and readbacks behind GPU profiling measurements.
-- [`readback`](readback/index.md#rustdoc-item-1638) — Mapping a GPU buffer back to the CPU without stalling a frame.
-- [`render_queue`](render_queue/index.md#rustdoc-item-1844) — One queued draw per frame instance, and the sort key that puts draws
-- [`renderer`](renderer/index.md#rustdoc-item-1847) — The wgpu renderer: the surfaces, the GPU caches and the frame submission.
-- [`rendering_resources_manager`](rendering_resources_manager/index.md#rustdoc-item-2056) — The GPU objects that mirror the asset store, refreshed one asset type at a
-- [`resources`](resources/index.md#rustdoc-item-2227) — One module per resource the renderer keeps, re-exported flat so callers
-- [`stream_buffer`](stream_buffer/index.md#rustdoc-item-2865) — A GPU buffer rewritten every surface, shared by the overlay and the UI
-- [`surface`](surface/index.md#rustdoc-item-2900) — The window surface, its swapchain, and the lifecycle that keeps them live.
-- [`ui`](ui/index.md#rustdoc-item-3085) — The UI painter: draws the frame's `pill_ui_frame` lists over each surface.
+- [`module_entry`](module_entry/index.md#rustdoc-item-3127) — The C ABI a host drives this renderer through when it loads it as a module.
+- [`overlay`](overlay/index.md#rustdoc-item-854) — Debug drawing, gizmos, selection outlines, picking and the scene grid,
+- [`preview`](preview/index.md#rustdoc-item-589) — The asset preview path: one small off-screen render, read back as pixels.
+- [`profiler`](profiler/index.md#rustdoc-item-1526) — The query sets and readbacks behind GPU profiling measurements.
+- [`readback`](readback/index.md#rustdoc-item-1684) — Mapping a GPU buffer back to the CPU without stalling a frame.
+- [`render_queue`](render_queue/index.md#rustdoc-item-1887) — One queued draw per frame instance, and the sort key that puts draws
+- [`renderer`](renderer/index.md#rustdoc-item-1890) — The wgpu renderer: the surfaces, the GPU caches and the frame submission.
+- [`rendering_resources_manager`](rendering_resources_manager/index.md#rustdoc-item-2099) — The GPU objects that mirror the asset store, refreshed one asset type at a
+- [`resources`](resources/index.md#rustdoc-item-2270) — One module per resource the renderer keeps, re-exported flat so callers
+- [`stream_buffer`](stream_buffer/index.md#rustdoc-item-2902) — A GPU buffer rewritten every surface, shared by the overlay and the UI
+- [`surface`](surface/index.md#rustdoc-item-2937) — The window surface, its swapchain, and the lifecycle that keeps them live.
+- [`ui`](ui/index.md#rustdoc-item-3122) — The UI painter: draws the frame's `pill_ui_frame` lists over each surface.
 
 ### Functions
-- [`attach`](fn.attach.md#rustdoc-item-3141) — Starts building a renderer backend on a window, for a host that links this
-- [`init`](fn.init.md#rustdoc-item-3140) — The artifact's one-time entry point: nothing is one-time here.
-- [`register`](fn.register.md#rustdoc-item-3138) — The registration half: declares nothing itself and returns zero.
+- [`attach`](fn.attach.md#rustdoc-item-3178) — Starts building a renderer backend on a window, for a host that links this
+- [`init`](fn.init.md#rustdoc-item-3177) — The artifact's one-time entry point: nothing is one-time here.
+- [`register`](fn.register.md#rustdoc-item-3175) — The registration half: declares nothing itself and returns zero.
 
 ### Macros
-- [`__pill_renderer_entry_points`](macro.__pill_renderer_entry_points.md#rustdoc-item-3143) — Expands to this crate's renderer ABI exports, `pill_renderer_attach` and
+- [`__pill_renderer_entry_points`](macro.__pill_renderer_entry_points.md#rustdoc-item-3180) — Expands to this crate's renderer ABI exports, `pill_renderer_attach` and
 
 ## Re-exports
 
@@ -95,6 +95,6 @@ compiles against data only.
 - `pub use frame::RenderInstance;`
 - `pub use frame::ResolvedPass;`
 - [`pub use instance::Instance;`](instance/struct.Instance.md#rustdoc-item-134)
-- [`pub use renderer::Renderer;`](renderer/struct.Renderer.md#rustdoc-item-1865)
+- [`pub use renderer::Renderer;`](renderer/struct.Renderer.md#rustdoc-item-1908)
 - `pub use resources::RenderingManager;`
 - `pub use pill_master_renderer_data::components;`

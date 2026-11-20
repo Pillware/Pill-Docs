@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-2907"></a>
+<a id="rustdoc-item-2981"></a>
 
 # Struct `pill_development_host::layout_record::ResourceLayoutRecord`
 
@@ -14,7 +14,7 @@ One resource's declared layout, as one load saw it.
 
 ## Fields
 
-<a id="rustdoc-item-2903"></a>
+<a id="rustdoc-item-2977"></a>
 
 ### `resource`
 
@@ -24,7 +24,7 @@ resource: String
 
 Full path of the declaring Rust type.
 
-<a id="rustdoc-item-2904"></a>
+<a id="rustdoc-item-2978"></a>
 
 ### `sources`
 
@@ -34,7 +34,7 @@ sources: Vec<SourceDigest>
 
 The declared sources with their content hashes.
 
-<a id="rustdoc-item-2905"></a>
+<a id="rustdoc-item-2979"></a>
 
 ### `dependencies`
 
@@ -44,7 +44,7 @@ dependencies: Vec<DependencyVersion>
 
 The declared crates with their resolved versions.
 
-<a id="rustdoc-item-2906"></a>
+<a id="rustdoc-item-2980"></a>
 
 ### `fingerprint`
 

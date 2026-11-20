@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1208"></a>
+<a id="rustdoc-item-1230"></a>
 
 # Enum `pill_csharp_bridge::managed_buffer::ManagedBufferError`
 
@@ -18,7 +18,7 @@ asking the managed side again.
 
 ## Variants
 
-<a id="rustdoc-item-1204"></a>
+<a id="rustdoc-item-1226"></a>
 
 ### `LengthOutOfRange`
 
@@ -28,7 +28,7 @@ LengthOutOfRange
 
 The managed side reported a length outside `1..=limit`.
 
-<a id="rustdoc-item-1206"></a>
+<a id="rustdoc-item-1228"></a>
 
 ### `AllocationFailed`
 
@@ -38,7 +38,7 @@ AllocationFailed
 
 The host could not reserve a buffer that long.
 
-<a id="rustdoc-item-1207"></a>
+<a id="rustdoc-item-1229"></a>
 
 ### `CopyFailed`
 
@@ -68,6 +68,7 @@ The managed side declined to fill the buffer the host offered.
 - `CastableFrom<ST, Uninit, Uninit>`
 - `CastableFrom<ST, Initialized, Initialized>`
 - `Read<Exclusive, BecauseExclusive>`
+- `Equivalent<K>`
 - `Debug`
 - `Clone`
 - `Copy`

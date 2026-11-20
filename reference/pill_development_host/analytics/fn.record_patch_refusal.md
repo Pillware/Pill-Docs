@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-429"></a>
+<a id="rustdoc-item-430"></a>
 
 # Function `pill_development_host::analytics::record_patch_refusal`
 
@@ -8,6 +8,6 @@
 pub(crate) fn record_patch_refusal(code: &str, detail: &str);
 ```
 
-Visibility: `crate` · Source: `hosting\pill_development_host\src\analytics.rs:1101`
+Visibility: `crate` · Source: `hosting\pill_development_host\src\analytics.rs:1138`
 
 Record that the fast path declined a change and fell through to a reload.

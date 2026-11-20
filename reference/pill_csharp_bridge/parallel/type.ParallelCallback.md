@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1754"></a>
+<a id="rustdoc-item-1778"></a>
 
 # Type alias `pill_csharp_bridge::parallel::ParallelCallback`
 

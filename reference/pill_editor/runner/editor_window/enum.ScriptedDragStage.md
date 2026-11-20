@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-993"></a>
+<a id="rustdoc-item-1120"></a>
 
 # Enum `pill_editor::runner::editor_window::ScriptedDragStage`
 
@@ -8,13 +8,13 @@
 pub(in runner) enum ScriptedDragStage { ... }
 ```
 
-Visibility: `{'restricted': {'parent': 483, 'path': '::runner'}}` · Source: `editor\pill_editor\src\runner\editor_window.rs:379`
+Visibility: `{'restricted': {'parent': 539, 'path': '::runner'}}` · Source: `editor\pill_editor\src\runner\editor_window.rs:422`
 
-The stage a [`ScriptedDrag`](struct.ScriptedDrag.md#rustdoc-item-604) is waiting to inject, one per frame.
+The stage a [`ScriptedDrag`](struct.ScriptedDrag.md#rustdoc-item-675) is waiting to inject, one per frame.
 
 ## Variants
 
-<a id="rustdoc-item-1022"></a>
+<a id="rustdoc-item-1149"></a>
 
 ### `Press`
 
@@ -24,7 +24,7 @@ Press
 
 The pointer has not gone down yet.
 
-<a id="rustdoc-item-1023"></a>
+<a id="rustdoc-item-1150"></a>
 
 ### `Move`
 
@@ -34,7 +34,7 @@ Move
 
 The button is down and the pointer has not moved yet.
 
-<a id="rustdoc-item-1024"></a>
+<a id="rustdoc-item-1151"></a>
 
 ### `Release`
 

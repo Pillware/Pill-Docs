@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-3735"></a>
+<a id="rustdoc-item-4112"></a>
 
 # Module `pill_editor_core::error`
 
@@ -20,12 +20,12 @@ Every variant carries one `#[message(...)]` definition, and
 `#[engine_error]` turns it into the message text and the diagnostic code.
 
 A failed save leaves the previous document as it was, so
-[`crate::layout::save`](../layout/persistence/fn.save.md#rustdoc-item-3733) logs the plain message and the editor keeps
-running. Reading never reports here: [`crate::layout::load_or_default`](../layout/persistence/fn.load_or_default.md#rustdoc-item-3734)
+[`crate::layout::save`](../layout/persistence/fn.save.md#rustdoc-item-4110) logs the plain message and the editor keeps
+running. Reading never reports here: [`crate::layout::load_or_default`](../layout/persistence/fn.load_or_default.md#rustdoc-item-4111)
 falls back to the default layout for a document this build cannot use, and
 logs one line.
 
 ## Module contents
 
 ### Enums
-- [`LayoutPersistenceError`](enum.LayoutPersistenceError.md#rustdoc-item-3693) — The failures of the persisted dock layout.
+- [`LayoutPersistenceError`](enum.LayoutPersistenceError.md#rustdoc-item-4070) — The failures of the persisted dock layout.

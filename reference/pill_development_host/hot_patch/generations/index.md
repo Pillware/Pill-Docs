@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1982"></a>
+<a id="rustdoc-item-2056"></a>
 
 # Module `pill_development_host::hot_patch::generations`
 
@@ -35,5 +35,5 @@ writing into a retired image.
 ## Module contents
 
 ### Structs
-- [`Generation`](struct.Generation.md#rustdoc-item-1980) — One recorded generation of one patched function, and the route back to it.
-- [`PatchGeneration`](struct.PatchGeneration.md#rustdoc-item-2011) — One entry in a function's patch history, for hosts and tooling.
+- [`Generation`](struct.Generation.md#rustdoc-item-2054) — One recorded generation of one patched function, and the route back to it.
+- [`PatchGeneration`](struct.PatchGeneration.md#rustdoc-item-2085) — One entry in a function's patch history, for hosts and tooling.

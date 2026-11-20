@@ -8,7 +8,7 @@
 pub(in clipboard) fn write_open(text: &str, format: u32) -> Result<(), String>;
 ```
 
-Visibility: `{'restricted': {'parent': 1, 'path': '::clipboard'}}` · Source: `editor\pill_editor\src\clipboard.rs:116`
+Visibility: `{'restricted': {'parent': 1, 'path': '::clipboard'}}` · Source: `editor\pill_editor\src\clipboard.rs:138`
 
 The write path with the clipboard already open.
 

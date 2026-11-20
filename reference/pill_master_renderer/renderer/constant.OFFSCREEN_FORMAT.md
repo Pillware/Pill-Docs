@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1845"></a>
+<a id="rustdoc-item-1888"></a>
 
 # Constant `pill_master_renderer::renderer::OFFSCREEN_FORMAT`
 
@@ -8,7 +8,7 @@
 pub(crate) const OFFSCREEN_FORMAT: wgpu::TextureFormat = wgpu::TextureFormat::Rgba16Float;
 ```
 
-Visibility: `crate` · Source: `extensions\pill_master_renderer\pill_master_renderer\src\renderer.rs:79`
+Visibility: `crate` · Source: `extensions\pill_master_renderer\modules\runtime\gpu\src\renderer.rs:79`
 
 The colour format of every offscreen target a chain declares.
 

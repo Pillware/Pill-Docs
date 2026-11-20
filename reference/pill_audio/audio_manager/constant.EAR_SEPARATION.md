@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-233"></a>
+<a id="rustdoc-item-298"></a>
 
 # Constant `pill_audio::audio_manager::EAR_SEPARATION`
 
@@ -8,7 +8,7 @@
 pub const EAR_SEPARATION: f32 = 1.0;
 ```
 
-Source: `extensions\pill_audio\pill_audio\src\audio_manager.rs:50`
+Source: `extensions\pill_audio\modules\runtime\src\audio_manager.rs:50`
 
 Half the distance between the listener's ears, in world units.
 

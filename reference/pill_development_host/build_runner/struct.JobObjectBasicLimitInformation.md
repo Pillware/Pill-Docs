@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-672"></a>
+<a id="rustdoc-item-674"></a>
 
 # Struct `pill_development_host::build_runner::JobObjectBasicLimitInformation`
 
@@ -8,7 +8,7 @@
 pub(in build_runner) struct JobObjectBasicLimitInformation;
 ```
 
-Visibility: `{'restricted': {'parent': 545, 'path': '::build_runner'}}` · Source: `hosting\pill_development_host\src\build_runner.rs:959`
+Visibility: `{'restricted': {'parent': 546, 'path': '::build_runner'}}` · Source: `hosting\pill_development_host\src\build_runner.rs:960`
 
 `JOBOBJECT_BASIC_LIMIT_INFORMATION`, the limits part of the job's extended
 limit information.
@@ -18,7 +18,7 @@ reads the whole structure through the pointer.
 
 ## Fields
 
-<a id="rustdoc-item-663"></a>
+<a id="rustdoc-item-665"></a>
 
 ### `per_process_user_time_limit`
 
@@ -28,7 +28,7 @@ per_process_user_time_limit: i64
 
 _No documentation provided._
 
-<a id="rustdoc-item-664"></a>
+<a id="rustdoc-item-666"></a>
 
 ### `per_job_user_time_limit`
 
@@ -38,7 +38,7 @@ per_job_user_time_limit: i64
 
 _No documentation provided._
 
-<a id="rustdoc-item-665"></a>
+<a id="rustdoc-item-667"></a>
 
 ### `limit_flags`
 
@@ -48,7 +48,7 @@ limit_flags: u32
 
 _No documentation provided._
 
-<a id="rustdoc-item-666"></a>
+<a id="rustdoc-item-668"></a>
 
 ### `minimum_working_set_size`
 
@@ -58,7 +58,7 @@ minimum_working_set_size: usize
 
 _No documentation provided._
 
-<a id="rustdoc-item-667"></a>
+<a id="rustdoc-item-669"></a>
 
 ### `maximum_working_set_size`
 
@@ -68,7 +68,7 @@ maximum_working_set_size: usize
 
 _No documentation provided._
 
-<a id="rustdoc-item-668"></a>
+<a id="rustdoc-item-670"></a>
 
 ### `active_process_limit`
 
@@ -78,7 +78,7 @@ active_process_limit: u32
 
 _No documentation provided._
 
-<a id="rustdoc-item-669"></a>
+<a id="rustdoc-item-671"></a>
 
 ### `affinity`
 
@@ -88,7 +88,7 @@ affinity: usize
 
 _No documentation provided._
 
-<a id="rustdoc-item-670"></a>
+<a id="rustdoc-item-672"></a>
 
 ### `priority_class`
 
@@ -98,7 +98,7 @@ priority_class: u32
 
 _No documentation provided._
 
-<a id="rustdoc-item-671"></a>
+<a id="rustdoc-item-673"></a>
 
 ### `scheduling_class`
 

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-361"></a>
+<a id="rustdoc-item-385"></a>
 
 # Procedural macro `pill_engine_macros::PillMirror`
 
@@ -8,7 +8,7 @@
 proc_macro PillMirror
 ```
 
-Source: `engine\pill_engine_macros\src\lib.rs:1575`
+Source: `engine\pill_engine_macros\src\lib.rs:1948`
 
 Turns a plain (non-component) value type, or a fieldless enum, into a typed
 C# mirror.

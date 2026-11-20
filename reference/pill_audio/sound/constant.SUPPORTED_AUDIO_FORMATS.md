@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-469"></a>
+<a id="rustdoc-item-599"></a>
 
 # Constant `pill_audio::sound::SUPPORTED_AUDIO_FORMATS`
 
@@ -8,9 +8,9 @@
 pub const SUPPORTED_AUDIO_FORMATS: &[&str] = _;
 ```
 
-Source: `extensions\pill_audio\pill_audio\src\sound.rs:41`
+Source: `extensions\pill_audio\modules\runtime\src\sound.rs:41`
 
-Audio container formats [`Sound::load`](struct.Sound.md#rustdoc-item-468) accepts, lowercase and without the
+Audio container formats [`Sound::load`](struct.Sound.md#rustdoc-item-598) accepts, lowercase and without the
 leading dot.
 
 A path's extension is checked before any bytes are read. An unsupported

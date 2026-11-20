@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1752"></a>
+<a id="rustdoc-item-1776"></a>
 
 # Module `pill_csharp_bridge::parallel`
 
@@ -29,19 +29,19 @@ before any dispatch so the status is the same whichever thread Rayon picks.
 ## Module contents
 
 ### Structs
-- [`ManagedStatePointer`](struct.ManagedStatePointer.md#rustdoc-item-1756) — The managed caller's state pointer, wrapped so it can be sent to Rayon
+- [`ManagedStatePointer`](struct.ManagedStatePointer.md#rustdoc-item-1780) — The managed caller's state pointer, wrapped so it can be sent to Rayon
 
 ### Functions
-- [`ffi_parallel_for`](fn.ffi_parallel_for.md#rustdoc-item-1790) — Runs the managed trampoline for every index in `0..count`. This is the
-- [`parallel_for`](fn.parallel_for.md#rustdoc-item-1787) — Runs `run(index)` for every index in `0..count` on the shared pool and
-- [`with_callback_flag`](fn.with_callback_flag.md#rustdoc-item-1789) — Runs `body` with `IN_PARALLEL_CALLBACK` set on this thread, then restores
+- [`ffi_parallel_for`](fn.ffi_parallel_for.md#rustdoc-item-1814) — Runs the managed trampoline for every index in `0..count`. This is the
+- [`parallel_for`](fn.parallel_for.md#rustdoc-item-1811) — Runs `run(index)` for every index in `0..count` on the shared pool and
+- [`with_callback_flag`](fn.with_callback_flag.md#rustdoc-item-1813) — Runs `body` with `IN_PARALLEL_CALLBACK` set on this thread, then restores
 
 ### Type aliases
-- [`ParallelCallback`](type.ParallelCallback.md#rustdoc-item-1754) — The managed trampoline's signature: the `[UnmanagedCallersOnly]` static
+- [`ParallelCallback`](type.ParallelCallback.md#rustdoc-item-1778) — The managed trampoline's signature: the `[UnmanagedCallersOnly]` static
 
 ### Constants
-- [`IN_PARALLEL_CALLBACK`](constant.IN_PARALLEL_CALLBACK.md#rustdoc-item-1753) — Whether this thread is inside a parallel callback right now.
-- [`PARALLEL_INTERNAL_FAILURE`](constant.PARALLEL_INTERNAL_FAILURE.md#rustdoc-item-1751) — A panic escaped the dispatch; `guard_managed_callback` returns this status.
-- [`PARALLEL_NESTED`](constant.PARALLEL_NESTED.md#rustdoc-item-1750) — The call came from inside a parallel callback.
-- [`PARALLEL_NO_SCOPE`](constant.PARALLEL_NO_SCOPE.md#rustdoc-item-1749) — No managed system is scheduled on the calling thread.
-- [`PARALLEL_OK`](constant.PARALLEL_OK.md#rustdoc-item-1748) — Every index ran.
+- [`IN_PARALLEL_CALLBACK`](constant.IN_PARALLEL_CALLBACK.md#rustdoc-item-1777) — Whether this thread is inside a parallel callback right now.
+- [`PARALLEL_INTERNAL_FAILURE`](constant.PARALLEL_INTERNAL_FAILURE.md#rustdoc-item-1775) — A panic escaped the dispatch; `guard_managed_callback` returns this status.
+- [`PARALLEL_NESTED`](constant.PARALLEL_NESTED.md#rustdoc-item-1774) — The call came from inside a parallel callback.
+- [`PARALLEL_NO_SCOPE`](constant.PARALLEL_NO_SCOPE.md#rustdoc-item-1773) — No managed system is scheduled on the calling thread.
+- [`PARALLEL_OK`](constant.PARALLEL_OK.md#rustdoc-item-1772) — Every index ran.

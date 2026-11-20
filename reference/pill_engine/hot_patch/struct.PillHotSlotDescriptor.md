@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-497"></a>
+<a id="rustdoc-item-651"></a>
 
 # Struct `pill_engine::hot_patch::PillHotSlotDescriptor`
 
@@ -18,7 +18,7 @@ slot feeds.
 
 ## Fields
 
-<a id="rustdoc-item-492"></a>
+<a id="rustdoc-item-646"></a>
 
 ### `qualified_name`
 
@@ -28,7 +28,7 @@ qualified_name: &'static str
 
 Fully-qualified path, as `module_path!() + "::" + fn name`.
 
-<a id="rustdoc-item-493"></a>
+<a id="rustdoc-item-647"></a>
 
 ### `slot`
 
@@ -38,7 +38,7 @@ slot: &'static PlainSlot
 
 The slot the generated dispatcher reads, so a host can redirect calls.
 
-<a id="rustdoc-item-495"></a>
+<a id="rustdoc-item-649"></a>
 
 ### `signature`
 
@@ -52,7 +52,7 @@ Text rather than a `TypeId`, because a patch is compiled separately:
 both builds derive the value from the same source text, and text is the
 form the two can agree on.
 
-<a id="rustdoc-item-496"></a>
+<a id="rustdoc-item-650"></a>
 
 ### `implementation_address`
 
@@ -81,7 +81,7 @@ the receiver type concretely, so it always supplies one.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-498"></a>
+<a id="rustdoc-item-652"></a>
 
 ### `find`
 
@@ -101,13 +101,13 @@ The descriptor of the `#[pill_hot_fn]` this artifact declares under
 - `TryInto<U>`
 - `TryFrom<U>`
 - `Any`
+- `CastableFrom<ST, Uninit, Uninit>`
+- `CastableFrom<ST, Initialized, Initialized>`
+- `Read<Exclusive, BecauseExclusive>`
 - `Instrument`
 - `WithSubscriber`
 - `IntoEither`
 - `Pointable`
 - `OwoColorize`
 - `ErasedDestructor`
-- `CastableFrom<ST, Uninit, Uninit>`
-- `CastableFrom<ST, Initialized, Initialized>`
-- `Read<Exclusive, BecauseExclusive>`
 - `Collect`

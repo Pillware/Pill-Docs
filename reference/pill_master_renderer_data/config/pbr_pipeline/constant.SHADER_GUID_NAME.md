@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1471"></a>
+<a id="rustdoc-item-1568"></a>
 
 # Constant `pill_master_renderer_data::config::pbr_pipeline::SHADER_GUID_NAME`
 
@@ -8,7 +8,7 @@
 pub(in config::pbr_pipeline) const SHADER_GUID_NAME: &str = "pill.pbr.shader";
 ```
 
-Visibility: `{'restricted': {'parent': 1470, 'path': '::config::pbr_pipeline'}}` · Source: `extensions\pill_master_renderer\pill_master_renderer_data\src\config\pbr_pipeline\mod.rs:100`
+Visibility: `{'restricted': {'parent': 1567, 'path': '::config::pbr_pipeline'}}` · Source: `extensions\pill_master_renderer\modules\runtime\data\src\config\pbr_pipeline\mod.rs:100`
 
 The name the PBR shader's guid is derived from.
 

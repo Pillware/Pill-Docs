@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1034"></a>
+<a id="rustdoc-item-1110"></a>
 
 # Enum `pill_renderer_api::surface::PresentPreference`
 
@@ -17,7 +17,7 @@ vsync otherwise. Vsync is the default because every surface supports it.
 
 ## Variants
 
-<a id="rustdoc-item-1031"></a>
+<a id="rustdoc-item-1107"></a>
 
 ### `Vsync`
 
@@ -27,7 +27,7 @@ Vsync
 
 Wait for the display (`Fifo`).
 
-<a id="rustdoc-item-1032"></a>
+<a id="rustdoc-item-1108"></a>
 
 ### `LowLatency`
 
@@ -38,7 +38,7 @@ LowLatency
 Replace a queued frame instead of waiting (`Mailbox`), for a surface
 the frontend paces itself.
 
-<a id="rustdoc-item-1033"></a>
+<a id="rustdoc-item-1109"></a>
 
 ### `Immediate`
 
@@ -59,15 +59,16 @@ Present at once, tearing allowed (`Immediate`).
 - `TryFrom<U>`
 - `Any`
 - `ToOwned`
+- `CastableFrom<ST, Uninit, Uninit>`
+- `CastableFrom<ST, Initialized, Initialized>`
+- `Read<Exclusive, BecauseExclusive>`
 - `Instrument`
 - `WithSubscriber`
 - `IntoEither`
 - `Pointable`
 - `OwoColorize`
 - `ErasedDestructor`
-- `CastableFrom<ST, Uninit, Uninit>`
-- `CastableFrom<ST, Initialized, Initialized>`
-- `Read<Exclusive, BecauseExclusive>`
+- `Equivalent<K>`
 - `Debug`
 - `Clone`
 - `Copy`

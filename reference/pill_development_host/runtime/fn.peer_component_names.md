@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-4205"></a>
+<a id="rustdoc-item-4463"></a>
 
 # Function `pill_development_host::runtime::peer_component_names`
 
@@ -8,7 +8,7 @@
 pub(in runtime) fn peer_component_names(extensions: &[slot::ExtensionSlot], excluded_extension_index: Option<usize>, project: &loaded::LoadedProject) -> Vec<String>;
 ```
 
-Visibility: `{'restricted': {'parent': 3859, 'path': '::runtime'}}` · Source: `hosting\pill_development_host\src\runtime.rs:2763`
+Visibility: `{'restricted': {'parent': 4115, 'path': '::runtime'}}` · Source: `hosting\pill_development_host\src\runtime.rs:2943`
 
 Every component type name the live subjects other than
 `excluded_extension_index` declare.

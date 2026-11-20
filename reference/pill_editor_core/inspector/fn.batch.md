@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-4993"></a>
+<a id="rustdoc-item-6956"></a>
 
 # Function `pill_editor_core::inspector::batch`
 
@@ -8,7 +8,7 @@
 pub(in inspector) fn batch<impl Fn(Entity) -> (EditorCommand, String): Fn(pill_engine::Entity) -> (crate::editor_state::EditorCommand, String)>(targets: &[pill_engine::Entity], primary: pill_engine::Entity, component: &str, coalesce_field: &str, build_target_edit: impl Fn(pill_engine::Entity) -> (crate::editor_state::EditorCommand, String)) -> (Vec<crate::editor_state::EditorCommand>, String, String);
 ```
 
-Visibility: `{'restricted': {'parent': 4798, 'path': '::inspector'}}` · Source: `editor\pill_editor_core\src\inspector.rs:1280`
+Visibility: `{'restricted': {'parent': 6761, 'path': '::inspector'}}` · Source: `editor\pill_editor_core\src\inspector.rs:1287`
 
 A selection's batch of one-entity edits.
 

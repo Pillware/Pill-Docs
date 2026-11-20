@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-891"></a>
+<a id="rustdoc-item-913"></a>
 
 # Function `pill_csharp_bridge::mirror_naming::generated_field_signature`
 

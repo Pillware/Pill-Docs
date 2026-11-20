@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-4197"></a>
+<a id="rustdoc-item-4724"></a>
 
 # Enum `pill_editor_core::history::HistoryEntryKind`
 
@@ -14,7 +14,7 @@ The two kinds of undoable step.
 
 ## Variants
 
-<a id="rustdoc-item-4242"></a>
+<a id="rustdoc-item-4769"></a>
 
 ### `Engine`
 
@@ -24,7 +24,7 @@ Engine
 
 An engine batch and the batch that reverses it.
 
-<a id="rustdoc-item-4245"></a>
+<a id="rustdoc-item-4772"></a>
 
 ### `Selection`
 

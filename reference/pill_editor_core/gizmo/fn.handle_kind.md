@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-4023"></a>
+<a id="rustdoc-item-4405"></a>
 
 # Function `pill_editor_core::gizmo::handle_kind`
 
@@ -8,7 +8,7 @@
 pub fn handle_kind(handle: u32) -> Option<HandleKind>;
 ```
 
-Source: `editor\pill_editor_core\src\gizmo.rs:451`
+Source: `editor\pill_editor_core\src\gizmo.rs:476`
 
 What a handle id addresses; `None` for an id this module never issues.
 

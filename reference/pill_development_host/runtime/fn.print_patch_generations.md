@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-4222"></a>
+<a id="rustdoc-item-4480"></a>
 
 # Function `pill_development_host::runtime::print_patch_generations`
 
@@ -8,7 +8,7 @@
 pub(in runtime) fn print_patch_generations(host: &DevHost);
 ```
 
-Visibility: `{'restricted': {'parent': 3859, 'path': '::runtime'}}` · Source: `hosting\pill_development_host\src\runtime.rs:3860`
+Visibility: `{'restricted': {'parent': 4115, 'path': '::runtime'}}` · Source: `hosting\pill_development_host\src\runtime.rs:4056`
 
 Print every generation this session has installed.
 

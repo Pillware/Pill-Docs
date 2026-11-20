@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-108"></a>
+<a id="rustdoc-item-111"></a>
 
 # Struct `pill_ui_theme::font::FontImportSettings`
 
@@ -38,6 +38,7 @@ the file is renamed.
 - `Pointable`
 - `OwoColorize`
 - `ErasedDestructor`
+- `Equivalent<K>`
 - `Clone`
 - `Debug`
 - `Default`

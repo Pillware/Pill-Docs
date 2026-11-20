@@ -147,7 +147,7 @@ One more variable matters without being Pill's own: a shipping build must not in
 
 - `modules/hosting/pill_development_host/src/config.rs` - the hot reload switches, `PILL_CARGO_TIMINGS` and `PILL_CSHARP_CONFIGURATION`.
 - `modules/hosting/pill_development_host/src/watchers/shared.rs` - `PILL_WATCH_DEBOUNCE_MS`.
-- `modules/extensions/pill_master_renderer/pill_master_renderer/src/surface.rs` and `profiler.rs` - `PILL_PRESENT_MODE` and `PILL_GPU_PROFILE`.
+- `modules/extensions/pill_master_renderer/modules/runtime/gpu/src/surface.rs` and `profiler.rs` - `PILL_PRESENT_MODE` and `PILL_GPU_PROFILE`.
 - `modules/editor/pill_editor/src/` and `modules/editor/pill_editor_core/src/` - the `PILL_EDITOR_*` switches and the state folder.
 - `modules/csharp/pill_csharp_bridge/src/csharp_runtime.rs` and `modules/csharp/pill_csharp_runtime/src/LoaderInterop.cs` - the .NET variables.
 - `modules/engine/pill_engine_core/src/config.rs` - `ECS_SLICE_SIZE`.

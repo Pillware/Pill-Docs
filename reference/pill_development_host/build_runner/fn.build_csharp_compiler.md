@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-766"></a>
+<a id="rustdoc-item-768"></a>
 
 # Function `pill_development_host::build_runner::build_csharp_compiler`
 
@@ -8,7 +8,7 @@
 pub(crate) fn build_csharp_compiler(workspace_root: &std::path::Path) -> Result<std::path::PathBuf, pill_core::error::BuildError>;
 ```
 
-Visibility: `crate` · Source: `hosting\pill_development_host\src\build_runner.rs:1427`
+Visibility: `crate` · Source: `hosting\pill_development_host\src\build_runner.rs:1428`
 
 Builds the managed assembly that compiles C# projects in-process.
 
@@ -21,4 +21,4 @@ MSBuild's own incremental check makes an unchanged compiler project cheap to
 ## Errors
 
 Returns [`BuildError::OutputMissing`] when the compiler project or its output
-assembly is absent, or whatever [`run_build_command`](fn.run_build_command.md#rustdoc-item-761) reports.
+assembly is absent, or whatever [`run_build_command`](fn.run_build_command.md#rustdoc-item-763) reports.

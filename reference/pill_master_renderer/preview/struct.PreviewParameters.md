@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-641"></a>
+<a id="rustdoc-item-637"></a>
 
 # Struct `pill_master_renderer::preview::PreviewParameters`
 
@@ -8,13 +8,13 @@
 pub(in preview) struct PreviewParameters;
 ```
 
-Visibility: `{'restricted': {'parent': 592, 'path': '::preview'}}` · Source: `extensions\pill_master_renderer\pill_master_renderer\src\preview.rs:100`
+Visibility: `{'restricted': {'parent': 589, 'path': '::preview'}}` · Source: `extensions\pill_master_renderer\modules\runtime\gpu\src\preview.rs:100`
 
 The uniform a texture or material preview writes.
 
 ## Fields
 
-<a id="rustdoc-item-639"></a>
+<a id="rustdoc-item-635"></a>
 
 ### `color`
 
@@ -24,7 +24,7 @@ color: [f32; 4]
 
 The material's colour. A texture preview leaves it unused.
 
-<a id="rustdoc-item-640"></a>
+<a id="rustdoc-item-636"></a>
 
 ### `mode`
 
@@ -32,7 +32,7 @@ The material's colour. A texture preview leaves it unused.
 mode: [u32; 4]
 ```
 
-The [`PreviewMode`](enum.PreviewMode.md#rustdoc-item-599) value the shader compares against, stored in the
+The [`PreviewMode`](enum.PreviewMode.md#rustdoc-item-596) value the shader compares against, stored in the
 first word of a vec4. The other three words keep the uniform a multiple
 of 16 bytes.
 

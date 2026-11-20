@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-7260"></a>
+<a id="rustdoc-item-9320"></a>
 
 # Struct `pill_editor_core::session::ContextClaim`
 
@@ -8,13 +8,13 @@
 pub struct ContextClaim;
 ```
 
-Source: `editor\pill_editor_core\src\session.rs:965`
+Source: `editor\pill_editor_core\src\session.rs:972`
 
 What one generation's claim on the session's egui contexts cleared.
 
 ## Fields
 
-<a id="rustdoc-item-8004"></a>
+<a id="rustdoc-item-10066"></a>
 
 ### `main_entries`
 
@@ -24,7 +24,7 @@ main_entries: usize
 
 The entries the main context's `Memory::data` held.
 
-<a id="rustdoc-item-8005"></a>
+<a id="rustdoc-item-10067"></a>
 
 ### `popout_windows`
 

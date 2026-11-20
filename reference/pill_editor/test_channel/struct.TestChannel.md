@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-602"></a>
+<a id="rustdoc-item-673"></a>
 
 # Struct `pill_editor::test_channel::TestChannel`
 
@@ -14,7 +14,7 @@ Reads the command lines a test suite appends to a file.
 
 ## Fields
 
-<a id="rustdoc-item-1559"></a>
+<a id="rustdoc-item-2063"></a>
 
 ### `file_path`
 
@@ -24,7 +24,7 @@ file_path: std::path::PathBuf
 
 Path of the file the test suites append to.
 
-<a id="rustdoc-item-1561"></a>
+<a id="rustdoc-item-2065"></a>
 
 ### `consumed_byte_count`
 
@@ -36,7 +36,7 @@ Number of bytes of the file whose lines have already been handed over.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-1562"></a>
+<a id="rustdoc-item-2066"></a>
 
 ### `from_environment`
 
@@ -47,7 +47,7 @@ pub fn from_environment() -> Option<TestChannel>;
 Opens the channel when `PILL_EDITOR_TEST_COMMANDS` is set, and returns
 `None` when it is not.
 
-<a id="rustdoc-item-1563"></a>
+<a id="rustdoc-item-2067"></a>
 
 ### `poll`
 

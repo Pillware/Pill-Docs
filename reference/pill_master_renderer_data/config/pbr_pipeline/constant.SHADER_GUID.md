@@ -8,6 +8,6 @@
 pub const SHADER_GUID: pill_engine::AssetGuid = _;
 ```
 
-Source: `extensions\pill_master_renderer\pill_master_renderer_data\src\config\pbr_pipeline\mod.rs:73`
+Source: `extensions\pill_master_renderer\modules\runtime\data\src\config\pbr_pipeline\mod.rs:73`
 
 The guid the PBR shader is stored under, so a material file can name it.

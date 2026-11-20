@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1200"></a>
+<a id="rustdoc-item-1210"></a>
 
 # Function `pill_core::platform::log_output::open_file_output`
 

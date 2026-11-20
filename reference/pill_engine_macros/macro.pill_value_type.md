@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-362"></a>
+<a id="rustdoc-item-386"></a>
 
 # Procedural macro `pill_engine_macros::pill_value_type`
 
@@ -8,7 +8,7 @@
 proc_macro pill_value_type
 ```
 
-Source: `engine\pill_engine_macros\src\lib.rs:1649`
+Source: `engine\pill_engine_macros\src\lib.rs:2022`
 
 Declares the layout of a foreign value type for the managed mirror.
 
@@ -20,9 +20,11 @@ It emits the same
 into the calling artifact's registry. Managed code then gets typed members
 for the fields instead of an opaque byte blob.
 
-Spell the path exactly as the component field is written. The field tag is
-the path as spelled at the field site (`Vector3f` for a `[Vector3f; 16]`
-field), and the host resolves descriptors by exact name. A generated
+The declaration is stored under the path's first and last segment
+(`pill_core::Vector2f`), the `<crate>::<Type>` shape every stored name has.
+The field tag stays the path as spelled at the field site (`Vector3f` for a
+`[Vector3f; 16]` field), and the readers resolve it against the stored name
+by its last segment. A generated
 assertion fails the build when the last declared field does not end the
 type, so a field added behind the declaration cannot go unseen. The
 declaration belongs to the artifact whose mirror needs it: another module's

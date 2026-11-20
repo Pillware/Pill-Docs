@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-404"></a>
+<a id="rustdoc-item-450"></a>
 
 # Function `pill_engine::declarations::with_declaration_baseline`
 
@@ -8,7 +8,7 @@
 pub fn with_declaration_baseline<R, impl FnOnce() -> R: FnOnce() -> R>(baseline: DeclarationBaseline, register: impl FnOnce() -> R) -> R;
 ```
 
-Source: `engine\pill_engine\src\declarations.rs:96`
+Source: `engine\pill_engine\src\declarations.rs:149`
 
 Runs `register` with `baseline` as the number of declarations the process
 already held.

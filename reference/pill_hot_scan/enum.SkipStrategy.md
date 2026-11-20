@@ -8,7 +8,7 @@
 pub(crate) enum SkipStrategy { ... }
 ```
 
-Visibility: `crate` · Source: `hosting\pill_hot_scan\src\lib.rs:896`
+Visibility: `crate` · Source: `hosting\pill_hot_scan\src\lib.rs:923`
 
 Whether a scan continues inside a function it just matched.
 

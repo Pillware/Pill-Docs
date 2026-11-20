@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-761"></a>
+<a id="rustdoc-item-771"></a>
 
 # Function `pill_core::error::report::engine_report`
 

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-567"></a>
+<a id="rustdoc-item-568"></a>
 
 # Constant `pill_development_host::build_runner::HOST_MODULE_FEATURE_SET`
 
@@ -8,7 +8,7 @@
 pub(in build_runner) const HOST_MODULE_FEATURE_SET: &str = _;
 ```
 
-Visibility: `{'restricted': {'parent': 545, 'path': '::build_runner'}}` · Source: `hosting\pill_development_host\src\build_runner.rs:171`
+Visibility: `{'restricted': {'parent': 546, 'path': '::build_runner'}}` · Source: `hosting\pill_development_host\src\build_runner.rs:171`
 
 The host's feature set, which module builds must reproduce.
 

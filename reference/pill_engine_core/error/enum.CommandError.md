@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-2568"></a>
+<a id="rustdoc-item-2833"></a>
 
 # Enum `pill_engine_core::error::CommandError`
 
@@ -18,7 +18,7 @@ going. Call `Engine::set_should_exit_on_error(true)` and
 
 ## Variants
 
-<a id="rustdoc-item-4617"></a>
+<a id="rustdoc-item-6191"></a>
 
 ### `EntityNotFound`
 
@@ -28,7 +28,7 @@ EntityNotFound
 
 The target entity no longer exists in the world.
 
-<a id="rustdoc-item-4621"></a>
+<a id="rustdoc-item-6195"></a>
 
 ### `ComponentWriteFailed`
 
@@ -45,7 +45,7 @@ frame leaves the queued command naming storage that no longer exists.
 The failure is collected as an error instead of panicking, because a
 panic here would unwind through the C ABI of a managed project.
 
-<a id="rustdoc-item-4624"></a>
+<a id="rustdoc-item-6198"></a>
 
 ### `DuplicateComponent`
 
@@ -60,7 +60,7 @@ rows for one entity row, or make the archetype insert panic when it
 finds the id already present. The command is refused before the entity
 row exists, so a rejected command leaves no partial entity.
 
-<a id="rustdoc-item-4627"></a>
+<a id="rustdoc-item-6201"></a>
 
 ### `ComponentAlreadyExists`
 
@@ -70,7 +70,7 @@ ComponentAlreadyExists
 
 The entity already possesses the component being added.
 
-<a id="rustdoc-item-4630"></a>
+<a id="rustdoc-item-6204"></a>
 
 ### `ComponentNotFound`
 
@@ -80,7 +80,7 @@ ComponentNotFound
 
 The entity does not have the component being removed.
 
-<a id="rustdoc-item-4633"></a>
+<a id="rustdoc-item-6207"></a>
 
 ### `MigrationFailed`
 
@@ -107,15 +107,15 @@ unwind across the C ABI.
 - `TryFrom<U>`
 - `Any`
 - `ToString`
+- `CastableFrom<ST, Uninit, Uninit>`
+- `CastableFrom<ST, Initialized, Initialized>`
+- `Read<Exclusive, BecauseExclusive>`
 - `Instrument`
 - `WithSubscriber`
 - `IntoEither`
 - `Pointable`
 - `OwoColorize`
 - `ErasedDestructor`
-- `CastableFrom<ST, Uninit, Uninit>`
-- `CastableFrom<ST, Initialized, Initialized>`
-- `Read<Exclusive, BecauseExclusive>`
 - `Debug`
 - `Diagnostic`
 - `Error`

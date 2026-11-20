@@ -8,7 +8,7 @@
 pub(crate) fn write_inventory(path: &std::path::Path, contents: &str);
 ```
 
-Visibility: `crate` · Source: `hosting\pill_hot_scan\src\lib.rs:1423`
+Visibility: `crate` · Source: `hosting\pill_hot_scan\src\lib.rs:1450`
 
 Write the generated inventory, failing loudly rather than leaving a stale one.
 

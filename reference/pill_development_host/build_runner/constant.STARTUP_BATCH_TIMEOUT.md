@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-563"></a>
+<a id="rustdoc-item-564"></a>
 
 # Constant `pill_development_host::build_runner::STARTUP_BATCH_TIMEOUT`
 
@@ -8,7 +8,7 @@
 pub(in build_runner) const STARTUP_BATCH_TIMEOUT: std::time::Duration = _;
 ```
 
-Visibility: `{'restricted': {'parent': 545, 'path': '::build_runner'}}` · Source: `hosting\pill_development_host\src\build_runner.rs:136`
+Visibility: `{'restricted': {'parent': 546, 'path': '::build_runner'}}` · Source: `hosting\pill_development_host\src\build_runner.rs:136`
 
 Longest time the startup batch may run.
 

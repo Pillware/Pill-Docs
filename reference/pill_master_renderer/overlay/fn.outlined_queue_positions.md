@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1454"></a>
+<a id="rustdoc-item-1497"></a>
 
 # Function `pill_master_renderer::overlay::outlined_queue_positions`
 
@@ -8,6 +8,6 @@
 pub(in overlay) fn outlined_queue_positions(frame: &crate::frame::RenderFrame, render_queue: &[crate::render_queue::RenderQueueItem]) -> Vec<u32>;
 ```
 
-Visibility: `{'restricted': {'parent': 858, 'path': '::overlay'}}` · Source: `extensions\pill_master_renderer\pill_master_renderer\src\overlay\mod.rs:1102`
+Visibility: `{'restricted': {'parent': 854, 'path': '::overlay'}}` · Source: `extensions\pill_master_renderer\modules\runtime\gpu\src\overlay\mod.rs:1146`
 
 The queue positions of the instances whose entity is outlined.

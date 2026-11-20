@@ -142,5 +142,5 @@ Shipping mode is covered in [Build configurations](../../other/build_configurati
 - `modules/frontends/pill_standalone/src/headless_standalone.rs` and `windowed_standalone.rs`: the headless and the windowed main loop; a build compiles one of them.
 - `modules/frontends/pill_web/src/lib.rs`: the browser frontend.
 - `modules/frontends/pill_input/`: input translation and gamepads.
-- `modules/frontends/editor/pill_editor/`: the editor frontend.
+- `modules/editor/pill_editor/`: the editor frontend.
 - `modules/hosting/pill_player/src/runtime.rs`: the `FrameDriver` interface.

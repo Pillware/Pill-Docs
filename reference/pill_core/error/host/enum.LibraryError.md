@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-333"></a>
+<a id="rustdoc-item-340"></a>
 
 # Enum `pill_core::error::host::LibraryError`
 
@@ -8,7 +8,7 @@
 pub enum LibraryError { ... }
 ```
 
-Source: `engine\pill_core\src\error\host.rs:355`
+Source: `engine\pill_core\src\error\host.rs:384`
 
 Native project-library loading and initialization failures.
 
@@ -23,7 +23,7 @@ chain.
 
 ## Variants
 
-<a id="rustdoc-item-310"></a>
+<a id="rustdoc-item-317"></a>
 
 ### `TemporaryDirectory`
 
@@ -33,7 +33,7 @@ TemporaryDirectory
 
 The per-process temporary directory could not be created.
 
-<a id="rustdoc-item-314"></a>
+<a id="rustdoc-item-321"></a>
 
 ### `CopyFailed`
 
@@ -43,7 +43,7 @@ CopyFailed
 
 The built library could not be copied to its temporary path.
 
-<a id="rustdoc-item-317"></a>
+<a id="rustdoc-item-324"></a>
 
 ### `LoadFailed`
 
@@ -53,7 +53,7 @@ LoadFailed
 
 The temporary copy is not a loadable native library.
 
-<a id="rustdoc-item-321"></a>
+<a id="rustdoc-item-328"></a>
 
 ### `EngineDylibMismatch`
 
@@ -67,17 +67,19 @@ has mapped, so the loader cannot resolve its imports.
 Cargo puts the features a dependency resolved into the `-C metadata` of
 the crate that uses it, and that hash is part of every symbol name
 `pill_core` exports. Two builds that resolved different feature sets
-therefore produce two `pill_core.dll` files with different symbols, and
-an artifact built against one cannot load against the other. Windows
-reports that as `LoadLibrary` error 127, "The specified procedure could
-not be found", which names neither the dylib nor the feature.
+therefore produce two copies of the dylib with different symbols, and an
+artifact built against one cannot load against the other. Neither loader
+names the cause: Windows reports `LoadLibrary` error 127, "The specified
+procedure could not be found", and a Unix loader reports
+`undefined symbol: <one mangled name>`. Both name neither the dylib nor
+the feature that moved.
 
-Copying the matching dylib beside the artifact does not help. The loader
-uses the copy already mapped in the process, whatever directory a new
-one sits in, and the host maps `pill_core.dll` before it builds
-anything.
+Copying the matching dylib beside the artifact does not help on its own.
+The loader uses the copy already mapped in the process, whatever
+directory a new one sits in, and the host maps the engine dylibs before
+it builds anything.
 
-<a id="rustdoc-item-326"></a>
+<a id="rustdoc-item-333"></a>
 
 ### `MissingImport`
 
@@ -86,15 +88,16 @@ MissingImport
 ```
 
 A named import the module needs is not exported by the copy of the
-imported DLL the loader would use.
+imported dylib the loader would use.
 
-Windows reports a missing named import as `LoadLibrary` error 127,
-"The specified procedure could not be found", naming neither the DLL
-nor the symbol. Comparing the module's import table with the export
-table of each candidate copy says which symbol is missing and which
-copy was looked at.
+A loader names neither the dylib nor the symbol: Windows reports a
+missing named import as `LoadLibrary` error 127, "The specified procedure
+could not be found", and a Unix loader reports
+`undefined symbol: <name>` for one symbol only. Comparing the module's
+import table with the export table of each candidate copy says which
+symbol is missing and which copy was looked at.
 
-<a id="rustdoc-item-330"></a>
+<a id="rustdoc-item-337"></a>
 
 ### `MissingExport`
 
@@ -108,7 +111,7 @@ The error names the artifact as well as the symbol. A project and an
 extension export the same entry points, so the symbol alone would not
 say which artifact is missing one.
 
-<a id="rustdoc-item-332"></a>
+<a id="rustdoc-item-339"></a>
 
 ### `InitializationFailed`
 

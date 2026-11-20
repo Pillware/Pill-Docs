@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-933"></a>
+<a id="rustdoc-item-955"></a>
 
 # Function `pill_csharp_bridge::components::apply_component_manifest_on_reload`
 
@@ -12,10 +12,10 @@ Visibility: `crate` · Source: `csharp\pill_csharp_bridge\src\components.rs:575`
 
 Apply a swapped assembly's component manifest to the live world.
 
-The reload counterpart of [`register_component_manifest`](fn.register_component_manifest.md#rustdoc-item-890): where startup may
+The reload counterpart of [`register_component_manifest`](fn.register_component_manifest.md#rustdoc-item-912): where startup may
 register what it likes, this one has to *migrate*, so a managed component
 whose layout changed keeps its entities and its rows and only the bytes
-move. This kind's contribution to that pipeline is [`COMPONENT_SUBJECT`](constant.COMPONENT_SUBJECT.md#rustdoc-item-932).
+move. This kind's contribution to that pipeline is [`COMPONENT_SUBJECT`](constant.COMPONENT_SUBJECT.md#rustdoc-item-954).
 
 These cases are refused rather than migrated:
 

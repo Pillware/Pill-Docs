@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1593"></a>
+<a id="rustdoc-item-2097"></a>
 
 # Function `pill_editor::test_channel::seconds_from_environment`
 

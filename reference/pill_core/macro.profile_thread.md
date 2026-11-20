@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-2127"></a>
+<a id="rustdoc-item-2137"></a>
 
 # Macro `pill_core::profile_thread`
 

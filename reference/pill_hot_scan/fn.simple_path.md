@@ -8,7 +8,7 @@
 pub(crate) fn simple_path(candidate: &str) -> Option<String>;
 ```
 
-Visibility: `crate` · Source: `hosting\pill_hot_scan\src\lib.rs:768`
+Visibility: `crate` · Source: `hosting\pill_hot_scan\src\lib.rs:795`
 
 One path with no type arguments, or `None`.
 

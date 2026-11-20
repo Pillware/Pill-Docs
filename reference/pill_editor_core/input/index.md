@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-4577"></a>
+<a id="rustdoc-item-6538"></a>
 
 # Module `pill_editor_core::input`
 
@@ -31,10 +31,10 @@ list.
 ## Module contents
 
 ### Structs
-- [`EventReplayState`](struct.EventReplayState.md#rustdoc-item-4580) — The state the bridge carries from one event to the next while it replays
+- [`EventReplayState`](struct.EventReplayState.md#rustdoc-item-6541) — The state the bridge carries from one event to the next while it replays
 
 ### Functions
-- [`map_key`](fn.map_key.md#rustdoc-item-4617) — Returns the egui key for an engine key, or `None` for a key egui does not name.
-- [`modifiers`](fn.modifiers.md#rustdoc-item-4616) — Copies the engine's modifier state into egui's.
-- [`pointer_button`](fn.pointer_button.md#rustdoc-item-4613) — Returns the egui pointer button for an engine mouse button.
-- [`raw_input`](fn.raw_input.md#rustdoc-item-4611) — Builds one frame of egui input from the shell's events and geometry.
+- [`map_key`](fn.map_key.md#rustdoc-item-6578) — Returns the egui key for an engine key, or `None` for a key egui does not name.
+- [`modifiers`](fn.modifiers.md#rustdoc-item-6577) — Copies the engine's modifier state into egui's.
+- [`pointer_button`](fn.pointer_button.md#rustdoc-item-6574) — Returns the egui pointer button for an engine mouse button.
+- [`raw_input`](fn.raw_input.md#rustdoc-item-6572) — Builds one frame of egui input from the shell's events and geometry.

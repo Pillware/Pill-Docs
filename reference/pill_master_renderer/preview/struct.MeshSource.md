@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-725"></a>
+<a id="rustdoc-item-721"></a>
 
 # Struct `pill_master_renderer::preview::MeshSource`
 
@@ -8,13 +8,13 @@
 pub(crate) struct MeshSource;
 ```
 
-Visibility: `crate` · Source: `extensions\pill_master_renderer\pill_master_renderer\src\preview.rs:130`
+Visibility: `crate` · Source: `extensions\pill_master_renderer\modules\runtime\gpu\src\preview.rs:130`
 
 One decoded mesh on the GPU, with the transform that frames it.
 
 ## Fields
 
-<a id="rustdoc-item-721"></a>
+<a id="rustdoc-item-717"></a>
 
 ### `vertices`
 
@@ -24,7 +24,7 @@ vertices: wgpu::Buffer
 
 Interleaved vertices, in the asset crate's `MeshVertex` layout.
 
-<a id="rustdoc-item-722"></a>
+<a id="rustdoc-item-718"></a>
 
 ### `indices`
 
@@ -32,9 +32,9 @@ Interleaved vertices, in the asset crate's `MeshVertex` layout.
 indices: wgpu::Buffer
 ```
 
-Triangle indices into [`Self::vertices`](#rustdoc-item-721).
+Triangle indices into [`Self::vertices`](#rustdoc-item-717).
 
-<a id="rustdoc-item-723"></a>
+<a id="rustdoc-item-719"></a>
 
 ### `index_count`
 
@@ -44,7 +44,7 @@ index_count: u32
 
 How many indices to draw.
 
-<a id="rustdoc-item-724"></a>
+<a id="rustdoc-item-720"></a>
 
 ### `transform`
 

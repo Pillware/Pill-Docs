@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-2331"></a>
+<a id="rustdoc-item-2391"></a>
 
 # Function `pill_editor_core::drain::registry_stamp`
 
@@ -8,7 +8,7 @@
 pub fn registry_stamp(world: &pill_engine::World) -> u64;
 ```
 
-Source: `editor\pill_editor_core\src\drain.rs:397`
+Source: `editor\pill_editor_core\src\drain.rs:532`
 
 A stamp of the world's component registry: the component names plus every
 field name their layouts declare. Removing a field changes it too.

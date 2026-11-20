@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-2042"></a>
+<a id="rustdoc-item-2067"></a>
 
 # Function `pill_csharp_bridge::resources::resolve_resource_access`
 

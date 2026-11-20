@@ -8,7 +8,7 @@
 pub(in mirror) fn discriminant_value(expression: &syn::Expr) -> syn::Result<i128>;
 ```
 
-Visibility: `{'restricted': {'parent': 1, 'path': '::mirror'}}` · Source: `engine\pill_engine_macros\src\mirror.rs:1677`
+Visibility: `{'restricted': {'parent': 1, 'path': '::mirror'}}` · Source: `engine\pill_engine_macros\src\mirror.rs:1701`
 
 The value of a literal (possibly negated) enum discriminant.
 

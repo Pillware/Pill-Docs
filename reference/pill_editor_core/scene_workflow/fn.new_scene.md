@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-6690"></a>
+<a id="rustdoc-item-8729"></a>
 
 # Function `pill_editor_core::scene_workflow::new_scene`
 
@@ -8,7 +8,7 @@
 pub fn new_scene(engine: &mut pill_engine::Engine) -> usize;
 ```
 
-Source: `editor\pill_editor_core\src\scene_workflow.rs:114`
+Source: `editor\pill_editor_core\src\scene_workflow.rs:120`
 
 Start an empty scene: every entity is removed, no file is open, and the
 selection and history are cleared.

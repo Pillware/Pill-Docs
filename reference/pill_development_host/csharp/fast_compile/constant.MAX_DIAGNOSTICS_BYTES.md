@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1346"></a>
+<a id="rustdoc-item-1421"></a>
 
 # Constant `pill_development_host::csharp::fast_compile::MAX_DIAGNOSTICS_BYTES`
 
@@ -8,7 +8,7 @@
 pub(in csharp::fast_compile) const MAX_DIAGNOSTICS_BYTES: u32 = _;
 ```
 
-Visibility: `{'restricted': {'parent': 1342, 'path': '::csharp::fast_compile'}}` · Source: `hosting\pill_development_host\src\csharp\fast_compile.rs:72`
+Visibility: `{'restricted': {'parent': 1417, 'path': '::csharp::fast_compile'}}` · Source: `hosting\pill_development_host\src\csharp\fast_compile.rs:72`
 
 Upper bound for one compile's diagnostics text.
 

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1861"></a>
+<a id="rustdoc-item-1871"></a>
 
 # Struct `pill_core::telemetry::StyledFieldVisitor`
 
@@ -21,7 +21,7 @@ same event: the same fields appear, and a value reads the same way.
 
 ## Fields
 
-<a id="rustdoc-item-1857"></a>
+<a id="rustdoc-item-1867"></a>
 
 ### `accepts_ansi`
 
@@ -31,7 +31,7 @@ accepts_ansi: bool
 
 _No documentation provided._
 
-<a id="rustdoc-item-1858"></a>
+<a id="rustdoc-item-1868"></a>
 
 ### `skip_log_fields`
 
@@ -42,7 +42,7 @@ skip_log_fields: bool
 Drop the `log.*` fields of a bridged `log` record; the normalized
 metadata already carries what they hold.
 
-<a id="rustdoc-item-1859"></a>
+<a id="rustdoc-item-1869"></a>
 
 ### `message`
 
@@ -52,7 +52,7 @@ message: String
 
 _No documentation provided._
 
-<a id="rustdoc-item-1860"></a>
+<a id="rustdoc-item-1870"></a>
 
 ### `fields`
 
@@ -64,7 +64,7 @@ _No documentation provided._
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-1862"></a>
+<a id="rustdoc-item-1872"></a>
 
 ### `plain`
 
@@ -75,7 +75,7 @@ pub(crate) fn plain(skip_log_fields: bool) -> Self;
 A visitor for one event that styles nothing and drops the bridged
 `log.*` fields when the record came through `log`.
 
-<a id="rustdoc-item-1863"></a>
+<a id="rustdoc-item-1873"></a>
 
 ### `into_line`
 
@@ -84,7 +84,7 @@ pub(crate) fn into_line(self: Self) -> String;
 ```
 
 The line a reader sees: the message, then its fields after
-[`FIELD_SEPARATOR`](constant.FIELD_SEPARATOR.md#rustdoc-item-1723), with a block's fields on its heading line the way
+[`FIELD_SEPARATOR`](constant.FIELD_SEPARATOR.md#rustdoc-item-1733), with a block's fields on its heading line the way
 the terminal formatter puts them.
 
 ## Trait implementations

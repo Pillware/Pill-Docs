@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-2954"></a>
+<a id="rustdoc-item-2991"></a>
 
 # Function `pill_master_renderer::surface::alpha_mode_candidates`
 
@@ -8,7 +8,7 @@
 pub(in surface) fn alpha_mode_candidates(requested_alpha_mode: wgpu::CompositeAlphaMode) -> Vec<wgpu::CompositeAlphaMode>;
 ```
 
-Visibility: `{'restricted': {'parent': 2900, 'path': '::surface'}}` · Source: `extensions\pill_master_renderer\pill_master_renderer\src\surface.rs:557`
+Visibility: `{'restricted': {'parent': 2937, 'path': '::surface'}}` · Source: `extensions\pill_master_renderer\modules\runtime\gpu\src\surface.rs:557`
 
 The alpha modes to try, in order: the requested one, then `Opaque`.
 

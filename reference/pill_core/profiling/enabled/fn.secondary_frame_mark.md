@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1335"></a>
+<a id="rustdoc-item-1345"></a>
 
 # Function `pill_core::profiling::enabled::secondary_frame_mark`
 

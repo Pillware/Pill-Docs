@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-2111"></a>
+<a id="rustdoc-item-2136"></a>
 
 # Struct `pill_csharp_bridge::ResolvedFieldAccessor`
 
@@ -16,7 +16,7 @@ method table.
 
 ## Fields
 
-<a id="rustdoc-item-2101"></a>
+<a id="rustdoc-item-2126"></a>
 
 ### `type_name`
 
@@ -26,7 +26,7 @@ type_name: String
 
 Fully-qualified component type name the field belongs to.
 
-<a id="rustdoc-item-2102"></a>
+<a id="rustdoc-item-2127"></a>
 
 ### `field_name`
 
@@ -36,7 +36,7 @@ field_name: String
 
 Rust field name, snake_case.
 
-<a id="rustdoc-item-2103"></a>
+<a id="rustdoc-item-2128"></a>
 
 ### `kind`
 
@@ -46,7 +46,7 @@ kind: String
 
 Container kind: `"vec"`, `"dynbuf"`, `"string"`, or `"vecstring"`.
 
-<a id="rustdoc-item-2104"></a>
+<a id="rustdoc-item-2129"></a>
 
 ### `element_tag`
 
@@ -57,7 +57,7 @@ element_tag: String
 Element type tag of a `vec` field. It is `string` for a `vecstring`
 field, and empty for a `string` field.
 
-<a id="rustdoc-item-2105"></a>
+<a id="rustdoc-item-2130"></a>
 
 ### `view_address`
 
@@ -68,7 +68,7 @@ view_address: Option<usize>
 Address of the view trampoline. `None` for a `vecstring` field, whose
 elements are allocated separately and cannot be viewed as one run.
 
-<a id="rustdoc-item-2106"></a>
+<a id="rustdoc-item-2131"></a>
 
 ### `resize_address`
 
@@ -79,7 +79,7 @@ resize_address: Option<usize>
 Address of the resize trampoline for a `vec`, `dynbuf` or `vecstring`
 field.
 
-<a id="rustdoc-item-2107"></a>
+<a id="rustdoc-item-2132"></a>
 
 ### `set_address`
 
@@ -89,7 +89,7 @@ set_address: Option<usize>
 
 Address of the replace-in-place trampoline for a `string` field.
 
-<a id="rustdoc-item-2108"></a>
+<a id="rustdoc-item-2133"></a>
 
 ### `item_address`
 
@@ -99,7 +99,7 @@ item_address: Option<usize>
 
 Address of the per-element view trampoline for a `vecstring` field.
 
-<a id="rustdoc-item-2109"></a>
+<a id="rustdoc-item-2134"></a>
 
 ### `set_item_address`
 
@@ -109,7 +109,7 @@ set_item_address: Option<usize>
 
 Address of the per-element replace trampoline for a `vecstring` field.
 
-<a id="rustdoc-item-2110"></a>
+<a id="rustdoc-item-2135"></a>
 
 ### `push_address`
 

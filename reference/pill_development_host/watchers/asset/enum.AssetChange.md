@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-4235"></a>
+<a id="rustdoc-item-4494"></a>
 
 # Enum `pill_development_host::watchers::asset::AssetChange`
 
@@ -14,7 +14,7 @@ One source asset's change, worked out from the files on disk.
 
 ## Variants
 
-<a id="rustdoc-item-4230"></a>
+<a id="rustdoc-item-4489"></a>
 
 ### `Edited`
 
@@ -25,7 +25,7 @@ Edited
 The source or its metadata file was created or edited: import it, or
 reimport it when it is loaded.
 
-<a id="rustdoc-item-4232"></a>
+<a id="rustdoc-item-4491"></a>
 
 ### `SourceRemoved`
 
@@ -35,7 +35,7 @@ SourceRemoved
 
 The source file is gone.
 
-<a id="rustdoc-item-4234"></a>
+<a id="rustdoc-item-4493"></a>
 
 ### `MetadataRemoved`
 

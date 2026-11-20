@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-2488"></a>
+<a id="rustdoc-item-2579"></a>
 
 # Constant `pill_editor_core::resources::EDITABLE_RESOURCES`
 

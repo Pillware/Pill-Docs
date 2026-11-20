@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1547"></a>
+<a id="rustdoc-item-1644"></a>
 
 # Constant `pill_master_renderer_data::config::INITIAL_INSTANCE_VECTOR_CAPACITY`
 
@@ -8,7 +8,7 @@
 pub const INITIAL_INSTANCE_VECTOR_CAPACITY: usize = 10000;
 ```
 
-Source: `extensions\pill_master_renderer\pill_master_renderer_data\src\config\mod.rs:63`
+Source: `extensions\pill_master_renderer\modules\runtime\data\src\config\mod.rs:63`
 
 Initial capacity for a staging vector of instances, sized like
-[`INSTANCE_BATCH_SIZE`](constant.INSTANCE_BATCH_SIZE.md#rustdoc-item-1546).
+[`INSTANCE_BATCH_SIZE`](constant.INSTANCE_BATCH_SIZE.md#rustdoc-item-1643).

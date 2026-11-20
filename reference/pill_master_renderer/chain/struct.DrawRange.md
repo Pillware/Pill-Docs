@@ -8,7 +8,7 @@
 pub(crate) struct DrawRange;
 ```
 
-Visibility: `crate` · Source: `extensions\pill_master_renderer\pill_master_renderer\src\chain.rs:91`
+Visibility: `crate` · Source: `extensions\pill_master_renderer\modules\runtime\gpu\src\chain.rs:91`
 
 One run of queue positions a geometry pass records, and which pipeline it
 draws them through.

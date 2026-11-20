@@ -8,7 +8,7 @@
 pub fn declaration_is_cfg_gated(source: &str, mask: &[bool], declaration_start: usize) -> bool;
 ```
 
-Source: `hosting\pill_hot_scan\src\lib.rs:816`
+Source: `hosting\pill_hot_scan\src\lib.rs:843`
 
 Whether a `#[cfg(…)]` sits in the attribute block above this declaration.
 

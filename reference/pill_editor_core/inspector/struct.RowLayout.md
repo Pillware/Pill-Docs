@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-4888"></a>
+<a id="rustdoc-item-6851"></a>
 
 # Struct `pill_editor_core::inspector::RowLayout`
 
@@ -8,17 +8,17 @@
 pub struct RowLayout;
 ```
 
-Source: `editor\pill_editor_core\src\inspector.rs:720`
+Source: `editor\pill_editor_core\src\inspector.rs:724`
 
 The layout fingerprint of one component's row model.
 
-It covers the field names, the decorators and the value kinds that [`rows`](fn.rows.md#rustdoc-item-4796)
+It covers the field names, the decorators and the value kinds that [`rows`](fn.rows.md#rustdoc-item-6759)
 reads, but never the values themselves, so editing a value does not rebuild
 the model.
 
 ## Fields
 
-<a id="rustdoc-item-4921"></a>
+<a id="rustdoc-item-6884"></a>
 
 ### `0`
 

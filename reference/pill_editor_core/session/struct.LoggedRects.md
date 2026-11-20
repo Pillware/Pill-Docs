@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-7546"></a>
+<a id="rustdoc-item-9607"></a>
 
 # Struct `pill_editor_core::session::LoggedRects`
 
@@ -8,24 +8,24 @@
 pub struct LoggedRects<K: Ord + Clone>;
 ```
 
-Source: `editor\pill_editor_core\src\session.rs:600`
+Source: `editor\pill_editor_core\src\session.rs:607`
 
 The rectangles a pass last reported, so a placement reaches the log once
 rather than once a frame.
 
-One type serves every "log this rectangle once" cache: [`Self::remember`](#rustdoc-item-7819)
-decides whether a rectangle differs from the last one, [`Self::forget_missing`](#rustdoc-item-7820)
-drops keys that stopped drawing, and [`Self::clear`](#rustdoc-item-7821) drops everything, so
+One type serves every "log this rectangle once" cache: [`Self::remember`](#rustdoc-item-9881)
+decides whether a rectangle differs from the last one, [`Self::forget_missing`](#rustdoc-item-9882)
+drops keys that stopped drawing, and [`Self::clear`](#rustdoc-item-9883) drops everything, so
 the caches cannot drift into separate rules.
 
 A placement is compared **rounded to whole points** by default, because
 egui lays a panel out in fractional points: a fraction of a point of jitter
 is the same place, and a line per frame of it is noise. A caller that needs
-a pixel-exact comparison says so with [`Self::remember_exact`](#rustdoc-item-7822).
+a pixel-exact comparison says so with [`Self::remember_exact`](#rustdoc-item-9884).
 
 ## Fields
 
-<a id="rustdoc-item-7818"></a>
+<a id="rustdoc-item-9880"></a>
 
 ### `rects_by_key`
 
@@ -37,7 +37,7 @@ The rectangle last remembered per key.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-7819"></a>
+<a id="rustdoc-item-9881"></a>
 
 ### `remember`
 
@@ -47,7 +47,7 @@ pub fn remember(self: &mut Self, key: K, rect: Rect) -> bool;
 
 Record `rect` for `key`, answering whether it is a placement to log.
 
-<a id="rustdoc-item-7822"></a>
+<a id="rustdoc-item-9884"></a>
 
 ### `remember_exact`
 
@@ -55,10 +55,10 @@ Record `rect` for `key`, answering whether it is a placement to log.
 pub fn remember_exact(self: &mut Self, key: K, rect: Rect) -> bool;
 ```
 
-[`Self::remember`](#rustdoc-item-7819) without the quantization: any pixel difference is a
+[`Self::remember`](#rustdoc-item-9881) without the quantization: any pixel difference is a
 new placement.
 
-<a id="rustdoc-item-7823"></a>
+<a id="rustdoc-item-9885"></a>
 
 ### `get`
 
@@ -68,7 +68,7 @@ pub fn get(self: &Self, key: &K) -> Option<Rect>;
 
 The rectangle last remembered for `key`.
 
-<a id="rustdoc-item-7824"></a>
+<a id="rustdoc-item-9886"></a>
 
 ### `iter`
 
@@ -78,7 +78,7 @@ pub fn iter(self: &Self) -> impl Iterator<Item = _>;
 
 Every remembered key with its rectangle, in key order.
 
-<a id="rustdoc-item-7825"></a>
+<a id="rustdoc-item-9887"></a>
 
 ### `contains`
 
@@ -88,7 +88,7 @@ pub fn contains(self: &Self, key: &K) -> bool;
 
 Whether `key` has a logged rectangle.
 
-<a id="rustdoc-item-7820"></a>
+<a id="rustdoc-item-9882"></a>
 
 ### `forget_missing`
 
@@ -102,7 +102,7 @@ A row that stopped drawing is dropped instead of keeping its last
 placement forever: the geometry of everything a session has ever drawn
 is not worth remembering, and a cache that never shrinks is a slow leak.
 
-<a id="rustdoc-item-7821"></a>
+<a id="rustdoc-item-9883"></a>
 
 ### `clear`
 
@@ -112,7 +112,7 @@ pub fn clear(self: &mut Self);
 
 Drop every entry.
 
-<a id="rustdoc-item-7826"></a>
+<a id="rustdoc-item-9888"></a>
 
 ### `len`
 
@@ -122,7 +122,7 @@ pub fn len(self: &Self) -> usize;
 
 How many rectangles are remembered.
 
-<a id="rustdoc-item-7827"></a>
+<a id="rustdoc-item-9889"></a>
 
 ### `is_empty`
 
@@ -132,7 +132,7 @@ pub fn is_empty(self: &Self) -> bool;
 
 Whether nothing is remembered.
 
-<a id="rustdoc-item-7828"></a>
+<a id="rustdoc-item-9890"></a>
 
 ### `same_placement`
 
@@ -140,10 +140,10 @@ Whether nothing is remembered.
 pub fn same_placement(left: Rect, right: Rect) -> bool;
 ```
 
-Whether two rectangles are the same placement under [`Self::remember`](#rustdoc-item-7819)'s
+Whether two rectangles are the same placement under [`Self::remember`](#rustdoc-item-9881)'s
 rule, for the callers that keep a single rectangle rather than a cache.
 
-<a id="rustdoc-item-7829"></a>
+<a id="rustdoc-item-9891"></a>
 
 ### `quantize`
 

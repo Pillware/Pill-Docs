@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1451"></a>
+<a id="rustdoc-item-1461"></a>
 
 # Struct `pill_core::slot_map::KeyData`
 
@@ -19,7 +19,7 @@ as "no value" instead of naming the value that refills the slot.
 
 ## Fields
 
-<a id="rustdoc-item-1448"></a>
+<a id="rustdoc-item-1458"></a>
 
 ### `index`
 
@@ -29,7 +29,7 @@ index: u32
 
 Position of the slot in the map's internal vector of slots.
 
-<a id="rustdoc-item-1449"></a>
+<a id="rustdoc-item-1459"></a>
 
 ### `version`
 

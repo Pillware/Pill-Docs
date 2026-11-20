@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-3663"></a>
+<a id="rustdoc-item-4040"></a>
 
 # Function `pill_editor_core::editor_state::system_owner_label`
 
@@ -8,7 +8,7 @@
 pub(in editor_state) fn system_owner_label(system_owner: pill_engine::SystemOwner, extension_names: &[String]) -> String;
 ```
 
-Visibility: `{'restricted': {'parent': 2404, 'path': '::editor_state'}}` · Source: `editor\pill_editor_core\src\editor_state\mod.rs:1158`
+Visibility: `{'restricted': {'parent': 2471, 'path': '::editor_state'}}` · Source: `editor\pill_editor_core\src\editor_state\mod.rs:1616`
 
 Labels a system owner using the host's extension names.
 

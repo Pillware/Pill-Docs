@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-839"></a>
+<a id="rustdoc-item-833"></a>
 
 # Enum `pill_master_renderer_data::assets::shader::ShaderTextureKind`
 
@@ -8,13 +8,13 @@
 pub enum ShaderTextureKind { ... }
 ```
 
-Source: `extensions\pill_master_renderer\pill_master_renderer_data\src\assets\shader.rs:111`
+Source: `extensions\pill_master_renderer\modules\runtime\data\src\assets\shader.rs:111`
 
 What a shader texture slot reads: a texture asset's texels, or a depth
 buffer.
 
 A depth buffer is not an asset - no file decodes to one - so it is not a
-[`TextureType`](../texture/enum.TextureType.md#rustdoc-item-838), which is the texel layout a texture asset carries. A slot
+[`TextureType`](../texture/enum.TextureType.md#rustdoc-item-832), which is the texel layout a texture asset carries. A slot
 names both kinds because a shader can bind either, and the kind decides the
 binding wgpu accepts: a depth texture cannot be bound where a filterable
 colour texture is expected.
@@ -24,7 +24,7 @@ Serialized by variant name, so a `.hlsl.meta` writes `"type": "Color"` or
 
 ## Variants
 
-<a id="rustdoc-item-833"></a>
+<a id="rustdoc-item-827"></a>
 
 ### `Color`
 
@@ -34,7 +34,7 @@ Color
 
 A colour image, uploaded as sRGB, so a sample arrives as linear light.
 
-<a id="rustdoc-item-834"></a>
+<a id="rustdoc-item-828"></a>
 
 ### `Normal`
 
@@ -44,7 +44,7 @@ Normal
 
 A normal map, whose bytes are directions.
 
-<a id="rustdoc-item-835"></a>
+<a id="rustdoc-item-829"></a>
 
 ### `Equirect`
 
@@ -54,7 +54,7 @@ Equirect
 
 A high-dynamic-range equirectangular panorama.
 
-<a id="rustdoc-item-836"></a>
+<a id="rustdoc-item-830"></a>
 
 ### `Cubemap`
 
@@ -64,7 +64,7 @@ Cubemap
 
 A cubemap projected from a panorama.
 
-<a id="rustdoc-item-837"></a>
+<a id="rustdoc-item-831"></a>
 
 ### `Depth`
 
@@ -76,7 +76,7 @@ A depth buffer, which only a pass's own input can supply.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-840"></a>
+<a id="rustdoc-item-834"></a>
 
 ### `texture_type`
 
@@ -98,6 +98,9 @@ which no asset carries.
 - `TryFrom<U>`
 - `Any`
 - `ToOwned`
+- `CastableFrom<ST, Uninit, Uninit>`
+- `CastableFrom<ST, Initialized, Initialized>`
+- `Read<Exclusive, BecauseExclusive>`
 - `DeserializeOwned`
 - `Instrument`
 - `WithSubscriber`
@@ -105,9 +108,6 @@ which no asset carries.
 - `Pointable`
 - `OwoColorize`
 - `ErasedDestructor`
-- `CastableFrom<ST, Uninit, Uninit>`
-- `CastableFrom<ST, Initialized, Initialized>`
-- `Read<Exclusive, BecauseExclusive>`
 - `Equivalent<K>`
 - `Debug`
 - `Clone`

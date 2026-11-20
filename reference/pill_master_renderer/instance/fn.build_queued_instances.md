@@ -8,7 +8,7 @@
 pub(crate) fn build_queued_instances(render_queue: &[crate::render_queue::RenderQueueItem], frame_instances: &[crate::frame::RenderInstance], instance_matrices: &mut Vec<Instance>);
 ```
 
-Visibility: `crate` · Source: `extensions\pill_master_renderer\pill_master_renderer\src\instance.rs:156`
+Visibility: `crate` · Source: `extensions\pill_master_renderer\modules\runtime\gpu\src\instance.rs:156`
 
 Writes the model matrix of every queued instance into `instance_matrices`,
 in queue order.

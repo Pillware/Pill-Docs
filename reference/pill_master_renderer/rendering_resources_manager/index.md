@@ -1,10 +1,10 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-2056"></a>
+<a id="rustdoc-item-2099"></a>
 
 # Module `pill_master_renderer::rendering_resources_manager`
 
-Visibility: `crate` · Source: `extensions\pill_master_renderer\pill_master_renderer\src\rendering_resources_manager.rs:1`
+Visibility: `crate` · Source: `extensions\pill_master_renderer\modules\runtime\gpu\src\rendering_resources_manager.rs:1`
 
 The GPU objects that mirror the asset store, refreshed one asset type at a
 time.
@@ -41,8 +41,8 @@ store revision tries it again.
 ## Module contents
 
 ### Structs
-- [`GpuColumn`](struct.GpuColumn.md#rustdoc-item-504) — One asset type's GPU objects, keyed by asset key.
-- [`RenderingResourcesManager`](struct.RenderingResourcesManager.md#rustdoc-item-1855) — The GPU objects behind the asset store, and what they were built from.
+- [`GpuColumn`](struct.GpuColumn.md#rustdoc-item-501) — One asset type's GPU objects, keyed by asset key.
+- [`RenderingResourcesManager`](struct.RenderingResourcesManager.md#rustdoc-item-1898) — The GPU objects behind the asset store, and what they were built from.
 
 ### Functions
-- [`install_default_material`](fn.install_default_material.md#rustdoc-item-2141) — Builds the built-in lit shader and a material from it, and returns both.
+- [`install_default_material`](fn.install_default_material.md#rustdoc-item-2184) — Builds the built-in lit shader and a material from it, and returns both.

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1367"></a>
+<a id="rustdoc-item-1377"></a>
 
 # Function `pill_core::profiling::profiling_extras::error`
 

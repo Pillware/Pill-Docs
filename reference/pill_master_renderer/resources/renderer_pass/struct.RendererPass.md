@@ -8,7 +8,7 @@
 pub struct RendererPass;
 ```
 
-Source: `extensions\pill_master_renderer\pill_master_renderer\src\resources\renderer_pass.rs:68`
+Source: `extensions\pill_master_renderer\modules\runtime\gpu\src\resources\renderer_pass.rs:68`
 
 One pass of the chain, in the shape its [`PassKind`] asks for: a geometry
 pass drawing instances through its own shader, a fullscreen pass, or the
@@ -16,7 +16,7 @@ skybox.
 
 ## Fields
 
-<a id="rustdoc-item-2541"></a>
+<a id="rustdoc-item-2581"></a>
 
 ### `name`
 
@@ -26,7 +26,7 @@ name: String
 
 Name of the pass this pipeline was built for.
 
-<a id="rustdoc-item-2542"></a>
+<a id="rustdoc-item-2582"></a>
 
 ### `pipeline`
 
@@ -36,7 +36,7 @@ pipeline: wgpu::RenderPipeline
 
 Pipeline a draw of this pass binds.
 
-<a id="rustdoc-item-2543"></a>
+<a id="rustdoc-item-2583"></a>
 
 ### `reads_engine_parameters`
 
@@ -46,7 +46,7 @@ reads_engine_parameters: bool
 
 Whether the pass's shader reads the engine's parameters.
 
-<a id="rustdoc-item-2544"></a>
+<a id="rustdoc-item-2584"></a>
 
 ### `reads_camera_parameters`
 
@@ -56,7 +56,7 @@ reads_camera_parameters: bool
 
 Whether the pass's shader reads the camera's parameters.
 
-<a id="rustdoc-item-2545"></a>
+<a id="rustdoc-item-2585"></a>
 
 ### `parameters_bind_group`
 
@@ -67,7 +67,7 @@ parameters_bind_group: Option<wgpu::BindGroup>
 The pass's own parameter values, for a shader that declares parameter
 slots. `None` when the shader declares none.
 
-<a id="rustdoc-item-2546"></a>
+<a id="rustdoc-item-2586"></a>
 
 ### `textures_bind_group`
 
@@ -80,7 +80,7 @@ slots. `None` when the shader declares none.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-2547"></a>
+<a id="rustdoc-item-2587"></a>
 
 ### `new`
 

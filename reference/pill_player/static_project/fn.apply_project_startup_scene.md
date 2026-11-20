@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-734"></a>
+<a id="rustdoc-item-738"></a>
 
 # Function `pill_player::static_project::apply_project_startup_scene`
 
@@ -8,7 +8,7 @@
 pub(in static_project) fn apply_project_startup_scene(engine: &mut pill_engine::Engine, scene_path: &str);
 ```
 
-Visibility: `{'restricted': {'parent': 733, 'path': '::static_project'}}` · Source: `hosting\pill_player\src\static_project.rs:380`
+Visibility: `{'restricted': {'parent': 737, 'path': '::static_project'}}` · Source: `hosting\pill_player\src\static_project.rs:393`
 
 Queue and load a project's startup scene, warning when it cannot be read.
 

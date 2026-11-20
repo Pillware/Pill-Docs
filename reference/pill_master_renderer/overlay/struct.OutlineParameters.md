@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1199"></a>
+<a id="rustdoc-item-1240"></a>
 
 # Struct `pill_master_renderer::overlay::OutlineParameters`
 
@@ -8,13 +8,13 @@
 pub(in overlay) struct OutlineParameters;
 ```
 
-Visibility: `{'restricted': {'parent': 858, 'path': '::overlay'}}` · Source: `extensions\pill_master_renderer\pill_master_renderer\src\overlay\mod.rs:149`
+Visibility: `{'restricted': {'parent': 854, 'path': '::overlay'}}` · Source: `extensions\pill_master_renderer\modules\runtime\gpu\src\overlay\mod.rs:165`
 
 The outline uniform: colour, and the width in `outline_settings[0]`.
 
 ## Fields
 
-<a id="rustdoc-item-1197"></a>
+<a id="rustdoc-item-1238"></a>
 
 ### `color`
 
@@ -24,7 +24,7 @@ color: [f32; 4]
 
 _No documentation provided._
 
-<a id="rustdoc-item-1198"></a>
+<a id="rustdoc-item-1239"></a>
 
 ### `outline_settings`
 

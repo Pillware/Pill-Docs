@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1738"></a>
+<a id="rustdoc-item-1762"></a>
 
 # Function `pill_csharp_bridge::mirror_calls::ffi_get_native_resource`
 

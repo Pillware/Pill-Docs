@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-433"></a>
+<a id="rustdoc-item-435"></a>
 
 # pill_project_ui API reference
 
@@ -16,7 +16,7 @@ renderer.
 - [`GameUi::run`](struct.GameUi.md#rustdoc-item-277): one pass that takes the engine's input, builds the
   frame's draw list and textures, and publishes them into the world's
   [`UiFrameSlot`].
-- [`install`](fn.install.md#rustdoc-item-423) and [`install_with_theme`](fn.install_with_theme.md#rustdoc-item-422): put the resource into a project's
+- [`install`](fn.install.md#rustdoc-item-425) and [`install_with_theme`](fn.install_with_theme.md#rustdoc-item-424): put the resource into a project's
   world with its theme, plus the system that re-applies the theme when the
   override file is reimported.
 - [`mod@convert`](convert/index.md#rustdoc-item-1), [`input`](input/index.md#rustdoc-item-129), [`textures`](textures/index.md#rustdoc-item-10): the three pieces it composes.
@@ -43,16 +43,16 @@ input on [`GameUi::wants_pointer`](struct.GameUi.md#rustdoc-item-319) / [`GameUi
 
 ### Structs
 - [`GameUi`](struct.GameUi.md#rustdoc-item-305) — The game's UI: one egui context, the theme it paints with, and the result
-- [`ResolvedFonts`](struct.ResolvedFonts.md#rustdoc-item-394) — The fonts a theme's paths resolved to.
-- [`ThemeInstall`](struct.ThemeInstall.md#rustdoc-item-355) — A project's UI theme: its code default and an optional override file.
+- [`ResolvedFonts`](struct.ResolvedFonts.md#rustdoc-item-396) — The fonts a theme's paths resolved to.
+- [`ThemeInstall`](struct.ThemeInstall.md#rustdoc-item-357) — A project's UI theme: its code default and an optional override file.
 
 ### Functions
-- [`install`](fn.install.md#rustdoc-item-423) — Put a [`GameUi`] into `engine`'s world with the fallback theme, the frame
-- [`install_with_theme`](fn.install_with_theme.md#rustdoc-item-422) — Install a project's theme: the code default merged with an optional
-- [`register_reload_system`](fn.register_reload_system.md#rustdoc-item-428) — Register the re-apply system once per project generation.
-- [`resolve_fonts`](fn.resolve_fonts.md#rustdoc-item-425) — Resolve a theme's font paths through the project's asset store.
-- [`set_font_family`](fn.set_font_family.md#rustdoc-item-427) — Put one family's bytes where [`kit::style::ThemeFonts`] holds them.
-- [`theme_reload_system`](fn.theme_reload_system.md#rustdoc-item-429) — Re-merge and re-apply the theme when the override or a font changed.
+- [`install`](fn.install.md#rustdoc-item-425) — Put a [`GameUi`] into `engine`'s world with the fallback theme, the frame
+- [`install_with_theme`](fn.install_with_theme.md#rustdoc-item-424) — Install a project's theme: the code default merged with an optional
+- [`register_reload_system`](fn.register_reload_system.md#rustdoc-item-430) — Register the re-apply system once per project generation.
+- [`resolve_fonts`](fn.resolve_fonts.md#rustdoc-item-427) — Resolve a theme's font paths through the project's asset store.
+- [`set_font_family`](fn.set_font_family.md#rustdoc-item-429) — Put one family's bytes where [`kit::style::ThemeFonts`] holds them.
+- [`theme_reload_system`](fn.theme_reload_system.md#rustdoc-item-431) — Re-merge and re-apply the theme when the override or a font changed.
 
 ### Constants
 - [`FONT_FAMILIES`](constant.FONT_FAMILIES.md#rustdoc-item-280) — How many families a theme may name, in [`kit::style::ThemeFonts`] order.

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-730"></a>
+<a id="rustdoc-item-726"></a>
 
 # Enum `pill_master_renderer_data::assets::shader::ShaderParameterType`
 
@@ -8,7 +8,7 @@
 pub enum ShaderParameterType { ... }
 ```
 
-Source: `extensions\pill_master_renderer\pill_master_renderer_data\src\assets\shader.rs:51`
+Source: `extensions\pill_master_renderer\modules\runtime\data\src\assets\shader.rs:51`
 
 The kind of value a uniform parameter carries.
 
@@ -18,7 +18,7 @@ is ignored, and that slot packs as zero.
 
 ## Variants
 
-<a id="rustdoc-item-727"></a>
+<a id="rustdoc-item-723"></a>
 
 ### `Scalar`
 
@@ -28,7 +28,7 @@ Scalar
 
 A single float.
 
-<a id="rustdoc-item-728"></a>
+<a id="rustdoc-item-724"></a>
 
 ### `Bool`
 
@@ -38,7 +38,7 @@ Bool
 
 A flag, packed as the integer `1` or `0`.
 
-<a id="rustdoc-item-729"></a>
+<a id="rustdoc-item-725"></a>
 
 ### `Color`
 
@@ -59,6 +59,9 @@ An RGB color.
 - `TryFrom<U>`
 - `Any`
 - `ToOwned`
+- `CastableFrom<ST, Uninit, Uninit>`
+- `CastableFrom<ST, Initialized, Initialized>`
+- `Read<Exclusive, BecauseExclusive>`
 - `DeserializeOwned`
 - `Instrument`
 - `WithSubscriber`
@@ -66,9 +69,6 @@ An RGB color.
 - `Pointable`
 - `OwoColorize`
 - `ErasedDestructor`
-- `CastableFrom<ST, Uninit, Uninit>`
-- `CastableFrom<ST, Initialized, Initialized>`
-- `Read<Exclusive, BecauseExclusive>`
 - `Equivalent<K>`
 - `Debug`
 - `Clone`

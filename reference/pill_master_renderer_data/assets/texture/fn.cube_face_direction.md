@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1270"></a>
+<a id="rustdoc-item-1259"></a>
 
 # Function `pill_master_renderer_data::assets::texture::cube_face_direction`
 
@@ -8,7 +8,7 @@
 pub fn cube_face_direction(face: usize, s: f32, t: f32) -> glam::Vec3;
 ```
 
-Source: `extensions\pill_master_renderer\pill_master_renderer_data\src\assets\texture.rs:402`
+Source: `extensions\pill_master_renderer\modules\runtime\data\src\assets\texture.rs:402`
 
 Returns the direction a texel of a cubemap face looks along.
 

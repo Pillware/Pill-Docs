@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-3669"></a>
+<a id="rustdoc-item-3925"></a>
 
 # Constant `pill_development_host::switches::FUNCTION_HOT_PATCHING_VARIABLE`
 

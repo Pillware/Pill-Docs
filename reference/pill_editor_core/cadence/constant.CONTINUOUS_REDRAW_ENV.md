@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-570"></a>
+<a id="rustdoc-item-614"></a>
 
 # Constant `pill_editor_core::cadence::CONTINUOUS_REDRAW_ENV`
 

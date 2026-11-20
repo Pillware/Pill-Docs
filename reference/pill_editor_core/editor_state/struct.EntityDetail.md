@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1157"></a>
+<a id="rustdoc-item-1202"></a>
 
 # Struct `pill_editor_core::editor_state::EntityDetail`
 
@@ -8,13 +8,13 @@
 pub struct EntityDetail;
 ```
 
-Source: `editor\pill_editor_core\src\editor_state\mod.rs:296`
+Source: `editor\pill_editor_core\src\editor_state\mod.rs:344`
 
 The expensive tier of the snapshot, built only for the selected entities.
 
 ## Fields
 
-<a id="rustdoc-item-3040"></a>
+<a id="rustdoc-item-3175"></a>
 
 ### `entity`
 
@@ -24,7 +24,7 @@ entity: pill_engine::Entity
 
 The entity this detail describes.
 
-<a id="rustdoc-item-3041"></a>
+<a id="rustdoc-item-3176"></a>
 
 ### `components`
 

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-506"></a>
+<a id="rustdoc-item-503"></a>
 
 # Struct `pill_master_renderer::resources::renderer_texture::RendererTextureHandle`
 
@@ -8,7 +8,7 @@
 pub struct RendererTextureHandle;
 ```
 
-Source: `extensions\pill_master_renderer\pill_master_renderer\src\resources\renderer_texture.rs:35`
+Source: `extensions\pill_master_renderer\modules\runtime\gpu\src\resources\renderer_texture.rs:35`
 
 A typed handle for the slots of the map it was issued by.
 
@@ -17,7 +17,7 @@ kind of handle from another.
 
 ## Fields
 
-<a id="rustdoc-item-2763"></a>
+<a id="rustdoc-item-2801"></a>
 
 ### `0`
 
@@ -29,7 +29,7 @@ _No documentation provided._
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-2765"></a>
+<a id="rustdoc-item-2803"></a>
 
 ### `new`
 
@@ -40,7 +40,7 @@ pub fn new(index: u32, version: ::core::num::NonZeroU32) -> Self;
 Builds a handle from a slot index and the version the slot
 must still have for the handle to work.
 
-<a id="rustdoc-item-2766"></a>
+<a id="rustdoc-item-2804"></a>
 
 ### `data`
 

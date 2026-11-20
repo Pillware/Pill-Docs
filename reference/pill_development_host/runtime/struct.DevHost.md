@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-3922"></a>
+<a id="rustdoc-item-4179"></a>
 
 # Struct `pill_development_host::runtime::DevHost`
 
@@ -14,12 +14,12 @@ The headless development host.
 
 It owns the runtime (the engine and its frame), the loaded project image and
 every extension slot, and reloads them at each frame boundary
-([`run_frame`](fn.run_frame.md#rustdoc-item-3921)). One struct holds all of it, so the headless, windowed and
+([`run_frame`](fn.run_frame.md#rustdoc-item-4178)). One struct holds all of it, so the headless, windowed and
 editor frontends get the same engine lifetime and the same hot reload.
 
 ## Fields
 
-<a id="rustdoc-item-3891"></a>
+<a id="rustdoc-item-4147"></a>
 
 ### `workspace_root`
 
@@ -30,7 +30,7 @@ workspace_root: std::path::PathBuf
 The directory every spawned cargo build runs in and every artifact path
 is resolved against.
 
-<a id="rustdoc-item-3892"></a>
+<a id="rustdoc-item-4148"></a>
 
 ### `project_module_config`
 
@@ -41,7 +41,7 @@ project_module_config: crate::ProjectModuleConfig
 The project module's configuration: its backend, watched sources and
 build command.
 
-<a id="rustdoc-item-3893"></a>
+<a id="rustdoc-item-4149"></a>
 
 ### `renderer`
 
@@ -53,7 +53,7 @@ The renderer GPU module a windowed build loads, from the project's
 `renderer:` setting; `None` when it selects no renderer. Its data crate
 is already among `extensions`.
 
-<a id="rustdoc-item-3894"></a>
+<a id="rustdoc-item-4150"></a>
 
 ### `runtime`
 
@@ -66,7 +66,7 @@ holds values whose drop functions live in those images, so it has to be
 gone before any of them unmaps. The engine is boxed, so the raw pointer
 in `engine_api` stays valid when the host moves.
 
-<a id="rustdoc-item-3896"></a>
+<a id="rustdoc-item-4152"></a>
 
 ### `engine_api`
 
@@ -76,7 +76,7 @@ engine_api: pill_engine::EngineApi
 
 The C-callable table a loaded artifact is handed at every entry point.
 
-<a id="rustdoc-item-3897"></a>
+<a id="rustdoc-item-4153"></a>
 
 ### `loaded_project`
 
@@ -86,7 +86,19 @@ loaded_project: loaded::LoadedProject
 
 The loaded project image, and the generations retired behind it.
 
-<a id="rustdoc-item-3898"></a>
+<a id="rustdoc-item-4154"></a>
+
+### `project_editor`
+
+```rust
+project_editor: Option<slot::ExtensionSlot>
+```
+
+The project's own editor crate, when it has one and this host is an
+editor host. It loads after the project, because it exists to change
+the editor the project runs in, and it reloads with it.
+
+<a id="rustdoc-item-4155"></a>
 
 ### `extensions`
 
@@ -96,7 +108,7 @@ extensions: Vec<slot::ExtensionSlot>
 
 Extensions, each with its own watcher and reload transaction.
 
-<a id="rustdoc-item-3899"></a>
+<a id="rustdoc-item-4156"></a>
 
 ### `pending_modules`
 
@@ -105,9 +117,9 @@ pending_modules: Vec<PendingModule>
 ```
 
 Tolerated editor-only modules whose first load failed: no slot and no
-watcher; [`DevHost::retry_extension`](#rustdoc-item-3866) is their only way in.
+watcher; [`DevHost::retry_extension`](#rustdoc-item-4122) is their only way in.
 
-<a id="rustdoc-item-3900"></a>
+<a id="rustdoc-item-4157"></a>
 
 ### `source_edit_generation`
 
@@ -123,7 +135,7 @@ The watcher is the only producer. Two consumers read it:
 has delivered the edit, and the Step 5 reload transaction, which
 rebuilds from it.
 
-<a id="rustdoc-item-3901"></a>
+<a id="rustdoc-item-4158"></a>
 
 ### `last_processed_source_edit`
 
@@ -133,7 +145,7 @@ last_processed_source_edit: u64
 
 The `source_edit_generation` value the frame loop last acted on.
 
-<a id="rustdoc-item-3902"></a>
+<a id="rustdoc-item-4159"></a>
 
 ### `queued_reload_generation`
 
@@ -145,7 +157,7 @@ Counter the reload pipeline adds one to when it owes the project a
 rebuild: a module the project links directly reloaded, or a module swap
 changed the C# mirror surface.
 
-It is separate from [`Self::source_edit_generation`](#rustdoc-item-3900) on purpose. "A
+It is separate from [`Self::source_edit_generation`](#rustdoc-item-4157) on purpose. "A
 source save arrived" and "a rebuilt module has to be compiled into the
 project again" are different reasons to rebuild. One counter for both
 would let a fast-path patch of the project's own edit mark the cascade
@@ -155,7 +167,7 @@ No fast path reads this counter, so the rebuild stays owed until
 `loaded_project.reload` runs. Only the frame thread writes and reads it,
 which is why it is a plain integer and not an atomic.
 
-<a id="rustdoc-item-3903"></a>
+<a id="rustdoc-item-4160"></a>
 
 ### `last_processed_queued_reload`
 
@@ -165,7 +177,7 @@ last_processed_queued_reload: u64
 
 The `queued_reload_generation` value the frame loop last rebuilt for.
 
-<a id="rustdoc-item-3904"></a>
+<a id="rustdoc-item-4161"></a>
 
 ### `source_trigger_log`
 
@@ -181,7 +193,7 @@ watchers pass `None`, because nothing times a reload from their
 signals. A reload takes the entries up to its generation, so each
 signal times exactly one reload.
 
-<a id="rustdoc-item-3906"></a>
+<a id="rustdoc-item-4163"></a>
 
 ### `stale_suspended_owners`
 
@@ -196,7 +208,7 @@ Kept so only these are resumed when they are rebuilt: an owner some
 other mechanism suspended (the renderer's pause) is not this code's to
 turn back on.
 
-<a id="rustdoc-item-3907"></a>
+<a id="rustdoc-item-4164"></a>
 
 ### `hot_patch`
 
@@ -210,7 +222,7 @@ Per-function fast path, when the project opted in with `#[pill_hot]`.
 the project does not also build an `rlib`. In all three cases the
 existing whole-module reload stays the only path.
 
-<a id="rustdoc-item-3908"></a>
+<a id="rustdoc-item-4165"></a>
 
 ### `module_hot_patch`
 
@@ -224,7 +236,7 @@ with `extensions`.
 An entry is `None` when that module annotated nothing, so a module that
 has not opted in costs nothing beyond one source scan at startup.
 
-<a id="rustdoc-item-3909"></a>
+<a id="rustdoc-item-4166"></a>
 
 ### `patch_attempt`
 
@@ -239,7 +251,7 @@ rlibs the build links against, and a second attempt would race the
 first for the same pending edit. The compile runs off the frame loop,
 which is the reason the thread exists.
 
-<a id="rustdoc-item-3911"></a>
+<a id="rustdoc-item-4168"></a>
 
 ### `loaded_patches`
 
@@ -255,7 +267,7 @@ redirect the copies inside another crate's patches. They are never
 unloaded, because a jump or a slot may point into any of them for the
 rest of the run.
 
-<a id="rustdoc-item-3912"></a>
+<a id="rustdoc-item-4169"></a>
 
 ### `asset_watcher`
 
@@ -267,7 +279,7 @@ Watches the project's `res` and queues the assets whose source or
 metadata file changed; `None` when no asset directory is configured or
 the watch could not start.
 
-<a id="rustdoc-item-3914"></a>
+<a id="rustdoc-item-4171"></a>
 
 ### `asset_directory`
 
@@ -278,7 +290,7 @@ asset_directory: Option<std::path::PathBuf>
 The project's `res` directory, for the asset browser; `None` when the
 configuration did not come from a project directory.
 
-<a id="rustdoc-item-3916"></a>
+<a id="rustdoc-item-4173"></a>
 
 ### `manager_settings_editor_revision`
 
@@ -286,13 +298,13 @@ configuration did not come from a project directory.
 manager_settings_editor_revision: u64
 ```
 
-The [`Self::editor_revision`](#rustdoc-item-3915) the manager settings were last applied for.
+The [`Self::editor_revision`](#rustdoc-item-4172) the manager settings were last applied for.
 
 A reload replaces managers, so their settings assets are applied again
 after one; the revision counter is the signal that something loaded or
 unloaded.
 
-<a id="rustdoc-item-3918"></a>
+<a id="rustdoc-item-4175"></a>
 
 ### `ensure_asset_metadata`
 
@@ -301,9 +313,9 @@ ensure_asset_metadata: bool
 ```
 
 Whether every source asset is kept paired with a `.meta` file; see
-[`DevHost::set_ensure_asset_metadata`](#rustdoc-item-3917). Off unless a frontend asks.
+[`DevHost::set_ensure_asset_metadata`](#rustdoc-item-4174). Off unless a frontend asks.
 
-<a id="rustdoc-item-3915"></a>
+<a id="rustdoc-item-4172"></a>
 
 ### `editor_revision`
 
@@ -318,7 +330,7 @@ how the editor learns that entities changed: gameplay changes those
 every frame without a reload. It only says that the set of loaded code
 changed.
 
-<a id="rustdoc-item-3919"></a>
+<a id="rustdoc-item-4176"></a>
 
 ### `switches`
 
@@ -328,7 +340,7 @@ switches: crate::switches::HostSwitches
 
 What this run's watchers are allowed to do, read once at startup.
 
-<a id="rustdoc-item-3920"></a>
+<a id="rustdoc-item-4177"></a>
 
 ### `patch_switched_off_logged`
 
@@ -344,7 +356,7 @@ that scrolls.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-3924"></a>
+<a id="rustdoc-item-4181"></a>
 
 ### `patch_generations`
 
@@ -355,10 +367,10 @@ pub fn patch_generations(self: &Self) -> Vec<crate::hot_patch::PatchGeneration>;
 Every patch generation this process has installed, newest last.
 
 Generation zero - the code each artifact was built with - has no entry
-because it needs no loaded library; [`Self::rollback_patch`](#rustdoc-item-3923) still
+because it needs no loaded library; [`Self::rollback_patch`](#rustdoc-item-4180) still
 accepts it.
 
-<a id="rustdoc-item-3923"></a>
+<a id="rustdoc-item-4180"></a>
 
 ### `rollback_patch`
 
@@ -382,7 +394,7 @@ generation does not exist, or when an artifact refuses the address. A
 slot route leaves the running implementation in place; a prologue route
 that fails partway leaves the copies it already rewrote as it put them.
 
-<a id="rustdoc-item-3925"></a>
+<a id="rustdoc-item-4182"></a>
 
 ### `engine`
 
@@ -392,7 +404,7 @@ pub fn engine(self: &Self) -> &Engine;
 
 Read-only engine access for rendering and diagnostics.
 
-<a id="rustdoc-item-3926"></a>
+<a id="rustdoc-item-4183"></a>
 
 ### `engine_mut`
 
@@ -402,7 +414,7 @@ pub fn engine_mut(self: &mut Self) -> &mut Engine;
 
 Mutable engine access for frontend-owned ad-hoc work.
 
-<a id="rustdoc-item-3927"></a>
+<a id="rustdoc-item-4184"></a>
 
 ### `revision`
 
@@ -413,7 +425,7 @@ pub fn revision(self: &Self) -> u64;
 Monotonic counter of reload/rollback/patch events completed by this
 host. Editor caches of engine metadata key on it.
 
-<a id="rustdoc-item-3928"></a>
+<a id="rustdoc-item-4185"></a>
 
 ### `bump_editor_revision`
 
@@ -427,7 +439,7 @@ The increment itself is the editor's cache-invalidation signal; the
 log line exists so integration suites can check that the counter moved
 without driving a GUI.
 
-<a id="rustdoc-item-3929"></a>
+<a id="rustdoc-item-4186"></a>
 
 ### `extension_names`
 
@@ -440,7 +452,7 @@ Names of the loaded extensions, in `SystemOwner` order.
 `SystemOwner::extension(i)` is `i + 1`, so index `i` of this
 vector labels owner `i + 1`; owner `0` is the project.
 
-<a id="rustdoc-item-3931"></a>
+<a id="rustdoc-item-4188"></a>
 
 ### `subject_owners`
 
@@ -452,10 +464,10 @@ Every subject this host registers systems for, with its owner: the
 loaded extensions, the modules whose first load failed and wait for a
 retry, and the project.
 
-The renderer is not one of them - it belongs to [`RenderingHost`](struct.RenderingHost.md#rustdoc-item-3930) - so
+The renderer is not one of them - it belongs to [`RenderingHost`](struct.RenderingHost.md#rustdoc-item-4187) - so
 the windowed host adds it before it checks.
 
-<a id="rustdoc-item-3932"></a>
+<a id="rustdoc-item-4189"></a>
 
 ### `assert_owner_isolation`
 
@@ -470,7 +482,7 @@ stale suspension resumes. Two subjects sharing one would let a reload of
 either retire the other's systems, and let a resume reach a renderer that
 was paused against a replaced component layout.
 
-<a id="rustdoc-item-3933"></a>
+<a id="rustdoc-item-4190"></a>
 
 ### `source_work_pending`
 
@@ -482,7 +494,7 @@ Whether any watcher's work waits for a frame boundary: the editor's
 sleeping heartbeat takes a frame when one does, so an edit reaches a
 paused, idle editor without user input.
 
-<a id="rustdoc-item-3866"></a>
+<a id="rustdoc-item-4122"></a>
 
 ### `retry_extension`
 
@@ -503,7 +515,7 @@ Returns the failure text when the module still does not build, load
 or register; the notice queue carries the same failure for the
 embedder's error UI.
 
-<a id="rustdoc-item-3934"></a>
+<a id="rustdoc-item-4191"></a>
 
 ### `asset_directory`
 
@@ -513,7 +525,7 @@ pub fn asset_directory(self: &Self) -> Option<&Path>;
 
 The project's `res` directory, when the host knows it.
 
-<a id="rustdoc-item-3935"></a>
+<a id="rustdoc-item-4192"></a>
 
 ### `workspace_root`
 
@@ -526,7 +538,7 @@ The workspace root every spawned build ran from.
 Compiler diagnostics name sources relative to it, so a frontend
 handing a stripped path to another tool resolves it against this.
 
-<a id="rustdoc-item-3936"></a>
+<a id="rustdoc-item-4193"></a>
 
 ### `asset_entries`
 
@@ -537,7 +549,7 @@ pub fn asset_entries(self: &Self) -> Vec<crate::asset_browser::AssetEntry>;
 The project's `res` tree with each file's asset type, load state and
 guid; empty when the host has no `res` directory.
 
-<a id="rustdoc-item-3938"></a>
+<a id="rustdoc-item-4195"></a>
 
 ### `asset_settings`
 
@@ -553,7 +565,7 @@ relative to `res`, as JSON.
 A message when no registered type imports the path or its file cannot
 be read.
 
-<a id="rustdoc-item-3940"></a>
+<a id="rustdoc-item-4197"></a>
 
 ### `save_asset_settings`
 
@@ -569,7 +581,7 @@ reimports it at the next frame. Returns the normalized settings written.
 A message when the settings do not fit the type or the file cannot be
 written.
 
-<a id="rustdoc-item-3917"></a>
+<a id="rustdoc-item-4174"></a>
 
 ### `set_ensure_asset_metadata`
 
@@ -588,7 +600,7 @@ again, using the loaded asset's guid when it is loaded. A new source
 gets one when the watcher imports it. The editor turns this on; a game
 run leaves it off.
 
-<a id="rustdoc-item-3941"></a>
+<a id="rustdoc-item-4198"></a>
 
 ### `standalone_asset_types`
 
@@ -598,7 +610,7 @@ pub fn standalone_asset_types(self: &Self) -> Vec<crate::asset_browser::Standalo
 
 The standalone asset types a new file can be created for.
 
-<a id="rustdoc-item-3944"></a>
+<a id="rustdoc-item-4201"></a>
 
 ### `create_standalone_asset`
 
@@ -607,14 +619,14 @@ pub fn create_standalone_asset(self: &mut Self, type_name: &str, folder: &str, a
 ```
 
 Create and load a new standalone asset; see
-[`crate::asset_browser::create_standalone_asset`](../asset_browser/fn.create_standalone_asset.md#rustdoc-item-3943). Returns its path
+[`crate::asset_browser::create_standalone_asset`](../asset_browser/fn.create_standalone_asset.md#rustdoc-item-4200). Returns its path
 relative to `res`.
 
 #### Errors
 
 A message when the input is refused or the file cannot be written.
 
-<a id="rustdoc-item-3945"></a>
+<a id="rustdoc-item-4202"></a>
 
 ### `move_asset`
 

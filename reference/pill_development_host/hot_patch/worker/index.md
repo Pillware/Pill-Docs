@@ -1,10 +1,10 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-2334"></a>
+<a id="rustdoc-item-2408"></a>
 
 # Module `pill_development_host::hot_patch::worker`
 
-Visibility: `{'restricted': {'parent': 1968, 'path': '::hot_patch'}}` · Source: `hosting\pill_development_host\src\hot_patch\worker.rs:1`
+Visibility: `{'restricted': {'parent': 2042, 'path': '::hot_patch'}}` · Source: `hosting\pill_development_host\src\hot_patch\worker.rs:1`
 
 Patch builds: compiling and loading a patch away from the frame thread.
 The background half of the fast patch: it compiles a body and loads the
@@ -22,7 +22,7 @@ library that comes out of it.
 
 Patching one body (a `rustc` run plus a `LoadLibrary`) takes hundreds of
 milliseconds, so it runs off the frame thread. The frame thread prepares a
-[`PatchAttempt`](struct.PatchAttempt.md#rustdoc-item-2217), a worker turns it into [`BodyOutcome`](enum.BodyOutcome.md#rustdoc-item-2281)s, and the frame
+[`PatchAttempt`](struct.PatchAttempt.md#rustdoc-item-2291), a worker turns it into [`BodyOutcome`](enum.BodyOutcome.md#rustdoc-item-2355)s, and the frame
 boundary installs them.
 
 Nothing in this file touches the engine, a loaded module artifact or the
@@ -33,13 +33,13 @@ thread owning the boundary is used.
 ## Module contents
 
 ### Structs
-- [`BuiltBody`](struct.BuiltBody.md#rustdoc-item-2276) — A compiled and loaded patch image.
-- [`PatchAttempt`](struct.PatchAttempt.md#rustdoc-item-2217) — One pending patch attempt: what the frame thread prepared, and what a
-- [`PreparedBody`](struct.PreparedBody.md#rustdoc-item-2213) — A changed body, ready to compile.
+- [`BuiltBody`](struct.BuiltBody.md#rustdoc-item-2350) — A compiled and loaded patch image.
+- [`PatchAttempt`](struct.PatchAttempt.md#rustdoc-item-2291) — One pending patch attempt: what the frame thread prepared, and what a
+- [`PreparedBody`](struct.PreparedBody.md#rustdoc-item-2287) — A changed body, ready to compile.
 
 ### Enums
-- [`BodyOutcome`](enum.BodyOutcome.md#rustdoc-item-2281) — What the build produced for one body.
+- [`BodyOutcome`](enum.BodyOutcome.md#rustdoc-item-2355) — What the build produced for one body.
 
 ### Functions
-- [`build_attempt`](fn.build_attempt.md#rustdoc-item-2332) — Compiles and loads the bodies of one attempt, in order.
-- [`build_body`](fn.build_body.md#rustdoc-item-2333) — Runs the replayed compiler over one body and loads what it produces.
+- [`build_attempt`](fn.build_attempt.md#rustdoc-item-2406) — Compiles and loads the bodies of one attempt, in order.
+- [`build_body`](fn.build_body.md#rustdoc-item-2407) — Runs the replayed compiler over one body and loads what it produces.

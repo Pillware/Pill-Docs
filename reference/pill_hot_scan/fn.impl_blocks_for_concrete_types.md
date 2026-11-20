@@ -8,7 +8,7 @@
 pub fn impl_blocks_for_concrete_types(source: &str, mask: &[bool]) -> Vec<ImplBlock>;
 ```
 
-Source: `hosting\pill_hot_scan\src\lib.rs:698`
+Source: `hosting\pill_hot_scan\src\lib.rs:725`
 
 Every `impl` block in the file that names one concrete type.
 

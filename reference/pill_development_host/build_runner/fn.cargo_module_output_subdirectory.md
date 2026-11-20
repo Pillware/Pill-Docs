@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-571"></a>
+<a id="rustdoc-item-572"></a>
 
 # Function `pill_development_host::build_runner::cargo_module_output_subdirectory`
 
@@ -8,7 +8,7 @@
 pub(in build_runner) fn cargo_module_output_subdirectory() -> String;
 ```
 
-Visibility: `{'restricted': {'parent': 545, 'path': '::build_runner'}}` · Source: `hosting\pill_development_host\src\build_runner.rs:200`
+Visibility: `{'restricted': {'parent': 546, 'path': '::build_runner'}}` · Source: `hosting\pill_development_host\src\build_runner.rs:200`
 
 The directory, relative to the workspace root, where a host-spawned build
 writes the artifacts it just compiled.

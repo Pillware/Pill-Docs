@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-3292"></a>
+<a id="rustdoc-item-3547"></a>
 
 # Function `pill_development_host::native_library::remove_staging_directory`
 
@@ -8,7 +8,7 @@
 pub(in native_library) fn remove_staging_directory(path: &std::path::Path, pid: u32, reason: &str);
 ```
 
-Visibility: `{'restricted': {'parent': 3075, 'path': '::native_library'}}` · Source: `hosting\pill_development_host\src\native_library.rs:1758`
+Visibility: `{'restricted': {'parent': 3326, 'path': '::native_library'}}` · Source: `hosting\pill_development_host\src\native_library.rs:2045`
 
 Removes one staging directory and logs which one went and why.
 

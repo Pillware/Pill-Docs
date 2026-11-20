@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-389"></a>
+<a id="rustdoc-item-392"></a>
 
 # Struct `pill_ui_frame::slot::UiFrameSlot`
 
@@ -14,7 +14,7 @@ Holds the frame the last UI pass published until the renderer takes it.
 
 ## Fields
 
-<a id="rustdoc-item-386"></a>
+<a id="rustdoc-item-389"></a>
 
 ### `frame`
 
@@ -24,7 +24,7 @@ frame: Option<crate::frame::UiFrame>
 
 The frame waiting for the renderer; `None` until the first publish.
 
-<a id="rustdoc-item-388"></a>
+<a id="rustdoc-item-391"></a>
 
 ### `texture_resend_generation`
 
@@ -43,7 +43,7 @@ two differ.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-390"></a>
+<a id="rustdoc-item-393"></a>
 
 ### `new`
 
@@ -53,7 +53,7 @@ pub fn new() -> UiFrameSlot;
 
 An empty slot.
 
-<a id="rustdoc-item-391"></a>
+<a id="rustdoc-item-394"></a>
 
 ### `is_empty`
 
@@ -63,7 +63,7 @@ pub fn is_empty(self: &Self) -> bool;
 
 Whether nothing is waiting to be drained.
 
-<a id="rustdoc-item-392"></a>
+<a id="rustdoc-item-395"></a>
 
 ### `publish`
 
@@ -77,7 +77,7 @@ The newest frame is the one worth drawing. When a producer runs twice
 between two renderer passes, the second frame replaces the first, so a
 renderer never works through a queue of older frames.
 
-<a id="rustdoc-item-393"></a>
+<a id="rustdoc-item-396"></a>
 
 ### `take`
 
@@ -87,7 +87,7 @@ pub fn take(self: &mut Self) -> UiFrame;
 
 Drain the slot, leaving it empty.
 
-<a id="rustdoc-item-394"></a>
+<a id="rustdoc-item-397"></a>
 
 ### `clear`
 
@@ -97,7 +97,7 @@ pub fn clear(self: &mut Self);
 
 Forget what is waiting, keeping its allocations.
 
-<a id="rustdoc-item-395"></a>
+<a id="rustdoc-item-398"></a>
 
 ### `request_texture_resend`
 
@@ -111,9 +111,9 @@ A painter calls this when its texture map starts empty, which happens
 after a renderer module is rebuilt. The producer carries a texture only
 when its revision changed, so without this request a rebuilt painter
 would wait for each image to change again. The full rule, covering the
-revision set and this request, is in [`crate::texture`](../texture/index.md#rustdoc-item-347).
+revision set and this request, is in [`crate::texture`](../texture/index.md#rustdoc-item-350).
 
-<a id="rustdoc-item-396"></a>
+<a id="rustdoc-item-399"></a>
 
 ### `texture_resend_generation`
 

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-849"></a>
+<a id="rustdoc-item-856"></a>
 
 # Constant `pill_development_host::config::PROJECT_SETTINGS_FILE`
 
@@ -8,7 +8,7 @@
 pub(in config) const PROJECT_SETTINGS_FILE: &str = "project_settings.yaml";
 ```
 
-Visibility: `{'restricted': {'parent': 821, 'path': '::config'}}` · Source: `hosting\pill_development_host\src\config.rs:220`
+Visibility: `{'restricted': {'parent': 823, 'path': '::config'}}` · Source: `hosting\pill_development_host\src\config.rs:250`
 
 Project configuration file name, resolved in the project root. A project
 that ships one declares its own extension list; the project itself is

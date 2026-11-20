@@ -139,7 +139,7 @@ Tracy needs a plot name with a `'static` lifetime, but metric names are built at
 
 The renderer measures its passes with GPU timestamp queries and sends the results to a `GPU` timeline in Tracy.
 
-GPU profiling only runs when `PILL_GPU_PROFILE` is set, because the queries cost GPU time in every update. When it is set and the device supports `TIMESTAMP_QUERY` and `TIMESTAMP_QUERY_INSIDE_ENCODERS`, the renderer creates a `Profiler` (`pill_master_renderer/src/profiler.rs`).
+GPU profiling only runs when `PILL_GPU_PROFILE` is set, because the queries cost GPU time in every update. When it is set and the device supports `TIMESTAMP_QUERY` and `TIMESTAMP_QUERY_INSIDE_ENCODERS`, the renderer creates a `Profiler` (`pill_master_renderer/modules/runtime/gpu/src/profiler.rs`).
 
 The profiler records each update's queries into one slot of an eight-slot ring, and reads a slot back only after the GPU has finished with it. No update waits for a readback. If a slot is still waiting when its turn comes again, that update records no queries rather than overwrite results that have not been read.
 
@@ -157,7 +157,7 @@ Independently of Tracy, the renderer also logs pass times and shader invocation 
 
 **`profiling-verify` is for checking the instrumentation.** It adds `tracy-client/verify`, which checks that zones open and close correctly. It costs about 50% overhead, so its timings are not useful.
 
-**The editor cannot be profiled with these features.** `pill_editor` has no `profiling` feature, so its build never enables Tracy.
+**The editor can be profiled too.** `pill_editor` declares its own `profiling` and `profiling-fine` features, which forward to `pill_player` and `pill_development_host` exactly as `pill_standalone`'s do. The feature lives on the editor on purpose: an editor host anchors every module and project build to its own package, and `host_posture_features` passes whichever level the running binary was built with, so the shell, the extensions and the project resolve the same graph and report to the one client. The editor's own UI refresh path carries zones - one per dock tab (`tab: <name>`), the egui pass, the tessellation, and the overlay's paint and present - and marks one named secondary frame, `UI refresh`, per redraw. It is a secondary frame because the engine already marks a primary frame per world frame, and the editor runs exactly one of those per redraw.
 
 **The web build has no Tracy.** The web build does not enable a profiling feature, so every profiling call in a page compiles to the no-op stubs.
 
@@ -174,6 +174,8 @@ Independently of Tracy, the renderer also logs pass times and shader invocation 
 | `pill_standalone`       | `profiling`        | `pill_player/profiling`, `pill_development_host?/profiling`                    |
 | `pill_standalone`       | `profiling-fine`   | the same with `profiling-fine`                                                 |
 | `pill_standalone`       | `metrics`          | `pill_player/metrics`, `pill_development_host?/metrics`                        |
+| `pill_editor`           | `profiling`        | `pill_player/profiling`, `pill_development_host/profiling`                     |
+| `pill_editor`           | `profiling-fine`   | the same with `profiling-fine`                                                 |
 | `pill_player`           | `profiling`        | `pill_engine/profiling`, `pill_core/tracy`                                     |
 | `pill_development_host` | `profiling`        | `pill_engine/profiling`, `pill_core/tracy`, `pill_player/profiling`            |
 | `pill_engine`           | `profiling`, `profiling-fine`, `profiling-minimal`, `profiling-memory`, `profiling-verify`, `metrics` | the matching `pill_engine_core` features |
@@ -194,5 +196,8 @@ The `?` in `pill_development_host?/profiling` means the feature applies to the h
 - `modules/engine/pill_engine_core/src/lib.rs` - the `profiling-memory` global allocator.
 - `modules/engine/pill_engine_core/src/config.rs` - `PROFILING_MEMORY_ALLOCATIONS_SAMPLING_FREQUENCY`.
 - `modules/hosting/pill_player/src/telemetry.rs` - where the player turns on the Tracy lanes and installs the `metrics` recorder.
-- `modules/extensions/pill_master_renderer/pill_master_renderer/src/profiler.rs` - GPU queries, the readback ring and the `GPU` timeline.
+- `modules/editor/pill_editor/Cargo.toml` - the editor's `profiling` and `profiling-fine` features.
+- `modules/editor/pill_editor/src/runner/frame.rs` - the `UI refresh` secondary frame, one per redraw.
+- `modules/editor/pill_editor/src/overlay.rs`, `modules/editor/pill_editor_core/src/boundary.rs` and the shell crate's `shell.rs` - the editor's four UI zones.
+- `modules/extensions/pill_master_renderer/modules/runtime/gpu/src/profiler.rs` - GPU queries, the readback ring and the `GPU` timeline.
 - [Profiling (user guide)](../../user_guide/advanced/profiling.md) - how to profile a project.

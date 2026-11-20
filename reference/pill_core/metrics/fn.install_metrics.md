@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1107"></a>
+<a id="rustdoc-item-1117"></a>
 
 # Function `pill_core::metrics::install_metrics`
 

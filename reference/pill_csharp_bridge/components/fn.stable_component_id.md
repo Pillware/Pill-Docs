@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-734"></a>
+<a id="rustdoc-item-755"></a>
 
 # Function `pill_csharp_bridge::components::stable_component_id`
 
@@ -14,6 +14,6 @@ Hash a canonical managed full name into its stable 128-bit identity.
 
 Managed code names a component with dots (`pill_spline.Spline`), while Rust
 names it with colons, so this identity is not interchangeable with the one
-the engine derives for a shared component. [`ModuleExposedComponent`](struct.ModuleExposedComponent.md#rustdoc-item-510) keeps
+the engine derives for a shared component. [`ModuleExposedComponent`](struct.ModuleExposedComponent.md#rustdoc-item-520) keeps
 the C# name beside the engine component ID the Rust name produced, so both
 identities are kept as they are. Only the mixing function is shared.

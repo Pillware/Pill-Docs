@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-587"></a>
+<a id="rustdoc-item-584"></a>
 
 # Function `pill_master_renderer::chain::ensure_offscreen_targets`
 
@@ -8,7 +8,7 @@
 pub(in chain) fn ensure_offscreen_targets(device: &wgpu::Device, (width, height): (u32, u32), offscreen_targets: &mut std::collections::HashMap<String, crate::resources::RendererTexture>, chain: &[crate::frame::ResolvedPass]);
 ```
 
-Visibility: `{'restricted': {'parent': 534, 'path': '::chain'}}` · Source: `extensions\pill_master_renderer\pill_master_renderer\src\chain.rs:841`
+Visibility: `{'restricted': {'parent': 531, 'path': '::chain'}}` · Source: `extensions\pill_master_renderer\modules\runtime\gpu\src\chain.rs:841`
 
 Create a target for every offscreen output the chain declares.
 

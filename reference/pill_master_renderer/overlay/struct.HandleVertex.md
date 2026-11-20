@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1158"></a>
+<a id="rustdoc-item-1199"></a>
 
 # Struct `pill_master_renderer::overlay::HandleVertex`
 
@@ -8,14 +8,14 @@
 pub(in overlay) struct HandleVertex;
 ```
 
-Visibility: `{'restricted': {'parent': 858, 'path': '::overlay'}}` · Source: `extensions\pill_master_renderer\pill_master_renderer\src\overlay\mod.rs:141`
+Visibility: `{'restricted': {'parent': 854, 'path': '::overlay'}}` · Source: `extensions\pill_master_renderer\modules\runtime\gpu\src\overlay\mod.rs:157`
 
 A gizmo triangle vertex in the pick buffer: world position and handle
 value.
 
 ## Fields
 
-<a id="rustdoc-item-1156"></a>
+<a id="rustdoc-item-1197"></a>
 
 ### `world_position`
 
@@ -25,7 +25,7 @@ world_position: [f32; 3]
 
 _No documentation provided._
 
-<a id="rustdoc-item-1157"></a>
+<a id="rustdoc-item-1198"></a>
 
 ### `handle_value`
 

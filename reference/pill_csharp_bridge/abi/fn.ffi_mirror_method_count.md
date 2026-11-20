@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-356"></a>
+<a id="rustdoc-item-359"></a>
 
 # Function `pill_csharp_bridge::abi::ffi_mirror_method_count`
 

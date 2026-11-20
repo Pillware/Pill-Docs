@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-3930"></a>
+<a id="rustdoc-item-4187"></a>
 
 # Struct `pill_development_host::runtime::RenderingHost`
 
@@ -8,16 +8,16 @@
 pub struct RenderingHost;
 ```
 
-Source: `hosting\pill_development_host\src\runtime.rs:712`
+Source: `hosting\pill_development_host\src\runtime.rs:726`
 
 The development host with the engine renderer drawing on native surfaces.
 
-Keeping the renderer beside [`DevHost`](struct.DevHost.md#rustdoc-item-3922) makes its creation and lifetime part
+Keeping the renderer beside [`DevHost`](struct.DevHost.md#rustdoc-item-4179) makes its creation and lifetime part
 of host setup. Executable crates never construct or retain GPU resources.
 
 ## Fields
 
-<a id="rustdoc-item-4051"></a>
+<a id="rustdoc-item-4308"></a>
 
 ### `host`
 
@@ -28,7 +28,7 @@ host: DevHost
 The wrapped development host: the engine, the project and every
 extension.
 
-<a id="rustdoc-item-4052"></a>
+<a id="rustdoc-item-4309"></a>
 
 ### `attached_renderer`
 
@@ -40,7 +40,7 @@ The backend and the window it draws on; the backend drops first.
 Declared before `renderer_module` so the backend is detached while the
 module it lives in is still mapped.
 
-<a id="rustdoc-item-4054"></a>
+<a id="rustdoc-item-4311"></a>
 
 ### `renderer_module`
 
@@ -50,7 +50,7 @@ renderer_module: crate::renderer_module::RendererModule
 
 The renderer module the backend lives in.
 
-<a id="rustdoc-item-4055"></a>
+<a id="rustdoc-item-4312"></a>
 
 ### `paused`
 
@@ -66,7 +66,7 @@ The live renderer's `rendering` system and `render` would read the new
 rows through the old field offsets. While paused, the renderer's owner
 is disabled and `render` is skipped, so the window keeps its last frame.
 
-<a id="rustdoc-item-4056"></a>
+<a id="rustdoc-item-4313"></a>
 
 ### `scene_quiet`
 
@@ -78,7 +78,7 @@ Whether the frontend last reported the scene quiet. With the project
 also paused, a reload-free boundary and no renderer change, the frame
 skips the render and the surfaces keep their last image.
 
-<a id="rustdoc-item-4057"></a>
+<a id="rustdoc-item-4314"></a>
 
 ### `scene_drawn_last_frame`
 
@@ -89,7 +89,7 @@ scene_drawn_last_frame: bool
 Whether the last frame drew the surfaces; the frontend clears its
 scene-changed flag on the frames this is true.
 
-<a id="rustdoc-item-4058"></a>
+<a id="rustdoc-item-4315"></a>
 
 ### `shader_watcher`
 
@@ -101,7 +101,7 @@ Watches the renderer data crate's `shader_sources/` tree and queues
 what it re-cooks. `None` without a renderer, or when its data crate has
 no shaders or the watch could not start.
 
-<a id="rustdoc-item-4060"></a>
+<a id="rustdoc-item-4317"></a>
 
 ### `project_shader_watcher`
 
@@ -113,7 +113,7 @@ Watches the project's own shader sources under its asset directory and
 queues what it re-cooks. `None` when the project has no asset
 directory, or when the watch could not start.
 
-<a id="rustdoc-item-4061"></a>
+<a id="rustdoc-item-4318"></a>
 
 ### `unsupported_data_check_pending`
 
@@ -126,7 +126,7 @@ the render data the renderer ignores, once per renderer generation.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-4062"></a>
+<a id="rustdoc-item-4319"></a>
 
 ### `retarget_render_window`
 
@@ -145,7 +145,7 @@ failure leaves the current surface untouched.
 Returns a [`RendererError`] when the replacement window's surface cannot
 be created or the renderer cannot attach to it.
 
-<a id="rustdoc-item-4064"></a>
+<a id="rustdoc-item-4321"></a>
 
 ### `resize_surface`
 
@@ -155,7 +155,7 @@ pub fn resize_surface(self: &mut Self, id: pill_renderer_api::SurfaceId, width: 
 
 Forward a physical resize of surface `id` to the engine renderer.
 
-<a id="rustdoc-item-4065"></a>
+<a id="rustdoc-item-4322"></a>
 
 ### `reload_renderer_if_changed`
 
@@ -178,7 +178,7 @@ attached the same way. A failed build or load leaves the backend as it
 was, and a failed attach leaves the window undrawn until the next
 source change.
 
-<a id="rustdoc-item-4066"></a>
+<a id="rustdoc-item-4323"></a>
 
 ### `renderer_step`
 
@@ -197,7 +197,7 @@ no frame runs between the two swaps and nothing pauses. The pause covers
 the rest: a layout change whose renderer could not be rebuilt,
 initialized or attached.
 
-<a id="rustdoc-item-4067"></a>
+<a id="rustdoc-item-4324"></a>
 
 ### `deliver_shader_changes`
 
@@ -213,7 +213,7 @@ each half is handled on its own. The result says whether anything was
 delivered, which is one of the things that keeps an idle frame from
 skipping its redraw.
 
-<a id="rustdoc-item-4068"></a>
+<a id="rustdoc-item-4325"></a>
 
 ### `deliver_data_crate_shader_changes`
 
@@ -232,7 +232,7 @@ that replaced it. A data crate without the export (a shipping build,
 where this path is compiled out) leaves the edits undelivered and logs
 a warning.
 
-<a id="rustdoc-item-4069"></a>
+<a id="rustdoc-item-4326"></a>
 
 ### `deliver_project_shader_changes`
 
@@ -252,7 +252,7 @@ that decode, and it imports a source nothing has loaded yet.
 The registry and the store are read from the world on every delivery,
 so a reloaded renderer data crate's registrations are the ones used.
 
-<a id="rustdoc-item-4070"></a>
+<a id="rustdoc-item-4327"></a>
 
 ### `report_unsupported_render_data`
 
@@ -273,7 +273,7 @@ A candidate the renderer's `RenderCapabilities::consumed_components`
 does not name draws nothing, and the project should hear that rather
 than wonder why its directional light has no effect.
 
-<a id="rustdoc-item-4071"></a>
+<a id="rustdoc-item-4328"></a>
 
 ### `set_surface_viewport`
 
@@ -287,7 +287,7 @@ Use `None` for full-surface rendering. Embedded frontends can leave the
 corresponding WebView region transparent and keep surrounding UI
 panels opaque.
 
-<a id="rustdoc-item-4072"></a>
+<a id="rustdoc-item-4329"></a>
 
 ### `set_scene_quiet`
 
@@ -300,7 +300,7 @@ With the project also paused and nothing reloading, the next frame skips
 the render and the surfaces keep their last image. The frontend clears
 the hint on anything that changes them.
 
-<a id="rustdoc-item-4073"></a>
+<a id="rustdoc-item-4330"></a>
 
 ### `scene_drawn_last_frame`
 
@@ -311,7 +311,7 @@ pub fn scene_drawn_last_frame(self: &Self) -> bool;
 Whether the last frame drew the surfaces; the frontend clears its
 scene-changed flag on the frames this is true.
 
-<a id="rustdoc-item-4074"></a>
+<a id="rustdoc-item-4331"></a>
 
 ### `run_frame`
 
@@ -325,7 +325,7 @@ Execute one ECS frame and present its resulting world to the surface.
 
 Returns a [`RendererError`] when the renderer cannot draw the frame.
 
-<a id="rustdoc-item-4075"></a>
+<a id="rustdoc-item-4332"></a>
 
 ### `host`
 
@@ -340,7 +340,7 @@ diagnostics through this one accessor. One passthrough method per call
 would be a second API to keep aligned with `DevHost`'s, and the methods
 it would mirror protect no invariant - they are straight calls.
 
-<a id="rustdoc-item-4076"></a>
+<a id="rustdoc-item-4333"></a>
 
 ### `host_mut`
 

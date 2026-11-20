@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-947"></a>
+<a id="rustdoc-item-957"></a>
 
 # Struct `pill_core::metrics::TracyForwardingState`
 
@@ -8,14 +8,14 @@
 pub(in metrics) struct TracyForwardingState;
 ```
 
-Visibility: `{'restricted': {'parent': 945, 'path': '::metrics'}}` · Source: `engine\pill_core\src\metrics.rs:39`
+Visibility: `{'restricted': {'parent': 955, 'path': '::metrics'}}` · Source: `engine\pill_core\src\metrics.rs:39`
 
 The state shared by the recorder and the handles it hands out: the cache
 of plot names, and the flag that says whether forwarding to Tracy is on.
 
 ## Fields
 
-<a id="rustdoc-item-941"></a>
+<a id="rustdoc-item-951"></a>
 
 ### `plot_names_by_metric_name`
 
@@ -25,7 +25,7 @@ plot_names_by_metric_name: std::sync::Mutex<std::collections::HashMap<String, tr
 
 _No documentation provided._
 
-<a id="rustdoc-item-946"></a>
+<a id="rustdoc-item-956"></a>
 
 ### `tracy_forwarding_enabled`
 
@@ -37,7 +37,7 @@ _No documentation provided._
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-948"></a>
+<a id="rustdoc-item-958"></a>
 
 ### `emit_tracy_plot`
 

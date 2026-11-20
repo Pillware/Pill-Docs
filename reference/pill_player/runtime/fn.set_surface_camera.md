@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-547"></a>
+<a id="rustdoc-item-550"></a>
 
 # Function `pill_player::runtime::set_surface_camera`
 

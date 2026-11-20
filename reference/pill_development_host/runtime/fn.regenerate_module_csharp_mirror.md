@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-4200"></a>
+<a id="rustdoc-item-4457"></a>
 
 # Function `pill_development_host::runtime::regenerate_module_csharp_mirror`
 
@@ -8,7 +8,7 @@
 pub(in runtime) fn regenerate_module_csharp_mirror(workspace_root: &std::path::Path, slot: &slot::ExtensionSlot, exposed_components: Vec<pill_csharp_bridge::ModuleExposedComponent>) -> Result<(Vec<pill_csharp_bridge::ModuleExposedComponent>, Vec<pill_csharp_bridge::ResolvedMirrorMethod>, Vec<pill_csharp_bridge::ResolvedFieldAccessor>, bool), pill_core::error::CSharpError>;
 ```
 
-Visibility: `{'restricted': {'parent': 3859, 'path': '::runtime'}}` · Source: `hosting\pill_development_host\src\runtime.rs:2576`
+Visibility: `{'restricted': {'parent': 4115, 'path': '::runtime'}}` · Source: `hosting\pill_development_host\src\runtime.rs:2675`
 
 Rewrite one extension's `generated/<module>_Components.g.cs` mirror file
 from the generation loaded right now.

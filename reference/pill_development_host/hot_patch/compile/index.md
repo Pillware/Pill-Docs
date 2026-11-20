@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1910"></a>
+<a id="rustdoc-item-1984"></a>
 
 # Module `pill_development_host::hot_patch::compile`
 
@@ -36,23 +36,23 @@ let output = line
 ## Module contents
 
 ### Structs
-- [`CargoRustcLine`](struct.CargoRustcLine.md#rustdoc-item-593) — One captured `rustc` command line, ready to be replayed for a patch build.
+- [`CargoRustcLine`](struct.CargoRustcLine.md#rustdoc-item-595) — One captured `rustc` command line, ready to be replayed for a patch build.
 
 ### Functions
-- [`compiler_token_index`](fn.compiler_token_index.md#rustdoc-item-1966) — Returns the index of the actual `rustc` binary in a captured invocation.
-- [`extract_backticked`](fn.extract_backticked.md#rustdoc-item-1965) — Returns the command from cargo's ``Running `...` `` line.
-- [`flags_cache_path`](fn.flags_cache_path.md#rustdoc-item-1962) — Returns where a package's captured flags are cached between processes.
-- [`parse_rustc_line`](fn.parse_rustc_line.md#rustdoc-item-1963) — Returns the invocation for `crate_name` from one line of cargo's `-v`
-- [`patch_linker_value`](fn.patch_linker_value.md#rustdoc-item-1916) — Returns the linker value the patch is built with, given the one cargo
-- [`redirect_extern`](fn.redirect_extern.md#rustdoc-item-1924) — Points one `--extern name=path` entry at the artifact a patch can use.
-- [`tokenize`](fn.tokenize.md#rustdoc-item-1908) — Splits a command line into tokens, following cargo's quote grouping.
-- [`touch`](fn.touch.md#rustdoc-item-1964) — Updates a file's modification time without changing its contents.
+- [`compiler_token_index`](fn.compiler_token_index.md#rustdoc-item-2040) — Returns the index of the actual `rustc` binary in a captured invocation.
+- [`extract_backticked`](fn.extract_backticked.md#rustdoc-item-2039) — Returns the command from cargo's ``Running `...` `` line.
+- [`flags_cache_path`](fn.flags_cache_path.md#rustdoc-item-2036) — Returns where a package's captured flags are cached between processes.
+- [`parse_rustc_line`](fn.parse_rustc_line.md#rustdoc-item-2037) — Returns the invocation for `crate_name` from one line of cargo's `-v`
+- [`patch_linker_value`](fn.patch_linker_value.md#rustdoc-item-1990) — Returns the linker value the patch is built with, given the one cargo
+- [`redirect_extern`](fn.redirect_extern.md#rustdoc-item-1998) — Points one `--extern name=path` entry at the artifact a patch can use.
+- [`tokenize`](fn.tokenize.md#rustdoc-item-1982) — Splits a command line into tokens, following cargo's quote grouping.
+- [`touch`](fn.touch.md#rustdoc-item-2038) — Updates a file's modification time without changing its contents.
 
 ### Constants
-- [`CACHE_FORMAT_VERSION`](constant.CACHE_FORMAT_VERSION.md#rustdoc-item-1909) — The version of the tokenizer that wrote a cached compiler line.
-- [`CAPTURE_POLL_INTERVAL`](constant.CAPTURE_POLL_INTERVAL.md#rustdoc-item-1912) — How often the capture checks whether its cargo has finished.
-- [`CAPTURE_TIMEOUT`](constant.CAPTURE_TIMEOUT.md#rustdoc-item-1911) — The longest time one flag capture may take before it gives up.
-- [`DROPPED_CODEGEN_VALUES`](constant.DROPPED_CODEGEN_VALUES.md#rustdoc-item-1914) — `-C` values that are dropped when a patch is built.
-- [`DROPPED_FLAGS`](constant.DROPPED_FLAGS.md#rustdoc-item-1915) — Whole flags that are dropped when a patch is built, together with their
-- [`PATCH_LINKER`](constant.PATCH_LINKER.md#rustdoc-item-1917) — The linker [`patch_linker_value`] uses in place of a recorded linker that
-- [`TWO_TOKEN_FLAGS`](constant.TWO_TOKEN_FLAGS.md#rustdoc-item-1913) — Flags whose value is the next token (`-C` `opt-level=0`), so the parser must
+- [`CACHE_FORMAT_VERSION`](constant.CACHE_FORMAT_VERSION.md#rustdoc-item-1983) — The version of the tokenizer that wrote a cached compiler line.
+- [`CAPTURE_POLL_INTERVAL`](constant.CAPTURE_POLL_INTERVAL.md#rustdoc-item-1986) — How often the capture checks whether its cargo has finished.
+- [`CAPTURE_TIMEOUT`](constant.CAPTURE_TIMEOUT.md#rustdoc-item-1985) — The longest time one flag capture may take before it gives up.
+- [`DROPPED_CODEGEN_VALUES`](constant.DROPPED_CODEGEN_VALUES.md#rustdoc-item-1988) — `-C` values that are dropped when a patch is built.
+- [`DROPPED_FLAGS`](constant.DROPPED_FLAGS.md#rustdoc-item-1989) — Whole flags that are dropped when a patch is built, together with their
+- [`PATCH_LINKER`](constant.PATCH_LINKER.md#rustdoc-item-1991) — The linker [`patch_linker_value`] uses in place of a recorded linker that
+- [`TWO_TOKEN_FLAGS`](constant.TWO_TOKEN_FLAGS.md#rustdoc-item-1987) — Flags whose value is the next token (`-C` `opt-level=0`), so the parser must

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-685"></a>
+<a id="rustdoc-item-706"></a>
 
 # Function `pill_csharp_bridge::backend::derive_system_access`
 
@@ -8,7 +8,7 @@
 pub(crate) fn derive_system_access(accesses: &[super::abi::NativeSystemAccess], bindings: &std::collections::HashMap<StableComponentId, ComponentBinding>) -> Result<pill_engine::SystemAccess, pill_core::error::CSharpError>;
 ```
 
-Visibility: `crate` · Source: `csharp\pill_csharp_bridge\src\backend.rs:1541`
+Visibility: `crate` · Source: `csharp\pill_csharp_bridge\src\backend.rs:1683`
 
 Turns declared access modes into the scheduler's metadata.
 

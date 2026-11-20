@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-895"></a>
+<a id="rustdoc-item-888"></a>
 
 # Struct `pill_master_renderer_data::assets::shader::ShaderTextureSlot`
 
@@ -8,7 +8,7 @@
 pub struct ShaderTextureSlot;
 ```
 
-Source: `extensions\pill_master_renderer\pill_master_renderer_data\src\assets\shader.rs:159`
+Source: `extensions\pill_master_renderer\modules\runtime\data\src\assets\shader.rs:159`
 
 One texture a shader declares, under the name its source gives it, at the
 texture and sampler bindings the shader declares.
@@ -17,7 +17,7 @@ This is also the type a `.hlsl.meta` declares its textures with.
 
 ## Fields
 
-<a id="rustdoc-item-891"></a>
+<a id="rustdoc-item-884"></a>
 
 ### `name`
 
@@ -27,7 +27,7 @@ name: String
 
 The name the source binds the texture under.
 
-<a id="rustdoc-item-892"></a>
+<a id="rustdoc-item-885"></a>
 
 ### `kind`
 
@@ -38,7 +38,7 @@ kind: ShaderTextureKind
 The kind of texture the slot binds, which decides the binding wgpu
 accepts.
 
-<a id="rustdoc-item-893"></a>
+<a id="rustdoc-item-886"></a>
 
 ### `texture_binding`
 
@@ -48,7 +48,7 @@ texture_binding: u32
 
 The binding the shader declares the texture at.
 
-<a id="rustdoc-item-894"></a>
+<a id="rustdoc-item-887"></a>
 
 ### `sampler_binding`
 
@@ -60,7 +60,7 @@ The binding the shader declares the sampler at.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-896"></a>
+<a id="rustdoc-item-889"></a>
 
 ### `new`
 
@@ -82,6 +82,9 @@ the shader uses.
 - `TryFrom<U>`
 - `Any`
 - `ToOwned`
+- `CastableFrom<ST, Uninit, Uninit>`
+- `CastableFrom<ST, Initialized, Initialized>`
+- `Read<Exclusive, BecauseExclusive>`
 - `DeserializeOwned`
 - `Instrument`
 - `WithSubscriber`
@@ -89,9 +92,6 @@ the shader uses.
 - `Pointable`
 - `OwoColorize`
 - `ErasedDestructor`
-- `CastableFrom<ST, Uninit, Uninit>`
-- `CastableFrom<ST, Initialized, Initialized>`
-- `Read<Exclusive, BecauseExclusive>`
 - `Equivalent<K>`
 - `MirrorObject`
 - `MirrorValue`

@@ -14,7 +14,7 @@ Profiling shows where each update spends its time: which ECS systems are slow, h
 | Does it cost time when Tracy is closed? | Almost none. Nothing is recorded until Tracy connects                             |
 | Can I time my own code?                 | Yes, with `pill_engine::profile_scope!`                                           |
 | Can I see GPU time?                     | Yes, also set `PILL_GPU_PROFILE=1`                                                |
-| Does it work in the editor?             | No. `pill_editor` has no `profiling` feature; profile with `pill_standalone`      |
+| Does it work in the editor?             | Yes. Build `pill_editor` with `--features profiling`; see [the editor section](#how-do-i-profile-the-editor) |
 
 ## What do I need?
 
@@ -54,6 +54,39 @@ Tracy starts showing data at once. You can connect, disconnect and connect again
 > **Example:** your project drops to 20 updates per second after you add a new ECS system. You start it with `profiling`, connect Tracy, and open the timeline. One zone named `system: wave_contribution` takes 40 ms in every update, while the others take under 1 ms. That ECS system is the one to look at.
 
 Hot reload and hot patch keep working while you profile. The host passes its own engine features to every module it builds, so a reloaded module reports to the same Tracy connection.
+
+## How do I profile the editor?
+
+The editor has its own `profiling` feature, and it covers the UI's refresh path as well as the engine:
+
+```powershell
+cd modules
+$env:PROJECT_PATH = "../examples/my_project"
+cargo run --package pill_editor --features profiling
+```
+```cmd
+cd modules
+set PROJECT_PATH=../examples/my_project
+cargo run --package pill_editor --features profiling
+```
+```bash
+cd modules
+export PROJECT_PATH="../examples/my_project"
+cargo run --package pill_editor --features profiling
+```
+
+Connect Tracy as usual and pick `pill_editor`. The editor redraws only when something changed, so its frame graph is one bar per redraw - the UI's refresh times. The editor marks that redraw as a **secondary** frame named `UI refresh`, beside the engine's own frame per update. Inside it:
+
+| What                        | What it tells you                                                   |
+| --------------------------- | ------------------------------------------------------------------- |
+| `tab: <name>`               | how long one dock tab's body took (`tab: console`, `tab: inspector`) |
+| `egui pass`                 | the whole egui pass of the frame: layout, widgets and the dock      |
+| `egui tessellate`           | turning the pass's shapes into meshes for the GPU                   |
+| `overlay paint and present` | uploading the textures, recording the UI pass and presenting it     |
+
+The engine's own zones (`frame`, `system: <name>`, the plots) are there too, because the editor runs the same frame the other frontends do. The `profiling-fine` level works the same way: `cargo run --package pill_editor --features profiling-fine`.
+
+The feature lives on `pill_editor` because an editor host builds every module with its own feature selection, so the shell, the extensions and the project report to the same connection.
 
 ## What will I see in Tracy?
 
@@ -188,7 +221,8 @@ The first build in this profile compiles everything again, so it takes a while.
 
 - `modules/engine/pill_core/src/profiling.rs` - the `profile_scope!`, `profile_plot!` and other profiling macros.
 - `modules/frontends/pill_standalone/Cargo.toml` - the `profiling`, `profiling-fine` and `metrics` features.
-- `modules/extensions/pill_master_renderer/pill_master_renderer/src/profiler.rs` - GPU measurements and the `GPU` timeline.
+- `modules/editor/pill_editor/Cargo.toml` - the editor's `profiling` and `profiling-fine` features, and its UI zones in `src/runner/`, `src/overlay.rs` and the shell crate's `shell.rs`.
+- `modules/extensions/pill_master_renderer/modules/runtime/gpu/src/profiler.rs` - GPU measurements and the `GPU` timeline.
 - [Profiling inside the engine](../../engine_guide/other/profiling.md) - how profiling works inside the engine.
 
 ## Which Tracy version do I need?

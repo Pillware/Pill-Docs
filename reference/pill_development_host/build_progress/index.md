@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-477"></a>
+<a id="rustdoc-item-478"></a>
 
 # Module `pill_development_host::build_progress`
 
@@ -30,13 +30,13 @@ longer in it (any reload), is not announced here; its caller logs it.
 ## Module contents
 
 ### Structs
-- [`BuildPlan`](struct.BuildPlan.md#rustdoc-item-476) — The builds a start announced and that have not started yet, plus the
-- [`PlannedBuild`](struct.PlannedBuild.md#rustdoc-item-480) — One module the startup will build, and what kind of module it is.
+- [`BuildPlan`](struct.BuildPlan.md#rustdoc-item-477) — The builds a start announced and that have not started yet, plus the
+- [`PlannedBuild`](struct.PlannedBuild.md#rustdoc-item-481) — One module the startup will build, and what kind of module it is.
 
 ### Functions
-- [`announce_build`](fn.announce_build.md#rustdoc-item-518) — Logs that the build of `module` is starting, if that build belongs to the
-- [`announce_plan`](fn.announce_plan.md#rustdoc-item-474) — Records the startup build plan and logs it as one multi-line entry.
-- [`render_plan`](fn.render_plan.md#rustdoc-item-542) — Builds the message [`announce_plan`] logs: a heading and the numbered
+- [`announce_build`](fn.announce_build.md#rustdoc-item-519) — Logs that the build of `module` is starting, if that build belongs to the
+- [`announce_plan`](fn.announce_plan.md#rustdoc-item-475) — Records the startup build plan and logs it as one multi-line entry.
+- [`render_plan`](fn.render_plan.md#rustdoc-item-543) — Builds the message [`announce_plan`] logs: a heading and the numbered
 
 ### Statics
-- [`STARTUP_BUILD_PLAN`](static.STARTUP_BUILD_PLAN.md#rustdoc-item-475) — The plan for the current start. It is `None` until [`announce_plan`]
+- [`STARTUP_BUILD_PLAN`](static.STARTUP_BUILD_PLAN.md#rustdoc-item-476) — The plan for the current start. It is `None` until [`announce_plan`]

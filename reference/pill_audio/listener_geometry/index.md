@@ -1,12 +1,12 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-467"></a>
+<a id="rustdoc-item-597"></a>
 
 # Module `pill_audio::listener_geometry`
 
-Source: `extensions\pill_audio\pill_audio\src\listener_geometry.rs:1`
+Source: `extensions\pill_audio\modules\runtime\src\listener_geometry.rs:1`
 
-[`ear_positions`](fn.ear_positions.md#rustdoc-item-466): turns a listener's position and facing into its two ear
+[`ear_positions`](fn.ear_positions.md#rustdoc-item-596): turns a listener's position and facing into its two ear
 points.
 Where a listener's ears sit in the world.
 
@@ -26,4 +26,4 @@ keep the listener's Z coordinate.
 ## Module contents
 
 ### Functions
-- [`ear_positions`](fn.ear_positions.md#rustdoc-item-466) — Returns the two points where a listener's ears sit.
+- [`ear_positions`](fn.ear_positions.md#rustdoc-item-596) — Returns the two points where a listener's ears sit.

@@ -8,7 +8,7 @@
 pub fn all_functions(source: &str) -> Vec<HotFunction>;
 ```
 
-Source: `hosting\pill_hot_scan\src\lib.rs:567`
+Source: `hosting\pill_hot_scan\src\lib.rs:594`
 
 Every function in the file the host could address, annotated or not.
 

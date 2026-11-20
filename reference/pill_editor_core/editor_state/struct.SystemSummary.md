@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-3083"></a>
+<a id="rustdoc-item-3218"></a>
 
 # Struct `pill_editor_core::editor_state::SystemSummary`
 
@@ -8,13 +8,13 @@
 pub struct SystemSummary;
 ```
 
-Source: `editor\pill_editor_core\src\editor_state\mod.rs:305`
+Source: `editor\pill_editor_core\src\editor_state\mod.rs:353`
 
 One row of the Systems tab.
 
 ## Fields
 
-<a id="rustdoc-item-3077"></a>
+<a id="rustdoc-item-3212"></a>
 
 ### `index`
 
@@ -24,7 +24,7 @@ index: usize
 
 Registration index, which is the unambiguous key for a toggle.
 
-<a id="rustdoc-item-3078"></a>
+<a id="rustdoc-item-3213"></a>
 
 ### `name`
 
@@ -34,7 +34,7 @@ name: String
 
 Registration name.
 
-<a id="rustdoc-item-3079"></a>
+<a id="rustdoc-item-3214"></a>
 
 ### `owner_label`
 
@@ -46,7 +46,7 @@ Human label of the owning module: `"project"`, `"engine"`,
 `"renderer"`, a module's name, or `"extension <n>"` when the host does
 not name it.
 
-<a id="rustdoc-item-3080"></a>
+<a id="rustdoc-item-3215"></a>
 
 ### `enabled`
 
@@ -56,7 +56,7 @@ enabled: bool
 
 Whether the system participates in frame execution.
 
-<a id="rustdoc-item-3081"></a>
+<a id="rustdoc-item-3216"></a>
 
 ### `hot_patchable`
 
@@ -67,7 +67,7 @@ hot_patchable: bool
 Whether a hot-patch dispatch slot exists (host built with the engine's
 `development` feature).
 
-<a id="rustdoc-item-3082"></a>
+<a id="rustdoc-item-3217"></a>
 
 ### `name_is_ambiguous`
 

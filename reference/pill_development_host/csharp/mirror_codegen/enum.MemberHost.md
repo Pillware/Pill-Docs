@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1624"></a>
+<a id="rustdoc-item-1699"></a>
 
 # Enum `pill_development_host::csharp::mirror_codegen::MemberHost`
 
@@ -8,13 +8,13 @@
 pub(in csharp) enum MemberHost<'a> { ... }
 ```
 
-Visibility: `{'restricted': {'parent': 1331, 'path': '::csharp'}}` · Source: `hosting\pill_development_host\src\csharp\mirror_codegen.rs:255`
+Visibility: `{'restricted': {'parent': 1405, 'path': '::csharp'}}` · Source: `hosting\pill_development_host\src\csharp\mirror_codegen.rs:255`
 
 The place a generated member belongs to.
 
 ## Variants
 
-<a id="rustdoc-item-1618"></a>
+<a id="rustdoc-item-1693"></a>
 
 ### `ValueStruct`
 
@@ -24,7 +24,7 @@ ValueStruct
 
 An instance or static member of a value-type struct.
 
-<a id="rustdoc-item-1620"></a>
+<a id="rustdoc-item-1695"></a>
 
 ### `Object`
 
@@ -34,7 +34,7 @@ Object
 
 An instance or static member of an object class.
 
-<a id="rustdoc-item-1622"></a>
+<a id="rustdoc-item-1697"></a>
 
 ### `Resource`
 
@@ -44,7 +44,7 @@ Resource
 
 An extension method on `Res<T>` / `ResMut<T>` of a resource marker.
 
-<a id="rustdoc-item-1623"></a>
+<a id="rustdoc-item-1698"></a>
 
 ### `Module`
 

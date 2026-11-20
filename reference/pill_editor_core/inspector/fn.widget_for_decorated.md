@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-4683"></a>
+<a id="rustdoc-item-6646"></a>
 
 # Function `pill_editor_core::inspector::widget_for_decorated`
 
@@ -8,7 +8,7 @@
 pub fn widget_for_decorated(value: &pill_engine::FieldValue, decorators: &[pill_engine::component_registry::FieldDecorator]) -> FieldWidget;
 ```
 
-Source: `editor\pill_editor_core\src\inspector.rs:232`
+Source: `editor\pill_editor_core\src\inspector.rs:236`
 
 The widget a field's value asks for once its decorators are applied.
 

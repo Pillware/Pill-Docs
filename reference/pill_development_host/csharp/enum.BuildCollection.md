@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1685"></a>
+<a id="rustdoc-item-1760"></a>
 
 # Enum `pill_development_host::csharp::BuildCollection`
 
@@ -8,13 +8,13 @@
 pub(crate) enum BuildCollection { ... }
 ```
 
-Visibility: `crate` · Source: `hosting\pill_development_host\src\csharp\mod.rs:401`
+Visibility: `crate` · Source: `hosting\pill_development_host\src\csharp\mod.rs:387`
 
 What one collection attempt found.
 
 ## Variants
 
-<a id="rustdoc-item-1881"></a>
+<a id="rustdoc-item-1955"></a>
 
 ### `Pending`
 
@@ -24,7 +24,7 @@ Pending
 
 No report was available: a build is still running, or none was started.
 
-<a id="rustdoc-item-1683"></a>
+<a id="rustdoc-item-1758"></a>
 
 ### `Died`
 
@@ -35,7 +35,7 @@ Died
 The worker stopped without a report; the caller falls back to building
 on the frame thread.
 
-<a id="rustdoc-item-1883"></a>
+<a id="rustdoc-item-1957"></a>
 
 ### `Finished`
 

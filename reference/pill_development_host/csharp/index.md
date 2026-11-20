@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1331"></a>
+<a id="rustdoc-item-1405"></a>
 
 # Module `pill_development_host::csharp`
 
@@ -35,21 +35,21 @@ developing: the generated mirrors and the compiler. The whole module is
 ## Module contents
 
 ### Modules
-- [`codegen`](codegen/index.md#rustdoc-item-1288) — Host-side generation of a module's `<module>_Components.g.cs` mirror file.
-- [`fast_compile`](fast_compile/index.md#rustdoc-item-1342) — In-process Roslyn compilation of the C# project, which replaces MSBuild on
-- [`mirror_codegen`](mirror_codegen/index.md#rustdoc-item-1426) — The C# members, object classes, enums and resource markers generated from
+- [`codegen`](codegen/index.md#rustdoc-item-1362) — Host-side generation of a module's `<module>_Components.g.cs` mirror file.
+- [`fast_compile`](fast_compile/index.md#rustdoc-item-1417) — In-process Roslyn compilation of the C# project, which replaces MSBuild on
+- [`mirror_codegen`](mirror_codegen/index.md#rustdoc-item-1501) — The C# members, object classes, enums and resource markers generated from
 
 ### Structs
-- [`BuildReport`](struct.BuildReport.md#rustdoc-item-1681) — A finished assembly build: what it produced, and when it finished, so the
-- [`CSharpProject`](struct.CSharpProject.md#rustdoc-item-1669) — A running C# project in the reloading host, made of the bridge's runtime
-- [`InFlightAssemblyBuild`](struct.InFlightAssemblyBuild.md#rustdoc-item-1666) — One assembly build running on its own worker thread.
-- [`ManagedReloadSummary`](struct.ManagedReloadSummary.md#rustdoc-item-1690) — A finished managed reload, broken down by phase, in milliseconds.
-- [`ManagedReloadTiming`](struct.ManagedReloadTiming.md#rustdoc-item-1668) — One managed reload's armed timing, filled in as its phases complete.
-- [`RebuiltAssembly`](struct.RebuiltAssembly.md#rustdoc-item-1719) — A finished assembly rebuild: when it was ready and what produced it.
+- [`BuildReport`](struct.BuildReport.md#rustdoc-item-1756) — A finished assembly build: what it produced, and when it finished, so the
+- [`CSharpProject`](struct.CSharpProject.md#rustdoc-item-1744) — A running C# project in the reloading host, made of the bridge's runtime
+- [`InFlightAssemblyBuild`](struct.InFlightAssemblyBuild.md#rustdoc-item-1741) — One assembly build running on its own worker thread.
+- [`ManagedReloadSummary`](struct.ManagedReloadSummary.md#rustdoc-item-1765) — A finished managed reload, broken down by phase, in milliseconds.
+- [`ManagedReloadTiming`](struct.ManagedReloadTiming.md#rustdoc-item-1743) — One managed reload's armed timing, filled in as its phases complete.
+- [`RebuiltAssembly`](struct.RebuiltAssembly.md#rustdoc-item-1794) — A finished assembly rebuild: when it was ready.
 
 ### Enums
-- [`BuildCollection`](enum.BuildCollection.md#rustdoc-item-1685) — What one collection attempt found.
-- [`BuildOutcome`](enum.BuildOutcome.md#rustdoc-item-1832) — What one managed assembly build produced.
+- [`BuildCollection`](enum.BuildCollection.md#rustdoc-item-1760) — What one collection attempt found.
+- [`BuildOutcome`](enum.BuildOutcome.md#rustdoc-item-1906) — What one managed assembly build produced.
 
 ### Functions
-- [`milliseconds`](fn.milliseconds.md#rustdoc-item-1907) — Returns `duration` in milliseconds.
+- [`milliseconds`](fn.milliseconds.md#rustdoc-item-1981) — Returns `duration` in milliseconds.

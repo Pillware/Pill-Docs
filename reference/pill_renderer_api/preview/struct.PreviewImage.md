@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-203"></a>
+<a id="rustdoc-item-206"></a>
 
 # Struct `pill_renderer_api::preview::PreviewImage`
 
@@ -8,13 +8,13 @@
 pub struct PreviewImage;
 ```
 
-Source: `rendering\pill_renderer_api\src\preview.rs:102`
+Source: `rendering\pill_renderer_api\src\preview.rs:108`
 
 One preview that came back.
 
 ## Fields
 
-<a id="rustdoc-item-1550"></a>
+<a id="rustdoc-item-1639"></a>
 
 ### `id`
 
@@ -24,7 +24,7 @@ id: u64
 
 The id of the request this answers.
 
-<a id="rustdoc-item-1551"></a>
+<a id="rustdoc-item-1640"></a>
 
 ### `width`
 
@@ -34,7 +34,7 @@ width: u32
 
 The image's width in texels.
 
-<a id="rustdoc-item-1552"></a>
+<a id="rustdoc-item-1641"></a>
 
 ### `height`
 
@@ -44,7 +44,7 @@ height: u32
 
 The image's height in texels.
 
-<a id="rustdoc-item-1553"></a>
+<a id="rustdoc-item-1642"></a>
 
 ### `rgba`
 
@@ -56,7 +56,7 @@ Tightly packed RGBA8 rows, top row first.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-1554"></a>
+<a id="rustdoc-item-1643"></a>
 
 ### `refused`
 
@@ -73,7 +73,7 @@ renderer that was still busy - waits forever, and an editor that asks
 one question at a time stops asking. A refusal says "no preview for
 this", so the caller forgets the request and takes the next one.
 
-<a id="rustdoc-item-1555"></a>
+<a id="rustdoc-item-1644"></a>
 
 ### `is_empty`
 
@@ -94,15 +94,16 @@ Whether this answer carries no pixels. Only a refused preview has none.
 - `TryFrom<U>`
 - `Any`
 - `ToOwned`
+- `CastableFrom<ST, Uninit, Uninit>`
+- `CastableFrom<ST, Initialized, Initialized>`
+- `Read<Exclusive, BecauseExclusive>`
 - `Instrument`
 - `WithSubscriber`
 - `IntoEither`
 - `Pointable`
 - `OwoColorize`
 - `ErasedDestructor`
-- `CastableFrom<ST, Uninit, Uninit>`
-- `CastableFrom<ST, Initialized, Initialized>`
-- `Read<Exclusive, BecauseExclusive>`
+- `Equivalent<K>`
 - `Clone`
 - `Debug`
 - `StructuralPartialEq`

@@ -8,7 +8,7 @@
 pub struct MeshImportSettings;
 ```
 
-Source: `extensions\pill_master_renderer\pill_master_renderer_data\src\assets\mesh.rs:301`
+Source: `extensions\pill_master_renderer\modules\runtime\data\src\assets\mesh.rs:301`
 
 How to decode a model file into a mesh; a metadata file holds these
 choices.
@@ -54,6 +54,9 @@ and their UVs. Normal mapping needs them; with this off they stay zero.
 - `TryFrom<U>`
 - `Any`
 - `ToOwned`
+- `CastableFrom<ST, Uninit, Uninit>`
+- `CastableFrom<ST, Initialized, Initialized>`
+- `Read<Exclusive, BecauseExclusive>`
 - `DeserializeOwned`
 - `Instrument`
 - `WithSubscriber`
@@ -61,9 +64,6 @@ and their UVs. Normal mapping needs them; with this off they stay zero.
 - `Pointable`
 - `OwoColorize`
 - `ErasedDestructor`
-- `CastableFrom<ST, Uninit, Uninit>`
-- `CastableFrom<ST, Initialized, Initialized>`
-- `Read<Exclusive, BecauseExclusive>`
 - `Equivalent<K>`
 - `Debug`
 - `Clone`

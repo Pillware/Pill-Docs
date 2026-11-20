@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-7463"></a>
+<a id="rustdoc-item-9524"></a>
 
 # Module `pill_editor_core::session`
 
@@ -55,34 +55,34 @@ an unloaded image.
 ## Module contents
 
 ### Structs
-- [`ContextClaim`](struct.ContextClaim.md#rustdoc-item-7260) — What one generation's claim on the session's egui contexts cleared.
-- [`EguiShellState`](struct.EguiShellState.md#rustdoc-item-5386) — The egui shell's session: the reload handle, the pass scratch, the
-- [`InspectorSession`](struct.InspectorSession.md#rustdoc-item-4966) — The Inspector's session state: which component sections are collapsed, and
-- [`LoggedRects`](struct.LoggedRects.md#rustdoc-item-7546) — The rectangles a pass last reported, so a placement reaches the log once
-- [`LoggedTexts`](struct.LoggedTexts.md#rustdoc-item-7866) — The texts a pass last reported per key, so a row logs a changed value once
-- [`MenubarSession`](struct.MenubarSession.md#rustdoc-item-7242) — The menu bar's session state: the logged geometry of the strip, its titles
-- [`PaletteState`](struct.PaletteState.md#rustdoc-item-7247) — The command palette's session state.
-- [`PanelBudget`](struct.PanelBudget.md#rustdoc-item-7253) — Every module panel's build time.
-- [`PanelTiming`](struct.PanelTiming.md#rustdoc-item-7737) — One panel's build time and how long it has been over budget.
-- [`PanelWindowAnswer`](struct.PanelWindowAnswer.md#rustdoc-item-7338) — The answer a modal window took: Apply or Enter accepts, Cancel or Escape
-- [`PanelWindowSession`](struct.PanelWindowSession.md#rustdoc-item-7256) — The windows the module panels asked for.
-- [`PanelWindowState`](struct.PanelWindowState.md#rustdoc-item-7299) — One window a panel asked the shell for.
-- [`PreviewStates`](struct.PreviewStates.md#rustdoc-item-7240) — The preview state of every asset tile, keyed by the tile's row key.
-- [`StatisticsSession`](struct.StatisticsSession.md#rustdoc-item-7251) — The timings the Statistics tab reads.
-- [`TabTiming`](struct.TabTiming.md#rustdoc-item-7421) — One tab's measured cost, smoothed so a single slow frame does not dominate.
-- [`Toast`](struct.Toast.md#rustdoc-item-7664) — One toast on screen: a short-lived line about something the host did.
-- [`ToastSession`](struct.ToastSession.md#rustdoc-item-7245) — The toast stack's session state.
-- [`ToolboxSession`](struct.ToolboxSession.md#rustdoc-item-7235) — The floating viewport toolbox's session state. A drag moves one scene
+- [`ContextClaim`](struct.ContextClaim.md#rustdoc-item-9320) — What one generation's claim on the session's egui contexts cleared.
+- [`EguiShellState`](struct.EguiShellState.md#rustdoc-item-7349) — The egui shell's session: the reload handle, the pass scratch, the
+- [`InspectorSession`](struct.InspectorSession.md#rustdoc-item-6929) — The Inspector's session state: which component sections are collapsed, and
+- [`LoggedRects`](struct.LoggedRects.md#rustdoc-item-9607) — The rectangles a pass last reported, so a placement reaches the log once
+- [`LoggedTexts`](struct.LoggedTexts.md#rustdoc-item-9928) — The texts a pass last reported per key, so a row logs a changed value once
+- [`MenubarSession`](struct.MenubarSession.md#rustdoc-item-9300) — The menu bar's session state: the logged geometry of the strip, its titles
+- [`PaletteState`](struct.PaletteState.md#rustdoc-item-9305) — The command palette's session state.
+- [`PanelBudget`](struct.PanelBudget.md#rustdoc-item-9311) — Every module panel's build time.
+- [`PanelTiming`](struct.PanelTiming.md#rustdoc-item-9799) — One panel's build time and how long it has been over budget.
+- [`PanelWindowAnswer`](struct.PanelWindowAnswer.md#rustdoc-item-9399) — The answer a modal window took: Apply or Enter accepts, Cancel or Escape
+- [`PanelWindowSession`](struct.PanelWindowSession.md#rustdoc-item-9314) — The windows the module panels asked for.
+- [`PanelWindowState`](struct.PanelWindowState.md#rustdoc-item-9360) — One window a panel asked the shell for.
+- [`PreviewStates`](struct.PreviewStates.md#rustdoc-item-9298) — The preview state of every asset tile, keyed by the tile's row key.
+- [`StatisticsSession`](struct.StatisticsSession.md#rustdoc-item-9309) — The timings the Statistics tab reads.
+- [`TabTiming`](struct.TabTiming.md#rustdoc-item-9482) — One tab's measured cost, smoothed so a single slow frame does not dominate.
+- [`Toast`](struct.Toast.md#rustdoc-item-9726) — One toast on screen: a short-lived line about something the host did.
+- [`ToastSession`](struct.ToastSession.md#rustdoc-item-9303) — The toast stack's session state.
+- [`ToolboxSession`](struct.ToolboxSession.md#rustdoc-item-9293) — The floating viewport toolbox's session state. A drag moves one scene
 
 ### Enums
-- [`MenubarSlot`](enum.MenubarSlot.md#rustdoc-item-7585) — The slot a menu-bar rectangle is remembered under: the strip itself, or one
+- [`MenubarSlot`](enum.MenubarSlot.md#rustdoc-item-9647) — The slot a menu-bar rectangle is remembered under: the strip itself, or one
 
 ### Functions
-- [`smooth_sample`](fn.smooth_sample.md#rustdoc-item-8046) — One step of an exponential moving average, seeded by the first sample.
+- [`smooth_sample`](fn.smooth_sample.md#rustdoc-item-10108) — One step of an exponential moving average, seeded by the first sample.
 
 ### Constants
-- [`PANEL_BUDGET_FRAMES`](constant.PANEL_BUDGET_FRAMES.md#rustdoc-item-7228) — How many frames in a row a panel must overshoot its budget before the
-- [`PANEL_BUDGET_MICROS`](constant.PANEL_BUDGET_MICROS.md#rustdoc-item-7227) — How long one panel body may take, in microseconds, before the editor says
-- [`PANEL_WINDOWS_MAX`](constant.PANEL_WINDOWS_MAX.md#rustdoc-item-7224) — How many panel windows one session may have open at once.
-- [`TOAST_FRAMES`](constant.TOAST_FRAMES.md#rustdoc-item-7226) — Frames a toast stays up - about four seconds at 60 fps.
-- [`TOASTS_MAX`](constant.TOASTS_MAX.md#rustdoc-item-7225) — How many toasts show at once; older ones drop off the stack.
+- [`PANEL_BUDGET_FRAMES`](constant.PANEL_BUDGET_FRAMES.md#rustdoc-item-9286) — How many frames in a row a panel must overshoot its budget before the
+- [`PANEL_BUDGET_MICROS`](constant.PANEL_BUDGET_MICROS.md#rustdoc-item-9285) — How long one panel body may take, in microseconds, before the editor says
+- [`PANEL_WINDOWS_MAX`](constant.PANEL_WINDOWS_MAX.md#rustdoc-item-9282) — How many panel windows one session may have open at once.
+- [`TOAST_FRAMES`](constant.TOAST_FRAMES.md#rustdoc-item-9284) — Frames a toast stays up - about four seconds at 60 fps.
+- [`TOASTS_MAX`](constant.TOASTS_MAX.md#rustdoc-item-9283) — How many toasts show at once; older ones drop off the stack.

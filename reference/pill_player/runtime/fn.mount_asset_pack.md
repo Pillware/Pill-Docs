@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-551"></a>
+<a id="rustdoc-item-554"></a>
 
 # Function `pill_player::runtime::mount_asset_pack`
 
@@ -8,7 +8,7 @@
 pub fn mount_asset_pack<impl Into<std::borrow::Cow<'static, [u8]>>: Into<std::borrow::Cow<'static, [u8]>>>(project_name: &str, source: PackSource, bytes: impl Into<std::borrow::Cow<'static, [u8]>>) -> Result<pill_engine::AssetDatabase, pill_core::error::HostError>;
 ```
 
-Source: `hosting\pill_player\src\runtime.rs:656`
+Source: `hosting\pill_player\src\runtime.rs:663`
 
 Parses an asset pack and indexes every asset in it.
 

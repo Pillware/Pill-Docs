@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-688"></a>
+<a id="rustdoc-item-709"></a>
 
 # Constant `pill_csharp_bridge::commands::MAX_COMPONENTS_PER_CREATE`
 

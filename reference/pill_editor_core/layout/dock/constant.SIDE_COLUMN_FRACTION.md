@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-5123"></a>
+<a id="rustdoc-item-7086"></a>
 
 # Constant `pill_editor_core::layout::dock::SIDE_COLUMN_FRACTION`
 

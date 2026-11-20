@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-5481"></a>
+<a id="rustdoc-item-7444"></a>
 
 # Enum `pill_editor_core::menubar::MenuEntry`
 
@@ -8,13 +8,13 @@
 pub enum MenuEntry { ... }
 ```
 
-Source: `editor\pill_editor_core\src\menubar.rs:130`
+Source: `editor\pill_editor_core\src\menubar.rs:131`
 
 One row of a menu: a separator or an item a click can act on.
 
 ## Variants
 
-<a id="rustdoc-item-5474"></a>
+<a id="rustdoc-item-7437"></a>
 
 ### `Separator`
 
@@ -24,7 +24,7 @@ Separator
 
 A horizontal rule between groups.
 
-<a id="rustdoc-item-5480"></a>
+<a id="rustdoc-item-7443"></a>
 
 ### `Action`
 

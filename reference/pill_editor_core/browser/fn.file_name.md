@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-561"></a>
+<a id="rustdoc-item-605"></a>
 
 # Function `pill_editor_core::browser::file_name`
 

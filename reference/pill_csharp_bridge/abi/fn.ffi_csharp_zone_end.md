@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-355"></a>
+<a id="rustdoc-item-358"></a>
 
 # Function `pill_csharp_bridge::abi::ffi_csharp_zone_end`
 

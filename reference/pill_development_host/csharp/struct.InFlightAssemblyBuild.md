@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1666"></a>
+<a id="rustdoc-item-1741"></a>
 
 # Struct `pill_development_host::csharp::InFlightAssemblyBuild`
 
@@ -8,7 +8,7 @@
 pub(in csharp) struct InFlightAssemblyBuild;
 ```
 
-Visibility: `{'restricted': {'parent': 1331, 'path': '::csharp'}}` · Source: `hosting\pill_development_host\src\csharp\mod.rs:348`
+Visibility: `{'restricted': {'parent': 1405, 'path': '::csharp'}}` · Source: `hosting\pill_development_host\src\csharp\mod.rs:334`
 
 One assembly build running on its own worker thread.
 
@@ -19,7 +19,7 @@ runtime that owns them was dropped.
 
 ## Fields
 
-<a id="rustdoc-item-1797"></a>
+<a id="rustdoc-item-1871"></a>
 
 ### `receiver`
 
@@ -29,7 +29,7 @@ receiver: std::sync::mpsc::Receiver<BuildReport>
 
 The build's report, once the worker has one.
 
-<a id="rustdoc-item-1799"></a>
+<a id="rustdoc-item-1873"></a>
 
 ### `thread`
 
@@ -37,11 +37,11 @@ The build's report, once the worker has one.
 thread: Option<std::thread::JoinHandle<()>>
 ```
 
-The worker thread, waited for by [`Self::join`](#rustdoc-item-1798) or on drop.
+The worker thread, waited for by [`Self::join`](#rustdoc-item-1872) or on drop.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-1798"></a>
+<a id="rustdoc-item-1872"></a>
 
 ### `join`
 

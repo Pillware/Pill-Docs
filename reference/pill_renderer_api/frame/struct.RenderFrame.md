@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-188"></a>
+<a id="rustdoc-item-191"></a>
 
 # Struct `pill_renderer_api::frame::RenderFrame`
 
@@ -23,7 +23,7 @@ that spelling is part of the identity, so leave it exactly as it is.
 
 ## Fields
 
-<a id="rustdoc-item-794"></a>
+<a id="rustdoc-item-864"></a>
 
 ### `instances`
 
@@ -33,7 +33,7 @@ instances: Vec<RenderInstance>
 
 Every drawable collected from the world this update, in traversal order.
 
-<a id="rustdoc-item-795"></a>
+<a id="rustdoc-item-865"></a>
 
 ### `passes`
 
@@ -45,7 +45,7 @@ The chain to run this frame, resolved from the pipeline the game
 selected. An empty chain asks for a cleared frame and nothing else,
 which is what a pipeline with every pass disabled means.
 
-<a id="rustdoc-item-796"></a>
+<a id="rustdoc-item-866"></a>
 
 ### `chain_source`
 
@@ -59,7 +59,7 @@ Resolving clones every pass's strings and maps, so it only happens again
 when this value moves. `chain_generation` is the renderer's cheap test
 that the chain it built its pipelines from is still this chain.
 
-<a id="rustdoc-item-797"></a>
+<a id="rustdoc-item-867"></a>
 
 ### `chain_generation`
 
@@ -69,7 +69,7 @@ chain_generation: u64
 
 Increased by one each time `passes` is resolved again.
 
-<a id="rustdoc-item-798"></a>
+<a id="rustdoc-item-868"></a>
 
 ### `seconds`
 
@@ -83,7 +83,7 @@ It travels in the engine's parameters, so a shader can animate without
 the game passing a value through a pass parameter. A pass parameter is
 read once, when the chain is built, not once per frame.
 
-<a id="rustdoc-item-799"></a>
+<a id="rustdoc-item-869"></a>
 
 ### `delta_seconds`
 
@@ -93,7 +93,7 @@ delta_seconds: f32
 
 This frame's own duration: the amount `seconds` grows by.
 
-<a id="rustdoc-item-191"></a>
+<a id="rustdoc-item-194"></a>
 
 ### `surface_views`
 
@@ -104,12 +104,12 @@ surface_views: std::collections::BTreeMap<crate::SurfaceId, crate::SurfaceView>
 The camera each surface draws through this frame, by surface id.
 
 A surface that is missing here is not drawn, and that includes the
-primary one ([`crate::SurfaceId::PRIMARY`](../surface/struct.SurfaceId.md#rustdoc-item-182)): its camera is the one
-[`crate::SurfaceCameras`](../surface/struct.SurfaceCameras.md#rustdoc-item-800) binds to it, or the frame's chosen world
+primary one ([`crate::SurfaceId::PRIMARY`](../surface/struct.SurfaceId.md#rustdoc-item-185)): its camera is the one
+[`crate::SurfaceCameras`](../surface/struct.SurfaceCameras.md#rustdoc-item-870) binds to it, or the frame's chosen world
 camera when it has no binding. The renderer's frame writer fills this
 once per frame.
 
-<a id="rustdoc-item-802"></a>
+<a id="rustdoc-item-872"></a>
 
 ### `debug`
 
@@ -120,7 +120,7 @@ debug: pill_engine::DebugFrame
 What systems debug-drew for this frame: lines, labels and gizmo handles.
 It is empty while debug drawing is off.
 
-<a id="rustdoc-item-805"></a>
+<a id="rustdoc-item-875"></a>
 
 ### `outlines`
 
@@ -130,11 +130,11 @@ outlines: crate::SelectionOutlines
 
 The entities to outline this frame, and the outline colour.
 
-This is the [`crate::SelectionOutlines`](../picking/struct.SelectionOutlines.md#rustdoc-item-804) resource's value, carried whole
+This is the [`crate::SelectionOutlines`](../picking/struct.SelectionOutlines.md#rustdoc-item-874) resource's value, carried whole
 instead of copied field by field, so an editor writes one resource and
 the renderer reads one value. An empty `entities` list means no outline.
 
-<a id="rustdoc-item-807"></a>
+<a id="rustdoc-item-877"></a>
 
 ### `grid_cell_size`
 
@@ -145,11 +145,11 @@ grid_cell_size: Option<f32>
 The distance between the scene grid's minor lines, in world units, when
 a frontend turned the grid on. `None` draws no grid.
 
-The grid is drawn on the surfaces in [`Self::editor_views`](#rustdoc-item-806), the same
+The grid is drawn on the surfaces in [`Self::editor_views`](#rustdoc-item-876), the same
 view-bound surfaces that carry the editor's other chrome, so the frame
 names that set once instead of twice.
 
-<a id="rustdoc-item-806"></a>
+<a id="rustdoc-item-876"></a>
 
 ### `editor_views`
 
@@ -165,7 +165,7 @@ transform gizmo and the selection outlines. A surface drawn through a
 world camera is a game's window and never gets that chrome. An empty
 list means no editor is looking.
 
-<a id="rustdoc-item-808"></a>
+<a id="rustdoc-item-878"></a>
 
 ### `pick_requests`
 
@@ -174,9 +174,9 @@ pick_requests: Vec<crate::PickRequest>
 ```
 
 The picks asked for since the last frame. The renderer answers them
-through [`crate::PillRenderer::take_pick_results`](../api/trait.PillRenderer.md#rustdoc-item-199).
+through [`crate::PillRenderer::take_pick_results`](../api/trait.PillRenderer.md#rustdoc-item-202).
 
-<a id="rustdoc-item-810"></a>
+<a id="rustdoc-item-880"></a>
 
 ### `preview_requests`
 
@@ -186,9 +186,9 @@ preview_requests: Vec<crate::PreviewRequest>
 
 The previews asked for since the last frame. The renderer draws at most
 one per frame and answers every request through
-[`crate::PillRenderer::take_preview_results`](../api/trait.PillRenderer.md#rustdoc-item-202).
+[`crate::PillRenderer::take_preview_results`](../api/trait.PillRenderer.md#rustdoc-item-205).
 
-<a id="rustdoc-item-812"></a>
+<a id="rustdoc-item-882"></a>
 
 ### `sequence`
 
@@ -199,7 +199,7 @@ sequence: u64
 The number of this frame, counting from one. It is packed into the
 engine parameters beside the clocks.
 
-<a id="rustdoc-item-813"></a>
+<a id="rustdoc-item-883"></a>
 
 ### `ui`
 
@@ -222,15 +222,15 @@ empty value means no UI.
 - `TryFrom<U>`
 - `Any`
 - `ToOwned`
+- `CastableFrom<ST, Uninit, Uninit>`
+- `CastableFrom<ST, Initialized, Initialized>`
+- `Read<Exclusive, BecauseExclusive>`
 - `Instrument`
 - `WithSubscriber`
 - `IntoEither`
 - `Pointable`
 - `OwoColorize`
 - `ErasedDestructor`
-- `CastableFrom<ST, Uninit, Uninit>`
-- `CastableFrom<ST, Initialized, Initialized>`
-- `Read<Exclusive, BecauseExclusive>`
 - `Clone`
 - `Debug`
 - `Resource`

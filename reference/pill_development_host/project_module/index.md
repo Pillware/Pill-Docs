@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-2656"></a>
+<a id="rustdoc-item-2730"></a>
 
 # Module `pill_development_host::project_module`
 
@@ -36,4 +36,4 @@ through `poll_reload`.
 ## Module contents
 
 ### Modules
-- [`loaded`](loaded/index.md#rustdoc-item-3421)
+- [`loaded`](loaded/index.md#rustdoc-item-3677)

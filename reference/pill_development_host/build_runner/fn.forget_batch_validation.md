@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-816"></a>
+<a id="rustdoc-item-818"></a>
 
 # Function `pill_development_host::build_runner::forget_batch_validation`
 
@@ -8,7 +8,7 @@
 pub(crate) fn forget_batch_validation(module_name: &str);
 ```
 
-Visibility: `crate` · Source: `hosting\pill_development_host\src\build_runner.rs:2156`
+Visibility: `crate` · Source: `hosting\pill_development_host\src\build_runner.rs:2174`
 
 Drops `module_name`'s batch token, so its next load builds instead of
 skipping.

@@ -8,7 +8,7 @@
 pub fn read() -> Result<Option<String>, String>;
 ```
 
-Source: `editor\pill_editor\src\clipboard.rs:187`
+Source: `editor\pill_editor\src\clipboard.rs:211`
 
 Returns the text the clipboard carries, preferring the editor's own format.
 

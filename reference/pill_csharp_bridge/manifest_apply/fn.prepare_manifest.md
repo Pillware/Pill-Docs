@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1696"></a>
+<a id="rustdoc-item-1720"></a>
 
 # Function `pill_csharp_bridge::manifest_apply::prepare_manifest`
 
@@ -14,7 +14,7 @@ The half of the pipeline that decides what a manifest means, without
 changing anything.
 
 It raises every refusal the pipeline can make about the manifest's own
-shape. It is split from [`execute_manifest`](fn.execute_manifest.md#rustdoc-item-1721) so one caller can resolve two
+shape. It is split from [`execute_manifest`](fn.execute_manifest.md#rustdoc-item-1745) so one caller can resolve two
 kinds before executing either. Resources and components arrive in one
 manifest, and a shape refusal in one kind must not leave the other kind's
 relayout already applied. Nothing here changes the engine or the table.

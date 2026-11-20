@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-3672"></a>
+<a id="rustdoc-item-4049"></a>
 
 # Function `pill_editor_core::editor_state::roll_back_files`
 
@@ -8,7 +8,7 @@
 pub(in editor_state) fn roll_back_files(paths: &[String]) -> Vec<String>;
 ```
 
-Visibility: `{'restricted': {'parent': 2404, 'path': '::editor_state'}}` · Source: `editor\pill_editor_core\src\editor_state\mod.rs:1264`
+Visibility: `{'restricted': {'parent': 2471, 'path': '::editor_state'}}` · Source: `editor\pill_editor_core\src\editor_state\mod.rs:1722`
 
 Removes the files a command created and returns the ones it could not
 remove.

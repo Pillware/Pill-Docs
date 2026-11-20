@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-543"></a>
+<a id="rustdoc-item-540"></a>
 
 # Struct `pill_master_renderer::chain::GpuChain`
 
@@ -8,19 +8,19 @@
 pub(crate) struct GpuChain;
 ```
 
-Visibility: `crate` · Source: `extensions\pill_master_renderer\pill_master_renderer\src\chain.rs:230`
+Visibility: `crate` · Source: `extensions\pill_master_renderer\modules\runtime\gpu\src\chain.rs:230`
 
 The GPU side of a chain: one pass object per pass, and the plan a frame is
 recorded from.
 
 The pass objects are rebuilt only when the chain, the resource epoch or the
-surface size changes, or when [`invalidate`](#rustdoc-item-542) is called. A
+surface size changes, or when [`invalidate`](#rustdoc-item-539) is called. A
 plan is asked for on every frame, and it borrows the frame it was made from,
 so it never outlives that frame.
 
 ## Fields
 
-<a id="rustdoc-item-535"></a>
+<a id="rustdoc-item-532"></a>
 
 ### `passes`
 
@@ -30,7 +30,7 @@ passes: Vec<PassSlot>
 
 One entry per pass of the current chain, in the chain's order.
 
-<a id="rustdoc-item-536"></a>
+<a id="rustdoc-item-533"></a>
 
 ### `built_from`
 
@@ -45,7 +45,7 @@ Held only for comparison: [`ResolvedPass`] derives equality, so a field
 added to it is compared here without any change in this file, which a
 hand-built string could not promise.
 
-<a id="rustdoc-item-537"></a>
+<a id="rustdoc-item-534"></a>
 
 ### `frame_inputs`
 
@@ -57,7 +57,7 @@ What `built_from` was last checked against: the frame's chain generation,
 the resource epoch and the surface size. One tuple comparison per frame,
 with no chain cloned or compared, until one of those three changes.
 
-<a id="rustdoc-item-538"></a>
+<a id="rustdoc-item-535"></a>
 
 ### `offscreen_key`
 
@@ -68,7 +68,7 @@ offscreen_key: Option<(Vec<(String, u32)>, u32, u32)>
 The offscreen layout the current targets were built for: each offscreen
 target a pass names, with that pass's scale, and the surface size.
 
-<a id="rustdoc-item-539"></a>
+<a id="rustdoc-item-536"></a>
 
 ### `skipped_passes`
 
@@ -79,7 +79,7 @@ skipped_passes: std::collections::HashSet<String>
 Passes this chain cannot record yet, remembered so each one is named
 once in the log instead of once per frame.
 
-<a id="rustdoc-item-541"></a>
+<a id="rustdoc-item-538"></a>
 
 ### `chain_log`
 
@@ -92,7 +92,7 @@ not write a line per frame.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-544"></a>
+<a id="rustdoc-item-541"></a>
 
 ### `new`
 
@@ -102,7 +102,7 @@ pub(crate) fn new() -> Self;
 
 A chain with nothing built and nothing planned.
 
-<a id="rustdoc-item-545"></a>
+<a id="rustdoc-item-542"></a>
 
 ### `passes`
 
@@ -112,7 +112,7 @@ pub(crate) fn passes(self: &Self) -> &[PassSlot];
 
 The built pass objects, in chain order, for the frame recorder to index.
 
-<a id="rustdoc-item-546"></a>
+<a id="rustdoc-item-543"></a>
 
 ### `ensure`
 
@@ -137,7 +137,7 @@ This never fails. A pass that would not build is stored as
 [`PassSlot::Unsupported`](enum.PassSlot.md#rustdoc-item-376) and named in the log, so one bad shader does
 not cost the frame the passes that would have drawn.
 
-<a id="rustdoc-item-547"></a>
+<a id="rustdoc-item-544"></a>
 
 ### `plan`
 
@@ -155,7 +155,7 @@ and writes only the surface also takes the instances no pass claimed.
 A fullscreen pass draws nothing but its triangle, and reads what earlier
 passes left in the targets it names.
 
-<a id="rustdoc-item-542"></a>
+<a id="rustdoc-item-539"></a>
 
 ### `invalidate`
 
@@ -168,10 +168,10 @@ rebuilds them.
 
 The offscreen targets are kept on purpose: they depend on the chain's
 layout and the surface size, and an asset edit - which is what calls
-this - changes neither. Use [`invalidate_targets`](#rustdoc-item-548)
+this - changes neither. Use [`invalidate_targets`](#rustdoc-item-545)
 when the surface size changed.
 
-<a id="rustdoc-item-549"></a>
+<a id="rustdoc-item-546"></a>
 
 ### `forget_passes`
 
@@ -187,7 +187,7 @@ not once per frame. It therefore has to be cleared together with the
 slots it describes, or a pass that breaks, is fixed and breaks again
 would stay silent. Every path that replaces the slots goes through here.
 
-<a id="rustdoc-item-548"></a>
+<a id="rustdoc-item-545"></a>
 
 ### `invalidate_targets`
 
@@ -200,7 +200,7 @@ Forget the offscreen layout as well, so the targets are rebuilt too.
 Use this when the surface size changed: every target is built at the
 surface size, so a new size makes all of them wrong.
 
-<a id="rustdoc-item-550"></a>
+<a id="rustdoc-item-547"></a>
 
 ### `log`
 
@@ -215,7 +215,7 @@ is what shows whether the chain runs the passes the game asked for, or
 quietly falls back to the built-in pass. A line per frame would bury
 everything else, and an unchanged chain is the normal case.
 
-<a id="rustdoc-item-551"></a>
+<a id="rustdoc-item-548"></a>
 
 ### `report_skip`
 

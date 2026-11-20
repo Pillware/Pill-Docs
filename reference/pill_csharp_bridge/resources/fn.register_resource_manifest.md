@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1996"></a>
+<a id="rustdoc-item-2021"></a>
 
 # Function `pill_csharp_bridge::resources::register_resource_manifest`
 

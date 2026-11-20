@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-464"></a>
+<a id="rustdoc-item-538"></a>
 
 # Struct `pill_engine::declarations::PillAssetDescriptor`
 
@@ -8,13 +8,13 @@
 pub struct PillAssetDescriptor;
 ```
 
-Source: `engine\pill_engine\src\declarations.rs:153`
+Source: `engine\pill_engine\src\declarations.rs:229`
 
 One asset type declared with `#[derive(PillAsset)]`.
 
 ## Fields
 
-<a id="rustdoc-item-462"></a>
+<a id="rustdoc-item-536"></a>
 
 ### `type_name`
 
@@ -22,10 +22,9 @@ One asset type declared with `#[derive(PillAsset)]`.
 type_name: &'static str
 ```
 
-Fully-qualified type path: the declaring module's path plus the type's
-name.
+The type's stored name, `<crate>::<Type>`.
 
-<a id="rustdoc-item-463"></a>
+<a id="rustdoc-item-537"></a>
 
 ### `register`
 
@@ -48,13 +47,13 @@ document file is decided where the type is declared.
 - `TryInto<U>`
 - `TryFrom<U>`
 - `Any`
+- `CastableFrom<ST, Uninit, Uninit>`
+- `CastableFrom<ST, Initialized, Initialized>`
+- `Read<Exclusive, BecauseExclusive>`
 - `Instrument`
 - `WithSubscriber`
 - `IntoEither`
 - `Pointable`
 - `OwoColorize`
 - `ErasedDestructor`
-- `CastableFrom<ST, Uninit, Uninit>`
-- `CastableFrom<ST, Initialized, Initialized>`
-- `Read<Exclusive, BecauseExclusive>`
 - `Collect`

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1429"></a>
+<a id="rustdoc-item-1884"></a>
 
 # Enum `pill_editor::runner::CommandAction`
 
@@ -8,7 +8,7 @@
 pub(in runner) enum CommandAction { ... }
 ```
 
-Visibility: `{'restricted': {'parent': 483, 'path': '::runner'}}` · Source: `editor\pill_editor\src\runner\mod.rs:3836`
+Visibility: `{'restricted': {'parent': 539, 'path': '::runner'}}` · Source: `editor\pill_editor\src\runner\mod.rs:4448`
 
 What a registry command id does in this executable.
 
@@ -18,7 +18,7 @@ scripted command does. A command with no action here stays inert.
 
 ## Variants
 
-<a id="rustdoc-item-1424"></a>
+<a id="rustdoc-item-1878"></a>
 
 ### `GizmoTool`
 
@@ -28,7 +28,7 @@ GizmoTool
 
 Select a gizmo tool.
 
-<a id="rustdoc-item-1425"></a>
+<a id="rustdoc-item-1879"></a>
 
 ### `Undo`
 
@@ -38,7 +38,7 @@ Undo
 
 Step the history back one entry.
 
-<a id="rustdoc-item-1426"></a>
+<a id="rustdoc-item-1880"></a>
 
 ### `Redo`
 
@@ -48,7 +48,7 @@ Redo
 
 Step the history forward one entry.
 
-<a id="rustdoc-item-1427"></a>
+<a id="rustdoc-item-1881"></a>
 
 ### `PauseToggle`
 
@@ -58,7 +58,7 @@ PauseToggle
 
 Flip the engine's pause flag.
 
-<a id="rustdoc-item-1428"></a>
+<a id="rustdoc-item-1882"></a>
 
 ### `Step`
 
@@ -67,6 +67,16 @@ Step
 ```
 
 Advance exactly one frame.
+
+<a id="rustdoc-item-1883"></a>
+
+### `PlayToggle`
+
+```rust
+PlayToggle
+```
+
+Start a play session, or stop the one that is running.
 
 ## Trait implementations
 

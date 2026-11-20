@@ -1,10 +1,10 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1847"></a>
+<a id="rustdoc-item-1890"></a>
 
 # Module `pill_master_renderer::renderer`
 
-Source: `extensions\pill_master_renderer\pill_master_renderer\src\renderer.rs:1`
+Source: `extensions\pill_master_renderer\modules\runtime\gpu\src\renderer.rs:1`
 
 The wgpu renderer: the surfaces, the GPU caches and the frame submission.
 The master renderer: draws a frame's chain and instances on the device and
@@ -44,25 +44,25 @@ in and out.
 ## Module contents
 
 ### Structs
-- [`Renderer`](struct.Renderer.md#rustdoc-item-1865) — The master renderer: the asset caches, a chain per surface, and the
-- [`State`](struct.State.md#rustdoc-item-495) — The wgpu state every surface shares: the device, the queue, the caches and
-- [`SurfaceDraw`](struct.SurfaceDraw.md#rustdoc-item-1963) — One surface's frame between the acquire and the present.
-- [`SurfaceTarget`](struct.SurfaceTarget.md#rustdoc-item-1863) — One surface the renderer draws into, and everything sized to it.
+- [`Renderer`](struct.Renderer.md#rustdoc-item-1908) — The master renderer: the asset caches, a chain per surface, and the
+- [`State`](struct.State.md#rustdoc-item-492) — The wgpu state every surface shares: the device, the queue, the caches and
+- [`SurfaceDraw`](struct.SurfaceDraw.md#rustdoc-item-2006) — One surface's frame between the acquire and the present.
+- [`SurfaceTarget`](struct.SurfaceTarget.md#rustdoc-item-1906) — One surface the renderer draws into, and everything sized to it.
 
 ### Functions
-- [`color_load`](fn.color_load.md#rustdoc-item-2051) — The colour a pass opens its target with, or the values already in it.
-- [`covers_target`](fn.covers_target.md#rustdoc-item-2053) — Whether a frame's viewport covers every pixel of a `width` by `height` target.
-- [`create_gpu_profiler`](fn.create_gpu_profiler.md#rustdoc-item-2047) — The GPU profiler `PILL_GPU_PROFILE` asks for, or `None` when it was not
-- [`depth_attachment`](fn.depth_attachment.md#rustdoc-item-2050) — The depth attachment a geometry pass writes, or a skybox reads.
-- [`draw_preview`](fn.draw_preview.md#rustdoc-item-2045) — Draw one preview, naming what stopped it when it cannot be drawn.
-- [`record_preview`](fn.record_preview.md#rustdoc-item-2044) — Draw one asset preview, when the frame asked for one and the previous
-- [`viewport_in_target`](fn.viewport_in_target.md#rustdoc-item-2054) — The frame's viewport expressed in the pixels of one pass's target.
-- [`write_gpu_timestamp`](fn.write_gpu_timestamp.md#rustdoc-item-2049) — Writes a GPU timestamp named `label` between passes, when profiling.
+- [`color_load`](fn.color_load.md#rustdoc-item-2094) — The colour a pass opens its target with, or the values already in it.
+- [`covers_target`](fn.covers_target.md#rustdoc-item-2096) — Whether a frame's viewport covers every pixel of a `width` by `height` target.
+- [`create_gpu_profiler`](fn.create_gpu_profiler.md#rustdoc-item-2090) — The GPU profiler `PILL_GPU_PROFILE` asks for, or `None` when it was not
+- [`depth_attachment`](fn.depth_attachment.md#rustdoc-item-2093) — The depth attachment a geometry pass writes, or a skybox reads.
+- [`draw_preview`](fn.draw_preview.md#rustdoc-item-2088) — Draw one preview, naming what stopped it when it cannot be drawn.
+- [`record_preview`](fn.record_preview.md#rustdoc-item-2087) — Draw one asset preview, when the frame asked for one and the previous
+- [`viewport_in_target`](fn.viewport_in_target.md#rustdoc-item-2097) — The frame's viewport expressed in the pixels of one pass's target.
+- [`write_gpu_timestamp`](fn.write_gpu_timestamp.md#rustdoc-item-2092) — Writes a GPU timestamp named `label` between passes, when profiling.
 
 ### Constants
-- [`CLEAR_COLOR`](constant.CLEAR_COLOR.md#rustdoc-item-1848) — Colour every frame starts from, whatever the first pass is.
-- [`CLEAR_TRANSPARENT`](constant.CLEAR_TRANSPARENT.md#rustdoc-item-1850) — What a frame leaves outside a viewport that does not cover the whole target.
-- [`GPU_REPORT_INTERVAL`](constant.GPU_REPORT_INTERVAL.md#rustdoc-item-1846) — Frames between two sampled log reports: one from the GPU profiler and one
-- [`NO_FOG_COLOR`](constant.NO_FOG_COLOR.md#rustdoc-item-1852)
-- [`NO_FOG_DENSITY`](constant.NO_FOG_DENSITY.md#rustdoc-item-1851) — Fog values the engine parameters keep so their layout matches what a shader
-- [`OFFSCREEN_FORMAT`](constant.OFFSCREEN_FORMAT.md#rustdoc-item-1845) — The colour format of every offscreen target a chain declares.
+- [`CLEAR_COLOR`](constant.CLEAR_COLOR.md#rustdoc-item-1891) — Colour every frame starts from, whatever the first pass is.
+- [`CLEAR_TRANSPARENT`](constant.CLEAR_TRANSPARENT.md#rustdoc-item-1893) — What a frame leaves outside a viewport that does not cover the whole target.
+- [`GPU_REPORT_INTERVAL`](constant.GPU_REPORT_INTERVAL.md#rustdoc-item-1889) — Frames between two sampled log reports: one from the GPU profiler and one
+- [`NO_FOG_COLOR`](constant.NO_FOG_COLOR.md#rustdoc-item-1895)
+- [`NO_FOG_DENSITY`](constant.NO_FOG_DENSITY.md#rustdoc-item-1894) — Fog values the engine parameters keep so their layout matches what a shader
+- [`OFFSCREEN_FORMAT`](constant.OFFSCREEN_FORMAT.md#rustdoc-item-1888) — The colour format of every offscreen target a chain declares.

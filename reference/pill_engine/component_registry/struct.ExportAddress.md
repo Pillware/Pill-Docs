@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-193"></a>
+<a id="rustdoc-item-200"></a>
 
 # Struct `pill_engine::component_registry::ExportAddress`
 
@@ -8,7 +8,7 @@
 pub struct ExportAddress;
 ```
 
-Source: `engine\pill_engine\src\component_registry.rs:261`
+Source: `engine\pill_engine\src\component_registry.rs:268`
 
 The address of an exported function, as data.
 
@@ -17,7 +17,7 @@ pointer is neither `Send` nor `Sync` on its own.
 
 ## Fields
 
-<a id="rustdoc-item-266"></a>
+<a id="rustdoc-item-274"></a>
 
 ### `0`
 
@@ -38,15 +38,16 @@ _No documentation provided._
 - `TryFrom<U>`
 - `Any`
 - `ToOwned`
+- `CastableFrom<ST, Uninit, Uninit>`
+- `CastableFrom<ST, Initialized, Initialized>`
+- `Read<Exclusive, BecauseExclusive>`
 - `Instrument`
 - `WithSubscriber`
 - `IntoEither`
 - `Pointable`
 - `OwoColorize`
 - `ErasedDestructor`
-- `CastableFrom<ST, Uninit, Uninit>`
-- `CastableFrom<ST, Initialized, Initialized>`
-- `Read<Exclusive, BecauseExclusive>`
+- `Equivalent<K>`
 - `Clone`
 - `Copy`
 - `Debug`

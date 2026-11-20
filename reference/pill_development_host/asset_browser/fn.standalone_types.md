@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-4553"></a>
+<a id="rustdoc-item-4812"></a>
 
 # Function `pill_development_host::asset_browser::standalone_types`
 
@@ -8,7 +8,7 @@
 pub fn standalone_types(world: &pill_engine::World) -> Vec<StandaloneType>;
 ```
 
-Source: `hosting\pill_development_host\src\asset_browser.rs:408`
+Source: `hosting\pill_development_host\src\asset_browser.rs:407`
 
 Returns the live standalone types, sorted by display name: the list a
 "create asset" dropdown offers.

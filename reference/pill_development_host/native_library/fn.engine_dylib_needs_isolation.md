@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-3073"></a>
+<a id="rustdoc-item-3324"></a>
 
 # Function `pill_development_host::native_library::engine_dylib_needs_isolation`
 
@@ -8,7 +8,7 @@
 pub(in native_library) fn engine_dylib_needs_isolation(workspace_root: &std::path::Path) -> bool;
 ```
 
-Visibility: `{'restricted': {'parent': 3075, 'path': '::native_library'}}` · Source: `hosting\pill_development_host\src\native_library.rs:181`
+Visibility: `{'restricted': {'parent': 3326, 'path': '::native_library'}}` · Source: `hosting\pill_development_host\src\native_library.rs:255`
 
 Whether a module build produced engine dylibs that differ from the host's
 copies, which means the module must load against its own.

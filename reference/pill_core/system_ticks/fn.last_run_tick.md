@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1565"></a>
+<a id="rustdoc-item-1575"></a>
 
 # Function `pill_core::system_ticks::last_run_tick`
 

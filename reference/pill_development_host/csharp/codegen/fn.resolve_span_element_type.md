@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1337"></a>
+<a id="rustdoc-item-1412"></a>
 
 # Function `pill_development_host::csharp::codegen::resolve_span_element_type`
 
@@ -8,7 +8,7 @@
 pub(in csharp::codegen) fn resolve_span_element_type(element_tag: &str, cs_name: &str, field_name: &str, value_types: &[pill_engine::component_registry::PillValueTypeDescriptor], emitted: &mut Vec<EmittedStruct>, methods: &[pill_csharp_bridge::ResolvedMirrorMethod], scope: &mirror_codegen::MirrorScope) -> Result<String, String>;
 ```
 
-Visibility: `{'restricted': {'parent': 1288, 'path': '::csharp::codegen'}}` · Source: `hosting\pill_development_host\src\csharp\codegen.rs:1555`
+Visibility: `{'restricted': {'parent': 1362, 'path': '::csharp::codegen'}}` · Source: `hosting\pill_development_host\src\csharp\codegen.rs:1570`
 
 Returns the C# element type for a generated span to iterate.
 

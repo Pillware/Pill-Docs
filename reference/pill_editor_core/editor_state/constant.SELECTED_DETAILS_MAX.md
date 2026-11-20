@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-2661"></a>
+<a id="rustdoc-item-2795"></a>
 
 # Constant `pill_editor_core::editor_state::SELECTED_DETAILS_MAX`
 
@@ -8,7 +8,7 @@
 pub const SELECTED_DETAILS_MAX: usize = 64;
 ```
 
-Source: `editor\pill_editor_core\src\editor_state\mod.rs:52`
+Source: `editor\pill_editor_core\src\editor_state\mod.rs:94`
 
 How many selected entities the snapshot captures a detail for.
 

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-2019"></a>
+<a id="rustdoc-item-2029"></a>
 
 # Function `pill_core::telemetry::strip_color_codes`
 

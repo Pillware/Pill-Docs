@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-946"></a>
+<a id="rustdoc-item-968"></a>
 
 # Enum `pill_csharp_bridge::components::ComponentUndo`
 
@@ -17,7 +17,7 @@ pipeline, which knows exactly what it wrote where.
 
 ## Variants
 
-<a id="rustdoc-item-935"></a>
+<a id="rustdoc-item-957"></a>
 
 ### `Added`
 
@@ -27,7 +27,7 @@ Added
 
 The entry registered a managed component.
 
-<a id="rustdoc-item-939"></a>
+<a id="rustdoc-item-961"></a>
 
 ### `Migrated`
 
@@ -37,7 +37,7 @@ Migrated
 
 The entry migrated a managed component to a new shape.
 
-<a id="rustdoc-item-945"></a>
+<a id="rustdoc-item-967"></a>
 
 ### `Renamed`
 

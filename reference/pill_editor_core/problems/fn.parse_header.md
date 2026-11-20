@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-6487"></a>
+<a id="rustdoc-item-8525"></a>
 
 # Function `pill_editor_core::problems::parse_header`
 
@@ -8,7 +8,7 @@
 pub(in problems) fn parse_header(line: &str) -> Option<(Severity, String)>;
 ```
 
-Visibility: `{'restricted': {'parent': 6394, 'path': '::problems'}}` · Source: `editor\pill_editor_core\src\problems.rs:127`
+Visibility: `{'restricted': {'parent': 8432, 'path': '::problems'}}` · Source: `editor\pill_editor_core\src\problems.rs:127`
 
 Returns the severity and the message of a rustc header line, or `None`
 when the line is not one.

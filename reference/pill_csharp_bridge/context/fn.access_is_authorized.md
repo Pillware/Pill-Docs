@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1112"></a>
+<a id="rustdoc-item-1134"></a>
 
 # Function `pill_csharp_bridge::context::access_is_authorized`
 

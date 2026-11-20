@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-518"></a>
+<a id="rustdoc-item-519"></a>
 
 # Function `pill_development_host::build_progress::announce_build`
 

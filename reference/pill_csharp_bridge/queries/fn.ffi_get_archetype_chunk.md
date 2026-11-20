@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1879"></a>
+<a id="rustdoc-item-1904"></a>
 
 # Function `pill_csharp_bridge::queries::ffi_get_archetype_chunk`
 
@@ -10,7 +10,7 @@ pub(crate) extern "C" fn ffi_get_archetype_chunk(archetype_low: u64, archetype_h
 
 Visibility: `crate` · Source: `csharp\pill_csharp_bridge\src\queries.rs:405`
 
-Panic-guarded entry point for [`ffi_get_archetype_chunk_guarded`](fn.ffi_get_archetype_chunk_guarded.md#rustdoc-item-1878).
+Panic-guarded entry point for [`ffi_get_archetype_chunk_guarded`](fn.ffi_get_archetype_chunk_guarded.md#rustdoc-item-1903).
 
 A panic that crosses the `extern "C"` boundary aborts the process. This
 wrapper logs the panic and answers `5` instead, so the failure is recorded

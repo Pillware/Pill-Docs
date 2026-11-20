@@ -126,7 +126,8 @@ When one entity matters on its own (the player, the main camera), give it a mark
 Yes. A component can hold an `Entity` field:
 
 ```rust
-#[derive(PillComponent, Clone, Copy)]
+#[component]
+#[derive(Clone, Copy)]
 pub struct FollowTarget {
     pub target: Entity,
 }

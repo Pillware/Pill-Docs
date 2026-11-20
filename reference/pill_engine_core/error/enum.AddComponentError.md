@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-4673"></a>
+<a id="rustdoc-item-4997"></a>
 
 # Enum `pill_engine_core::error::AddComponentError`
 
@@ -18,7 +18,7 @@ world.
 
 ## Variants
 
-<a id="rustdoc-item-4669"></a>
+<a id="rustdoc-item-5287"></a>
 
 ### `EntityNotFound`
 
@@ -28,7 +28,7 @@ EntityNotFound
 
 The entity does not exist (was destroyed or never created).
 
-<a id="rustdoc-item-4670"></a>
+<a id="rustdoc-item-5288"></a>
 
 ### `ComponentAlreadyExists`
 
@@ -38,7 +38,7 @@ ComponentAlreadyExists
 
 The entity already has a component of this type.
 
-<a id="rustdoc-item-4672"></a>
+<a id="rustdoc-item-5289"></a>
 
 ### `ComponentNotRegistered`
 
@@ -64,15 +64,16 @@ entity's current one - storing nothing while reporting success.
 - `Any`
 - `ToOwned`
 - `ToString`
+- `CastableFrom<ST, Uninit, Uninit>`
+- `CastableFrom<ST, Initialized, Initialized>`
+- `Read<Exclusive, BecauseExclusive>`
 - `Instrument`
 - `WithSubscriber`
 - `IntoEither`
 - `Pointable`
 - `OwoColorize`
 - `ErasedDestructor`
-- `CastableFrom<ST, Uninit, Uninit>`
-- `CastableFrom<ST, Initialized, Initialized>`
-- `Read<Exclusive, BecauseExclusive>`
+- `Equivalent<K>`
 - `Debug`
 - `Diagnostic`
 - `Error`

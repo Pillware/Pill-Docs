@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-2368"></a>
+<a id="rustdoc-item-2410"></a>
 
 # Function `pill_master_renderer::resources::renderer_camera::sanitize_projection`
 
@@ -8,7 +8,7 @@
 pub(in resources::renderer_camera) fn sanitize_projection(camera_component: &crate::components::CameraComponent) -> (f32, f32, f32, Option<String>);
 ```
 
-Visibility: `{'restricted': {'parent': 2230, 'path': '::resources::renderer_camera'}}` · Source: `extensions\pill_master_renderer\pill_master_renderer\src\resources\renderer_camera.rs:285`
+Visibility: `{'restricted': {'parent': 2273, 'path': '::resources::renderer_camera'}}` · Source: `extensions\pill_master_renderer\modules\runtime\gpu\src\resources\renderer_camera.rs:285`
 
 Cleans up the camera's projection inputs and names every value it replaced.
 

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-774"></a>
+<a id="rustdoc-item-783"></a>
 
 # Function `pill_ui_theme::register::register`
 

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1281"></a>
+<a id="rustdoc-item-1291"></a>
 
 # Struct `pill_core::profiling::enabled::GpuTimelineSpan`
 
@@ -10,7 +10,7 @@ pub struct GpuTimelineSpan;
 
 Source: `engine\pill_core\src\profiling.rs:414`
 
-One GPU zone of a [`GpuTimeline`](struct.GpuTimeline.md#rustdoc-item-1277).
+One GPU zone of a [`GpuTimeline`](struct.GpuTimeline.md#rustdoc-item-1287).
 
 It is begun and ended as its commands are recorded, and it is timed
 once the GPU's timestamps are read back. A span dropped before its
@@ -19,7 +19,7 @@ does not overlap the real zones.
 
 ## Fields
 
-<a id="rustdoc-item-1305"></a>
+<a id="rustdoc-item-1315"></a>
 
 ### `span`
 
@@ -31,7 +31,7 @@ _No documentation provided._
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-1307"></a>
+<a id="rustdoc-item-1317"></a>
 
 ### `end`
 
@@ -41,7 +41,7 @@ pub fn end(self: &mut Self);
 
 Marks the end of the zone's commands, recorded now.
 
-<a id="rustdoc-item-1279"></a>
+<a id="rustdoc-item-1289"></a>
 
 ### `upload`
 
@@ -51,7 +51,7 @@ pub fn upload(self: &Self, start_timestamp: i64, end_timestamp: i64);
 
 Gives the zone the GPU timestamps, in ticks, of its start and end.
 
-<a id="rustdoc-item-1308"></a>
+<a id="rustdoc-item-1318"></a>
 
 ### `discard`
 

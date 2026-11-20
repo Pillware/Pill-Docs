@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-853"></a>
+<a id="rustdoc-item-980"></a>
 
 # Enum `pill_editor::runner::editor_window::FontSource`
 
@@ -8,13 +8,13 @@
 pub(in runner) enum FontSource { ... }
 ```
 
-Visibility: `{'restricted': {'parent': 483, 'path': '::runner'}}` · Source: `editor\pill_editor\src\runner\editor_window.rs:355`
+Visibility: `{'restricted': {'parent': 539, 'path': '::runner'}}` · Source: `editor\pill_editor\src\runner\editor_window.rs:398`
 
 Where one font family's bytes come from.
 
 ## Variants
 
-<a id="rustdoc-item-947"></a>
+<a id="rustdoc-item-1074"></a>
 
 ### `Project`
 
@@ -25,7 +25,7 @@ Project
 A `.ttf`/`.otf` below the project's `res/editor/`, loaded through the
 project's asset store - the project layer's fonts.
 
-<a id="rustdoc-item-949"></a>
+<a id="rustdoc-item-1076"></a>
 
 ### `User`
 

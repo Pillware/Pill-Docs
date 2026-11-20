@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-351"></a>
+<a id="rustdoc-item-354"></a>
 
 # Function `pill_csharp_bridge::abi::copy_managed_bytes`
 

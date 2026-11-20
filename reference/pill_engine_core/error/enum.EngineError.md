@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-4612"></a>
+<a id="rustdoc-item-6186"></a>
 
 # Enum `pill_engine_core::error::EngineError`
 
@@ -19,7 +19,7 @@ them, for host code that prefers a single error type.
 
 ## Variants
 
-<a id="rustdoc-item-4944"></a>
+<a id="rustdoc-item-6497"></a>
 
 ### `World`
 
@@ -29,7 +29,7 @@ World
 
 A world storage or migration operation failed.
 
-<a id="rustdoc-item-4946"></a>
+<a id="rustdoc-item-6499"></a>
 
 ### `Commands`
 
@@ -39,7 +39,7 @@ Commands
 
 A deferred command could not be applied.
 
-<a id="rustdoc-item-4948"></a>
+<a id="rustdoc-item-6501"></a>
 
 ### `Persistence`
 
@@ -49,7 +49,7 @@ Persistence
 
 A persisted component migration failed.
 
-<a id="rustdoc-item-4951"></a>
+<a id="rustdoc-item-6504"></a>
 
 ### `Host`
 
@@ -69,15 +69,15 @@ A subsystem of the shared host crate failed.
 - `TryFrom<U>`
 - `Any`
 - `ToString`
+- `CastableFrom<ST, Uninit, Uninit>`
+- `CastableFrom<ST, Initialized, Initialized>`
+- `Read<Exclusive, BecauseExclusive>`
 - `Instrument`
 - `WithSubscriber`
 - `IntoEither`
 - `Pointable`
 - `OwoColorize`
 - `ErasedDestructor`
-- `CastableFrom<ST, Uninit, Uninit>`
-- `CastableFrom<ST, Initialized, Initialized>`
-- `Read<Exclusive, BecauseExclusive>`
 - `Debug`
 - `Diagnostic`
 - `Error`

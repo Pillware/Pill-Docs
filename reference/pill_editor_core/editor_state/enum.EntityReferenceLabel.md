@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-2755"></a>
+<a id="rustdoc-item-2889"></a>
 
 # Enum `pill_editor_core::editor_state::EntityReferenceLabel`
 
@@ -8,13 +8,13 @@
 pub enum EntityReferenceLabel { ... }
 ```
 
-Source: `editor\pill_editor_core\src\editor_state\mod.rs:222`
+Source: `editor\pill_editor_core\src\editor_state\mod.rs:264`
 
 What an entity reference field currently names, as the Inspector shows it.
 
 ## Variants
 
-<a id="rustdoc-item-2911"></a>
+<a id="rustdoc-item-3045"></a>
 
 ### `Unset`
 
@@ -24,7 +24,7 @@ Unset
 
 The field is cleared and holds the null handle.
 
-<a id="rustdoc-item-2913"></a>
+<a id="rustdoc-item-3047"></a>
 
 ### `Live`
 
@@ -34,7 +34,7 @@ Live
 
 The field addresses a live entity, shown by its Hierarchy label.
 
-<a id="rustdoc-item-2914"></a>
+<a id="rustdoc-item-3048"></a>
 
 ### `Missing`
 
@@ -47,7 +47,7 @@ handle names a slot whose occupant has since been replaced.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-2915"></a>
+<a id="rustdoc-item-3049"></a>
 
 ### `of`
 
@@ -57,7 +57,7 @@ pub fn of(world: &pill_engine::World, value: &FieldValue) -> Option<Self>;
 
 Returns the label of an entity value, checked against the world.
 
-<a id="rustdoc-item-2916"></a>
+<a id="rustdoc-item-3050"></a>
 
 ### `text`
 

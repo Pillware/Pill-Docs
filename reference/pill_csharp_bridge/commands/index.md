@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-697"></a>
+<a id="rustdoc-item-718"></a>
 
 # Module `pill_csharp_bridge::commands`
 
@@ -30,21 +30,21 @@ therefore never names a concrete Rust type.
 ## Module contents
 
 ### Enums
-- [`DecodedCommandComponent`](enum.DecodedCommandComponent.md#rustdoc-item-696) — One component blob, decoded into a form the command queue accepts.
+- [`DecodedCommandComponent`](enum.DecodedCommandComponent.md#rustdoc-item-717) — One component blob, decoded into a form the command queue accepts.
 
 ### Functions
-- [`command_scope_error`](fn.command_scope_error.md#rustdoc-item-721) — Return the status code for a callback that could not enter the command
-- [`decode_command_component`](fn.decode_command_component.md#rustdoc-item-724) — Check one component blob and copy it into the form the command queue takes
-- [`ffi_queue_add_component`](fn.ffi_queue_add_component.md#rustdoc-item-730) — Panic-guarded entry point for [`ffi_queue_add_component_guarded`].
-- [`ffi_queue_add_component_guarded`](fn.ffi_queue_add_component_guarded.md#rustdoc-item-729) — Queue adding one component, selected by its stable managed identity.
-- [`ffi_queue_create`](fn.ffi_queue_create.md#rustdoc-item-726) — Panic-guarded entry point for [`ffi_queue_create_guarded`].
-- [`ffi_queue_create_guarded`](fn.ffi_queue_create_guarded.md#rustdoc-item-725) — Queue entity creation, after checking every supplied component blob.
-- [`ffi_queue_destroy`](fn.ffi_queue_destroy.md#rustdoc-item-728) — Panic-guarded entry point for [`ffi_queue_destroy_guarded`].
-- [`ffi_queue_destroy_guarded`](fn.ffi_queue_destroy_guarded.md#rustdoc-item-727) — Queue destroying an entity, but only while its handle is still live.
-- [`ffi_queue_remove_component`](fn.ffi_queue_remove_component.md#rustdoc-item-732) — Panic-guarded entry point for [`ffi_queue_remove_component_guarded`].
-- [`ffi_queue_remove_component_guarded`](fn.ffi_queue_remove_component_guarded.md#rustdoc-item-731) — Queue removing one component, named by its stable managed identity.
-- [`ffi_reserve_entity`](fn.ffi_reserve_entity.md#rustdoc-item-723) — Panic-guarded entry point for [`ffi_reserve_entity_guarded`].
-- [`ffi_reserve_entity_guarded`](fn.ffi_reserve_entity_guarded.md#rustdoc-item-722) — Reserve a generation-checked entity handle without inserting the entity
+- [`command_scope_error`](fn.command_scope_error.md#rustdoc-item-742) — Return the status code for a callback that could not enter the command
+- [`decode_command_component`](fn.decode_command_component.md#rustdoc-item-745) — Check one component blob and copy it into the form the command queue takes
+- [`ffi_queue_add_component`](fn.ffi_queue_add_component.md#rustdoc-item-751) — Panic-guarded entry point for [`ffi_queue_add_component_guarded`].
+- [`ffi_queue_add_component_guarded`](fn.ffi_queue_add_component_guarded.md#rustdoc-item-750) — Queue adding one component, selected by its stable managed identity.
+- [`ffi_queue_create`](fn.ffi_queue_create.md#rustdoc-item-747) — Panic-guarded entry point for [`ffi_queue_create_guarded`].
+- [`ffi_queue_create_guarded`](fn.ffi_queue_create_guarded.md#rustdoc-item-746) — Queue entity creation, after checking every supplied component blob.
+- [`ffi_queue_destroy`](fn.ffi_queue_destroy.md#rustdoc-item-749) — Panic-guarded entry point for [`ffi_queue_destroy_guarded`].
+- [`ffi_queue_destroy_guarded`](fn.ffi_queue_destroy_guarded.md#rustdoc-item-748) — Queue destroying an entity, but only while its handle is still live.
+- [`ffi_queue_remove_component`](fn.ffi_queue_remove_component.md#rustdoc-item-753) — Panic-guarded entry point for [`ffi_queue_remove_component_guarded`].
+- [`ffi_queue_remove_component_guarded`](fn.ffi_queue_remove_component_guarded.md#rustdoc-item-752) — Queue removing one component, named by its stable managed identity.
+- [`ffi_reserve_entity`](fn.ffi_reserve_entity.md#rustdoc-item-744) — Panic-guarded entry point for [`ffi_reserve_entity_guarded`].
+- [`ffi_reserve_entity_guarded`](fn.ffi_reserve_entity_guarded.md#rustdoc-item-743) — Reserve a generation-checked entity handle without inserting the entity
 
 ### Constants
-- [`MAX_COMPONENTS_PER_CREATE`](constant.MAX_COMPONENTS_PER_CREATE.md#rustdoc-item-688) — Maximum number of component blobs one managed create may carry.
+- [`MAX_COMPONENTS_PER_CREATE`](constant.MAX_COMPONENTS_PER_CREATE.md#rustdoc-item-709) — Maximum number of component blobs one managed create may carry.

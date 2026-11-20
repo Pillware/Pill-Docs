@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-350"></a>
+<a id="rustdoc-item-401"></a>
 
 # Struct `pill_editor::overlay::composition::Tree`
 
@@ -8,7 +8,7 @@
 pub struct Tree;
 ```
 
-Source: `editor\pill_editor\src\overlay.rs:418`
+Source: `editor\pill_editor\src\overlay.rs:530`
 
 One window's composition tree: the composition device, a `topmost`
 target on the window, and the visual whose content becomes the
@@ -16,7 +16,7 @@ overlay's swapchain.
 
 ## Fields
 
-<a id="rustdoc-item-343"></a>
+<a id="rustdoc-item-394"></a>
 
 ### `device`
 
@@ -26,7 +26,7 @@ device: windows::Win32::Graphics::DirectComposition::IDCompositionDevice
 
 The composition device; every tree change is committed through it.
 
-<a id="rustdoc-item-346"></a>
+<a id="rustdoc-item-397"></a>
 
 ### `_target`
 
@@ -37,7 +37,7 @@ _target: windows::Win32::Graphics::DirectComposition::IDCompositionTarget
 The target on the window: the root the visual is set on. Held for
 as long as the tree, so the root stays alive.
 
-<a id="rustdoc-item-348"></a>
+<a id="rustdoc-item-399"></a>
 
 ### `visual`
 
@@ -49,7 +49,7 @@ The visual whose content becomes the overlay's swapchain.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-351"></a>
+<a id="rustdoc-item-402"></a>
 
 ### `new`
 
@@ -67,7 +67,7 @@ composition device, the target or the visual cannot be created,
 when the visual cannot be set as the target's root, or when the
 first commit fails.
 
-<a id="rustdoc-item-353"></a>
+<a id="rustdoc-item-404"></a>
 
 ### `visual_pointer`
 
@@ -78,7 +78,7 @@ pub fn visual_pointer(self: &Self) -> *mut c_void;
 The visual's COM interface pointer, which `wgpu`'s DX12 backend
 borrows to build the overlay surface.
 
-<a id="rustdoc-item-355"></a>
+<a id="rustdoc-item-406"></a>
 
 ### `commit`
 

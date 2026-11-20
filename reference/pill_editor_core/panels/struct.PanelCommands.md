@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-6253"></a>
+<a id="rustdoc-item-8220"></a>
 
 # Struct `pill_editor_core::panels::PanelCommands`
 
@@ -8,7 +8,7 @@
 pub struct PanelCommands;
 ```
 
-Source: `editor\pill_editor_core\src\panels.rs:387`
+Source: `editor\pill_editor_core\src\panels.rs:399`
 
 The commands this frame's panels asked for, applied by the executable at
 the frame boundary.
@@ -20,7 +20,7 @@ reload.
 
 ## Fields
 
-<a id="rustdoc-item-6252"></a>
+<a id="rustdoc-item-8219"></a>
 
 ### `commands`
 
@@ -32,7 +32,7 @@ The commands, oldest first.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-6254"></a>
+<a id="rustdoc-item-8221"></a>
 
 ### `drain`
 
@@ -42,7 +42,7 @@ pub fn drain(self: &mut Self) -> Vec<PanelCommand>;
 
 Takes every queued command and leaves the queue empty.
 
-<a id="rustdoc-item-6255"></a>
+<a id="rustdoc-item-8222"></a>
 
 ### `push`
 

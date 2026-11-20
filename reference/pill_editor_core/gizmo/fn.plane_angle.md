@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-4173"></a>
+<a id="rustdoc-item-4648"></a>
 
 # Function `pill_editor_core::gizmo::plane_angle`
 
@@ -8,7 +8,7 @@
 pub fn plane_angle(origin: [f32; 3], axis: [f32; 3], point: [f32; 3]) -> f32;
 ```
 
-Source: `editor\pill_editor_core\src\gizmo.rs:915`
+Source: `editor\pill_editor_core\src\gizmo.rs:1033`
 
 Returns the angle of `point` around `axis`, in radians, measured in the
 basis of the axis's rotation ring.

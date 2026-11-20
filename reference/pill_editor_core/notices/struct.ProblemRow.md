@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-3532"></a>
+<a id="rustdoc-item-3821"></a>
 
 # Struct `pill_editor_core::notices::ProblemRow`
 
@@ -15,7 +15,7 @@ reported it, and the diagnostic itself.
 
 ## Fields
 
-<a id="rustdoc-item-5652"></a>
+<a id="rustdoc-item-7618"></a>
 
 ### `module`
 
@@ -25,7 +25,7 @@ module: String
 
 The module or function that reported it.
 
-<a id="rustdoc-item-5653"></a>
+<a id="rustdoc-item-7619"></a>
 
 ### `problem`
 

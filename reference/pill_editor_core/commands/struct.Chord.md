@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1297"></a>
+<a id="rustdoc-item-1342"></a>
 
 # Struct `pill_editor_core::commands::Chord`
 
@@ -8,13 +8,13 @@
 pub struct Chord;
 ```
 
-Source: `editor\pill_editor_core\src\commands.rs:200`
+Source: `editor\pill_editor_core\src\commands.rs:201`
 
 One shortcut: a key plus the modifiers that must be held with it.
 
 ## Fields
 
-<a id="rustdoc-item-1293"></a>
+<a id="rustdoc-item-1338"></a>
 
 ### `ctrl`
 
@@ -24,7 +24,7 @@ ctrl: bool
 
 Whether the control key is part of the chord.
 
-<a id="rustdoc-item-1294"></a>
+<a id="rustdoc-item-1339"></a>
 
 ### `shift`
 
@@ -34,7 +34,7 @@ shift: bool
 
 Whether the shift key is part of the chord.
 
-<a id="rustdoc-item-1295"></a>
+<a id="rustdoc-item-1340"></a>
 
 ### `alt`
 
@@ -44,7 +44,7 @@ alt: bool
 
 Whether the alt key is part of the chord.
 
-<a id="rustdoc-item-1296"></a>
+<a id="rustdoc-item-1341"></a>
 
 ### `key`
 
@@ -56,7 +56,7 @@ The key itself.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-1298"></a>
+<a id="rustdoc-item-1343"></a>
 
 ### `plain`
 
@@ -66,7 +66,7 @@ pub fn plain(key: KeyName) -> Self;
 
 Builds a chord with no modifiers.
 
-<a id="rustdoc-item-1299"></a>
+<a id="rustdoc-item-1344"></a>
 
 ### `with`
 
@@ -76,7 +76,7 @@ pub fn with(key: KeyName, ctrl: bool, shift: bool, alt: bool) -> Self;
 
 Builds a chord from a key and the modifiers held with it.
 
-<a id="rustdoc-item-1300"></a>
+<a id="rustdoc-item-1345"></a>
 
 ### `matches`
 

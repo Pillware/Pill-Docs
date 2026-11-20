@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-5268"></a>
+<a id="rustdoc-item-7231"></a>
 
 # Constant `pill_editor_core::layout::persistence::APPLICATION_DIRECTORY`
 
@@ -8,6 +8,6 @@
 pub(in layout::persistence) const APPLICATION_DIRECTORY: &str = "RustHybridEcs";
 ```
 
-Visibility: `{'restricted': {'parent': 5269, 'path': '::layout::persistence'}}` · Source: `editor\pill_editor_core\src\layout\persistence.rs:50`
+Visibility: `{'restricted': {'parent': 7232, 'path': '::layout::persistence'}}` · Source: `editor\pill_editor_core\src\layout\persistence.rs:50`
 
 The application directory inside the per-user state directory.

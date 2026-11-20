@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-243"></a>
+<a id="rustdoc-item-250"></a>
 
 # Trait `pill_core::error::render::MessageRenderer`
 
@@ -17,7 +17,7 @@ no intermediate list or rebuilt string is ever created.
 
 ## Required and provided items
 
-<a id="rustdoc-item-650"></a>
+<a id="rustdoc-item-660"></a>
 
 ### `text`
 
@@ -31,7 +31,7 @@ Write one piece of plain text.
 
 Returns an error if the underlying writer fails.
 
-<a id="rustdoc-item-651"></a>
+<a id="rustdoc-item-661"></a>
 
 ### `styled`
 
@@ -45,7 +45,7 @@ Write one value with its semantic role, so the renderer can style it.
 
 Returns an error if the underlying writer fails.
 
-<a id="rustdoc-item-652"></a>
+<a id="rustdoc-item-662"></a>
 
 ### `value`
 
@@ -59,7 +59,7 @@ Write one value with no role and no styling.
 
 Returns an error if the underlying writer fails.
 
-<a id="rustdoc-item-653"></a>
+<a id="rustdoc-item-663"></a>
 
 ### `debug_value`
 

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-5125"></a>
+<a id="rustdoc-item-7088"></a>
 
 # Constant `pill_editor_core::layout::dock::INSPECTOR_COLUMN_FRACTION`
 

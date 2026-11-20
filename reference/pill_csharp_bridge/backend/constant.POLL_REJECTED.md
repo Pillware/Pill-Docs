@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-396"></a>
+<a id="rustdoc-item-399"></a>
 
 # Constant `pill_csharp_bridge::backend::POLL_REJECTED`
 

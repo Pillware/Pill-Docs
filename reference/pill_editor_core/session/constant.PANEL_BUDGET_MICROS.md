@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-7227"></a>
+<a id="rustdoc-item-9285"></a>
 
 # Constant `pill_editor_core::session::PANEL_BUDGET_MICROS`
 

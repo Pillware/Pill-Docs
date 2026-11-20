@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-2348"></a>
+<a id="rustdoc-item-2408"></a>
 
 # Enum `pill_editor_core::editor_files::FileError`
 
@@ -8,13 +8,13 @@
 pub enum FileError { ... }
 ```
 
-Source: `editor\pill_editor_core\src\editor_files.rs:52`
+Source: `editor\pill_editor_core\src\editor_files.rs:56`
 
 What can go wrong with one of the editor's state files.
 
 ## Variants
 
-<a id="rustdoc-item-2338"></a>
+<a id="rustdoc-item-2398"></a>
 
 ### `Read`
 
@@ -25,7 +25,7 @@ Read
 The file could not be read. A missing file is reported as `Ok(None)`,
 not as this.
 
-<a id="rustdoc-item-2341"></a>
+<a id="rustdoc-item-2401"></a>
 
 ### `Parse`
 
@@ -33,9 +33,9 @@ not as this.
 Parse
 ```
 
-The file holds text that is not the JSON the caller expects.
+The file holds text that is not the YAML the caller expects.
 
-<a id="rustdoc-item-2344"></a>
+<a id="rustdoc-item-2404"></a>
 
 ### `Serialize`
 
@@ -45,7 +45,7 @@ Serialize
 
 The document could not be serialized.
 
-<a id="rustdoc-item-2347"></a>
+<a id="rustdoc-item-2407"></a>
 
 ### `Write`
 
@@ -57,7 +57,7 @@ The file could not be written or replaced.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-2349"></a>
+<a id="rustdoc-item-2409"></a>
 
 ### `message`
 

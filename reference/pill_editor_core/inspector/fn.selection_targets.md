@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-4986"></a>
+<a id="rustdoc-item-6949"></a>
 
 # Function `pill_editor_core::inspector::selection_targets`
 
@@ -8,7 +8,7 @@
 pub fn selection_targets(selected_details: &[crate::editor_state::EntityDetail], primary: pill_engine::Entity, component: &str) -> Vec<pill_engine::Entity>;
 ```
 
-Source: `editor\pill_editor_core\src\inspector.rs:1174`
+Source: `editor\pill_editor_core\src\inspector.rs:1181`
 
 The selected entities one component's edit reaches: the primary first, then
 every other selected entity that carries the component.

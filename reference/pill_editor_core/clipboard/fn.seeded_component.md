@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1168"></a>
+<a id="rustdoc-item-1213"></a>
 
 # Function `pill_editor_core::clipboard::seeded_component`
 
@@ -8,7 +8,7 @@
 pub(in clipboard) fn seeded_component(component: &SeededComponent, skipped: &mut Vec<String>) -> crate::editor_state::ComponentSeed;
 ```
 
-Visibility: `{'restricted': {'parent': 1154, 'path': '::clipboard'}}` · Source: `editor\pill_editor_core\src\clipboard.rs:534`
+Visibility: `{'restricted': {'parent': 1199, 'path': '::clipboard'}}` · Source: `editor\pill_editor_core\src\clipboard.rs:542`
 
 Turns one payload component into the seed a create rebuilds.
 

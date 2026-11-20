@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-5077"></a>
+<a id="rustdoc-item-7040"></a>
 
 # Enum `pill_editor_core::inspector::SettingsKey`
 
@@ -8,13 +8,13 @@
 pub enum SettingsKey { ... }
 ```
 
-Source: `editor\pill_editor_core\src\inspector.rs:1592`
+Source: `editor\pill_editor_core\src\inspector.rs:1627`
 
 One segment of a settings key path: an object key or an array index.
 
 ## Variants
 
-<a id="rustdoc-item-5074"></a>
+<a id="rustdoc-item-7037"></a>
 
 ### `Key`
 
@@ -24,7 +24,7 @@ Key
 
 A key of a JSON object.
 
-<a id="rustdoc-item-5076"></a>
+<a id="rustdoc-item-7039"></a>
 
 ### `Index`
 

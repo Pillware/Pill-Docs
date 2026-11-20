@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1114"></a>
+<a id="rustdoc-item-1105"></a>
 
 # Function `pill_master_renderer_data::assets::texture::equirect_uv`
 
@@ -8,7 +8,7 @@
 pub fn equirect_uv(direction: glam::Vec3) -> (f32, f32);
 ```
 
-Source: `extensions\pill_master_renderer\pill_master_renderer_data\src\assets\texture.rs:389`
+Source: `extensions\pill_master_renderer\modules\runtime\data\src\assets\texture.rs:389`
 
 Returns the equirectangular uv that a direction samples, in `[0, 1]`.
 

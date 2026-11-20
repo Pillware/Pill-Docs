@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-3780"></a>
+<a id="rustdoc-item-4160"></a>
 
 # Struct `pill_editor_core::gizmo::ResourceField`
 
@@ -8,7 +8,7 @@
 pub struct ResourceField;
 ```
 
-Source: `editor\pill_editor_core\src\gizmo.rs:70`
+Source: `editor\pill_editor_core\src\gizmo.rs:83`
 
 One editable field of the gizmo settings.
 
@@ -17,7 +17,7 @@ Inspector's row shows, and the functions that read and write it.
 
 ## Fields
 
-<a id="rustdoc-item-3776"></a>
+<a id="rustdoc-item-4156"></a>
 
 ### `name`
 
@@ -27,7 +27,7 @@ name: &'static str
 
 The field's name in a `SetResourceField` command.
 
-<a id="rustdoc-item-3777"></a>
+<a id="rustdoc-item-4157"></a>
 
 ### `label`
 
@@ -37,7 +37,7 @@ label: &'static str
 
 The label the Inspector's row shows.
 
-<a id="rustdoc-item-3778"></a>
+<a id="rustdoc-item-4158"></a>
 
 ### `read`
 
@@ -47,7 +47,7 @@ read: fn (_: &GizmoSettings) -> pill_engine::FieldValue
 
 Read the field out of the settings.
 
-<a id="rustdoc-item-3779"></a>
+<a id="rustdoc-item-4159"></a>
 
 ### `write`
 

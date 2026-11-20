@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-4215"></a>
+<a id="rustdoc-item-4473"></a>
 
 # Function `pill_development_host::runtime::log_manager_settings_applied`
 
@@ -8,7 +8,7 @@
 pub(in runtime) fn log_manager_settings_applied(settings_name: &str, path: &std::path::Path, outcome: pill_engine::SettingsOutcome, changed: bool);
 ```
 
-Visibility: `{'restricted': {'parent': 3859, 'path': '::runtime'}}` · Source: `hosting\pill_development_host\src\runtime.rs:3473`
+Visibility: `{'restricted': {'parent': 4115, 'path': '::runtime'}}` · Source: `hosting\pill_development_host\src\runtime.rs:3669`
 
 Logs what one manager did with its settings document.
 

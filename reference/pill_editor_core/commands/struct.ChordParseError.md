@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1289"></a>
+<a id="rustdoc-item-1334"></a>
 
 # Struct `pill_editor_core::commands::ChordParseError`
 
@@ -8,13 +8,13 @@
 pub struct ChordParseError;
 ```
 
-Source: `editor\pill_editor_core\src\commands.rs:268`
+Source: `editor\pill_editor_core\src\commands.rs:269`
 
 The reason a chord or key name could not be parsed.
 
 ## Fields
 
-<a id="rustdoc-item-1357"></a>
+<a id="rustdoc-item-1402"></a>
 
 ### `0`
 

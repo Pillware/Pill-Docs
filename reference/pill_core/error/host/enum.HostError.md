@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-248"></a>
+<a id="rustdoc-item-255"></a>
 
 # Enum `pill_core::error::host::HostError`
 
@@ -8,16 +8,16 @@
 pub enum HostError { ... }
 ```
 
-Source: `engine\pill_core\src\error\host.rs:796`
+Source: `engine\pill_core\src\error\host.rs:840`
 
 Transparent composition of every host subsystem error.
 
-A subsystem function returns its own narrow error. [`HostError`](#rustdoc-item-248) exists
+A subsystem function returns its own narrow error. [`HostError`](#rustdoc-item-255) exists
 only at the boundary where `?` moves from one subsystem to another.
 
 ## Variants
 
-<a id="rustdoc-item-558"></a>
+<a id="rustdoc-item-568"></a>
 
 ### `Config`
 
@@ -27,7 +27,7 @@ Config
 
 Configuration validation failed.
 
-<a id="rustdoc-item-560"></a>
+<a id="rustdoc-item-570"></a>
 
 ### `Build`
 
@@ -37,7 +37,7 @@ Build
 
 The project-module build failed.
 
-<a id="rustdoc-item-562"></a>
+<a id="rustdoc-item-572"></a>
 
 ### `Library`
 
@@ -47,7 +47,7 @@ Library
 
 Native library loading or initialization failed.
 
-<a id="rustdoc-item-564"></a>
+<a id="rustdoc-item-574"></a>
 
 ### `Watcher`
 
@@ -57,7 +57,7 @@ Watcher
 
 The source watcher could not start.
 
-<a id="rustdoc-item-566"></a>
+<a id="rustdoc-item-576"></a>
 
 ### `Module`
 
@@ -67,7 +67,7 @@ Module
 
 An extension failed to load or is incompatible.
 
-<a id="rustdoc-item-568"></a>
+<a id="rustdoc-item-578"></a>
 
 ### `CSharp`
 

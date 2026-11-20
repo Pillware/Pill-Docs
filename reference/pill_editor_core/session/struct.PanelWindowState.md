@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-7299"></a>
+<a id="rustdoc-item-9360"></a>
 
 # Struct `pill_editor_core::session::PanelWindowState`
 
@@ -8,13 +8,13 @@
 pub struct PanelWindowState;
 ```
 
-Source: `editor\pill_editor_core\src\session.rs:171`
+Source: `editor\pill_editor_core\src\session.rs:176`
 
 One window a panel asked the shell for.
 
 ## Fields
 
-<a id="rustdoc-item-7292"></a>
+<a id="rustdoc-item-9353"></a>
 
 ### `id`
 
@@ -24,7 +24,7 @@ id: String
 
 The window's identity within its panel.
 
-<a id="rustdoc-item-7293"></a>
+<a id="rustdoc-item-9354"></a>
 
 ### `title`
 
@@ -34,7 +34,7 @@ title: String
 
 The title its bar shows.
 
-<a id="rustdoc-item-7294"></a>
+<a id="rustdoc-item-9355"></a>
 
 ### `source`
 
@@ -45,7 +45,7 @@ source: String
 The crate that asked for it. The window closes once that crate's panel
 is no longer alive.
 
-<a id="rustdoc-item-7295"></a>
+<a id="rustdoc-item-9356"></a>
 
 ### `slot`
 
@@ -55,7 +55,7 @@ slot: u16
 
 The registry slot of the panel that draws it.
 
-<a id="rustdoc-item-7296"></a>
+<a id="rustdoc-item-9357"></a>
 
 ### `width`
 
@@ -65,7 +65,7 @@ width: f32
 
 How wide it opens, in logical points.
 
-<a id="rustdoc-item-7297"></a>
+<a id="rustdoc-item-9358"></a>
 
 ### `height`
 
@@ -75,7 +75,7 @@ height: f32
 
 How tall it opens, in logical points.
 
-<a id="rustdoc-item-7298"></a>
+<a id="rustdoc-item-9359"></a>
 
 ### `modal`
 

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-750"></a>
+<a id="rustdoc-item-759"></a>
 
 # Struct `pill_ui_theme::register::LoadedFont`
 
@@ -14,7 +14,7 @@ A font a theme layer named, loaded.
 
 ## Fields
 
-<a id="rustdoc-item-747"></a>
+<a id="rustdoc-item-756"></a>
 
 ### `handle`
 
@@ -24,7 +24,7 @@ handle: pill_engine_core::Handle<crate::font::FontAsset>
 
 The font's handle in the asset store.
 
-<a id="rustdoc-item-749"></a>
+<a id="rustdoc-item-758"></a>
 
 ### `version`
 

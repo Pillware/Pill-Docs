@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-495"></a>
+<a id="rustdoc-item-551"></a>
 
 # Struct `pill_editor::runner::SurfaceWindow`
 
@@ -8,14 +8,14 @@
 pub(in runner) struct SurfaceWindow;
 ```
 
-Visibility: `{'restricted': {'parent': 483, 'path': '::runner'}}` · Source: `editor\pill_editor\src\runner\mod.rs:3409`
+Visibility: `{'restricted': {'parent': 539, 'path': '::runner'}}` · Source: `editor\pill_editor\src\runner\mod.rs:3913`
 
 One view surface's window: a child of the main window when the platform
 allows one, the detached top-level fallback otherwise.
 
 ## Fields
 
-<a id="rustdoc-item-1292"></a>
+<a id="rustdoc-item-1741"></a>
 
 ### `window`
 
@@ -26,7 +26,7 @@ window: std::sync::Arc<winit::window::Window>
 The child window - or the detached fallback - the renderer presents
 into.
 
-<a id="rustdoc-item-1293"></a>
+<a id="rustdoc-item-1742"></a>
 
 ### `detached`
 
@@ -36,7 +36,7 @@ detached: bool
 
 Whether this is the detached fallback rather than a child window.
 
-<a id="rustdoc-item-1294"></a>
+<a id="rustdoc-item-1743"></a>
 
 ### `visible`
 
@@ -47,7 +47,7 @@ visible: bool
 Whether the window is shown; a window starts hidden and a placement
 shows it, because the dock may not show its tab yet.
 
-<a id="rustdoc-item-1295"></a>
+<a id="rustdoc-item-1744"></a>
 
 ### `placed`
 
@@ -58,7 +58,7 @@ placed: Option<(i32, i32, u32, u32)>
 The last placed rectangle in physical pixels, so redundant moves
 and resizes are skipped.
 
-<a id="rustdoc-item-1296"></a>
+<a id="rustdoc-item-1745"></a>
 
 ### `origin`
 
@@ -73,7 +73,7 @@ the window, so the origin survives that.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-1297"></a>
+<a id="rustdoc-item-1746"></a>
 
 ### `open`
 
@@ -86,11 +86,11 @@ allows one, the detached fallback otherwise.
 
 #### Errors
 
-Returns [`EditorError::WindowCreation`](../frontend/enum.EditorError.md#rustdoc-item-265) when the detached fallback
+Returns [`EditorError::WindowCreation`](../frontend/enum.EditorError.md#rustdoc-item-316) when the detached fallback
 cannot be created; a refused child window only logs before the fallback
 is tried.
 
-<a id="rustdoc-item-1298"></a>
+<a id="rustdoc-item-1747"></a>
 
 ### `place`
 
@@ -109,7 +109,7 @@ the position when the platform forced it to the detached fallback - it
 is its own top-level window then - and a docked child takes its origin
 from the rectangle's own corner.
 
-<a id="rustdoc-item-1299"></a>
+<a id="rustdoc-item-1748"></a>
 
 ### `open_top_level`
 
@@ -122,10 +122,10 @@ person can move and close it like any window.
 
 #### Errors
 
-Returns [`EditorError::WindowCreation`](../frontend/enum.EditorError.md#rustdoc-item-265) when the platform refuses the
+Returns [`EditorError::WindowCreation`](../frontend/enum.EditorError.md#rustdoc-item-316) when the platform refuses the
 window.
 
-<a id="rustdoc-item-1300"></a>
+<a id="rustdoc-item-1749"></a>
 
 ### `hide`
 
@@ -136,7 +136,7 @@ pub(in runner) fn hide(self: &mut Self);
 Hide the window: the dock no longer shows its tab, so nothing may
 paint in its rectangle.
 
-<a id="rustdoc-item-1301"></a>
+<a id="rustdoc-item-1750"></a>
 
 ### `size`
 

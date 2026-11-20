@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-2770"></a>
+<a id="rustdoc-item-2844"></a>
 
 # Module `pill_development_host::extension`
 
@@ -34,7 +34,7 @@ one module therefore never disturbs the project or another module.
 ## Module contents
 
 ### Modules
-- [`slot`](slot/index.md#rustdoc-item-2658)
+- [`slot`](slot/index.md#rustdoc-item-2732)
 
 ## Re-exports
 

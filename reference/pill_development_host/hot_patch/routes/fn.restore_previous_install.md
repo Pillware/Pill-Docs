@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-2201"></a>
+<a id="rustdoc-item-2275"></a>
 
 # Function `pill_development_host::hot_patch::routes::restore_previous_install`
 
@@ -8,7 +8,7 @@
 pub(in hot_patch::routes) fn restore_previous_install<C: RedirectSlot>(redirected_copies: &[&C], qualified: &str, previous: Option<(usize, &str)>) -> Result<(), String>;
 ```
 
-Visibility: `{'restricted': {'parent': 2087, 'path': '::hot_patch::routes'}}` · Source: `hosting\pill_development_host\src\hot_patch\routes.rs:593`
+Visibility: `{'restricted': {'parent': 2161, 'path': '::hot_patch::routes'}}` · Source: `hosting\pill_development_host\src\hot_patch\routes.rs:593`
 
 Puts the copies a refused install already redirected back on what they were
 running.

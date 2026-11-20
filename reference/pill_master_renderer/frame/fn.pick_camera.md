@@ -8,7 +8,7 @@
 pub(in frame) fn pick_camera<impl IntoIterator<Item = (u64, CameraComponent, TransformComponent)>: IntoIterator<Item = _>>(cameras: impl IntoIterator<Item = _>) -> Option<(crate::components::CameraComponent, crate::components::TransformComponent)>;
 ```
 
-Visibility: `{'restricted': {'parent': 238, 'path': '::frame'}}` · Source: `extensions\pill_master_renderer\pill_master_renderer\src\frame.rs:237`
+Visibility: `{'restricted': {'parent': 238, 'path': '::frame'}}` · Source: `extensions\pill_master_renderer\modules\runtime\gpu\src\frame.rs:237`
 
 Picks the camera the primary surface draws through, out of every enabled
 camera in the world.

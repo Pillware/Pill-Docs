@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-431"></a>
+<a id="rustdoc-item-432"></a>
 
 # Function `pill_development_host::analytics::remember_fallback`
 
@@ -8,7 +8,7 @@
 pub(in analytics) fn remember_fallback(collector: &mut Analytics, function: Option<&str>, outcome: &'static str, code: &str, detail: &str);
 ```
 
-Visibility: `{'restricted': {'parent': 1, 'path': '::analytics'}}` · Source: `hosting\pill_development_host\src\analytics.rs:1124`
+Visibility: `{'restricted': {'parent': 1, 'path': '::analytics'}}` · Source: `hosting\pill_development_host\src\analytics.rs:1161`
 
 Add one fallback reason to the tally, counting a repeat instead of adding a
 second entry.

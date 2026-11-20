@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-8274"></a>
+<a id="rustdoc-item-10336"></a>
 
 # Enum `pill_editor_core::style::ThemeLayer`
 
@@ -8,7 +8,7 @@
 pub enum ThemeLayer { ... }
 ```
 
-Source: `editor\pill_editor_core\src\style.rs:494`
+Source: `editor\pill_editor_core\src\style.rs:495`
 
 Where one layer of the editor's theme came from.
 
@@ -19,7 +19,7 @@ executable resolved.
 
 ## Variants
 
-<a id="rustdoc-item-8271"></a>
+<a id="rustdoc-item-10333"></a>
 
 ### `Code`
 
@@ -29,7 +29,7 @@ Code
 
 The editor's own default, built in code.
 
-<a id="rustdoc-item-8272"></a>
+<a id="rustdoc-item-10334"></a>
 
 ### `User`
 
@@ -39,7 +39,7 @@ User
 
 The user's file, named by the `theme` preference.
 
-<a id="rustdoc-item-8273"></a>
+<a id="rustdoc-item-10335"></a>
 
 ### `Project`
 
@@ -51,7 +51,7 @@ The project's `res/editor/` theme, named by `editor_settings.yaml`.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-8275"></a>
+<a id="rustdoc-item-10337"></a>
 
 ### `name`
 

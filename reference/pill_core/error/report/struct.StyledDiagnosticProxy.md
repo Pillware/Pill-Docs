@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-719"></a>
+<a id="rustdoc-item-729"></a>
 
 # Struct `pill_core::error::report::StyledDiagnosticProxy`
 
@@ -18,7 +18,7 @@ it is the reporting boundary, not the error type itself.
 
 ## Fields
 
-<a id="rustdoc-item-717"></a>
+<a id="rustdoc-item-727"></a>
 
 ### `wrapped_error`
 
@@ -30,7 +30,7 @@ _No documentation provided._
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-720"></a>
+<a id="rustdoc-item-730"></a>
 
 ### `new`
 
@@ -50,7 +50,7 @@ let proxy = StyledDiagnosticProxy::new(BuildError::Cancelled);
 assert!(matches!(proxy.into_inner(), BuildError::Cancelled));
 ```
 
-<a id="rustdoc-item-721"></a>
+<a id="rustdoc-item-731"></a>
 
 ### `into_inner`
 

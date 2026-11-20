@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-4197"></a>
+<a id="rustdoc-item-4454"></a>
 
 # Function `pill_development_host::runtime::resync_patch_baselines`
 
@@ -8,7 +8,7 @@
 pub(in runtime) fn resync_patch_baselines(host: &mut DevHost, project_rebuilt: bool, reloaded_module_indices: &[usize]);
 ```
 
-Visibility: `{'restricted': {'parent': 3859, 'path': '::runtime'}}` · Source: `hosting\pill_development_host\src\runtime.rs:2536`
+Visibility: `{'restricted': {'parent': 4115, 'path': '::runtime'}}` · Source: `hosting\pill_development_host\src\runtime.rs:2635`
 
 Take a new baseline snapshot for every subject a reload has just rebuilt.
 

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-779"></a>
+<a id="rustdoc-item-823"></a>
 
 # Enum `pill_editor_core::camera::CameraButton`
 
@@ -14,7 +14,7 @@ The mouse buttons a navigation gesture can bind to.
 
 ## Variants
 
-<a id="rustdoc-item-776"></a>
+<a id="rustdoc-item-820"></a>
 
 ### `Left`
 
@@ -24,7 +24,7 @@ Left
 
 The left button.
 
-<a id="rustdoc-item-777"></a>
+<a id="rustdoc-item-821"></a>
 
 ### `Middle`
 
@@ -34,7 +34,7 @@ Middle
 
 The middle button.
 
-<a id="rustdoc-item-778"></a>
+<a id="rustdoc-item-822"></a>
 
 ### `Right`
 

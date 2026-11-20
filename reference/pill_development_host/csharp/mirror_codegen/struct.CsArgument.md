@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1567"></a>
+<a id="rustdoc-item-1642"></a>
 
 # Struct `pill_development_host::csharp::mirror_codegen::CsArgument`
 
@@ -8,13 +8,13 @@
 pub(in csharp::mirror_codegen) struct CsArgument;
 ```
 
-Visibility: `{'restricted': {'parent': 1426, 'path': '::csharp::mirror_codegen'}}` · Source: `hosting\pill_development_host\src\csharp\mirror_codegen.rs:233`
+Visibility: `{'restricted': {'parent': 1501, 'path': '::csharp::mirror_codegen'}}` · Source: `hosting\pill_development_host\src\csharp\mirror_codegen.rs:233`
 
 One function argument, translated to C#.
 
 ## Fields
 
-<a id="rustdoc-item-1564"></a>
+<a id="rustdoc-item-1639"></a>
 
 ### `declaration`
 
@@ -24,7 +24,7 @@ declaration: String
 
 The parameter declaration (`ReadOnlySpan<byte> bytes`).
 
-<a id="rustdoc-item-1565"></a>
+<a id="rustdoc-item-1640"></a>
 
 ### `push_statements`
 
@@ -34,7 +34,7 @@ push_statements: String
 
 The statements that push it onto the call.
 
-<a id="rustdoc-item-1566"></a>
+<a id="rustdoc-item-1641"></a>
 
 ### `forward_expression`
 

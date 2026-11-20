@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-4548"></a>
+<a id="rustdoc-item-4807"></a>
 
 # Function `pill_development_host::asset_browser::asset_settings`
 

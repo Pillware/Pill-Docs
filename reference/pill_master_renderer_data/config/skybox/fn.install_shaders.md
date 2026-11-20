@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1538"></a>
+<a id="rustdoc-item-1635"></a>
 
 # Function `pill_master_renderer_data::config::skybox::install_shaders`
 
@@ -8,7 +8,7 @@
 pub fn install_shaders(assets: &mut pill_engine::AssetManager) -> Result<(pill_engine::Handle<crate::assets::Shader>, pill_engine::Handle<crate::assets::Shader>), Box<dyn std::error::Error>>;
 ```
 
-Source: `extensions\pill_master_renderer\pill_master_renderer_data\src\config\skybox\mod.rs:129`
+Source: `extensions\pill_master_renderer\modules\runtime\data\src\config\skybox\mod.rs:129`
 
 Install the equirect and the cubemap skybox shaders, and return them in
 that order.

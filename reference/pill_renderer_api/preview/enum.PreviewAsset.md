@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1448"></a>
+<a id="rustdoc-item-1534"></a>
 
 # Enum `pill_renderer_api::preview::PreviewAsset`
 
@@ -14,7 +14,7 @@ The asset one preview draws.
 
 ## Variants
 
-<a id="rustdoc-item-1443"></a>
+<a id="rustdoc-item-1529"></a>
 
 ### `Texture`
 
@@ -29,7 +29,7 @@ its textures under names of its own and may not have loaded one at
 all, so a guid cannot lead to the pixels of a tile. Decoding the file
 also means a texture that was imported again shows its new pixels.
 
-<a id="rustdoc-item-1445"></a>
+<a id="rustdoc-item-1531"></a>
 
 ### `Material`
 
@@ -39,7 +39,7 @@ Material
 
 A material, drawn on a preview sphere.
 
-<a id="rustdoc-item-1447"></a>
+<a id="rustdoc-item-1533"></a>
 
 ### `Mesh`
 
@@ -63,15 +63,16 @@ have loaded it under a name of its own, or not at all.
 - `TryFrom<U>`
 - `Any`
 - `ToOwned`
+- `CastableFrom<ST, Uninit, Uninit>`
+- `CastableFrom<ST, Initialized, Initialized>`
+- `Read<Exclusive, BecauseExclusive>`
 - `Instrument`
 - `WithSubscriber`
 - `IntoEither`
 - `Pointable`
 - `OwoColorize`
 - `ErasedDestructor`
-- `CastableFrom<ST, Uninit, Uninit>`
-- `CastableFrom<ST, Initialized, Initialized>`
-- `Read<Exclusive, BecauseExclusive>`
+- `Equivalent<K>`
 - `Clone`
 - `Debug`
 - `StructuralPartialEq`

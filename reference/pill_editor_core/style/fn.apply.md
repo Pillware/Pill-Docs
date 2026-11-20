@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-8457"></a>
+<a id="rustdoc-item-10519"></a>
 
 # Function `pill_editor_core::style::apply`
 
@@ -8,7 +8,7 @@
 pub fn apply(context: &egui::Context);
 ```
 
-Source: `editor\pill_editor_core\src\style.rs:793`
+Source: `editor\pill_editor_core\src\style.rs:797`
 
 Installs the theme the editor last resolved on `context`.
 

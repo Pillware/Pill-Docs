@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1189"></a>
+<a id="rustdoc-item-1199"></a>
 
 # Function `pill_core::platform::futures::spawn`
 

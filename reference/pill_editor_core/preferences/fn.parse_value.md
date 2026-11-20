@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-6378"></a>
+<a id="rustdoc-item-8416"></a>
 
 # Function `pill_editor_core::preferences::parse_value`
 
@@ -8,7 +8,7 @@
 pub fn parse_value(text: &str) -> serde_json::Value;
 ```
 
-Source: `editor\pill_editor_core\src\preferences.rs:340`
+Source: `editor\pill_editor_core\src\preferences.rs:363`
 
 Parses one row's text into JSON.
 

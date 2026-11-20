@@ -1,10 +1,10 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-2576"></a>
+<a id="rustdoc-item-2616"></a>
 
 # Module `pill_master_renderer::resources::renderer_pass`
 
-Visibility: `{'restricted': {'parent': 2227, 'path': '::resources'}}` · Source: `extensions\pill_master_renderer\pill_master_renderer\src\resources\renderer_pass.rs:1`
+Visibility: `{'restricted': {'parent': 2270, 'path': '::resources'}}` · Source: `extensions\pill_master_renderer\modules\runtime\gpu\src\resources\renderer_pass.rs:1`
 
 The GPU side of one pass of the chain.
 
@@ -45,4 +45,4 @@ type here at all: it draws through each material's pipeline.
 - [`RendererPass`](struct.RendererPass.md#rustdoc-item-372) — One pass of the chain, in the shape its [`PassKind`] asks for: a geometry
 
 ### Constants
-- [`DEPTH_INPUT`](constant.DEPTH_INPUT.md#rustdoc-item-2540) — The name a pass uses in its inputs to read the renderer's own depth buffer
+- [`DEPTH_INPUT`](constant.DEPTH_INPUT.md#rustdoc-item-2580) — The name a pass uses in its inputs to read the renderer's own depth buffer

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-795"></a>
+<a id="rustdoc-item-805"></a>
 
 # Struct `pill_core::fixed_string::FixedString64`
 
@@ -10,7 +10,7 @@ pub struct FixedString64;
 
 Source: `engine\pill_core\src\fixed_string.rs:63`
 
-A UTF-8 string of up to [`FIXED_STRING_64_CAPACITY`](constant.FIXED_STRING_64_CAPACITY.md#rustdoc-item-796) bytes, stored inline.
+A UTF-8 string of up to [`FIXED_STRING_64_CAPACITY`](constant.FIXED_STRING_64_CAPACITY.md#rustdoc-item-806) bytes, stored inline.
 
 It is `Copy` and `#[repr(C)]`, so it fits in a component, can cross the
 module boundary, and can be mirrored into C# with no allocation. The
@@ -21,7 +21,7 @@ holding the same text are equal however the unused bytes differ.
 
 ## Fields
 
-<a id="rustdoc-item-797"></a>
+<a id="rustdoc-item-807"></a>
 
 ### `storage_bytes`
 
@@ -35,7 +35,7 @@ Only the first `length` bytes are in use. Every constructor zeroes the
 rest and nothing reads it, so the unused bytes are not part of the
 value - which is why `PartialEq` is written by hand below.
 
-<a id="rustdoc-item-799"></a>
+<a id="rustdoc-item-809"></a>
 
 ### `length`
 
@@ -50,7 +50,7 @@ small.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-800"></a>
+<a id="rustdoc-item-810"></a>
 
 ### `empty`
 
@@ -60,7 +60,7 @@ pub const fn empty() -> Self;
 
 Returns the empty string.
 
-<a id="rustdoc-item-802"></a>
+<a id="rustdoc-item-812"></a>
 
 ### `new`
 
@@ -69,13 +69,13 @@ pub fn new(text: &str) -> Self;
 ```
 
 Creates a string from `text`, cutting it to
-[`FIXED_STRING_64_CAPACITY`](constant.FIXED_STRING_64_CAPACITY.md#rustdoc-item-796) bytes if it is longer.
+[`FIXED_STRING_64_CAPACITY`](constant.FIXED_STRING_64_CAPACITY.md#rustdoc-item-806) bytes if it is longer.
 
 The cut always falls on a character boundary, so the stored value is
-valid UTF-8. Use [`Self::try_new`](#rustdoc-item-801) instead when the caller needs to
+valid UTF-8. Use [`Self::try_new`](#rustdoc-item-811) instead when the caller needs to
 know that the text did not fit.
 
-<a id="rustdoc-item-801"></a>
+<a id="rustdoc-item-811"></a>
 
 ### `try_new`
 
@@ -85,11 +85,11 @@ pub fn try_new(text: &str) -> Option<Self>;
 
 Creates a string from `text`, or returns `None` when it does not fit.
 
-This is the checking version of [`Self::new`](#rustdoc-item-802). Use it where a name
+This is the checking version of [`Self::new`](#rustdoc-item-812). Use it where a name
 must be rejected rather than shortened, for example in a content
 pipeline that validates its input.
 
-<a id="rustdoc-item-803"></a>
+<a id="rustdoc-item-813"></a>
 
 ### `as_str`
 
@@ -99,7 +99,7 @@ pub fn as_str(self: &Self) -> &str;
 
 Returns the stored text.
 
-<a id="rustdoc-item-804"></a>
+<a id="rustdoc-item-814"></a>
 
 ### `as_bytes`
 
@@ -109,7 +109,7 @@ pub fn as_bytes(self: &Self) -> &[u8];
 
 Returns the stored text as bytes.
 
-<a id="rustdoc-item-805"></a>
+<a id="rustdoc-item-815"></a>
 
 ### `len`
 
@@ -119,7 +119,7 @@ pub const fn len(self: &Self) -> usize;
 
 Returns how many bytes the string uses.
 
-<a id="rustdoc-item-806"></a>
+<a id="rustdoc-item-816"></a>
 
 ### `is_empty`
 
@@ -129,7 +129,7 @@ pub const fn is_empty(self: &Self) -> bool;
 
 Returns `true` when the string holds no text.
 
-<a id="rustdoc-item-807"></a>
+<a id="rustdoc-item-817"></a>
 
 ### `boundary_at_or_below`
 

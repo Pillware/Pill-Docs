@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-3733"></a>
+<a id="rustdoc-item-4110"></a>
 
 # Function `pill_editor_core::layout::persistence::save`
 

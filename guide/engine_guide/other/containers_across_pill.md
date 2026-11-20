@@ -129,7 +129,7 @@ Why not `Box<dyn Any>`? Two reasons:
 
 ## Assets
 
-**Assets are many values per type, shared by many entities, and identified on disk by a guid.** They live in `AssetManager`, which is itself a shared resource (`pill_engine::asset::AssetManager`).
+**Assets are many values per type, shared by many entities, and identified on disk by a guid.** They live in `AssetManager`, which is itself a shared resource (`pill_engine::AssetManager`).
 
 ```
 Handle<Mesh> { index: 2, generation: 5 }
@@ -352,7 +352,7 @@ Paths are under `modules/` unless noted.
 | `Handle<T>`, `AssetManager`, `AssetColumn`                 | `engine/pill_engine_core/src/asset.rs`                                   |
 | `ErasedVecStorage`                                         | the external `trait_type_map` crate                                     |
 | `SlotMap`, `KeyData`, `define_slot_key!`                   | `engine/pill_core/src/slot_map.rs`                                      |
-| `asset_key`                                                | `extensions/pill_master_renderer/pill_master_renderer_data/src/assets/mod.rs` |
-| `RenderingResourcesManager`, `GpuColumn`                   | `extensions/pill_master_renderer/pill_master_renderer/src/rendering_resources_manager.rs` |
-| `RendererResourceStorage`                                  | `extensions/pill_master_renderer/pill_master_renderer/src/resources/renderer_resource_storage.rs` |
+| `asset_key`                                                | `extensions/pill_master_renderer/modules/runtime/data/src/assets/mod.rs` |
+| `RenderingResourcesManager`, `GpuColumn`                   | `extensions/pill_master_renderer/modules/runtime/gpu/src/rendering_resources_manager.rs` |
+| `RendererResourceStorage`                                  | `extensions/pill_master_renderer/modules/runtime/gpu/src/resources/renderer_resource_storage.rs` |
 | Asset implementation in depth                              | [Assets: how they are implemented](../concepts/assets.md)                |

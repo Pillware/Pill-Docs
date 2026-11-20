@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1469"></a>
+<a id="rustdoc-item-1566"></a>
 
 # Struct `pill_master_renderer_data::config::ConfigShaderFile`
 
@@ -8,7 +8,7 @@
 pub struct ConfigShaderFile;
 ```
 
-Source: `extensions\pill_master_renderer\pill_master_renderer_data\src\config\mod.rs:110`
+Source: `extensions\pill_master_renderer\modules\runtime\data\src\config\mod.rs:110`
 
 A cooked WGSL stage the renderer embeds at build time.
 
@@ -22,7 +22,7 @@ module builds its stand-in shader from is read back out of a constant.
 
 ## Fields
 
-<a id="rustdoc-item-1553"></a>
+<a id="rustdoc-item-1650"></a>
 
 ### `relative_path`
 
@@ -33,7 +33,7 @@ relative_path: &'static str
 Path relative to the crate's `shader_sources/`, e.g.
 `pbr_pipeline/shaders/pbr_fragment.wgsl`.
 
-<a id="rustdoc-item-1554"></a>
+<a id="rustdoc-item-1651"></a>
 
 ### `embedded_source`
 
@@ -54,15 +54,15 @@ The file's text as `include_str!` embedded it when the crate was built.
 - `TryFrom<U>`
 - `Any`
 - `ToOwned`
+- `CastableFrom<ST, Uninit, Uninit>`
+- `CastableFrom<ST, Initialized, Initialized>`
+- `Read<Exclusive, BecauseExclusive>`
 - `Instrument`
 - `WithSubscriber`
 - `IntoEither`
 - `Pointable`
 - `OwoColorize`
 - `ErasedDestructor`
-- `CastableFrom<ST, Uninit, Uninit>`
-- `CastableFrom<ST, Initialized, Initialized>`
-- `Read<Exclusive, BecauseExclusive>`
 - `Equivalent<K>`
 - `Debug`
 - `Clone`

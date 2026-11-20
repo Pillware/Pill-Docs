@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-4796"></a>
+<a id="rustdoc-item-6759"></a>
 
 # Function `pill_editor_core::inspector::rows`
 
@@ -8,7 +8,7 @@
 pub fn rows(component: &crate::editor_state::ComponentView) -> Vec<FieldRow>;
 ```
 
-Source: `editor\pill_editor_core\src\inspector.rs:398`
+Source: `editor\pill_editor_core\src\inspector.rs:402`
 
 The rows a component section draws, in field order.
 

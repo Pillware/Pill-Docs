@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1958"></a>
+<a id="rustdoc-item-2014"></a>
 
 # Constant `pill_editor_core::console::CONSOLE_LINES_MAX`
 

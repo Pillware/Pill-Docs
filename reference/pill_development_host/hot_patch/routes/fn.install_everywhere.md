@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-2199"></a>
+<a id="rustdoc-item-2273"></a>
 
 # Function `pill_development_host::hot_patch::routes::install_everywhere`
 
@@ -8,7 +8,7 @@
 pub(in hot_patch) fn install_everywhere(targets: &[(&str, &crate::native_library::NativeLibrary)], patches: &[LoadedPatch], qualified: &str, address: usize, signature: &str, previous: Option<(usize, &str)>) -> Result<usize, String>;
 ```
 
-Visibility: `{'restricted': {'parent': 1968, 'path': '::hot_patch'}}` · Source: `hosting\pill_development_host\src\hot_patch\routes.rs:501`
+Visibility: `{'restricted': {'parent': 2042, 'path': '::hot_patch'}}` · Source: `hosting\pill_development_host\src\hot_patch\routes.rs:501`
 
 Offers one replacement to every loaded image, and reports how many took it.
 

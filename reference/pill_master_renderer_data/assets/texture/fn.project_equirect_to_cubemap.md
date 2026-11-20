@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1116"></a>
+<a id="rustdoc-item-1107"></a>
 
 # Function `pill_master_renderer_data::assets::texture::project_equirect_to_cubemap`
 
@@ -8,7 +8,7 @@
 pub fn project_equirect_to_cubemap(panorama: &[f32], width: u32, height: u32, face_size: u32) -> Vec<f32>;
 ```
 
-Source: `extensions\pill_master_renderer\pill_master_renderer_data\src\assets\texture.rs:420`
+Source: `extensions\pill_master_renderer\modules\runtime\data\src\assets\texture.rs:420`
 
 Projects an equirectangular panorama onto the six faces of a cubemap.
 

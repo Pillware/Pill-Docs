@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-4166"></a>
+<a id="rustdoc-item-4423"></a>
 
 # Function `pill_development_host::runtime::advance_patch_attempt`
 
@@ -8,7 +8,7 @@
 pub(in runtime) fn advance_patch_attempt(host: &mut DevHost) -> (bool, Option<pill_core::platform::Instant>);
 ```
 
-Visibility: `{'restricted': {'parent': 3859, 'path': '::runtime'}}` · Source: `hosting\pill_development_host\src\runtime.rs:2283`
+Visibility: `{'restricted': {'parent': 4115, 'path': '::runtime'}}` · Source: `hosting\pill_development_host\src\runtime.rs:2382`
 
 Collect a finished patch build and install it at this frame boundary.
 

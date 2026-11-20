@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-439"></a>
+<a id="rustdoc-item-447"></a>
 
 # Struct `pill_ui_theme::overrides::StrokeOverride`
 
@@ -8,13 +8,13 @@
 pub struct StrokeOverride;
 ```
 
-Source: `ui\pill_ui_theme\src\overrides.rs:228`
+Source: `ui\pill_ui_theme\src\overrides.rs:232`
 
 One stroke's overridable fields.
 
 ## Fields
 
-<a id="rustdoc-item-490"></a>
+<a id="rustdoc-item-498"></a>
 
 ### `width`
 
@@ -24,7 +24,7 @@ width: Option<f32>
 
 The width in points.
 
-<a id="rustdoc-item-491"></a>
+<a id="rustdoc-item-499"></a>
 
 ### `color`
 

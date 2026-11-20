@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1668"></a>
+<a id="rustdoc-item-1743"></a>
 
 # Struct `pill_development_host::csharp::ManagedReloadTiming`
 
@@ -8,13 +8,13 @@
 pub(in csharp) struct ManagedReloadTiming;
 ```
 
-Visibility: `{'restricted': {'parent': 1331, 'path': '::csharp'}}` · Source: `hosting\pill_development_host\src\csharp\mod.rs:295`
+Visibility: `{'restricted': {'parent': 1405, 'path': '::csharp'}}` · Source: `hosting\pill_development_host\src\csharp\mod.rs:274`
 
 One managed reload's armed timing, filled in as its phases complete.
 
 ## Fields
 
-<a id="rustdoc-item-1715"></a>
+<a id="rustdoc-item-1790"></a>
 
 ### `detected_at`
 
@@ -24,7 +24,7 @@ detected_at: pill_core::platform::Instant
 
 Instant the project watcher fired the signal this reload came from.
 
-<a id="rustdoc-item-1716"></a>
+<a id="rustdoc-item-1791"></a>
 
 ### `detection_delay_ms`
 
@@ -36,7 +36,7 @@ How long the save waited before the watcher fired the signal, the
 debounce wait included; `NaN` when there is no trigger to measure from.
 A trigger also carries `NaN` when no file timestamp could be read.
 
-<a id="rustdoc-item-1717"></a>
+<a id="rustdoc-item-1792"></a>
 
 ### `triggered_at`
 
@@ -46,7 +46,7 @@ triggered_at: pill_core::platform::Instant
 
 Instant the frame loop consumed the signal and armed this timing.
 
-<a id="rustdoc-item-1718"></a>
+<a id="rustdoc-item-1793"></a>
 
 ### `rebuilt_assembly`
 

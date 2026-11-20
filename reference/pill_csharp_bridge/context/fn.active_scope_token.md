@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1107"></a>
+<a id="rustdoc-item-1129"></a>
 
 # Function `pill_csharp_bridge::context::active_scope_token`
 

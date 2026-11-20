@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1649"></a>
+<a id="rustdoc-item-1695"></a>
 
 # Struct `pill_editor_core::commands::GizmoPreferences`
 
@@ -8,7 +8,7 @@
 pub struct GizmoPreferences;
 ```
 
-Source: `editor\pill_editor_core\src\commands.rs:928`
+Source: `editor\pill_editor_core\src\commands.rs:945`
 
 The gizmo tool's persisted state.
 
@@ -18,7 +18,7 @@ between projects brings each one's tool back.
 
 ## Fields
 
-<a id="rustdoc-item-1737"></a>
+<a id="rustdoc-item-1783"></a>
 
 ### `mode`
 
@@ -28,7 +28,7 @@ mode: Option<crate::gizmo::GizmoMode>
 
 The last active mode, when one was chosen.
 
-<a id="rustdoc-item-1739"></a>
+<a id="rustdoc-item-1785"></a>
 
 ### `space`
 
@@ -38,7 +38,7 @@ space: Option<crate::gizmo::GizmoSpace>
 
 The last active space, when one was chosen.
 
-<a id="rustdoc-item-1741"></a>
+<a id="rustdoc-item-1787"></a>
 
 ### `snap`
 
@@ -48,7 +48,17 @@ snap: Option<bool>
 
 Whether dragging snapped, when the toggle was used.
 
-<a id="rustdoc-item-1742"></a>
+<a id="rustdoc-item-1788"></a>
+
+### `hidden_types`
+
+```rust
+hidden_types: Vec<String>
+```
+
+The component gizmo types the editor hides.
+
+<a id="rustdoc-item-1789"></a>
 
 ### `projects`
 

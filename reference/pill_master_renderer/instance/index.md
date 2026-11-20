@@ -4,7 +4,7 @@
 
 # Module `pill_master_renderer::instance`
 
-Source: `extensions\pill_master_renderer\pill_master_renderer\src\instance.rs:1`
+Source: `extensions\pill_master_renderer\modules\runtime\gpu\src\instance.rs:1`
 
 The per-instance transform the drawer uploads for the vertex shader.
 The per-instance model matrix in the layout the vertex shader reads, and

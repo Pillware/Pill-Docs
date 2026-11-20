@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-352"></a>
+<a id="rustdoc-item-395"></a>
 
 # Function `pill_engine::component_registry::persistable_schema_fingerprint`
 
@@ -8,7 +8,7 @@
 pub fn persistable_schema_fingerprint() -> u64;
 ```
 
-Source: `engine\pill_engine\src\component_registry.rs:615`
+Source: `engine\pill_engine\src\component_registry.rs:715`
 
 Fingerprint of the set of persistable components this artifact declares.
 

@@ -8,12 +8,12 @@
 pub fn setup_with_asset_database(project: crate::StaticProject, database: Option<pill_engine::AssetDatabase>) -> Result<Runtime, pill_core::error::HostError>;
 ```
 
-Source: `hosting\pill_player\src\runtime.rs:732`
+Source: `hosting\pill_player\src\runtime.rs:739`
 
 Create the engine and initialize a statically linked project whose pack has
 already been mounted.
 
-`database` is the one [`mount_asset_pack`](fn.mount_asset_pack.md#rustdoc-item-551) returned, or `None` for a
+`database` is the one [`mount_asset_pack`](fn.mount_asset_pack.md#rustdoc-item-554) returned, or `None` for a
 project without assets. It is inserted before any module or project init
 runs, which is why a fetched pack has to arrive here rather than be added
 afterwards.

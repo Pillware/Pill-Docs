@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1114"></a>
+<a id="rustdoc-item-1124"></a>
 
 # Function `pill_core::native_buffer::allocate`
 
@@ -21,6 +21,6 @@ laid out. Aborts when the allocator cannot provide the memory.
 
 ## Safety
 
-The returned pointer owns one reference. It must be handed to [`release`](fn.release.md#rustdoc-item-1116)
-exactly once - through whichever handle owns it - after every [`retain`](fn.retain.md#rustdoc-item-1117)
+The returned pointer owns one reference. It must be handed to [`release`](fn.release.md#rustdoc-item-1126)
+exactly once - through whichever handle owns it - after every [`retain`](fn.retain.md#rustdoc-item-1127)
 taken from it has been balanced.

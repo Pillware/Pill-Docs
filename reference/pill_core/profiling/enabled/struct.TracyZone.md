@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1247"></a>
+<a id="rustdoc-item-1257"></a>
 
 # Struct `pill_core::profiling::enabled::TracyZone`
 
@@ -20,7 +20,7 @@ text recorded later could never reach Tracy.
 
 ## Fields
 
-<a id="rustdoc-item-1246"></a>
+<a id="rustdoc-item-1256"></a>
 
 ### `zone`
 
@@ -32,7 +32,7 @@ _No documentation provided._
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-1248"></a>
+<a id="rustdoc-item-1258"></a>
 
 ### `open`
 
@@ -42,7 +42,7 @@ pub(in profiling::enabled) fn open(fine_lane: bool, name: &str, function: &str, 
 
 Opens a zone called `name` on the given lane.
 
-<a id="rustdoc-item-1249"></a>
+<a id="rustdoc-item-1259"></a>
 
 ### `open_lazy`
 
@@ -52,7 +52,7 @@ pub(in profiling::enabled) fn open_lazy<impl FnOnce() -> String: FnOnce() -> Str
 
 Opens a zone whose name is built only when the lane is wanted.
 
-<a id="rustdoc-item-1251"></a>
+<a id="rustdoc-item-1261"></a>
 
 ### `text`
 
@@ -63,7 +63,7 @@ pub fn text(self: &Self, message_text: Arguments<'_>);
 Adds a diagnostic message to this zone. Tracy shows it in the
 zone's tooltip and detail view.
 
-<a id="rustdoc-item-1253"></a>
+<a id="rustdoc-item-1263"></a>
 
 ### `text_lazy`
 

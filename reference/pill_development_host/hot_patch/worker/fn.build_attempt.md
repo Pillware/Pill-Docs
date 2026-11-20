@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-2332"></a>
+<a id="rustdoc-item-2406"></a>
 
 # Function `pill_development_host::hot_patch::worker::build_attempt`
 

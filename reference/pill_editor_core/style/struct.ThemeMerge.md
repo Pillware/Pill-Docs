@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-8418"></a>
+<a id="rustdoc-item-10480"></a>
 
 # Struct `pill_editor_core::style::ThemeMerge`
 
@@ -8,13 +8,13 @@
 pub struct ThemeMerge;
 ```
 
-Source: `editor\pill_editor_core\src\style.rs:616`
+Source: `editor\pill_editor_core\src\style.rs:620`
 
 The result of merging the layers over the code default.
 
 ## Fields
 
-<a id="rustdoc-item-8415"></a>
+<a id="rustdoc-item-10477"></a>
 
 ### `theme`
 
@@ -24,7 +24,7 @@ theme: pill_ui_theme::Theme
 
 The merged theme.
 
-<a id="rustdoc-item-8416"></a>
+<a id="rustdoc-item-10478"></a>
 
 ### `layers`
 
@@ -35,7 +35,7 @@ layers: Vec<ThemeLayerInfo>
 The layers that were merged, in apply order; the code default is always
 first.
 
-<a id="rustdoc-item-8417"></a>
+<a id="rustdoc-item-10479"></a>
 
 ### `refused`
 

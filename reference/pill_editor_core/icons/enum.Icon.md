@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-4468"></a>
+<a id="rustdoc-item-6429"></a>
 
 # Enum `pill_editor_core::icons::Icon`
 
@@ -14,7 +14,7 @@ One Phosphor icon, named the way the package names it.
 
 ## Variants
 
-<a id="rustdoc-item-4431"></a>
+<a id="rustdoc-item-6392"></a>
 
 ### `Cube`
 
@@ -24,7 +24,7 @@ Cube
 
 A solid cube: the first scene view.
 
-<a id="rustdoc-item-4432"></a>
+<a id="rustdoc-item-6393"></a>
 
 ### `CubeTransparent`
 
@@ -34,7 +34,7 @@ CubeTransparent
 
 A wireframe cube: the second scene view.
 
-<a id="rustdoc-item-4433"></a>
+<a id="rustdoc-item-6394"></a>
 
 ### `MonitorPlay`
 
@@ -44,7 +44,7 @@ MonitorPlay
 
 A display with a play mark: the project's own view.
 
-<a id="rustdoc-item-4434"></a>
+<a id="rustdoc-item-6395"></a>
 
 ### `TreeStructure`
 
@@ -54,7 +54,7 @@ TreeStructure
 
 A hierarchy of nodes: the entity list.
 
-<a id="rustdoc-item-4435"></a>
+<a id="rustdoc-item-6396"></a>
 
 ### `Gear`
 
@@ -64,7 +64,7 @@ Gear
 
 A cog: the system list.
 
-<a id="rustdoc-item-4436"></a>
+<a id="rustdoc-item-6397"></a>
 
 ### `SlidersHorizontal`
 
@@ -74,7 +74,7 @@ SlidersHorizontal
 
 Three sliders: the selected entity's detail.
 
-<a id="rustdoc-item-4437"></a>
+<a id="rustdoc-item-6398"></a>
 
 ### `FolderOpen`
 
@@ -84,7 +84,7 @@ FolderOpen
 
 An open folder: the asset browser.
 
-<a id="rustdoc-item-4438"></a>
+<a id="rustdoc-item-6399"></a>
 
 ### `Faders`
 
@@ -94,7 +94,7 @@ Faders
 
 The fader bank: the preferences.
 
-<a id="rustdoc-item-4439"></a>
+<a id="rustdoc-item-6400"></a>
 
 ### `ArrowsOutCardinal`
 
@@ -104,7 +104,7 @@ ArrowsOutCardinal
 
 Arrows out of a centre: the translate tool.
 
-<a id="rustdoc-item-4440"></a>
+<a id="rustdoc-item-6401"></a>
 
 ### `ArrowsClockwise`
 
@@ -114,7 +114,7 @@ ArrowsClockwise
 
 The clockwise arc: the rotate tool.
 
-<a id="rustdoc-item-4441"></a>
+<a id="rustdoc-item-6402"></a>
 
 ### `ArrowsOut`
 
@@ -124,7 +124,7 @@ ArrowsOut
 
 Arrows out of a box: the scale tool.
 
-<a id="rustdoc-item-4442"></a>
+<a id="rustdoc-item-6403"></a>
 
 ### `GlobeHemisphereWest`
 
@@ -134,7 +134,7 @@ GlobeHemisphereWest
 
 A globe: world space.
 
-<a id="rustdoc-item-4443"></a>
+<a id="rustdoc-item-6404"></a>
 
 ### `MapPin`
 
@@ -144,7 +144,7 @@ MapPin
 
 A map pin: local space.
 
-<a id="rustdoc-item-4444"></a>
+<a id="rustdoc-item-6405"></a>
 
 ### `Magnet`
 
@@ -154,7 +154,7 @@ Magnet
 
 A horseshoe magnet: snapping.
 
-<a id="rustdoc-item-4445"></a>
+<a id="rustdoc-item-6406"></a>
 
 ### `GridFour`
 
@@ -164,7 +164,7 @@ GridFour
 
 A four-cell grid: the scene grid.
 
-<a id="rustdoc-item-4446"></a>
+<a id="rustdoc-item-6407"></a>
 
 ### `Plus`
 
@@ -174,7 +174,7 @@ Plus
 
 A plus: create.
 
-<a id="rustdoc-item-4447"></a>
+<a id="rustdoc-item-6408"></a>
 
 ### `Trash`
 
@@ -184,7 +184,7 @@ Trash
 
 A bin: delete.
 
-<a id="rustdoc-item-4448"></a>
+<a id="rustdoc-item-6409"></a>
 
 ### `PencilSimple`
 
@@ -194,7 +194,7 @@ PencilSimple
 
 A pencil: rename.
 
-<a id="rustdoc-item-4449"></a>
+<a id="rustdoc-item-6410"></a>
 
 ### `FileArrowDown`
 
@@ -204,7 +204,7 @@ FileArrowDown
 
 A file with a down arrow: write metadata.
 
-<a id="rustdoc-item-4450"></a>
+<a id="rustdoc-item-6411"></a>
 
 ### `Power`
 
@@ -214,7 +214,7 @@ Power
 
 The power symbol: a system's on/off switch.
 
-<a id="rustdoc-item-4451"></a>
+<a id="rustdoc-item-6412"></a>
 
 ### `Pause`
 
@@ -224,7 +224,7 @@ Pause
 
 Two bars: pause the project.
 
-<a id="rustdoc-item-4452"></a>
+<a id="rustdoc-item-6413"></a>
 
 ### `Play`
 
@@ -234,7 +234,7 @@ Play
 
 A triangle: resume the project.
 
-<a id="rustdoc-item-4453"></a>
+<a id="rustdoc-item-6414"></a>
 
 ### `SkipForward`
 
@@ -244,7 +244,7 @@ SkipForward
 
 A bar and a triangle: advance one frame.
 
-<a id="rustdoc-item-4454"></a>
+<a id="rustdoc-item-6415"></a>
 
 ### `PlusCircle`
 
@@ -254,7 +254,7 @@ PlusCircle
 
 A circled plus: add an entity or a component.
 
-<a id="rustdoc-item-4455"></a>
+<a id="rustdoc-item-6416"></a>
 
 ### `MinusCircle`
 
@@ -264,7 +264,7 @@ MinusCircle
 
 A circled minus: remove a component.
 
-<a id="rustdoc-item-4456"></a>
+<a id="rustdoc-item-6417"></a>
 
 ### `CheckCircle`
 
@@ -274,7 +274,7 @@ CheckCircle
 
 A circled tick: confirm.
 
-<a id="rustdoc-item-4457"></a>
+<a id="rustdoc-item-6418"></a>
 
 ### `XCircle`
 
@@ -284,7 +284,7 @@ XCircle
 
 A circled cross: a problem or an error.
 
-<a id="rustdoc-item-4458"></a>
+<a id="rustdoc-item-6419"></a>
 
 ### `FloppyDisk`
 
@@ -294,7 +294,7 @@ FloppyDisk
 
 A floppy disk: save.
 
-<a id="rustdoc-item-4459"></a>
+<a id="rustdoc-item-6420"></a>
 
 ### `ArrowSquareOut`
 
@@ -304,7 +304,7 @@ ArrowSquareOut
 
 A box with an arrow leaving it: pop a tab out into its own window.
 
-<a id="rustdoc-item-4460"></a>
+<a id="rustdoc-item-6421"></a>
 
 ### `ArrowSquareIn`
 
@@ -315,7 +315,7 @@ ArrowSquareIn
 A box with an arrow entering it: move a popped-out tab back into the
 dock.
 
-<a id="rustdoc-item-4461"></a>
+<a id="rustdoc-item-6422"></a>
 
 ### `Folder`
 
@@ -325,7 +325,7 @@ Folder
 
 A closed folder: a folder row of the project browser.
 
-<a id="rustdoc-item-4462"></a>
+<a id="rustdoc-item-6423"></a>
 
 ### `CaretRight`
 
@@ -335,7 +335,7 @@ CaretRight
 
 A right-pointing chevron: a closed tree row.
 
-<a id="rustdoc-item-4463"></a>
+<a id="rustdoc-item-6424"></a>
 
 ### `CaretDown`
 
@@ -345,7 +345,7 @@ CaretDown
 
 A down-pointing chevron: an open tree row.
 
-<a id="rustdoc-item-4464"></a>
+<a id="rustdoc-item-6425"></a>
 
 ### `File`
 
@@ -355,7 +355,7 @@ File
 
 A blank sheet: a file with no more specific kind.
 
-<a id="rustdoc-item-4465"></a>
+<a id="rustdoc-item-6426"></a>
 
 ### `Image`
 
@@ -365,7 +365,7 @@ Image
 
 A framed picture: a texture or an image file.
 
-<a id="rustdoc-item-4466"></a>
+<a id="rustdoc-item-6427"></a>
 
 ### `Sphere`
 
@@ -375,7 +375,7 @@ Sphere
 
 A shaded ball: a material.
 
-<a id="rustdoc-item-4467"></a>
+<a id="rustdoc-item-6428"></a>
 
 ### `Code`
 
@@ -387,7 +387,7 @@ Angle brackets: a shader or another source file.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-4469"></a>
+<a id="rustdoc-item-6430"></a>
 
 ### `ALL`
 
@@ -397,7 +397,7 @@ const ALL: [Icon; 37] = _;
 
 Every icon, in declaration order.
 
-<a id="rustdoc-item-4470"></a>
+<a id="rustdoc-item-6431"></a>
 
 ### `codepoint`
 
@@ -408,7 +408,7 @@ pub fn codepoint(self: Self) -> u32;
 The icon's codepoint in the vendored fonts: the regular font draws
 its line art there, and the duotone font its fill.
 
-<a id="rustdoc-item-4471"></a>
+<a id="rustdoc-item-6432"></a>
 
 ### `name`
 
@@ -418,7 +418,7 @@ pub fn name(self: Self) -> &'static str;
 
 The icon's Phosphor name, as the package spells it.
 
-<a id="rustdoc-item-4472"></a>
+<a id="rustdoc-item-6433"></a>
 
 ### `glyph`
 
@@ -428,7 +428,7 @@ pub fn glyph(self: Self) -> char;
 
 The glyph the regular font draws for the icon.
 
-<a id="rustdoc-item-4473"></a>
+<a id="rustdoc-item-6434"></a>
 
 ### `duotone`
 

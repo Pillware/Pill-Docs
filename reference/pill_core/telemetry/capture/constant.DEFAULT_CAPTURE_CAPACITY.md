@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1569"></a>
+<a id="rustdoc-item-1579"></a>
 
 # Constant `pill_core::telemetry::capture::DEFAULT_CAPTURE_CAPACITY`
 

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1914"></a>
+<a id="rustdoc-item-1988"></a>
 
 # Constant `pill_development_host::hot_patch::compile::DROPPED_CODEGEN_VALUES`
 
@@ -8,7 +8,7 @@
 pub(in hot_patch::compile) const DROPPED_CODEGEN_VALUES: &[&str] = _;
 ```
 
-Visibility: `{'restricted': {'parent': 1910, 'path': '::hot_patch::compile'}}` · Source: `hosting\pill_development_host\src\hot_patch\compile.rs:82`
+Visibility: `{'restricted': {'parent': 1984, 'path': '::hot_patch::compile'}}` · Source: `hosting\pill_development_host\src\hot_patch\compile.rs:82`
 
 `-C` values that are dropped when a patch is built.
 

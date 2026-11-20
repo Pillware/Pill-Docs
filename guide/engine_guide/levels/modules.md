@@ -48,10 +48,12 @@ An extension lives in its own folder under `modules/extensions/`. The module its
 
 ```
 modules/extensions/pill_physics/
-  pill_physics/              ← the module's crate (a plain library)
-    Cargo.toml
-    src/pill_physics.rs      ← crate root, named after the crate
-    res/                     ← optional: the module's own assets
+  modules/
+    runtime/                 ← the module's crate, `pill_physics` (a plain library)
+      Cargo.toml
+      src/pill_physics.rs    ← crate root, named after the crate
+      res/                   ← optional: the module's own assets
+    editor/                  ← optional: its editor crate, `pill_physics_editor`
   examples/stacked_boxes/    ← optional: runnable example projects
   generated/                 ← written by the host, not by hand
     host_module_pill_physics/
@@ -68,7 +70,7 @@ pub fn init(engine: &mut Engine) -> u32 { /* ... */ }
 pub fn register(engine: &mut Engine) -> u32 { /* ... */ }
 ```
 
-Everything else is declared where it is defined: `#[system]` on an ECS system, `#[derive(PillResource)]` on a resource, `#[derive(PillAsset)]` on an asset type. A module never lists them by hand. Each declaration adds itself to one of the module's registries, and the module's entry point registers everything in those registries when the module loads.
+Everything else is declared where it is defined: `#[system]` on an ECS system, `#[resource]` on a resource, `#[asset]` on an asset type. A module never lists them by hand. Each declaration adds itself to one of the module's registries, and the module's entry point registers everything in those registries when the module loads.
 
 The project follows the same pattern with `#[pill_project(register = ...)]` instead of `#[pill_module]`.
 

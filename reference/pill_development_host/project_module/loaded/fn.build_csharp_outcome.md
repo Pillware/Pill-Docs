@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-3422"></a>
+<a id="rustdoc-item-3678"></a>
 
 # Function `pill_development_host::project_module::loaded::build_csharp_outcome`
 
@@ -8,7 +8,7 @@
 pub(in project_module::loaded) fn build_csharp_outcome(compiler: Option<std::sync::Arc<fast_compile::FastCompiler>>, workspace_root: &std::path::Path, config: &crate::ProjectModuleConfig, cancel_flag: Option<(std::sync::Arc<std::sync::atomic::AtomicU64>, u64)>) -> crate::csharp::BuildOutcome;
 ```
 
-Visibility: `{'restricted': {'parent': 3421, 'path': '::project_module::loaded'}}` · Source: `hosting\pill_development_host\src\project_module.rs:494`
+Visibility: `{'restricted': {'parent': 3677, 'path': '::project_module::loaded'}}` · Source: `hosting\pill_development_host\src\project_module.rs:486`
 
 Produces one managed build outcome, using the compiler choice the build
 worker and the synchronous fallback share.

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-283"></a>
+<a id="rustdoc-item-2305"></a>
 
 # Enum `pill_engine_core::error::WorldError`
 
@@ -20,7 +20,7 @@ full component table, or a name that another type already claimed.
 
 ## Variants
 
-<a id="rustdoc-item-4478"></a>
+<a id="rustdoc-item-5251"></a>
 
 ### `DescriptorStableIdZero`
 
@@ -30,7 +30,7 @@ DescriptorStableIdZero
 
 The stable ID of a descriptor component cannot be zero.
 
-<a id="rustdoc-item-279"></a>
+<a id="rustdoc-item-2301"></a>
 
 ### `DescriptorSizeZero`
 
@@ -40,7 +40,7 @@ DescriptorSizeZero
 
 The size of a descriptor component cannot be zero.
 
-<a id="rustdoc-item-280"></a>
+<a id="rustdoc-item-2302"></a>
 
 ### `DescriptorAlignmentInvalid`
 
@@ -50,7 +50,7 @@ DescriptorAlignmentInvalid
 
 The alignment of a descriptor component must be a non-zero power of two.
 
-<a id="rustdoc-item-281"></a>
+<a id="rustdoc-item-2303"></a>
 
 ### `DescriptorLayoutInvalid`
 
@@ -60,7 +60,7 @@ DescriptorLayoutInvalid
 
 The size and alignment pair does not form a valid memory layout.
 
-<a id="rustdoc-item-4479"></a>
+<a id="rustdoc-item-5252"></a>
 
 ### `DescriptorAlreadyRegistered`
 
@@ -70,7 +70,7 @@ DescriptorAlreadyRegistered
 
 The stable ID is already registered with a different layout or name.
 
-<a id="rustdoc-item-4480"></a>
+<a id="rustdoc-item-5259"></a>
 
 ### `DescriptorRemapSelf`
 
@@ -80,7 +80,7 @@ DescriptorRemapSelf
 
 A descriptor component cannot be remapped onto itself.
 
-<a id="rustdoc-item-2941"></a>
+<a id="rustdoc-item-3210"></a>
 
 ### `ComponentTypeLimitExceeded`
 
@@ -97,7 +97,7 @@ a configuration outcome, not a programming error. The error carries the
 offending type name and the number registered so far, so the host can
 report it like any other engine error instead of panicking.
 
-<a id="rustdoc-item-4483"></a>
+<a id="rustdoc-item-5426"></a>
 
 ### `DescriptorEntityEmpty`
 
@@ -107,7 +107,7 @@ DescriptorEntityEmpty
 
 A descriptor entity must carry at least one component.
 
-<a id="rustdoc-item-4484"></a>
+<a id="rustdoc-item-5427"></a>
 
 ### `DescriptorDuplicateComponent`
 
@@ -117,7 +117,7 @@ DescriptorDuplicateComponent
 
 A descriptor entity cannot contain the same component twice.
 
-<a id="rustdoc-item-4486"></a>
+<a id="rustdoc-item-5255"></a>
 
 ### `DescriptorComponentNotRegistered`
 
@@ -127,7 +127,7 @@ DescriptorComponentNotRegistered
 
 The component ID was never registered with this world.
 
-<a id="rustdoc-item-4488"></a>
+<a id="rustdoc-item-5290"></a>
 
 ### `DescriptorByteLengthMismatch`
 
@@ -137,7 +137,7 @@ DescriptorByteLengthMismatch
 
 The supplied bytes are not the size the registered layout declares.
 
-<a id="rustdoc-item-4489"></a>
+<a id="rustdoc-item-5282"></a>
 
 ### `EntityNotFound`
 
@@ -147,7 +147,7 @@ EntityNotFound
 
 The entity does not exist in the world.
 
-<a id="rustdoc-item-4490"></a>
+<a id="rustdoc-item-5260"></a>
 
 ### `DescriptorComponentAlreadyPresent`
 
@@ -157,7 +157,7 @@ DescriptorComponentAlreadyPresent
 
 The entity already carries the component being added.
 
-<a id="rustdoc-item-4491"></a>
+<a id="rustdoc-item-5261"></a>
 
 ### `DescriptorComponentMissing`
 
@@ -167,7 +167,7 @@ DescriptorComponentMissing
 
 The entity does not carry the component being removed or set.
 
-<a id="rustdoc-item-444"></a>
+<a id="rustdoc-item-2467"></a>
 
 ### `DescriptorRowInvalid`
 
@@ -177,7 +177,7 @@ DescriptorRowInvalid
 
 A row index or byte range does not fit the component's column.
 
-<a id="rustdoc-item-553"></a>
+<a id="rustdoc-item-2574"></a>
 
 ### `DescriptorSizeMismatch`
 
@@ -187,7 +187,7 @@ DescriptorSizeMismatch
 
 A byte copy length does not match the registered element size.
 
-<a id="rustdoc-item-550"></a>
+<a id="rustdoc-item-2571"></a>
 
 ### `ColumnRowsAreNotPlainData`
 
@@ -202,7 +202,7 @@ destructor, which is safe only for plain data. On a column whose type
 has a real destructor, the same calls would leak the value they
 overwrite, or leave two columns owning one allocation.
 
-<a id="rustdoc-item-4494"></a>
+<a id="rustdoc-item-5256"></a>
 
 ### `DescriptorStorageMissing`
 
@@ -217,7 +217,7 @@ The manifest and the archetype's columns disagree here, which a partly
 applied relayout or reload can leave behind. The component is listed,
 but its storage was never created.
 
-<a id="rustdoc-item-4499"></a>
+<a id="rustdoc-item-5257"></a>
 
 ### `ComponentColumnLayoutMismatch`
 
@@ -231,7 +231,7 @@ the migration plan was validated against.
 A column and the storage factory that describe it have drifted apart,
 which is what a partly applied relayout leaves behind.
 
-<a id="rustdoc-item-4500"></a>
+<a id="rustdoc-item-5349"></a>
 
 ### `ForeignResourceNameEmpty`
 
@@ -241,7 +241,7 @@ ForeignResourceNameEmpty
 
 A foreign resource declaration carries no name to be identified by.
 
-<a id="rustdoc-item-4503"></a>
+<a id="rustdoc-item-5350"></a>
 
 ### `ForeignResourceLayoutInvalid`
 
@@ -251,7 +251,7 @@ ForeignResourceLayoutInvalid
 
 The declared layout of a foreign resource cannot describe an allocation.
 
-<a id="rustdoc-item-4506"></a>
+<a id="rustdoc-item-5365"></a>
 
 ### `ForeignResourceNotRegistered`
 
@@ -261,7 +261,7 @@ ForeignResourceNotRegistered
 
 The id does not name a registered foreign resource.
 
-<a id="rustdoc-item-4507"></a>
+<a id="rustdoc-item-5368"></a>
 
 ### `ForeignResourceRemapSelf`
 
@@ -271,7 +271,7 @@ ForeignResourceRemapSelf
 
 A foreign resource cannot be remapped onto itself.
 
-<a id="rustdoc-item-4509"></a>
+<a id="rustdoc-item-5358"></a>
 
 ### `SharedResourceNotRegistered`
 
@@ -281,7 +281,7 @@ SharedResourceNotRegistered
 
 The id does not name a registered shared resource.
 
-<a id="rustdoc-item-4511"></a>
+<a id="rustdoc-item-5357"></a>
 
 ### `ForeignResourceFactoryIsNative`
 
@@ -292,7 +292,7 @@ ForeignResourceFactoryIsNative
 The id was registered by a Rust type, so foreign bytes cannot be stored
 under it.
 
-<a id="rustdoc-item-4513"></a>
+<a id="rustdoc-item-5355"></a>
 
 ### `ForeignResourceHoldsRustValue`
 
@@ -302,7 +302,7 @@ ForeignResourceHoldsRustValue
 
 A Rust value is stored under the id, and its type fixes its shape.
 
-<a id="rustdoc-item-4517"></a>
+<a id="rustdoc-item-5359"></a>
 
 ### `ForeignResourceBytesMismatch`
 
@@ -312,7 +312,7 @@ ForeignResourceBytesMismatch
 
 The payload length does not match the foreign resource's declared size.
 
-<a id="rustdoc-item-4519"></a>
+<a id="rustdoc-item-5366"></a>
 
 ### `ForeignResourcePlanOutOfBounds`
 
@@ -322,7 +322,7 @@ ForeignResourcePlanOutOfBounds
 
 A migration plan for a foreign resource falls outside its rows.
 
-<a id="rustdoc-item-4522"></a>
+<a id="rustdoc-item-5386"></a>
 
 ### `SharedResourceHoldsAnotherType`
 
@@ -339,7 +339,7 @@ refuses to hand out a value of a different type. The value, its ticks,
 its factory and its claim stay in place, so the caller learns why
 instead of losing the resource on the way to `None`.
 
-<a id="rustdoc-item-4525"></a>
+<a id="rustdoc-item-5352"></a>
 
 ### `SharedResourceIdentityCollision`
 
@@ -355,7 +355,7 @@ silently joining the other's resource. The id cannot carry the evidence,
 so each claim also stores its name and compares it with the recorded
 one.
 
-<a id="rustdoc-item-4529"></a>
+<a id="rustdoc-item-5354"></a>
 
 ### `SharedResourceSchemaMismatch`
 
@@ -369,7 +369,7 @@ Size and alignment cannot tell `{u32, u32}` from `{f32, f32}`; when both
 declarations carry a schema hash, the shapes can be compared and a
 reinterpretation becomes a refusal instead of a silent misread.
 
-<a id="rustdoc-item-4534"></a>
+<a id="rustdoc-item-5253"></a>
 
 ### `ComponentNameCollision`
 
@@ -378,7 +378,7 @@ ComponentNameCollision
 ```
 
 Two live registrations claim the same component type name under
-different [`ComponentId`](../component/enum.ComponentId.md#rustdoc-item-83)s.
+different [`ComponentId`](../ecs/component/enum.ComponentId.md#rustdoc-item-2117)s.
 
 The persistable-registration path replaces a same-name entry in its
 persist maps when the host has announced that generation as superseded.
@@ -389,7 +389,7 @@ a concurrent peer - a second binary that linked the type and got its own
 Give the type a shared identity with `#[pill(shared)]` so both binaries
 resolve to one column instead of two.
 
-<a id="rustdoc-item-4540"></a>
+<a id="rustdoc-item-6119"></a>
 
 ### `ComponentLayoutChanged`
 
@@ -410,7 +410,7 @@ the reload back.
 A size change that keeps the alignment is accepted, because the
 add-a-field reloads need that shape to migrate.
 
-<a id="rustdoc-item-4544"></a>
+<a id="rustdoc-item-5351"></a>
 
 ### `SharedResourceNameConflict`
 
@@ -429,7 +429,7 @@ The case this must not reject is one type compiled into two artifacts,
 which is what a shared name is for. Those copies agree on the type's own
 name; two different types do not.
 
-<a id="rustdoc-item-4550"></a>
+<a id="rustdoc-item-5353"></a>
 
 ### `SharedResourceLayoutMismatch`
 
@@ -444,7 +444,7 @@ the only thing that proves they agree about its shape. Accepting the
 second registration would leave the two artifacts reading one slot with
 different layouts, so it is refused instead.
 
-<a id="rustdoc-item-4554"></a>
+<a id="rustdoc-item-6131"></a>
 
 ### `SharedComponentNameConflict`
 
@@ -466,7 +466,7 @@ module paths differ. Only `#[pill(shared = "...")]` can produce the
 refused case, because a plain `#[pill(shared)]` derives the name from
 the module path and the type name.
 
-<a id="rustdoc-item-3005"></a>
+<a id="rustdoc-item-3275"></a>
 
 ### `SharedComponentLayoutMismatch`
 
@@ -487,7 +487,7 @@ Identity is resolved when the DLL loads, not by the compiler, so a field
 reorder or type change compiles cleanly in both binaries and shows up
 here. Rebuild both against the same definition.
 
-<a id="rustdoc-item-4563"></a>
+<a id="rustdoc-item-5272"></a>
 
 ### `ComponentNameAmbiguous`
 
@@ -496,14 +496,14 @@ ComponentNameAmbiguous
 ```
 
 A component type name resolved to more than one registered
-[`ComponentId`](../component/enum.ComponentId.md#rustdoc-item-83).
+[`ComponentId`](../ecs/component/enum.ComponentId.md#rustdoc-item-2117).
 
 A name is only useful when it identifies one column. More than one
-surviving candidate means [`WorldError::ComponentNameCollision`](#rustdoc-item-4534) was not
+surviving candidate means [`WorldError::ComponentNameCollision`](#rustdoc-item-5253) was not
 enforced somewhere upstream, so this is reported instead of resolved by
 an arbitrary tiebreak that could pick the wrong column.
 
-<a id="rustdoc-item-4567"></a>
+<a id="rustdoc-item-5380"></a>
 
 ### `ImportExtensionClaimedTwice`
 
@@ -515,11 +515,11 @@ Two imported asset types claim the same source file extension.
 
 A file's asset type is chosen by its extension, so a second claim would
 make the choice depend on which module registered first. Both
-[`World::register_imported_asset`](../world/struct.World.md#rustdoc-item-1702)
-and [`World::register_standalone_asset`](../world/struct.World.md#rustdoc-item-2208)
+[`World::register_imported_asset`](../ecs/world/struct.World.md#rustdoc-item-826)
+and [`World::register_standalone_asset`](../ecs/world/struct.World.md#rustdoc-item-1360)
 raise it.
 
-<a id="rustdoc-item-4570"></a>
+<a id="rustdoc-item-5283"></a>
 
 ### `ArchetypeMissing`
 
@@ -542,15 +542,15 @@ applied hot-reload rehome can produce.
 - `TryFrom<U>`
 - `Any`
 - `ToString`
+- `CastableFrom<ST, Uninit, Uninit>`
+- `CastableFrom<ST, Initialized, Initialized>`
+- `Read<Exclusive, BecauseExclusive>`
 - `Instrument`
 - `WithSubscriber`
 - `IntoEither`
 - `Pointable`
 - `OwoColorize`
 - `ErasedDestructor`
-- `CastableFrom<ST, Uninit, Uninit>`
-- `CastableFrom<ST, Initialized, Initialized>`
-- `Read<Exclusive, BecauseExclusive>`
 - `Debug`
 - `Diagnostic`
 - `Error`

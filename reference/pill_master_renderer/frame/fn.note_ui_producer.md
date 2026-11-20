@@ -8,6 +8,6 @@
 pub(in frame) fn note_ui_producer(producer: u8, producer_name: &str);
 ```
 
-Visibility: `{'restricted': {'parent': 238, 'path': '::frame'}}` · Source: `extensions\pill_master_renderer\pill_master_renderer\src\frame.rs:280`
+Visibility: `{'restricted': {'parent': 238, 'path': '::frame'}}` · Source: `extensions\pill_master_renderer\modules\runtime\gpu\src\frame.rs:280`
 
 Records which producer filled the frame, logging its name when that changed.

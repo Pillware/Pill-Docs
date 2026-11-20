@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-2095"></a>
+<a id="rustdoc-item-2169"></a>
 
 # Struct `pill_development_host::hot_patch::routes::LoadedPatch`
 
@@ -14,13 +14,13 @@ A patch loaded earlier, which a later patch also has to reach.
 
 A patch links its own copy of everything its body calls, and those copies go
 stale as soon as a callee is patched. This target is what keeps a chain of
-hot functions moving: patch a caller of `pill_dummy_color::get_color_a`, then
-patch `get_color_a` itself, and without this the caller's patch keeps running
-the `get_color_a` it was compiled with.
+hot functions moving: patch a caller of `pill_spline::math::hermite`, then
+patch `hermite` itself, and without this the caller's patch keeps running
+the `hermite` it was compiled with.
 
 ## Fields
 
-<a id="rustdoc-item-2133"></a>
+<a id="rustdoc-item-2207"></a>
 
 ### `function`
 
@@ -31,7 +31,7 @@ function: String
 The qualified name of the function this patch replaced. It also labels
 the patch in error messages.
 
-<a id="rustdoc-item-2134"></a>
+<a id="rustdoc-item-2208"></a>
 
 ### `generation`
 
@@ -41,7 +41,7 @@ generation: u32
 
 The generation number under which this patch was recorded.
 
-<a id="rustdoc-item-2135"></a>
+<a id="rustdoc-item-2209"></a>
 
 ### `library`
 
@@ -55,7 +55,7 @@ addresses.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-2137"></a>
+<a id="rustdoc-item-2211"></a>
 
 ### `install_plain_function`
 
@@ -74,7 +74,7 @@ would keep calling the version of a callee that is patched afterwards.
 Fails when the patch exports no installer, and when the patch refuses the
 replacement because `qualified` changed shape.
 
-<a id="rustdoc-item-2138"></a>
+<a id="rustdoc-item-2212"></a>
 
 ### `reset_plain_function`
 
@@ -85,7 +85,7 @@ pub(in hot_patch) fn reset_plain_function(self: &Self, qualified: &str) -> Resul
 Returns this patch's copy of one `#[pill_hot_fn]` to its own body.
 
 A missing export is an error for the same reason as in
-[`Self::install_plain_function`](#rustdoc-item-2137): "cannot ask" must not be read as
+[`Self::install_plain_function`](#rustdoc-item-2211): "cannot ask" must not be read as
 "asked, and it declares nothing". Otherwise a rollback would leave this
 copy running a patched body while reporting that everything was
 restored.
@@ -94,7 +94,7 @@ restored.
 
 Fails when the patch exports no reset symbol.
 
-<a id="rustdoc-item-2139"></a>
+<a id="rustdoc-item-2213"></a>
 
 ### `function_address`
 

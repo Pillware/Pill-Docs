@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1255"></a>
+<a id="rustdoc-item-1275"></a>
 
 # Function `pill_development_host::config::spawned_build_environment`
 
@@ -8,7 +8,7 @@
 pub(crate) fn spawned_build_environment() -> Vec<(String, String)>;
 ```
 
-Visibility: `crate` · Source: `hosting\pill_development_host\src\config.rs:1458`
+Visibility: `crate` · Source: `hosting\pill_development_host\src\config.rs:1665`
 
 Environment every host-spawned cargo build needs, on top of the host's own.
 

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-438"></a>
+<a id="rustdoc-item-544"></a>
 
 # Function `pill_engine_macros::module_init_export_with`
 
@@ -8,7 +8,7 @@
 pub(crate) fn module_init_export_with(gate: &proc_macro2::TokenStream, init_fn: &proc_macro2::TokenStream, registration_runner: &proc_macro2::TokenStream, register_fn: &proc_macro2::TokenStream) -> proc_macro2::TokenStream;
 ```
 
-Visibility: `crate` · Source: `engine\pill_engine_macros\src\lib.rs:3126`
+Visibility: `crate` · Source: `engine\pill_engine_macros\src\lib.rs:4237`
 
 Emits the `pill_module_init` entry point every loadable artifact exports.
 

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-452"></a>
+<a id="rustdoc-item-496"></a>
 
 # Module `pill_editor_core::boundary`
 
@@ -31,15 +31,16 @@ the game's.
 ## Module contents
 
 ### Structs
-- [`EguiPopoutInputs`](struct.EguiPopoutInputs.md#rustdoc-item-285) — One input record per popped-out tab's window.
-- [`EguiShellFrame`](struct.EguiShellFrame.md#rustdoc-item-389) — One shell pass's output, as plain data.
-- [`EguiShellInput`](struct.EguiShellInput.md#rustdoc-item-204) — Everything the frontend tells the shell about the frame it is about to
-- [`PopoutFrame`](struct.PopoutFrame.md#rustdoc-item-388) — One popped-out tab's frame: which tab it draws, and the pass's output.
+- [`EguiPopoutInputs`](struct.EguiPopoutInputs.md#rustdoc-item-328) — One input record per popped-out tab's window.
+- [`EguiShellFrame`](struct.EguiShellFrame.md#rustdoc-item-432) — One shell pass's output, as plain data.
+- [`EguiShellInput`](struct.EguiShellInput.md#rustdoc-item-206) — Everything the frontend tells the shell about the frame it is about to
+- [`PopoutFrame`](struct.PopoutFrame.md#rustdoc-item-431) — One popped-out tab's frame: which tab it draws, and the pass's output.
 - [`ShellBadge`](struct.ShellBadge.md#rustdoc-item-202) — One entity's badge in one scene view.
-- [`ShellRect`](struct.ShellRect.md#rustdoc-item-325) — A rectangle in logical pixels that crosses the boundary: a viewport body,
+- [`ShellMarquee`](struct.ShellMarquee.md#rustdoc-item-204) — The rectangle a marquee drag covers, in one scene view.
+- [`ShellRect`](struct.ShellRect.md#rustdoc-item-289) — A rectangle in logical pixels that crosses the boundary: a viewport body,
 
 ### Functions
-- [`frame_from_output`](fn.frame_from_output.md#rustdoc-item-449) — Builds the frame the frontend drains, from egui's output for one pass.
+- [`frame_from_output`](fn.frame_from_output.md#rustdoc-item-493) — Builds the frame the frontend drains, from egui's output for one pass.
 
 ### Constants
 - [`BADGES_PER_VIEW_MAX`](constant.BADGES_PER_VIEW_MAX.md#rustdoc-item-186) — How many badges one scene view draws: enough that a crowded scene still

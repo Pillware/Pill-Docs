@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-4617"></a>
+<a id="rustdoc-item-6578"></a>
 
 # Function `pill_editor_core::input::map_key`
 

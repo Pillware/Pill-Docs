@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-3715"></a>
+<a id="rustdoc-item-3971"></a>
 
 # Function `pill_development_host::switches::parse_switch`
 

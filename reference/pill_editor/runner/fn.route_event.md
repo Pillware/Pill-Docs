@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1376"></a>
+<a id="rustdoc-item-1826"></a>
 
 # Function `pill_editor::runner::route_event`
 
@@ -8,7 +8,7 @@
 pub(in runner) fn route_event(is_game_window: bool) -> EventRoute;
 ```
 
-Visibility: `{'restricted': {'parent': 483, 'path': '::runner'}}` · Source: `editor\pill_editor\src\runner\mod.rs:3634`
+Visibility: `{'restricted': {'parent': 539, 'path': '::runner'}}` · Source: `editor\pill_editor\src\runner\mod.rs:4157`
 
 The focus rule in one place: the game's window feeds the game, every
 editor window feeds the shell.

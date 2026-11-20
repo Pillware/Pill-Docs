@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-6210"></a>
+<a id="rustdoc-item-8176"></a>
 
 # Struct `pill_editor_core::panels::PanelRegistry`
 
@@ -8,13 +8,13 @@
 pub struct PanelRegistry;
 ```
 
-Source: `editor\pill_editor_core\src\panels.rs:282`
+Source: `editor\pill_editor_core\src\panels.rs:288`
 
 Every panel a module registered, live or not.
 
 ## Fields
 
-<a id="rustdoc-item-6208"></a>
+<a id="rustdoc-item-8174"></a>
 
 ### `registrations`
 
@@ -24,7 +24,7 @@ registrations: Vec<PanelRegistration>
 
 _No documentation provided._
 
-<a id="rustdoc-item-6209"></a>
+<a id="rustdoc-item-8175"></a>
 
 ### `next_epoch`
 
@@ -36,7 +36,7 @@ _No documentation provided._
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-6211"></a>
+<a id="rustdoc-item-8177"></a>
 
 ### `register`
 
@@ -50,7 +50,7 @@ same id.
 The slot is the index the dock tab names. It stays the same across a
 reload because the entry is replaced in place, not appended.
 
-<a id="rustdoc-item-6212"></a>
+<a id="rustdoc-item-8178"></a>
 
 ### `slot`
 
@@ -60,7 +60,7 @@ pub fn slot(self: &Self, id: &str) -> Option<u16>;
 
 Returns the slot a panel id occupies, if it is registered.
 
-<a id="rustdoc-item-6213"></a>
+<a id="rustdoc-item-8179"></a>
 
 ### `get`
 
@@ -70,7 +70,7 @@ pub fn get(self: &Self, slot: u16) -> Option<&PanelRegistration>;
 
 Returns the registration in one slot, if the slot exists.
 
-<a id="rustdoc-item-6214"></a>
+<a id="rustdoc-item-8180"></a>
 
 ### `draw_of`
 
@@ -81,7 +81,7 @@ pub fn draw_of(self: &Self, slot: u16) -> Option<PanelDrawFn>;
 Returns the draw function of a live panel, or `None` when its module
 has unloaded.
 
-<a id="rustdoc-item-6215"></a>
+<a id="rustdoc-item-8181"></a>
 
 ### `tab_title`
 
@@ -93,7 +93,7 @@ Returns the title to show for a slot: the panel's own while it is
 alive, its title with " (module not loaded)" added once its module is
 gone, and "Module panel" for a slot the registry does not hold.
 
-<a id="rustdoc-item-6216"></a>
+<a id="rustdoc-item-8182"></a>
 
 ### `entries`
 
@@ -103,7 +103,7 @@ pub fn entries(self: &Self) -> &[PanelRegistration];
 
 Returns every registration, in slot order.
 
-<a id="rustdoc-item-6217"></a>
+<a id="rustdoc-item-8183"></a>
 
 ### `len`
 
@@ -113,7 +113,7 @@ pub fn len(self: &Self) -> usize;
 
 Returns how many panels are registered, live or not.
 
-<a id="rustdoc-item-6218"></a>
+<a id="rustdoc-item-8184"></a>
 
 ### `is_empty`
 
@@ -123,7 +123,7 @@ pub fn is_empty(self: &Self) -> bool;
 
 Returns whether no panel is registered.
 
-<a id="rustdoc-item-6219"></a>
+<a id="rustdoc-item-8185"></a>
 
 ### `alive`
 
@@ -133,7 +133,7 @@ pub fn alive(self: &Self, slot: u16) -> bool;
 
 Returns whether the slot's module is still loaded.
 
-<a id="rustdoc-item-6220"></a>
+<a id="rustdoc-item-8186"></a>
 
 ### `has_live`
 

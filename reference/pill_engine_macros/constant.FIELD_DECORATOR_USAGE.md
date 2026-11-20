@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-284"></a>
+<a id="rustdoc-item-306"></a>
 
 # Constant `pill_engine_macros::FIELD_DECORATOR_USAGE`
 
@@ -8,7 +8,7 @@
 pub(crate) const FIELD_DECORATOR_USAGE: &[(&str, &str)] = _;
 ```
 
-Visibility: `crate` · Source: `engine\pill_engine_macros\src\lib.rs:552`
+Visibility: `crate` · Source: `engine\pill_engine_macros\src\lib.rs:865`
 
 Every field decorator a field may declare, with the usage text a refusal
 shows.

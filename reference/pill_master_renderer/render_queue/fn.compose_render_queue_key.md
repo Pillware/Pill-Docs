@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1790"></a>
+<a id="rustdoc-item-1834"></a>
 
 # Function `pill_master_renderer::render_queue::compose_render_queue_key`
 
@@ -8,7 +8,7 @@
 pub fn compose_render_queue_key(order: u8, shader: renderer_shader::RendererShaderHandle, material: renderer_material::RendererMaterialHandle, mesh: renderer_mesh::RendererMeshHandle) -> u64;
 ```
 
-Source: `extensions\pill_master_renderer\pill_master_renderer\src\render_queue.rs:109`
+Source: `extensions\pill_master_renderer\modules\runtime\gpu\src\render_queue.rs:109`
 
 Packs the rendering order of a draw and the resources it binds into one
 `u64` that sorts in the order the queue needs. The most significant byte

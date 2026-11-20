@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-2349"></a>
+<a id="rustdoc-item-2423"></a>
 
 # Constant `pill_development_host::hot_patch::failure_code::INSTALL`
 

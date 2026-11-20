@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-8245"></a>
+<a id="rustdoc-item-10307"></a>
 
 # Function `pill_editor_core::style::frame`
 
@@ -8,6 +8,6 @@
 pub fn frame() -> egui::Color32;
 ```
 
-Source: `editor\pill_editor_core\src\style.rs:219`
+Source: `editor\pill_editor_core\src\style.rs:220`
 
 The window frame and tab-strip background.

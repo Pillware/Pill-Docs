@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-666"></a>
+<a id="rustdoc-item-676"></a>
 
 # Struct `pill_core::error::render::TerminalMessageRenderer`
 
@@ -12,13 +12,13 @@ Source: `engine\pill_core\src\error\render.rs:175`
 
 A renderer that styles each value according to its semantic role.
 
-The colours come from the crate's [`PillStyle`](../../style/trait.PillStyle.md#rustdoc-item-694)
+The colours come from the crate's [`PillStyle`](../../style/trait.PillStyle.md#rustdoc-item-704)
 vocabulary, one method per role, so an error definition never names a
 colour or an ANSI code.
 
 ## Fields
 
-<a id="rustdoc-item-693"></a>
+<a id="rustdoc-item-703"></a>
 
 ### `writer`
 
@@ -30,7 +30,7 @@ _No documentation provided._
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-695"></a>
+<a id="rustdoc-item-705"></a>
 
 ### `new`
 

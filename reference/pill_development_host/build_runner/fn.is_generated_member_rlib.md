@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-777"></a>
+<a id="rustdoc-item-779"></a>
 
 # Function `pill_development_host::build_runner::is_generated_member_rlib`
 
@@ -8,7 +8,7 @@
 pub(in build_runner) fn is_generated_member_rlib(file_name: &str) -> bool;
 ```
 
-Visibility: `{'restricted': {'parent': 545, 'path': '::build_runner'}}` · Source: `hosting\pill_development_host\src\build_runner.rs:1926`
+Visibility: `{'restricted': {'parent': 546, 'path': '::build_runner'}}` · Source: `hosting\pill_development_host\src\build_runner.rs:1927`
 
 Checks whether a `deps` filename is the rlib of a host-generated member
 crate.

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1042"></a>
+<a id="rustdoc-item-1086"></a>
 
 # Enum `pill_editor_core::clipboard::ClipboardRequest`
 
@@ -20,7 +20,7 @@ executable carries it out at the frame boundary, the same way
 
 ## Variants
 
-<a id="rustdoc-item-1040"></a>
+<a id="rustdoc-item-1084"></a>
 
 ### `Write`
 
@@ -31,7 +31,7 @@ Write
 Write this payload text to the clipboard, in the registered format and
 as plain text.
 
-<a id="rustdoc-item-1041"></a>
+<a id="rustdoc-item-1085"></a>
 
 ### `Read`
 

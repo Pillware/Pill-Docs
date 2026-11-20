@@ -2,7 +2,7 @@
 
 ## Summary
 
-The editor is a development-mode frontend, `pill_editor`. It runs the development host like `pill_standalone` does, loads the egui editor shell as a hot-reloadable extension, and draws the scene through child windows. This page covers how to build and run it as an engine developer; the editor's architecture is not documented yet.
+The editor is a development-mode frontend, `pill_editor`. It runs the development host like `pill_standalone` does, loads the egui editor shell as a hot-reloadable extension, and draws the scene through child windows. This page covers how to build and run it as an engine developer. [How the editor works](editor_implementation.md) explains its architecture: the parts, the frame, and how it talks to the engine, the UI and the renderer.
 
 ## How do I run the editor?
 
@@ -114,7 +114,7 @@ The browser frontend is `pill_web_editor`. It compiles the egui shell into the w
 
 - `modules/editor/pill_editor/` - the native editor executable.
 - `modules/editor/pill_editor_core/` - the editor's shared core, used by every editor frontend and the shell module.
-- `modules/extensions/pill_editor_shell_egui/pill_editor_shell_egui_editor/` - the egui shell module.
+- `modules/editor/pill_editor_shell/` - the egui shell module.
 - `modules/editor/pill_web_editor/` - the browser editor frontend.
 - `devops/tests/test_editor_egui.py` - the end-to-end suite.
 
@@ -124,6 +124,6 @@ The browser frontend is `pill_web_editor`. It compiles the egui shell into the w
 
 The editor's design is still changing, so this guide does not document its architecture yet: the shell module and its reload contract, the shared editor core, the snapshot and command flow, the viewports and the scripted channel.
 
-Until it does, the most current description is in the repository's `AGENTS.md` (the `editor/pill_editor_core`, `pill_editor_shell_egui_editor` and `editor/pill_editor` entries) and in the module headers of those crates.
+Until it does, the most current description is in the repository's `AGENTS.md` (the `editor/pill_editor_core`, `editor/pill_editor_shell` and `editor/pill_editor` entries) and in the module headers of those crates.
 
 The editor is developed and tested on Windows. Its child-window viewports have not been tested on other systems.

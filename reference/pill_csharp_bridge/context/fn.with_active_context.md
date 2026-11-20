@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1110"></a>
+<a id="rustdoc-item-1132"></a>
 
 # Function `pill_csharp_bridge::context::with_active_context`
 

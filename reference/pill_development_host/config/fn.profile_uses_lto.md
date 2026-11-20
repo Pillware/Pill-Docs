@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1251"></a>
+<a id="rustdoc-item-1270"></a>
 
 # Function `pill_development_host::config::profile_uses_lto`
 
@@ -8,7 +8,7 @@
 pub(in config) fn profile_uses_lto(profile: &str) -> bool;
 ```
 
-Visibility: `{'restricted': {'parent': 821, 'path': '::config'}}` · Source: `hosting\pill_development_host\src\config.rs:1361`
+Visibility: `{'restricted': {'parent': 823, 'path': '::config'}}` · Source: `hosting\pill_development_host\src\config.rs:1557`
 
 Whether a cargo profile enables link-time optimization, the one case where
 a host-spawned build must drop the workspace's `-C prefer-dynamic` rustflag.

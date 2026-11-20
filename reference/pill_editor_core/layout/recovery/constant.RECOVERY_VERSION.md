@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-5316"></a>
+<a id="rustdoc-item-7279"></a>
 
 # Constant `pill_editor_core::layout::recovery::RECOVERY_VERSION`
 

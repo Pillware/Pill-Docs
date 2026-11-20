@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1175"></a>
+<a id="rustdoc-item-1194"></a>
 
 # Struct `pill_development_host::config::EditorSettingsFile`
 
@@ -8,13 +8,13 @@
 pub(in config) struct EditorSettingsFile;
 ```
 
-Visibility: `{'restricted': {'parent': 821, 'path': '::config'}}` · Source: `hosting\pill_development_host\src\config.rs:1259`
+Visibility: `{'restricted': {'parent': 823, 'path': '::config'}}` · Source: `hosting\pill_development_host\src\config.rs:1453`
 
 Values declared by the project's own `editor_settings.yaml`.
 
 ## Fields
 
-<a id="rustdoc-item-1174"></a>
+<a id="rustdoc-item-1192"></a>
 
 ### `editor_theme`
 
@@ -23,6 +23,16 @@ editor_theme: Option<String>
 ```
 
 The editor theme the project's editor layer uses, below `res`.
+
+<a id="rustdoc-item-1193"></a>
+
+### `focus_game_on_play`
+
+```rust
+focus_game_on_play: Option<bool>
+```
+
+Whether Play brings the Game tab forward.
 
 ## Trait implementations
 

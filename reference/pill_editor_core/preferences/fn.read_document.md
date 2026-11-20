@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-6380"></a>
+<a id="rustdoc-item-8418"></a>
 
 # Function `pill_editor_core::preferences::read_document`
 
@@ -8,7 +8,7 @@
 pub fn read_document(directory: &std::path::Path) -> Result<serde_json::Map<String, serde_json::Value>, String>;
 ```
 
-Source: `editor\pill_editor_core\src\preferences.rs:388`
+Source: `editor\pill_editor_core\src\preferences.rs:411`
 
 Reads the preferences document a write will modify.
 
@@ -19,5 +19,5 @@ erasing every unrelated preference.
 
 ## Errors
 
-Returns a message naming the file when it cannot be read, is not JSON, or is
-not a JSON object.
+Returns a message naming the file when it cannot be read, is not YAML, or is
+not a YAML mapping.

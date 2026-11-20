@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-349"></a>
+<a id="rustdoc-item-352"></a>
 
 # Struct `pill_ui_frame::texture::UiTextureSet`
 
@@ -14,7 +14,7 @@ The textures a frame carries to the backend, and the ones it frees.
 
 ## Fields
 
-<a id="rustdoc-item-508"></a>
+<a id="rustdoc-item-515"></a>
 
 ### `textures`
 
@@ -25,7 +25,7 @@ textures: Vec<UiTexture>
 The textures whose content changed since the producer last carried
 them, one entry per texture. Empty when nothing changed.
 
-<a id="rustdoc-item-509"></a>
+<a id="rustdoc-item-516"></a>
 
 ### `frees`
 
@@ -37,7 +37,7 @@ Textures the producer no longer uses. A backend drops them.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-510"></a>
+<a id="rustdoc-item-517"></a>
 
 ### `new`
 
@@ -47,7 +47,7 @@ pub fn new() -> UiTextureSet;
 
 An empty set.
 
-<a id="rustdoc-item-511"></a>
+<a id="rustdoc-item-518"></a>
 
 ### `is_empty`
 
@@ -57,7 +57,7 @@ pub fn is_empty(self: &Self) -> bool;
 
 Whether there is nothing to upload and nothing to free.
 
-<a id="rustdoc-item-512"></a>
+<a id="rustdoc-item-519"></a>
 
 ### `clear`
 
@@ -67,7 +67,7 @@ pub fn clear(self: &mut Self);
 
 Forget the previous frame's set, keeping the allocations.
 
-<a id="rustdoc-item-513"></a>
+<a id="rustdoc-item-520"></a>
 
 ### `push_full`
 
@@ -85,7 +85,7 @@ past, so it is refused here rather than at the upload.
 
 Panics when `pixels` is not exactly `width * height * 4` bytes.
 
-<a id="rustdoc-item-514"></a>
+<a id="rustdoc-item-521"></a>
 
 ### `push_free`
 
@@ -115,6 +115,7 @@ Marks `id` to be freed in every backend that applied the set.
 - `CastableFrom<ST, Uninit, Uninit>`
 - `CastableFrom<ST, Initialized, Initialized>`
 - `Read<Exclusive, BecauseExclusive>`
+- `Equivalent<K>`
 - `Clone`
 - `Debug`
 - `Default`

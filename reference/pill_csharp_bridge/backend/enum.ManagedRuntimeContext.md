@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-458"></a>
+<a id="rustdoc-item-468"></a>
 
 # Enum `pill_csharp_bridge::backend::ManagedRuntimeContext`
 
@@ -8,7 +8,7 @@
 pub(crate) enum ManagedRuntimeContext { ... }
 ```
 
-Visibility: `crate` · Source: `csharp\pill_csharp_bridge\src\backend.rs:216`
+Visibility: `crate` · Source: `csharp\pill_csharp_bridge\src\backend.rs:228`
 
 Owns one hosted managed runtime: CoreCLR through hostfxr, or a loaded
 NativeAOT library. Keeping this value alive keeps every function pointer
@@ -20,7 +20,7 @@ unused there.
 
 ## Variants
 
-<a id="rustdoc-item-455"></a>
+<a id="rustdoc-item-465"></a>
 
 ### `Dotnet`
 
@@ -30,7 +30,7 @@ Dotnet
 
 CoreCLR booted through hostfxr (framework-dependent posture).
 
-<a id="rustdoc-item-457"></a>
+<a id="rustdoc-item-467"></a>
 
 ### `Aot`
 

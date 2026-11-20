@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-195"></a>
+<a id="rustdoc-item-198"></a>
 
 # Struct `pill_renderer_api::raw_window::RawWindowData`
 
@@ -12,12 +12,12 @@ Source: `rendering\pill_renderer_api\src\raw_window.rs:77`
 
 A window's platform handles, as plain data.
 
-Only the fields [`RawWindowKind`](enum.RawWindowKind.md#rustdoc-item-904) names for `kind` are meaningful; every
+Only the fields [`RawWindowKind`](enum.RawWindowKind.md#rustdoc-item-976) names for `kind` are meaningful; every
 other field is zero.
 
 ## Fields
 
-<a id="rustdoc-item-939"></a>
+<a id="rustdoc-item-1012"></a>
 
 ### `kind`
 
@@ -27,7 +27,7 @@ kind: RawWindowKind
 
 Which platform the handles belong to.
 
-<a id="rustdoc-item-940"></a>
+<a id="rustdoc-item-1013"></a>
 
 ### `window`
 
@@ -37,7 +37,7 @@ window: u64
 
 The window, as a handle, an id or a pointer, depending on `kind`.
 
-<a id="rustdoc-item-941"></a>
+<a id="rustdoc-item-1014"></a>
 
 ### `window_aux`
 
@@ -47,7 +47,7 @@ window_aux: u64
 
 A second window-side value, which only some platforms use.
 
-<a id="rustdoc-item-942"></a>
+<a id="rustdoc-item-1015"></a>
 
 ### `display`
 
@@ -57,7 +57,7 @@ display: u64
 
 The display connection, on the platforms that have one.
 
-<a id="rustdoc-item-943"></a>
+<a id="rustdoc-item-1016"></a>
 
 ### `screen`
 
@@ -69,7 +69,7 @@ The X11 screen number. Zero on every other platform.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-944"></a>
+<a id="rustdoc-item-1017"></a>
 
 ### `from_window`
 
@@ -81,11 +81,11 @@ Reads the platform handles out of `window`.
 
 #### Errors
 
-Returns [`RendererError::SurfaceCreation`](../error/enum.RendererError.md#rustdoc-item-349) when the window cannot give
+Returns [`RendererError::SurfaceCreation`](../error/enum.RendererError.md#rustdoc-item-412) when the window cannot give
 its handles right now, when its platform is not one this type carries,
 or when its window and display handles come from different platforms.
 
-<a id="rustdoc-item-947"></a>
+<a id="rustdoc-item-1020"></a>
 
 ### `from_raw`
 
@@ -98,11 +98,11 @@ window.
 
 #### Errors
 
-Returns [`RendererError::SurfaceCreation`](../error/enum.RendererError.md#rustdoc-item-349) when the platform is not one
+Returns [`RendererError::SurfaceCreation`](../error/enum.RendererError.md#rustdoc-item-412) when the platform is not one
 this type carries, or when the window and display handles come from
 different platforms.
 
-<a id="rustdoc-item-950"></a>
+<a id="rustdoc-item-1023"></a>
 
 ### `to_raw`
 
@@ -114,7 +114,7 @@ Returns the `raw-window-handle` values a GPU surface is created from.
 
 #### Errors
 
-Returns [`RendererError::SurfaceCreation`](../error/enum.RendererError.md#rustdoc-item-349) when a handle the platform
+Returns [`RendererError::SurfaceCreation`](../error/enum.RendererError.md#rustdoc-item-412) when a handle the platform
 needs is missing: the Win32 window handle, the XCB window id, the
 Wayland surface or display, the AppKit view, or the web canvas. An Xlib
 window id is not checked.
@@ -130,15 +130,16 @@ window id is not checked.
 - `TryFrom<U>`
 - `Any`
 - `ToOwned`
+- `CastableFrom<ST, Uninit, Uninit>`
+- `CastableFrom<ST, Initialized, Initialized>`
+- `Read<Exclusive, BecauseExclusive>`
 - `Instrument`
 - `WithSubscriber`
 - `IntoEither`
 - `Pointable`
 - `OwoColorize`
 - `ErasedDestructor`
-- `CastableFrom<ST, Uninit, Uninit>`
-- `CastableFrom<ST, Initialized, Initialized>`
-- `Read<Exclusive, BecauseExclusive>`
+- `Equivalent<K>`
 - `Debug`
 - `Clone`
 - `Copy`

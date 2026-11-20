@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-200"></a>
+<a id="rustdoc-item-203"></a>
 
 # Struct `pill_renderer_api::picking::PickResult`
 
@@ -8,13 +8,13 @@
 pub struct PickResult;
 ```
 
-Source: `rendering\pill_renderer_api\src\picking.rs:103`
+Source: `rendering\pill_renderer_api\src\picking.rs:109`
 
-The answer to one [`PickRequest`](struct.PickRequest.md#rustdoc-item-809).
+The answer to one [`PickRequest`](struct.PickRequest.md#rustdoc-item-879).
 
 ## Fields
 
-<a id="rustdoc-item-1328"></a>
+<a id="rustdoc-item-1411"></a>
 
 ### `request`
 
@@ -24,7 +24,7 @@ request: PickRequest
 
 The request it answers.
 
-<a id="rustdoc-item-1329"></a>
+<a id="rustdoc-item-1412"></a>
 
 ### `hit`
 
@@ -45,15 +45,16 @@ What is drawn there.
 - `TryFrom<U>`
 - `Any`
 - `ToOwned`
+- `CastableFrom<ST, Uninit, Uninit>`
+- `CastableFrom<ST, Initialized, Initialized>`
+- `Read<Exclusive, BecauseExclusive>`
 - `Instrument`
 - `WithSubscriber`
 - `IntoEither`
 - `Pointable`
 - `OwoColorize`
 - `ErasedDestructor`
-- `CastableFrom<ST, Uninit, Uninit>`
-- `CastableFrom<ST, Initialized, Initialized>`
-- `Read<Exclusive, BecauseExclusive>`
+- `Equivalent<K>`
 - `Debug`
 - `Clone`
 - `Copy`

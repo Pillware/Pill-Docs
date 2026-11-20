@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-857"></a>
+<a id="rustdoc-item-984"></a>
 
 # Function `pill_editor::runner::editor_default_keybindings`
 
@@ -8,7 +8,7 @@
 pub(in runner) fn editor_default_keybindings() -> pill_editor_core::commands::KeybindingsFile;
 ```
 
-Visibility: `{'restricted': {'parent': 483, 'path': '::runner'}}` · Source: `editor\pill_editor\src\runner\mod.rs:3893`
+Visibility: `{'restricted': {'parent': 539, 'path': '::runner'}}` · Source: `editor\pill_editor\src\runner\mod.rs:4508`
 
 The bindings the editor starts with when there is no keybindings file.
 

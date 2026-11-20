@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-760"></a>
+<a id="rustdoc-item-762"></a>
 
 # Function `pill_development_host::build_runner::stop_process_tree`
 
@@ -8,7 +8,7 @@
 pub(crate) fn stop_process_tree(tree: Option<&BuildProcessTree>, child: &mut std::process::Child);
 ```
 
-Visibility: `crate` · Source: `hosting\pill_development_host\src\build_runner.rs:1192`
+Visibility: `crate` · Source: `hosting\pill_development_host\src\build_runner.rs:1193`
 
 Stops a build and its whole process tree.
 

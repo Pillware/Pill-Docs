@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-3576"></a>
+<a id="rustdoc-item-3832"></a>
 
 # Struct `pill_development_host::reload::GenerationInit`
 
@@ -14,7 +14,7 @@ What one generation's `init` registered while its image was loaded.
 
 ## Fields
 
-<a id="rustdoc-item-3571"></a>
+<a id="rustdoc-item-3827"></a>
 
 ### `status`
 
@@ -24,7 +24,7 @@ status: u32
 
 Status the artifact's entry point returned. Zero means success.
 
-<a id="rustdoc-item-3572"></a>
+<a id="rustdoc-item-3828"></a>
 
 ### `registered_type_names`
 
@@ -35,7 +35,7 @@ registered_type_names: Vec<String>
 Persistable component type names this generation registered, for
 forgotten-type detection on the next reload.
 
-<a id="rustdoc-item-3573"></a>
+<a id="rustdoc-item-3829"></a>
 
 ### `registered_schemas`
 
@@ -45,7 +45,7 @@ registered_schemas: Vec<(String, u64)>
 
 Schema hash of each of those types as this generation declared it.
 
-<a id="rustdoc-item-3574"></a>
+<a id="rustdoc-item-3830"></a>
 
 ### `registered_resource_ids`
 
@@ -56,7 +56,7 @@ registered_resource_ids: Vec<pill_engine::ResourceId>
 Resource ids this generation claimed, so retiring it releases exactly
 those and no other subject's.
 
-<a id="rustdoc-item-3575"></a>
+<a id="rustdoc-item-3831"></a>
 
 ### `component_names`
 

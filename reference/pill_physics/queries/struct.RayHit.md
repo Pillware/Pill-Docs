@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-638"></a>
+<a id="rustdoc-item-854"></a>
 
 # Struct `pill_physics::queries::RayHit`
 
@@ -8,13 +8,13 @@
 pub struct RayHit;
 ```
 
-Source: `extensions\pill_physics\pill_physics\src\queries.rs:30`
+Source: `extensions\pill_physics\modules\runtime\src\queries.rs:30`
 
 The closest thing a ray reached.
 
 ## Fields
 
-<a id="rustdoc-item-691"></a>
+<a id="rustdoc-item-920"></a>
 
 ### `entity`
 
@@ -24,7 +24,7 @@ entity: pill_engine::Entity
 
 The entity whose collider the ray reached.
 
-<a id="rustdoc-item-692"></a>
+<a id="rustdoc-item-921"></a>
 
 ### `distance`
 
@@ -34,7 +34,7 @@ distance: f32
 
 How far along the ray the hit is, in world units.
 
-<a id="rustdoc-item-693"></a>
+<a id="rustdoc-item-922"></a>
 
 ### `point`
 

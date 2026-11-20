@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-4038"></a>
+<a id="rustdoc-item-4513"></a>
 
 # Enum `pill_editor_core::gizmo::HandleState`
 
@@ -8,13 +8,13 @@
 pub enum HandleState { ... }
 ```
 
-Source: `editor\pill_editor_core\src\gizmo.rs:545`
+Source: `editor\pill_editor_core\src\gizmo.rs:663`
 
 The visual state of one handle.
 
 ## Variants
 
-<a id="rustdoc-item-4080"></a>
+<a id="rustdoc-item-4555"></a>
 
 ### `Idle`
 
@@ -24,7 +24,7 @@ Idle
 
 Normal appearance.
 
-<a id="rustdoc-item-4081"></a>
+<a id="rustdoc-item-4556"></a>
 
 ### `Hovered`
 
@@ -34,7 +34,7 @@ Hovered
 
 Under the pointer: brighter.
 
-<a id="rustdoc-item-4082"></a>
+<a id="rustdoc-item-4557"></a>
 
 ### `Active`
 

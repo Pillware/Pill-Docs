@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-3294"></a>
+<a id="rustdoc-item-3429"></a>
 
 # Struct `pill_editor_core::editor_state::AssetDetail`
 
@@ -8,14 +8,14 @@
 pub struct AssetDetail;
 ```
 
-Source: `editor\pill_editor_core\src\editor_state\mod.rs:456`
+Source: `editor\pill_editor_core\src\editor_state\mod.rs:504`
 
 The selected asset's detail for the Inspector: its row data
 and the import settings document the editable rows build on.
 
 ## Fields
 
-<a id="rustdoc-item-3288"></a>
+<a id="rustdoc-item-3423"></a>
 
 ### `row`
 
@@ -24,11 +24,11 @@ row: AssetListing
 ```
 
 The listing row the detail was captured from. Its
-[`AssetListing::key`](struct.AssetListing.md#rustdoc-item-3172) is the selection identity the Inspector matches
+[`AssetListing::key`](struct.AssetListing.md#rustdoc-item-3307) is the selection identity the Inspector matches
 on, so the detail carries the row itself rather than copies of its
 fields.
 
-<a id="rustdoc-item-3289"></a>
+<a id="rustdoc-item-3424"></a>
 
 ### `settings`
 
@@ -39,7 +39,7 @@ settings: Option<serde_json::Value>
 The import settings document: a standalone asset's body, or the
 sidecar's `settings`. It is `None` for folders and unknown extensions.
 
-<a id="rustdoc-item-3290"></a>
+<a id="rustdoc-item-3425"></a>
 
 ### `references`
 
@@ -50,7 +50,7 @@ references: Vec<AssetReferenceField>
 The reference fields the asset's type declares, expanded: one entry per
 picker the Inspector draws, whether or not the document binds it yet.
 
-<a id="rustdoc-item-3292"></a>
+<a id="rustdoc-item-3427"></a>
 
 ### `decorators`
 
@@ -64,7 +64,7 @@ type that declares none.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-3295"></a>
+<a id="rustdoc-item-3430"></a>
 
 ### `key`
 

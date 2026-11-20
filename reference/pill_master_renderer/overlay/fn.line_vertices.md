@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1457"></a>
+<a id="rustdoc-item-1500"></a>
 
 # Function `pill_master_renderer::overlay::line_vertices`
 
@@ -8,7 +8,7 @@
 pub(in overlay) fn line_vertices(debug_frame: &pill_engine::DebugFrame, view_projection: &pill_core::math::Matrix4f, viewport_size: (f32, f32), editor_view: bool) -> (Vec<LineVertex>, Vec<LineVertex>);
 ```
 
-Visibility: `{'restricted': {'parent': 858, 'path': '::overlay'}}` · Source: `extensions\pill_master_renderer\pill_master_renderer\src\overlay\mod.rs:1172`
+Visibility: `{'restricted': {'parent': 854, 'path': '::overlay'}}` · Source: `extensions\pill_master_renderer\modules\runtime\gpu\src\overlay\mod.rs:1216`
 
 The frame's debug lines and gizmo lines as screen-space quads, split into
 the lines tested against the scene's depth and the lines drawn on top.

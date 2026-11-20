@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-907"></a>
+<a id="rustdoc-item-916"></a>
 
 # Function `pill_development_host::config::materialize_host_project_member`
 
@@ -8,7 +8,7 @@
 pub(in config) fn materialize_host_project_member(workspace_root: &std::path::Path, project_path: &str, package_name: &str) -> Result<(), pill_core::error::ConfigError>;
 ```
 
-Visibility: `{'restricted': {'parent': 821, 'path': '::config'}}` · Source: `hosting\pill_development_host\src\config.rs:1904`
+Visibility: `{'restricted': {'parent': 823, 'path': '::config'}}` · Source: `hosting\pill_development_host\src\config.rs:2305`
 
 Writes the temporary workspace member that builds the native project.
 

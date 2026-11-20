@@ -19,7 +19,7 @@ bytes, their width and the invocation the view was issued to.
 
 ## Fields
 
-<a id="rustdoc-item-320"></a>
+<a id="rustdoc-item-323"></a>
 
 ### `data`
 
@@ -29,7 +29,7 @@ data: *mut u8
 
 Pointer to the resource's first byte in engine storage.
 
-<a id="rustdoc-item-321"></a>
+<a id="rustdoc-item-324"></a>
 
 ### `length`
 
@@ -39,7 +39,7 @@ length: u32
 
 Width of the stored value, for the managed side to check its struct against.
 
-<a id="rustdoc-item-322"></a>
+<a id="rustdoc-item-325"></a>
 
 ### `scope_token`
 

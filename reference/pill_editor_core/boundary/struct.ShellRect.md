@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-325"></a>
+<a id="rustdoc-item-289"></a>
 
 # Struct `pill_editor_core::boundary::ShellRect`
 
@@ -8,14 +8,14 @@
 pub struct ShellRect;
 ```
 
-Source: `editor\pill_editor_core\src\boundary.rs:160`
+Source: `editor\pill_editor_core\src\boundary.rs:192`
 
 A rectangle in logical pixels that crosses the boundary: a viewport body,
 an overlay region or the IME candidate's place.
 
 ## Fields
 
-<a id="rustdoc-item-321"></a>
+<a id="rustdoc-item-365"></a>
 
 ### `x`
 
@@ -25,7 +25,7 @@ x: f32
 
 Distance from the client area's left edge.
 
-<a id="rustdoc-item-322"></a>
+<a id="rustdoc-item-366"></a>
 
 ### `y`
 
@@ -35,7 +35,7 @@ y: f32
 
 Distance from the client area's top edge.
 
-<a id="rustdoc-item-323"></a>
+<a id="rustdoc-item-367"></a>
 
 ### `width`
 
@@ -45,7 +45,7 @@ width: f32
 
 Extent along x.
 
-<a id="rustdoc-item-324"></a>
+<a id="rustdoc-item-368"></a>
 
 ### `height`
 
@@ -57,7 +57,7 @@ Extent along y.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-326"></a>
+<a id="rustdoc-item-369"></a>
 
 ### `contains`
 

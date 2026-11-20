@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-301"></a>
+<a id="rustdoc-item-323"></a>
 
 # Enum `pill_engine_macros::HeapFieldKind`
 
@@ -8,13 +8,13 @@
 pub(crate) enum HeapFieldKind { ... }
 ```
 
-Visibility: `crate` · Source: `engine\pill_engine_macros\src\lib.rs:827`
+Visibility: `crate` · Source: `engine\pill_engine_macros\src\lib.rs:1140`
 
 What the managed side needs to know about one heap-owning field.
 
 ## Variants
 
-<a id="rustdoc-item-296"></a>
+<a id="rustdoc-item-318"></a>
 
 ### `Vec`
 
@@ -24,7 +24,7 @@ Vec
 
 A `Vec<E>` field; the element tag drives the generated span type.
 
-<a id="rustdoc-item-298"></a>
+<a id="rustdoc-item-320"></a>
 
 ### `DynamicBuffer`
 
@@ -36,7 +36,7 @@ A `DynamicBuffer<E>` field: elements in engine-owned native memory,
 whose `(ptr, len, cap)` handle the mirror reads straight out of the
 row.
 
-<a id="rustdoc-item-299"></a>
+<a id="rustdoc-item-321"></a>
 
 ### `VecString`
 
@@ -47,7 +47,7 @@ VecString
 A `Vec<String>` field: elements are individually allocated, so managed
 code reaches each one through its own accessor instead of a span.
 
-<a id="rustdoc-item-300"></a>
+<a id="rustdoc-item-322"></a>
 
 ### `String`
 

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-4183"></a>
+<a id="rustdoc-item-4710"></a>
 
 # Function `pill_editor_core::gizmo::hit_test`
 
@@ -8,7 +8,7 @@
 pub fn hit_test(geometry: &GizmoGeometry, ray_origin: [f32; 3], ray_direction: [f32; 3], radius: f32) -> Option<u32>;
 ```
 
-Source: `editor\pill_editor_core\src\gizmo.rs:1097`
+Source: `editor\pill_editor_core\src\gizmo.rs:1440`
 
 Returns the handle under a cursor ray: the nearest one whose line passes
 within `radius` world units of the ray, or whose triangle the ray enters.

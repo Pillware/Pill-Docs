@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-298"></a>
+<a id="rustdoc-item-360"></a>
 
 # Function `pill_renderer_api::components::register_contract_components`
 

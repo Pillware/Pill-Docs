@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-835"></a>
+<a id="rustdoc-item-845"></a>
 
 # Struct `pill_ui_theme::theme::Stroke`
 
@@ -14,7 +14,7 @@ A line stroke: a width in points and a colour.
 
 ## Fields
 
-<a id="rustdoc-item-833"></a>
+<a id="rustdoc-item-843"></a>
 
 ### `width`
 
@@ -24,7 +24,7 @@ width: f32
 
 The width in points.
 
-<a id="rustdoc-item-834"></a>
+<a id="rustdoc-item-844"></a>
 
 ### `color`
 
@@ -36,7 +36,7 @@ The stroke's colour.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-836"></a>
+<a id="rustdoc-item-846"></a>
 
 ### `new`
 

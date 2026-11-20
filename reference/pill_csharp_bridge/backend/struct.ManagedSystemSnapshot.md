@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-429"></a>
+<a id="rustdoc-item-439"></a>
 
 # Struct `pill_csharp_bridge::backend::ManagedSystemSnapshot`
 
@@ -8,7 +8,7 @@
 pub(in backend) struct ManagedSystemSnapshot;
 ```
 
-Visibility: `{'restricted': {'parent': 400, 'path': '::backend'}}` · Source: `csharp\pill_csharp_bridge\src\backend.rs:195`
+Visibility: `{'restricted': {'parent': 403, 'path': '::backend'}}` · Source: `csharp\pill_csharp_bridge\src\backend.rs:201`
 
 Reflected metadata of one managed system, captured at startup.
 
@@ -18,7 +18,7 @@ run stale index bindings unnoticed.
 
 ## Fields
 
-<a id="rustdoc-item-425"></a>
+<a id="rustdoc-item-431"></a>
 
 ### `accesses`
 
@@ -28,7 +28,7 @@ accesses: Box<[super::abi::NativeSystemAccess]>
 
 Reflected native access list resolved at startup.
 
-<a id="rustdoc-item-427"></a>
+<a id="rustdoc-item-433"></a>
 
 ### `uses_commands`
 
@@ -38,7 +38,37 @@ uses_commands: bool
 
 Whether the managed system declared a Commands parameter.
 
-<a id="rustdoc-item-428"></a>
+<a id="rustdoc-item-434"></a>
+
+### `order`
+
+```rust
+order: i32
+```
+
+The system's declared order within its phase.
+
+<a id="rustdoc-item-435"></a>
+
+### `phase`
+
+```rust
+phase: pill_engine::RunPhase
+```
+
+The system's declared frame phase.
+
+<a id="rustdoc-item-437"></a>
+
+### `run_in_edit_mode`
+
+```rust
+run_in_edit_mode: bool
+```
+
+Whether the system also runs in edit mode.
+
+<a id="rustdoc-item-438"></a>
 
 ### `name`
 

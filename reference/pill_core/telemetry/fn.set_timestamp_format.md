@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1769"></a>
+<a id="rustdoc-item-1779"></a>
 
 # Function `pill_core::telemetry::set_timestamp_format`
 

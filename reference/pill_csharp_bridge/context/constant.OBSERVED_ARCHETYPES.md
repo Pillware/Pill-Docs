@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1033"></a>
+<a id="rustdoc-item-1055"></a>
 
 # Constant `pill_csharp_bridge::context::OBSERVED_ARCHETYPES`
 
@@ -8,7 +8,7 @@
 pub(in context) const OBSERVED_ARCHETYPES: $crate::thread::LocalKey<std::cell::RefCell<std::collections::HashSet<pill_engine::archetype::ArchetypeId>>> = _;
 ```
 
-Visibility: `{'restricted': {'parent': 1030, 'path': '::context'}}` · Source: `csharp\pill_csharp_bridge\src\context.rs:54`
+Visibility: `{'restricted': {'parent': 1052, 'path': '::context'}}` · Source: `csharp\pill_csharp_bridge\src\context.rs:54`
 
 Archetypes this invocation has already served to managed code.
 

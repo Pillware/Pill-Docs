@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-0"></a>
+<a id="rustdoc-item-156"></a>
 
 # Constant `pill_test::MODULE_TEST_ENTITY_COUNT`
 
@@ -8,7 +8,7 @@
 pub(crate) const MODULE_TEST_ENTITY_COUNT: usize = 4;
 ```
 
-Visibility: `crate` · Source: `extensions\pill_test\pill_test\src\pill_test.rs:39`
+Visibility: `crate` · Source: `extensions\pill_test\modules\runtime\src\pill_test.rs:45`
 
 Number of entities the module keeps alive.
 

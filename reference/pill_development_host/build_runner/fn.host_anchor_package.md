@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-584"></a>
+<a id="rustdoc-item-585"></a>
 
 # Function `pill_development_host::build_runner::host_anchor_package`
 
@@ -8,7 +8,7 @@
 pub(in build_runner) fn host_anchor_package() -> Option<String>;
 ```
 
-Visibility: `{'restricted': {'parent': 545, 'path': '::build_runner'}}` · Source: `hosting\pill_development_host\src\build_runner.rs:550`
+Visibility: `{'restricted': {'parent': 546, 'path': '::build_runner'}}` · Source: `hosting\pill_development_host\src\build_runner.rs:551`
 
 Returns the running host's workspace package name, which an anchored build
 selects with `-p`.

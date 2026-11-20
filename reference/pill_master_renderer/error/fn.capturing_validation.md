@@ -8,7 +8,7 @@
 pub(crate) fn capturing_validation<T, impl FnOnce() -> T: FnOnce() -> T>(device: &wgpu::Device, make: impl FnOnce() -> T) -> std::result::Result<T, String>;
 ```
 
-Visibility: `crate` · Source: `extensions\pill_master_renderer\pill_master_renderer\src\error.rs:196`
+Visibility: `crate` · Source: `extensions\pill_master_renderer\modules\runtime\gpu\src\error.rs:196`
 
 Runs a block of GPU work and captures any error wgpu raises for it.
 

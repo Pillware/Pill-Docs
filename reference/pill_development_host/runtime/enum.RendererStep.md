@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-4015"></a>
+<a id="rustdoc-item-4272"></a>
 
 # Enum `pill_development_host::runtime::RendererStep`
 
@@ -8,13 +8,13 @@
 pub(in runtime) enum RendererStep { ... }
 ```
 
-Visibility: `{'restricted': {'parent': 3859, 'path': '::runtime'}}` · Source: `hosting\pill_development_host\src\runtime.rs:696`
+Visibility: `{'restricted': {'parent': 4115, 'path': '::runtime'}}` · Source: `hosting\pill_development_host\src\runtime.rs:710`
 
 What a renderer step did, for the pause decision.
 
 ## Variants
 
-<a id="rustdoc-item-4012"></a>
+<a id="rustdoc-item-4269"></a>
 
 ### `Unchanged`
 
@@ -24,7 +24,7 @@ Unchanged
 
 Nothing reloaded; whatever was attached stays.
 
-<a id="rustdoc-item-4013"></a>
+<a id="rustdoc-item-4270"></a>
 
 ### `Attached`
 
@@ -34,7 +34,7 @@ Attached
 
 A generation loaded or reloaded and is attached to the window.
 
-<a id="rustdoc-item-4014"></a>
+<a id="rustdoc-item-4271"></a>
 
 ### `Failed`
 

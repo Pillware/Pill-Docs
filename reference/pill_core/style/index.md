@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1559"></a>
+<a id="rustdoc-item-1569"></a>
 
 # Module `pill_core::style`
 
@@ -11,7 +11,7 @@ String styling helpers for terminal output.
 
 ## Responsibilities
 
-- Own the [`PillStyle`](trait.PillStyle.md#rustdoc-item-694) trait that maps semantic output roles (module
+- Own the [`PillStyle`](trait.PillStyle.md#rustdoc-item-704) trait that maps semantic output roles (module
   objects, general objects, specific objects, names, and severity
   levels) to styled strings for terminal rendering.
 
@@ -19,7 +19,7 @@ String styling helpers for terminal output.
 
 The trait states the vocabulary. The platform layer supplies the
 implementation for the target. The `&str` implementations live in
-[`crate::platform::styling`](../platform/styling/index.md#rustdoc-item-1204), beside the other target splits, so this
+[`crate::platform::styling`](../platform/styling/index.md#rustdoc-item-1214), beside the other target splits, so this
 module holds no `cfg(target_arch)` gate and owns only the trait.
 
 There is one implementation per target. On native it colors the text
@@ -35,4 +35,4 @@ terminal renderer styles through.
 ## Module contents
 
 ### Traits
-- [`PillStyle`](trait.PillStyle.md#rustdoc-item-694) — Maps semantic output roles to styled strings for terminal rendering.
+- [`PillStyle`](trait.PillStyle.md#rustdoc-item-704) — Maps semantic output roles to styled strings for terminal rendering.

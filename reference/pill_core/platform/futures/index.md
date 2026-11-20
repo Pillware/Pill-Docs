@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1192"></a>
+<a id="rustdoc-item-1202"></a>
 
 # Module `pill_core::platform::futures`
 
@@ -28,5 +28,5 @@ value on the web must `.await` it instead.
 ## Module contents
 
 ### Functions
-- [`block_on`](fn.block_on.md#rustdoc-item-1190) — Runs `future` to completion on the calling thread and returns its output.
-- [`spawn`](fn.spawn.md#rustdoc-item-1189) — Starts `future` and returns nothing.
+- [`block_on`](fn.block_on.md#rustdoc-item-1200) — Runs `future` to completion on the calling thread and returns its output.
+- [`spawn`](fn.spawn.md#rustdoc-item-1199) — Starts `future` and returns nothing.

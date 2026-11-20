@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-435"></a>
+<a id="rustdoc-item-432"></a>
 
 # Struct `pill_master_renderer_data::assets::rendering_pipeline::RenderingPipeline`
 
@@ -8,13 +8,13 @@
 pub struct RenderingPipeline;
 ```
 
-Source: `extensions\pill_master_renderer\pill_master_renderer_data\src\assets\rendering_pipeline.rs:77`
+Source: `extensions\pill_master_renderer\modules\runtime\data\src\assets\rendering_pipeline.rs:77`
 
 The passes a frame runs, in the order they were added.
 
 ## Fields
 
-<a id="rustdoc-item-596"></a>
+<a id="rustdoc-item-592"></a>
 
 ### `passes`
 
@@ -27,7 +27,7 @@ pass's own `order` value; the order here breaks ties.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-597"></a>
+<a id="rustdoc-item-593"></a>
 
 ### `new`
 
@@ -37,7 +37,7 @@ pub fn new() -> Self;
 
 An empty pipeline.
 
-<a id="rustdoc-item-598"></a>
+<a id="rustdoc-item-594"></a>
 
 ### `add`
 
@@ -47,7 +47,7 @@ pub fn add(self: &mut Self, pass: Handle<RenderPass>);
 
 Appends one pass to the chain, switched on.
 
-<a id="rustdoc-item-599"></a>
+<a id="rustdoc-item-595"></a>
 
 ### `with_pass`
 
@@ -68,21 +68,21 @@ Appends one pass and returns the chain, so calls can be chained.
 - `TryFrom<U>`
 - `Any`
 - `ToOwned`
+- `CastableFrom<ST, Uninit, Uninit>`
+- `CastableFrom<ST, Initialized, Initialized>`
+- `Read<Exclusive, BecauseExclusive>`
 - `Instrument`
 - `WithSubscriber`
 - `IntoEither`
 - `Pointable`
 - `OwoColorize`
 - `ErasedDestructor`
-- `CastableFrom<ST, Uninit, Uninit>`
-- `CastableFrom<ST, Initialized, Initialized>`
-- `Read<Exclusive, BecauseExclusive>`
+- `Clone`
+- `Debug`
 - `MirrorObject`
 - `Asset`
 - `MirrorValue`
 - `MirrorReturn`
-- `Clone`
-- `Debug`
+- `TraitAccessible<dyn Asset>`
 - `Default`
 - `StandaloneAsset`
-- `TraitAccessible<dyn Asset>`

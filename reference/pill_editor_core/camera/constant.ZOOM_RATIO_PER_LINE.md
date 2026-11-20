@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-719"></a>
+<a id="rustdoc-item-763"></a>
 
 # Constant `pill_editor_core::camera::ZOOM_RATIO_PER_LINE`
 

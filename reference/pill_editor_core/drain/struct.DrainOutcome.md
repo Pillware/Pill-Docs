@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-2198"></a>
+<a id="rustdoc-item-2255"></a>
 
 # Struct `pill_editor_core::drain::DrainOutcome`
 
@@ -8,13 +8,13 @@
 pub struct DrainOutcome;
 ```
 
-Source: `editor\pill_editor_core\src\drain.rs:47`
+Source: `editor\pill_editor_core\src\drain.rs:48`
 
 What one drain changed outside the world.
 
 ## Fields
 
-<a id="rustdoc-item-2195"></a>
+<a id="rustdoc-item-2252"></a>
 
 ### `batches`
 
@@ -24,7 +24,7 @@ batches: usize
 
 How many batches ran.
 
-<a id="rustdoc-item-2196"></a>
+<a id="rustdoc-item-2253"></a>
 
 ### `files_changed`
 
@@ -35,7 +35,7 @@ files_changed: bool
 Whether a batch changed files on disk, so the asset listing must be
 refreshed right away.
 
-<a id="rustdoc-item-2197"></a>
+<a id="rustdoc-item-2254"></a>
 
 ### `settings_changed`
 

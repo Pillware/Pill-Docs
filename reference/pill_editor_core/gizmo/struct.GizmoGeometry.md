@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-4127"></a>
+<a id="rustdoc-item-4602"></a>
 
 # Struct `pill_editor_core::gizmo::GizmoGeometry`
 
@@ -8,7 +8,7 @@
 pub struct GizmoGeometry;
 ```
 
-Source: `editor\pill_editor_core\src\gizmo.rs:601`
+Source: `editor\pill_editor_core\src\gizmo.rs:719`
 
 The handle geometry one gizmo draws.
 
@@ -17,7 +17,7 @@ and each one carries the id of the handle it belongs to.
 
 ## Fields
 
-<a id="rustdoc-item-4125"></a>
+<a id="rustdoc-item-4600"></a>
 
 ### `lines`
 
@@ -27,7 +27,7 @@ lines: Vec<GizmoLine>
 
 Handle lines.
 
-<a id="rustdoc-item-4126"></a>
+<a id="rustdoc-item-4601"></a>
 
 ### `triangles`
 

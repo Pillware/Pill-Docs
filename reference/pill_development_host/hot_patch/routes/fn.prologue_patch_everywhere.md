@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-2204"></a>
+<a id="rustdoc-item-2278"></a>
 
 # Function `pill_development_host::hot_patch::routes::prologue_patch_everywhere`
 
@@ -8,7 +8,7 @@
 pub(in hot_patch) fn prologue_patch_everywhere(targets: &[(&str, &crate::native_library::NativeLibrary)], patches: &[LoadedPatch], qualified: &str, replacement: usize, expected_signature: &str) -> Result<Vec<PrologueRestore>, String>;
 ```
 
-Visibility: `{'restricted': {'parent': 1968, 'path': '::hot_patch'}}` · Source: `hosting\pill_development_host\src\hot_patch\routes.rs:681`
+Visibility: `{'restricted': {'parent': 2042, 'path': '::hot_patch'}}` · Source: `hosting\pill_development_host\src\hot_patch\routes.rs:681`
 
 Redirects every loaded copy of one function by overwriting its prologue.
 

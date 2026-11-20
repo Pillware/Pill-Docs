@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-6579"></a>
+<a id="rustdoc-item-8617"></a>
 
 # Struct `pill_editor_core::resources::ResourceEntry`
 
@@ -14,7 +14,7 @@ One editable world resource.
 
 ## Fields
 
-<a id="rustdoc-item-6576"></a>
+<a id="rustdoc-item-8614"></a>
 
 ### `name`
 
@@ -24,7 +24,7 @@ name: &'static str
 
 The stable name a command addresses the resource by - its type path.
 
-<a id="rustdoc-item-6577"></a>
+<a id="rustdoc-item-8615"></a>
 
 ### `label`
 
@@ -34,7 +34,7 @@ label: &'static str
 
 The label the Inspector's section shows.
 
-<a id="rustdoc-item-6578"></a>
+<a id="rustdoc-item-8616"></a>
 
 ### `fields`
 

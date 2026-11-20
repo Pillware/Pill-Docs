@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1964"></a>
+<a id="rustdoc-item-2020"></a>
 
 # Enum `pill_editor_core::console::ConsoleChannel`
 
@@ -14,7 +14,7 @@ Which side of the running program a line came from.
 
 ## Variants
 
-<a id="rustdoc-item-1962"></a>
+<a id="rustdoc-item-2018"></a>
 
 ### `Engine`
 
@@ -24,7 +24,7 @@ Engine
 
 The engine, the host and the editor itself.
 
-<a id="rustdoc-item-1963"></a>
+<a id="rustdoc-item-2019"></a>
 
 ### `Game`
 
@@ -36,7 +36,7 @@ The project: its modules and its scripts.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-1965"></a>
+<a id="rustdoc-item-2021"></a>
 
 ### `name`
 
@@ -47,7 +47,7 @@ pub fn name(self: Self) -> &'static str;
 The channel's name, as the tab's status row and the `[test] console`
 log line print it.
 
-<a id="rustdoc-item-1966"></a>
+<a id="rustdoc-item-2022"></a>
 
 ### `of_target`
 
@@ -58,7 +58,7 @@ pub fn of_target(target: &str) -> Self;
 The channel a target belongs to.
 
 The engine, the host, the editor and the renderers log under a fixed
-set of crate prefixes ([`ENGINE_PREFIXES`](constant.ENGINE_PREFIXES.md#rustdoc-item-1959)). Every other crate is the
+set of crate prefixes ([`ENGINE_PREFIXES`](constant.ENGINE_PREFIXES.md#rustdoc-item-2015)). Every other crate is the
 project's, whatever its name happens to contain. The check is a prefix
 match on the crate name, not a substring search, so a project crate
 called `my_pill_game` stays in the game channel.

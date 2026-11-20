@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-480"></a>
+<a id="rustdoc-item-610"></a>
 
 # Enum `pill_audio::sound::SoundLoadError`
 
@@ -8,13 +8,13 @@
 pub enum SoundLoadError { ... }
 ```
 
-Source: `extensions\pill_audio\pill_audio\src\sound.rs:222`
+Source: `extensions\pill_audio\modules\runtime\src\sound.rs:217`
 
-Why [`Sound::load`](struct.Sound.md#rustdoc-item-468) could not produce a sound.
+Why [`Sound::load`](struct.Sound.md#rustdoc-item-598) could not produce a sound.
 
 ## Variants
 
-<a id="rustdoc-item-477"></a>
+<a id="rustdoc-item-607"></a>
 
 ### `InvalidPath`
 
@@ -23,9 +23,9 @@ InvalidPath
 ```
 
 No mount holds the path, or its extension is not one of
-[`SUPPORTED_AUDIO_FORMATS`](constant.SUPPORTED_AUDIO_FORMATS.md#rustdoc-item-469).
+[`SUPPORTED_AUDIO_FORMATS`](constant.SUPPORTED_AUDIO_FORMATS.md#rustdoc-item-599).
 
-<a id="rustdoc-item-478"></a>
+<a id="rustdoc-item-608"></a>
 
 ### `Unreadable`
 

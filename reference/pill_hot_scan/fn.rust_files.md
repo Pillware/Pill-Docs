@@ -8,7 +8,7 @@
 pub(crate) fn rust_files(root: &std::path::Path) -> Vec<std::path::PathBuf>;
 ```
 
-Visibility: `crate` · Source: `hosting\pill_hot_scan\src\lib.rs:1398`
+Visibility: `crate` · Source: `hosting\pill_hot_scan\src\lib.rs:1425`
 
 Every `.rs` file under `root`, in stable order so the generated file does not
 churn between builds.

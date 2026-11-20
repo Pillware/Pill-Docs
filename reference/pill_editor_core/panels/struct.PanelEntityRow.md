@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-5872"></a>
+<a id="rustdoc-item-7837"></a>
 
 # Struct `pill_editor_core::panels::PanelEntityRow`
 
@@ -14,7 +14,7 @@ One row of the world's entities, as a panel sees it.
 
 ## Fields
 
-<a id="rustdoc-item-5869"></a>
+<a id="rustdoc-item-7834"></a>
 
 ### `entity`
 
@@ -24,7 +24,7 @@ entity: pill_engine::Entity
 
 The entity's handle.
 
-<a id="rustdoc-item-5870"></a>
+<a id="rustdoc-item-7835"></a>
 
 ### `display`
 
@@ -34,7 +34,7 @@ display: String
 
 The list label the Entities tab shows.
 
-<a id="rustdoc-item-5871"></a>
+<a id="rustdoc-item-7836"></a>
 
 ### `archetype`
 

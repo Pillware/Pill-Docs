@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1329"></a>
+<a id="rustdoc-item-1403"></a>
 
 # Function `pill_development_host::csharp::codegen::emit_opaque_struct`
 
@@ -8,7 +8,7 @@
 pub(in csharp::codegen) fn emit_opaque_struct(name: &str, size: usize, align: usize) -> Result<String, String>;
 ```
 
-Visibility: `{'restricted': {'parent': 1288, 'path': '::csharp::codegen'}}` · Source: `hosting\pill_development_host\src\csharp\codegen.rs:843`
+Visibility: `{'restricted': {'parent': 1362, 'path': '::csharp::codegen'}}` · Source: `hosting\pill_development_host\src\csharp\codegen.rs:840`
 
 Writes an opaque blob struct for a nested type with no `PillMirror`
 descriptor.

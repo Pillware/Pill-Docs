@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-3718"></a>
+<a id="rustdoc-item-3974"></a>
 
 # Module `pill_development_host::renderer_module`
 
@@ -42,19 +42,19 @@ systems, stays mapped, and must have registered no data.
 ## Module contents
 
 ### Structs
-- [`ModuleRenderer`](struct.ModuleRenderer.md#rustdoc-item-3804) — A renderer backend that lives in the renderer module.
-- [`RendererModule`](struct.RendererModule.md#rustdoc-item-3728) — The renderer module: the slot a loaded generation lives in, and the edit
+- [`ModuleRenderer`](struct.ModuleRenderer.md#rustdoc-item-4060) — A renderer backend that lives in the renderer module.
+- [`RendererModule`](struct.RendererModule.md#rustdoc-item-3984) — The renderer module: the slot a loaded generation lives in, and the edit
 
 ### Enums
-- [`RendererModuleChange`](enum.RendererModuleChange.md#rustdoc-item-3734) — What [`RendererModule::reload_if_changed`] found.
+- [`RendererModuleChange`](enum.RendererModuleChange.md#rustdoc-item-3990) — What [`RendererModule::reload_if_changed`] found.
 
 ### Functions
-- [`attach_module_renderer`](fn.attach_module_renderer.md#rustdoc-item-3857) — Build a backend on `window` through the module's attach export.
+- [`attach_module_renderer`](fn.attach_module_renderer.md#rustdoc-item-4113) — Build a backend on `window` through the module's attach export.
 
 ### Type aliases
-- [`AttachFn`](type.AttachFn.md#rustdoc-item-3720) — Signature of the `pill_renderer_attach` export: it builds a backend on the
-- [`DetachFn`](type.DetachFn.md#rustdoc-item-3722) — Signature of the `pill_renderer_detach` export: it drops a backend inside
+- [`AttachFn`](type.AttachFn.md#rustdoc-item-3976) — Signature of the `pill_renderer_attach` export: it builds a backend on the
+- [`DetachFn`](type.DetachFn.md#rustdoc-item-3978) — Signature of the `pill_renderer_detach` export: it drops a backend inside
 
 ### Constants
-- [`ATTACH_SYMBOL`](constant.ATTACH_SYMBOL.md#rustdoc-item-3717) — Export that builds a backend on a window.
-- [`DETACH_SYMBOL`](constant.DETACH_SYMBOL.md#rustdoc-item-3719) — Export that drops a backend inside the module.
+- [`ATTACH_SYMBOL`](constant.ATTACH_SYMBOL.md#rustdoc-item-3973) — Export that builds a backend on a window.
+- [`DETACH_SYMBOL`](constant.DETACH_SYMBOL.md#rustdoc-item-3975) — Export that drops a backend inside the module.

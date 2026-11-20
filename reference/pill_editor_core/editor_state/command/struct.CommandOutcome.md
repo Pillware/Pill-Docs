@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-2389"></a>
+<a id="rustdoc-item-2450"></a>
 
 # Struct `pill_editor_core::editor_state::command::CommandOutcome`
 
@@ -8,13 +8,13 @@
 pub(in editor_state) struct CommandOutcome;
 ```
 
-Visibility: `{'restricted': {'parent': 2404, 'path': '::editor_state'}}` · Source: `editor\pill_editor_core\src\editor_state\command.rs:580`
+Visibility: `{'restricted': {'parent': 2471, 'path': '::editor_state'}}` · Source: `editor\pill_editor_core\src\editor_state\command.rs:749`
 
 What one applied command hands back to the recording layer.
 
 ## Fields
 
-<a id="rustdoc-item-2553"></a>
+<a id="rustdoc-item-2652"></a>
 
 ### `inverse`
 
@@ -24,7 +24,7 @@ inverse: Option<EditorCommand>
 
 The command that reverses this one, when one exists.
 
-<a id="rustdoc-item-2554"></a>
+<a id="rustdoc-item-2653"></a>
 
 ### `remap`
 
@@ -37,7 +37,7 @@ entity. The history moves its older entries to the new handle.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-2555"></a>
+<a id="rustdoc-item-2654"></a>
 
 ### `inverse`
 
@@ -47,7 +47,7 @@ pub(in editor_state) fn inverse(inverse: EditorCommand) -> Self;
 
 A successful command that produced an inverse.
 
-<a id="rustdoc-item-2393"></a>
+<a id="rustdoc-item-2454"></a>
 
 ### `plain`
 

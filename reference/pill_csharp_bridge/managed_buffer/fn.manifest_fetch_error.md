@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1244"></a>
+<a id="rustdoc-item-1267"></a>
 
 # Function `pill_csharp_bridge::managed_buffer::manifest_fetch_error`
 

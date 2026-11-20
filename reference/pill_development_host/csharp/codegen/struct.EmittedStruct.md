@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1291"></a>
+<a id="rustdoc-item-1365"></a>
 
 # Struct `pill_development_host::csharp::codegen::EmittedStruct`
 
@@ -8,13 +8,13 @@
 pub(in csharp::codegen) struct EmittedStruct;
 ```
 
-Visibility: `{'restricted': {'parent': 1288, 'path': '::csharp::codegen'}}` · Source: `hosting\pill_development_host\src\csharp\codegen.rs:142`
+Visibility: `{'restricted': {'parent': 1362, 'path': '::csharp::codegen'}}` · Source: `hosting\pill_development_host\src\csharp\codegen.rs:142`
 
 One nested C# struct to write out, keyed by the Rust path it came from.
 
 ## Fields
 
-<a id="rustdoc-item-1289"></a>
+<a id="rustdoc-item-1363"></a>
 
 ### `qualified`
 
@@ -24,7 +24,7 @@ qualified: String
 
 Rust path (written with `::`) the definition was generated from.
 
-<a id="rustdoc-item-1290"></a>
+<a id="rustdoc-item-1364"></a>
 
 ### `definition`
 

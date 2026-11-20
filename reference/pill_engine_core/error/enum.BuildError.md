@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-4767"></a>
+<a id="rustdoc-item-4999"></a>
 
 # Enum `pill_engine_core::error::BuildError`
 
@@ -19,7 +19,7 @@ registered with `world.register_component::<T>()` first.
 
 ## Variants
 
-<a id="rustdoc-item-4762"></a>
+<a id="rustdoc-item-5628"></a>
 
 ### `ComponentNotRegistered`
 
@@ -30,7 +30,7 @@ ComponentNotRegistered
 One or more component types were not registered with the world.
 Call `world.register_component::<T>()` for each type first.
 
-<a id="rustdoc-item-4764"></a>
+<a id="rustdoc-item-5630"></a>
 
 ### `DuplicateEntityId`
 
@@ -44,7 +44,7 @@ live entity.
 Two entities under one id would make a saved reference ambiguous, so
 the second build is refused rather than merged into the first.
 
-<a id="rustdoc-item-4766"></a>
+<a id="rustdoc-item-5629"></a>
 
 ### `DuplicateComponent`
 
@@ -70,15 +70,16 @@ leave every later entity reading the wrong one.
 - `Any`
 - `ToOwned`
 - `ToString`
+- `CastableFrom<ST, Uninit, Uninit>`
+- `CastableFrom<ST, Initialized, Initialized>`
+- `Read<Exclusive, BecauseExclusive>`
 - `Instrument`
 - `WithSubscriber`
 - `IntoEither`
 - `Pointable`
 - `OwoColorize`
 - `ErasedDestructor`
-- `CastableFrom<ST, Uninit, Uninit>`
-- `CastableFrom<ST, Initialized, Initialized>`
-- `Read<Exclusive, BecauseExclusive>`
+- `Equivalent<K>`
 - `Debug`
 - `Diagnostic`
 - `Error`

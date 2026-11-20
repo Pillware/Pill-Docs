@@ -1,10 +1,10 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-482"></a>
+<a id="rustdoc-item-538"></a>
 
 # Module `pill_editor::runner::assets_pipeline`
 
-Visibility: `{'restricted': {'parent': 483, 'path': '::runner'}}` · Source: `editor\pill_editor\src\runner\assets_pipeline.rs:1`
+Visibility: `{'restricted': {'parent': 539, 'path': '::runner'}}` · Source: `editor\pill_editor\src\runner\assets_pipeline.rs:1`
 
 The executable's half of the Assets pipeline.
 

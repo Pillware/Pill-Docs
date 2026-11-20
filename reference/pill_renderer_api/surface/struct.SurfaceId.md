@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-184"></a>
+<a id="rustdoc-item-187"></a>
 
 # Struct `pill_renderer_api::surface::SurfaceId`
 
@@ -14,7 +14,7 @@ One surface a renderer draws into, unique within that renderer.
 
 ## Fields
 
-<a id="rustdoc-item-989"></a>
+<a id="rustdoc-item-1063"></a>
 
 ### `0`
 
@@ -26,7 +26,7 @@ _No documentation provided._
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-182"></a>
+<a id="rustdoc-item-185"></a>
 
 ### `PRIMARY`
 
@@ -47,15 +47,17 @@ The surface the renderer was attached with.
 - `TryFrom<U>`
 - `Any`
 - `ToOwned`
+- `CastableFrom<ST, Uninit, Uninit>`
+- `CastableFrom<ST, Initialized, Initialized>`
+- `Read<Exclusive, BecauseExclusive>`
 - `Instrument`
 - `WithSubscriber`
 - `IntoEither`
 - `Pointable`
 - `OwoColorize`
 - `ErasedDestructor`
-- `CastableFrom<ST, Uninit, Uninit>`
-- `CastableFrom<ST, Initialized, Initialized>`
-- `Read<Exclusive, BecauseExclusive>`
+- `Equivalent<K>`
+- `Comparable<K>`
 - `Debug`
 - `Clone`
 - `Copy`

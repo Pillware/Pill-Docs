@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-490"></a>
+<a id="rustdoc-item-641"></a>
 
 # Function `pill_engine::declarations::register_all_resources`
 
@@ -8,11 +8,11 @@
 pub fn register_all_resources(world: &mut crate::World);
 ```
 
-Source: `engine\pill_engine\src\declarations.rs:213`
+Source: `engine\pill_engine\src\declarations.rs:345`
 
 Declares every resource this artifact declares.
 
-Called by the artifact entry points after [`register_all_systems`](fn.register_all_systems.md#rustdoc-item-489), so a
+Called by the artifact entry points after [`register_all_systems`](fn.register_all_systems.md#rustdoc-item-639), so a
 first load, every reload and a statically linked build all declare the same
 types before the artifact's own `register` runs. That ordering is what lets
 `insert_resource` in `register` find the declaration already in place: an

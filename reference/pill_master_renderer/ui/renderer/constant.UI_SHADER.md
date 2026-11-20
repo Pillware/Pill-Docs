@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-2957"></a>
+<a id="rustdoc-item-2994"></a>
 
 # Constant `pill_master_renderer::ui::renderer::UI_SHADER`
 
@@ -55,7 +55,7 @@ fn fs_main(in: VertexOut) -> @location(0) vec4<f32> {
 "#;
 ```
 
-Visibility: `{'restricted': {'parent': 2958, 'path': '::ui::renderer'}}` · Source: `extensions\pill_master_renderer\pill_master_renderer\src\ui\renderer.rs:53`
+Visibility: `{'restricted': {'parent': 2995, 'path': '::ui::renderer'}}` · Source: `extensions\pill_master_renderer\modules\runtime\gpu\src\ui\renderer.rs:53`
 
 The whole pipeline in one WGSL source. The vertex stage turns physical
 pixels into clip space, and the fragment stage returns linear light that an

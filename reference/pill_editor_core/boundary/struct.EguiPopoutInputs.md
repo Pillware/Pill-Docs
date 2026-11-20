@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-285"></a>
+<a id="rustdoc-item-328"></a>
 
 # Struct `pill_editor_core::boundary::EguiPopoutInputs`
 
@@ -8,7 +8,7 @@
 pub struct EguiPopoutInputs;
 ```
 
-Source: `editor\pill_editor_core\src\boundary.rs:150`
+Source: `editor\pill_editor_core\src\boundary.rs:176`
 
 One input record per popped-out tab's window.
 
@@ -20,7 +20,7 @@ yet) gets a default one.
 
 ## Fields
 
-<a id="rustdoc-item-283"></a>
+<a id="rustdoc-item-326"></a>
 
 ### `by_tab`
 

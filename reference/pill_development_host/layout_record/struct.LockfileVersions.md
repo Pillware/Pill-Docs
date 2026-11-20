@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-3035"></a>
+<a id="rustdoc-item-3109"></a>
 
 # Struct `pill_development_host::layout_record::LockfileVersions`
 
@@ -18,7 +18,7 @@ rather than once per resource.
 
 ## Fields
 
-<a id="rustdoc-item-3034"></a>
+<a id="rustdoc-item-3108"></a>
 
 ### `versions_by_package`
 
@@ -30,7 +30,7 @@ _No documentation provided._
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-3036"></a>
+<a id="rustdoc-item-3110"></a>
 
 ### `read`
 
@@ -44,7 +44,7 @@ A missing or unparsable lockfile yields an empty map, so every declared
 crate reads as "not in the lockfile" - the same answer a crate that was
 never there gets. The load itself does not fail over a record.
 
-<a id="rustdoc-item-3037"></a>
+<a id="rustdoc-item-3111"></a>
 
 ### `of`
 

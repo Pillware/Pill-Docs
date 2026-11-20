@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1279"></a>
+<a id="rustdoc-item-1347"></a>
 
 # Function `pill_development_host::config::resolve_dependency_path`
 
@@ -8,7 +8,7 @@
 pub(in config) fn resolve_dependency_path(project_root: &std::path::Path, dependency_entry: &mut toml_edit::Item) -> Option<String>;
 ```
 
-Visibility: `{'restricted': {'parent': 821, 'path': '::config'}}` · Source: `hosting\pill_development_host\src\config.rs:2059`
+Visibility: `{'restricted': {'parent': 823, 'path': '::config'}}` · Source: `hosting\pill_development_host\src\config.rs:2460`
 
 Rewrites one dependency entry's `path` to an absolute location and returns
 the resolved path.

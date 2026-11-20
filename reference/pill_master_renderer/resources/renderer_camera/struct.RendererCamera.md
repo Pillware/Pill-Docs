@@ -8,19 +8,19 @@
 pub struct RendererCamera;
 ```
 
-Source: `extensions\pill_master_renderer\pill_master_renderer\src\resources\renderer_camera.rs:177`
+Source: `extensions\pill_master_renderer\modules\runtime\gpu\src\resources\renderer_camera.rs:177`
 
 The GPU-side resources of one camera: its uniform values, the buffer those
 values are written to, and the bind group that exposes the buffer to
 shaders.
 
-It is built once and then only updated in place. [`RendererCamera::update`](#rustdoc-item-2332)
+It is built once and then only updated in place. [`RendererCamera::update`](#rustdoc-item-2374)
 rewrites the buffer's contents on every frame, so moving the camera costs
 one buffer write and no bind group rebuild.
 
 ## Fields
 
-<a id="rustdoc-item-2333"></a>
+<a id="rustdoc-item-2375"></a>
 
 ### `parameters_data`
 
@@ -28,10 +28,10 @@ one buffer write and no bind group rebuild.
 parameters_data: CameraParametersData
 ```
 
-The values for the current frame. [`RendererCamera::update`](#rustdoc-item-2332) rebuilds
+The values for the current frame. [`RendererCamera::update`](#rustdoc-item-2374) rebuilds
 them before it writes them to the buffer.
 
-<a id="rustdoc-item-2334"></a>
+<a id="rustdoc-item-2376"></a>
 
 ### `parameters_uniform_buffer`
 
@@ -41,7 +41,7 @@ parameters_uniform_buffer: wgpu::Buffer
 
 The uniform buffer that holds `parameters_data`.
 
-<a id="rustdoc-item-2335"></a>
+<a id="rustdoc-item-2377"></a>
 
 ### `bind_group_layout`
 
@@ -51,7 +51,7 @@ bind_group_layout: wgpu::BindGroupLayout
 
 The layout the bind group was built from, kept beside it.
 
-<a id="rustdoc-item-2336"></a>
+<a id="rustdoc-item-2378"></a>
 
 ### `bind_group`
 
@@ -62,7 +62,7 @@ bind_group: wgpu::BindGroup
 The bind group every shader that reads the camera binds: at group 1 in
 the chain's pipelines and the mesh drawer, at group 0 in the overlay's.
 
-<a id="rustdoc-item-2337"></a>
+<a id="rustdoc-item-2379"></a>
 
 ### `projection_reported`
 
@@ -76,7 +76,7 @@ instead of once per frame, and clears when the values become usable.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-2338"></a>
+<a id="rustdoc-item-2380"></a>
 
 ### `new`
 
@@ -92,7 +92,7 @@ startup and hands to the camera and to every shader that reads the
 camera. Sharing it is what makes the bind group compatible with those
 pipelines.
 
-<a id="rustdoc-item-2332"></a>
+<a id="rustdoc-item-2374"></a>
 
 ### `update`
 

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-421"></a>
+<a id="rustdoc-item-428"></a>
 
 # Enum `pill_core::error::host::WatcherError`
 
@@ -8,7 +8,7 @@
 pub enum WatcherError { ... }
 ```
 
-Source: `engine\pill_core\src\error\host.rs:548`
+Source: `engine\pill_core\src\error\host.rs:582`
 
 Source-watching startup failures.
 
@@ -21,7 +21,7 @@ still reaches the reader through `Error::source()` and the error chain.
 
 ## Variants
 
-<a id="rustdoc-item-415"></a>
+<a id="rustdoc-item-422"></a>
 
 ### `WatchDirectoryMissing`
 
@@ -31,7 +31,7 @@ WatchDirectoryMissing
 
 The configured watch directory does not exist.
 
-<a id="rustdoc-item-417"></a>
+<a id="rustdoc-item-424"></a>
 
 ### `CreationFailed`
 
@@ -41,7 +41,7 @@ CreationFailed
 
 The platform file watcher could not be created.
 
-<a id="rustdoc-item-420"></a>
+<a id="rustdoc-item-427"></a>
 
 ### `RegistrationFailed`
 

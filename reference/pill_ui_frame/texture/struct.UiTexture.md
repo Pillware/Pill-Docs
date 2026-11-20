@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-474"></a>
+<a id="rustdoc-item-480"></a>
 
 # Struct `pill_ui_frame::texture::UiTexture`
 
@@ -14,7 +14,7 @@ One texture sampled by a frame's draw lists, at one revision.
 
 ## Fields
 
-<a id="rustdoc-item-467"></a>
+<a id="rustdoc-item-473"></a>
 
 ### `id`
 
@@ -24,7 +24,7 @@ id: crate::draw::TextureId
 
 The id the draw lists use to sample this texture.
 
-<a id="rustdoc-item-468"></a>
+<a id="rustdoc-item-474"></a>
 
 ### `width`
 
@@ -34,7 +34,7 @@ width: u32
 
 The image's width in texels.
 
-<a id="rustdoc-item-469"></a>
+<a id="rustdoc-item-475"></a>
 
 ### `height`
 
@@ -44,7 +44,7 @@ height: u32
 
 The image's height in texels.
 
-<a id="rustdoc-item-470"></a>
+<a id="rustdoc-item-476"></a>
 
 ### `revision`
 
@@ -55,7 +55,7 @@ revision: u64
 The revision of the content this entry carries. It goes up every time
 the texture's content changes.
 
-<a id="rustdoc-item-471"></a>
+<a id="rustdoc-item-477"></a>
 
 ### `pixels`
 
@@ -66,7 +66,7 @@ pixels: std::sync::Arc<[u8]>
 The whole image as tightly packed straight-alpha sRGB RGBA8 rows,
 `width * height * 4` bytes.
 
-<a id="rustdoc-item-473"></a>
+<a id="rustdoc-item-479"></a>
 
 ### `filter`
 
@@ -96,6 +96,7 @@ How the texture is sampled.
 - `CastableFrom<ST, Uninit, Uninit>`
 - `CastableFrom<ST, Initialized, Initialized>`
 - `Read<Exclusive, BecauseExclusive>`
+- `Equivalent<K>`
 - `Clone`
 - `Debug`
 - `StructuralPartialEq`

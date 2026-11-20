@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-2030"></a>
+<a id="rustdoc-item-2055"></a>
 
 # Function `pill_csharp_bridge::resources::retire_resources`
 
@@ -8,7 +8,7 @@
 pub(in resources) fn retire_resources(engine: &mut pill_engine::Engine, bindings: &[ResourceBinding]) -> usize;
 ```
 
-Visibility: `{'restricted': {'parent': 1993, 'path': '::resources'}}` · Source: `csharp\pill_csharp_bridge\src\resources.rs:481`
+Visibility: `{'restricted': {'parent': 2018, 'path': '::resources'}}` · Source: `csharp\pill_csharp_bridge\src\resources.rs:481`
 
 Drops the resources the manifest stopped naming.
 

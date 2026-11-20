@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-4207"></a>
+<a id="rustdoc-item-4465"></a>
 
 # Function `pill_development_host::runtime::suspend_stale_subjects`
 
@@ -8,7 +8,7 @@
 pub(in runtime) fn suspend_stale_subjects(host: &mut DevHost);
 ```
 
-Visibility: `{'restricted': {'parent': 3859, 'path': '::runtime'}}` · Source: `hosting\pill_development_host\src\runtime.rs:3185`
+Visibility: `{'restricted': {'parent': 4115, 'path': '::runtime'}}` · Source: `hosting\pill_development_host\src\runtime.rs:3381`
 
 Suspend the systems of every subject built against a shared component
 layout a reload has since replaced, and resume the ones rebuilt since.

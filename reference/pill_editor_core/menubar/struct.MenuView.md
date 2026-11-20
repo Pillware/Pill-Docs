@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-5448"></a>
+<a id="rustdoc-item-7411"></a>
 
 # Struct `pill_editor_core::menubar::MenuView`
 
@@ -8,7 +8,7 @@
 pub struct MenuView<'a>;
 ```
 
-Source: `editor\pill_editor_core\src\menubar.rs:118`
+Source: `editor\pill_editor_core\src\menubar.rs:119`
 
 The values the menus are built from: the frame's snapshot, the selection
 and the registry's command rows.
@@ -18,7 +18,7 @@ the tests build the same rows from the same values.
 
 ## Fields
 
-<a id="rustdoc-item-5445"></a>
+<a id="rustdoc-item-7408"></a>
 
 ### `snapshot`
 
@@ -29,7 +29,7 @@ snapshot: &'a crate::editor_state::EditorSnapshot
 The engine's captured state: the gizmo settings, the grid, the asset
 rows and the history's depths.
 
-<a id="rustdoc-item-5446"></a>
+<a id="rustdoc-item-7409"></a>
 
 ### `selection`
 
@@ -39,7 +39,7 @@ selection: &'a crate::editor_state::EditorSelection
 
 The shared selection the enablement rules read.
 
-<a id="rustdoc-item-5447"></a>
+<a id="rustdoc-item-7410"></a>
 
 ### `commands`
 

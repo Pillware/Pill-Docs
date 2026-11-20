@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-388"></a>
+<a id="rustdoc-item-431"></a>
 
 # Struct `pill_editor_core::boundary::PopoutFrame`
 
@@ -8,13 +8,13 @@
 pub struct PopoutFrame;
 ```
 
-Source: `editor\pill_editor_core\src\boundary.rs:239`
+Source: `editor\pill_editor_core\src\boundary.rs:271`
 
 One popped-out tab's frame: which tab it draws, and the pass's output.
 
 ## Fields
 
-<a id="rustdoc-item-420"></a>
+<a id="rustdoc-item-464"></a>
 
 ### `tab`
 
@@ -24,7 +24,7 @@ tab: String
 
 The tab's wire name, which is also its window's identity.
 
-<a id="rustdoc-item-421"></a>
+<a id="rustdoc-item-465"></a>
 
 ### `title`
 
@@ -34,7 +34,7 @@ title: String
 
 The window's title, as the shell wants it shown.
 
-<a id="rustdoc-item-422"></a>
+<a id="rustdoc-item-466"></a>
 
 ### `frame`
 

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1676"></a>
+<a id="rustdoc-item-1751"></a>
 
 # Struct `pill_development_host::watchers::shared::SourceTrigger`
 
@@ -15,7 +15,7 @@ save had waited before that.
 
 ## Fields
 
-<a id="rustdoc-item-4384"></a>
+<a id="rustdoc-item-4643"></a>
 
 ### `generation`
 
@@ -26,7 +26,7 @@ generation: u64
 The generation this trigger published, which is the value the frame
 loop compares its own counter against.
 
-<a id="rustdoc-item-4385"></a>
+<a id="rustdoc-item-4644"></a>
 
 ### `fired_at`
 
@@ -36,7 +36,7 @@ fired_at: pill_core::platform::Instant
 
 Monotonic instant the signal was published.
 
-<a id="rustdoc-item-4386"></a>
+<a id="rustdoc-item-4645"></a>
 
 ### `detection_delay_ms`
 

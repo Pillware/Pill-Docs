@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-3867"></a>
+<a id="rustdoc-item-4123"></a>
 
 # Struct `pill_development_host::runtime::PendingModule`
 
@@ -8,17 +8,17 @@
 pub(in runtime) struct PendingModule;
 ```
 
-Visibility: `{'restricted': {'parent': 3859, 'path': '::runtime'}}` · Source: `hosting\pill_development_host\src\runtime.rs:115`
+Visibility: `{'restricted': {'parent': 4115, 'path': '::runtime'}}` · Source: `hosting\pill_development_host\src\runtime.rs:115`
 
 An editor-only module whose tolerated first load failed.
 
 Kept with the owner tag and watcher counter its first load would have had,
-so [`DevHost::retry_extension`](struct.DevHost.md#rustdoc-item-3866) can build and load it later without
+so [`DevHost::retry_extension`](struct.DevHost.md#rustdoc-item-4122) can build and load it later without
 restarting the host.
 
 ## Fields
 
-<a id="rustdoc-item-3863"></a>
+<a id="rustdoc-item-4119"></a>
 
 ### `config`
 
@@ -28,7 +28,7 @@ config: crate::config::ExtensionConfig
 
 The module's configuration, reused verbatim by the retry.
 
-<a id="rustdoc-item-3864"></a>
+<a id="rustdoc-item-4120"></a>
 
 ### `owner`
 
@@ -38,7 +38,7 @@ owner: pill_engine::SystemOwner
 
 The owner tag the module's systems register under once it loads.
 
-<a id="rustdoc-item-3865"></a>
+<a id="rustdoc-item-4121"></a>
 
 ### `source_edit_generation`
 

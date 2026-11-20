@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-244"></a>
+<a id="rustdoc-item-245"></a>
 
 # Procedural macro `pill_engine_macros::PillLayout`
 
@@ -8,7 +8,7 @@
 proc_macro PillLayout
 ```
 
-Source: `engine\pill_engine_macros\src\lib.rs:338`
+Source: `engine\pill_engine_macros\src\lib.rs:463`
 
 Emits a type's compile-time field layout without the component
 registration machinery.

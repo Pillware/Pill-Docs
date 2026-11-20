@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1503"></a>
+<a id="rustdoc-item-1578"></a>
 
 # Struct `pill_development_host::csharp::mirror_codegen::DeclaredType`
 
@@ -8,13 +8,13 @@
 pub(in csharp) struct DeclaredType;
 ```
 
-Visibility: `{'restricted': {'parent': 1331, 'path': '::csharp'}}` · Source: `hosting\pill_development_host\src\csharp\mirror_codegen.rs:72`
+Visibility: `{'restricted': {'parent': 1405, 'path': '::csharp'}}` · Source: `hosting\pill_development_host\src\csharp\mirror_codegen.rs:72`
 
 One object type, enum or resource a module declares through a type row.
 
 ## Fields
 
-<a id="rustdoc-item-1498"></a>
+<a id="rustdoc-item-1573"></a>
 
 ### `type_name`
 
@@ -24,7 +24,7 @@ type_name: String
 
 The Rust qualified name that its functions are stored under.
 
-<a id="rustdoc-item-1499"></a>
+<a id="rustdoc-item-1574"></a>
 
 ### `csharp_name`
 
@@ -34,7 +34,7 @@ csharp_name: String
 
 The C# simple name.
 
-<a id="rustdoc-item-1500"></a>
+<a id="rustdoc-item-1575"></a>
 
 ### `namespace`
 
@@ -44,7 +44,7 @@ namespace: String
 
 The C# namespace.
 
-<a id="rustdoc-item-1501"></a>
+<a id="rustdoc-item-1576"></a>
 
 ### `kind`
 
@@ -54,7 +54,7 @@ kind: MirrorKind
 
 The kind of declaration the type row asked for.
 
-<a id="rustdoc-item-1502"></a>
+<a id="rustdoc-item-1577"></a>
 
 ### `row`
 

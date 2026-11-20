@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-247"></a>
+<a id="rustdoc-item-312"></a>
 
 # Struct `pill_audio::audio_manager::AudioSettingsAsset`
 
@@ -8,21 +8,21 @@
 pub struct AudioSettingsAsset;
 ```
 
-Source: `extensions\pill_audio\pill_audio\src\audio_manager.rs:156`
+Source: `extensions\pill_audio\modules\runtime\src\audio_manager.rs:162`
 
 The standalone asset a project tunes the audio device through.
 
-Its document is [`AudioSettings`](struct.AudioSettings.md#rustdoc-item-249), so the file at
+Its document is [`AudioSettings`](struct.AudioSettings.md#rustdoc-item-315), so the file at
 `res/settings/pill_audio.audio_settings` names the same three fields the
 manager applies. The loaded value is only a carrier: the manager reads the
 document, not the asset.
 
-The derive declares the type, so every generation of the module registers it
-with the world's asset store without a call in `register`.
+The attribute declares the type, so every generation of the module registers
+it with the world's asset store without a call in `register`.
 
 ## Fields
 
-<a id="rustdoc-item-344"></a>
+<a id="rustdoc-item-413"></a>
 
 ### `settings`
 

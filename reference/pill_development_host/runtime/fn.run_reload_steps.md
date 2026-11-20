@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-4206"></a>
+<a id="rustdoc-item-4464"></a>
 
 # Function `pill_development_host::runtime::run_reload_steps`
 
@@ -8,7 +8,7 @@
 pub(in runtime) fn run_reload_steps(host: &mut DevHost) -> Vec<String>;
 ```
 
-Visibility: `{'restricted': {'parent': 3859, 'path': '::runtime'}}` · Source: `hosting\pill_development_host\src\runtime.rs:2788`
+Visibility: `{'restricted': {'parent': 4115, 'path': '::runtime'}}` · Source: `hosting\pill_development_host\src\runtime.rs:2968`
 
 Run every reload step of one frame. That covers the extensions' own
 reloads, the per-function fast paths and a pending project reload. It also

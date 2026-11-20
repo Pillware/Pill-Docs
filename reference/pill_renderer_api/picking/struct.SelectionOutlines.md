@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-804"></a>
+<a id="rustdoc-item-874"></a>
 
 # Struct `pill_renderer_api::picking::SelectionOutlines`
 
@@ -14,7 +14,7 @@ The entities a renderer outlines, in one colour.
 
 ## Fields
 
-<a id="rustdoc-item-1215"></a>
+<a id="rustdoc-item-1295"></a>
 
 ### `entities`
 
@@ -24,7 +24,7 @@ entities: Vec<pill_engine::Entity>
 
 The entities to outline. An entity that draws nothing shows no outline.
 
-<a id="rustdoc-item-1216"></a>
+<a id="rustdoc-item-1296"></a>
 
 ### `color`
 
@@ -45,15 +45,15 @@ The outline colour, linear RGBA.
 - `TryFrom<U>`
 - `Any`
 - `ToOwned`
+- `CastableFrom<ST, Uninit, Uninit>`
+- `CastableFrom<ST, Initialized, Initialized>`
+- `Read<Exclusive, BecauseExclusive>`
 - `Instrument`
 - `WithSubscriber`
 - `IntoEither`
 - `Pointable`
 - `OwoColorize`
 - `ErasedDestructor`
-- `CastableFrom<ST, Uninit, Uninit>`
-- `CastableFrom<ST, Initialized, Initialized>`
-- `Read<Exclusive, BecauseExclusive>`
 - `Debug`
 - `Clone`
 - `Default`

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-441"></a>
+<a id="rustdoc-item-598"></a>
 
 # Struct `pill_physics::events::ContactForce`
 
@@ -8,14 +8,14 @@
 pub struct ContactForce;
 ```
 
-Source: `extensions\pill_physics\pill_physics\src\events.rs:52`
+Source: `extensions\pill_physics\modules\runtime\src\events.rs:52`
 
 The force a contact carried, which is what breaks a crate or triggers a
 sound.
 
 ## Fields
 
-<a id="rustdoc-item-437"></a>
+<a id="rustdoc-item-594"></a>
 
 ### `entity_a`
 
@@ -25,7 +25,7 @@ entity_a: pill_engine::Entity
 
 The first of the two entities.
 
-<a id="rustdoc-item-438"></a>
+<a id="rustdoc-item-595"></a>
 
 ### `entity_b`
 
@@ -35,7 +35,7 @@ entity_b: pill_engine::Entity
 
 The second of the two entities.
 
-<a id="rustdoc-item-439"></a>
+<a id="rustdoc-item-596"></a>
 
 ### `magnitude`
 
@@ -45,7 +45,7 @@ magnitude: f32
 
 The largest force the contact carried, in newtons.
 
-<a id="rustdoc-item-440"></a>
+<a id="rustdoc-item-597"></a>
 
 ### `direction`
 

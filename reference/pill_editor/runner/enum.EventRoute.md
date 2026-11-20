@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1334"></a>
+<a id="rustdoc-item-1784"></a>
 
 # Enum `pill_editor::runner::EventRoute`
 
@@ -8,13 +8,13 @@
 pub(in runner) enum EventRoute { ... }
 ```
 
-Visibility: `{'restricted': {'parent': 483, 'path': '::runner'}}` · Source: `editor\pill_editor\src\runner\mod.rs:3620`
+Visibility: `{'restricted': {'parent': 539, 'path': '::runner'}}` · Source: `editor\pill_editor\src\runner\mod.rs:4143`
 
 Where one translated window event belongs, by the focus rule.
 
 ## Variants
 
-<a id="rustdoc-item-1332"></a>
+<a id="rustdoc-item-1782"></a>
 
 ### `Game`
 
@@ -24,7 +24,7 @@ Game
 
 The game's window: the project's systems receive it.
 
-<a id="rustdoc-item-1333"></a>
+<a id="rustdoc-item-1783"></a>
 
 ### `Shell`
 

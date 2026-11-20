@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1675"></a>
+<a id="rustdoc-item-1772"></a>
 
 # Function `pill_master_renderer_data::shader_hot_reload::pill_render_data_shader_changed`
 
@@ -8,7 +8,7 @@
 pub unsafe extern "C" fn pill_render_data_shader_changed(world: *mut pill_engine::World, path: *const u8, path_len: usize, wgsl: *const u8, wgsl_len: usize) -> u32;
 ```
 
-Source: `extensions\pill_master_renderer\pill_master_renderer_data\src\shader_hot_reload.rs:116`
+Source: `extensions\pill_master_renderer\modules\runtime\data\src\shader_hot_reload.rs:116`
 
 Writes one re-cooked WGSL file into the shader assets built from it, in
 `world`'s `AssetManager`.
@@ -17,7 +17,7 @@ Writes one re-cooked WGSL file into the shader assets built from it, in
 with `/` separators (for example
 `pbr_pipeline/shaders/pbr_fragment.wgsl`), and `wgsl` is its text. The
 return value is the number of shader assets that changed, or
-[`SHADER_CHANGE_REFUSED`](constant.SHADER_CHANGE_REFUSED.md#rustdoc-item-1676).
+[`SHADER_CHANGE_REFUSED`](constant.SHADER_CHANGE_REFUSED.md#rustdoc-item-1773).
 
 ## Safety
 

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1749"></a>
+<a id="rustdoc-item-1773"></a>
 
 # Constant `pill_csharp_bridge::parallel::PARALLEL_NO_SCOPE`
 

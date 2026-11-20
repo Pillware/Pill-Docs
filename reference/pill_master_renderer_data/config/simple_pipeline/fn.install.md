@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1525"></a>
+<a id="rustdoc-item-1622"></a>
 
 # Function `pill_master_renderer_data::config::simple_pipeline::install`
 
@@ -8,7 +8,7 @@
 pub fn install(assets: &mut pill_engine::AssetManager) -> Result<pill_engine::Handle<crate::assets::RenderingPipeline>, Box<dyn std::error::Error>>;
 ```
 
-Source: `extensions\pill_master_renderer\pill_master_renderer_data\src\config\simple_pipeline\mod.rs:108`
+Source: `extensions\pill_master_renderer\modules\runtime\data\src\config\simple_pipeline\mod.rs:108`
 
 Install the simple frame, and return the pipeline asset.
 
@@ -26,4 +26,4 @@ already belongs to a live asset of that type.
 ## Panics
 
 Panics when the shader's `.hlsl.meta` is missing or names a guid other than
-[`SHADER_GUID`](constant.SHADER_GUID.md#rustdoc-item-1529).
+[`SHADER_GUID`](constant.SHADER_GUID.md#rustdoc-item-1626).

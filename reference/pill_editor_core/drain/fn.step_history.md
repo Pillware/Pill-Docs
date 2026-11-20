@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-2329"></a>
+<a id="rustdoc-item-2389"></a>
 
 # Function `pill_editor_core::drain::step_history`
 
@@ -8,7 +8,7 @@
 pub fn step_history(engine: &mut pill_engine::Engine, direction: HistoryDirection) -> HistoryOutcome;
 ```
 
-Source: `editor\pill_editor_core\src\drain.rs:293`
+Source: `editor\pill_editor_core\src\drain.rs:428`
 
 Pops one history entry and queues its batch, which is applied but never
 recorded.

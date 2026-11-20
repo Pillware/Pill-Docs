@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1030"></a>
+<a id="rustdoc-item-1052"></a>
 
 # Module `pill_csharp_bridge::context`
 
@@ -29,29 +29,29 @@ value is either fully there or not there at all.
 ## Module contents
 
 ### Structs
-- [`ActiveScopeData`](struct.ActiveScopeData.md#rustdoc-item-1029) — One complete managed invocation scope.
-- [`ActiveScopeGuard`](struct.ActiveScopeGuard.md#rustdoc-item-1073) — Keeps the thread-local invocation scope installed for exactly one managed
+- [`ActiveScopeData`](struct.ActiveScopeData.md#rustdoc-item-1051) — One complete managed invocation scope.
+- [`ActiveScopeGuard`](struct.ActiveScopeGuard.md#rustdoc-item-1095) — Keeps the thread-local invocation scope installed for exactly one managed
 
 ### Functions
-- [`access_is_authorized`](fn.access_is_authorized.md#rustdoc-item-1112) — Checks whether the active system declared the requested component mode.
-- [`active_scope_token`](fn.active_scope_token.md#rustdoc-item-1107) — Returns the token of the invocation active on this thread, or zero when
-- [`active_world_exists`](fn.active_world_exists.md#rustdoc-item-1109) — Reports whether a managed scope exists, without dereferencing its world
-- [`archetype_was_observed`](fn.archetype_was_observed.md#rustdoc-item-1113) — Returns whether a validated term has already served this archetype in the
-- [`declared_access_allows`](fn.declared_access_allows.md#rustdoc-item-1116) — Returns whether the active system's declared access list allows one request.
-- [`ffi_current_scope_token`](fn.ffi_current_scope_token.md#rustdoc-item-1108) — Returns [`active_scope_token`] to managed code through the engine API table.
-- [`guard_managed_callback`](fn.guard_managed_callback.md#rustdoc-item-1104) — Runs one managed FFI callback and turns a panic into its failure status.
-- [`native_resource_access_is_authorized`](fn.native_resource_access_is_authorized.md#rustdoc-item-1115) — The counterpart of [`resource_access_is_authorized`] for a Rust-owned
-- [`record_observed_archetype`](fn.record_observed_archetype.md#rustdoc-item-1111) — Records that a validated term served an archetype to managed code during
-- [`resource_access_is_authorized`](fn.resource_access_is_authorized.md#rustdoc-item-1114) — The resource counterpart of [`access_is_authorized`].
-- [`with_active_command_context`](fn.with_active_command_context.md#rustdoc-item-1105) — Runs a callback with the active world, deferred command queue, component
-- [`with_active_context`](fn.with_active_context.md#rustdoc-item-1110) — Runs a callback with the active world and its stable component binding
-- [`with_active_world`](fn.with_active_world.md#rustdoc-item-1106) — Runs a callback with the world of the active managed invocation, returning
+- [`access_is_authorized`](fn.access_is_authorized.md#rustdoc-item-1134) — Checks whether the active system declared the requested component mode.
+- [`active_scope_token`](fn.active_scope_token.md#rustdoc-item-1129) — Returns the token of the invocation active on this thread, or zero when
+- [`active_world_exists`](fn.active_world_exists.md#rustdoc-item-1131) — Reports whether a managed scope exists, without dereferencing its world
+- [`archetype_was_observed`](fn.archetype_was_observed.md#rustdoc-item-1135) — Returns whether a validated term has already served this archetype in the
+- [`declared_access_allows`](fn.declared_access_allows.md#rustdoc-item-1138) — Returns whether the active system's declared access list allows one request.
+- [`ffi_current_scope_token`](fn.ffi_current_scope_token.md#rustdoc-item-1130) — Returns [`active_scope_token`] to managed code through the engine API table.
+- [`guard_managed_callback`](fn.guard_managed_callback.md#rustdoc-item-1126) — Runs one managed FFI callback and turns a panic into its failure status.
+- [`native_resource_access_is_authorized`](fn.native_resource_access_is_authorized.md#rustdoc-item-1137) — The counterpart of [`resource_access_is_authorized`] for a Rust-owned
+- [`record_observed_archetype`](fn.record_observed_archetype.md#rustdoc-item-1133) — Records that a validated term served an archetype to managed code during
+- [`resource_access_is_authorized`](fn.resource_access_is_authorized.md#rustdoc-item-1136) — The resource counterpart of [`access_is_authorized`].
+- [`with_active_command_context`](fn.with_active_command_context.md#rustdoc-item-1127) — Runs a callback with the active world, deferred command queue, component
+- [`with_active_context`](fn.with_active_context.md#rustdoc-item-1132) — Runs a callback with the active world and its stable component binding
+- [`with_active_world`](fn.with_active_world.md#rustdoc-item-1128) — Runs a callback with the world of the active managed invocation, returning
 
 ### Constants
-- [`ACCESS_KIND_COMPONENT`](constant.ACCESS_KIND_COMPONENT.md#rustdoc-item-1024) — Marks an access entry that names a component.
-- [`ACCESS_KIND_NATIVE_RESOURCE`](constant.ACCESS_KIND_NATIVE_RESOURCE.md#rustdoc-item-1026) — Marks an access entry that names a Rust-owned resource by its shared name
-- [`ACCESS_KIND_RESOURCE`](constant.ACCESS_KIND_RESOURCE.md#rustdoc-item-1025) — Marks an access entry that names a resource from the managed manifest.
-- [`ACTIVE_SCOPE`](constant.ACTIVE_SCOPE.md#rustdoc-item-1027) — The complete managed invocation scope for the current thread.
-- [`OBSERVED_ARCHETYPES`](constant.OBSERVED_ARCHETYPES.md#rustdoc-item-1033) — Archetypes this invocation has already served to managed code.
-- [`RESERVED_ENTITIES`](constant.RESERVED_ENTITIES.md#rustdoc-item-1031) — Entity handles reserved during this invocation and not yet used by a
-- [`SCOPE_TOKEN`](constant.SCOPE_TOKEN.md#rustdoc-item-1035) — Counter of managed invocations on this thread, copied into every chunk.
+- [`ACCESS_KIND_COMPONENT`](constant.ACCESS_KIND_COMPONENT.md#rustdoc-item-1046) — Marks an access entry that names a component.
+- [`ACCESS_KIND_NATIVE_RESOURCE`](constant.ACCESS_KIND_NATIVE_RESOURCE.md#rustdoc-item-1048) — Marks an access entry that names a Rust-owned resource by its shared name
+- [`ACCESS_KIND_RESOURCE`](constant.ACCESS_KIND_RESOURCE.md#rustdoc-item-1047) — Marks an access entry that names a resource from the managed manifest.
+- [`ACTIVE_SCOPE`](constant.ACTIVE_SCOPE.md#rustdoc-item-1049) — The complete managed invocation scope for the current thread.
+- [`OBSERVED_ARCHETYPES`](constant.OBSERVED_ARCHETYPES.md#rustdoc-item-1055) — Archetypes this invocation has already served to managed code.
+- [`RESERVED_ENTITIES`](constant.RESERVED_ENTITIES.md#rustdoc-item-1053) — Entity handles reserved during this invocation and not yet used by a
+- [`SCOPE_TOKEN`](constant.SCOPE_TOKEN.md#rustdoc-item-1057) — Counter of managed invocations on this thread, copied into every chunk.

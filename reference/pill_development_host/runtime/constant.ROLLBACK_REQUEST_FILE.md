@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-3861"></a>
+<a id="rustdoc-item-4117"></a>
 
 # Constant `pill_development_host::runtime::ROLLBACK_REQUEST_FILE`
 
@@ -8,7 +8,7 @@
 pub(in runtime) const ROLLBACK_REQUEST_FILE: &str = "target/hot/rollback.request";
 ```
 
-Visibility: `{'restricted': {'parent': 3859, 'path': '::runtime'}}` · Source: `hosting\pill_development_host\src\runtime.rs:92`
+Visibility: `{'restricted': {'parent': 4115, 'path': '::runtime'}}` · Source: `hosting\pill_development_host\src\runtime.rs:92`
 
 File a developer or a script drops to drive live patching, relative to the
 workspace root.

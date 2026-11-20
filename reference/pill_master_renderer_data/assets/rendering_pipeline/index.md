@@ -1,17 +1,17 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-726"></a>
+<a id="rustdoc-item-722"></a>
 
 # Module `pill_master_renderer_data::assets::rendering_pipeline`
 
-Visibility: `{'restricted': {'parent': 248, 'path': '::assets'}}` · Source: `extensions\pill_master_renderer\pill_master_renderer_data\src\assets\rendering_pipeline.rs:1`
+Visibility: `{'restricted': {'parent': 248, 'path': '::assets'}}` · Source: `extensions\pill_master_renderer\modules\runtime\data\src\assets\rendering_pipeline.rs:1`
 
 An ordered list of passes, as one asset.
 
 ## Responsibilities
 
 - Hold the passes a frame runs, in the order the game wrote them, each with
-  this chain's own switch for it ([`PipelinePass`](struct.PipelinePass.md#rustdoc-item-547)).
+  this chain's own switch for it ([`PipelinePass`](struct.PipelinePass.md#rustdoc-item-544)).
 - Stay a list of handles rather than a copy of the passes, so one pass can
   appear in several pipelines and editing a pass does not duplicate it.
 
@@ -39,10 +39,10 @@ own business; `AssetManager::handle_by_name` finds an asset by name.
 ## Module contents
 
 ### Structs
-- [`PipelinePass`](struct.PipelinePass.md#rustdoc-item-547) — One pass in a pipeline, with this chain's own on/off switch for it.
-- [`PipelinePassDocument`](struct.PipelinePassDocument.md#rustdoc-item-651) — One entry in a `.pipeline` file: the pass it names, and whether this chain
-- [`RenderingPipeline`](struct.RenderingPipeline.md#rustdoc-item-435) — The passes a frame runs, in the order they were added.
-- [`RenderingPipelineDocument`](struct.RenderingPipelineDocument.md#rustdoc-item-643) — The pipeline as its file holds it. The passes are listed in the order they
+- [`PipelinePass`](struct.PipelinePass.md#rustdoc-item-544) — One pass in a pipeline, with this chain's own on/off switch for it.
+- [`PipelinePassDocument`](struct.PipelinePassDocument.md#rustdoc-item-647) — One entry in a `.pipeline` file: the pass it names, and whether this chain
+- [`RenderingPipeline`](struct.RenderingPipeline.md#rustdoc-item-432) — The passes a frame runs, in the order they were added.
+- [`RenderingPipelineDocument`](struct.RenderingPipelineDocument.md#rustdoc-item-641) — The pipeline as its file holds it. The passes are listed in the order they
 
 ### Functions
-- [`enabled_by_default`](fn.enabled_by_default.md#rustdoc-item-725) — The default for `enabled`, which is on. The serde attribute and [`Default`]
+- [`enabled_by_default`](fn.enabled_by_default.md#rustdoc-item-721) — The default for `enabled`, which is on. The serde attribute and [`Default`]

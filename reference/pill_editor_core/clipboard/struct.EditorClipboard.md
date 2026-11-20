@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1080"></a>
+<a id="rustdoc-item-1124"></a>
 
 # Struct `pill_editor_core::clipboard::EditorClipboard`
 
@@ -15,7 +15,7 @@ executable last read back.
 
 ## Fields
 
-<a id="rustdoc-item-1078"></a>
+<a id="rustdoc-item-1122"></a>
 
 ### `request`
 
@@ -26,7 +26,7 @@ request: Option<ClipboardRequest>
 The request waiting for the executable, which takes it at the frame
 boundary.
 
-<a id="rustdoc-item-1079"></a>
+<a id="rustdoc-item-1123"></a>
 
 ### `text`
 
@@ -39,7 +39,7 @@ the text is not a payload.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-1081"></a>
+<a id="rustdoc-item-1125"></a>
 
 ### `take_request`
 

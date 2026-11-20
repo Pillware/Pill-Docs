@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-4029"></a>
+<a id="rustdoc-item-4504"></a>
 
 # Constant `pill_editor_core::gizmo::PLANE_ALPHA`
 
@@ -8,7 +8,7 @@
 pub const PLANE_ALPHA: f32 = 0.55;
 ```
 
-Source: `editor\pill_editor_core\src\gizmo.rs:503`
+Source: `editor\pill_editor_core\src\gizmo.rs:621`
 
 The plane squares' alpha: translucent, so the axis arrows behind them stay
 visible.

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1500"></a>
+<a id="rustdoc-item-1524"></a>
 
 # Function `pill_csharp_bridge::manifest::plan_tag`
 

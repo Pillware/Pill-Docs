@@ -5,7 +5,7 @@
 # Constant `pill_csharp_bridge::backend::INTEROP_CONTRACT_VERSION`
 
 ```rust
-pub const INTEROP_CONTRACT_VERSION: u32 = 18;
+pub const INTEROP_CONTRACT_VERSION: u32 = 19;
 ```
 
 Source: `csharp\pill_csharp_bridge\src\backend.rs:126`

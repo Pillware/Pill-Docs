@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-5770"></a>
+<a id="rustdoc-item-7735"></a>
 
 # Type alias `pill_editor_core::panels::PanelDrawFn`
 

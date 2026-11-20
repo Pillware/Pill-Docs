@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1508"></a>
+<a id="rustdoc-item-1532"></a>
 
 # Type alias `pill_csharp_bridge::manifest_apply::Applied`
 

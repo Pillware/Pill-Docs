@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-2548"></a>
+<a id="rustdoc-item-2588"></a>
 
 # Struct `pill_master_renderer::resources::renderer_shader::RendererShader`
 
@@ -8,7 +8,7 @@
 pub struct RendererShader;
 ```
 
-Source: `extensions\pill_master_renderer\pill_master_renderer\src\resources\renderer_shader.rs:57`
+Source: `extensions\pill_master_renderer\modules\runtime\gpu\src\resources\renderer_shader.rs:57`
 
 One shader's GPU pipeline and the group layouts its draws bind.
 
@@ -17,7 +17,7 @@ this shader binds its parameters and textures through these layouts.
 
 ## Fields
 
-<a id="rustdoc-item-2677"></a>
+<a id="rustdoc-item-2716"></a>
 
 ### `name`
 
@@ -28,7 +28,7 @@ name: String
 The shader asset's name, used in wgpu object labels, logs and error
 messages.
 
-<a id="rustdoc-item-2678"></a>
+<a id="rustdoc-item-2717"></a>
 
 ### `render_pipeline`
 
@@ -41,7 +41,7 @@ The pipeline a draw through this shader binds.
 A pass that owns a pipeline draws through its own instead, because only
 the pass knows the target's format, its depth settings and its culling.
 
-<a id="rustdoc-item-2679"></a>
+<a id="rustdoc-item-2718"></a>
 
 ### `parameter_slots`
 
@@ -51,7 +51,7 @@ parameter_slots: indexmap::IndexMap<String, crate::assets::ShaderParameterSlot>
 
 The uniforms the shader declares, by name, in declaration order.
 
-<a id="rustdoc-item-2682"></a>
+<a id="rustdoc-item-2721"></a>
 
 ### `parameters_bind_group_layout`
 
@@ -62,7 +62,7 @@ parameters_bind_group_layout: Option<wgpu::BindGroupLayout>
 Layout of the parameters group (set 2), or `None` when the shader
 declares no parameters.
 
-<a id="rustdoc-item-2683"></a>
+<a id="rustdoc-item-2722"></a>
 
 ### `texture_slots`
 
@@ -72,7 +72,7 @@ texture_slots: indexmap::IndexMap<String, crate::assets::ShaderTextureSlot>
 
 The textures the shader declares, by name, each with its bindings.
 
-<a id="rustdoc-item-2685"></a>
+<a id="rustdoc-item-2724"></a>
 
 ### `textures_bind_group_layout`
 
@@ -83,7 +83,7 @@ textures_bind_group_layout: Option<wgpu::BindGroupLayout>
 Layout of the textures group (set 3), or `None` when the shader
 declares no textures.
 
-<a id="rustdoc-item-2686"></a>
+<a id="rustdoc-item-2725"></a>
 
 ### `reads_engine_parameters`
 
@@ -94,7 +94,7 @@ reads_engine_parameters: bool
 Whether the shader reads the engine's parameters, in which case a
 drawer binds that group before the draw.
 
-<a id="rustdoc-item-2687"></a>
+<a id="rustdoc-item-2726"></a>
 
 ### `reads_camera_parameters`
 
@@ -107,7 +107,7 @@ drawer binds that group before the draw.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-2688"></a>
+<a id="rustdoc-item-2727"></a>
 
 ### `new`
 

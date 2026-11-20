@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1367"></a>
+<a id="rustdoc-item-1451"></a>
 
 # Struct `pill_renderer_api::picking::PickRequests`
 
@@ -8,17 +8,17 @@
 pub struct PickRequests;
 ```
 
-Source: `rendering\pill_renderer_api\src\picking.rs:120`
+Source: `rendering\pill_renderer_api\src\picking.rs:126`
 
 The picks asked for and not yet handed to a renderer.
 
 It is a world resource. A frontend or an editor tool adds requests, the
 next frame carries them to the renderer, and the answers arrive in
-[`PickResults`](struct.PickResults.md#rustdoc-item-198).
+[`PickResults`](struct.PickResults.md#rustdoc-item-201).
 
 ## Fields
 
-<a id="rustdoc-item-1364"></a>
+<a id="rustdoc-item-1448"></a>
 
 ### `pending`
 
@@ -28,7 +28,7 @@ pending: Vec<PickRequest>
 
 Requests waiting for the next frame.
 
-<a id="rustdoc-item-1365"></a>
+<a id="rustdoc-item-1449"></a>
 
 ### `next_id`
 
@@ -40,7 +40,7 @@ The id the next request gets.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-1368"></a>
+<a id="rustdoc-item-1452"></a>
 
 ### `request`
 
@@ -62,15 +62,15 @@ the answer will carry.
 - `TryFrom<U>`
 - `Any`
 - `ToOwned`
+- `CastableFrom<ST, Uninit, Uninit>`
+- `CastableFrom<ST, Initialized, Initialized>`
+- `Read<Exclusive, BecauseExclusive>`
 - `Instrument`
 - `WithSubscriber`
 - `IntoEither`
 - `Pointable`
 - `OwoColorize`
 - `ErasedDestructor`
-- `CastableFrom<ST, Uninit, Uninit>`
-- `CastableFrom<ST, Initialized, Initialized>`
-- `Read<Exclusive, BecauseExclusive>`
 - `Debug`
 - `Clone`
 - `Default`

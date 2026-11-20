@@ -8,7 +8,7 @@
 pub(crate) fn impl_header_names(header: &str) -> Option<(Option<String>, String)>;
 ```
 
-Visibility: `crate` · Source: `hosting\pill_hot_scan\src\lib.rs:741`
+Visibility: `crate` · Source: `hosting\pill_hot_scan\src\lib.rs:768`
 
 The trait and type an `impl` header names, if it names exactly one of each.
 

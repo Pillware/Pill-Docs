@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-4363"></a>
+<a id="rustdoc-item-6079"></a>
 
 # Function `pill_engine_core::engine::system_zone_color`
 
@@ -8,7 +8,7 @@
 pub(in engine) fn system_zone_color(system_owner: SystemOwner) -> u32;
 ```
 
-Visibility: `{'restricted': {'parent': 4158, 'path': '::engine'}}` · Source: `engine\pill_engine_core\src\engine.rs:1718`
+Visibility: `{'restricted': {'parent': 5715, 'path': '::engine'}}` · Source: `engine\pill_engine_core\src\engine.rs:2358`
 
 The Tracy zone color of a system with this owner.
 

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-881"></a>
+<a id="rustdoc-item-891"></a>
 
 # Type alias `pill_core::math::Vector2i`
 

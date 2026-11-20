@@ -8,7 +8,7 @@
 pub struct Texture;
 ```
 
-Source: `extensions\pill_master_renderer\pill_master_renderer_data\src\assets\texture.rs:138`
+Source: `extensions\pill_master_renderer\modules\runtime\data\src\assets\texture.rs:138`
 
 Decoded texels under a name, ready for the renderer to upload.
 
@@ -19,7 +19,7 @@ state.
 
 ## Fields
 
-<a id="rustdoc-item-1169"></a>
+<a id="rustdoc-item-1159"></a>
 
 ### `name`
 
@@ -29,7 +29,7 @@ name: String
 
 Label for the GPU resource. The logs and error messages use it too.
 
-<a id="rustdoc-item-1171"></a>
+<a id="rustdoc-item-1161"></a>
 
 ### `rgba`
 
@@ -37,13 +37,13 @@ Label for the GPU resource. The logs and error messages use it too.
 rgba: Vec<u8>
 ```
 
-The texels in RGBA order, laid out as [`Self::texture_type`](#rustdoc-item-1170) says.
+The texels in RGBA order, laid out as [`Self::texture_type`](#rustdoc-item-1160) says.
 Colour and normal maps use four bytes per texel, an environment uses
 four little-endian half floats, and a cubemap holds its six faces one
 after another. The constructors check the length against the dimensions
 before a texture exists.
 
-<a id="rustdoc-item-1172"></a>
+<a id="rustdoc-item-1162"></a>
 
 ### `width`
 
@@ -53,7 +53,7 @@ width: u32
 
 Width in texels; for a cubemap, of each face.
 
-<a id="rustdoc-item-1173"></a>
+<a id="rustdoc-item-1163"></a>
 
 ### `height`
 
@@ -63,7 +63,7 @@ height: u32
 
 Height in texels; for a cubemap, of each face.
 
-<a id="rustdoc-item-1170"></a>
+<a id="rustdoc-item-1160"></a>
 
 ### `texture_type`
 
@@ -75,7 +75,7 @@ How a shader should read the texels.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-1174"></a>
+<a id="rustdoc-item-1164"></a>
 
 ### `new`
 
@@ -97,7 +97,7 @@ Returns whatever the loader reports when the file is missing or
 unreadable, and [`AssetLoadError::Decode`] when the bytes are not an
 image this crate can decode.
 
-<a id="rustdoc-item-1175"></a>
+<a id="rustdoc-item-1165"></a>
 
 ### `decode`
 
@@ -108,7 +108,7 @@ pub(in assets::texture) fn decode(name: String, texture_type: TextureType, bytes
 Decodes an encoded image (PNG, JPEG or Radiance HDR) into a texture of
 `texture_type`.
 
-This is the one decode path, shared by [`Self::new`](#rustdoc-item-1174) and the metadata
+This is the one decode path, shared by [`Self::new`](#rustdoc-item-1164) and the metadata
 import.
 
 #### Errors
@@ -116,7 +116,7 @@ import.
 Returns [`AssetLoadError::Decode`] when the bytes are not an image this
 crate can decode.
 
-<a id="rustdoc-item-1177"></a>
+<a id="rustdoc-item-1167"></a>
 
 ### `from_rgba`
 
@@ -129,7 +129,7 @@ dimensions.
 
 Use this for texels that were made rather than loaded, such as a
 procedural image or a single-colour stand-in, where no file exists to
-decode. The buffer is laid out as [`Self::rgba`](#rustdoc-item-1171) describes for
+decode. The buffer is laid out as [`Self::rgba`](#rustdoc-item-1161) describes for
 `texture_type`.
 
 #### Errors
@@ -140,7 +140,7 @@ square. The GPU upload checks the length again, but it can only report a
 mismatch as an upload failure. Checking here names the texture while its
 own numbers are still at hand.
 
-<a id="rustdoc-item-1178"></a>
+<a id="rustdoc-item-1168"></a>
 
 ### `from_rgba_f32`
 
@@ -151,8 +151,8 @@ pub fn from_rgba_f32<impl Into<String>: Into<String>>(name: impl Into<String>, t
 Builds an environment texture from linear RGBA float texels of an
 equirectangular panorama.
 
-A [`TextureType::Equirect`](enum.TextureType.md#rustdoc-item-1115) texture keeps the panorama as it is. A
-[`TextureType::Cubemap`](enum.TextureType.md#rustdoc-item-1117) is projected from it, with faces a quarter of
+A [`TextureType::Equirect`](enum.TextureType.md#rustdoc-item-1106) texture keeps the panorama as it is. A
+[`TextureType::Cubemap`](enum.TextureType.md#rustdoc-item-1108) is projected from it, with faces a quarter of
 the panorama's width.
 
 #### Errors
@@ -172,20 +172,20 @@ four channels each.
 - `TryFrom<U>`
 - `Any`
 - `ToOwned`
+- `CastableFrom<ST, Uninit, Uninit>`
+- `CastableFrom<ST, Initialized, Initialized>`
+- `Read<Exclusive, BecauseExclusive>`
 - `Instrument`
 - `WithSubscriber`
 - `IntoEither`
 - `Pointable`
 - `OwoColorize`
 - `ErasedDestructor`
-- `CastableFrom<ST, Uninit, Uninit>`
-- `CastableFrom<ST, Initialized, Initialized>`
-- `Read<Exclusive, BecauseExclusive>`
+- `Clone`
+- `Debug`
 - `MirrorObject`
 - `Asset`
 - `MirrorValue`
 - `MirrorReturn`
-- `Clone`
-- `Debug`
-- `ImportedAsset`
 - `TraitAccessible<dyn Asset>`
+- `ImportedAsset`

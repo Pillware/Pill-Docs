@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-7"></a>
+<a id="rustdoc-item-163"></a>
 
 # Struct `pill_test::ModuleTest`
 
@@ -8,7 +8,7 @@
 pub struct ModuleTest;
 ```
 
-Source: `extensions\pill_test\pill_test\src\pill_test.rs:67`
+Source: `extensions\pill_test\modules\runtime\src\pill_test.rs:73`
 
 Per-entity state this module defines.
 
@@ -19,7 +19,7 @@ name, a new field gets its default, and a removed field is ignored.
 
 ## Fields
 
-<a id="rustdoc-item-5"></a>
+<a id="rustdoc-item-161"></a>
 
 ### `processed_frame_count`
 
@@ -29,7 +29,7 @@ processed_frame_count: u64
 
 Number of frames this entity has been processed for.
 
-<a id="rustdoc-item-6"></a>
+<a id="rustdoc-item-162"></a>
 
 ### `accumulated_time`
 
@@ -41,7 +41,7 @@ Accumulated simulated time, in seconds.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-8"></a>
+<a id="rustdoc-item-164"></a>
 
 ### `FIELD_LAYOUT`
 
@@ -81,3 +81,4 @@ macro; pass it to `World::register_component_with_layout`.
 - `Deserialize<'de>`
 - `Component`
 - `ComponentLayout`
+- `ComponentFields`

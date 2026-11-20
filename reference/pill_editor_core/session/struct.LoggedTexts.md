@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-7866"></a>
+<a id="rustdoc-item-9928"></a>
 
 # Struct `pill_editor_core::session::LoggedTexts`
 
@@ -8,14 +8,14 @@
 pub struct LoggedTexts<K: Ord + Clone>;
 ```
 
-Source: `editor\pill_editor_core\src\session.rs:700`
+Source: `editor\pill_editor_core\src\session.rs:707`
 
 The texts a pass last reported per key, so a row logs a changed value once
 rather than once a frame.
 
 ## Fields
 
-<a id="rustdoc-item-7865"></a>
+<a id="rustdoc-item-9927"></a>
 
 ### `texts_by_key`
 
@@ -27,7 +27,7 @@ The text last remembered per key.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-7867"></a>
+<a id="rustdoc-item-9929"></a>
 
 ### `remember`
 
@@ -38,7 +38,7 @@ pub fn remember(self: &mut Self, key: K, text: &str) -> bool;
 Record `text` for `key`, answering whether it changed since the last
 draw that reported it.
 
-<a id="rustdoc-item-7868"></a>
+<a id="rustdoc-item-9930"></a>
 
 ### `get`
 
@@ -48,7 +48,7 @@ pub fn get(self: &Self, key: &K) -> Option<&str>;
 
 The text last logged for `key`.
 
-<a id="rustdoc-item-7869"></a>
+<a id="rustdoc-item-9931"></a>
 
 ### `iter`
 
@@ -58,7 +58,7 @@ pub fn iter(self: &Self) -> impl Iterator<Item = _>;
 
 Every remembered key with its text, in key order.
 
-<a id="rustdoc-item-7870"></a>
+<a id="rustdoc-item-9932"></a>
 
 ### `forget_missing`
 
@@ -66,9 +66,9 @@ Every remembered key with its text, in key order.
 pub fn forget_missing(self: &mut Self, seen: &BTreeSet<K>);
 ```
 
-Drop every key `seen` does not name; see [`LoggedRects::forget_missing`](struct.LoggedRects.md#rustdoc-item-7820).
+Drop every key `seen` does not name; see [`LoggedRects::forget_missing`](struct.LoggedRects.md#rustdoc-item-9882).
 
-<a id="rustdoc-item-7871"></a>
+<a id="rustdoc-item-9933"></a>
 
 ### `clear`
 
@@ -78,7 +78,7 @@ pub fn clear(self: &mut Self);
 
 Drop every entry.
 
-<a id="rustdoc-item-7872"></a>
+<a id="rustdoc-item-9934"></a>
 
 ### `len`
 
@@ -88,7 +88,7 @@ pub fn len(self: &Self) -> usize;
 
 How many texts are remembered.
 
-<a id="rustdoc-item-7873"></a>
+<a id="rustdoc-item-9935"></a>
 
 ### `is_empty`
 

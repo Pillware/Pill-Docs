@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-3069"></a>
+<a id="rustdoc-item-3143"></a>
 
 # Function `pill_development_host::layout_record::write_record`
 

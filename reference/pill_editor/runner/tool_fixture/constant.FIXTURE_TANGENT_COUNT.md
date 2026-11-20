@@ -1,0 +1,13 @@
+<!-- This file is generated. Do not edit it directly. -->
+
+<a id="rustdoc-item-1282"></a>
+
+# Constant `pill_editor::runner::tool_fixture::FIXTURE_TANGENT_COUNT`
+
+```rust
+pub(in runner) const FIXTURE_TANGENT_COUNT: usize = 2;
+```
+
+Visibility: `{'restricted': {'parent': 539, 'path': '::runner'}}` · Source: `editor\pill_editor\src\runner\tool_fixture.rs:47`
+
+How many `tangent` elements the fixture reports.

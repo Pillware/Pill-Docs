@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-6657"></a>
+<a id="rustdoc-item-8695"></a>
 
 # Struct `pill_editor_core::scene_workflow::SceneSession`
 
@@ -15,7 +15,7 @@ marker.
 
 ## Fields
 
-<a id="rustdoc-item-6655"></a>
+<a id="rustdoc-item-8693"></a>
 
 ### `open`
 
@@ -26,7 +26,7 @@ open: Option<OpenScene>
 The scene file the world came from, or `None` when no file backs it
 (a new scene).
 
-<a id="rustdoc-item-6656"></a>
+<a id="rustdoc-item-8694"></a>
 
 ### `dirty`
 
@@ -39,7 +39,7 @@ opened.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-6658"></a>
+<a id="rustdoc-item-8696"></a>
 
 ### `ensure`
 
@@ -50,7 +50,7 @@ pub fn ensure(world: &mut World);
 Register the resource, and keep the value already in the world, so a
 reload does not reset the open scene.
 
-<a id="rustdoc-item-6659"></a>
+<a id="rustdoc-item-8697"></a>
 
 ### `title`
 

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-518"></a>
+<a id="rustdoc-item-528"></a>
 
 # Function `pill_csharp_bridge::backend::prepare_managed_systems`
 
@@ -8,7 +8,7 @@
 pub(in backend) fn prepare_managed_systems(bindings: &std::sync::Arc<super::components::BindingStore>, exports: SystemExports, subject: &str) -> Result<Vec<PreparedManagedSystem>, pill_core::error::CSharpError>;
 ```
 
-Visibility: `{'restricted': {'parent': 400, 'path': '::backend'}}` · Source: `csharp\pill_csharp_bridge\src\backend.rs:373`
+Visibility: `{'restricted': {'parent': 403, 'path': '::backend'}}` · Source: `csharp\pill_csharp_bridge\src\backend.rs:404`
 
 Resolves every managed system without touching the engine.
 

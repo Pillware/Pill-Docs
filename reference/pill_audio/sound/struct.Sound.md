@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-228"></a>
+<a id="rustdoc-item-293"></a>
 
 # Struct `pill_audio::sound::Sound`
 
@@ -8,7 +8,7 @@
 pub struct Sound;
 ```
 
-Source: `extensions\pill_audio\pill_audio\src\sound.rs:81`
+Source: `extensions\pill_audio\modules\runtime\src\sound.rs:81`
 
 One loaded audio file, kept as its encoded bytes.
 
@@ -33,12 +33,13 @@ Mirrored to C# as `pill_audio.Sound`: a managed project imports one with
 `assets.Import<Sound>(path, ...)` and builds one with `Sound.Load` or
 `Sound.FromBytes`.
 
-The derive declares the type, so the world's asset store re-points its table
-at the generation still mapped without a call in the module's `register`.
+The attribute declares the type, so the world's asset store re-points its
+table at the generation still mapped without a call in the module's
+`register`.
 
 ## Fields
 
-<a id="rustdoc-item-471"></a>
+<a id="rustdoc-item-601"></a>
 
 ### `path`
 
@@ -46,10 +47,10 @@ at the generation still mapped without a call in the module's `register`.
 path: std::path::PathBuf
 ```
 
-Path the bytes were read from, or the label [`Sound::from_bytes`](#rustdoc-item-470) was
+Path the bytes were read from, or the label [`Sound::from_bytes`](#rustdoc-item-600) was
 given.
 
-<a id="rustdoc-item-474"></a>
+<a id="rustdoc-item-604"></a>
 
 ### `bytes`
 
@@ -61,7 +62,7 @@ The encoded bytes, as they were read or handed over.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-468"></a>
+<a id="rustdoc-item-598"></a>
 
 ### `load`
 
@@ -74,16 +75,16 @@ Read an audio file into memory.
 The path is read through [`asset_store`](pill_engine::asset_store) like
 every other asset: a relative path is looked up in a mounted pack first
 (a shipping or web build), then below the project's `res` directory.
-The extension is checked against [`SUPPORTED_AUDIO_FORMATS`](constant.SUPPORTED_AUDIO_FORMATS.md#rustdoc-item-469) before any
+The extension is checked against [`SUPPORTED_AUDIO_FORMATS`](constant.SUPPORTED_AUDIO_FORMATS.md#rustdoc-item-599) before any
 bytes are read.
 
 #### Errors
 
-[`SoundLoadError::InvalidPath`](enum.SoundLoadError.md#rustdoc-item-477) when the extension is not supported or
-no mount has the path, and [`SoundLoadError::Unreadable`](enum.SoundLoadError.md#rustdoc-item-478) when the file
+[`SoundLoadError::InvalidPath`](enum.SoundLoadError.md#rustdoc-item-607) when the extension is not supported or
+no mount has the path, and [`SoundLoadError::Unreadable`](enum.SoundLoadError.md#rustdoc-item-608) when the file
 was found but could not be read.
 
-<a id="rustdoc-item-470"></a>
+<a id="rustdoc-item-600"></a>
 
 ### `from_bytes`
 
@@ -96,7 +97,7 @@ Build a sound from bytes already in memory.
 The path is kept for diagnostics only and is not checked, which is what
 an embedded asset (`include_bytes!`) or a cooked one needs.
 
-<a id="rustdoc-item-481"></a>
+<a id="rustdoc-item-611"></a>
 
 ### `path`
 
@@ -104,10 +105,10 @@ an embedded asset (`include_bytes!`) or a cooked one needs.
 pub fn path(self: &Self) -> &std::path::Path;
 ```
 
-The path the bytes were read from, or the label [`Sound::from_bytes`](#rustdoc-item-470)
+The path the bytes were read from, or the label [`Sound::from_bytes`](#rustdoc-item-600)
 was given.
 
-<a id="rustdoc-item-482"></a>
+<a id="rustdoc-item-612"></a>
 
 ### `bytes`
 
@@ -117,7 +118,7 @@ pub fn bytes(self: &Self) -> &[u8];
 
 The encoded bytes, unchanged since they were read or handed over.
 
-<a id="rustdoc-item-483"></a>
+<a id="rustdoc-item-613"></a>
 
 ### `decoder`
 
@@ -133,7 +134,7 @@ reuses the sound's bytes instead of copying them, since building one
 clones the `Arc` - a reference-count bump that costs the same for a
 large file as for a small one.
 
-Returns `None` when rodio cannot decode the bytes. [`Sound::load`](#rustdoc-item-468)
+Returns `None` when rodio cannot decode the bytes. [`Sound::load`](#rustdoc-item-598)
 cannot rule that out, because it checks only the extension.
 
 ## Trait implementations

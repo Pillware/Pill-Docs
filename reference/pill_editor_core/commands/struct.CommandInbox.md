@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1835"></a>
+<a id="rustdoc-item-1883"></a>
 
 # Struct `pill_editor_core::commands::CommandInbox`
 
@@ -8,7 +8,7 @@
 pub struct CommandInbox;
 ```
 
-Source: `editor\pill_editor_core\src\commands.rs:1075`
+Source: `editor\pill_editor_core\src\commands.rs:1130`
 
 The world resource that carries a frame's executed command ids to the
 modules that own them.
@@ -19,7 +19,7 @@ pointers across the reload boundary.
 
 ## Fields
 
-<a id="rustdoc-item-1834"></a>
+<a id="rustdoc-item-1882"></a>
 
 ### `executed`
 

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1977"></a>
+<a id="rustdoc-item-2051"></a>
 
 # Struct `pill_development_host::hot_patch::routes::PrologueRestore`
 
@@ -21,7 +21,7 @@ used again.
 
 ## Fields
 
-<a id="rustdoc-item-2164"></a>
+<a id="rustdoc-item-2238"></a>
 
 ### `artifact`
 
@@ -32,7 +32,7 @@ artifact: String
 The label of the artifact the patched copy lives in, used in error
 messages.
 
-<a id="rustdoc-item-2165"></a>
+<a id="rustdoc-item-2239"></a>
 
 ### `address`
 
@@ -42,7 +42,7 @@ address: usize
 
 Address of the function whose first bytes were overwritten.
 
-<a id="rustdoc-item-2166"></a>
+<a id="rustdoc-item-2240"></a>
 
 ### `original`
 

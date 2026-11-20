@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1259"></a>
+<a id="rustdoc-item-1279"></a>
 
 # Function `pill_development_host::config::host_cargo_command`
 
@@ -8,7 +8,7 @@
 pub(crate) fn host_cargo_command(packages: &[String]) -> Vec<String>;
 ```
 
-Visibility: `crate` · Source: `hosting\pill_development_host\src\config.rs:1542`
+Visibility: `crate` · Source: `hosting\pill_development_host\src\config.rs:1749`
 
 Builds the host's cargo command for one or more selected packages.
 
@@ -26,4 +26,4 @@ The engine core's symbol names hash its features. A module built without
 own `register_system` creates no dispatch slot, so every patch is refused
 with "no hot-patchable system registered". The feature is package-qualified
 because one invocation may select several packages. The host's other engine
-features travel through [`crate::build_runner::apply_cargo_host_overrides`](../build_runner/fn.apply_cargo_host_overrides.md#rustdoc-item-582).
+features travel through [`crate::build_runner::apply_cargo_host_overrides`](../build_runner/fn.apply_cargo_host_overrides.md#rustdoc-item-583).

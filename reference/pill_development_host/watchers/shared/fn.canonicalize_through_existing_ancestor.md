@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-4447"></a>
+<a id="rustdoc-item-4706"></a>
 
 # Function `pill_development_host::watchers::shared::canonicalize_through_existing_ancestor`
 
@@ -8,7 +8,7 @@
 pub(in watchers::shared) fn canonicalize_through_existing_ancestor(path: &std::path::Path) -> Option<std::path::PathBuf>;
 ```
 
-Visibility: `{'restricted': {'parent': 4377, 'path': '::watchers::shared'}}` · Source: `hosting\pill_development_host\src\watchers\shared.rs:210`
+Visibility: `{'restricted': {'parent': 4636, 'path': '::watchers::shared'}}` · Source: `hosting\pill_development_host\src\watchers\shared.rs:210`
 
 Resolve a path that may no longer exist.
 

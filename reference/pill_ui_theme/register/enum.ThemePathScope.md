@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-709"></a>
+<a id="rustdoc-item-717"></a>
 
 # Enum `pill_ui_theme::register::ThemePathScope`
 
@@ -14,7 +14,7 @@ Which part of a project's `res` a theme path may name.
 
 ## Variants
 
-<a id="rustdoc-item-707"></a>
+<a id="rustdoc-item-715"></a>
 
 ### `Game`
 
@@ -24,7 +24,7 @@ Game
 
 A game's own theme may name anything below `res` except `editor/`.
 
-<a id="rustdoc-item-708"></a>
+<a id="rustdoc-item-716"></a>
 
 ### `Editor`
 
@@ -36,7 +36,7 @@ An editor layer may name only files under `res/editor/`.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-710"></a>
+<a id="rustdoc-item-718"></a>
 
 ### `check`
 
@@ -73,6 +73,7 @@ that is absolute, climbs out with `..`, or is empty.
 - `Pointable`
 - `OwoColorize`
 - `ErasedDestructor`
+- `Equivalent<K>`
 - `Clone`
 - `Copy`
 - `Debug`

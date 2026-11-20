@@ -8,7 +8,7 @@
 pub struct RenderQueueItem;
 ```
 
-Source: `extensions\pill_master_renderer\pill_master_renderer\src\render_queue.rs:43`
+Source: `extensions\pill_master_renderer\modules\runtime\gpu\src\render_queue.rs:43`
 
 One draw waiting in the queue, with the handles it binds, the instance it
 draws, and the key it is sorted by.
@@ -21,7 +21,7 @@ handles take no part in the comparison.
 
 ## Fields
 
-<a id="rustdoc-item-1791"></a>
+<a id="rustdoc-item-1835"></a>
 
 ### `key`
 
@@ -31,10 +31,10 @@ key: u64
 
 The key this entry is sorted by. It packs the draw's rendering order and
 the slot identity of its three handles, as
-[`compose_render_queue_key`](fn.compose_render_queue_key.md#rustdoc-item-1790) lays them out. The queue only compares it
+[`compose_render_queue_key`](fn.compose_render_queue_key.md#rustdoc-item-1834) lays them out. The queue only compares it
 and never turns it back into handles.
 
-<a id="rustdoc-item-1792"></a>
+<a id="rustdoc-item-1836"></a>
 
 ### `frame_instance_index`
 
@@ -46,7 +46,7 @@ Position of the drawn instance in the frame's instance vector.
 `build_queued_instances` reads that instance's transform to build the
 model matrix.
 
-<a id="rustdoc-item-1793"></a>
+<a id="rustdoc-item-1837"></a>
 
 ### `shader`
 
@@ -56,7 +56,7 @@ shader: renderer_shader::RendererShaderHandle
 
 The shader this draw binds.
 
-<a id="rustdoc-item-1794"></a>
+<a id="rustdoc-item-1838"></a>
 
 ### `material`
 
@@ -66,7 +66,7 @@ material: renderer_material::RendererMaterialHandle
 
 The material this draw binds.
 
-<a id="rustdoc-item-1795"></a>
+<a id="rustdoc-item-1839"></a>
 
 ### `mesh`
 

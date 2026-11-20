@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-500"></a>
+<a id="rustdoc-item-497"></a>
 
 # Struct `pill_master_renderer::resources::renderer_texture::RendererTexture`
 
@@ -8,7 +8,7 @@
 pub struct RendererTexture;
 ```
 
-Source: `extensions\pill_master_renderer\pill_master_renderer\src\resources\renderer_texture.rs:45`
+Source: `extensions\pill_master_renderer\modules\runtime\gpu\src\resources\renderer_texture.rs:45`
 
 A texture together with the view and sampler that make it usable.
 
@@ -17,7 +17,7 @@ offscreen colour targets, and depth.
 
 ## Fields
 
-<a id="rustdoc-item-2812"></a>
+<a id="rustdoc-item-2849"></a>
 
 ### `texture`
 
@@ -27,7 +27,7 @@ texture: wgpu::Texture
 
 The texture the view and the sampler belong to.
 
-<a id="rustdoc-item-2813"></a>
+<a id="rustdoc-item-2850"></a>
 
 ### `texture_view`
 
@@ -37,7 +37,7 @@ texture_view: wgpu::TextureView
 
 The view a pass binds the texture through.
 
-<a id="rustdoc-item-2814"></a>
+<a id="rustdoc-item-2851"></a>
 
 ### `sampler`
 
@@ -47,7 +47,7 @@ sampler: wgpu::Sampler
 
 How a shader reads a texel: the filter and address modes in use.
 
-<a id="rustdoc-item-2815"></a>
+<a id="rustdoc-item-2852"></a>
 
 ### `view_dimension`
 
@@ -63,7 +63,7 @@ failing later in wgpu's own validation message.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-2816"></a>
+<a id="rustdoc-item-2853"></a>
 
 ### `DEPTH_FORMAT`
 
@@ -77,7 +77,7 @@ Pipeline state that renders into the buffer has to declare the same
 format the attachment was created with, so the value sits beside the
 constructor that creates it.
 
-<a id="rustdoc-item-2596"></a>
+<a id="rustdoc-item-2636"></a>
 
 ### `new_texture`
 
@@ -97,7 +97,7 @@ Returns [`crate::error::RendererError::Other`] naming the asset when
 `texel_bytes` does not match the declared size and type, or when the
 driver refuses the texture, the upload, or the sampler.
 
-<a id="rustdoc-item-2817"></a>
+<a id="rustdoc-item-2854"></a>
 
 ### `new_render_target`
 
@@ -117,7 +117,7 @@ through.
 Returns [`crate::error::RendererError::Other`] naming the target when
 the driver refuses the texture or its sampler.
 
-<a id="rustdoc-item-2818"></a>
+<a id="rustdoc-item-2855"></a>
 
 ### `new_depth_texture`
 

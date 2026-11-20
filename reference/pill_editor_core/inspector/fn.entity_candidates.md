@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-4977"></a>
+<a id="rustdoc-item-6940"></a>
 
 # Function `pill_editor_core::inspector::entity_candidates`
 
@@ -8,7 +8,7 @@
 pub fn entity_candidates(hierarchy_entries: &[crate::editor_state::EntityListEntry]) -> Vec<&crate::editor_state::EntityListEntry>;
 ```
 
-Source: `editor\pill_editor_core\src\inspector.rs:1046`
+Source: `editor\pill_editor_core\src\inspector.rs:1053`
 
 The entities an entity row's picker offers: every entity the Hierarchy
 lists, in its order.

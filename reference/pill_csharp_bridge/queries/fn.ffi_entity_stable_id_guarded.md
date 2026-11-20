@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1884"></a>
+<a id="rustdoc-item-1909"></a>
 
 # Function `pill_csharp_bridge::queries::ffi_entity_stable_id_guarded`
 
@@ -8,7 +8,7 @@
 pub(in queries) fn ffi_entity_stable_id_guarded(entity: *const pill_engine::Entity, low_half_output: *mut u64, high_half_output: *mut u64) -> u8;
 ```
 
-Visibility: `{'restricted': {'parent': 1872, 'path': '::queries'}}` · Source: `csharp\pill_csharp_bridge\src\queries.rs:517`
+Visibility: `{'restricted': {'parent': 1897, 'path': '::queries'}}` · Source: `csharp\pill_csharp_bridge\src\queries.rs:517`
 
 Write a live entity's stable id, split into two `u64` halves.
 

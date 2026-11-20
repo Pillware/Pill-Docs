@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-3714"></a>
+<a id="rustdoc-item-3970"></a>
 
 # Function `pill_development_host::switches::switch_value`
 

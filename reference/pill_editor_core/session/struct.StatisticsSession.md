@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-7251"></a>
+<a id="rustdoc-item-9309"></a>
 
 # Struct `pill_editor_core::session::StatisticsSession`
 
@@ -8,7 +8,7 @@
 pub struct StatisticsSession;
 ```
 
-Source: `editor\pill_editor_core\src\session.rs:281`
+Source: `editor\pill_editor_core\src\session.rs:286`
 
 The timings the Statistics tab reads.
 
@@ -17,7 +17,7 @@ shell's, so the tab cannot inflate what it reports by drawing itself.
 
 ## Fields
 
-<a id="rustdoc-item-7458"></a>
+<a id="rustdoc-item-9519"></a>
 
 ### `tabs`
 
@@ -27,7 +27,7 @@ tabs: Vec<TabTiming>
 
 One entry per tab drawn since the session began, in first-drawn order.
 
-<a id="rustdoc-item-7459"></a>
+<a id="rustdoc-item-9520"></a>
 
 ### `shell_micros`
 
@@ -37,7 +37,7 @@ shell_micros: f64
 
 The whole shell pass's smoothed time, in microseconds.
 
-<a id="rustdoc-item-7460"></a>
+<a id="rustdoc-item-9521"></a>
 
 ### `shell_passes`
 
@@ -47,7 +47,7 @@ shell_passes: u64
 
 Completed shell passes.
 
-<a id="rustdoc-item-7461"></a>
+<a id="rustdoc-item-9522"></a>
 
 ### `frames_per_second`
 
@@ -59,7 +59,7 @@ The editor's smoothed frame rate, as the shell measured it.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-7462"></a>
+<a id="rustdoc-item-9523"></a>
 
 ### `WEIGHT`
 
@@ -70,7 +70,7 @@ const WEIGHT: f64 = 0.05;
 How strongly one pass moves the mean: one twentieth, so the mean
 catches up with a real change in about twenty passes.
 
-<a id="rustdoc-item-7464"></a>
+<a id="rustdoc-item-9525"></a>
 
 ### `record`
 
@@ -80,7 +80,7 @@ pub fn record(self: &mut Self, tab: EditorTab, micros: f64);
 
 Fold one tab body's time into its entry.
 
-<a id="rustdoc-item-7465"></a>
+<a id="rustdoc-item-9526"></a>
 
 ### `record_shell`
 
@@ -90,7 +90,7 @@ pub fn record_shell(self: &mut Self, micros: u64);
 
 Fold one whole shell pass's time in.
 
-<a id="rustdoc-item-7466"></a>
+<a id="rustdoc-item-9527"></a>
 
 ### `tab_micros`
 

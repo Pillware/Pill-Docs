@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-676"></a>
+<a id="rustdoc-item-895"></a>
 
 # Struct `pill_physics::settings::PhysicsSettingsAsset`
 
@@ -8,19 +8,19 @@
 pub struct PhysicsSettingsAsset;
 ```
 
-Source: `extensions\pill_physics\pill_physics\src\settings.rs:79`
+Source: `extensions\pill_physics\modules\runtime\src\settings.rs:79`
 
 The `.physics_settings` document a project tunes the simulation through.
 
 The file lives at `res/settings/pill_physics.physics_settings`. The loaded
 value is only a carrier: the manager reads the document, not the asset.
 
-The derive declares the type, so every generation of the module registers it
-with the world's asset store without a call in `register`.
+The attribute declares the type, so every generation of the module registers
+it with the world's asset store without a call in `register`.
 
 ## Fields
 
-<a id="rustdoc-item-788"></a>
+<a id="rustdoc-item-1025"></a>
 
 ### `settings`
 

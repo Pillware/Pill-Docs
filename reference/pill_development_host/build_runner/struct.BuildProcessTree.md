@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-630"></a>
+<a id="rustdoc-item-632"></a>
 
 # Struct `pill_development_host::build_runner::BuildProcessTree`
 
@@ -8,7 +8,7 @@
 pub(crate) struct BuildProcessTree;
 ```
 
-Visibility: `crate` · Source: `hosting\pill_development_host\src\build_runner.rs:912`
+Visibility: `crate` · Source: `hosting\pill_development_host\src\build_runner.rs:913`
 
 A build's whole process tree, on platforms that provide one.
 
@@ -23,7 +23,7 @@ handle is closed rather than a termination being requested.
 
 ## Fields
 
-<a id="rustdoc-item-629"></a>
+<a id="rustdoc-item-631"></a>
 
 ### `job`
 
@@ -35,7 +35,7 @@ The job object's handle, closed on drop.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-631"></a>
+<a id="rustdoc-item-633"></a>
 
 ### `create`
 
@@ -49,7 +49,7 @@ closes.
 Returns `None` when Windows refuses. The caller then kills the direct
 child instead, which is what happens on platforms without job objects.
 
-<a id="rustdoc-item-632"></a>
+<a id="rustdoc-item-634"></a>
 
 ### `join`
 
@@ -64,7 +64,7 @@ A process started before the join would sit outside the tree, which is
 why the caller creates the job before spawning and joins immediately
 after.
 
-<a id="rustdoc-item-633"></a>
+<a id="rustdoc-item-635"></a>
 
 ### `terminate`
 
@@ -74,7 +74,7 @@ pub(in build_runner) fn terminate(self: &Self);
 
 Terminates every process still in the job.
 
-<a id="rustdoc-item-634"></a>
+<a id="rustdoc-item-636"></a>
 
 ### `active_processes`
 
@@ -84,7 +84,7 @@ pub(in build_runner) fn active_processes(self: &Self) -> u32;
 
 Returns how many processes the job still holds.
 
-<a id="rustdoc-item-635"></a>
+<a id="rustdoc-item-637"></a>
 
 ### `wait_until_empty`
 

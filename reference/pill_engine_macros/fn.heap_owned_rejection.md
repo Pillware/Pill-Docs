@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-358"></a>
+<a id="rustdoc-item-382"></a>
 
 # Function `pill_engine_macros::heap_owned_rejection`
 
@@ -8,7 +8,7 @@
 pub(crate) fn heap_owned_rejection(field_type: &syn::Type, field_type_name: &str) -> syn::Error;
 ```
 
-Visibility: `crate` · Source: `engine\pill_engine_macros\src\lib.rs:1500`
+Visibility: `crate` · Source: `engine\pill_engine_macros\src\lib.rs:1873`
 
 The rejection for a heap-owning type outside the container vocabulary.
 

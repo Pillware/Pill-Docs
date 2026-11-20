@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-605"></a>
+<a id="rustdoc-item-759"></a>
 
 # Function `pill_engine::hot_patch::write_signature_out`
 

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-6697"></a>
+<a id="rustdoc-item-8736"></a>
 
 # Function `pill_editor_core::scene_workflow::fresh_guid`
 
@@ -8,7 +8,7 @@
 pub(in scene_workflow) fn fresh_guid() -> Result<pill_engine::AssetGuid, String>;
 ```
 
-Visibility: `{'restricted': {'parent': 6696, 'path': '::scene_workflow'}}` · Source: `editor\pill_editor_core\src\scene_workflow.rs:305`
+Visibility: `{'restricted': {'parent': 8735, 'path': '::scene_workflow'}}` · Source: `editor\pill_editor_core\src\scene_workflow.rs:311`
 
 A fresh guid for a scene file that does not exist yet.
 

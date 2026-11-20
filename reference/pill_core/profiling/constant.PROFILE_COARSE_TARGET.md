@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1371"></a>
+<a id="rustdoc-item-1381"></a>
 
 # Constant `pill_core::profiling::PROFILE_COARSE_TARGET`
 
@@ -18,4 +18,4 @@ that turns this target on at `TRACE`, whatever the terminal's own
 verbosity is. A zone checks that filter to learn whether the profiler
 wants it.
 
-[`TelemetryBuilder::with_tracy`]: ../telemetry/struct.TelemetryBuilder.md#rustdoc-item-1370
+[`TelemetryBuilder::with_tracy`]: ../telemetry/struct.TelemetryBuilder.md#rustdoc-item-1380

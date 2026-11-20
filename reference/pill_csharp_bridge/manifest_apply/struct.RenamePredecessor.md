@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-980"></a>
+<a id="rustdoc-item-1002"></a>
 
 # Struct `pill_csharp_bridge::manifest_apply::RenamePredecessor`
 
@@ -18,7 +18,7 @@ description of what was there.
 
 ## Fields
 
-<a id="rustdoc-item-1513"></a>
+<a id="rustdoc-item-1537"></a>
 
 ### `identity`
 
@@ -28,7 +28,7 @@ identity: super::components::StableComponentId
 
 The table key the predecessor is bound under.
 
-<a id="rustdoc-item-1514"></a>
+<a id="rustdoc-item-1538"></a>
 
 ### `alias`
 
@@ -38,7 +38,7 @@ alias: &'binding str
 
 The alias that reached it, which is the name it was registered under.
 
-<a id="rustdoc-item-1515"></a>
+<a id="rustdoc-item-1539"></a>
 
 ### `binding`
 

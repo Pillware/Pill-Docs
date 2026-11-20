@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-5654"></a>
+<a id="rustdoc-item-7620"></a>
 
 # Struct `pill_editor_core::problems::Problem`
 
@@ -14,7 +14,7 @@ One problem parsed from a build's output.
 
 ## Fields
 
-<a id="rustdoc-item-6444"></a>
+<a id="rustdoc-item-8482"></a>
 
 ### `severity`
 
@@ -24,7 +24,7 @@ severity: Severity
 
 Error, warning or note.
 
-<a id="rustdoc-item-6445"></a>
+<a id="rustdoc-item-8483"></a>
 
 ### `message`
 
@@ -34,7 +34,7 @@ message: String
 
 The compiler's message, without its bracketed code.
 
-<a id="rustdoc-item-6446"></a>
+<a id="rustdoc-item-8484"></a>
 
 ### `file`
 
@@ -44,7 +44,7 @@ file: Option<String>
 
 The file the first span names, when the problem carries one.
 
-<a id="rustdoc-item-6447"></a>
+<a id="rustdoc-item-8485"></a>
 
 ### `line`
 
@@ -54,7 +54,7 @@ line: Option<u32>
 
 The line of that span.
 
-<a id="rustdoc-item-6448"></a>
+<a id="rustdoc-item-8486"></a>
 
 ### `column`
 

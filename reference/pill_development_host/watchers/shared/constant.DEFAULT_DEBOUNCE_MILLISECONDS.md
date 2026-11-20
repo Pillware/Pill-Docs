@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-4376"></a>
+<a id="rustdoc-item-4635"></a>
 
 # Constant `pill_development_host::watchers::shared::DEFAULT_DEBOUNCE_MILLISECONDS`
 
@@ -8,7 +8,7 @@
 pub(in watchers::shared) const DEFAULT_DEBOUNCE_MILLISECONDS: u64 = 60;
 ```
 
-Visibility: `{'restricted': {'parent': 4377, 'path': '::watchers::shared'}}` · Source: `hosting\pill_development_host\src\watchers\shared.rs:55`
+Visibility: `{'restricted': {'parent': 4636, 'path': '::watchers::shared'}}` · Source: `hosting\pill_development_host\src\watchers\shared.rs:55`
 
 File events that arrive within this window are joined into one reload.
 

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1833"></a>
+<a id="rustdoc-item-1880"></a>
 
 # Function `pill_editor_core::commands::write_gizmo_preferences`
 
@@ -8,7 +8,7 @@
 pub fn write_gizmo_preferences(directory: &std::path::Path, project: &str, settings: &crate::gizmo::GizmoSettings) -> Result<(), String>;
 ```
 
-Source: `editor\pill_editor_core\src\commands.rs:1034`
+Source: `editor\pill_editor_core\src\commands.rs:1055`
 
 Writes one project's gizmo choices into the preferences file.
 
@@ -21,5 +21,5 @@ a half-written document.
 
 ## Errors
 
-Returns a message when the file cannot be read, is not a JSON object, or
+Returns a message when the file cannot be read, is not a YAML mapping, or
 cannot be written back.

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-996"></a>
+<a id="rustdoc-item-1011"></a>
 
 # Struct `pill_development_host::config::ProjectAssetSettings`
 
@@ -8,7 +8,7 @@
 pub struct ProjectAssetSettings;
 ```
 
-Source: `hosting\pill_development_host\src\config.rs:507`
+Source: `hosting\pill_development_host\src\config.rs:640`
 
 The `assets:` section of `project_settings.yaml`.
 
@@ -17,7 +17,7 @@ at startup.
 
 ## Fields
 
-<a id="rustdoc-item-1044"></a>
+<a id="rustdoc-item-1061"></a>
 
 ### `scan_on_start`
 

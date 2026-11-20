@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-623"></a>
+<a id="rustdoc-item-625"></a>
 
 # Function `pill_development_host::build_runner::is_verbose_only_line`
 
@@ -8,7 +8,7 @@
 pub(in build_runner) fn is_verbose_only_line(line: &str) -> bool;
 ```
 
-Visibility: `{'restricted': {'parent': 545, 'path': '::build_runner'}}` · Source: `hosting\pill_development_host\src\build_runner.rs:839`
+Visibility: `{'restricted': {'parent': 546, 'path': '::build_runner'}}` · Source: `hosting\pill_development_host\src\build_runner.rs:840`
 
 Checks whether a line exists only because the build was asked for `-v`.
 

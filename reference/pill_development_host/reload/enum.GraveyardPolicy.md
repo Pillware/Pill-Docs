@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-2673"></a>
+<a id="rustdoc-item-2747"></a>
 
 # Enum `pill_development_host::reload::GraveyardPolicy`
 
@@ -14,7 +14,7 @@ Whether a subject's retired images are ever unloaded.
 
 ## Variants
 
-<a id="rustdoc-item-3466"></a>
+<a id="rustdoc-item-3722"></a>
 
 ### `Bounded`
 
@@ -22,10 +22,10 @@ Whether a subject's retired images are ever unloaded.
 Bounded
 ```
 
-Keep at most [`MAX_GRAVEYARD_GENERATIONS`](constant.MAX_GRAVEYARD_GENERATIONS.md#rustdoc-item-3426) retired images loaded, and
+Keep at most [`MAX_GRAVEYARD_GENERATIONS`](constant.MAX_GRAVEYARD_GENERATIONS.md#rustdoc-item-3682) retired images loaded, and
 release the oldest beyond that once no column still needs its tables.
 
-<a id="rustdoc-item-2679"></a>
+<a id="rustdoc-item-2753"></a>
 
 ### `KeepAll`
 

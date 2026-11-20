@@ -1,10 +1,10 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1533"></a>
+<a id="rustdoc-item-1630"></a>
 
 # Module `pill_master_renderer_data::config::simple_pipeline`
 
-Source: `extensions\pill_master_renderer\pill_master_renderer_data\src\config\simple_pipeline\mod.rs:1`
+Source: `extensions\pill_master_renderer\modules\runtime\data\src\config\simple_pipeline\mod.rs:1`
 
 The built-in lit pipeline, the fallback a project can opt into.
 The simple frame: one lit geometry pass drawn onto the surface.
@@ -44,19 +44,19 @@ directory that directly holds `.hlsl` files is a source directory, and every
 `include/` directory in the tree is on every source's include path.
 
 Every stage declared with `config_shader_file!` embeds its file's text, but
-only the fallback pair ([`DEFAULT_VERTEX`](../constant.DEFAULT_VERTEX.md#rustdoc-item-1532) and [`DEFAULT_LIT_FRAGMENT`]) is
+only the fallback pair ([`DEFAULT_VERTEX`](../constant.DEFAULT_VERTEX.md#rustdoc-item-1629) and [`DEFAULT_LIT_FRAGMENT`]) is
 read back out of its constant: the GPU module builds its stand-in shader
 from it before any store exists, so the store cannot supply it.
 
 ## Module contents
 
 ### Functions
-- [`install`](fn.install.md#rustdoc-item-1525) — Install the simple frame, and return the pipeline asset.
+- [`install`](fn.install.md#rustdoc-item-1622) — Install the simple frame, and return the pipeline asset.
 
 ### Constants
-- [`DEFAULT_LIT_FRAGMENT`](constant.DEFAULT_LIT_FRAGMENT.md#rustdoc-item-1524) — The pass's fragment stage, cooked from `default_lit_fragment.hlsl`. It
-- [`PASS_NAME`](constant.PASS_NAME.md#rustdoc-item-1530) — Asset name of the pass the pipeline holds.
-- [`PIPELINE_NAME`](constant.PIPELINE_NAME.md#rustdoc-item-1527) — Asset name the installed pipeline is stored under.
-- [`SHADER_GUID`](constant.SHADER_GUID.md#rustdoc-item-1529) — The guid the shader is stored under.
-- [`SHADER_PATH`](constant.SHADER_PATH.md#rustdoc-item-1528) — The path the pass's shader source is imported under. An imported asset is
-- [`SHADER_SOURCES`](constant.SHADER_SOURCES.md#rustdoc-item-1526) — The shader assets [`install`] creates, and the cooked files each is built
+- [`DEFAULT_LIT_FRAGMENT`](constant.DEFAULT_LIT_FRAGMENT.md#rustdoc-item-1621) — The pass's fragment stage, cooked from `default_lit_fragment.hlsl`. It
+- [`PASS_NAME`](constant.PASS_NAME.md#rustdoc-item-1627) — Asset name of the pass the pipeline holds.
+- [`PIPELINE_NAME`](constant.PIPELINE_NAME.md#rustdoc-item-1624) — Asset name the installed pipeline is stored under.
+- [`SHADER_GUID`](constant.SHADER_GUID.md#rustdoc-item-1626) — The guid the shader is stored under.
+- [`SHADER_PATH`](constant.SHADER_PATH.md#rustdoc-item-1625) — The path the pass's shader source is imported under. An imported asset is
+- [`SHADER_SOURCES`](constant.SHADER_SOURCES.md#rustdoc-item-1623) — The shader assets [`install`] creates, and the cooked files each is built

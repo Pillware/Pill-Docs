@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-904"></a>
+<a id="rustdoc-item-976"></a>
 
 # Enum `pill_renderer_api::raw_window::RawWindowKind`
 
@@ -10,11 +10,11 @@ pub enum RawWindowKind { ... }
 
 Source: `rendering\pill_renderer_api\src\raw_window.rs:44`
 
-The platform whose handles a [`RawWindowData`](struct.RawWindowData.md#rustdoc-item-195) carries.
+The platform whose handles a [`RawWindowData`](struct.RawWindowData.md#rustdoc-item-198) carries.
 
 ## Variants
 
-<a id="rustdoc-item-898"></a>
+<a id="rustdoc-item-970"></a>
 
 ### `Win32`
 
@@ -25,7 +25,7 @@ Win32
 Windows: `window` holds the `HWND`, and `window_aux` the `HINSTANCE`,
 or 0 when there is none.
 
-<a id="rustdoc-item-899"></a>
+<a id="rustdoc-item-971"></a>
 
 ### `Xlib`
 
@@ -37,7 +37,7 @@ X11 through Xlib: `window` holds the window id and `window_aux` the
 visual id, or 0 when there is none. `display` holds the `Display*`, or
 0, and `screen` the screen number.
 
-<a id="rustdoc-item-900"></a>
+<a id="rustdoc-item-972"></a>
 
 ### `Xcb`
 
@@ -49,7 +49,7 @@ X11 through XCB: `window` holds the window id and `window_aux` the
 visual id, or 0 when there is none. `display` holds the connection, or
 0, and `screen` the screen number.
 
-<a id="rustdoc-item-901"></a>
+<a id="rustdoc-item-973"></a>
 
 ### `Wayland`
 
@@ -60,7 +60,7 @@ Wayland
 Wayland: `window` holds the `wl_surface*` and `display` the
 `wl_display*`.
 
-<a id="rustdoc-item-902"></a>
+<a id="rustdoc-item-974"></a>
 
 ### `AppKit`
 
@@ -70,7 +70,7 @@ AppKit
 
 macOS: `window` is the `NSView*`.
 
-<a id="rustdoc-item-903"></a>
+<a id="rustdoc-item-975"></a>
 
 ### `WebCanvas`
 
@@ -93,15 +93,16 @@ inside the wasm module that owns that value.
 - `TryFrom<U>`
 - `Any`
 - `ToOwned`
+- `CastableFrom<ST, Uninit, Uninit>`
+- `CastableFrom<ST, Initialized, Initialized>`
+- `Read<Exclusive, BecauseExclusive>`
 - `Instrument`
 - `WithSubscriber`
 - `IntoEither`
 - `Pointable`
 - `OwoColorize`
 - `ErasedDestructor`
-- `CastableFrom<ST, Uninit, Uninit>`
-- `CastableFrom<ST, Initialized, Initialized>`
-- `Read<Exclusive, BecauseExclusive>`
+- `Equivalent<K>`
 - `Debug`
 - `Clone`
 - `Copy`

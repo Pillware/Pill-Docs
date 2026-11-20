@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-4174"></a>
+<a id="rustdoc-item-4649"></a>
 
 # Function `pill_editor_core::gizmo::wrap_angle`
 
@@ -8,7 +8,7 @@
 pub fn wrap_angle(angle: f32) -> f32;
 ```
 
-Source: `editor\pill_editor_core\src\gizmo.rs:925`
+Source: `editor\pill_editor_core\src\gizmo.rs:1043`
 
 Wraps an angle difference into `(-PI, PI]`.
 

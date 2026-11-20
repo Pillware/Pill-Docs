@@ -8,19 +8,19 @@
 pub trait Vertex { ... }
 ```
 
-Source: `extensions\pill_master_renderer\pill_master_renderer\src\resources\renderer_mesh.rs:51`
+Source: `extensions\pill_master_renderer\modules\runtime\gpu\src\resources\renderer_mesh.rs:51`
 
 A type that can be uploaded to a vertex buffer, together with the layout
 the render pipeline uses to read it.
 
-[`RendererMesh`](struct.RendererMesh.md#rustdoc-item-2504) describes the buffer of a mesh's vertices and
+[`RendererMesh`](struct.RendererMesh.md#rustdoc-item-2544) describes the buffer of a mesh's vertices and
 [`Instance`](../../instance/struct.Instance.md#rustdoc-item-134) the buffer of its instances. A geometry pass
 takes both layouts, and each shader location belongs to exactly one of
 them.
 
 ## Required and provided items
 
-<a id="rustdoc-item-2503"></a>
+<a id="rustdoc-item-2543"></a>
 
 ### `data_layout_descriptor`
 

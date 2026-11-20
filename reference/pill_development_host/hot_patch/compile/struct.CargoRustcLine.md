@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-593"></a>
+<a id="rustdoc-item-595"></a>
 
 # Struct `pill_development_host::hot_patch::compile::CargoRustcLine`
 
@@ -14,7 +14,7 @@ One captured `rustc` command line, ready to be replayed for a patch build.
 
 ## Fields
 
-<a id="rustdoc-item-1918"></a>
+<a id="rustdoc-item-1992"></a>
 
 ### `program`
 
@@ -25,7 +25,7 @@ program: String
 Absolute path to the `rustc` cargo actually used, so a toolchain switch
 is followed rather than guessed.
 
-<a id="rustdoc-item-1919"></a>
+<a id="rustdoc-item-1993"></a>
 
 ### `args`
 
@@ -38,7 +38,7 @@ A replay drops that path and appends the patch's own source file.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-1920"></a>
+<a id="rustdoc-item-1994"></a>
 
 ### `capture`
 
@@ -61,7 +61,7 @@ Returns a message when cargo cannot run, the build fails, the crate root
 cannot be touched, or no invocation for `package` appears after forcing
 a rebuild.
 
-<a id="rustdoc-item-1921"></a>
+<a id="rustdoc-item-1995"></a>
 
 ### `try_capture`
 
@@ -71,7 +71,7 @@ pub(in hot_patch::compile) fn try_capture(workspace_dir: &Path, package: &str, b
 
 Runs one verbose build and returns the invocation, if cargo printed one.
 
-<a id="rustdoc-item-1922"></a>
+<a id="rustdoc-item-1996"></a>
 
 ### `try_capture_within`
 
@@ -79,10 +79,10 @@ Runs one verbose build and returns the invocation, if cargo printed one.
 pub(in hot_patch::compile) fn try_capture_within(workspace_dir: &Path, package: &str, build_command: &[String], timeout: Duration) -> Result<Option<Self>, String>;
 ```
 
-[`Self::try_capture`](#rustdoc-item-1921) with an explicit deadline, so a test can watch one
+[`Self::try_capture`](#rustdoc-item-1995) with an explicit deadline, so a test can watch one
 expire without waiting two minutes for it.
 
-<a id="rustdoc-item-1923"></a>
+<a id="rustdoc-item-1997"></a>
 
 ### `replay`
 
@@ -97,7 +97,7 @@ The captured line's crate identity, diagnostics format, emit list and
 output directory are replaced. Everything that describes the dependency
 graph (`--extern`, `-L`, `--cfg`, `-C prefer-dynamic`) is carried over
 unchanged; the linker value is the one exception, and
-[`patch_linker_value`](fn.patch_linker_value.md#rustdoc-item-1916) explains why. Keeping the dependency graph
+[`patch_linker_value`](fn.patch_linker_value.md#rustdoc-item-1990) explains why. Keeping the dependency graph
 identical is what gives the patch the same view of every type - layout
 AND `TypeId` - as the running host.
 
@@ -106,7 +106,7 @@ AND `TypeId` - as the running host.
 generated source can `use project::*` and get the identical types the
 running module holds.
 
-<a id="rustdoc-item-1925"></a>
+<a id="rustdoc-item-1999"></a>
 
 ### `replay_args`
 
@@ -124,9 +124,9 @@ slots in place, whatever its feature set, so linking one directly can
 make a patch fail with `error[E0463]` after an unrelated `cargo build`.
 Hash-qualified paths already name one exact configuration and are left
 alone. A `.rmeta` entry is first pointed at the `.rlib` beside it; see
-[`redirect_extern`](fn.redirect_extern.md#rustdoc-item-1924).
+[`redirect_extern`](fn.redirect_extern.md#rustdoc-item-1998).
 
-<a id="rustdoc-item-1926"></a>
+<a id="rustdoc-item-2000"></a>
 
 ### `save`
 
@@ -147,7 +147,7 @@ escaping.
 Returns the I/O error when the cache directory cannot be created or the
 file cannot be written.
 
-<a id="rustdoc-item-1928"></a>
+<a id="rustdoc-item-2002"></a>
 
 ### `load_if_fresh`
 
@@ -155,7 +155,7 @@ file cannot be written.
 pub fn load_if_fresh(path: &Path, inputs: &[PathBuf], build_command: &[String]) -> Option<Self>;
 ```
 
-Loads a line saved by [`Self::save`](#rustdoc-item-1926).
+Loads a line saved by [`Self::save`](#rustdoc-item-2000).
 
 Returns `None` when the cache is missing, when any input that could
 change the flags is newer than the cache or cannot be read, when the

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-405"></a>
+<a id="rustdoc-item-429"></a>
 
 # Procedural macro `pill_engine_macros::pill_hot_fn`
 
@@ -8,7 +8,7 @@
 proc_macro pill_hot_fn
 ```
 
-Source: `engine\pill_engine_macros\src\lib.rs:2548`
+Source: `engine\pill_engine_macros\src\lib.rs:3659`
 
 Makes an ordinary function hot-patchable.
 
@@ -19,7 +19,7 @@ has to live inside the function itself.
 
 ```ignore
 #[pill_hot_fn]
-pub fn get_color_a() -> f32 {
+pub fn tint_alpha() -> f32 {
     133.0
 }
 ```

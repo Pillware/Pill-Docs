@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-252"></a>
+<a id="rustdoc-item-318"></a>
 
 # Enum `pill_audio::sound_type::SoundType`
 
@@ -8,13 +8,13 @@
 pub enum SoundType { ... }
 ```
 
-Source: `extensions\pill_audio\pill_audio\src\sound_type.rs:25`
+Source: `extensions\pill_audio\modules\runtime\src\sound_type.rs:25`
 
 How a sound is positioned relative to the listener.
 
 ## Variants
 
-<a id="rustdoc-item-658"></a>
+<a id="rustdoc-item-789"></a>
 
 ### `Ambient`
 
@@ -25,7 +25,7 @@ Ambient
 Not positioned in space: the sound plays at the volume its source sets,
 wherever the entity is. Use this for music and UI sounds.
 
-<a id="rustdoc-item-659"></a>
+<a id="rustdoc-item-790"></a>
 
 ### `Spatial`
 
@@ -57,6 +57,7 @@ distance between the entity and the listener's ears grows.
 - `CastableFrom<ST, Uninit, Uninit>`
 - `CastableFrom<ST, Initialized, Initialized>`
 - `Read<Exclusive, BecauseExclusive>`
+- `Equivalent<K>`
 - `FromSample<S>`
 - `ToSample<U>`
 - `Duplex<S>`

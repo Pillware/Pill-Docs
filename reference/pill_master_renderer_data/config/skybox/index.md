@@ -1,10 +1,10 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1479"></a>
+<a id="rustdoc-item-1576"></a>
 
 # Module `pill_master_renderer_data::config::skybox`
 
-Source: `extensions\pill_master_renderer\pill_master_renderer_data\src\config\skybox\mod.rs:1`
+Source: `extensions\pill_master_renderer\modules\runtime\data\src\config\skybox\mod.rs:1`
 
 The sky pass drawn where the lit pass wrote nothing.
 The skybox: the two shaders a sky material draws through, and the pass that
@@ -22,8 +22,8 @@ draws the sky.
 
 A sky is a material, not a special asset: an ordinary `.material` file whose
 shader is one of the two here and whose `sky` slot holds an
-[`Equirect`](../../assets/texture/enum.TextureType.md#rustdoc-item-1115) or a
-[`Cubemap`](../../assets/texture/enum.TextureType.md#rustdoc-item-1117) texture. The pass is an ordinary
+[`Equirect`](../../assets/texture/enum.TextureType.md#rustdoc-item-1106) or a
+[`Cubemap`](../../assets/texture/enum.TextureType.md#rustdoc-item-1108) texture. The pass is an ordinary
 [`RenderPass`] of kind [`PassKind::Skybox`] that names the material. It
 draws one fullscreen triangle at the far plane and tests it against the
 depth the geometry pass wrote, so the sky shows only where no mesh drew.
@@ -47,22 +47,22 @@ file looks like this:
 
 The shaders use the camera's inverse view-projection to find the direction
 each pixel looks along. The equirect shader then turns that direction into
-a uv with the same rule as [`equirect_uv`](../../assets/texture/fn.equirect_uv.md#rustdoc-item-1114).
+a uv with the same rule as [`equirect_uv`](../../assets/texture/fn.equirect_uv.md#rustdoc-item-1105).
 
 ## Module contents
 
 ### Functions
-- [`default_parameters`](fn.default_parameters.md#rustdoc-item-1544) — Return the neutral values of a sky material's parameters: white tint,
-- [`install_shaders`](fn.install_shaders.md#rustdoc-item-1538) — Install the equirect and the cubemap skybox shaders, and return them in
-- [`skybox_pass`](fn.skybox_pass.md#rustdoc-item-1545) — Build a skybox pass named `name` that draws `material` into `target`.
+- [`default_parameters`](fn.default_parameters.md#rustdoc-item-1641) — Return the neutral values of a sky material's parameters: white tint,
+- [`install_shaders`](fn.install_shaders.md#rustdoc-item-1635) — Install the equirect and the cubemap skybox shaders, and return them in
+- [`skybox_pass`](fn.skybox_pass.md#rustdoc-item-1642) — Build a skybox pass named `name` that draws `material` into `target`.
 
 ### Constants
-- [`CUBEMAP_FRAGMENT`](constant.CUBEMAP_FRAGMENT.md#rustdoc-item-1536) — The fragment stage that samples a cubemap.
-- [`CUBEMAP_SHADER_GUID`](constant.CUBEMAP_SHADER_GUID.md#rustdoc-item-1541) — The guid the cubemap skybox shader is stored under. See
-- [`CUBEMAP_SHADER_PATH`](constant.CUBEMAP_SHADER_PATH.md#rustdoc-item-1540) — The asset name of the skybox shader that samples a cubemap. It is the path
-- [`EQUIRECT_FRAGMENT`](constant.EQUIRECT_FRAGMENT.md#rustdoc-item-1535) — The fragment stage that samples an equirectangular panorama.
-- [`EQUIRECT_SHADER_GUID`](constant.EQUIRECT_SHADER_GUID.md#rustdoc-item-1539) — The guid the equirect skybox shader is stored under, so a sky material file
-- [`EQUIRECT_SHADER_PATH`](constant.EQUIRECT_SHADER_PATH.md#rustdoc-item-1537) — The asset name of the skybox shader that samples an equirectangular
-- [`SHADER_SOURCES`](constant.SHADER_SOURCES.md#rustdoc-item-1543) — The shader assets [`install_shaders`] creates, with the cooked files each
-- [`SKY_SLOT`](constant.SKY_SLOT.md#rustdoc-item-1542) — The texture slot both skybox shaders read the sky from.
-- [`SKYBOX_VERTEX`](constant.SKYBOX_VERTEX.md#rustdoc-item-1534) — The skybox vertex stage: a fullscreen triangle at the far plane.
+- [`CUBEMAP_FRAGMENT`](constant.CUBEMAP_FRAGMENT.md#rustdoc-item-1633) — The fragment stage that samples a cubemap.
+- [`CUBEMAP_SHADER_GUID`](constant.CUBEMAP_SHADER_GUID.md#rustdoc-item-1638) — The guid the cubemap skybox shader is stored under. See
+- [`CUBEMAP_SHADER_PATH`](constant.CUBEMAP_SHADER_PATH.md#rustdoc-item-1637) — The asset name of the skybox shader that samples a cubemap. It is the path
+- [`EQUIRECT_FRAGMENT`](constant.EQUIRECT_FRAGMENT.md#rustdoc-item-1632) — The fragment stage that samples an equirectangular panorama.
+- [`EQUIRECT_SHADER_GUID`](constant.EQUIRECT_SHADER_GUID.md#rustdoc-item-1636) — The guid the equirect skybox shader is stored under, so a sky material file
+- [`EQUIRECT_SHADER_PATH`](constant.EQUIRECT_SHADER_PATH.md#rustdoc-item-1634) — The asset name of the skybox shader that samples an equirectangular
+- [`SHADER_SOURCES`](constant.SHADER_SOURCES.md#rustdoc-item-1640) — The shader assets [`install_shaders`] creates, with the cooked files each
+- [`SKY_SLOT`](constant.SKY_SLOT.md#rustdoc-item-1639) — The texture slot both skybox shaders read the sky from.
+- [`SKYBOX_VERTEX`](constant.SKYBOX_VERTEX.md#rustdoc-item-1631) — The skybox vertex stage: a fullscreen triangle at the far plane.

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-4202"></a>
+<a id="rustdoc-item-4729"></a>
 
 # Struct `pill_editor_core::history::HistoryEntry`
 
@@ -14,7 +14,7 @@ One undoable step.
 
 ## Fields
 
-<a id="rustdoc-item-4195"></a>
+<a id="rustdoc-item-4722"></a>
 
 ### `label`
 
@@ -25,7 +25,7 @@ label: String
 What the step is called in the history's log lines
 ("set PhysicsState.position_x").
 
-<a id="rustdoc-item-4196"></a>
+<a id="rustdoc-item-4723"></a>
 
 ### `entry`
 
@@ -35,7 +35,7 @@ entry: HistoryEntryKind
 
 What undoing and redoing this step does.
 
-<a id="rustdoc-item-4198"></a>
+<a id="rustdoc-item-4725"></a>
 
 ### `touched`
 
@@ -45,7 +45,7 @@ touched: Vec<String>
 
 Component and field identifiers the entry addresses.
 
-<a id="rustdoc-item-4199"></a>
+<a id="rustdoc-item-4726"></a>
 
 ### `memory_bytes`
 
@@ -56,7 +56,7 @@ memory_bytes: usize
 Approximate size the entry keeps alive, including the bytes of a file
 a restore has to write back.
 
-<a id="rustdoc-item-4200"></a>
+<a id="rustdoc-item-4727"></a>
 
 ### `coalesce_key`
 
@@ -66,7 +66,7 @@ coalesce_key: Option<String>
 
 Continuous edits sharing a key merge while they arrive back to back.
 
-<a id="rustdoc-item-4201"></a>
+<a id="rustdoc-item-4728"></a>
 
 ### `coalesced_at_millis`
 
@@ -78,7 +78,7 @@ Arrival time of the newest coalesced edit, in milliseconds.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-4203"></a>
+<a id="rustdoc-item-4730"></a>
 
 ### `engine`
 
@@ -89,7 +89,7 @@ pub fn engine<impl Into<String>: Into<String>>(label: impl Into<String>, forward
 Builds an entry from the commands an edit applied and the commands that
 reverse it.
 
-<a id="rustdoc-item-4204"></a>
+<a id="rustdoc-item-4731"></a>
 
 ### `selection`
 
@@ -100,7 +100,7 @@ pub fn selection(before: Option<Entity>, after: Option<Entity>) -> Self;
 Builds an entry for a selection change from the selection before and
 after it.
 
-<a id="rustdoc-item-4205"></a>
+<a id="rustdoc-item-4732"></a>
 
 ### `coalescing`
 
@@ -114,7 +114,7 @@ Marks the entry as one of a continuous edit sequence.
 is when the edit arrived. A later push with the same key merges into
 this entry while it arrives within the coalesce window.
 
-<a id="rustdoc-item-4206"></a>
+<a id="rustdoc-item-4733"></a>
 
 ### `remap_entity`
 

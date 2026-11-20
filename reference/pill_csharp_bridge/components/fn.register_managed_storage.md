@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-976"></a>
+<a id="rustdoc-item-998"></a>
 
 # Function `pill_csharp_bridge::components::register_managed_storage`
 
@@ -8,7 +8,7 @@
 pub(in components) fn register_managed_storage(engine: &mut pill_engine::Engine, stable_id: StableComponentId, component: &super::manifest::ManagedManifestEntry) -> Result<(pill_engine::ComponentId, Vec<pill_engine::component_registry::ComponentFieldDescriptor>), pill_core::error::CSharpError>;
 ```
 
-Visibility: `{'restricted': {'parent': 781, 'path': '::components'}}` · Source: `csharp\pill_csharp_bridge\src\components.rs:1155`
+Visibility: `{'restricted': {'parent': 803, 'path': '::components'}}` · Source: `csharp\pill_csharp_bridge\src\components.rs:1155`
 
 The one registration sequence: startup and every reload action (add,
 rename) go through it, so the component descriptor and the editor-facing

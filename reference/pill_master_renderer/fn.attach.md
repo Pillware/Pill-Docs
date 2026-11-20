@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-3141"></a>
+<a id="rustdoc-item-3178"></a>
 
 # Function `pill_master_renderer::attach`
 
@@ -8,7 +8,7 @@
 pub unsafe fn attach(window: pill_renderer_api::RawWindowData, width: u32, height: u32) -> pill_renderer_api::AttachFuture;
 ```
 
-Source: `extensions\pill_master_renderer\pill_master_renderer\src\lib.rs:166`
+Source: `extensions\pill_master_renderer\modules\runtime\gpu\src\lib.rs:166`
 
 Starts building a renderer backend on a window, for a host that links this
 crate statically - the shipping posture, where there is no module to load.

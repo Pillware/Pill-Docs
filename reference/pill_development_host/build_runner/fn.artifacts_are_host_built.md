@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-577"></a>
+<a id="rustdoc-item-578"></a>
 
 # Function `pill_development_host::build_runner::artifacts_are_host_built`
 
@@ -8,7 +8,7 @@
 pub(in build_runner) fn artifacts_are_host_built(workspace_root: &std::path::Path, module_name: &str, source_identity: &str, build_command: &[String], artifacts: &[std::path::PathBuf]) -> bool;
 ```
 
-Visibility: `{'restricted': {'parent': 545, 'path': '::build_runner'}}` · Source: `hosting\pill_development_host\src\build_runner.rs:376`
+Visibility: `{'restricted': {'parent': 546, 'path': '::build_runner'}}` · Source: `hosting\pill_development_host\src\build_runner.rs:376`
 
 Checks whether the artifacts on disk are the ones this host built with this
 command.

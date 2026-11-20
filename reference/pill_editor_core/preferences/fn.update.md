@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-6383"></a>
+<a id="rustdoc-item-8421"></a>
 
 # Function `pill_editor_core::preferences::update`
 
@@ -8,7 +8,7 @@
 pub fn update<impl FnOnce(&mut Map<String, Value>) -> Result<(), String>: FnOnce(&mut serde_json::Map<String, serde_json::Value>) -> Result<(), String>>(directory: &std::path::Path, edit: impl FnOnce(&mut serde_json::Map<String, serde_json::Value>) -> Result<(), String>) -> Result<(), String>;
 ```
 
-Source: `editor\pill_editor_core\src\preferences.rs:437`
+Source: `editor\pill_editor_core\src\preferences.rs:460`
 
 Reads the preferences document, applies the edit and writes it back.
 

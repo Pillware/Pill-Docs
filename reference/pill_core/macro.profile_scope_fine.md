@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-2118"></a>
+<a id="rustdoc-item-2128"></a>
 
 # Macro `pill_core::profile_scope_fine`
 

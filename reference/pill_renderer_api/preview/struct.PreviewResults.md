@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-201"></a>
+<a id="rustdoc-item-204"></a>
 
 # Struct `pill_renderer_api::preview::PreviewResults`
 
@@ -8,13 +8,13 @@
 pub struct PreviewResults;
 ```
 
-Source: `rendering\pill_renderer_api\src\preview.rs:143`
+Source: `rendering\pill_renderer_api\src\preview.rs:149`
 
 The previews the renderer finished.
 
 ## Fields
 
-<a id="rustdoc-item-1591"></a>
+<a id="rustdoc-item-1681"></a>
 
 ### `results`
 
@@ -22,11 +22,11 @@ The previews the renderer finished.
 results: Vec<PreviewImage>
 ```
 
-Every answer handed over since the last [`Self::take`](#rustdoc-item-1590).
+Every answer handed over since the last [`Self::take`](#rustdoc-item-1680).
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-1590"></a>
+<a id="rustdoc-item-1680"></a>
 
 ### `take`
 
@@ -45,14 +45,14 @@ Takes every answer waiting and leaves the list empty.
 - `TryInto<U>`
 - `TryFrom<U>`
 - `Any`
+- `CastableFrom<ST, Uninit, Uninit>`
+- `CastableFrom<ST, Initialized, Initialized>`
+- `Read<Exclusive, BecauseExclusive>`
 - `Instrument`
 - `WithSubscriber`
 - `IntoEither`
 - `Pointable`
 - `OwoColorize`
 - `ErasedDestructor`
-- `CastableFrom<ST, Uninit, Uninit>`
-- `CastableFrom<ST, Initialized, Initialized>`
-- `Read<Exclusive, BecauseExclusive>`
 - `Default`
 - `Resource`

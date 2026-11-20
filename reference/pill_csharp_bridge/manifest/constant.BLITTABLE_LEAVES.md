@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1321"></a>
+<a id="rustdoc-item-1344"></a>
 
 # Constant `pill_csharp_bridge::manifest::BLITTABLE_LEAVES`
 
@@ -8,7 +8,7 @@
 pub(in manifest) const BLITTABLE_LEAVES: &[BlittableLeaf] = _;
 ```
 
-Visibility: `{'restricted': {'parent': 1247, 'path': '::manifest'}}` · Source: `csharp\pill_csharp_bridge\src\manifest.rs:114`
+Visibility: `{'restricted': {'parent': 1270, 'path': '::manifest'}}` · Source: `csharp\pill_csharp_bridge\src\manifest.rs:114`
 
 The managed blittable field vocabulary: one row per accepted leaf type.
 

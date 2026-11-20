@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-4221"></a>
+<a id="rustdoc-item-4479"></a>
 
 # Function `pill_development_host::runtime::process_patch_faults`
 
@@ -8,7 +8,7 @@
 pub(in runtime) fn process_patch_faults(host: &mut DevHost);
 ```
 
-Visibility: `{'restricted': {'parent': 3859, 'path': '::runtime'}}` · Source: `hosting\pill_development_host\src\runtime.rs:3818`
+Visibility: `{'restricted': {'parent': 4115, 'path': '::runtime'}}` · Source: `hosting\pill_development_host\src\runtime.rs:4014`
 
 Roll back a function whose patched body kept panicking.
 

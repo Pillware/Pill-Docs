@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-2281"></a>
+<a id="rustdoc-item-2355"></a>
 
 # Enum `pill_development_host::hot_patch::worker::BodyOutcome`
 
@@ -14,7 +14,7 @@ What the build produced for one body.
 
 ## Variants
 
-<a id="rustdoc-item-2277"></a>
+<a id="rustdoc-item-2351"></a>
 
 ### `Built`
 
@@ -24,7 +24,7 @@ Built
 
 Compiled and loaded; the frame boundary installs it.
 
-<a id="rustdoc-item-2280"></a>
+<a id="rustdoc-item-2354"></a>
 
 ### `Failed`
 

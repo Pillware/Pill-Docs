@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-805"></a>
+<a id="rustdoc-item-811"></a>
 
 # Function `pill_player::telemetry::report_failure`
 

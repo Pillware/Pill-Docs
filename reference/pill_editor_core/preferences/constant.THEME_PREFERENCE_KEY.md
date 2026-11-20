@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-6287"></a>
+<a id="rustdoc-item-8323"></a>
 
 # Constant `pill_editor_core::preferences::THEME_PREFERENCE_KEY`
 
@@ -12,5 +12,5 @@ Source: `editor\pill_editor_core\src\preferences.rs:54`
 
 The preference key the editor's user theme layer is named under.
 
-The value is a `.theme` or `.json` file, either absolute or relative to the
-editor's state directory.
+The value is a `.theme`, `.yaml` or `.yml` file, either absolute or
+relative to the editor's state directory.

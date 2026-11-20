@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-592"></a>
+<a id="rustdoc-item-596"></a>
 
 # Enum `pill_player::static_project::StaticProjectBackend`
 
@@ -14,7 +14,7 @@ How a shipping build reaches its project.
 
 ## Variants
 
-<a id="rustdoc-item-588"></a>
+<a id="rustdoc-item-592"></a>
 
 ### `Native`
 
@@ -24,7 +24,7 @@ Native
 
 A Rust project linked into this binary.
 
-<a id="rustdoc-item-591"></a>
+<a id="rustdoc-item-595"></a>
 
 ### `External`
 
@@ -50,13 +50,13 @@ keeps the copy it reads its name from.
 - `TryFrom<U>`
 - `Any`
 - `ToOwned`
+- `CastableFrom<ST, Uninit, Uninit>`
+- `CastableFrom<ST, Initialized, Initialized>`
+- `Read<Exclusive, BecauseExclusive>`
 - `Instrument`
 - `WithSubscriber`
 - `IntoEither`
 - `Pointable`
 - `OwoColorize`
 - `ErasedDestructor`
-- `CastableFrom<ST, Uninit, Uninit>`
-- `CastableFrom<ST, Initialized, Initialized>`
-- `Read<Exclusive, BecauseExclusive>`
 - `Clone`

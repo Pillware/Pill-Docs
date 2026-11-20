@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-5315"></a>
+<a id="rustdoc-item-7278"></a>
 
 # Function `pill_editor_core::layout::persistence::editor_state_directory`
 
@@ -8,7 +8,7 @@
 pub(in layout::persistence) fn editor_state_directory() -> std::path::PathBuf;
 ```
 
-Visibility: `{'restricted': {'parent': 5269, 'path': '::layout::persistence'}}` · Source: `editor\pill_editor_core\src\layout\persistence.rs:243`
+Visibility: `{'restricted': {'parent': 7232, 'path': '::layout::persistence'}}` · Source: `editor\pill_editor_core\src\layout\persistence.rs:245`
 
 The per-user directory that editor state belongs in.
 

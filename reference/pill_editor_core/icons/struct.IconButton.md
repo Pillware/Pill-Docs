@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-4529"></a>
+<a id="rustdoc-item-6490"></a>
 
 # Struct `pill_editor_core::icons::IconButton`
 
@@ -16,11 +16,11 @@ menus, tab headers and toolbars.
 It uses the theme's button visuals: the hover and press feedback, and the
 selected fill that marks the current choice. The icon sits before the
 label. A row whose rectangle a panel has already fixed takes exactly that
-rectangle through [`IconButton::fixed_size`](#rustdoc-item-4528).
+rectangle through [`IconButton::fixed_size`](#rustdoc-item-6489).
 
 ## Fields
 
-<a id="rustdoc-item-4521"></a>
+<a id="rustdoc-item-6482"></a>
 
 ### `icon`
 
@@ -30,7 +30,7 @@ icon: Icon
 
 _No documentation provided._
 
-<a id="rustdoc-item-4522"></a>
+<a id="rustdoc-item-6483"></a>
 
 ### `label`
 
@@ -40,7 +40,7 @@ label: &'a str
 
 _No documentation provided._
 
-<a id="rustdoc-item-4523"></a>
+<a id="rustdoc-item-6484"></a>
 
 ### `active`
 
@@ -50,7 +50,7 @@ active: bool
 
 _No documentation provided._
 
-<a id="rustdoc-item-4524"></a>
+<a id="rustdoc-item-6485"></a>
 
 ### `fill_override`
 
@@ -60,7 +60,7 @@ fill_override: Option<egui::Color32>
 
 _No documentation provided._
 
-<a id="rustdoc-item-4526"></a>
+<a id="rustdoc-item-6487"></a>
 
 ### `fixed_size`
 
@@ -72,7 +72,7 @@ _No documentation provided._
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-4530"></a>
+<a id="rustdoc-item-6491"></a>
 
 ### `new`
 
@@ -83,7 +83,7 @@ pub fn new(icon: Icon, label: &'a str) -> Self;
 Creates a button for `icon` and `label`. An empty `label` shows the
 icon on its own.
 
-<a id="rustdoc-item-4531"></a>
+<a id="rustdoc-item-6492"></a>
 
 ### `active`
 
@@ -94,7 +94,7 @@ pub fn active(self: Self, active: bool) -> Self;
 Marks the button as the current choice: a checked menu item or a tool
 that is on.
 
-<a id="rustdoc-item-4532"></a>
+<a id="rustdoc-item-6493"></a>
 
 ### `fill`
 
@@ -105,7 +105,7 @@ pub fn fill(self: Self, fill: Color32) -> Self;
 Uses `fill` instead of the theme's button fill, so a panel floating
 over the scene can keep its own palette.
 
-<a id="rustdoc-item-4528"></a>
+<a id="rustdoc-item-6489"></a>
 
 ### `fixed_size`
 

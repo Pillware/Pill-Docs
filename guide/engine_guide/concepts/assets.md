@@ -43,7 +43,7 @@ Because there are many values per type, and none belongs to one entity.
 - A **resource** is one value per type, found by type alone. There are hundreds of meshes, so the type does not say which one you mean.
 - A **component** belongs to one entity. A mesh is used by many entities at once.
 
-So assets get their own store, addressed by handle. The store itself is a resource with the shared name `pill_engine::asset::AssetManager`. That gives three things for free:
+So assets get their own store, addressed by handle. The store itself is a resource with the shared name `pill_engine::AssetManager`. That gives three things for free:
 
 - every module and the C# runtime reach the same store;
 - ECS systems get it through `Res<AssetManager>` and `ResMut<AssetManager>`;
@@ -155,7 +155,7 @@ A JSON object. The **header** belongs to the engine and is the same for every as
 ```json
 {
   "format_version": 1,
-  "asset_type": "pill_master_renderer::assets::Mesh",
+  "asset_type": "pill_master_renderer::Mesh",
   "guid": "2c5651ef82f427b70e391d2b1b841a8e",
   "settings": {
     "flip_v": true,
@@ -173,7 +173,7 @@ A JSON object. The **header** belongs to the engine and is the same for every as
 
 A standalone file uses the same three header fields, with its content under `asset` instead of `settings`. Both are read by one function, `read_header`, so the importer and the `AssetDatabase` always agree on which files are readable.
 
-> **Why is `asset_type` a stable name and not the Rust type?** A Rust type name (`std::any::type_name`) changes when the type moves to another module, and every `.meta` file of that type would stop matching. So the default is the type's `shared_name`. A type without a shared name falls back to the Rust name, and should override `metadata_type_name` with a fixed string.
+> **Why is `asset_type` a stable name and not the Rust type?** It is the type's stored name, `<crate>::<Type>` (`type_names::stable_type_name`), which does not change when the type moves to another module; a shared name, when the type has one, is what the file carries. A file written before names dropped their module path still loads, because a stored name with more than two segments is read as its first and last segment.
 
 ### How is a `.meta` file read?
 
@@ -278,7 +278,7 @@ Through the `ImportRegistry`. `AssetManager::import` is generic, so the type mus
 
 `World::register_imported_asset::<T>()` and `register_standalone_asset::<T>()` record, per type, its file extensions and function pointers compiled for that `T` in the registering DLL. A second type claiming an extension that another live type already imports is refused.
 
-A module does not write those calls. It derives `PillAsset` on the type, with `#[pill(imported)]` or `#[pill(standalone)]`, and its entry point calls the matching method for every asset type its own image declares (`register_all_assets`, sorted by type name), on the first load and on every reload, before the module's `register` function runs. That repeat is what keeps the registry's function pointers, and the column's refresher, pointing into the image that is loaded now. The `ImportedAsset`/`StandaloneAsset` implementations stay hand-written.
+A module does not write those calls. It declares the type with `#[asset]`, with `imported` or `standalone`, and its entry point calls the matching method for every asset type its own image declares (`register_all_assets`, sorted by type name), on the first load and on every reload, before the module's `register` function runs. That repeat is what keeps the registry's function pointers, and the column's refresher, pointing into the image that is loaded now. The `ImportedAsset`/`StandaloneAsset` implementations stay hand-written.
 
 The registry also stores per-type **field decorators** for a document's fields (`FieldDecorator::Range` and `Tooltip`, declared with `ImportRegistry::declare_field_decorators`). They are plain data, because the registry outlives the crate that declared them. The editor's Inspector reads them to draw a value as a slider or give its label hover text without knowing the type. A manager's settings asset (`res/settings/pill_audio.audio_settings`, a standalone asset) uses this for its sink counts and ear separation.
 
@@ -321,4 +321,4 @@ All paths are in `modules/engine/pill_engine_core/src/` unless noted.
 | Editor writes (`WriteAssetMeta`, `SetAssetSettings`)                 | `modules/editor/pill_editor_core/src/editor_state/apply/asset.rs`               |
 | Saved references, `AssetReference`                                   | `saved_references.rs`, `asset_reference.rs`                                     |
 | Pack writer                                                          | `modules/assets/pill_assets/`                                                   |
-| The renderer's asset types                                           | `modules/extensions/pill_master_renderer/pill_master_renderer_data/src/assets/` |
+| The renderer's asset types                                           | `modules/extensions/pill_master_renderer/modules/runtime/data/src/assets/` |

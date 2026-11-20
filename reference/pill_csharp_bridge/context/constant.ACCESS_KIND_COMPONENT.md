@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1024"></a>
+<a id="rustdoc-item-1046"></a>
 
 # Constant `pill_csharp_bridge::context::ACCESS_KIND_COMPONENT`
 

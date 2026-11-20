@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-8459"></a>
+<a id="rustdoc-item-10522"></a>
 
 # Function `pill_editor_core::style::dock_style`
 
@@ -8,7 +8,7 @@
 pub fn dock_style(egui_style: &egui::Style, palette: &Palette) -> egui_dock::Style;
 ```
 
-Source: `editor\pill_editor_core\src\style.rs:815`
+Source: `editor\pill_editor_core\src\style.rs:836`
 
 The `egui_dock` styling for the shell's `DockArea`.
 

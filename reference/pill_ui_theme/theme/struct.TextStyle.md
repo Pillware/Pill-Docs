@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-955"></a>
+<a id="rustdoc-item-967"></a>
 
 # Struct `pill_ui_theme::theme::TextStyle`
 
@@ -14,7 +14,7 @@ One named text style: a size in points and a family.
 
 ## Fields
 
-<a id="rustdoc-item-953"></a>
+<a id="rustdoc-item-965"></a>
 
 ### `size`
 
@@ -24,7 +24,7 @@ size: f32
 
 The size in points.
 
-<a id="rustdoc-item-954"></a>
+<a id="rustdoc-item-966"></a>
 
 ### `family`
 
@@ -36,7 +36,7 @@ The family the style draws in.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-956"></a>
+<a id="rustdoc-item-968"></a>
 
 ### `new`
 

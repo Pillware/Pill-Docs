@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-970"></a>
+<a id="rustdoc-item-992"></a>
 
 # Module `pill_csharp_bridge::manifest_apply`
 
@@ -46,28 +46,28 @@ length against it.
 ## Module contents
 
 ### Structs
-- [`JournalEntry`](struct.JournalEntry.md#rustdoc-item-1669) — One applied entry, recorded so a later refusal can undo it.
-- [`ManifestOutcome`](struct.ManifestOutcome.md#rustdoc-item-1605) — What one applied manifest changed.
-- [`ManifestSubject`](struct.ManifestSubject.md#rustdoc-item-971) — What one manifest kind contributes to the shared pipeline.
-- [`PreparedManifest`](struct.PreparedManifest.md#rustdoc-item-1697) — One kind's declarations, resolved against the live table and ready to
-- [`RenamePredecessor`](struct.RenamePredecessor.md#rustdoc-item-980) — The live entry that an arriving declaration's alias reached.
+- [`JournalEntry`](struct.JournalEntry.md#rustdoc-item-1693) — One applied entry, recorded so a later refusal can undo it.
+- [`ManifestOutcome`](struct.ManifestOutcome.md#rustdoc-item-1629) — What one applied manifest changed.
+- [`ManifestSubject`](struct.ManifestSubject.md#rustdoc-item-993) — What one manifest kind contributes to the shared pipeline.
+- [`PreparedManifest`](struct.PreparedManifest.md#rustdoc-item-1721) — One kind's declarations, resolved against the live table and ready to
+- [`RenamePredecessor`](struct.RenamePredecessor.md#rustdoc-item-1002) — The live entry that an arriving declaration's alias reached.
 
 ### Enums
-- [`Resolution`](enum.Resolution.md#rustdoc-item-1642) — One arriving declaration, resolved against the live table.
-- [`Settlement`](enum.Settlement.md#rustdoc-item-975) — What an arriving declaration means for a live binding.
+- [`Resolution`](enum.Resolution.md#rustdoc-item-1666) — One arriving declaration, resolved against the live table.
+- [`Settlement`](enum.Settlement.md#rustdoc-item-997) — What an arriving declaration means for a live binding.
 
 ### Functions
-- [`apply_resolution`](fn.apply_resolution.md#rustdoc-item-1724) — Apply one resolved entry, recording what it wrote.
-- [`execute_manifest`](fn.execute_manifest.md#rustdoc-item-1721) — The half of the pipeline that changes things: applies what
-- [`prepare_manifest`](fn.prepare_manifest.md#rustdoc-item-1696) — The half of the pipeline that decides what a manifest means, without
-- [`resolve_entries`](fn.resolve_entries.md#rustdoc-item-1723) — Resolve every declaration against the live table, refusing before anything is
-- [`resolve_renames`](fn.resolve_renames.md#rustdoc-item-1722) — Resolve every declaration's aliases to the live entries they name.
-- [`roll_back`](fn.roll_back.md#rustdoc-item-1725) — Undo every applied entry, newest first.
+- [`apply_resolution`](fn.apply_resolution.md#rustdoc-item-1748) — Apply one resolved entry, recording what it wrote.
+- [`execute_manifest`](fn.execute_manifest.md#rustdoc-item-1745) — The half of the pipeline that changes things: applies what
+- [`prepare_manifest`](fn.prepare_manifest.md#rustdoc-item-1720) — The half of the pipeline that decides what a manifest means, without
+- [`resolve_entries`](fn.resolve_entries.md#rustdoc-item-1747) — Resolve every declaration against the live table, refusing before anything is
+- [`resolve_renames`](fn.resolve_renames.md#rustdoc-item-1746) — Resolve every declaration's aliases to the live entries they name.
+- [`roll_back`](fn.roll_back.md#rustdoc-item-1749) — Undo every applied entry, newest first.
 
 ### Type aliases
-- [`Applied`](type.Applied.md#rustdoc-item-1508) — What a subject action reports: the binding it produced, and how to reverse
-- [`BindingTable`](type.BindingTable.md#rustdoc-item-1507) — The live table one manifest kind keeps, keyed by stable identity.
-- [`Register`](type.Register.md#rustdoc-item-1510) — Register a declaration the table has no entry for.
-- [`Rename`](type.Rename.md#rustdoc-item-1512) — Register a successor and move a predecessor's data onto it.
-- [`Reshape`](type.Reshape.md#rustdoc-item-1511) — Migrate a live entry's stored data into the arriving shape.
-- [`ResolveAlias`](type.ResolveAlias.md#rustdoc-item-1509) — Resolve one alias to the live table entry it names, if any.
+- [`Applied`](type.Applied.md#rustdoc-item-1532) — What a subject action reports: the binding it produced, and how to reverse
+- [`BindingTable`](type.BindingTable.md#rustdoc-item-1531) — The live table one manifest kind keeps, keyed by stable identity.
+- [`Register`](type.Register.md#rustdoc-item-1534) — Register a declaration the table has no entry for.
+- [`Rename`](type.Rename.md#rustdoc-item-1536) — Register a successor and move a predecessor's data onto it.
+- [`Reshape`](type.Reshape.md#rustdoc-item-1535) — Migrate a live entry's stored data into the arriving shape.
+- [`ResolveAlias`](type.ResolveAlias.md#rustdoc-item-1533) — Resolve one alias to the live table entry it names, if any.

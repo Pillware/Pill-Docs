@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-508"></a>
+<a id="rustdoc-item-505"></a>
 
 # Struct `pill_master_renderer::chain::ChainContext`
 
@@ -8,7 +8,7 @@
 pub(crate) struct ChainContext<'a>;
 ```
 
-Visibility: `crate` · Source: `extensions\pill_master_renderer\pill_master_renderer\src\chain.rs:190`
+Visibility: `crate` · Source: `extensions\pill_master_renderer\modules\runtime\gpu\src\chain.rs:190`
 
 What the chain needs from the renderer to build its GPU objects.
 
@@ -22,7 +22,7 @@ site would stop the chain reading as one unit.
 
 ## Fields
 
-<a id="rustdoc-item-494"></a>
+<a id="rustdoc-item-491"></a>
 
 ### `state`
 
@@ -32,7 +32,7 @@ state: &'a mut crate::renderer::State
 
 The device, caches and layouts the passes are built from.
 
-<a id="rustdoc-item-496"></a>
+<a id="rustdoc-item-493"></a>
 
 ### `surface_format`
 
@@ -42,7 +42,7 @@ surface_format: wgpu::TextureFormat
 
 The colour format a pass writing the surface declares.
 
-<a id="rustdoc-item-498"></a>
+<a id="rustdoc-item-495"></a>
 
 ### `size`
 
@@ -52,7 +52,7 @@ size: (u32, u32)
 
 The surface size, in pixels: every offscreen target is sized from it.
 
-<a id="rustdoc-item-499"></a>
+<a id="rustdoc-item-496"></a>
 
 ### `depth_texture`
 
@@ -62,7 +62,7 @@ depth_texture: &'a crate::resources::RendererTexture
 
 The depth buffer every geometry pass writes.
 
-<a id="rustdoc-item-501"></a>
+<a id="rustdoc-item-498"></a>
 
 ### `offscreen`
 
@@ -72,7 +72,7 @@ offscreen: &'a mut std::collections::HashMap<String, crate::resources::RendererT
 
 The offscreen colour targets the chain declares, by name.
 
-<a id="rustdoc-item-503"></a>
+<a id="rustdoc-item-500"></a>
 
 ### `shader_handles`
 
@@ -82,7 +82,7 @@ shader_handles: &'a crate::rendering_resources_manager::GpuColumn<renderer_shade
 
 Shader objects by asset key: a pass names its shader by key.
 
-<a id="rustdoc-item-505"></a>
+<a id="rustdoc-item-502"></a>
 
 ### `texture_handles`
 
@@ -92,7 +92,7 @@ texture_handles: &'a crate::rendering_resources_manager::GpuColumn<renderer_text
 
 Texture objects by asset key: a pass's committed textures.
 
-<a id="rustdoc-item-507"></a>
+<a id="rustdoc-item-504"></a>
 
 ### `resource_epoch`
 

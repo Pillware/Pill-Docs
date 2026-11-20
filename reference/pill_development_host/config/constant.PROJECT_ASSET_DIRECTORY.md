@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-851"></a>
+<a id="rustdoc-item-858"></a>
 
 # Constant `pill_development_host::config::PROJECT_ASSET_DIRECTORY`
 
@@ -8,6 +8,6 @@
 pub(in config) const PROJECT_ASSET_DIRECTORY: &str = "res";
 ```
 
-Visibility: `{'restricted': {'parent': 821, 'path': '::config'}}` · Source: `hosting\pill_development_host\src\config.rs:227`
+Visibility: `{'restricted': {'parent': 823, 'path': '::config'}}` · Source: `hosting\pill_development_host\src\config.rs:257`
 
 A project's source asset directory, relative to the project root.

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1387"></a>
+<a id="rustdoc-item-1462"></a>
 
 # Struct `pill_development_host::csharp::fast_compile::FastCompiler`
 
@@ -14,7 +14,7 @@ The loaded managed compiler, bound to one project's captured command line.
 
 ## Fields
 
-<a id="rustdoc-item-1382"></a>
+<a id="rustdoc-item-1457"></a>
 
 ### `compile`
 
@@ -24,7 +24,7 @@ compile: extern "System" fn (_: *const u8, _: *const u8) -> i32
 
 `Compile` export.
 
-<a id="rustdoc-item-1383"></a>
+<a id="rustdoc-item-1458"></a>
 
 ### `diagnostics_length`
 
@@ -34,7 +34,7 @@ diagnostics_length: extern "System" fn () -> u32
 
 `DiagnosticsLength` export.
 
-<a id="rustdoc-item-1384"></a>
+<a id="rustdoc-item-1459"></a>
 
 ### `copy_diagnostics`
 
@@ -44,7 +44,7 @@ copy_diagnostics: extern "System" fn (_: *mut u8, _: u32) -> u8
 
 `CopyDiagnostics` export.
 
-<a id="rustdoc-item-1385"></a>
+<a id="rustdoc-item-1460"></a>
 
 ### `response_file_path`
 
@@ -54,7 +54,7 @@ response_file_path: std::path::PathBuf
 
 Absolute path of the file holding the captured compiler arguments.
 
-<a id="rustdoc-item-1386"></a>
+<a id="rustdoc-item-1461"></a>
 
 ### `output_assembly_path`
 
@@ -66,7 +66,7 @@ Absolute path the recompiled project assembly is written to.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-1388"></a>
+<a id="rustdoc-item-1463"></a>
 
 ### `try_new`
 
@@ -83,7 +83,7 @@ another ABI version. Build and load failures are each logged with one
 warning; either way the host stays on the ordinary `dotnet build` path,
 so a broken fast path costs reload speed and nothing else.
 
-<a id="rustdoc-item-1391"></a>
+<a id="rustdoc-item-1466"></a>
 
 ### `resolve`
 
@@ -101,7 +101,7 @@ the exports above, and [`CSharpError::InteropVersionMismatch`] when the
 assembly implements a different contract than this host was built
 against.
 
-<a id="rustdoc-item-1393"></a>
+<a id="rustdoc-item-1468"></a>
 
 ### `start_warmup`
 
@@ -114,7 +114,7 @@ Ask the compiler to prepare its caches on a background thread.
 This is best effort: if the export is missing or the request cannot be
 made, the first reload simply pays the full Roslyn startup cost.
 
-<a id="rustdoc-item-1394"></a>
+<a id="rustdoc-item-1469"></a>
 
 ### `compile`
 
@@ -127,7 +127,7 @@ Recompile the project in-process, or say why that was not possible.
 `watch_directory` is the project's source directory, relative to the
 workspace root. The captured source list is checked against it.
 
-<a id="rustdoc-item-1395"></a>
+<a id="rustdoc-item-1470"></a>
 
 ### `diagnostics`
 

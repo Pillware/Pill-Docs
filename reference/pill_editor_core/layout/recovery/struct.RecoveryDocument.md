@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-5323"></a>
+<a id="rustdoc-item-7286"></a>
 
 # Struct `pill_editor_core::layout::recovery::RecoveryDocument`
 
@@ -15,7 +15,7 @@ after an abrupt exit.
 
 ## Fields
 
-<a id="rustdoc-item-5318"></a>
+<a id="rustdoc-item-7281"></a>
 
 ### `version`
 
@@ -23,9 +23,9 @@ after an abrupt exit.
 version: u32
 ```
 
-The document's version ([`RECOVERY_VERSION`](constant.RECOVERY_VERSION.md#rustdoc-item-5316)).
+The document's version ([`RECOVERY_VERSION`](constant.RECOVERY_VERSION.md#rustdoc-item-7279)).
 
-<a id="rustdoc-item-5319"></a>
+<a id="rustdoc-item-7282"></a>
 
 ### `dock`
 
@@ -35,7 +35,7 @@ dock: crate::layout::EditorDock
 
 The dock as it stood at the last autosave.
 
-<a id="rustdoc-item-5320"></a>
+<a id="rustdoc-item-7283"></a>
 
 ### `entities`
 
@@ -45,7 +45,7 @@ entities: Vec<String>
 
 The selected entities' display handles, in selection order.
 
-<a id="rustdoc-item-5321"></a>
+<a id="rustdoc-item-7284"></a>
 
 ### `asset`
 
@@ -55,7 +55,7 @@ asset: Option<String>
 
 The selected asset's project-relative path, when one was selected.
 
-<a id="rustdoc-item-5322"></a>
+<a id="rustdoc-item-7285"></a>
 
 ### `resource`
 
@@ -67,7 +67,7 @@ The selected resource's stable name, when one was selected.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-5324"></a>
+<a id="rustdoc-item-7287"></a>
 
 ### `capture`
 
@@ -79,10 +79,11 @@ Builds the document for the current state.
 
 The dock is settled first (its placeholder rectangles are replaced with
 finite ones). A node the frame has not laid out yet holds rectangles
-with non-finite floats, and `serde_json` writes those as `null`, which
-cannot be read back. The layout document is written the same way.
+with non-finite floats, which would be written as YAML's `.nan` and
+read back as a float the layout cannot use. The layout document is
+written the same way.
 
-<a id="rustdoc-item-5325"></a>
+<a id="rustdoc-item-7288"></a>
 
 ### `is_current`
 

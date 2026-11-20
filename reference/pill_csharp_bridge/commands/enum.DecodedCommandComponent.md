@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-696"></a>
+<a id="rustdoc-item-717"></a>
 
 # Enum `pill_csharp_bridge::commands::DecodedCommandComponent`
 
@@ -8,7 +8,7 @@
 pub(in commands) enum DecodedCommandComponent { ... }
 ```
 
-Visibility: `{'restricted': {'parent': 697, 'path': '::commands'}}` · Source: `csharp\pill_csharp_bridge\src\commands.rs:54`
+Visibility: `{'restricted': {'parent': 718, 'path': '::commands'}}` · Source: `csharp\pill_csharp_bridge\src\commands.rs:54`
 
 One component blob, decoded into a form the command queue accepts.
 
@@ -19,7 +19,7 @@ writes into the component's storage when the command runs.
 
 ## Variants
 
-<a id="rustdoc-item-691"></a>
+<a id="rustdoc-item-712"></a>
 
 ### `Native`
 
@@ -30,7 +30,7 @@ Native
 A native Rust component, added through the byte adder its column
 accepts.
 
-<a id="rustdoc-item-695"></a>
+<a id="rustdoc-item-716"></a>
 
 ### `Descriptor`
 

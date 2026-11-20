@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-3670"></a>
+<a id="rustdoc-item-3926"></a>
 
 # Constant `pill_development_host::switches::ASSETS_HOT_RELOADING_VARIABLE`
 

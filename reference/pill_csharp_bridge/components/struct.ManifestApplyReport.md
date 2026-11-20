@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-903"></a>
+<a id="rustdoc-item-925"></a>
 
 # Struct `pill_csharp_bridge::components::ManifestApplyReport`
 
@@ -14,7 +14,7 @@ What one applied manifest changed, for the caller's log line.
 
 ## Fields
 
-<a id="rustdoc-item-895"></a>
+<a id="rustdoc-item-917"></a>
 
 ### `migrated`
 
@@ -24,7 +24,7 @@ migrated: Vec<String>
 
 Managed components whose layout changed and whose rows were migrated.
 
-<a id="rustdoc-item-896"></a>
+<a id="rustdoc-item-918"></a>
 
 ### `added`
 
@@ -34,7 +34,7 @@ added: Vec<String>
 
 Managed components the manifest added.
 
-<a id="rustdoc-item-897"></a>
+<a id="rustdoc-item-919"></a>
 
 ### `renamed`
 
@@ -45,7 +45,7 @@ renamed: Vec<String>
 Managed components the manifest renamed through an alias, as
 `old name -> new name`.
 
-<a id="rustdoc-item-898"></a>
+<a id="rustdoc-item-920"></a>
 
 ### `retired`
 
@@ -56,7 +56,7 @@ retired: Vec<String>
 Managed components whose storage was retired because the manifest
 stopped naming them.
 
-<a id="rustdoc-item-899"></a>
+<a id="rustdoc-item-921"></a>
 
 ### `resources_added`
 
@@ -66,7 +66,7 @@ resources_added: Vec<String>
 
 Managed resources the manifest added.
 
-<a id="rustdoc-item-900"></a>
+<a id="rustdoc-item-922"></a>
 
 ### `resources_migrated`
 
@@ -76,7 +76,7 @@ resources_migrated: Vec<String>
 
 Managed resources whose layout changed and whose bytes were migrated.
 
-<a id="rustdoc-item-901"></a>
+<a id="rustdoc-item-923"></a>
 
 ### `resources_renamed`
 
@@ -87,7 +87,7 @@ resources_renamed: Vec<String>
 Managed resources the manifest renamed through an alias, as
 `old name -> new name`.
 
-<a id="rustdoc-item-902"></a>
+<a id="rustdoc-item-924"></a>
 
 ### `resources_retired`
 

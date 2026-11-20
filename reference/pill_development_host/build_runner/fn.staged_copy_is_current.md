@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-778"></a>
+<a id="rustdoc-item-780"></a>
 
 # Function `pill_development_host::build_runner::staged_copy_is_current`
 
@@ -8,7 +8,7 @@
 pub(crate) fn staged_copy_is_current(source_path: &std::path::Path, staged_path: &std::path::Path) -> bool;
 ```
 
-Visibility: `crate` · Source: `hosting\pill_development_host\src\build_runner.rs:1939`
+Visibility: `crate` · Source: `hosting\pill_development_host\src\build_runner.rs:1940`
 
 Checks whether a staged copy already matches its source.
 

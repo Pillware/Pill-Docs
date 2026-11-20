@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1420"></a>
+<a id="rustdoc-item-1495"></a>
 
 # Function `pill_development_host::csharp::fast_compile::compiler_arguments_file`
 
@@ -8,7 +8,7 @@
 pub(in csharp::fast_compile) fn compiler_arguments_file(config: &crate::CSharpModuleConfig) -> Option<std::path::PathBuf>;
 ```
 
-Visibility: `{'restricted': {'parent': 1342, 'path': '::csharp::fast_compile'}}` · Source: `hosting\pill_development_host\src\csharp\fast_compile.rs:367`
+Visibility: `{'restricted': {'parent': 1417, 'path': '::csharp::fast_compile'}}` · Source: `hosting\pill_development_host\src\csharp\fast_compile.rs:367`
 
 Workspace-relative path of the captured compiler command line for `config`.
 

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-4036"></a>
+<a id="rustdoc-item-4511"></a>
 
 # Struct `pill_editor_core::gizmo::HandleStates`
 
@@ -8,7 +8,7 @@
 pub struct HandleStates;
 ```
 
-Source: `editor\pill_editor_core\src\gizmo.rs:523`
+Source: `editor\pill_editor_core\src\gizmo.rs:641`
 
 The handle the pointer is over and the handle a drag holds.
 
@@ -17,7 +17,7 @@ handles the frame draws.
 
 ## Fields
 
-<a id="rustdoc-item-4034"></a>
+<a id="rustdoc-item-4509"></a>
 
 ### `hovered`
 
@@ -27,7 +27,7 @@ hovered: Option<u32>
 
 The handle under the pointer, if one is.
 
-<a id="rustdoc-item-4035"></a>
+<a id="rustdoc-item-4510"></a>
 
 ### `active`
 
@@ -39,7 +39,7 @@ The handle a drag holds, if one does.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-4037"></a>
+<a id="rustdoc-item-4512"></a>
 
 ### `of`
 

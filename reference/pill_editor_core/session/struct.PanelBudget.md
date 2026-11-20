@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-7253"></a>
+<a id="rustdoc-item-9311"></a>
 
 # Struct `pill_editor_core::session::PanelBudget`
 
@@ -8,7 +8,7 @@
 pub struct PanelBudget;
 ```
 
-Source: `editor\pill_editor_core\src\session.rs:526`
+Source: `editor\pill_editor_core\src\session.rs:533`
 
 Every module panel's build time.
 
@@ -18,7 +18,7 @@ a panel cannot inflate its own row by drawing it.
 
 ## Fields
 
-<a id="rustdoc-item-7775"></a>
+<a id="rustdoc-item-9837"></a>
 
 ### `entries`
 
@@ -30,7 +30,7 @@ One entry per panel drawn since the session began, in first-drawn order.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-7776"></a>
+<a id="rustdoc-item-9838"></a>
 
 ### `WEIGHT`
 
@@ -41,7 +41,7 @@ const WEIGHT: f32 = 0.05;
 How strongly one pass moves the mean, the same weight the statistics
 use.
 
-<a id="rustdoc-item-7777"></a>
+<a id="rustdoc-item-9839"></a>
 
 ### `record`
 
@@ -56,7 +56,7 @@ The mean is smoothed, but the overshoot count is not: a panel that
 sits just over budget every frame is slow, and a panel that is fast
 again resets the count, so only a sustained overshoot warns.
 
-<a id="rustdoc-item-7778"></a>
+<a id="rustdoc-item-9840"></a>
 
 ### `get`
 
@@ -66,7 +66,7 @@ pub fn get(self: &Self, slot: u16) -> Option<&PanelTiming>;
 
 The timing of one slot, when it has been timed.
 
-<a id="rustdoc-item-7779"></a>
+<a id="rustdoc-item-9841"></a>
 
 ### `is_slow`
 

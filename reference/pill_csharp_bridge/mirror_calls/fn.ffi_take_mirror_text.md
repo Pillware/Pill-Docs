@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1737"></a>
+<a id="rustdoc-item-1761"></a>
 
 # Function `pill_csharp_bridge::mirror_calls::ffi_take_mirror_text`
 

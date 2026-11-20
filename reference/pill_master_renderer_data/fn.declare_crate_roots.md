@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1717"></a>
+<a id="rustdoc-item-1814"></a>
 
 # Function `pill_master_renderer_data::declare_crate_roots`
 
@@ -8,7 +8,7 @@
 pub(crate) fn declare_crate_roots();
 ```
 
-Visibility: `crate` · Source: `extensions\pill_master_renderer\pill_master_renderer_data\src\pill_master_renderer_data.rs:219`
+Visibility: `crate` · Source: `extensions\pill_master_renderer\modules\runtime\data\src\pill_master_renderer_data.rs:219`
 
 Declares the read-only roots this crate ships, from its own directory.
 

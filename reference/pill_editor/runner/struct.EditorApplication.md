@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1150"></a>
+<a id="rustdoc-item-1598"></a>
 
 # Struct `pill_editor::runner::EditorApplication`
 
@@ -8,13 +8,13 @@
 pub(in runner) struct EditorApplication;
 ```
 
-Visibility: `{'restricted': {'parent': 483, 'path': '::runner'}}` · Source: `editor\pill_editor\src\runner\mod.rs:318`
+Visibility: `{'restricted': {'parent': 539, 'path': '::runner'}}` · Source: `editor\pill_editor\src\runner\mod.rs:481`
 
 The `winit` application: one editor window, created on resume.
 
 ## Fields
 
-<a id="rustdoc-item-1146"></a>
+<a id="rustdoc-item-1594"></a>
 
 ### `editor_window`
 
@@ -24,7 +24,7 @@ editor_window: Option<editor_window::EditorWindow>
 
 The window and its host, once the loop resumed.
 
-<a id="rustdoc-item-1147"></a>
+<a id="rustdoc-item-1595"></a>
 
 ### `log_buffer`
 
@@ -34,7 +34,7 @@ log_buffer: pill_core::telemetry::capture::LogBuffer
 
 The telemetry capture ring the window's Console tab reads.
 
-<a id="rustdoc-item-1148"></a>
+<a id="rustdoc-item-1596"></a>
 
 ### `wake_timer`
 

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-387"></a>
+<a id="rustdoc-item-390"></a>
 
 # Module `pill_ui_frame::slot`
 
@@ -12,7 +12,7 @@ takes it from.
 
 ## Responsibilities
 
-- [`UiFrameSlot`](struct.UiFrameSlot.md#rustdoc-item-389): the world resource holding the newest [`UiFrame`](../frame/struct.UiFrame.md#rustdoc-item-350) a UI
+- [`UiFrameSlot`](struct.UiFrameSlot.md#rustdoc-item-392): the world resource holding the newest [`UiFrame`](../frame/struct.UiFrame.md#rustdoc-item-353) a UI
   producer built. It offers `publish` and `take` for the frame, `is_empty`,
   and `clear` to drop a frame but keep its buffers.
 - `request_texture_resend` and `texture_resend_generation`: the pair a
@@ -38,4 +38,4 @@ would register a second one.
 ## Module contents
 
 ### Structs
-- [`UiFrameSlot`](struct.UiFrameSlot.md#rustdoc-item-389) — Holds the frame the last UI pass published until the renderer takes it.
+- [`UiFrameSlot`](struct.UiFrameSlot.md#rustdoc-item-392) — Holds the frame the last UI pass published until the renderer takes it.

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-5986"></a>
+<a id="rustdoc-item-7951"></a>
 
 # Struct `pill_editor_core::panels::PanelEntityDetail`
 
@@ -14,7 +14,7 @@ The selected entity's components, as a panel sees them.
 
 ## Fields
 
-<a id="rustdoc-item-5984"></a>
+<a id="rustdoc-item-7949"></a>
 
 ### `entity`
 
@@ -24,7 +24,7 @@ entity: pill_engine::Entity
 
 The entity the detail describes.
 
-<a id="rustdoc-item-5985"></a>
+<a id="rustdoc-item-7950"></a>
 
 ### `components`
 

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1908"></a>
+<a id="rustdoc-item-1982"></a>
 
 # Function `pill_development_host::hot_patch::compile::tokenize`
 
@@ -8,7 +8,7 @@
 pub(in hot_patch::compile) fn tokenize(command_line: &str) -> Vec<String>;
 ```
 
-Visibility: `{'restricted': {'parent': 1910, 'path': '::hot_patch::compile'}}` · Source: `hosting\pill_development_host\src\hot_patch\compile.rs:688`
+Visibility: `{'restricted': {'parent': 1984, 'path': '::hot_patch::compile'}}` · Source: `hosting\pill_development_host\src\hot_patch\compile.rs:688`
 
 Splits a command line into tokens, following cargo's quote grouping.
 

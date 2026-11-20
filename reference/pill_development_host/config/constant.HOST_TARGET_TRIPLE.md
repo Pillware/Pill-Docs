@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-843"></a>
+<a id="rustdoc-item-850"></a>
 
 # Constant `pill_development_host::config::HOST_TARGET_TRIPLE`
 
@@ -8,7 +8,7 @@
 pub(in config) const HOST_TARGET_TRIPLE: &str = "";
 ```
 
-Visibility: `{'restricted': {'parent': 821, 'path': '::config'}}` · Source: `hosting\pill_development_host\src\config.rs:177`
+Visibility: `{'restricted': {'parent': 823, 'path': '::config'}}` · Source: `hosting\pill_development_host\src\config.rs:207`
 
 Target triple the host was compiled for, recorded by `build.rs`.
 

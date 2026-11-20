@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-4988"></a>
+<a id="rustdoc-item-6951"></a>
 
 # Function `pill_editor_core::inspector::element_write`
 
@@ -8,7 +8,7 @@
 pub fn element_write(entity: pill_engine::Entity, component: &str, field: &str, current: &pill_engine::FieldValue, index: usize, value_text: &str) -> Result<RecordedEdit, String>;
 ```
 
-Source: `editor\pill_editor_core\src\inspector.rs:1424`
+Source: `editor\pill_editor_core\src\inspector.rs:1431`
 
 One array element's write, keyed on the element.
 

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-7737"></a>
+<a id="rustdoc-item-9799"></a>
 
 # Struct `pill_editor_core::session::PanelTiming`
 
@@ -8,13 +8,13 @@
 pub struct PanelTiming;
 ```
 
-Source: `editor\pill_editor_core\src\session.rs:504`
+Source: `editor\pill_editor_core\src\session.rs:511`
 
 One panel's build time and how long it has been over budget.
 
 ## Fields
 
-<a id="rustdoc-item-7731"></a>
+<a id="rustdoc-item-9793"></a>
 
 ### `slot`
 
@@ -24,7 +24,7 @@ slot: u16
 
 The panel's registry slot.
 
-<a id="rustdoc-item-7732"></a>
+<a id="rustdoc-item-9794"></a>
 
 ### `micros`
 
@@ -34,7 +34,7 @@ micros: f32
 
 The panel body's smoothed build time, in microseconds.
 
-<a id="rustdoc-item-7733"></a>
+<a id="rustdoc-item-9795"></a>
 
 ### `passes`
 
@@ -44,7 +44,7 @@ passes: u64
 
 Passes the panel body was timed.
 
-<a id="rustdoc-item-7734"></a>
+<a id="rustdoc-item-9796"></a>
 
 ### `slow_frames`
 
@@ -52,9 +52,9 @@ Passes the panel body was timed.
 slow_frames: u32
 ```
 
-Consecutive passes over [`PANEL_BUDGET_MICROS`](constant.PANEL_BUDGET_MICROS.md#rustdoc-item-7227).
+Consecutive passes over [`PANEL_BUDGET_MICROS`](constant.PANEL_BUDGET_MICROS.md#rustdoc-item-9285).
 
-<a id="rustdoc-item-7735"></a>
+<a id="rustdoc-item-9797"></a>
 
 ### `warned`
 
@@ -64,7 +64,7 @@ warned: bool
 
 Whether the overshoot was already reported, so one panel warns once.
 
-<a id="rustdoc-item-7736"></a>
+<a id="rustdoc-item-9798"></a>
 
 ### `toasted`
 

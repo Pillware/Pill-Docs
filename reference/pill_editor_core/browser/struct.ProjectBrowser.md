@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-512"></a>
+<a id="rustdoc-item-556"></a>
 
 # Struct `pill_editor_core::browser::ProjectBrowser`
 
@@ -19,7 +19,7 @@ was looking at.
 
 ## Fields
 
-<a id="rustdoc-item-505"></a>
+<a id="rustdoc-item-549"></a>
 
 ### `folder`
 
@@ -30,7 +30,7 @@ folder: String
 The folder the grid lists, as a path from the asset root: empty for the
 root itself.
 
-<a id="rustdoc-item-506"></a>
+<a id="rustdoc-item-550"></a>
 
 ### `expanded`
 
@@ -40,7 +40,7 @@ expanded: std::collections::BTreeSet<String>
 
 The folders whose tree rows are open, so their children are shown.
 
-<a id="rustdoc-item-508"></a>
+<a id="rustdoc-item-552"></a>
 
 ### `tile_size`
 
@@ -50,7 +50,7 @@ tile_size: f32
 
 The tile size the grid draws, in points.
 
-<a id="rustdoc-item-509"></a>
+<a id="rustdoc-item-553"></a>
 
 ### `tile_rects`
 
@@ -62,7 +62,7 @@ Each tile's last logged rectangle, keyed by the tile's path. A
 rectangle is logged once per placement, so a test suite can drag a
 tile without reading pixels.
 
-<a id="rustdoc-item-510"></a>
+<a id="rustdoc-item-554"></a>
 
 ### `tree_rects`
 
@@ -73,7 +73,7 @@ tree_rects: Vec<(String, [f32; 4])>
 Each folder tree row's last logged rectangle, keyed by the folder. A
 test suite right-clicks a row through it without reading pixels.
 
-<a id="rustdoc-item-511"></a>
+<a id="rustdoc-item-555"></a>
 
 ### `pane_rect`
 
@@ -86,7 +86,7 @@ inside it opens the open folder's menu.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-513"></a>
+<a id="rustdoc-item-557"></a>
 
 ### `open`
 
@@ -100,7 +100,7 @@ The call logs the `[editor] browser folder` line the suites watch. The
 folder's ancestors open in the tree too, so the tree always shows where
 the grid is looking.
 
-<a id="rustdoc-item-514"></a>
+<a id="rustdoc-item-558"></a>
 
 ### `toggle_expanded`
 
@@ -111,7 +111,7 @@ pub fn toggle_expanded(self: &mut Self, folder: &str) -> bool;
 Opens a closed folder's tree row, or closes an open one, and returns
 whether the folder is now open.
 
-<a id="rustdoc-item-515"></a>
+<a id="rustdoc-item-559"></a>
 
 ### `is_expanded`
 
@@ -121,7 +121,7 @@ pub fn is_expanded(self: &Self, folder: &str) -> bool;
 
 Returns whether the tree shows `folder` open.
 
-<a id="rustdoc-item-516"></a>
+<a id="rustdoc-item-560"></a>
 
 ### `expand_ancestors`
 
@@ -132,7 +132,7 @@ pub fn expand_ancestors(self: &mut Self, path: &str);
 Opens every ancestor of `path` in the tree, so the tree shows the
 folder that holds it.
 
-<a id="rustdoc-item-517"></a>
+<a id="rustdoc-item-561"></a>
 
 ### `settle`
 

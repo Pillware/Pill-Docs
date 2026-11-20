@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-568"></a>
+<a id="rustdoc-item-569"></a>
 
 # Function `pill_development_host::build_runner::host_build_identity`
 
@@ -8,7 +8,7 @@
 pub(in build_runner) fn host_build_identity() -> String;
 ```
 
-Visibility: `{'restricted': {'parent': 545, 'path': '::build_runner'}}` · Source: `hosting\pill_development_host\src\build_runner.rs:215`
+Visibility: `{'restricted': {'parent': 546, 'path': '::build_runner'}}` · Source: `hosting\pill_development_host\src\build_runner.rs:215`
 
 The host's build identity: feature set, cargo profile, target, and the
 environment every spawned build runs with.

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1035"></a>
+<a id="rustdoc-item-1057"></a>
 
 # Constant `pill_csharp_bridge::context::SCOPE_TOKEN`
 
@@ -8,7 +8,7 @@
 pub(in context) const SCOPE_TOKEN: $crate::thread::LocalKey<std::cell::Cell<u32>> = _;
 ```
 
-Visibility: `{'restricted': {'parent': 1030, 'path': '::context'}}` · Source: `csharp\pill_csharp_bridge\src\context.rs:54`
+Visibility: `{'restricted': {'parent': 1052, 'path': '::context'}}` · Source: `csharp\pill_csharp_bridge\src\context.rs:54`
 
 Counter of managed invocations on this thread, copied into every chunk.
 

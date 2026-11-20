@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1202"></a>
+<a id="rustdoc-item-1212"></a>
 
 # Struct `pill_core::telemetry::TelemetryBuilder`
 
@@ -13,15 +13,15 @@ Source: `engine\pill_core\src\telemetry.rs:619`
 Configures and installs the engine's telemetry subscriber stack.
 
 Set up the layers with the `with_*` methods, then call
-[`TelemetryBuilder::init`](#rustdoc-item-1911) once per process. The terminal and file layers
+[`TelemetryBuilder::init`](#rustdoc-item-1921) once per process. The terminal and file layers
 are filtered independently and both are live-reloadable through
-[`TelemetryHandles::reload_logging_config`](struct.TelemetryHandles.md#rustdoc-item-1912) and
-[`TelemetryHandles::reload_file_config`](struct.TelemetryHandles.md#rustdoc-item-1913). The Tracy layer only ever sees
+[`TelemetryHandles::reload_logging_config`](struct.TelemetryHandles.md#rustdoc-item-1922) and
+[`TelemetryHandles::reload_file_config`](struct.TelemetryHandles.md#rustdoc-item-1923). The Tracy layer only ever sees
 `profile::*` targets.
 
 ## Fields
 
-<a id="rustdoc-item-1905"></a>
+<a id="rustdoc-item-1915"></a>
 
 ### `logging`
 
@@ -31,7 +31,7 @@ logging: LoggingConfig
 
 _No documentation provided._
 
-<a id="rustdoc-item-1906"></a>
+<a id="rustdoc-item-1916"></a>
 
 ### `file_logging`
 
@@ -41,7 +41,7 @@ file_logging: Option<(LoggingConfig, std::path::PathBuf)>
 
 _No documentation provided._
 
-<a id="rustdoc-item-1908"></a>
+<a id="rustdoc-item-1918"></a>
 
 ### `capture`
 
@@ -51,7 +51,7 @@ capture: Option<capture::LogBuffer>
 
 _No documentation provided._
 
-<a id="rustdoc-item-1909"></a>
+<a id="rustdoc-item-1919"></a>
 
 ### `tracy_enabled`
 
@@ -61,7 +61,7 @@ tracy_enabled: bool
 
 _No documentation provided._
 
-<a id="rustdoc-item-1910"></a>
+<a id="rustdoc-item-1920"></a>
 
 ### `fine_profiling_enabled`
 
@@ -73,7 +73,7 @@ _No documentation provided._
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-1914"></a>
+<a id="rustdoc-item-1924"></a>
 
 ### `new`
 
@@ -91,7 +91,7 @@ use pill_core::telemetry::TelemetryBuilder;
 let builder = TelemetryBuilder::new();
 ```
 
-<a id="rustdoc-item-1915"></a>
+<a id="rustdoc-item-1925"></a>
 
 ### `with_capture`
 
@@ -105,7 +105,7 @@ The editor's console panel reads the ring; the terminal and file layers
 are unaffected. Every line in the ring is an owned copy, so the ring
 never holds a pointer into the module that logged it.
 
-<a id="rustdoc-item-1916"></a>
+<a id="rustdoc-item-1926"></a>
 
 ### `with_logging_config`
 
@@ -115,7 +115,7 @@ pub fn with_logging_config(self: Self, logging_config: LoggingConfig) -> Self;
 
 Replace the terminal logging configuration.
 
-<a id="rustdoc-item-1917"></a>
+<a id="rustdoc-item-1927"></a>
 
 ### `with_file_output`
 
@@ -136,7 +136,7 @@ let builder = TelemetryBuilder::new().with_file_output(
 );
 ```
 
-<a id="rustdoc-item-1370"></a>
+<a id="rustdoc-item-1380"></a>
 
 ### `with_tracy`
 
@@ -148,7 +148,7 @@ Turn the Tracy layer on or off. It carries only the `profile::*`
 targets, and a `TracyZone` asks this filter whether the profiler wants
 its zone.
 
-<a id="rustdoc-item-1918"></a>
+<a id="rustdoc-item-1928"></a>
 
 ### `with_fine_profiling`
 
@@ -159,7 +159,7 @@ pub fn with_fine_profiling(self: Self, enabled: bool) -> Self;
 Also send `profile::fine` spans to the Tracy layer, for temporary deep
 investigation.
 
-<a id="rustdoc-item-1911"></a>
+<a id="rustdoc-item-1921"></a>
 
 ### `init`
 
@@ -175,11 +175,11 @@ are serialized so only one ever touches the global subscriber.
 
 #### Errors
 
-Returns [`TelemetryError::InvalidFilter`](enum.TelemetryError.md#rustdoc-item-1735) or
-[`TelemetryError::InvalidDirective`](enum.TelemetryError.md#rustdoc-item-1736) when a configured filter cannot be
-parsed, and [`TelemetryError::FileOutput`](enum.TelemetryError.md#rustdoc-item-1919) when the log file cannot be
+Returns [`TelemetryError::InvalidFilter`](enum.TelemetryError.md#rustdoc-item-1745) or
+[`TelemetryError::InvalidDirective`](enum.TelemetryError.md#rustdoc-item-1746) when a configured filter cannot be
+parsed, and [`TelemetryError::FileOutput`](enum.TelemetryError.md#rustdoc-item-1929) when the log file cannot be
 opened. A call made after a failed install returns
-[`TelemetryError::InstallFailed`](enum.TelemetryError.md#rustdoc-item-1920), which repeats the first failure.
+[`TelemetryError::InstallFailed`](enum.TelemetryError.md#rustdoc-item-1930), which repeats the first failure.
 
 #### Examples
 
@@ -191,7 +191,7 @@ let handles = TelemetryBuilder::new()
     .expect("default configuration installs cleanly");
 ```
 
-<a id="rustdoc-item-1922"></a>
+<a id="rustdoc-item-1932"></a>
 
 ### `install`
 
@@ -203,13 +203,13 @@ Build the full subscriber stack (terminal, optional file, optional
 capture ring, optional Tracy) and install it as the process-wide default
 subscriber.
 
-Invoked exactly once per process by [`Self::init`](#rustdoc-item-1911), through its
+Invoked exactly once per process by [`Self::init`](#rustdoc-item-1921), through its
 `OnceLock`.
 
 #### Errors
 
-Returns what [`LoggingConfig::build_env_filter`](struct.LoggingConfig.md#rustdoc-item-1728) reports for an invalid
-filter, and [`TelemetryError::FileOutput`](enum.TelemetryError.md#rustdoc-item-1919) when the log file cannot be
+Returns what [`LoggingConfig::build_env_filter`](struct.LoggingConfig.md#rustdoc-item-1738) reports for an invalid
+filter, and [`TelemetryError::FileOutput`](enum.TelemetryError.md#rustdoc-item-1929) when the log file cannot be
 opened.
 
 ## Trait implementations

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-2146"></a>
+<a id="rustdoc-item-2189"></a>
 
 # Struct `pill_master_renderer::resources::engine_parameters::EngineParametersData`
 
@@ -8,7 +8,7 @@
 pub struct EngineParametersData;
 ```
 
-Source: `extensions\pill_master_renderer\pill_master_renderer\src\resources\engine_parameters.rs:38`
+Source: `extensions\pill_master_renderer\modules\runtime\gpu\src\resources\engine_parameters.rs:38`
 
 The engine-wide uniform block a pass may read, in its GPU layout.
 
@@ -25,7 +25,7 @@ y = delta, z = frame). The struct is 48 bytes in total.
 
 ## Fields
 
-<a id="rustdoc-item-2142"></a>
+<a id="rustdoc-item-2185"></a>
 
 ### `fog_color`
 
@@ -35,7 +35,7 @@ fog_color: [f32; 3]
 
 Colour the lit shaders blend toward with distance.
 
-<a id="rustdoc-item-2143"></a>
+<a id="rustdoc-item-2186"></a>
 
 ### `fog_density`
 
@@ -45,7 +45,7 @@ fog_density: f32
 
 Fog thickness: how quickly the colour builds up with distance.
 
-<a id="rustdoc-item-2144"></a>
+<a id="rustdoc-item-2187"></a>
 
 ### `frame_size`
 
@@ -60,7 +60,7 @@ It exists for a pass that samples the frame at a texel offset; no
 shipped shader reads it. The value comes from the buffer rather than a
 pass parameter, so a resize cannot leave it stale.
 
-<a id="rustdoc-item-2145"></a>
+<a id="rustdoc-item-2188"></a>
 
 ### `time`
 
@@ -73,7 +73,7 @@ z = the frame's sequence number. w is unused.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-2147"></a>
+<a id="rustdoc-item-2190"></a>
 
 ### `new`
 
@@ -86,7 +86,7 @@ Creates an all-zero set of parameters.
 The uniform buffer is created from these values, so every shader reads
 zeros until the first frame's `update_data` call replaces them.
 
-<a id="rustdoc-item-2148"></a>
+<a id="rustdoc-item-2191"></a>
 
 ### `update_data`
 

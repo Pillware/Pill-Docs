@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-838"></a>
+<a id="rustdoc-item-832"></a>
 
 # Enum `pill_master_renderer_data::assets::texture::TextureType`
 
@@ -8,7 +8,7 @@
 pub enum TextureType { ... }
 ```
 
-Source: `extensions\pill_master_renderer\pill_master_renderer_data\src\assets\texture.rs:73`
+Source: `extensions\pill_master_renderer\modules\runtime\data\src\assets\texture.rs:73`
 
 How a texture's texels are meant to be read.
 
@@ -24,7 +24,7 @@ on-disk format.
 
 ## Variants
 
-<a id="rustdoc-item-1112"></a>
+<a id="rustdoc-item-1103"></a>
 
 ### `Color`
 
@@ -36,7 +36,7 @@ A colour image: albedo, UI, or any texture sampled for its values. It is
 uploaded as sRGB, so the hardware converts it to linear light before a
 shader reads it.
 
-<a id="rustdoc-item-1113"></a>
+<a id="rustdoc-item-1104"></a>
 
 ### `Normal`
 
@@ -47,7 +47,7 @@ Normal
 A normal map: its bytes are directions, not colours. It is uploaded as
 linear data, so a shader reads them exactly as stored.
 
-<a id="rustdoc-item-1115"></a>
+<a id="rustdoc-item-1106"></a>
 
 ### `Equirect`
 
@@ -61,9 +61,9 @@ point, laid out in one 2:1 image, longitude across and latitude down.
 It is high dynamic range, so it is stored and uploaded as linear half
 floats. A Radiance `.hdr` sky then keeps the values above 1.0 where its
 sun is. A shader samples the panorama by turning a direction into a uv
-([`equirect_uv`](fn.equirect_uv.md#rustdoc-item-1114)).
+([`equirect_uv`](fn.equirect_uv.md#rustdoc-item-1105)).
 
-<a id="rustdoc-item-1117"></a>
+<a id="rustdoc-item-1108"></a>
 
 ### `Cubemap`
 
@@ -75,14 +75,14 @@ A cubemap: six square faces around a point, in the order `+X`, `-X`,
 `+Y`, `-Y`, `+Z`, `-Z`, sampled by direction.
 
 It is made from an equirectangular panorama, which is projected onto the
-faces at import ([`project_equirect_to_cubemap`](fn.project_equirect_to_cubemap.md#rustdoc-item-1116)). Like
-[`Self::Equirect`](#rustdoc-item-1115), it holds high dynamic range values. Near the poles a
+faces at import ([`project_equirect_to_cubemap`](fn.project_equirect_to_cubemap.md#rustdoc-item-1107)). Like
+[`Self::Equirect`](#rustdoc-item-1106), it holds high dynamic range values. Near the poles a
 panorama packs many directions into few texels; a cubemap uses the same
 number of texels for every direction.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-1118"></a>
+<a id="rustdoc-item-1109"></a>
 
 ### `bytes_per_texel`
 
@@ -93,7 +93,7 @@ pub fn bytes_per_texel(self: Self) -> usize;
 How many bytes one texel takes: four 8-bit channels, or four half-float
 channels for an environment texture.
 
-<a id="rustdoc-item-1119"></a>
+<a id="rustdoc-item-1110"></a>
 
 ### `layer_count`
 
@@ -104,7 +104,7 @@ pub fn layer_count(self: Self) -> u32;
 How many images the texture holds: six faces for a cubemap, one
 otherwise.
 
-<a id="rustdoc-item-1120"></a>
+<a id="rustdoc-item-1111"></a>
 
 ### `is_high_dynamic_range`
 
@@ -125,6 +125,9 @@ Whether the texels are linear half floats rather than 8-bit channels.
 - `TryFrom<U>`
 - `Any`
 - `ToOwned`
+- `CastableFrom<ST, Uninit, Uninit>`
+- `CastableFrom<ST, Initialized, Initialized>`
+- `Read<Exclusive, BecauseExclusive>`
 - `DeserializeOwned`
 - `Instrument`
 - `WithSubscriber`
@@ -132,9 +135,6 @@ Whether the texels are linear half floats rather than 8-bit channels.
 - `Pointable`
 - `OwoColorize`
 - `ErasedDestructor`
-- `CastableFrom<ST, Uninit, Uninit>`
-- `CastableFrom<ST, Initialized, Initialized>`
-- `Read<Exclusive, BecauseExclusive>`
 - `Equivalent<K>`
 - `From<TextureType>`
 - `Debug`

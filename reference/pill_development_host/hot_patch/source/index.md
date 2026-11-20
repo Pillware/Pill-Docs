@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-2208"></a>
+<a id="rustdoc-item-2282"></a>
 
 # Module `pill_development_host::hot_patch::source`
 

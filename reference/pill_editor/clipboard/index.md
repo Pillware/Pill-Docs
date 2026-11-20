@@ -19,21 +19,29 @@ Writes the editor's payload to the OS clipboard and reads text back from it.
 
 ## Design
 
-The Win32 code lives here because only this executable names the `windows`
-crate. A shared dylib must never carry that crate's large `raw-dylib` import
-set. The shell does not touch the OS clipboard. It queues a
-`ClipboardRequest` on its `EditorClipboard` resource, and the runner carries
-the request out here at the frame boundary. That way no OS clipboard handle
-crosses the reload boundary.
+The shell does not touch the OS clipboard. It queues a `ClipboardRequest` on
+its `EditorClipboard` resource, and the runner carries the request out here
+at the frame boundary. That way no OS clipboard handle crosses the reload
+boundary.
 
-The write path and the read path both close the clipboard on every path,
-because a clipboard left open blocks every other process.
+Each platform carries its own backend below.
 
-A read is bounded by the size the clipboard reports for the block
-(`GlobalSize`), never by the terminator the producer was supposed to write.
-Any process can set the registered format. A block with no NUL inside its own
-size is therefore refused and logged, instead of being read past its end into
-this process's heap.
+On Windows the Win32 clipboard is driven directly, and that code lives here
+because only this executable names the `windows` crate: a shared dylib must
+never carry its large `raw-dylib` import set. The write path and the read
+path there both close the clipboard on every path, because a clipboard left
+open blocks every other process. A read is bounded by the size the clipboard
+reports for the block (`GlobalSize`), never by the terminator the producer
+was supposed to write: any process can set the registered format, so a block
+with no NUL inside its own size is refused and logged instead of being read
+past its end into this process's heap.
+
+Everywhere else the session's own clipboard tool does the work -
+`wl-copy`/`wl-paste` on Wayland, `xclip` on X11 - which keeps a second
+clipboard implementation and the display-server libraries one needs out of
+this crate. The editor's payload *is* the text, so writing it as plain text
+keeps a paste from another editor decodable, exactly as the Windows path
+does by writing both formats.
 
 ## Module contents
 

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-408"></a>
+<a id="rustdoc-item-432"></a>
 
 # Procedural macro `pill_engine_macros::pill_mirror_resource`
 
@@ -8,7 +8,7 @@
 proc_macro pill_mirror_resource
 ```
 
-Source: `engine\pill_engine_macros\src\lib.rs:1908`
+Source: `engine\pill_engine_macros\src\lib.rs:2305`
 
 Mirrors a world resource to C# under a shared name.
 
@@ -22,3 +22,7 @@ type:
 - mirrored functions can take it as `&T` or `&mut T`.
 
 The resource's bytes are never exposed to C#.
+
+A mirrored resource is play-mode game state, so a type that derives `Clone`
+is copied at Play and put back at Stop, and one that does not refuses Play
+by name.

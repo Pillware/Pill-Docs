@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-310"></a>
+<a id="rustdoc-item-318"></a>
 
 # Struct `pill_engine::component_registry::ValueTypeLayoutScope`
 
@@ -8,7 +8,7 @@
 pub(in component_registry) struct ValueTypeLayoutScope;
 ```
 
-Visibility: `{'restricted': {'parent': 313, 'path': '::component_registry'}}` · Source: `engine\pill_engine\src\component_registry.rs:418`
+Visibility: `{'restricted': {'parent': 322, 'path': '::component_registry'}}` · Source: `engine\pill_engine\src\component_registry.rs:451`
 
 Holds this artifact's value types installed as the world's layout resolver.
 
@@ -19,7 +19,7 @@ would call it after the reload.
 
 ## Fields
 
-<a id="rustdoc-item-315"></a>
+<a id="rustdoc-item-355"></a>
 
 ### `world`
 
@@ -33,19 +33,19 @@ Raw because the entry point calls back into the engine between
 construction and drop, so no reference to the world can be held for
 that whole span.
 
-<a id="rustdoc-item-316"></a>
+<a id="rustdoc-item-356"></a>
 
 ### `previous_resolver`
 
 ```rust
-previous_resolver: Option<ValueTypeLayoutResolver>
+previous_resolver: PreviousLayoutResolvers
 ```
 
-Resolver the world held before this scope installed its own.
+Resolvers the world held before this scope installed its own.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-317"></a>
+<a id="rustdoc-item-357"></a>
 
 ### `install`
 
@@ -64,13 +64,13 @@ Installs this artifact's resolver and takes responsibility for it.
 - `TryInto<U>`
 - `TryFrom<U>`
 - `Any`
+- `CastableFrom<ST, Uninit, Uninit>`
+- `CastableFrom<ST, Initialized, Initialized>`
+- `Read<Exclusive, BecauseExclusive>`
 - `Instrument`
 - `WithSubscriber`
 - `IntoEither`
 - `Pointable`
 - `OwoColorize`
 - `ErasedDestructor`
-- `CastableFrom<ST, Uninit, Uninit>`
-- `CastableFrom<ST, Initialized, Initialized>`
-- `Read<Exclusive, BecauseExclusive>`
 - `Drop`

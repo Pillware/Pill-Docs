@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1208"></a>
+<a id="rustdoc-item-1218"></a>
 
 # Enum `pill_core::profiling::GpuApi`
 
@@ -15,7 +15,7 @@ the timeline.
 
 ## Variants
 
-<a id="rustdoc-item-1375"></a>
+<a id="rustdoc-item-1385"></a>
 
 ### `Vulkan`
 
@@ -25,7 +25,7 @@ Vulkan
 
 Vulkan.
 
-<a id="rustdoc-item-1376"></a>
+<a id="rustdoc-item-1386"></a>
 
 ### `Direct3D12`
 
@@ -35,7 +35,7 @@ Direct3D12
 
 Direct3D 12.
 
-<a id="rustdoc-item-1377"></a>
+<a id="rustdoc-item-1387"></a>
 
 ### `OpenGL`
 
@@ -45,7 +45,7 @@ OpenGL
 
 OpenGL.
 
-<a id="rustdoc-item-1378"></a>
+<a id="rustdoc-item-1388"></a>
 
 ### `Other`
 

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-4113"></a>
+<a id="rustdoc-item-4370"></a>
 
 # Function `pill_development_host::runtime::report_setup_failure`
 
@@ -8,7 +8,7 @@
 pub(in runtime) fn report_setup_failure(error: pill_core::error::HostError) -> pill_core::error::HostError;
 ```
 
-Visibility: `{'restricted': {'parent': 3859, 'path': '::runtime'}}` · Source: `hosting\pill_development_host\src\runtime.rs:1406`
+Visibility: `{'restricted': {'parent': 4115, 'path': '::runtime'}}` · Source: `hosting\pill_development_host\src\runtime.rs:1420`
 
 Report a setup failure and hand the error back to the caller.
 

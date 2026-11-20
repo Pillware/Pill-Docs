@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1166"></a>
+<a id="rustdoc-item-1211"></a>
 
 # Function `pill_editor_core::clipboard::cut_commands`
 
@@ -8,7 +8,7 @@
 pub fn cut_commands(selection: &crate::editor_state::EditorSelection) -> Option<(Vec<crate::editor_state::EditorCommand>, String)>;
 ```
 
-Source: `editor\pill_editor_core\src\clipboard.rs:386`
+Source: `editor\pill_editor_core\src\clipboard.rs:394`
 
 Builds the recorded step a cut queues: the same delete the Entities tab's
 trash button queues.

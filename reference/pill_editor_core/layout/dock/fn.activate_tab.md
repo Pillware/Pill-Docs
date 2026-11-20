@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-5265"></a>
+<a id="rustdoc-item-7228"></a>
 
 # Function `pill_editor_core::layout::dock::activate_tab`
 
@@ -8,7 +8,7 @@
 pub fn activate_tab(dock: &mut egui_dock::DockState<EditorTab>, tab: EditorTab) -> bool;
 ```
 
-Source: `editor\pill_editor_core\src\layout\dock.rs:526`
+Source: `editor\pill_editor_core\src\layout\dock.rs:528`
 
 Brings `tab` to the front of its group and reports whether the dock held
 it.

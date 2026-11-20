@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-3976"></a>
+<a id="rustdoc-item-4233"></a>
 
 # Enum `pill_development_host::runtime::PauseReason`
 
@@ -8,13 +8,13 @@
 pub(in runtime) enum PauseReason { ... }
 ```
 
-Visibility: `{'restricted': {'parent': 3859, 'path': '::runtime'}}` · Source: `hosting\pill_development_host\src\runtime.rs:686`
+Visibility: `{'restricted': {'parent': 4115, 'path': '::runtime'}}` · Source: `hosting\pill_development_host\src\runtime.rs:700`
 
-Why a windowed host stopped rendering; see [`RenderingHost`](struct.RenderingHost.md#rustdoc-item-3930)'s `paused`.
+Why a windowed host stopped rendering; see [`RenderingHost`](struct.RenderingHost.md#rustdoc-item-4187)'s `paused`.
 
 ## Variants
 
-<a id="rustdoc-item-3975"></a>
+<a id="rustdoc-item-4232"></a>
 
 ### `StaleRendererAfterDataLayoutChange`
 

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-2076"></a>
+<a id="rustdoc-item-2086"></a>
 
 # Function `pill_core::utils::create_bitmask_from_range`
 

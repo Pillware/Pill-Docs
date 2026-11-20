@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-251"></a>
+<a id="rustdoc-item-302"></a>
 
 # Function `pill_editor::drag_out::initialize_ole`
 
@@ -8,7 +8,7 @@
 pub(in drag_out) fn initialize_ole() -> bool;
 ```
 
-Visibility: `{'restricted': {'parent': 18, 'path': '::drag_out'}}` · Source: `editor\pill_editor\src\drag_out.rs:225`
+Visibility: `{'restricted': {'parent': 18, 'path': '::drag_out'}}` · Source: `editor\pill_editor\src\drag_out.rs:317`
 
 Initialises OLE on the calling thread, once.
 

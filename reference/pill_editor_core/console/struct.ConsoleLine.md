@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-2013"></a>
+<a id="rustdoc-item-2069"></a>
 
 # Struct `pill_editor_core::console::ConsoleLine`
 
@@ -14,7 +14,7 @@ One console row, with owned strings.
 
 ## Fields
 
-<a id="rustdoc-item-2008"></a>
+<a id="rustdoc-item-2064"></a>
 
 ### `seq`
 
@@ -25,7 +25,7 @@ seq: u64
 The capture ring's sequence number. The feed asks for the lines newer
 than the last one it folded in.
 
-<a id="rustdoc-item-2009"></a>
+<a id="rustdoc-item-2065"></a>
 
 ### `level`
 
@@ -35,7 +35,7 @@ level: u8
 
 How severe the line is: 1 trace through 5 error.
 
-<a id="rustdoc-item-2010"></a>
+<a id="rustdoc-item-2066"></a>
 
 ### `target`
 
@@ -45,7 +45,7 @@ target: String
 
 The tracing target the line came from.
 
-<a id="rustdoc-item-2011"></a>
+<a id="rustdoc-item-2067"></a>
 
 ### `message`
 
@@ -55,7 +55,7 @@ message: String
 
 The formatted message.
 
-<a id="rustdoc-item-2012"></a>
+<a id="rustdoc-item-2068"></a>
 
 ### `channel`
 
@@ -67,7 +67,7 @@ Which channel the target put it in.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-2014"></a>
+<a id="rustdoc-item-2070"></a>
 
 ### `level_name`
 

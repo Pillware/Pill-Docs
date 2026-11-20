@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-2951"></a>
+<a id="rustdoc-item-2988"></a>
 
 # Function `pill_master_renderer::surface::configure_first`
 
@@ -8,7 +8,7 @@
 pub(in surface) async fn configure_first(surface: &wgpu::Surface<'static>, device: &wgpu::Device, surface_configuration: &mut wgpu::SurfaceConfiguration) -> crate::error::Result<()>;
 ```
 
-Visibility: `{'restricted': {'parent': 2900, 'path': '::surface'}}` · Source: `extensions\pill_master_renderer\pill_master_renderer\src\surface.rs:582`
+Visibility: `{'restricted': {'parent': 2937, 'path': '::surface'}}` · Source: `extensions\pill_master_renderer\modules\runtime\gpu\src\surface.rs:582`
 
 Configures the surface for the first time, giving up the compositing alpha
 mode if the driver refuses it.

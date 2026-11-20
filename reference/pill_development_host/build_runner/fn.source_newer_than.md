@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-817"></a>
+<a id="rustdoc-item-819"></a>
 
 # Function `pill_development_host::build_runner::source_newer_than`
 
@@ -8,7 +8,7 @@
 pub(in build_runner) fn source_newer_than(directory: &std::path::Path, reference_time: std::time::SystemTime) -> bool;
 ```
 
-Visibility: `{'restricted': {'parent': 545, 'path': '::build_runner'}}` · Source: `hosting\pill_development_host\src\build_runner.rs:2170`
+Visibility: `{'restricted': {'parent': 546, 'path': '::build_runner'}}` · Source: `hosting\pill_development_host\src\build_runner.rs:2188`
 
 Checks whether any entry under `directory` was modified after
 `reference_time`.

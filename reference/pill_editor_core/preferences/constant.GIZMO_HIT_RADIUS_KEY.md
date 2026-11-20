@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-6289"></a>
+<a id="rustdoc-item-8325"></a>
 
 # Constant `pill_editor_core::preferences::GIZMO_HIT_RADIUS_KEY`
 

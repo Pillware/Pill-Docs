@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-904"></a>
+<a id="rustdoc-item-948"></a>
 
 # Function `pill_editor_core::camera::navigation_binding`
 

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-4119"></a>
+<a id="rustdoc-item-4376"></a>
 
 # Function `pill_development_host::runtime::pause_after_boundary`
 
@@ -8,7 +8,7 @@
 pub(in runtime) fn pause_after_boundary(paused: Option<PauseReason>, data_layout_changed: bool, step: RendererStep) -> Option<PauseReason>;
 ```
 
-Visibility: `{'restricted': {'parent': 3859, 'path': '::runtime'}}` · Source: `hosting\pill_development_host\src\runtime.rs:1861`
+Visibility: `{'restricted': {'parent': 4115, 'path': '::runtime'}}` · Source: `hosting\pill_development_host\src\runtime.rs:1960`
 
 Whether rendering should be paused after one frame boundary.
 

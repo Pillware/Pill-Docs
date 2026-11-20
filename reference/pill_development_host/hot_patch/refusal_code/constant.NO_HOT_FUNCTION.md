@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-2336"></a>
+<a id="rustdoc-item-2410"></a>
 
 # Constant `pill_development_host::hot_patch::refusal_code::NO_HOT_FUNCTION`
 

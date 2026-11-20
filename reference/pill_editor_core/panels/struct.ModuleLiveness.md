@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-5737"></a>
+<a id="rustdoc-item-6001"></a>
 
 # Struct `pill_editor_core::panels::ModuleLiveness`
 
@@ -19,7 +19,7 @@ struct on purpose: it holds no data, and only its strong count matters.
 
 ## Fields
 
-<a id="rustdoc-item-5734"></a>
+<a id="rustdoc-item-7702"></a>
 
 ### `0`
 
@@ -31,7 +31,7 @@ _No documentation provided._
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-5738"></a>
+<a id="rustdoc-item-7704"></a>
 
 ### `new`
 

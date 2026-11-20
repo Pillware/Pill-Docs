@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-2131"></a>
+<a id="rustdoc-item-2141"></a>
 
 # pill_core API reference
 
@@ -15,7 +15,7 @@ Shared core definitions of the Pill engine: the one library every DLL links.
 - Own the telemetry foundation: the static log targets, the developer log
   macros, the terminal line formatter, the log subscriber builder and the
   metrics recorder.
-- Own the platform layer ([`platform`](platform/index.md#rustdoc-item-1206)): clock, log output, futures and
+- Own the platform layer ([`platform`](platform/index.md#rustdoc-item-1216)): clock, log output, futures and
   terminal styling, the only code that differs between native and the web.
 - Own the Tracy profiling API (`profile_scope!` and the other `profile_*`
   macros), with its feature gates and no-op fallbacks.
@@ -36,53 +36,53 @@ DLL boundary. A monolithic release-profile build can link everything
 statically instead.
 
 The error system lives in [`error`]. A subsystem declares its errors with
-`#[engine_error]`, and they combine into [`error::HostError`](error/host/enum.HostError.md#rustdoc-item-248) without
+`#[engine_error]`, and they combine into [`error::HostError`](error/host/enum.HostError.md#rustdoc-item-255) without
 adding text of their own. A renderer turns one semantic message definition
-into plain or styled output. The telemetry system lives in [`telemetry`](telemetry/index.md#rustdoc-item-1726)
-and [`metrics`](metrics/index.md#rustdoc-item-945).
+into plain or styled output. The telemetry system lives in [`telemetry`](telemetry/index.md#rustdoc-item-1736)
+and [`metrics`](metrics/index.md#rustdoc-item-955).
 
 ## Module contents
 
 ### Modules
 - [`color`](color/index.md#rustdoc-item-4) — Color palettes for debug visualization.
 - [`dynamic_buffer`](dynamic_buffer/index.md#rustdoc-item-6) — A growable run of plain (`Copy`) elements in engine-owned native memory.
-- [`error`](error/index.md#rustdoc-item-612) — Semantic error system shared by every workspace crate.
-- [`fixed_string`](fixed_string/index.md#rustdoc-item-798) — Inline, fixed-capacity strings for plain-data structs.
-- [`math`](math/index.md#rustdoc-item-940) — Math type aliases over `glam` and the direction vocabulary.
-- [`metrics`](metrics/index.md#rustdoc-item-945) — Metrics recording foundation, gated on the `metrics` feature.
+- [`error`](error/index.md#rustdoc-item-622) — Semantic error system shared by every workspace crate.
+- [`fixed_string`](fixed_string/index.md#rustdoc-item-808) — Inline, fixed-capacity strings for plain-data structs.
+- [`math`](math/index.md#rustdoc-item-950) — Math type aliases over `glam` and the direction vocabulary.
+- [`metrics`](metrics/index.md#rustdoc-item-955) — Metrics recording foundation, gated on the `metrics` feature.
 - [`native_buffer`](native_buffer/index.md#rustdoc-item-139) — Engine-owned native buffer allocation, shared by every loaded DLL.
-- [`platform`](platform/index.md#rustdoc-item-1206) — The platform layer: clock, log output, futures and terminal styling on
-- [`profiling`](profiling/index.md#rustdoc-item-1361) — Tracy profiling API with feature gating and no-op fallbacks.
-- [`slot_map`](slot_map/index.md#rustdoc-item-1490) — Generational slot arena for values addressed by stable handles.
-- [`style`](style/index.md#rustdoc-item-1559) — `PillStyle` string-styling vocabulary for terminal output.
-- [`system_ticks`](system_ticks/index.md#rustdoc-item-1563) — Per-thread change ticks of the system running on the current thread, shared
-- [`telemetry`](telemetry/index.md#rustdoc-item-1726) — Telemetry foundation: the log targets, the log filter, the line formatter
-- [`utils`](utils/index.md#rustdoc-item-2083) — Small general-purpose helpers shared by Pill crates.
+- [`platform`](platform/index.md#rustdoc-item-1216) — The platform layer: clock, log output, futures and terminal styling on
+- [`profiling`](profiling/index.md#rustdoc-item-1371) — Tracy profiling API with feature gating and no-op fallbacks.
+- [`slot_map`](slot_map/index.md#rustdoc-item-1500) — Generational slot arena for values addressed by stable handles.
+- [`style`](style/index.md#rustdoc-item-1569) — `PillStyle` string-styling vocabulary for terminal output.
+- [`system_ticks`](system_ticks/index.md#rustdoc-item-1573) — Per-thread change ticks of the system running on the current thread, shared
+- [`telemetry`](telemetry/index.md#rustdoc-item-1736) — Telemetry foundation: the log targets, the log filter, the line formatter
+- [`utils`](utils/index.md#rustdoc-item-2093) — Small general-purpose helpers shared by Pill crates.
 
 ### Macros
-- [`define_slot_key`](macro.define_slot_key.md#rustdoc-item-1543) — Defines a typed handle over [`KeyData`], with its constructor, its accessor
-- [`dev_error`](macro.dev_error.md#rustdoc-item-2130) — Writes a temporary developer error at `ERROR` level on the `engine::dev`
-- [`dev_warn`](macro.dev_warn.md#rustdoc-item-2129) — Writes a temporary developer warning at `WARN` level on the `engine::dev`
-- [`log`](macro.log.md#rustdoc-item-2128) — Writes a temporary developer log at `DEBUG` level on the `engine::dev`
-- [`profile_error`](macro.profile_error.md#rustdoc-item-2126) — Emits an error message (red) at the current point in the trace.
-- [`profile_frame_mark`](macro.profile_frame_mark.md#rustdoc-item-2119) — Marks the end of a frame. Call once per frame loop iteration.
-- [`profile_init`](macro.profile_init.md#rustdoc-item-2116) — Creates the shared Tracy client handle. Safe to call more than once.
-- [`profile_message`](macro.profile_message.md#rustdoc-item-2124) — Emits a diagnostic message (white) at the current point in the trace.
-- [`profile_non_continuous_frame`](macro.profile_non_continuous_frame.md#rustdoc-item-2121) — Begins a non-continuous frame (a one-shot operation, not in a loop).
-- [`profile_plot`](macro.profile_plot.md#rustdoc-item-2122) — Emits a data point on a named time-series plot.
-- [`profile_plot_config`](macro.profile_plot_config.md#rustdoc-item-2123) — Configures how a plot appears in the Tracy profiler UI.
-- [`profile_scope`](macro.profile_scope.md#rustdoc-item-2117) — Creates a scoped CPU profiling zone on the `profile::coarse` lane.
-- [`profile_scope_fine`](macro.profile_scope_fine.md#rustdoc-item-2118) — Creates a fine-grained investigative CPU zone on the `profile::fine` lane.
-- [`profile_secondary_frame_mark`](macro.profile_secondary_frame_mark.md#rustdoc-item-2120) — Marks the end of a secondary (named) continuous frame.
-- [`profile_thread`](macro.profile_thread.md#rustdoc-item-2127) — Sets the display name of the current thread in Tracy.
-- [`profile_warn`](macro.profile_warn.md#rustdoc-item-2125) — Emits a warning message (orange) at the current point in the trace.
+- [`define_slot_key`](macro.define_slot_key.md#rustdoc-item-1553) — Defines a typed handle over [`KeyData`], with its constructor, its accessor
+- [`dev_error`](macro.dev_error.md#rustdoc-item-2140) — Writes a temporary developer error at `ERROR` level on the `engine::dev`
+- [`dev_warn`](macro.dev_warn.md#rustdoc-item-2139) — Writes a temporary developer warning at `WARN` level on the `engine::dev`
+- [`log`](macro.log.md#rustdoc-item-2138) — Writes a temporary developer log at `DEBUG` level on the `engine::dev`
+- [`profile_error`](macro.profile_error.md#rustdoc-item-2136) — Emits an error message (red) at the current point in the trace.
+- [`profile_frame_mark`](macro.profile_frame_mark.md#rustdoc-item-2129) — Marks the end of a frame. Call once per frame loop iteration.
+- [`profile_init`](macro.profile_init.md#rustdoc-item-2126) — Creates the shared Tracy client handle. Safe to call more than once.
+- [`profile_message`](macro.profile_message.md#rustdoc-item-2134) — Emits a diagnostic message (white) at the current point in the trace.
+- [`profile_non_continuous_frame`](macro.profile_non_continuous_frame.md#rustdoc-item-2131) — Begins a non-continuous frame (a one-shot operation, not in a loop).
+- [`profile_plot`](macro.profile_plot.md#rustdoc-item-2132) — Emits a data point on a named time-series plot.
+- [`profile_plot_config`](macro.profile_plot_config.md#rustdoc-item-2133) — Configures how a plot appears in the Tracy profiler UI.
+- [`profile_scope`](macro.profile_scope.md#rustdoc-item-2127) — Creates a scoped CPU profiling zone on the `profile::coarse` lane.
+- [`profile_scope_fine`](macro.profile_scope_fine.md#rustdoc-item-2128) — Creates a fine-grained investigative CPU zone on the `profile::fine` lane.
+- [`profile_secondary_frame_mark`](macro.profile_secondary_frame_mark.md#rustdoc-item-2130) — Marks the end of a secondary (named) continuous frame.
+- [`profile_thread`](macro.profile_thread.md#rustdoc-item-2137) — Sets the display name of the current thread in Tracy.
+- [`profile_warn`](macro.profile_warn.md#rustdoc-item-2135) — Emits a warning message (orange) at the current point in the trace.
 
 ## Re-exports
 
 - [`pub use dynamic_buffer::DynamicBuffer;`](dynamic_buffer/struct.DynamicBuffer.md#rustdoc-item-9)
-- [`pub use fixed_string::FixedString64;`](fixed_string/struct.FixedString64.md#rustdoc-item-795)
-- [`pub use fixed_string::FIXED_STRING_64_CAPACITY;`](fixed_string/constant.FIXED_STRING_64_CAPACITY.md#rustdoc-item-796)
-- [`pub use style::PillStyle;`](style/trait.PillStyle.md#rustdoc-item-694)
+- [`pub use fixed_string::FixedString64;`](fixed_string/struct.FixedString64.md#rustdoc-item-805)
+- [`pub use fixed_string::FIXED_STRING_64_CAPACITY;`](fixed_string/constant.FIXED_STRING_64_CAPACITY.md#rustdoc-item-806)
+- [`pub use style::PillStyle;`](style/trait.PillStyle.md#rustdoc-item-704)
 - `pub use tracing;`
 - `pub use rayon;`
 - `pub use tracing::debug;`

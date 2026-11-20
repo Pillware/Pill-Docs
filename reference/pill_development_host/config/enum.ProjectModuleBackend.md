@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-864"></a>
+<a id="rustdoc-item-871"></a>
 
 # Enum `pill_development_host::config::ProjectModuleBackend`
 
@@ -8,7 +8,7 @@
 pub enum ProjectModuleBackend { ... }
 ```
 
-Source: `hosting\pill_development_host\src\config.rs:268`
+Source: `hosting\pill_development_host\src\config.rs:298`
 
 Backend-specific output information for a hot-reloadable project module.
 
@@ -17,7 +17,7 @@ a native shared library or a managed assembly hosted by `csharp_runtime`.
 
 ## Variants
 
-<a id="rustdoc-item-860"></a>
+<a id="rustdoc-item-867"></a>
 
 ### `NativeLibrary`
 
@@ -27,7 +27,7 @@ NativeLibrary
 
 A native shared library exporting `pill_module_init`.
 
-<a id="rustdoc-item-863"></a>
+<a id="rustdoc-item-870"></a>
 
 ### `CSharp`
 
@@ -36,6 +36,18 @@ CSharp
 ```
 
 A managed project assembly loaded through the stable `csharp_runtime` host.
+
+## Associated functions and methods
+
+<a id="rustdoc-item-872"></a>
+
+### `kind_name`
+
+```rust
+pub(crate) fn kind_name(self: &Self) -> &'static str;
+```
+
+The backend's kind as the startup lines spell it: `native` or `csharp`.
 
 ## Trait implementations
 

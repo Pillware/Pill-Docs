@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-461"></a>
+<a id="rustdoc-item-505"></a>
 
 # Constant `pill_editor_core::browser::DEFAULT_TILE_SIZE`
 

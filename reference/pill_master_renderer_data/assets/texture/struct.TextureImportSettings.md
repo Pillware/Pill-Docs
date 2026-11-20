@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1220"></a>
+<a id="rustdoc-item-1212"></a>
 
 # Struct `pill_master_renderer_data::assets::texture::TextureImportSettings`
 
@@ -8,7 +8,7 @@
 pub struct TextureImportSettings;
 ```
 
-Source: `extensions\pill_master_renderer\pill_master_renderer_data\src\assets\texture.rs:355`
+Source: `extensions\pill_master_renderer\modules\runtime\data\src\assets\texture.rs:355`
 
 How to read an image file as a texture: what the `.meta` file beside it
 holds.
@@ -19,7 +19,7 @@ still load.
 
 ## Fields
 
-<a id="rustdoc-item-1226"></a>
+<a id="rustdoc-item-1216"></a>
 
 ### `texture_type`
 
@@ -27,7 +27,7 @@ still load.
 texture_type: TextureType
 ```
 
-How the texels are read ([`TextureType`](enum.TextureType.md#rustdoc-item-838)). A file that names `Depth` is
+How the texels are read ([`TextureType`](enum.TextureType.md#rustdoc-item-832)). A file that names `Depth` is
 refused: depth is a slot's binding kind, and no image file holds depth.
 `Equirect` and `Cubemap` read the image as a panorama, usually a
 Radiance `.hdr` sky.
@@ -43,6 +43,9 @@ Radiance `.hdr` sky.
 - `TryFrom<U>`
 - `Any`
 - `ToOwned`
+- `CastableFrom<ST, Uninit, Uninit>`
+- `CastableFrom<ST, Initialized, Initialized>`
+- `Read<Exclusive, BecauseExclusive>`
 - `DeserializeOwned`
 - `Instrument`
 - `WithSubscriber`
@@ -50,9 +53,6 @@ Radiance `.hdr` sky.
 - `Pointable`
 - `OwoColorize`
 - `ErasedDestructor`
-- `CastableFrom<ST, Uninit, Uninit>`
-- `CastableFrom<ST, Initialized, Initialized>`
-- `Read<Exclusive, BecauseExclusive>`
 - `Equivalent<K>`
 - `Debug`
 - `Clone`

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-6491"></a>
+<a id="rustdoc-item-8529"></a>
 
 # Enum `pill_editor_core::requests::HistoryRequest`
 
@@ -14,7 +14,7 @@ One undo or redo the menu bar asked for, applied by the executable.
 
 ## Variants
 
-<a id="rustdoc-item-6535"></a>
+<a id="rustdoc-item-8573"></a>
 
 ### `Undo`
 
@@ -24,7 +24,7 @@ Undo
 
 Undoes the newest recorded step.
 
-<a id="rustdoc-item-6536"></a>
+<a id="rustdoc-item-8574"></a>
 
 ### `Redo`
 

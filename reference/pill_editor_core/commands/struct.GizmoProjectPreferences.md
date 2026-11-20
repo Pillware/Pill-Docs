@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1743"></a>
+<a id="rustdoc-item-1790"></a>
 
 # Struct `pill_editor_core::commands::GizmoProjectPreferences`
 
@@ -8,13 +8,13 @@
 pub struct GizmoProjectPreferences;
 ```
 
-Source: `editor\pill_editor_core\src\commands.rs:945`
+Source: `editor\pill_editor_core\src\commands.rs:965`
 
 One project's gizmo choices.
 
 ## Fields
 
-<a id="rustdoc-item-1783"></a>
+<a id="rustdoc-item-1830"></a>
 
 ### `mode`
 
@@ -24,7 +24,7 @@ mode: Option<crate::gizmo::GizmoMode>
 
 The project's last active mode.
 
-<a id="rustdoc-item-1784"></a>
+<a id="rustdoc-item-1831"></a>
 
 ### `space`
 
@@ -34,7 +34,7 @@ space: Option<crate::gizmo::GizmoSpace>
 
 The project's last active space.
 
-<a id="rustdoc-item-1785"></a>
+<a id="rustdoc-item-1832"></a>
 
 ### `snap`
 

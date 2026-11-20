@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-338"></a>
+<a id="rustdoc-item-360"></a>
 
 # Function `pill_engine_macros::emit_heap_field_accessor`
 
@@ -8,7 +8,7 @@
 pub(crate) fn emit_heap_field_accessor(type_ident: &syn::Ident, field_ident: &syn::Ident, field_name: &str, type_name: &proc_macro2::TokenStream, kind: HeapFieldKind) -> proc_macro2::TokenStream;
 ```
 
-Visibility: `crate` · Source: `engine\pill_engine_macros\src\lib.rs:936`
+Visibility: `crate` · Source: `engine\pill_engine_macros\src\lib.rs:1249`
 
 Emits the accessor trampolines and the descriptor submission for one
 heap-owning field.

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-4851"></a>
+<a id="rustdoc-item-6814"></a>
 
 # Struct `pill_editor_core::inspector::CachedRow`
 
@@ -8,13 +8,13 @@
 pub struct CachedRow;
 ```
 
-Source: `editor\pill_editor_core\src\inspector.rs:690`
+Source: `editor\pill_editor_core\src\inspector.rs:694`
 
 One row of a component's cached model and the lines it has already logged.
 
 ## Fields
 
-<a id="rustdoc-item-4849"></a>
+<a id="rustdoc-item-6812"></a>
 
 ### `row`
 
@@ -24,7 +24,7 @@ row: FieldRow
 
 The row to draw.
 
-<a id="rustdoc-item-4850"></a>
+<a id="rustdoc-item-6813"></a>
 
 ### `logged`
 

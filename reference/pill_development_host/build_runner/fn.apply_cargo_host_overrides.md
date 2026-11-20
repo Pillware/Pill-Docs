@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-582"></a>
+<a id="rustdoc-item-583"></a>
 
 # Function `pill_development_host::build_runner::apply_cargo_host_overrides`
 
@@ -8,7 +8,7 @@
 pub(crate) fn apply_cargo_host_overrides(command: &mut std::process::Command, workspace_root: &std::path::Path);
 ```
 
-Visibility: `crate` · Source: `hosting\pill_development_host\src\build_runner.rs:465`
+Visibility: `crate` · Source: `hosting\pill_development_host\src\build_runner.rs:466`
 
 Applies the environment and argument overrides that every host-spawned
 cargo build needs, whichever path starts it.
@@ -20,7 +20,7 @@ binary:
 - `CARGO_TARGET_DIR` points into the private module build tree, so cargo
   never has to delete a DLL the host has mapped (see
   [`crate::config::MODULE_BUILD_TARGET_DIRECTORY`](../config/constant.MODULE_BUILD_TARGET_DIRECTORY.md#rustdoc-item-3)).
-- The engine features ([`host_engine_features`](fn.host_engine_features.md#rustdoc-item-569)) are passed explicitly. When
+- The engine features ([`host_engine_features`](fn.host_engine_features.md#rustdoc-item-570)) are passed explicitly. When
   the host was started by the dioxus CLI, or is an editor, they are instead
   reproduced by anchoring the build to the running host's own package: the
   shared dylibs' exported names hash their dependency trees' features, so a

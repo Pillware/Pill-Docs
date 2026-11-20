@@ -1,10 +1,10 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1072"></a>
+<a id="rustdoc-item-871"></a>
 
 # Module `pill_editor::runner::transform_gizmo`
 
-Visibility: `{'restricted': {'parent': 483, 'path': '::runner'}}` · Source: `editor\pill_editor\src\runner\transform_gizmo.rs:1`
+Visibility: `{'restricted': {'parent': 539, 'path': '::runner'}}` · Source: `editor\pill_editor\src\runner\transform_gizmo.rs:1`
 
 The transform gizmo: its handles' geometry, its drags and their history.
 
@@ -27,7 +27,16 @@ queues that step, because the recorded command takes its inverse from the
 world's current value. Without the write, the inverse would be the final
 value and the first undo would change nothing.
 
+A drag over an element selection takes the other path: the same measurement
+turns into one world transform per element, and the active tool writes them
+into whatever component it owns. The gizmo therefore never learns a tool's
+component, and a tool never does frame maths - it is handed the finished
+transforms.
+
 ## Module contents
 
 ### Structs
-- [`ScreenProjection`](struct.ScreenProjection.md#rustdoc-item-753) — One scene view's camera basis and projection terms, in the surface's
+- [`ScreenProjection`](struct.ScreenProjection.md#rustdoc-item-867) — One scene view's camera basis and projection terms, in the surface's
+
+### Functions
+- [`drag_value_components`](fn.drag_value_components.md#rustdoc-item-1517) — The four numbers a drag's last measurement reports, for its end log.

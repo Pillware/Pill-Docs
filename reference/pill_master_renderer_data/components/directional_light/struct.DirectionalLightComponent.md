@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1314"></a>
+<a id="rustdoc-item-1303"></a>
 
 # Struct `pill_master_renderer_data::components::directional_light::DirectionalLightComponent`
 
@@ -8,7 +8,7 @@
 pub struct DirectionalLightComponent;
 ```
 
-Source: `extensions\pill_master_renderer\pill_master_renderer_data\src\components\directional_light.rs:40`
+Source: `extensions\pill_master_renderer\modules\runtime\data\src\components\directional_light.rs:35`
 
 A directional light, described by the colour it emits and its strength.
 
@@ -19,7 +19,7 @@ scene and never drawn.
 
 ## Fields
 
-<a id="rustdoc-item-1312"></a>
+<a id="rustdoc-item-1301"></a>
 
 ### `color`
 
@@ -29,7 +29,7 @@ color: [f32; 3]
 
 Linear RGB colour the light emits: red, green, blue, one value each.
 
-<a id="rustdoc-item-1313"></a>
+<a id="rustdoc-item-1302"></a>
 
 ### `intensity`
 
@@ -41,7 +41,7 @@ Brightness of the light, multiplied into each colour channel.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-1315"></a>
+<a id="rustdoc-item-1304"></a>
 
 ### `FIELD_LAYOUT`
 
@@ -63,6 +63,9 @@ macro; pass it to `World::register_component_with_layout`.
 - `TryFrom<U>`
 - `Any`
 - `ToOwned`
+- `CastableFrom<ST, Uninit, Uninit>`
+- `CastableFrom<ST, Initialized, Initialized>`
+- `Read<Exclusive, BecauseExclusive>`
 - `DeserializeOwned`
 - `Instrument`
 - `WithSubscriber`
@@ -70,9 +73,6 @@ macro; pass it to `World::register_component_with_layout`.
 - `Pointable`
 - `OwoColorize`
 - `ErasedDestructor`
-- `CastableFrom<ST, Uninit, Uninit>`
-- `CastableFrom<ST, Initialized, Initialized>`
-- `Read<Exclusive, BecauseExclusive>`
 - `Debug`
 - `Clone`
 - `Copy`
@@ -80,4 +80,5 @@ macro; pass it to `World::register_component_with_layout`.
 - `Deserialize<'de>`
 - `Component`
 - `ComponentLayout`
+- `ComponentFields`
 - `Default`

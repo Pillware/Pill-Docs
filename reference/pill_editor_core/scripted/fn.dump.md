@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-7172"></a>
+<a id="rustdoc-item-9230"></a>
 
 # Function `pill_editor_core::scripted::dump`
 
@@ -8,7 +8,7 @@
 pub(in scripted) fn dump(cursor: &mut Cursor<'_>) -> Result<Dump, ParseError>;
 ```
 
-Visibility: `{'restricted': {'parent': 7129, 'path': '::scripted'}}` · Source: `editor\pill_editor_core\src\scripted.rs:957`
+Visibility: `{'restricted': {'parent': 9187, 'path': '::scripted'}}` · Source: `editor\pill_editor_core\src\scripted.rs:1091`
 
 `dump <target>` and `dump field <entity> <component> <field>`.
 

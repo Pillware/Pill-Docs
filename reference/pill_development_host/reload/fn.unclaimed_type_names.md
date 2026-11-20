@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-3667"></a>
+<a id="rustdoc-item-3923"></a>
 
 # Function `pill_development_host::reload::unclaimed_type_names`
 
@@ -8,7 +8,7 @@
 pub(in reload) fn unclaimed_type_names(forgotten_type_names: &[String], registered_component_names: &[String], peer_component_names: &[String]) -> Vec<String>;
 ```
 
-Visibility: `{'restricted': {'parent': 3428, 'path': '::reload'}}` · Source: `hosting\pill_development_host\src\reload.rs:1304`
+Visibility: `{'restricted': {'parent': 3684, 'path': '::reload'}}` · Source: `hosting\pill_development_host\src\reload.rs:1304`
 
 Returns the names in `forgotten_type_names` that nothing declares any more.
 

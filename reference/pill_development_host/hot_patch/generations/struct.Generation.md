@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1980"></a>
+<a id="rustdoc-item-2054"></a>
 
 # Struct `pill_development_host::hot_patch::generations::Generation`
 
@@ -19,7 +19,7 @@ a slot rollback is a single pointer write rather than a rebuild.
 
 ## Fields
 
-<a id="rustdoc-item-1967"></a>
+<a id="rustdoc-item-2041"></a>
 
 ### `function`
 
@@ -29,7 +29,7 @@ function: String
 
 Qualified name of the function this generation replaced.
 
-<a id="rustdoc-item-1969"></a>
+<a id="rustdoc-item-2043"></a>
 
 ### `number`
 
@@ -41,7 +41,7 @@ One-based position in this function's history. Generation zero is the
 code the running artifact was built with; it has no entry here because it
 needs no patch library.
 
-<a id="rustdoc-item-1970"></a>
+<a id="rustdoc-item-2044"></a>
 
 ### `address`
 
@@ -51,7 +51,7 @@ address: usize
 
 Address to install to make this generation active again.
 
-<a id="rustdoc-item-1971"></a>
+<a id="rustdoc-item-2045"></a>
 
 ### `kind`
 
@@ -63,7 +63,7 @@ The hot-patching route that delivered this generation. When the
 generation lives in a slot, rollback uses it to choose between the
 engine's registry and a dispatch slot.
 
-<a id="rustdoc-item-1973"></a>
+<a id="rustdoc-item-2047"></a>
 
 ### `signature_hash`
 
@@ -74,7 +74,7 @@ signature_hash: u64
 The signature identity a system's slot checks before it accepts the
 address.
 
-<a id="rustdoc-item-1974"></a>
+<a id="rustdoc-item-2048"></a>
 
 ### `lookup_name`
 
@@ -83,10 +83,10 @@ lookup_name: String
 ```
 
 The name the delivering route looks this function up by. It differs from
-[`Self::function`](#rustdoc-item-1967) for a method's dispatch slot, whose name omits the
+[`Self::function`](#rustdoc-item-2041) for a method's dispatch slot, whose name omits the
 type; see `slot_lookup_name`.
 
-<a id="rustdoc-item-1975"></a>
+<a id="rustdoc-item-2049"></a>
 
 ### `signature`
 
@@ -96,7 +96,7 @@ signature: String
 
 Signature text a plain function's slot checks before accepting it.
 
-<a id="rustdoc-item-1976"></a>
+<a id="rustdoc-item-2050"></a>
 
 ### `prologue_restores`
 
@@ -108,7 +108,7 @@ The bytes this generation overwrote in each artifact, when it was
 delivered by prologue patching. Empty when the generation was installed
 into a slot.
 
-<a id="rustdoc-item-1978"></a>
+<a id="rustdoc-item-2052"></a>
 
 ### `prologue_history_dropped`
 
@@ -116,7 +116,7 @@ into a slot.
 prologue_history_dropped: bool
 ```
 
-Whether a reload emptied [`Self::prologue_restores`](#rustdoc-item-1976) rather than the
+Whether a reload emptied [`Self::prologue_restores`](#rustdoc-item-2050) rather than the
 generation never having filled it.
 
 Once the list is empty the two cases look the same, but they need
@@ -124,7 +124,7 @@ opposite answers: a slot-delivered generation rolls back through its
 slot, while one whose prologue addresses a reload invalidated cannot be
 rolled back at all.
 
-<a id="rustdoc-item-1979"></a>
+<a id="rustdoc-item-2053"></a>
 
 ### `installed_at`
 
@@ -136,7 +136,7 @@ When this generation was installed, so a listing can report its age.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-1981"></a>
+<a id="rustdoc-item-2055"></a>
 
 ### `overwrote_prologues`
 

@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1459"></a>
+<a id="rustdoc-item-1556"></a>
 
 # Function `pill_master_renderer_data::config::pbr_pipeline::install`
 
@@ -8,11 +8,11 @@
 pub fn install(assets: &mut pill_engine::AssetManager) -> Result<pill_engine::Handle<crate::assets::RenderingPipeline>, Box<dyn std::error::Error>>;
 ```
 
-Source: `extensions\pill_master_renderer\pill_master_renderer_data\src\config\pbr_pipeline\mod.rs:187`
+Source: `extensions\pill_master_renderer\modules\runtime\data\src\config\pbr_pipeline\mod.rs:187`
 
 Installs the PBR chain, and returns the pipeline asset.
 
-The shader the geometry pass draws through is stored under [`SHADER_PATH`](constant.SHADER_PATH.md#rustdoc-item-1463),
+The shader the geometry pass draws through is stored under [`SHADER_PATH`](constant.SHADER_PATH.md#rustdoc-item-1560),
 which is how a caller that wants it finds it: the pass carries the same
 handle, and the store is the index for the name.
 

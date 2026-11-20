@@ -8,7 +8,7 @@
 pub async fn setup_rendering<W: RendererWindow>(project: crate::StaticProject, window: W, width: u32, height: u32) -> Result<RenderingRuntime, crate::RenderingError>;
 ```
 
-Source: `hosting\pill_player\src\rendering.rs:756`
+Source: `hosting\pill_player\src\rendering.rs:759`
 
 Start a statically linked project and attach its renderer to `window`.
 

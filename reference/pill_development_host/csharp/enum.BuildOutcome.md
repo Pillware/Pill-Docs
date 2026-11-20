@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1832"></a>
+<a id="rustdoc-item-1906"></a>
 
 # Enum `pill_development_host::csharp::BuildOutcome`
 
@@ -8,13 +8,13 @@
 pub(crate) enum BuildOutcome { ... }
 ```
 
-Visibility: `crate` · Source: `hosting\pill_development_host\src\csharp\mod.rs:372`
+Visibility: `crate` · Source: `hosting\pill_development_host\src\csharp\mod.rs:358`
 
 What one managed assembly build produced.
 
 ## Variants
 
-<a id="rustdoc-item-1827"></a>
+<a id="rustdoc-item-1901"></a>
 
 ### `Compiled`
 
@@ -24,7 +24,7 @@ Compiled
 
 The in-process compiler rebuilt the assembly.
 
-<a id="rustdoc-item-1829"></a>
+<a id="rustdoc-item-1903"></a>
 
 ### `Failed`
 
@@ -34,7 +34,7 @@ Failed
 
 The project does not compile; the diagnostics say why.
 
-<a id="rustdoc-item-1831"></a>
+<a id="rustdoc-item-1905"></a>
 
 ### `Full`
 

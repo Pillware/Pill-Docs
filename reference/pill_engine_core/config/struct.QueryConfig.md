@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-3561"></a>
+<a id="rustdoc-item-2076"></a>
 
 # Struct `pill_engine_core::config::QueryConfig`
 
@@ -14,7 +14,7 @@ Zero-sized struct grouping the query constants.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-3562"></a>
+<a id="rustdoc-item-2077"></a>
 
 ### `DEFAULT_TUPLE_COMPONENT_IDS_CAPACITY`
 
@@ -28,7 +28,7 @@ query-target and filter-tuple macros build.
 A typical query names 1 to 4 components or filters, so 4 avoids a
 reallocation in the common case.
 
-<a id="rustdoc-item-3563"></a>
+<a id="rustdoc-item-2078"></a>
 
 ### `DEFAULT_FILTER_PAIRS_CAPACITY`
 
@@ -48,12 +48,12 @@ expanded.
 - `TryInto<U>`
 - `TryFrom<U>`
 - `Any`
+- `CastableFrom<ST, Uninit, Uninit>`
+- `CastableFrom<ST, Initialized, Initialized>`
+- `Read<Exclusive, BecauseExclusive>`
 - `Instrument`
 - `WithSubscriber`
 - `IntoEither`
 - `Pointable`
 - `OwoColorize`
 - `ErasedDestructor`
-- `CastableFrom<ST, Uninit, Uninit>`
-- `CastableFrom<ST, Initialized, Initialized>`
-- `Read<Exclusive, BecauseExclusive>`

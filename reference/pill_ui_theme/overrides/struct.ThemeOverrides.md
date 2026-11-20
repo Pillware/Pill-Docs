@@ -17,7 +17,7 @@ theme yields the theme a UI installs.
 
 ## Fields
 
-<a id="rustdoc-item-162"></a>
+<a id="rustdoc-item-166"></a>
 
 ### `name`
 
@@ -28,7 +28,7 @@ name: Option<String>
 The theme's name. A document may set it, and the merge copies it onto
 the theme.
 
-<a id="rustdoc-item-164"></a>
+<a id="rustdoc-item-168"></a>
 
 ### `dark_mode`
 
@@ -38,7 +38,7 @@ dark_mode: Option<bool>
 
 Whether egui treats the theme as dark mode.
 
-<a id="rustdoc-item-165"></a>
+<a id="rustdoc-item-169"></a>
 
 ### `palette`
 
@@ -48,7 +48,7 @@ palette: PaletteOverrides
 
 The colour roles this document changes.
 
-<a id="rustdoc-item-167"></a>
+<a id="rustdoc-item-171"></a>
 
 ### `text_styles`
 
@@ -58,7 +58,7 @@ text_styles: std::collections::BTreeMap<String, TextStyleOverride>
 
 The named text styles this document replaces or adds.
 
-<a id="rustdoc-item-170"></a>
+<a id="rustdoc-item-174"></a>
 
 ### `spacing`
 
@@ -68,7 +68,7 @@ spacing: SpacingOverrides
 
 The layout metrics this document changes.
 
-<a id="rustdoc-item-172"></a>
+<a id="rustdoc-item-176"></a>
 
 ### `shape`
 
@@ -79,7 +79,7 @@ shape: ShapeOverrides
 The corner radii, strokes, shadows and accent widths this document
 changes.
 
-<a id="rustdoc-item-174"></a>
+<a id="rustdoc-item-178"></a>
 
 ### `widgets`
 
@@ -89,7 +89,7 @@ widgets: WidgetsOverrides
 
 The widget states this document changes.
 
-<a id="rustdoc-item-176"></a>
+<a id="rustdoc-item-180"></a>
 
 ### `fonts`
 
@@ -101,23 +101,23 @@ The font paths this document names.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-179"></a>
+<a id="rustdoc-item-183"></a>
 
-### `from_json_str`
+### `from_yaml_str`
 
 ```rust
-pub fn from_json_str(json_text: &str) -> Result<Self, ThemeError>;
+pub fn from_yaml_str(yaml_text: &str) -> Result<Self, ThemeError>;
 ```
 
-Reads an override document from its JSON text.
+Reads an override document from its YAML text.
 
 The text is either the override body itself or a standalone asset file,
 which carries its body under `asset`. Both give the same value.
 
 #### Errors
 
-[`ThemeError::Json`](../theme/enum.ThemeError.md#rustdoc-item-178) with serde's message when the text is not JSON,
-does not hold an object, or names an unknown or wrongly typed item.
+[`ThemeError::Format`](../theme/enum.ThemeError.md#rustdoc-item-182) with serde's message when the text is not YAML,
+does not hold a mapping, or names an unknown or wrongly typed item.
 
 ## Trait implementations
 

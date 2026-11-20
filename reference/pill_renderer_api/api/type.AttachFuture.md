@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-174"></a>
+<a id="rustdoc-item-177"></a>
 
 # Type alias `pill_renderer_api::api::AttachFuture`
 

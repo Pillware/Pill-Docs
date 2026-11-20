@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-773"></a>
+<a id="rustdoc-item-775"></a>
 
 # Function `pill_development_host::build_runner::newest_extension_rlib`
 
@@ -8,7 +8,7 @@
 pub(crate) fn newest_extension_rlib(build_directory: &std::path::Path, package_name: &str) -> Option<std::path::PathBuf>;
 ```
 
-Visibility: `crate` · Source: `hosting\pill_development_host\src\build_runner.rs:1794`
+Visibility: `crate` · Source: `hosting\pill_development_host\src\build_runner.rs:1795`
 
 Returns the newest rlib cargo wrote for `package_name` into
 `build_directory`.

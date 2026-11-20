@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1206"></a>
+<a id="rustdoc-item-1216"></a>
 
 # Module `pill_core::platform`
 
@@ -38,11 +38,11 @@ browser.
 ## Module contents
 
 ### Modules
-- [`clock`](clock/index.md#rustdoc-item-1121) — Monotonic time and wall-clock time.
-- [`futures`](futures/index.md#rustdoc-item-1192) — Running futures: block on native, spawn on the web.
-- [`log_output`](log_output/index.md#rustdoc-item-1203) — Where log output goes: terminal and file on native, the console on the web.
-- [`styling`](styling/index.md#rustdoc-item-1204) — Terminal styling: colored and bold on native, plain on the web.
+- [`clock`](clock/index.md#rustdoc-item-1131) — Monotonic time and wall-clock time.
+- [`futures`](futures/index.md#rustdoc-item-1202) — Running futures: block on native, spawn on the web.
+- [`log_output`](log_output/index.md#rustdoc-item-1213) — Where log output goes: terminal and file on native, the console on the web.
+- [`styling`](styling/index.md#rustdoc-item-1214) — Terminal styling: colored and bold on native, plain on the web.
 
 ## Re-exports
 
-- [`pub use clock::Instant;`](clock/struct.Instant.md#rustdoc-item-1124)
+- [`pub use clock::Instant;`](clock/struct.Instant.md#rustdoc-item-1134)

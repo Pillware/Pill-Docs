@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1833"></a>
+<a id="rustdoc-item-1858"></a>
 
 # Struct `pill_csharp_bridge::project_backend::CSharpBackend`
 
@@ -19,7 +19,7 @@ replacement.
 
 ## Fields
 
-<a id="rustdoc-item-1830"></a>
+<a id="rustdoc-item-1855"></a>
 
 ### `posture`
 
@@ -29,7 +29,7 @@ posture: Posture
 
 CoreCLR or NativeAOT.
 
-<a id="rustdoc-item-1831"></a>
+<a id="rustdoc-item-1856"></a>
 
 ### `module_config`
 
@@ -41,7 +41,7 @@ Assembly names and output directories, in the same form a reloading
 build gives them. A NativeAOT build uses only the project side, whose
 output directory is the `dotnet publish` output.
 
-<a id="rustdoc-item-1832"></a>
+<a id="rustdoc-item-1857"></a>
 
 ### `workspace_root`
 
@@ -58,7 +58,7 @@ workspace the binary was built in.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-1834"></a>
+<a id="rustdoc-item-1859"></a>
 
 ### `coreclr`
 
@@ -68,7 +68,7 @@ pub fn coreclr(module_config: CSharpModuleConfig, workspace_root: PathBuf) -> Se
 
 A project hosted by CoreCLR through hostfxr.
 
-<a id="rustdoc-item-1835"></a>
+<a id="rustdoc-item-1860"></a>
 
 ### `native_aot`
 

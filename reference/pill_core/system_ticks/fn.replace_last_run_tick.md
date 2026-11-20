@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1566"></a>
+<a id="rustdoc-item-1576"></a>
 
 # Function `pill_core::system_ticks::replace_last_run_tick`
 

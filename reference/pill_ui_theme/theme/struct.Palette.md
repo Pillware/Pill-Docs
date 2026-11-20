@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-1186"></a>
+<a id="rustdoc-item-1199"></a>
 
 # Struct `pill_ui_theme::theme::Palette`
 
@@ -8,13 +8,13 @@
 pub struct Palette;
 ```
 
-Source: `ui\pill_ui_theme\src\theme.rs:474`
+Source: `ui\pill_ui_theme\src\theme.rs:476`
 
 The colour roles a theme paints with, named by role and not by hue.
 
 ## Fields
 
-<a id="rustdoc-item-230"></a>
+<a id="rustdoc-item-234"></a>
 
 ### `frame`
 
@@ -24,7 +24,7 @@ frame: Rgba
 
 The window frame and tab-strip background.
 
-<a id="rustdoc-item-232"></a>
+<a id="rustdoc-item-236"></a>
 
 ### `panel`
 
@@ -34,7 +34,7 @@ panel: Rgba
 
 A panel's background.
 
-<a id="rustdoc-item-234"></a>
+<a id="rustdoc-item-238"></a>
 
 ### `panel_raised`
 
@@ -45,7 +45,7 @@ panel_raised: Rgba
 A surface one step lighter than the panel: a hovered tab, a neutral
 button's face, and striped rows.
 
-<a id="rustdoc-item-236"></a>
+<a id="rustdoc-item-240"></a>
 
 ### `control`
 
@@ -55,7 +55,7 @@ control: Rgba
 
 A flat control's fill: buttons and rows drawn on a panel.
 
-<a id="rustdoc-item-238"></a>
+<a id="rustdoc-item-242"></a>
 
 ### `well`
 
@@ -65,7 +65,7 @@ well: Rgba
 
 The background of text inputs and other sunken areas.
 
-<a id="rustdoc-item-240"></a>
+<a id="rustdoc-item-244"></a>
 
 ### `line`
 
@@ -75,7 +75,7 @@ line: Rgba
 
 Borders and separators.
 
-<a id="rustdoc-item-242"></a>
+<a id="rustdoc-item-246"></a>
 
 ### `text`
 
@@ -85,7 +85,7 @@ text: Rgba
 
 Normal text.
 
-<a id="rustdoc-item-244"></a>
+<a id="rustdoc-item-248"></a>
 
 ### `text_strong`
 
@@ -95,7 +95,7 @@ text_strong: Rgba
 
 Emphasized text.
 
-<a id="rustdoc-item-246"></a>
+<a id="rustdoc-item-250"></a>
 
 ### `text_muted`
 
@@ -105,7 +105,7 @@ text_muted: Rgba
 
 Muted text.
 
-<a id="rustdoc-item-248"></a>
+<a id="rustdoc-item-252"></a>
 
 ### `accent`
 
@@ -115,7 +115,7 @@ accent: Rgba
 
 The accent: focus, active tabs, selection.
 
-<a id="rustdoc-item-250"></a>
+<a id="rustdoc-item-254"></a>
 
 ### `accent_hot`
 
@@ -125,7 +125,7 @@ accent_hot: Rgba
 
 A brighter accent for hovered accents.
 
-<a id="rustdoc-item-252"></a>
+<a id="rustdoc-item-256"></a>
 
 ### `success`
 
@@ -135,7 +135,7 @@ success: Rgba
 
 Success and running states.
 
-<a id="rustdoc-item-254"></a>
+<a id="rustdoc-item-258"></a>
 
 ### `warning`
 
@@ -145,7 +145,7 @@ warning: Rgba
 
 Warnings.
 
-<a id="rustdoc-item-256"></a>
+<a id="rustdoc-item-260"></a>
 
 ### `danger`
 
@@ -155,7 +155,7 @@ danger: Rgba
 
 Errors and destructive actions.
 
-<a id="rustdoc-item-258"></a>
+<a id="rustdoc-item-262"></a>
 
 ### `selection`
 
@@ -165,7 +165,7 @@ selection: Rgba
 
 A selected row's tint.
 
-<a id="rustdoc-item-260"></a>
+<a id="rustdoc-item-264"></a>
 
 ### `selection_bar`
 
@@ -175,7 +175,7 @@ selection_bar: Rgba
 
 A selected row's left bar.
 
-<a id="rustdoc-item-262"></a>
+<a id="rustdoc-item-266"></a>
 
 ### `overlay`
 
@@ -185,7 +185,7 @@ overlay: Rgba
 
 A floating panel's fill over the scene.
 
-<a id="rustdoc-item-264"></a>
+<a id="rustdoc-item-268"></a>
 
 ### `overlay_border`
 
@@ -195,7 +195,7 @@ overlay_border: Rgba
 
 A floating panel's border.
 
-<a id="rustdoc-item-266"></a>
+<a id="rustdoc-item-270"></a>
 
 ### `log_info`
 
@@ -205,7 +205,7 @@ log_info: Rgba
 
 A log line at `info`.
 
-<a id="rustdoc-item-268"></a>
+<a id="rustdoc-item-272"></a>
 
 ### `log_debug`
 
@@ -215,7 +215,7 @@ log_debug: Rgba
 
 A log line at `debug`.
 
-<a id="rustdoc-item-270"></a>
+<a id="rustdoc-item-274"></a>
 
 ### `log_warn`
 
@@ -225,7 +225,7 @@ log_warn: Rgba
 
 A log line at `warn`.
 
-<a id="rustdoc-item-272"></a>
+<a id="rustdoc-item-276"></a>
 
 ### `log_error`
 
@@ -235,9 +235,31 @@ log_error: Rgba
 
 A log line at `error`.
 
+<a id="rustdoc-item-278"></a>
+
+### `play_tint`
+
+```rust
+play_tint: Rgba
+```
+
+The tint the menu bar and the dock's frame take while a play session
+runs, so the person can see at a glance that the game is live.
+
+<a id="rustdoc-item-280"></a>
+
+### `play_tint_paused`
+
+```rust
+play_tint_paused: Rgba
+```
+
+The tint while a running session is paused: the same signal, stronger,
+because a paused game is the state that surprises people.
+
 ## Associated functions and methods
 
-<a id="rustdoc-item-1187"></a>
+<a id="rustdoc-item-1200"></a>
 
 ### `brutalist`
 

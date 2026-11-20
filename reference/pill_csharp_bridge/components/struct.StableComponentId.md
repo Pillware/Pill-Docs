@@ -13,20 +13,20 @@ Visibility: `crate` · Source: `csharp\pill_csharp_bridge\src\components.rs:71`
 Stable 128-bit identity of a managed component, derived from its name.
 
 The name is the C# full name with dots (`pill_spline.Spline`).
-[`stable_component_id`](fn.stable_component_id.md#rustdoc-item-734) hashes it with the engine's own mixing function,
+[`stable_component_id`](fn.stable_component_id.md#rustdoc-item-755) hashes it with the engine's own mixing function,
 and the managed runtime computes the same value in `Engine.StableIdOf`, so
 two separately compiled sides agree without exchanging anything. The C ABI
 has no 128-bit integer, so `component_key` and `component_key_high` carry
-the two `u64` halves, and [`Self::from_halves`](#rustdoc-item-735) puts them back together.
+the two `u64` halves, and [`Self::from_halves`](#rustdoc-item-756) puts them back together.
 
 A shared component that Rust registered is named with `::` separators, so
-it hashes to a different value. [`ModuleExposedComponent`](struct.ModuleExposedComponent.md#rustdoc-item-510) keeps the C#
+it hashes to a different value. [`ModuleExposedComponent`](struct.ModuleExposedComponent.md#rustdoc-item-520) keeps the C#
 name beside the engine component ID the Rust name produced, and neither
 name is translated into the other.
 
 ## Fields
 
-<a id="rustdoc-item-733"></a>
+<a id="rustdoc-item-754"></a>
 
 ### `0`
 
@@ -38,7 +38,7 @@ The 128-bit canonical identity value.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-735"></a>
+<a id="rustdoc-item-756"></a>
 
 ### `from_halves`
 
@@ -69,6 +69,7 @@ C ABI, with the high half restored to its original bit position.
 - `CastableFrom<ST, Uninit, Uninit>`
 - `CastableFrom<ST, Initialized, Initialized>`
 - `Read<Exclusive, BecauseExclusive>`
+- `Equivalent<K>`
 - `Debug`
 - `Clone`
 - `Copy`

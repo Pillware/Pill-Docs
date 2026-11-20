@@ -1,6 +1,6 @@
 <!-- This file is generated. Do not edit it directly. -->
 
-<a id="rustdoc-item-7256"></a>
+<a id="rustdoc-item-9314"></a>
 
 # Struct `pill_editor_core::session::PanelWindowSession`
 
@@ -8,7 +8,7 @@
 pub struct PanelWindowSession;
 ```
 
-Source: `editor\pill_editor_core\src\session.rs:207`
+Source: `editor\pill_editor_core\src\session.rs:212`
 
 The windows the module panels asked for.
 
@@ -18,7 +18,7 @@ the panel that owns it is no longer alive.
 
 ## Fields
 
-<a id="rustdoc-item-7374"></a>
+<a id="rustdoc-item-9435"></a>
 
 ### `windows`
 
@@ -28,7 +28,7 @@ windows: Vec<PanelWindowState>
 
 The open windows, oldest first.
 
-<a id="rustdoc-item-7375"></a>
+<a id="rustdoc-item-9436"></a>
 
 ### `answer`
 
@@ -41,7 +41,7 @@ it on its next draw and the shell clears it afterwards.
 
 ## Associated functions and methods
 
-<a id="rustdoc-item-7376"></a>
+<a id="rustdoc-item-9437"></a>
 
 ### `open`
 
@@ -50,9 +50,9 @@ pub fn open(self: &mut Self, source: &str, slot: u16, request: &crate::panels::P
 ```
 
 Open a window, replacing one with the same id. Past
-[`PANEL_WINDOWS_MAX`](constant.PANEL_WINDOWS_MAX.md#rustdoc-item-7224) open windows, the oldest one closes first.
+[`PANEL_WINDOWS_MAX`](constant.PANEL_WINDOWS_MAX.md#rustdoc-item-9282) open windows, the oldest one closes first.
 
-<a id="rustdoc-item-7377"></a>
+<a id="rustdoc-item-9438"></a>
 
 ### `close`
 
@@ -62,7 +62,7 @@ pub fn close(self: &mut Self, source: &str, id: &str);
 
 Close one window of one source.
 
-<a id="rustdoc-item-7378"></a>
+<a id="rustdoc-item-9439"></a>
 
 ### `close_source`
 
@@ -72,7 +72,7 @@ pub fn close_source(self: &mut Self, source: &str) -> usize;
 
 Close every window a source opened; returns how many went.
 
-<a id="rustdoc-item-7379"></a>
+<a id="rustdoc-item-9440"></a>
 
 ### `modal`
 
