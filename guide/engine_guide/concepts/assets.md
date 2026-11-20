@@ -305,20 +305,20 @@ Hot-reload persistence is different: it keeps handles as their raw `(index, gene
 
 All paths are in `modules/engine/pill_engine_core/src/` unless noted.
 
-| What                                                                 | Where                                                                           |
-| -------------------------------------------------------------------- | ------------------------------------------------------------------------------- |
-| `Asset`, `Handle`, `AssetGuid`, `AssetManager`, `register`, `rehome` | `asset.rs`                                                                      |
-| `World::load_asset`, `Engine::load_scene_file`                       | `asset_loading.rs`                                                              |
-| `.meta` files, `ImportedAsset`, `AssetManager::import`               | `asset_metadata.rs`                                                             |
-| Standalone documents, `import_standalone`                            | `asset_standalone.rs`                                                           |
-| Extension → type lookup, liveness markers                            | `asset_import_registry.rs`                                                      |
-| `register_asset`, `register_imported_asset`, `rehome_assets`         | `world/resources.rs`                                                            |
-| Guid ↔ path index                                                    | `asset_database.rs`                                                             |
-| Packs and mounted directories, `write_beside`                        | `asset_store.rs`                                                                |
-| `reimport`, `ensure_metadata`, `follow_move`, `settings_json_for`    | `asset_metadata.rs`                                                             |
-| Moving a source with its `.meta` file (`move_asset`)                 | `modules/assets/pill_assets/src/asset_move.rs`                                  |
-| Watching `.meta` changes, `apply_asset_changes`                      | `modules/hosting/pill_development_host/src/watchers/asset.rs`, `runtime.rs`     |
-| Editor writes (`WriteAssetMeta`, `SetAssetSettings`)                 | `modules/editor/pill_editor_core/src/editor_state/apply/asset.rs`               |
-| Saved references, `AssetReference`                                   | `saved_references.rs`, `asset_reference.rs`                                     |
-| Pack writer                                                          | `modules/assets/pill_assets/`                                                   |
-| The renderer's asset types                                           | `modules/extensions/pill_master_renderer/modules/runtime/data/src/assets/` |
+| What                                                                 | Where                                                                       |
+| -------------------------------------------------------------------- | --------------------------------------------------------------------------- |
+| `Asset`, `Handle`, `AssetGuid`, `AssetManager`, `register`, `rehome` | `asset.rs`                                                                  |
+| `World::load_asset`, `Engine::load_scene_file`                       | `asset_loading.rs`                                                          |
+| `.meta` files, `ImportedAsset`, `AssetManager::import`               | `asset_metadata.rs`                                                         |
+| Standalone documents, `import_standalone`                            | `asset_standalone.rs`                                                       |
+| Extension → type lookup, liveness markers                            | `asset_import_registry.rs`                                                  |
+| `register_asset`, `register_imported_asset`, `rehome_assets`         | `world/resources.rs`                                                        |
+| Guid ↔ path index                                                    | `asset_database.rs`                                                         |
+| Packs and mounted directories, `write_beside`                        | `asset_store.rs`                                                            |
+| `reimport`, `ensure_metadata`, `follow_move`, `settings_json_for`    | `asset_metadata.rs`                                                         |
+| Moving a source with its `.meta` file (`move_asset`)                 | `modules/assets/pill_assets/src/asset_move.rs`                              |
+| Watching `.meta` changes, `apply_asset_changes`                      | `modules/hosting/pill_development_host/src/watchers/asset.rs`, `runtime.rs` |
+| Editor writes (`WriteAssetMeta`, `SetAssetSettings`)                 | `modules/editor/pill_editor_core/src/editor_state/apply/asset.rs`           |
+| Saved references, `AssetReference`                                   | `saved_references.rs`, `asset_reference.rs`                                 |
+| Pack writer                                                          | `modules/assets/pill_assets/`                                               |
+| The renderer's asset types                                           | `modules/extensions/pill_master_renderer/modules/runtime/data/src/assets/`  |

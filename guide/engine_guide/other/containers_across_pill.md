@@ -4,13 +4,13 @@
 
 Pill stores its data in five kinds of container. Each one answers a different question:
 
-| Container         | Question it answers                                    | Example                          |
-| ----------------- | ------------------------------------------------------ | -------------------------------- |
-| entities          | "Does this object still exist, and where are its components?" | the player, a bullet       |
-| components        | "What data does this object have?"                     | `TransformComponent`, `Health`   |
-| resources         | "What is the one value of this type in the world?"    | `PhysicsManager`, `Time`         |
-| assets            | "Which of the many loaded files of this type do I mean?" | a mesh, a texture, a material  |
-| GPU objects       | "What has the renderer built on the GPU for that asset?" | a vertex buffer, a bind group  |
+| Container   | Question it answers                                           | Example                        |
+| ----------- | ------------------------------------------------------------- | ------------------------------ |
+| entities    | "Does this object still exist, and where are its components?" | the player, a bullet           |
+| components  | "What data does this object have?"                            | `TransformComponent`, `Health` |
+| resources   | "What is the one value of this type in the world?"            | `PhysicsManager`, `Time`       |
+| assets      | "Which of the many loaded files of this type do I mean?"      | a mesh, a texture, a material  |
+| GPU objects | "What has the renderer built on the GPU for that asset?"      | a vertex buffer, a bind group  |
 
 They look different, but they are built from the same four ideas:
 
@@ -23,20 +23,20 @@ The engine has **three separate implementations of generational handles**, one e
 
 ## At a glance
 
-| | Entities | Components | Resources | Assets | GPU objects (renderer) |
-| --- | --- | --- | --- | --- | --- |
-| Lives in | `World` | `World` → archetypes | `World` | `AssetManager` (a resource) | the renderer GPU module |
-| Values per type | – | one per entity that has it | **one** | many | many |
-| Handle | `Entity { id: u64, generation: u32 }` | none: reached through the entity | none: the type is the key (`ResHandle<T>` is zero-sized) | `Handle<T> { index: u32, generation: u32 }` | `RendererMeshHandle` etc. (`KeyData { index: u32, version: NonZeroU32 }`) |
-| Can a handle go stale? | yes, the generation catches it | – | no | yes, the generation catches it | yes, the version catches it |
-| Lookup by handle | `HashMap<Entity, EntityLocation>` | entity → archetype → column → row | `HashMap<ResourceId, ErasedResource>` | `Vec` by slot + generation + back-pointer | `HashMap<u64, …>` by asset key, then `SlotMap` by handle |
-| Value storage | none of its own; it points into an archetype | packed `ComponentColumn` per type per archetype | one heap box per resource | one packed `ErasedVecStorage` column per type | `SlotMap<K, V>`: a `Vec` of slots, holes allowed |
-| Removal | id goes to a free list with the next generation | swap-remove in the archetype | remove from the map | swap-remove; slot freed with the next generation | slot emptied; version + 1 |
-| Type identity across DLLs | – | `ComponentId::Native(TypeId)` / `Shared(u128)` / `Descriptor(u128)` | `ResourceId::Native(TypeId)` / `Shared(u128)` | `TypeId`, or the first DLL's `TypeId` for a `shared_name` | none needed: the values never leave the module |
-| Survives a hot reload by | plain data, nothing to fix | `rehome_native_columns` swaps each column's `ColumnOps` | `rehome_resources` swaps each box's `ErasedResourceOps` | `rehome_assets` runs each column's refresher | **does not survive**: the renderer is dropped and rebuilt from the asset store |
-| Stable identity for later runs | `EntityId(u128)` | – | the type's name | `AssetGuid` | – |
-| Change signal | – | `ComponentTicks` per row | `ComponentTicks` per resource | content version per slot + one store `revision` | the epoch of the resources, for bind groups |
-| Code | `entity.rs`, `world/mod.rs` | `archetype.rs`, `component.rs`, `world/components.rs` | `resource.rs`, `world/resources.rs` | `asset.rs` | `rendering_resources_manager.rs`, `resources/renderer_resource_storage.rs`, `pill_core/src/slot_map.rs` |
+|                                | Entities                                        | Components                                                          | Resources                                                | Assets                                                    | GPU objects (renderer)                                                                                  |
+| ------------------------------ | ----------------------------------------------- | ------------------------------------------------------------------- | -------------------------------------------------------- | --------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
+| Lives in                       | `World`                                         | `World` → archetypes                                                | `World`                                                  | `AssetManager` (a resource)                               | the renderer GPU module                                                                                 |
+| Values per type                | –                                               | one per entity that has it                                          | **one**                                                  | many                                                      | many                                                                                                    |
+| Handle                         | `Entity { id: u64, generation: u32 }`           | none: reached through the entity                                    | none: the type is the key (`ResHandle<T>` is zero-sized) | `Handle<T> { index: u32, generation: u32 }`               | `RendererMeshHandle` etc. (`KeyData { index: u32, version: NonZeroU32 }`)                               |
+| Can a handle go stale?         | yes, the generation catches it                  | –                                                                   | no                                                       | yes, the generation catches it                            | yes, the version catches it                                                                             |
+| Lookup by handle               | `HashMap<Entity, EntityLocation>`               | entity → archetype → column → row                                   | `HashMap<ResourceId, ErasedResource>`                    | `Vec` by slot + generation + back-pointer                 | `HashMap<u64, …>` by asset key, then `SlotMap` by handle                                                |
+| Value storage                  | none of its own; it points into an archetype    | packed `ComponentColumn` per type per archetype                     | one heap box per resource                                | one packed `ErasedVecStorage` column per type             | `SlotMap<K, V>`: a `Vec` of slots, holes allowed                                                        |
+| Removal                        | id goes to a free list with the next generation | swap-remove in the archetype                                        | remove from the map                                      | swap-remove; slot freed with the next generation          | slot emptied; version + 1                                                                               |
+| Type identity across DLLs      | –                                               | `ComponentId::Native(TypeId)` / `Shared(u128)` / `Descriptor(u128)` | `ResourceId::Native(TypeId)` / `Shared(u128)`            | `TypeId`, or the first DLL's `TypeId` for a `shared_name` | none needed: the values never leave the module                                                          |
+| Survives a hot reload by       | plain data, nothing to fix                      | `rehome_native_columns` swaps each column's `ColumnOps`             | `rehome_resources` swaps each box's `ErasedResourceOps`  | `rehome_assets` runs each column's refresher              | **does not survive**: the renderer is dropped and rebuilt from the asset store                          |
+| Stable identity for later runs | `EntityId(u128)`                                | –                                                                   | the type's name                                          | `AssetGuid`                                               | –                                                                                                       |
+| Change signal                  | –                                               | `ComponentTicks` per row                                            | `ComponentTicks` per resource                            | content version per slot + one store `revision`           | the epoch of the resources, for bind groups                                                             |
+| Code                           | `entity.rs`, `world/mod.rs`                     | `archetype.rs`, `component.rs`, `world/components.rs`               | `resource.rs`, `world/resources.rs`                      | `asset.rs`                                                | `rendering_resources_manager.rs`, `resources/renderer_resource_storage.rs`, `pill_core/src/slot_map.rs` |
 
 ## Entities
 
@@ -80,13 +80,13 @@ Archetype {
 
 Each `ComponentColumn` is one packed buffer of one component type:
 
-| Field           | What it holds                                                            |
-| --------------- | ------------------------------------------------------------------------ |
-| `row_buffer`    | raw bytes, one row per entity, no gaps                                   |
-| `element_layout`| the size and alignment of one row                                        |
-| `ops`           | `ColumnOps`: the drop and move functions, replaceable on reload           |
-| `identity`      | what a typed accessor must prove before it reads the rows                |
-| `ticks`         | `Vec<ComponentTicks>`, one per row, for change detection                 |
+| Field            | What it holds                                                   |
+| ---------------- | --------------------------------------------------------------- |
+| `row_buffer`     | raw bytes, one row per entity, no gaps                          |
+| `element_layout` | the size and alignment of one row                               |
+| `ops`            | `ColumnOps`: the drop and move functions, replaceable on reload |
+| `identity`       | what a typed accessor must prove before it reads the rows       |
+| `ticks`          | `Vec<ComponentTicks>`, one per row, for change detection        |
 
 **Reading one entity's component** takes three map lookups and an index:
 
@@ -101,11 +101,11 @@ Each `ComponentColumn` is one packed buffer of one component type:
 
 **Component identity** is `ComponentId`:
 
-| Variant              | Used for                                              |
-| -------------------- | ----------------------------------------------------- |
-| `Native(TypeId)`     | an ordinary Rust component, separate per DLL          |
-| `Shared(u128)`       | a Rust component with a stable name, the same in every DLL |
-| `Descriptor(u128)`   | a C# component described by a manifest; only bytes and a layout |
+| Variant            | Used for                                                        |
+| ------------------ | --------------------------------------------------------------- |
+| `Native(TypeId)`   | an ordinary Rust component, separate per DLL                    |
+| `Shared(u128)`     | a Rust component with a stable name, the same in every DLL      |
+| `Descriptor(u128)` | a C# component described by a manifest; only bytes and a layout |
 
 ## Resources
 
@@ -144,10 +144,10 @@ rows: [ crate, rock, tree ]
 
 Per asset type there are two parts:
 
-| Part             | What it holds                                                                   |
-| ---------------- | ------------------------------------------------------------------------------- |
-| `ErasedVecStorage` | the values, packed, with a replaceable `ErasedVecStorageOps` table            |
-| `AssetColumn`    | `generations`, `slot_rows`, `row_slots`, `free_slots`, `content_versions`, name and guid indexes, import settings |
+| Part               | What it holds                                                                                                     |
+| ------------------ | ----------------------------------------------------------------------------------------------------------------- |
+| `ErasedVecStorage` | the values, packed, with a replaceable `ErasedVecStorageOps` table                                                |
+| `AssetColumn`      | `generations`, `slot_rows`, `row_slots`, `free_slots`, `content_versions`, name and guid indexes, import settings |
 
 - **A handle addresses a slot, not a row.** Rows move when another asset is removed, but the slot stays.
 - **Looking up** an asset is two vector reads with no hashing. The generation must match, and `row_slots[slot_rows[index]]` must point back at the same slot. The back-pointer is needed because a freed slot's `slot_rows` entry is left as the last occupant left it.
@@ -191,13 +191,13 @@ vertex buffer, index buffer
 
 A destroyed entity's handle is no longer a key in `entity_locations`. Every entry point turns that into a plain result:
 
-| Call                                    | Result with a stale `Entity`                                       |
-| --------------------------------------- | ------------------------------------------------------------------ |
-| `world.is_entity_valid(entity)`         | `false`                                                            |
-| `world.get_component::<T>(entity)` / `get_component_mut` | `None`                                            |
-| `world.add_component(entity, value)`    | `Err(AddComponentError::EntityNotFound)`; the value is dropped     |
-| `world.remove_component::<T>(entity)`   | `Err(RemoveComponentError::EntityNotFound)`; nothing changes                    |
-| `world.destroy_entity(entity)`          | `false`; destroying twice is harmless                              |
+| Call                                                        | Result with a stale `Entity`                                                        |
+| ----------------------------------------------------------- | ----------------------------------------------------------------------------------- |
+| `world.is_entity_valid(entity)`                             | `false`                                                                             |
+| `world.get_component::<T>(entity)` / `get_component_mut`    | `None`                                                                              |
+| `world.add_component(entity, value)`                        | `Err(AddComponentError::EntityNotFound)`; the value is dropped                      |
+| `world.remove_component::<T>(entity)`                       | `Err(RemoveComponentError::EntityNotFound)`; nothing changes                        |
+| `world.destroy_entity(entity)`                              | `false`; destroying twice is harmless                                               |
 | a deferred command (`commands.add_component(entity, …)`, …) | the flush records `CommandError::EntityNotFound { entity, operation }` and skips it |
 
 Deferred commands need this most. A system can queue a command for an entity that another command in the same flush destroys first. By default (`should_exit_on_error` is `false`), the flush **logs** the failures and the frame continues. With `set_should_exit_on_error(true)`, `process_frame` returns them as `Err(Vec<CommandError>)` and the caller decides.
@@ -210,12 +210,12 @@ A saved reference doesn't hold an `Entity` at all. It holds an `EntityId`, which
 
 `AssetManager` checks the handle first in every call, through `is_live` (the slot's generation must match) and then `slot_row` (the back-pointer must match):
 
-| Call                           | Result with a stale `Handle<T>`                                           |
-| ------------------------------ | ------------------------------------------------------------------------- |
-| `assets.get(handle)`           | `None`                                                                    |
-| `assets.get_mut(handle)`       | `None`; the store's `revision` and the content versions are not touched   |
-| `assets.remove(handle)`        | `None`; removing twice is harmless                                        |
-| name or guid lookups           | return the **current** handle (with the new generation), never the stale one |
+| Call                     | Result with a stale `Handle<T>`                                              |
+| ------------------------ | ---------------------------------------------------------------------------- |
+| `assets.get(handle)`     | `None`                                                                       |
+| `assets.get_mut(handle)` | `None`; the store's `revision` and the content versions are not touched      |
+| `assets.remove(handle)`  | `None`; removing twice is harmless                                           |
+| name or guid lookups     | return the **current** handle (with the new generation), never the stale one |
 
 A handle goes stale in these cases:
 
@@ -233,14 +233,14 @@ Resources have no handles, so they can't go stale. The equivalent case is a reso
 
 The renderer meets stale handles at two levels, and each level has a fallback, so a frame always draws something:
 
-| What is missing                                   | What the renderer does                                                   |
-| ------------------------------------------------- | ------------------------------------------------------------------------ |
-| an instance's **mesh** has no GPU object          | the instance is **skipped** silently (`resolve_draw_handles` returns `None`) |
-| an instance's **material** has no GPU object      | draws with the **default material**                                      |
-| a material's GPU object is not in the storage     | draws with the **default shader**                                        |
-| a material names a **shader** that isn't loaded   | the material is built with the default shader, and a warning names it: "material `…` names a shader that is not loaded; drawing with the default shader" |
+| What is missing                                    | What the renderer does                                                                                                                                        |
+| -------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| an instance's **mesh** has no GPU object           | the instance is **skipped** silently (`resolve_draw_handles` returns `None`)                                                                                  |
+| an instance's **material** has no GPU object       | draws with the **default material**                                                                                                                           |
+| a material's GPU object is not in the storage      | draws with the **default shader**                                                                                                                             |
+| a material names a **shader** that isn't loaded    | the material is built with the default shader, and a warning names it: "material `…` names a shader that is not loaded; drawing with the default shader"      |
 | a material names a **texture** that isn't uploaded | that slot is left out, so the shader's slot gets the **placeholder** texture for its kind (white for colour, flat for normal, black for equirect and cubemap) |
-| a texture slot of kind **depth** has nothing bound | the material fails to build ("has no pipeline"), and the instance falls back to the default material |
+| a texture slot of kind **depth** has nothing bound | the material fails to build ("has no pipeline"), and the instance falls back to the default material                                                          |
 
 Two properties keep this safe:
 
@@ -249,27 +249,27 @@ Two properties keep this safe:
 
 ### Summary of the outcomes
 
-| Container   | Stale access returns                        | Logged?                                  | Fallback                              |
-| ----------- | ------------------------------------------- | ---------------------------------------- | ------------------------------------- |
-| entities    | `None`, `false` or an `EntityNotFound` error | deferred commands: yes, by default       | none: the operation is skipped        |
-| components  | `None` (through the entity)                  | no                                       | none                                  |
-| resources   | `None` (the resource is absent)              | no                                       | none                                  |
-| assets      | `None`                                       | no; scene loading reports an unresolved guid once per guid | `Handle::INVALID`             |
-| GPU objects | `None` internally                            | a missing shader is warned; a missing mesh is not | default material, default shader, placeholder textures, or skip |
+| Container   | Stale access returns                         | Logged?                                                    | Fallback                                                        |
+| ----------- | -------------------------------------------- | ---------------------------------------------------------- | --------------------------------------------------------------- |
+| entities    | `None`, `false` or an `EntityNotFound` error | deferred commands: yes, by default                         | none: the operation is skipped                                  |
+| components  | `None` (through the entity)                  | no                                                         | none                                                            |
+| resources   | `None` (the resource is absent)              | no                                                         | none                                                            |
+| assets      | `None`                                       | no; scene loading reports an unresolved guid once per guid | `Handle::INVALID`                                               |
+| GPU objects | `None` internally                            | a missing shader is warned; a missing mesh is not          | default material, default shader, placeholder textures, or skip |
 
 ## What do they have in common?
 
 ### Generational handles, three times
 
-| | Entity | `Handle<T>` (asset) | `SlotMap` key (GPU) |
-| --- | --- | --- | --- |
-| Index | `u64` | `u32` | `u32` |
-| Generation | `u32`, starts at `0` | `u32`, starts at `0` | `NonZeroU32`, starts at `1` |
-| Where the current generation is kept | only as part of the `HashMap` key; the free list remembers the next one | `generations: Vec<u32>` | inside each `Slot` |
-| How a stale handle fails | not a key in the map | generation mismatch or back-pointer mismatch | version mismatch or empty slot |
-| At `u32::MAX` | slot retired | slot retired | slot retired |
-| Empty handle | `Entity::NULL` | `Handle::INVALID` | – |
-| Stable identity for later runs | `EntityId(u128)`, random | `AssetGuid`, random, stored in `.meta` or the file header | none: GPU objects are rebuilt |
+|                                      | Entity                                                                  | `Handle<T>` (asset)                                       | `SlotMap` key (GPU)            |
+| ------------------------------------ | ----------------------------------------------------------------------- | --------------------------------------------------------- | ------------------------------ |
+| Index                                | `u64`                                                                   | `u32`                                                     | `u32`                          |
+| Generation                           | `u32`, starts at `0`                                                    | `u32`, starts at `0`                                      | `NonZeroU32`, starts at `1`    |
+| Where the current generation is kept | only as part of the `HashMap` key; the free list remembers the next one | `generations: Vec<u32>`                                   | inside each `Slot`             |
+| How a stale handle fails             | not a key in the map                                                    | generation mismatch or back-pointer mismatch              | version mismatch or empty slot |
+| At `u32::MAX`                        | slot retired                                                            | slot retired                                              | slot retired                   |
+| Empty handle                         | `Entity::NULL`                                                          | `Handle::INVALID`                                         | –                              |
+| Stable identity for later runs       | `EntityId(u128)`, random                                                | `AssetGuid`, random, stored in `.meta` or the file header | none: GPU objects are rebuilt  |
 
 All three follow the same rule: a handle names a slot, the slot carries a version, a removal raises the version, and a slot is never reused at its maximum. They differ only in where the version is stored and how the slot finds its value.
 
@@ -281,11 +281,11 @@ Archetype component columns and asset columns are both packed, and both fill a r
 
 Everything that **outlives a reload** is stored as bytes with a table of plain function pointers instead of a trait object:
 
-| Container  | Table                  | Re-pointed by            |
-| ---------- | ---------------------- | ------------------------ |
-| components | `ColumnOps`            | `rehome_native_columns`  |
-| resources  | `ErasedResourceOps`    | `rehome_resources`       |
-| assets     | `ErasedVecStorageOps`  | `rehome_assets` (per-column refresher) |
+| Container  | Table                 | Re-pointed by                          |
+| ---------- | --------------------- | -------------------------------------- |
+| components | `ColumnOps`           | `rehome_native_columns`                |
+| resources  | `ErasedResourceOps`   | `rehome_resources`                     |
+| assets     | `ErasedVecStorageOps` | `rehome_assets` (per-column refresher) |
 
 The reason is the same for all three. A vtable lives in the DLL that created the value, and a hot reload can unload that DLL while the value lives on. A table of plain data can be swapped for the new DLL's table before the old DLL goes. Entities hold no code, so they need nothing. GPU objects never outlive their DLL, so they don't need it either.
 
@@ -295,12 +295,12 @@ Components, resources and assets all distinguish "this type in this DLL" (`TypeI
 
 ### Change counters
 
-| Container  | Counter                                 | Read by                                  |
-| ---------- | --------------------------------------- | ---------------------------------------- |
-| components | `ComponentTicks` per row (`added`, `changed`) | `Changed<T>` / `Added<T>` query filters |
-| resources  | `ComponentTicks` per resource           | set on every mutable borrow and handed to the C# bridge with a foreign resource's bytes; no Rust query filter reads them |
-| assets     | content version per slot, plus `revision` for the store | the renderer's sync              |
-| GPU objects| `resource_epoch`                        | the render chain's bind groups           |
+| Container   | Counter                                                 | Read by                                                                                                                  |
+| ----------- | ------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
+| components  | `ComponentTicks` per row (`added`, `changed`)           | `Changed<T>` / `Added<T>` query filters                                                                                  |
+| resources   | `ComponentTicks` per resource                           | set on every mutable borrow and handed to the C# bridge with a foreign resource's bytes; no Rust query filter reads them |
+| assets      | content version per slot, plus `revision` for the store | the renderer's sync                                                                                                      |
+| GPU objects | `resource_epoch`                                        | the render chain's bind groups                                                                                           |
 
 None of the containers compares values to find changes. Each one counts writes.
 
@@ -308,11 +308,11 @@ None of the containers compares values to find changes. Each one counts writes.
 
 Every container that is keyed by a **type** or a **mask** uses a `HashMap` there: `archetypes`, `component_storages`, `resources`. So does the renderer's asset-key → GPU-handle map. The **per-item** lookups differ:
 
-| Per-item lookup          | Structure                         |
-| ------------------------ | --------------------------------- |
-| entity → location        | `HashMap` (hashed on every access) |
-| asset handle → row       | `Vec` (no hashing)                |
-| GPU handle → object      | `Vec` (no hashing)                |
+| Per-item lookup     | Structure                          |
+| ------------------- | ---------------------------------- |
+| entity → location   | `HashMap` (hashed on every access) |
+| asset handle → row  | `Vec` (no hashing)                 |
+| GPU handle → object | `Vec` (no hashing)                 |
 
 Entities are the only per-item container that hashes on every lookup.
 
@@ -340,19 +340,19 @@ Yes, partly. Nothing below has been measured or implemented.
 
 Paths are under `modules/` unless noted.
 
-| What                                                       | Where                                                                    |
-| ---------------------------------------------------------- | ------------------------------------------------------------------------ |
-| `Entity`, `Entity::NULL`, `from_raw`                       | `engine/pill_engine_core/src/entity.rs`                                  |
-| `entity_locations`, `free_entity_ids`, `archetypes`, resource maps | `engine/pill_engine_core/src/world/mod.rs`                       |
-| `Archetype`, `ComponentColumns`, `ComponentColumn`, `ColumnOps` | `engine/pill_engine_core/src/archetype.rs`                          |
-| `ComponentId`, `ComponentMask`, `ComponentTicks`           | `engine/pill_engine_core/src/component.rs`                               |
-| `rehome_native_columns`                                    | `engine/pill_engine_core/src/world/components.rs`                        |
-| `ResourceId`, `ErasedResource`, `ErasedResourceOps`, `ResHandle` | `engine/pill_engine_core/src/resource.rs`                          |
-| `rehome_resources`, `rehome_assets`                        | `engine/pill_engine_core/src/world/resources.rs`                         |
-| `Handle<T>`, `AssetManager`, `AssetColumn`                 | `engine/pill_engine_core/src/asset.rs`                                   |
-| `ErasedVecStorage`                                         | the external `trait_type_map` crate                                     |
-| `SlotMap`, `KeyData`, `define_slot_key!`                   | `engine/pill_core/src/slot_map.rs`                                      |
-| `asset_key`                                                | `extensions/pill_master_renderer/modules/runtime/data/src/assets/mod.rs` |
-| `RenderingResourcesManager`, `GpuColumn`                   | `extensions/pill_master_renderer/modules/runtime/gpu/src/rendering_resources_manager.rs` |
-| `RendererResourceStorage`                                  | `extensions/pill_master_renderer/modules/runtime/gpu/src/resources/renderer_resource_storage.rs` |
-| Asset implementation in depth                              | [Assets: how they are implemented](../concepts/assets.md)                |
+| What                                                               | Where                                                                                            |
+| ------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------ |
+| `Entity`, `Entity::NULL`, `from_raw`                               | `engine/pill_engine_core/src/entity.rs`                                                          |
+| `entity_locations`, `free_entity_ids`, `archetypes`, resource maps | `engine/pill_engine_core/src/world/mod.rs`                                                       |
+| `Archetype`, `ComponentColumns`, `ComponentColumn`, `ColumnOps`    | `engine/pill_engine_core/src/archetype.rs`                                                       |
+| `ComponentId`, `ComponentMask`, `ComponentTicks`                   | `engine/pill_engine_core/src/component.rs`                                                       |
+| `rehome_native_columns`                                            | `engine/pill_engine_core/src/world/components.rs`                                                |
+| `ResourceId`, `ErasedResource`, `ErasedResourceOps`, `ResHandle`   | `engine/pill_engine_core/src/resource.rs`                                                        |
+| `rehome_resources`, `rehome_assets`                                | `engine/pill_engine_core/src/world/resources.rs`                                                 |
+| `Handle<T>`, `AssetManager`, `AssetColumn`                         | `engine/pill_engine_core/src/asset.rs`                                                           |
+| `ErasedVecStorage`                                                 | the external `trait_type_map` crate                                                              |
+| `SlotMap`, `KeyData`, `define_slot_key!`                           | `engine/pill_core/src/slot_map.rs`                                                               |
+| `asset_key`                                                        | `extensions/pill_master_renderer/modules/runtime/data/src/assets/mod.rs`                         |
+| `RenderingResourcesManager`, `GpuColumn`                           | `extensions/pill_master_renderer/modules/runtime/gpu/src/rendering_resources_manager.rs`         |
+| `RendererResourceStorage`                                          | `extensions/pill_master_renderer/modules/runtime/gpu/src/resources/renderer_resource_storage.rs` |
+| Asset implementation in depth                                      | [Assets: how they are implemented](../concepts/assets.md)                                        |

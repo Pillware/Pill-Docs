@@ -8,18 +8,18 @@ This is the implementation counterpart of [concepts/components.md](../concepts/c
 
 ## At a glance
 
-| Piece                     | What it is                                                                 | Where                        |
-| ------------------------- | -------------------------------------------------------------------------- | ---------------------------- |
-| `Component` trait         | `Send + 'static`, plus optional `shared_name` and `declared_schema_hash`   | `component.rs`               |
-| `ComponentId`             | `Native(TypeId)`, `Shared(u128)` or `Descriptor(u128)` (C#)                | `component.rs`               |
-| `ComponentRegistry`       | `ComponentId` → bit index (0-127), name, recorded layout                  | `component.rs`               |
-| `ComponentMask`           | one `u128`; bit *n* set means "has component *n*"                          | `component.rs`               |
-| `Archetype`               | `id`, `component_types`, `component_mask`, `entities`, columns             | `archetype.rs`               |
-| `ArchetypeId`             | the mask's bits, so the mask *is* the id                                   | `archetype.rs`               |
-| `ComponentColumn`         | raw aligned buffer + `ColumnLayout` + `ColumnOps` + per-row `ComponentTicks` | `archetype.rs`             |
-| `ColumnOps`               | `drop_range` function pointer + `trivial_drop` flag                        | `archetype.rs`               |
-| `StorageFactory`          | per-type recipe for building a column: layout + `ColumnOps`, no closure    | `archetype.rs`               |
-| `PillComponentDescriptor` | what `#[component]` submits to the module's `inventory`        | `pill_engine/src/component_registry.rs` |
+| Piece                     | What it is                                                                   | Where                                   |
+| ------------------------- | ---------------------------------------------------------------------------- | --------------------------------------- |
+| `Component` trait         | `Send + 'static`, plus optional `shared_name` and `declared_schema_hash`     | `component.rs`                          |
+| `ComponentId`             | `Native(TypeId)`, `Shared(u128)` or `Descriptor(u128)` (C#)                  | `component.rs`                          |
+| `ComponentRegistry`       | `ComponentId` → bit index (0-127), name, recorded layout                     | `component.rs`                          |
+| `ComponentMask`           | one `u128`; bit *n* set means "has component *n*"                            | `component.rs`                          |
+| `Archetype`               | `id`, `component_types`, `component_mask`, `entities`, columns               | `archetype.rs`                          |
+| `ArchetypeId`             | the mask's bits, so the mask *is* the id                                     | `archetype.rs`                          |
+| `ComponentColumn`         | raw aligned buffer + `ColumnLayout` + `ColumnOps` + per-row `ComponentTicks` | `archetype.rs`                          |
+| `ColumnOps`               | `drop_range` function pointer + `trivial_drop` flag                          | `archetype.rs`                          |
+| `StorageFactory`          | per-type recipe for building a column: layout + `ColumnOps`, no closure      | `archetype.rs`                          |
+| `PillComponentDescriptor` | what `#[component]` submits to the module's `inventory`                      | `pill_engine/src/component_registry.rs` |
 
 ```
  World
@@ -45,22 +45,22 @@ Every entity in one archetype has exactly the same component types. So a query f
 
 The trade-off is that adding or removing a component **moves** the entity to another archetype, copying its other components. Pill accepts this because iteration happens every update, while structural changes are comparatively rare.
 
-| Operation                         | Cost                                                        |
-| --------------------------------- | ----------------------------------------------------------- |
-| Iterate all entities of a query   | linear, cache-friendly                                      |
-| Read one entity's component       | one location lookup + one mask bit test                     |
-| Add or remove a component         | move the whole row to another archetype                     |
-| Destroy an entity                 | swap-remove one row in every column                         |
+| Operation                       | Cost                                    |
+| ------------------------------- | --------------------------------------- |
+| Iterate all entities of a query | linear, cache-friendly                  |
+| Read one entity's component     | one location lookup + one mask bit test |
+| Add or remove a component       | move the whole row to another archetype |
+| Destroy an entity               | swap-remove one row in every column     |
 
 ## How is a component type identified?
 
 By a `ComponentId`, which depends on how the type was declared:
 
-| Declaration                         | `ComponentId`              | Same id in every DLL?                                       |
-| ----------------------------------- | -------------------------- | ----------------------------------------------------------- |
-| `#[derive(PillComponent)]`          | `Native(TypeId::of::<T>())` | only when every DLL compiled the type identically         |
-| `#[pill(shared)]` / `shared = "…"`  | `Shared(hash of the name)` | yes, always                                                 |
-| a C# component                      | `Descriptor(id from the manifest)` | yes (there is no Rust type)                         |
+| Declaration                        | `ComponentId`                      | Same id in every DLL?                             |
+| ---------------------------------- | ---------------------------------- | ------------------------------------------------- |
+| `#[derive(PillComponent)]`         | `Native(TypeId::of::<T>())`        | only when every DLL compiled the type identically |
+| `#[pill(shared)]` / `shared = "…"` | `Shared(hash of the name)`         | yes, always                                       |
+| a C# component                     | `Descriptor(id from the manifest)` | yes (there is no Rust type)                       |
 
 `ComponentId::of::<T>()` decides this, and every lookup goes through it. For a shared component the derive emits the hash as a compile-time constant (`shared_identity`), so a shared lookup costs the same as `TypeId::of`.
 
@@ -111,13 +111,13 @@ The mask can serve as the id because a bit only goes back to the free list after
 
 A `ComponentColumn` is a raw, aligned heap buffer plus everything needed to interpret it:
 
-| Field      | Purpose                                                                                   |
-| ---------- | ----------------------------------------------------------------------------------------- |
-| `layout`   | element size and alignment                                                                |
-| `ops`      | `ColumnOps`: how to drop rows                                                             |
-| `identity` | what a typed read must prove: the exact `TypeId`, the shared size/alignment, or nothing (C#) |
-| `data`, `len`, `capacity` | the buffer and its row counts                                              |
-| `ticks`    | one `ComponentTicks { added, changed }` per row, in a separate array                      |
+| Field                     | Purpose                                                                                      |
+| ------------------------- | -------------------------------------------------------------------------------------------- |
+| `layout`                  | element size and alignment                                                                   |
+| `ops`                     | `ColumnOps`: how to drop rows                                                                |
+| `identity`                | what a typed read must prove: the exact `TypeId`, the shared size/alignment, or nothing (C#) |
+| `data`, `len`, `capacity` | the buffer and its row counts                                                                |
+| `ticks`                   | one `ComponentTicks { added, changed }` per row, in a separate array                         |
 
 The column stores bytes, not a `Vec<T>`. Native Rust components, shared components and C# components all use the same column type; only `identity` differs. A typed accessor (`get::<T>`) checks `identity` and panics on a mismatch, so a wrong type is caught instead of read.
 
@@ -151,9 +151,9 @@ The deferred versions (`Commands::add_component_to_entity` and friends) run the 
 
 ## How do persistable and shared change registration?
 
-| Attribute     | What changes in the implementation                                                                                                   |
-| ------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
-| `persistable` | Also registers a JSON serializer (by `ComponentId`), a deserializer and an inserter (by persistence name), and a **schema hash** of the type. A reload compares old and new hashes per name and migrates changed columns through JSON. |
+| Attribute     | What changes in the implementation                                                                                                                                                                                                                                                        |
+| ------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `persistable` | Also registers a JSON serializer (by `ComponentId`), a deserializer and an inserter (by persistence name), and a **schema hash** of the type. A reload compares old and new hashes per name and migrates changed columns through JSON.                                                    |
 | `shared`      | The id is `Shared(hash of the name)`, so every DLL reaches one bit and one column. The column checks size and alignment instead of `TypeId`, and the registry compares field layouts (schema hashes) so a different layout is refused unless the registering module replaces the old one. |
 
 The **persistence name** is the shared name when there is one, and otherwise the type's stored name `<crate>::<Type>` (`type_names::stable_type_name`). The schema hash covers that name, the size, the JSON of `T::default()` and the field layout, so a changed field type changes the hash even when the default JSON looks the same.
@@ -181,16 +181,16 @@ In a parallel batch, several ECS systems cannot safely bump the shared counter a
 
 All paths are in `modules/engine/` unless noted.
 
-| What                                                        | Where                                                         |
-| ----------------------------------------------------------- | ------------------------------------------------------------- |
-| `Component`, `ComponentId`, `ComponentMask`, `ComponentRegistry`, ticks | `pill_engine_core/src/component.rs`               |
-| `Archetype`, `ComponentColumn`, `ColumnOps`, `StorageFactory` | `pill_engine_core/src/archetype.rs`                         |
-| Registration, `get_component`, `add_component`, re-homing    | `pill_engine_core/src/world/components.rs`                   |
-| Archetype lookup, entity moves                              | `pill_engine_core/src/world/mod.rs`                           |
-| Persistable registration, serializers                       | `pill_engine_core/src/persistence/components.rs`, `registry.rs` |
-| Reload migration of components                              | `pill_engine_core/src/persistence/migration.rs`               |
-| `Mut<T>` and change marking                                 | `pill_engine_core/src/query/change_detection.rs`              |
-| The derive and its attributes                               | `pill_engine_macros/src/lib.rs`, `derive_pill_component`      |
-| `register_all_components`, the component `inventory`        | `pill_engine/src/component_registry.rs`                       |
-| `DeclarationBaseline`, `with_declaration_baseline`          | `pill_engine/src/declarations.rs`; the host counts it in `pill_development_host/src/native_library.rs` |
-| Field layer (inspector, scenes)                             | `pill_engine_core/src/component_field/`                       |
+| What                                                                    | Where                                                                                                  |
+| ----------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------ |
+| `Component`, `ComponentId`, `ComponentMask`, `ComponentRegistry`, ticks | `pill_engine_core/src/component.rs`                                                                    |
+| `Archetype`, `ComponentColumn`, `ColumnOps`, `StorageFactory`           | `pill_engine_core/src/archetype.rs`                                                                    |
+| Registration, `get_component`, `add_component`, re-homing               | `pill_engine_core/src/world/components.rs`                                                             |
+| Archetype lookup, entity moves                                          | `pill_engine_core/src/world/mod.rs`                                                                    |
+| Persistable registration, serializers                                   | `pill_engine_core/src/persistence/components.rs`, `registry.rs`                                        |
+| Reload migration of components                                          | `pill_engine_core/src/persistence/migration.rs`                                                        |
+| `Mut<T>` and change marking                                             | `pill_engine_core/src/query/change_detection.rs`                                                       |
+| The derive and its attributes                                           | `pill_engine_macros/src/lib.rs`, `derive_pill_component`                                               |
+| `register_all_components`, the component `inventory`                    | `pill_engine/src/component_registry.rs`                                                                |
+| `DeclarationBaseline`, `with_declaration_baseline`                      | `pill_engine/src/declarations.rs`; the host counts it in `pill_development_host/src/native_library.rs` |
+| Field layer (inspector, scenes)                                         | `pill_engine_core/src/component_field/`                                                                |

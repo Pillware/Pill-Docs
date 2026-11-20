@@ -14,7 +14,7 @@ This is the implementation counterpart of [concepts/resources.md](../concepts/re
 | `ResourceId`                         | `Native(TypeId)` or `Shared(hash of the name)`                                                                                                                                     | `resource.rs`                     |
 | `ErasedResource`                     | the value's allocation, its `TypeId`, size, alignment and an `ErasedResourceOps`                                                                                                   | `resource.rs`                     |
 | `ErasedResourceOps`                  | `drop_in_place` function pointer, size, alignment, `foreign` flag, C# `schema_hash`, the declared `layout_sources`/`layout_dependencies`, and a manager's `settings_asset` surface | `resource.rs`                     |
-| `#[resource]`            | declares a resource where it is defined; the entry point registers it                                                                                                              | `pill_engine/src/declarations.rs` |
+| `#[resource]`                        | declares a resource where it is defined; the entry point registers it                                                                                                              | `pill_engine/src/declarations.rs` |
 | `World.resources`                    | `HashMap<ResourceId, ErasedResource>`: the values                                                                                                                                  | `world/mod.rs`                    |
 | `World.resource_ticks`               | `added`/`changed` ticks per resource                                                                                                                                               | `world/mod.rs`                    |
 | `World.resource_factories`           | newest `ErasedResourceOps` per id, for re-homing                                                                                                                                   | `world/mod.rs`                    |
@@ -197,7 +197,7 @@ All paths are in `modules/engine/pill_engine_core/src/`.
 | `Res<T>`, `ResMut<T>`                                                                | `query/resource.rs`                                                       |
 | `SystemParam` implementations and access reporting                                   | `system.rs`                                                               |
 | Persistable resources, snapshots, migration                                          | `persistence/resources.rs`                                                |
-| `#[resource]` declarations and `register_all_resources`                  | `modules/engine/pill_engine/src/declarations.rs`                          |
+| `#[resource]` declarations and `register_all_resources`                              | `modules/engine/pill_engine/src/declarations.rs`                          |
 | `SettingsAssetManager`, `SettingsAssetOps`                                           | `settings.rs`                                                             |
 | Settings bindings, missing files, change detection                                   | `manager_settings.rs`                                                     |
 | Layout fingerprints and the layout-change drop                                       | `modules/hosting/pill_development_host/src/layout_record.rs`, `reload.rs` |

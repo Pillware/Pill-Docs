@@ -6,12 +6,12 @@ A component is a piece of data attached to an entity, such as its position, its 
 
 ## At a glance
 
-| Attribute                  | What it gives you                                                                 | When to use it                                                |
-| -------------------------- | --------------------------------------------------------------------------------- | ------------------------------------------------------------- |
-| none                       | a component used by one module                                                    | working data the code rebuilds anyway                         |
-| `#[pill(persistable)]`     | its values are **converted** when you change its fields while the project runs   | most components: anything you tune or that matters to keep    |
-| `#[pill(shared)]`          | every module that uses the type reaches the **same** component                   | a component more than one module uses                         |
-| `#[pill(shared, persistable)]` | both                                                                           | a shared component whose fields may still change              |
+| Attribute                      | What it gives you                                                              | When to use it                                             |
+| ------------------------------ | ------------------------------------------------------------------------------ | ---------------------------------------------------------- |
+| none                           | a component used by one module                                                 | working data the code rebuilds anyway                      |
+| `#[pill(persistable)]`         | its values are **converted** when you change its fields while the project runs | most components: anything you tune or that matters to keep |
+| `#[pill(shared)]`              | every module that uses the type reaches the **same** component                 | a component more than one module uses                      |
+| `#[pill(shared, persistable)]` | both                                                                           | a shared component whose fields may still change           |
 
 ## What is a component?
 
@@ -74,13 +74,13 @@ fn movement(mut query: Query<(&mut Position, &Velocity)>) {
 
 You can narrow a query with a second type parameter, a **filter**:
 
-| Filter          | Visits entities that...                                         |
-| --------------- | --------------------------------------------------------------- |
-| `With<T>`       | have `T`, without reading it                                     |
-| `Without<T>`    | do not have `T`                                                  |
-| `Added<T>`      | got `T` since this ECS system last ran                           |
-| `Changed<T>`    | had `T` written since this ECS system last ran                   |
-| `Or<(A, B)>`    | match either filter                                              |
+| Filter       | Visits entities that...                        |
+| ------------ | ---------------------------------------------- |
+| `With<T>`    | have `T`, without reading it                   |
+| `Without<T>` | do not have `T`                                |
+| `Added<T>`   | got `T` since this ECS system last ran         |
+| `Changed<T>` | had `T` written since this ECS system last ran |
+| `Or<(A, B)>` | match either filter                            |
 
 ```rust
 // Only enemies that are not already burning.
@@ -97,11 +97,11 @@ They stay, with their values. Entities and their components belong to the world,
 
 What happens when you change a component's **own struct** depends on whether it is persistable:
 
-| You save a change to...                                   | Plain component                                                       | Persistable component                                                                  |
-| --------------------------------------------------------- | --------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
-| any other code                                            | kept, unchanged                                                       | kept, unchanged                                                                        |
-| the component's fields (added, removed, changed)          | the existing values **cannot be converted**; avoid this while running  | every value is **converted**: kept fields keep their values, new fields start at their default |
-| the component's name or its module (it moved)             | treated as a new component                                            | treated as a new component, unless it has a pinned shared name                         |
+| You save a change to...                          | Plain component                                                       | Persistable component                                                                          |
+| ------------------------------------------------ | --------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
+| any other code                                   | kept, unchanged                                                       | kept, unchanged                                                                                |
+| the component's fields (added, removed, changed) | the existing values **cannot be converted**; avoid this while running | every value is **converted**: kept fields keep their values, new fields start at their default |
+| the component's name or its module (it moved)    | treated as a new component                                            | treated as a new component, unless it has a pinned shared name                                 |
 
 > **Example:** you tuned 40 enemies' `Health` while playing, then add a `shield: f32` field and save. With `persistable` on the declaration, every enemy keeps its current health, and `shield` starts at `0.0`. Without it, the new code cannot read the existing values, so restart the project after such a change.
 
@@ -154,14 +154,14 @@ pub struct Enemy {
 }
 ```
 
-| Attribute                                   | Inspector shows                                   |
-| ------------------------------------------- | ------------------------------------------------- |
-| `header("Text")`, `space(10.0)`             | a labelled separator, a gap                       |
-| `tooltip("Text")`                           | hover text on the label                           |
-| `range(min, max)`, `min(value)`             | a slider, a drag value with a lower limit         |
-| `text_area`, `multiline(5)`                 | a multi-line text box                             |
-| `color`, `vector`                           | a colour picker, one X/Y/Z row                    |
-| `hide_in_inspector`                         | nothing, but the value is still stored            |
+| Attribute                       | Inspector shows                           |
+| ------------------------------- | ----------------------------------------- |
+| `header("Text")`, `space(10.0)` | a labelled separator, a gap               |
+| `tooltip("Text")`               | hover text on the label                   |
+| `range(min, max)`, `min(value)` | a slider, a drag value with a lower limit |
+| `text_area`, `multiline(5)`     | a multi-line text box                     |
+| `color`, `vector`               | a colour picker, one X/Y/Z row            |
+| `hide_in_inspector`             | nothing, but the value is still stored    |
 
 ## What should a component not contain?
 
@@ -169,12 +169,12 @@ Anything that points into your module's code, because that code is replaced on e
 
 ## Where is this in the code?
 
-| What                                                   | Where                                                                  |
-| ------------------------------------------------------ | ---------------------------------------------------------------------- |
-| `#[component]` and its arguments                        | `pill_engine_macros`, `lib.rs`                                         |
-| `Component`, `shared_name`                             | `pill_engine_core`, `component.rs`                                     |
-| `Query` and its filters                                | `pill_engine_core`, `query/`                                           |
-| Saving components in scenes                            | `pill_engine_core`, `scene.rs`                                         |
-| Registering every declared component at module load    | `pill_engine`, `component_registry.rs`                                 |
-| Real components                                        | `pill_master_renderer/modules/runtime/data/src/components/`, `pill_physics/modules/runtime/src/components.rs`, `pill_spline/modules/runtime/src/component.rs` |
-| Shared, persistable components in a real project       | `examples/pills/pills_rust/src/game.rs`                                |
+| What                                                | Where                                                                                                                                                         |
+| --------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `#[component]` and its arguments                    | `pill_engine_macros`, `lib.rs`                                                                                                                                |
+| `Component`, `shared_name`                          | `pill_engine_core`, `component.rs`                                                                                                                            |
+| `Query` and its filters                             | `pill_engine_core`, `query/`                                                                                                                                  |
+| Saving components in scenes                         | `pill_engine_core`, `scene.rs`                                                                                                                                |
+| Registering every declared component at module load | `pill_engine`, `component_registry.rs`                                                                                                                        |
+| Real components                                     | `pill_master_renderer/modules/runtime/data/src/components/`, `pill_physics/modules/runtime/src/components.rs`, `pill_spline/modules/runtime/src/component.rs` |
+| Shared, persistable components in a real project    | `examples/pills/pills_rust/src/game.rs`                                                                                                                       |

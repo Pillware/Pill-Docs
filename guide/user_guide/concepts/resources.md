@@ -6,24 +6,24 @@ A resource is a single value that the whole project shares, such as the time, th
 
 ## At a glance
 
-| Question                               | Component                                  | Resource                                                  |
-| -------------------------------------- | ------------------------------------------ | --------------------------------------------------------- |
-| How many values exist?                 | one per entity that has it                 | at most one in the whole world                            |
-| What does it describe?                 | one object: its position, its health       | the project as a whole: time, score, settings             |
-| How does an ECS system reach it?       | `Query<&Health>`, `Query<&mut Health>`     | `Res<Score>`, `ResMut<Score>`                             |
-| How is it declared?                    | `#[component]`                             | `#[resource]`                                             |
-| Does it survive a hot reload?          | yes                                        | yes, when it has a shared name and your module still declares it |
+| Question                         | Component                              | Resource                                                         |
+| -------------------------------- | -------------------------------------- | ---------------------------------------------------------------- |
+| How many values exist?           | one per entity that has it             | at most one in the whole world                                   |
+| What does it describe?           | one object: its position, its health   | the project as a whole: time, score, settings                    |
+| How does an ECS system reach it? | `Query<&Health>`, `Query<&mut Health>` | `Res<Score>`, `ResMut<Score>`                                    |
+| How is it declared?              | `#[component]`                         | `#[resource]`                                                    |
+| Does it survive a hot reload?    | yes                                    | yes, when it has a shared name and your module still declares it |
 
 ## When should I use a resource instead of a component?
 
 Use a resource when there is exactly one of something and it does not belong to any particular entity.
 
-| Use a resource for                                           | Use a component for                                      |
-| ------------------------------------------------------------ | -------------------------------------------------------- |
-| the score, the current level, the game mode                  | each enemy's health                                      |
-| tuning values that ECS systems read (gravity, speeds)        | each object's position and velocity                      |
-| the input state, the time since the last update              | data a designer places on objects in a scene             |
-| a service many ECS systems use, such as the asset store      | anything that exists once per object                     |
+| Use a resource for                                      | Use a component for                          |
+| ------------------------------------------------------- | -------------------------------------------- |
+| the score, the current level, the game mode             | each enemy's health                          |
+| tuning values that ECS systems read (gravity, speeds)   | each object's position and velocity          |
+| the input state, the time since the last update         | data a designer places on objects in a scene |
+| a service many ECS systems use, such as the asset store | anything that exists once per object         |
 
 If you find yourself creating a single "manager" entity only to hang one component on it, that data probably wants to be a resource.
 
@@ -43,12 +43,12 @@ pub struct Score {
 
 The attribute does the declaration for you: your module's entry point declares every `#[resource]` type before your own registration code runs, on the first load and on every reload. You don't call `register_resource` yourself.
 
-| Argument                                    | What it gives you                                                                 |
-| ------------------------------------------- | --------------------------------------------------------------------------------- |
-| none                                        | a resource only this generation of your module sees; it is replaced on every reload |
-| `shared` / `shared = "crate::Name"`          | a stable identity: the value **survives reloads**, and every module reaches the same value |
-| `layout_sources = ["src/score.rs"]`         | the host notices when the struct's layout changes and rebuilds the value instead of keeping stale bytes |
-| `layout_dependencies = ["glam"]`            | the same, for a struct that embeds another crate's types                           |
+| Argument                            | What it gives you                                                                                       |
+| ----------------------------------- | ------------------------------------------------------------------------------------------------------- |
+| none                                | a resource only this generation of your module sees; it is replaced on every reload                     |
+| `shared` / `shared = "crate::Name"` | a stable identity: the value **survives reloads**, and every module reaches the same value              |
+| `layout_sources = ["src/score.rs"]` | the host notices when the struct's layout changes and rebuilds the value instead of keeping stale bytes |
+| `layout_dependencies = ["glam"]`    | the same, for a struct that embeds another crate's types                                                |
 
 So in practice: **give every resource you want to keep a shared name.** See [Why does my resource reset on every reload?](#why-does-my-resource-reset-on-every-reload)
 
@@ -124,14 +124,14 @@ So take `Res<T>` whenever an ECS system only needs to look at a value. Asking fo
 
 The value stays in the world and only the code that owns it is swapped, **if the engine can recognise it as the same resource**. That depends on its shared name and on what you changed:
 
-| Your resource, and what you changed and saved                     | What happens to the resource                                                                                   |
-| ----------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
-| **no shared name**, any edit                                      | **replaced**: the new code sees a different type, so the old value is retired and `has_resource` is false; your registration inserts a fresh one |
-| shared, any code but not the resource's struct                    | **kept**, with its current value                                                                               |
-| shared, you deleted the type or its derive                        | **removed** from the world                                                                                     |
-| shared and **persistable**, its struct changed                    | **converted**: fields that still exist keep their values, new fields start at their default, removed fields are dropped |
-| shared with `layout_sources`, one of those files changed          | **rebuilt**: the old value is dropped with a `resource layout changed` warning, and your registration inserts a fresh one |
-| shared, struct changed, neither persistable nor `layout_sources`  | **unsafe**: the old bytes are kept and read through the new struct. Avoid this; declare one of the two         |
+| Your resource, and what you changed and saved                    | What happens to the resource                                                                                                                     |
+| ---------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **no shared name**, any edit                                     | **replaced**: the new code sees a different type, so the old value is retired and `has_resource` is false; your registration inserts a fresh one |
+| shared, any code but not the resource's struct                   | **kept**, with its current value                                                                                                                 |
+| shared, you deleted the type or its derive                       | **removed** from the world                                                                                                                       |
+| shared and **persistable**, its struct changed                   | **converted**: fields that still exist keep their values, new fields start at their default, removed fields are dropped                          |
+| shared with `layout_sources`, one of those files changed         | **rebuilt**: the old value is dropped with a `resource layout changed` warning, and your registration inserts a fresh one                        |
+| shared, struct changed, neither persistable nor `layout_sources` | **unsafe**: the old bytes are kept and read through the new struct. Avoid this; declare one of the two                                           |
 
 > **Example:** a shared `DifficultySettings` resource holds `enemy_speed: 3.0`, which you tuned while playing. You add a new field `spawn_rate`.
 >
@@ -220,23 +220,23 @@ The host then writes `res/settings/<settings_name>.<extension>` the first time, 
 
 Anything that points into your module's code, because that code is replaced on every hot reload and the old version is eventually unloaded:
 
-| Avoid in a resource                                      | Use instead                                          |
-| -------------------------------------------------------- | ---------------------------------------------------- |
-| `&'static str`                                           | `String`                                             |
-| a function pointer or a closure (`fn`, `Box<dyn Fn>`)     | an enum or an id that selects the behaviour          |
-| a trait object (`Box<dyn Trait>`) created by your module | an enum, or plain data that ECS systems act on        |
-| a thread your module starts and does not stop            | the engine's shared thread pool                      |
+| Avoid in a resource                                      | Use instead                                    |
+| -------------------------------------------------------- | ---------------------------------------------- |
+| `&'static str`                                           | `String`                                       |
+| a function pointer or a closure (`fn`, `Box<dyn Fn>`)    | an enum or an id that selects the behaviour    |
+| a trait object (`Box<dyn Trait>`) created by your module | an enum, or plain data that ECS systems act on |
+| a thread your module starts and does not stop            | the engine's shared thread pool                |
 
 Plain data such as numbers, `String`, `Vec`, maps of plain data, entity ids and asset handles is always safe.
 
 ## Which resources does the engine provide?
 
-| Resource         | What it holds                                        |
-| ---------------- | ---------------------------------------------------- |
-| `Time`           | timing for the current update                        |
-| `Input`          | the keyboard, mouse and gamepad state                |
-| `AssetManager`   | every loaded or created asset, reached by handle     |
-| `DebugDraw`      | debug lines and labels to draw this update           |
+| Resource       | What it holds                                    |
+| -------------- | ------------------------------------------------ |
+| `Time`         | timing for the current update                    |
+| `Input`        | the keyboard, mouse and gamepad state            |
+| `AssetManager` | every loaded or created asset, reached by handle |
+| `DebugDraw`    | debug lines and labels to draw this update       |
 
 Extensions add their own, for example `AudioManager` from `pill_audio`, and `PhysicsManager` and `PhysicsEvents` from `pill_physics`.
 
@@ -244,7 +244,7 @@ Extensions add their own, for example `AudioManager` from `pill_audio`, and `Phy
 
 | What                                                   | Where                                                           |
 | ------------------------------------------------------ | --------------------------------------------------------------- |
-| `#[resource]` and its arguments                          | `pill_engine_macros`, `lib.rs`                                  |
+| `#[resource]` and its arguments                        | `pill_engine_macros`, `lib.rs`                                  |
 | How declared resources are registered                  | `pill_engine`, `declarations.rs`                                |
 | The `Resource` trait, `shared_name`, `layout_sources`  | `pill_engine_core`, `resource.rs`                               |
 | `insert_resource`, `register_resource`, `get_resource` | `pill_engine_core`, `world/resources.rs`                        |
@@ -253,4 +253,4 @@ Extensions add their own, for example `AudioManager` from `pill_audio`, and `Phy
 | `Res<T>` and `ResMut<T>`                               | `pill_engine_core`, `query/resource.rs`                         |
 | The layout fingerprint on reload                       | `pill_development_host`, `layout_record.rs`                     |
 | A shared, persistable resource in a real project       | `examples/pills/pills_rust/src/game.rs`, `DemoState`            |
-| A resource with `layout_sources`                       | `pill_physics/modules/runtime/src/manager.rs`, `PhysicsManager`                 |
+| A resource with `layout_sources`                       | `pill_physics/modules/runtime/src/manager.rs`, `PhysicsManager` |
