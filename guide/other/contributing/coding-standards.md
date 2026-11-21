@@ -7,12 +7,12 @@ This document defines coding standards for the Pill project, ensuring consistenc
 These principles guide every decision in the codebase. When a rule isn't
 clear, fall back to these.
 
-| # | Principle | Meaning |
-|---|-----------|---------|
-| 1 | Safety first | Prefer safe Rust. Only reach for `unsafe` when performance measurements or FFI boundaries leave no alternative. |
-| 2 | Idiomatic Rust | Follow standard library conventions. Avoid clever abstractions that fight the borrow checker or obscure intent. |
-| 3 | Clarity over brevity | Write code for the next person reading it. Use descriptive names, extract complex expressions, and comment the *why*. |
-| 4 | Explicit imports | Always import types, functions, and macros at the top of the file. Never rely on wildcard or implicit imports - `use anyhow::Result;`, not `use anyhow::*;`. |
+| #   | Principle            | Meaning                                                                                                                                                      |
+| --- | -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| 1   | Safety first         | Prefer safe Rust. Only reach for `unsafe` when performance measurements or FFI boundaries leave no alternative.                                              |
+| 2   | Idiomatic Rust       | Follow standard library conventions. Avoid clever abstractions that fight the borrow checker or obscure intent.                                              |
+| 3   | Clarity over brevity | Write code for the next person reading it. Use descriptive names, extract complex expressions, and comment the *why*.                                        |
+| 4   | Explicit imports     | Always import types, functions, and macros at the top of the file. Never rely on wildcard or implicit imports - `use anyhow::Result;`, not `use anyhow::*;`. |
 
 ## Code Style &amp; Naming
 
@@ -20,14 +20,14 @@ clear, fall back to these.
 
 Names are documentation. Choose them carefully.
 
-| Category | Case | Example |
-|----------|------|---------|
-| Types (structs, enums, traits) | `PascalCase` | `PillRecipe`, `ProductionLine` |
-| Functions, variables, modules | `snake_case` | `validate_recipe`, `batch_id` |
-| Constants &amp; statics | `SCREAMING_SNAKE_CASE` | `MAX_BATCH_SIZE`, `NEXT_BATCH_ID` |
-| Generics | short uppercase, or descriptive | `T`, `E`, `Response` |
-| Resources (textures, sounds, models) | `snake_case` | `player_walk.png`, `explosion.wav` |
-| Shader/material parameters | `snake_case` | `base_color`, `roughness` |
+| Category                             | Case                            | Example                            |
+| ------------------------------------ | ------------------------------- | ---------------------------------- |
+| Types (structs, enums, traits)       | `PascalCase`                    | `PillRecipe`, `ProductionLine`     |
+| Functions, variables, modules        | `snake_case`                    | `validate_recipe`, `batch_id`      |
+| Constants &amp; statics              | `SCREAMING_SNAKE_CASE`          | `MAX_BATCH_SIZE`, `NEXT_BATCH_ID`  |
+| Generics                             | short uppercase, or descriptive | `T`, `E`, `Response`               |
+| Resources (textures, sounds, models) | `snake_case`                    | `player_walk.png`, `explosion.wav` |
+| Shader/material parameters           | `snake_case`                    | `base_color`, `roughness`          |
 
 Abbreviations are forbidden. Shortening a word saves the writer a
 moment but costs every reader who has to decode it later.
@@ -274,15 +274,15 @@ Each type group follows a fixed sub-order:
 
 ### Quick Reference
 
-| # | Section | Separator | Contents |
-|---|---------|-----------|----------|
-| 1 | Header Comment | *(none)* | `//!` module doc |
-| 2 | Attributes | *(none)* | `#![]` crate-level lints |
-| 3 | Includes | `// Group` comments | `std` → extern → `crate` |
-| 4 | Constants | `// ====…====` | `const` &amp; `static` |
-| 5 | Types + Impls | `// ====…====` per type | struct/enum/trait → `impl` → trait `impl` |
-| 6 | General Functions | `// ====…====` | free functions &amp; helpers |
-| 7 | Tests | `// ====…====` | `#[cfg(test)] mod tests` |
+| #   | Section           | Separator               | Contents                                  |
+| --- | ----------------- | ----------------------- | ----------------------------------------- |
+| 1   | Header Comment    | *(none)*                | `//!` module doc                          |
+| 2   | Attributes        | *(none)*                | `#![]` crate-level lints                  |
+| 3   | Includes          | `// Group` comments     | `std` → extern → `crate`                  |
+| 4   | Constants         | `// ====…====`          | `const` &amp; `static`                    |
+| 5   | Types + Impls     | `// ====…====` per type | struct/enum/trait → `impl` → trait `impl` |
+| 6   | General Functions | `// ====…====`          | free functions &amp; helpers              |
+| 7   | Tests             | `// ====…====`          | `#[cfg(test)] mod tests`                  |
 
 ## Comments &amp; Documentation
 
@@ -296,11 +296,11 @@ Every file opens with a `//!` block. See the [Header Comment](#_1-header-comment
 section in Source File Layout for the required structure
 (`# Responsibilities` / `# Design`).
 
-| Section | Required? | Purpose |
-|---------|-----------|---------|
-| One/Two-line summary | Yes | Few first lines; states what the file provides. |
-| `# Responsibilities` | Yes | Bullet list of what this module owns. |
-| `# Design` | Recommended | Architectural notes, cross-type relationships. |
+| Section              | Required?   | Purpose                                         |
+| -------------------- | ----------- | ----------------------------------------------- |
+| One/Two-line summary | Yes         | Few first lines; states what the file provides. |
+| `# Responsibilities` | Yes         | Bullet list of what this module owns.           |
+| `# Design`           | Recommended | Architectural notes, cross-type relationships.  |
 
 - Use intra-doc links to reference key types: `` [`PillFactory`] ``.
 
@@ -347,12 +347,12 @@ pub enum PillShape {
 fn validate_recipe(recipe: &PillRecipe) -> Result<()> { /* … */ }
 ```
 
-| Section | When to use |
-|---------|-------------|
-| *(summary line)* | Always. Describes what the function does. |
-| `# Errors` | When returning `Result`. Lists every error condition. |
-| `# Safety` | When the function is `unsafe`. Lists every caller obligation. |
-| `# Examples` | For key public API surfaces. Minimal working call. |
+| Section          | When to use                                                   |
+| ---------------- | ------------------------------------------------------------- |
+| *(summary line)* | Always. Describes what the function does.                     |
+| `# Errors`       | When returning `Result`. Lists every error condition.         |
+| `# Safety`       | When the function is `unsafe`. Lists every caller obligation. |
+| `# Examples`     | For key public API surfaces. Minimal working call.            |
 
 - Summary uses third-person indicative: *"Validates a pill recipe"*, not *"Validate"*.
 - `# Errors` lists every way the function can fail, not just the common ones.
@@ -430,14 +430,14 @@ unsafe {
 
 Every `SAFETY` comment must address the relevant safety dimensions:
 
-| Category | Question the comment must answer |
-|----------|----------------------------------|
-| Aliasing | Why is there no overlapping `&mut` access? |
-| Lifetime | Why are pointers/references valid for the duration of use? |
-| Bounds | Why is unchecked indexing/pointer arithmetic within bounds? |
-| Concurrency | Why are atomics unnecessary (or, if used, why is the ordering correct)? |
-| Type validity | Why does the memory represent a valid instance of the target type? |
-| Invariants | What caller guarantees or local invariants does this code rely on? |
+| Category      | Question the comment must answer                                        |
+| ------------- | ----------------------------------------------------------------------- |
+| Aliasing      | Why is there no overlapping `&mut` access?                              |
+| Lifetime      | Why are pointers/references valid for the duration of use?              |
+| Bounds        | Why is unchecked indexing/pointer arithmetic within bounds?             |
+| Concurrency   | Why are atomics unnecessary (or, if used, why is the ordering correct)? |
+| Type validity | Why does the memory represent a valid instance of the target type?      |
+| Invariants    | What caller guarantees or local invariants does this code rely on?      |
 
 - `// SAFETY:` uses UPPERCASE and a colon.
 - It appears inside the function body, immediately before `unsafe {`.
@@ -721,73 +721,6 @@ warn!(ctx => self.log, "quality inspector flagged {} anomalies", anomalies);
   and critical paths.
 - Structure timing output with `begin_context` / `end_context` to produce
   hierarchical, readable profiles rather than flat lists of durations.  
-
-## Code Review Expectations
-
-Code review is a conversation, not a gate. Both authors and reviewers share
-responsibility for keeping it constructive and efficient.
-
-### For Authors
-
-- Keep PRs small and focused on a single change.
-- For architectural or design changes, open an issue or draft PR early to gather feedback before investing in implementation details.
-
-### For Reviewers
-
-- Review for correctness first: does the logic hold? Are edge cases
-  handled?
-- Review for clarity: can you understand the intent without asking the
-  author to explain?
-- Review for idiomatic usage: does the code follow the conventions in
-  this document?
-- Approve when the change is correct, clear, and idiomatic - not when it
-  matches your personal style.
-
-### Merge Requirements
-
-A PR is ready to merge when:
-
-1. All CI checks pass.
-2. At least one reviewer has approved.
-3. All review threads are resolved.
-
-## Version Control
-
-### Commit Messages
-
-- Write commit messages that explain what changed and why. The diff
-  already shows *how*.
-- Keep commits atomic - each commit should do one thing and leave the
-  project in a buildable state. It will also help the reviewers later on.
-- Never commit generated files (build artifacts, IDE settings, lock files
-  from tools outside the project's standard dependency manager).
-
-### Pull Request Titles
-
-Every PR title must follow the Conventional Commits format:
-
-```
-<type>(<optional-scope>): <description>
-```
-
-| Type | Use for |
-|------|---------|
-| `feat` | New functionality |
-| `fix` | Bug fixes |
-| `docs` | Documentation changes |
-| `refactor` | Internal restructuring without behavioural changes |
-| `perf` | Performance improvements |
-| `test` | Adding or updating tests |
-| `build` | Dependency, compiler, or build-tooling changes |
-| `ci` | Continuous-integration changes |
-| `chore` | Other maintenance tasks |
-
-Examples:
-
-- `feat(renderer): add PBR material pipeline`
-- `fix(ecs): prevent archetype fragmentation on despawn`
-- `docs: document the build process`
-- `ci: add Clang builds to the matrix`
 
 ## Example Source File
 

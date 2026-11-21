@@ -13,10 +13,10 @@ export const guideSidebarItems: DefaultTheme.SidebarItem[] = [
         "text": "Introduction",
         "collapsed": false,
         "items": [
-          { "text": "Overview", "link": "/guide/user_guide/introduction/introduction" },
+          { "text": "What is Pill?", "link": "/guide/user_guide/introduction/what_is_pill" },
+          { "text": "Overview", "link": "/guide/user_guide/introduction/overview" },
           { "text": "Quick start", "link": "/guide/user_guide/introduction/quick_start" },
           { "text": "Setup", "link": "/guide/user_guide/introduction/setup" },
-          { "text": "What is Pill?", "link": "/guide/user_guide/introduction/what_is_pill" },
           { "text": "Next steps", "link": "/guide/user_guide/introduction/next_steps" }
         ]
       },
@@ -164,9 +164,16 @@ export const guideSidebarItems: DefaultTheme.SidebarItem[] = [
     "collapsed": false,
     "items": [
       { "text": "Brand identity", "link": "/guide/other/brand-identity" },
-      { "text": "Code of conduct", "link": "/guide/other/code-of-conduct" },
-      { "text": "Coding standards", "link": "/guide/other/coding-standards" },
-      { "text": "Contributing", "link": "/guide/other/contributing" },
+      {
+        "text": "Contributing",
+        "collapsed": false,
+        "items": [
+          { "text": "Getting started", "link": "/guide/other/contributing/getting-started" },
+          { "text": "Repository standards", "link": "/guide/other/contributing/repository-standards" },
+          { "text": "Coding standards", "link": "/guide/other/contributing/coding-standards" },
+          { "text": "Code of conduct", "link": "/guide/other/contributing/code-of-conduct" }
+        ]
+      },
       { "text": "Partner license", "link": "/guide/other/partner-license" },
       { "text": "Writing guidelines", "link": "/guide/other/guide_writing_guidelines" }
     ]
