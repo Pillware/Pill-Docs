@@ -44,8 +44,8 @@ Pill is a modular, open-source game engine written in Rust, with projects in **R
     </a>
   </div>
   <div class="feature">
-    <a href="introduction/introduction.html">
-      <h3>🧊 Introduction</h3>
+    <a href="introduction/overview.html">
+      <h3>🧊 Overview</h3>
       <p>How Pill works, explained through the cube example: entities, components, ECS systems, assets.</p>
     </a>
   </div>
