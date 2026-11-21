@@ -7,18 +7,18 @@ Run the spinning cube example in two steps.
 Clone the repository and run the setup script for your system. It installs Rust, the shader compiler and everything else that is missing.
 
 ```powershell
-git clone https://github.com/MattSzymonski/Rust-Hybrid-ECS.git
-cd Rust-Hybrid-ECS
+git clone https://github.com/Pillware/Pill.git
+cd Pill
 powershell -ExecutionPolicy Bypass -File devops/setup/setup_windows_environment.ps1
 ```
 ```cmd
-git clone https://github.com/MattSzymonski/Rust-Hybrid-ECS.git
-cd Rust-Hybrid-ECS
+git clone https://github.com/Pillware/Pill.git
+cd Pill
 powershell -ExecutionPolicy Bypass -File devops\setup\setup_windows_environment.ps1
 ```
 ```bash
-git clone https://github.com/MattSzymonski/Rust-Hybrid-ECS.git
-cd Rust-Hybrid-ECS
+git clone https://github.com/Pillware/Pill.git
+cd Pill
 bash devops/setup/setup_linux_environment.sh
 ```
 

@@ -20,18 +20,18 @@ To work with Pill you need the Rust toolchain, a C/C++ build toolchain, the Slan
 Clone the repository, then run the setup script for your system from the repository root.
 
 ```powershell
-git clone https://github.com/MattSzymonski/Rust-Hybrid-ECS.git
-cd Rust-Hybrid-ECS
+git clone https://github.com/Pillware/Pill.git
+cd Pill
 powershell -ExecutionPolicy Bypass -File devops/setup/setup_windows_environment.ps1
 ```
 ```cmd
-git clone https://github.com/MattSzymonski/Rust-Hybrid-ECS.git
-cd Rust-Hybrid-ECS
+git clone https://github.com/Pillware/Pill.git
+cd Pill
 powershell -ExecutionPolicy Bypass -File devops\setup\setup_windows_environment.ps1
 ```
 ```bash
-git clone https://github.com/MattSzymonski/Rust-Hybrid-ECS.git
-cd Rust-Hybrid-ECS
+git clone https://github.com/Pillware/Pill.git
+cd Pill
 bash devops/setup/setup_linux_environment.sh
 ```
 
