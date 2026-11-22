@@ -1,5 +1,7 @@
 ---
 layout: doc
+title: Welcome
+description: Pill is a modular, open-source game engine written in Rust, with projects in Rust or C#, that hot reloads while it runs.
 ---
 
 <div class="hero-bg"></div>
@@ -10,26 +12,27 @@ layout: doc
       <p class="tagline">
         Modern, <strong>free</strong> and <strong>blazingly fast</strong> game engine
       </p>
-      <p class="badges">
-        <img alt="License" src="https://img.shields.io/badge/license-MIT%20%2F%20Apache--2.0-blue?style=flat-square" />
-        <img alt="Rust" src="https://img.shields.io/badge/rust-stable-ff7ab6?style=flat-square" />
-        <img alt="Pill" src="https://img.shields.io/badge/💊💊💊-blue" />
-      </p>
     </div>
   </div>
 </div>
 
-Good to see you, here, take this 🫴 💊
+Good to see you here. Take this 🫴 💊
 
-Pill is a modular, open-source game engine written in Rust, with projects in **Rust or C#**. Change your code, hit save, and see it running in **under a second** - no restart, no reloading the level.
+A modular, open-source game engine written in Rust, with projects in Rust or C# - small by design, hot reloads in a second or two, and a crash in your code does not take the editor down.
 
-## Start here
+## Instant start
 
 <div class="features-grid">
   <div class="feature" style="border-color: var(--vp-c-brand-1);">
-    <a href="introduction/quick_start.html">
-      <h3>🚀 Quick start</h3>
+    <a href="introduction/quick_start">
+      <h3>🚀 Quick start - Build cube example</h3>
       <p>From zero to a spinning cube in two steps: set up the engine, then run the example. Most of the time goes into the first build - grab a coffee.</p>
+    </a>
+  </div>
+  <div class="feature" style="border-color: var(--vp-c-brand-1);">
+    <a href="introduction/overview">
+      <h3>🧊 Overview - Pill 101</h3>
+      <p>How Pill works, explained through the cube example: entities, components, ECS systems, assets.</p>
     </a>
   </div>
 </div>
@@ -38,19 +41,13 @@ Pill is a modular, open-source game engine written in Rust, with projects in **R
 
 <div class="features-grid">
   <div class="feature">
-    <a href="introduction/what_is_pill.html">
+    <a href="introduction/what_is_pill">
       <h3>💊 What is Pill?</h3>
       <p>Why Pill exists, what it values and what it aims for.</p>
     </a>
   </div>
   <div class="feature">
-    <a href="introduction/overview.html">
-      <h3>🧊 Overview</h3>
-      <p>How Pill works, explained through the cube example: entities, components, ECS systems, assets.</p>
-    </a>
-  </div>
-  <div class="feature">
-    <a href="introduction/setup.html">
+    <a href="introduction/setup">
       <h3>🛠️ Setup</h3>
       <p>What the setup scripts install on Windows and Linux, and how to check that everything works.</p>
     </a>
@@ -61,25 +58,37 @@ Pill is a modular, open-source game engine written in Rust, with projects in **R
 
 <div class="features-grid">
   <div class="feature">
-    <a href="advanced/build_configurations.html">
+    <a href="advanced/build_configurations">
       <h3>⚙️ Build configurations</h3>
       <p>Development and shipping, Rust profiles, headless and windowed, and building for the browser.</p>
     </a>
   </div>
   <div class="feature">
-    <a href="editor/editor.html">
+    <a href="editor/editor">
       <h3>🖥️ Editor</h3>
       <p>Run the editor and see your world while it runs.</p>
     </a>
   </div>
   <div class="feature">
-    <a href="advanced/profiling.html">
+    <a href="advanced/profiling">
       <h3>📈 Profiling</h3>
       <p>Find out where every update spends its time, with Tracy.</p>
     </a>
   </div>
   <div class="feature">
-    <a href="help/help.html">
+    <a href="concepts/entities">
+      <h3>🧩 Concepts</h3>
+      <p>Entities, components, ECS systems, resources and assets, one page each.</p>
+    </a>
+  </div>
+  <div class="feature">
+    <a href="/reference/">
+      <h3>📚 API reference</h3>
+      <p>Every crate, type and function in the engine, generated from the source.</p>
+    </a>
+  </div>
+  <div class="feature">
+    <a href="help/help">
       <h3>🆘 Help</h3>
       <p>Common problems and where to ask for help.</p>
     </a>
@@ -88,7 +97,7 @@ Pill is a modular, open-source game engine written in Rust, with projects in **R
 
 ## Examples
 
-Every example comes in Rust and in C#, in `examples/` of the repository:
+Every example comes in Rust and in C#, in the `examples/` folder of the Pill repository:
 
 | Example          | What it shows                                                    |
 | ---------------- | ---------------------------------------------------------------- |
@@ -96,7 +105,6 @@ Every example comes in Rust and in C#, in `examples/` of the repository:
 | `cube_no_editor` | the same cube from one OBJ file, with the material built in code |
 | `headless`       | an ECS-only simulation: no window, no renderer, no assets        |
 | `pills`          | a curl noise field of two hundred thousand pills                 |
-| `pills_awakens`  | the same pills, among ancient pillars                            |
 
 ## Join the community
 

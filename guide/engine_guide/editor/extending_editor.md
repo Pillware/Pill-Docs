@@ -171,6 +171,7 @@ A module cannot register into the registries itself. In its `register`, it pushe
 | ------------------ | ------------------------- | -------------------------------- |
 | Editor callbacks   | `EditorHookRequests`      | `EditorHookRegistry`             |
 | Module panels      | `PanelRegistrations`      | `PanelRegistry`                  |
+| Module commands    | `CommandRegistrations`    | `CommandRegistry`, `CommandDraws`|
 
 The executable drains each queue (`sync_hooks`, `sync_panels`) and binds every request to a `ModuleLiveness` marker. It keeps the one strong `Arc` per source in `module_markers`, and the registry keeps only a `Weak`. A registration is alive only while its marker's strong count is above zero, and the registry hands out a function pointer only while it is alive.
 
@@ -197,6 +198,100 @@ Registration replaces entries in place:
 
 - `EditorHookRegistry::register` drops dead entries and any entry with the same `(source, event)` before adding the new one, so a reload never doubles a callback.
 - `PanelRegistry::register` replaces the entry with the same id in place, so the panel keeps its slot and its dock tab across the reload. A panel whose module never comes back keeps its tab, which reads "Module not loaded".
+
+### How does a module add a command to the editor's UI?
+
+A module registers commands, not widgets. One command is one row, button or
+menu item, wherever the module places it, and one id the person runs from any
+of those places, from a shortcut or from the scripted channel.
+
+**What a command is declared as.** A `CommandSpec` carries the id, the title,
+the menu path (empty for no menu row), the default chords per keymap preset,
+an optional icon and its placements. A placement is a `UiSlot`:
+
+| Placement                   | Drawn where                              | Target it reports         |
+| --------------------------- | ---------------------------------------- | ------------------------- |
+| `MenuBar { path }`          | the menu bar, derived from `menu_path`   | none                      |
+| `Toolbar`                   | beside Play, Pause and Step              | none                      |
+| `ViewportToolbox`           | the floating toolbox of a scene view     | the view index            |
+| `InspectorComponentHeader`  | one component's Inspector header         | the entity and component  |
+| `ComponentContextMenu`      | the menu a component header opens        | the entity and component  |
+| `EntityContextMenu`         | the menu an entity row opens             | the entity                |
+| `AssetContextMenu`          | the menu an asset file opens             | the asset key             |
+| `Palette`                   | the command palette (every command)      | none                      |
+
+**A command may be placed in several places at once.** One id reaches the
+module from a toolbox row, a context-menu row and a chord, and the target tells
+the module which place the click came from. A context menu offers only the
+commands whose placement matches what was clicked - a component's menu its own
+component, an asset file's menu its extension - and draws none where there is
+no subject: the entity list's empty strip and a folder's menu carry no module
+rows. The viewport toolbox draws the `ViewportToolbox` rows after its own tool
+rows, so a hidden command closes the panel up.
+
+**Registration, and how a reload stays safe.** In its `register`, a module
+pushes a `CommandRegistration { owner, commands }` into
+`CommandRegistrations`, and a `CommandDrawRequest` for each command whose look
+no data describes. The executable binds each to the module's liveness marker
+(`sync_commands`, phase 3) and replaces that owner's whole set, so a reload
+never doubles a command. A set whose module unloaded is forgotten together
+with its draws, so a menu never offers a command nothing answers. The owner
+must be `env!("CARGO_PKG_NAME")`, the same rule the callbacks follow.
+
+**What the places draw.** Each place draws from data by default: the title, the
+icon and the state published for its target. The module publishes that state
+per frame into `CommandStates`:
+
+```rust
+let target = CommandTarget::Entity { entity, component: Some(component.clone()) };
+states.publish(COMMAND_ID, HashMap::from([(
+    target,
+    CommandState::default()
+        .with_label("Test Command")
+        .with_checked(true)
+        .with_indicator([0x4a, 0xd9, 0x91, 0xff])
+        .with_tooltip(vec!["What a click does".to_string()]),
+)]));
+```
+
+- Nothing published means visible and usable, so a command works before its
+  module says anything about it.
+- `CommandState::hidden()` removes the row or button and the space it took;
+  `CommandState::disabled()` draws it dimmed and reports no click.
+- `label` and `tooltip` override the command's own text; `checked` marks a
+  toggle; `indicator` and `attention` paint the two corner dots.
+
+**A draw function is the exception.** When a command's look no data describes -
+the Blender logo - the module registers a `CommandDrawFn` for that command and
+place. It is called with a `CommandDrawContext`: the id, the target, the
+published state and an `invocations` list. A click reports through
+`context.invoke()`, so the place never learns which of the two drew it. The
+shell calls a draw function only while its module is loaded.
+
+**How a click comes back.** Every place turns a click into a
+`CommandInvocation { id, target }`, which the executable pushes into
+`CommandInbox`. The module takes its own ids in a system:
+
+```rust
+pub fn my_commands(mut inbox: ResMut<CommandInbox>) {
+    let Some(mut inbox) = inbox.get_mut() else { return; };
+    for invocation in inbox.take(COMMAND_ID) {
+        let entity = invocation.entity();
+        // ...
+    }
+}
+```
+
+`CommandTarget` is `None`, `Entity { entity, component }`, `Asset(key)` or
+`View(index)`. An invocation no module takes within
+`COMMAND_INVOCATION_LIFETIME` frames is dropped, so a command whose module
+unloaded leaves nothing behind.
+
+**Shortcuts and the scripted channel come free.** A chord bound in the spec
+reaches the module through the same inbox, and so does
+`command <id> [entity <name> | asset <path>]` in the scripted channel. The
+editor's own ids keep their own verbs; any other id runs the command that
+registered it.
 
 ### Tools: records replaced by name
 

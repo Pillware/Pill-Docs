@@ -6,14 +6,14 @@ To work with Pill you need the Rust toolchain, a C/C++ build toolchain, the Slan
 
 ## What do I need?
 
-| Tool                          | Why Pill needs it                                                        | Windows                         | Linux                                       |
-| ----------------------------- | ------------------------------------------------------------------------ | ------------------------------- | ------------------------------------------- |
-| **Rust** (rustup, stable)     | builds the engine, the extensions and Rust projects                      | installed by the script         | installed by the script (into `~/.cargo`)   |
-| **C/C++ build tools**         | some dependencies compile C code or link system libraries                | MSVC build tools + Windows SDK  | a C compiler (`cc`), `pkg-config` and system libraries |
-| **Slang** (`slangc`)          | compiles the `.hlsl` shaders; the renderer does not build without it      | installed by the script         | installed by the script (into `~/.local`)   |
-| **.NET 8 SDK**                | builds and runs C# projects                                              | optional (VS Code setup)        | installed by the script (into `~/.dotnet`)  |
-| **Git**                       | clones the repository                                                    | install it yourself             | install it yourself                         |
-| VS Code (optional)            | the editor the debugging profiles are set up for                         | optional                        | optional                                    |
+| Tool                      | Why Pill needs it                                                    | Windows                        | Linux                                                  |
+| ------------------------- | -------------------------------------------------------------------- | ------------------------------ | ------------------------------------------------------ |
+| **Rust** (rustup, stable) | builds the engine, the extensions and Rust projects                  | installed by the script        | installed by the script (into `~/.cargo`)              |
+| **C/C++ build tools**     | some dependencies compile C code or link system libraries            | MSVC build tools + Windows SDK | a C compiler (`cc`), `pkg-config` and system libraries |
+| **Slang** (`slangc`)      | compiles the `.hlsl` shaders; the renderer does not build without it | installed by the script        | installed by the script (into `~/.local`)              |
+| **.NET 8 SDK**            | builds and runs C# projects                                          | optional (VS Code setup)       | installed by the script (into `~/.dotnet`)             |
+| **Git**                   | clones the repository                                                | install it yourself            | install it yourself                                    |
+| VS Code (optional)        | the editor the debugging profiles are set up for                     | optional                       | optional                                               |
 
 ## How do I set up my machine?
 
@@ -22,16 +22,19 @@ Clone the repository, then run the setup script for your system from the reposit
 ```powershell
 git clone https://github.com/Pillware/Pill.git
 cd Pill
+git checkout golden
 powershell -ExecutionPolicy Bypass -File devops/setup/setup_windows_environment.ps1
 ```
 ```cmd
 git clone https://github.com/Pillware/Pill.git
 cd Pill
+git checkout golden
 powershell -ExecutionPolicy Bypass -File devops\setup\setup_windows_environment.ps1
 ```
 ```bash
 git clone https://github.com/Pillware/Pill.git
 cd Pill
+git checkout golden
 bash devops/setup/setup_linux_environment.sh
 ```
 
@@ -39,14 +42,14 @@ The PowerShell and `cmd` blocks run the Windows script; the `bash` block runs th
 
 Before it changes anything, the script prints its plan and asks you **one question**: whether to include the optional VS Code debugging setup. After that it runs on its own. It works through six steps:
 
-| Step | Windows (`setup_windows_environment.ps1`)                    | Linux (`setup_linux_environment.sh`)                                  |
-| ---- | ------------------------------------------------------------ | --------------------------------------------------------------------- |
-| 1    | Rust, through `winget` (or rustup's own installer)           | system libraries through `apt-get`: Vulkan, X11/Wayland, ALSA, udev, ICU, OpenSSL |
-| 2    | MSVC build tools and the Windows SDK                         | Rust, through rustup's installer                                      |
-| 3    | the Slang shader compiler                                    | the Slang shader compiler (2025.21.2), added to `PATH` in `~/.bashrc` |
-| 4    | checks Smart App Control, which can block Pill's hot reload  | the .NET 8 SDK, with `DOTNET_ROOT` and `PATH` added to `~/.bashrc`    |
-| 5    | optional: VS Code, the .NET 8 SDK and the extensions         | optional: VS Code, its extensions and `dotnet-trace`                  |
-| 6    | downloads every Rust dependency once (`cargo fetch`)         | downloads every Rust dependency once (`cargo fetch`)                  |
+| Step | Windows (`setup_windows_environment.ps1`)                   | Linux (`setup_linux_environment.sh`)                                              |
+| ---- | ----------------------------------------------------------- | --------------------------------------------------------------------------------- |
+| 1    | Rust, through `winget` (or rustup's own installer)          | system libraries through `apt-get`: Vulkan, X11/Wayland, ALSA, udev, ICU, OpenSSL |
+| 2    | MSVC build tools and the Windows SDK                        | Rust, through rustup's installer                                                  |
+| 3    | the Slang shader compiler                                   | the Slang shader compiler (2025.21.2), added to `PATH` in `~/.bashrc`             |
+| 4    | checks Smart App Control, which can block Pill's hot reload | the .NET 8 SDK, with `DOTNET_ROOT` and `PATH` added to `~/.bashrc`                |
+| 5    | optional: VS Code, the .NET 8 SDK and the extensions        | optional: VS Code, its extensions and `dotnet-trace`                              |
+| 6    | downloads every Rust dependency once (`cargo fetch`)        | downloads every Rust dependency once (`cargo fetch`)                              |
 
 Both scripts skip whatever is already installed, so you can run them again at any time - for example after fixing whatever made a step fail.
 
@@ -63,11 +66,11 @@ Both scripts skip whatever is already installed, so you can run them again at an
 - **Open a new terminal afterwards**, so the `PATH` and `DOTNET_ROOT` lines the script added to `~/.bashrc` take effect.
 - The script takes a few flags:
 
-| Flag                      | What it does                                                       |
-| ------------------------- | ------------------------------------------------------------------ |
-| `--no-fetch`              | skips the dependency download, for example when you are offline    |
-| `--vscode-debugging`      | includes the VS Code debugging setup without asking                |
-| `--no-vscode-debugging`   | skips it without asking                                            |
+| Flag                    | What it does                                                    |
+| ----------------------- | --------------------------------------------------------------- |
+| `--no-fetch`            | skips the dependency download, for example when you are offline |
+| `--vscode-debugging`    | includes the VS Code debugging setup without asking             |
+| `--no-vscode-debugging` | skips it without asking                                         |
 
 Pill is developed and tested on Windows. Linux works, but gets less testing.
 
